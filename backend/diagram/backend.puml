@@ -1,0 +1,38 @@
+@startuml BackendDiagram
+
+interface ILLMService {
+    model : string 
+    profile: Profiles
+    objective: string,
+    stepIndex: number,
+    historySummary?: string,
+    uiJson?: string,
+    Image: string
+    CallModel()
+
+} 
+
+
+
+class CognitiveWalkthoughLLM {
+    NextImage : string
+    NextJson : string
+}
+
+class GuideStepLLM {
+
+}
+
+class AnalisysComponentLLM {
+
+}
+
+ILLMService ..> CognitiveWalkthoughLLM 
+ILLMService ..> GuideStepLLM 
+ILLMService ..> AnalisysComponentLLM 
+
+class Controller
+
+Controller --> "Call LLM" ILLMService
+
+@enduml
