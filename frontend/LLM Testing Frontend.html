@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Testing Frontend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #f8fafc;
+            --color-surface: #ffffff;
+            --color-text-primary: #0f172a;
+            --color-text-secondary: #475569;
+            --color-border: #e2e8f0;
+            --color-primary: #0284c7;
+            --color-primary-hover: #0369a1;
+            --color-success: #22c55e;
+            --color-error: #ef4444;
+            --transition: 200ms ease-in-out;
+        }
+
+        [data-theme="dark"] {
+            --color-bg-primary: #0f172a;
+            --color-bg-secondary: #1e293b;
+            --color-surface: #1a1f35;
+            --color-text-primary: #f1f5f9;
+            --color-text-secondary: #cbd5e1;
+            --color-border: #334155;
+            --color-primary: #38bdf8;
+            --color-primary-hover: #0ea5e9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            transition: background-color var(--transition), color var(--transition);
+        }
+
+        /* Layout Principal */
+        .container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Header Global */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: var(--color-surface);
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: var(--color-bg-secondary);
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: background-color var(--transition);
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--color-border);
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            margin-top: 60px;
+            height: calc(100vh - 60px);
+            gap: 0;
+        }
+
+        /* Sidebar Esquerda - Config */
+        .config-panel {
+            width: 320px;
+            background-color: var(--color-bg-secondary);
+            border-right: 1px solid var(--color-border);
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .config-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .config-section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .service-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: var(--color-surface);
+            cursor: pointer;
+            transition: background-color var(--transition);
+        }
+
+        .checkbox-item:hover {
+            background-color: var(--color-bg-secondary);
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--color-primary);
+        }
+
+        .checkbox-item label {
+            cursor: pointer;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .model-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .model-input-group {
+            display: flex;
+            gap: 8px;
+        }
+
+        .model-input-group input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background-color: var(--color-surface);
+            color: var(--color-text-primary);
+            font-size: 13px;
+        }
+
+        .model-input-group button {
+            padding: 8px 12px;
+            background-color: var(--color-primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: background-color var(--transition);
+        }
+
+        .model-input-group button:hover {
+            background-color: var(--color-primary-hover);
+        }
+
+        .model-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .model-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background-color: var(--color-surface);
+            border-radius: 6px;
+            font-size: 13px;
+            border: 1px solid var(--color-border);
+        }
+
+        .model-item button {
+            background-color: var(--color-error);
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background-color var(--transition);
+        }
+
+        .model-item button:hover {
+            background-color: #dc2626;
+        }
+
+        /* Chat Area */
+        .chat-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--color-bg-primary);
+        }
+
+        /* Chat Input Section */
+        .chat-input-section {
+            padding: 20px;
+            background-color: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .input-field {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            font-size: 14px;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .upload-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .upload-btn {
+            padding: 10px 16px;
+            background-color: var(--color-bg-secondary);
+            border: 1px dashed var(--color-border);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            transition: all var(--transition);
+            white-space: nowrap;
+        }
+
+        .upload-btn:hover {
+            background-color: var(--color-border);
+            color: var(--color-text-primary);
+        }
+
+        .upload-btn input {
+            display: none;
+        }
+
+        .send-btn {
+            padding: 12px 20px;
+            background-color: var(--color-primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background-color var(--transition);
+            height: fit-content;
+            align-self: flex-end;
+        }
+
+        .send-btn:hover {
+            background-color: var(--color-primary-hover);
+        }
+
+        .send-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Chat Display Section */
+        .chat-display-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            padding: 15px 20px;
+            background-color: var(--color-surface);
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .model-selector-chat {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex: 1;
+            overflow-x: auto;
+        }
+
+        .model-selector-chat select {
+            padding: 8px 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .download-btn {
+            padding: 8px 12px;
+            background-color: var(--color-success);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: background-color var(--transition);
+        }
+
+        .download-btn:hover {
+            background-color: #16a34a;
+        }
+
+        .download-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Chat Messages */
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .message-block {
+            background-color: var(--color-surface);
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid var(--color-border);
+        }
+
+        .message-header {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 8px;
+        }
+
+        .message-content {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--color-text-primary);
+            word-break: break-word;
+            white-space: pre-wrap;
+        }
+
+        .message-meta {
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .empty-state {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: var(--color-text-secondary);
+            font-size: 14px;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 10px;
+            color: var(--color-text-secondary);
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--color-border);
+            border-top-color: var(--color-primary);
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .preview-section {
+            max-height: 150px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: var(--color-bg-secondary);
+            border-radius: 6px;
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+        .preview-image {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 4px;
+            margin-top: 8px;
+        }
+
+        .upload-preview {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--color-bg-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-border);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-title">🔬 LLM Analytics Testing</div>
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" title="Alternar tema">🌙</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Config Panel -->
+            <div class="config-panel">
+                <!-- Service Selection -->
+                <div class="config-section">
+                    <div class="config-section-title">🔌 Serviço</div>
+                    <div class="service-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="service" value="openrouter" checked>
+                            <label>OpenRouter</label>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="service" value="openai">
+                            <label>OpenAI</label>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="service" value="anthropic">
+                            <label>Anthropic</label>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Model Selection -->
+                <div class="config-section">
+                    <div class="config-section-title">🤖 Modelos</div>
+                    <div class="model-selector">
+                        <div class="model-input-group">
+                            <input type="text" id="modelNameInput" placeholder="Nome do modelo..." maxlength="50">
+                            <button id="addModelBtn">Adicionar</button>
+                        </div>
+                        <div class="model-list" id="modelList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="chat-area">
+                <!-- Chat Header with Model Selector -->
+                <div class="chat-header">
+                    <div style="font-size: 13px; color: var(--color-text-secondary);">Respostas:</div>
+                    <select id="responseModelSelect" style="flex: 0;">
+                        <option value="">Selecione um modelo</option>
+                    </select>
+                    <div class="download-buttons">
+                        <button class="download-btn" id="downloadSingleBtn" disabled>⬇️ Esta</button>
+                        <button class="download-btn" id="downloadAllBtn" disabled>⬇️ Todas</button>
+                    </div>
+                </div>
+
+                <!-- Chat Messages Display -->
+                <div class="chat-messages" id="chatMessages">
+                    <div class="empty-state">Aguardando teste...</div>
+                </div>
+
+                <!-- Chat Input Section -->
+                <div class="chat-input-section">
+                    <div class="input-row">
+                        <div style="flex: 1;">
+                            <textarea id="objectiveInput" class="input-field" placeholder="Digite o objetivo/prompt..."></textarea>
+                            <div class="upload-preview" id="uploadPreview"></div>
+                        </div>
+                        <div class="upload-buttons">
+                            <label class="upload-btn">
+                                📷 Imagem
+                                <input type="file" id="imageUpload" accept="image/*">
+                            </label>
+                            <label class="upload-btn">
+                                📋 JSON
+                                <input type="file" id="jsonUpload" accept=".json">
+                            </label>
+                            <button class="send-btn" id="sendBtn">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // State Management
+        const state = {
+            theme: localStorage.getItem('theme') || 'light',
+            selectedService: 'openrouter',
+            models: [],
+            responses: {},
+            currentImage: null,
+            currentJson: null,
+            isLoading: false
+        };
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+
+        function setTheme(theme) {
+            state.theme = theme;
+            htmlElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
+        }
+
+        setTheme(state.theme);
+        themeToggle.addEventListener('click', () => {
+            const newTheme = state.theme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        // Service Selection
+        document.querySelectorAll('input[name="service"]').forEach(checkbox => {
+            checkbox.addEventListener('change', (e) => {
+                if (e.target.checked) {
+                    document.querySelectorAll('input[name="service"]').forEach(c => {
+                        if (c !== e.target) c.checked = false;
+                    });
+                    state.selectedService = e.target.value;
+                }
+            });
+        });
+
+        // Model Management
+        const modelNameInput = document.getElementById('modelNameInput');
+        const addModelBtn = document.getElementById('addModelBtn');
+        const modelList = document.getElementById('modelList');
+
+        function renderModels() {
+            modelList.innerHTML = state.models.map((model, idx) => `
+                <div class="model-item">
+                    <span>${model}</span>
+                    <button onclick="removeModel(${idx})">Remover</button>
+                </div>
+            `).join('');
+            updateModelSelectors();
+        }
+
+        function addModel() {
+            const name = modelNameInput.value.trim();
+            if (!name) return;
+            if (!state.models.includes(name)) {
+                state.models.push(name);
+                renderModels();
+                modelNameInput.value = '';
+            }
+        }
+
+        function removeModel(idx) {
+            state.models.splice(idx, 1);
+            delete state.responses[state.models[idx]];
+            renderModels();
+        }
+
+        function updateModelSelectors() {
+            const select = document.getElementById('responseModelSelect');
+            const currentValue = select.value;
+            select.innerHTML = '<option value="">Selecione um modelo</option>' +
+                state.models.map(m => `<option value="${m}">${m}</option>`).join('');
+            select.value = currentValue;
+            document.getElementById('downloadSingleBtn').disabled = !select.value || !state.responses[select.value];
+        }
+
+        addModelBtn.addEventListener('click', addModel);
+        modelNameInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') addModel();
+        });
+
+        // File Uploads
+        document.getElementById('imageUpload').addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (evt) => {
+                    state.currentImage = evt.target.result;
+                    updatePreview();
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        document.getElementById('jsonUpload').addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (evt) => {
+                    try {
+                        state.currentJson = JSON.parse(evt.target.result);
+                        updatePreview();
+                    } catch {
+                        alert('JSON inválido');
+                        e.target.value = '';
+                    }
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        function updatePreview() {
+            const preview = document.getElementById('uploadPreview');
+            let html = '';
+            if (state.currentImage) {
+                html += `<div>📷 Imagem anexada</div><img src="${state.currentImage}" class="preview-image">`;
+            }
+            if (state.currentJson) {
+                html += `<div>📋 JSON: ${Object.keys(state.currentJson).length} chaves</div>`;
+            }
+            preview.innerHTML = html;
+        }
+
+        // Send Request
+        document.getElementById('sendBtn').addEventListener('click', async () => {
+            const objective = document.getElementById('objectiveInput').value.trim();
+            if (!objective || state.models.length === 0) {
+                alert('Preencha objetivo e selecione pelo menos um modelo');
+                return;
+            }
+
+            state.isLoading = true;
+            updateChatUI();
+
+            try {
+                const payload = {
+                    service: state.selectedService,
+                    models: state.models,
+                    objective,
+                    image: state.currentImage,
+                    json: state.currentJson
+                };
+
+                const response = await fetch('/api/test-llms', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }).catch(() => null);
+
+                if (response?.ok) {
+                    const data = await response.json();
+                    state.responses = data.responses || {};
+                    document.getElementById('downloadAllBtn').disabled = false;
+                } else {
+                    // Simular respostas para demo
+                    state.responses = state.models.reduce((acc, model) => {
+                        acc[model] = {
+                            content: `Resposta simulada de ${model}:\n\nEste é um teste do frontend. Para resultados reais, configure o backend em /api/test-llms`,
+                            timestamp: new Date().toISOString()
+                        };
+                        return acc;
+                    }, {});
+                    document.getElementById('downloadAllBtn').disabled = false;
+                }
+            } catch (err) {
+                console.error(err);
+            }
+
+            state.isLoading = false;
+            updateChatUI();
+        });
+
+        // Chat UI Update
+        function updateChatUI() {
+            const chatMessages = document.getElementById('chatMessages');
+
+            if (state.isLoading) {
+                chatMessages.innerHTML = '<div class="loading"><div class="spinner"></div>Processando...</div>';
+            } else {
+                const selectedModel = document.getElementById('responseModelSelect').value;
+                if (!selectedModel || !state.responses[selectedModel]) {
+                    chatMessages.innerHTML = '<div class="empty-state">Selecione um modelo para ver a resposta</div>';
+                } else {
+                    const resp = state.responses[selectedModel];
+                    chatMessages.innerHTML = `
+                        <div class="message-block">
+                            <div class="message-header">${selectedModel}</div>
+                            <div class="message-content">${escapeHtml(resp.content || '')}</div>
+                            <div class="message-meta">
+                                ${resp.latency ? `⏱️ ${resp.latency}ms` : ''} | 
+                                ${new Date(resp.timestamp).toLocaleTimeString('pt-BR')}
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+        }
+
+        document.getElementById('responseModelSelect').addEventListener('change', updateChatUI);
+
+        // Download Functions
+        document.getElementById('downloadSingleBtn').addEventListener('click', () => {
+            const model = document.getElementById('responseModelSelect').value;
+            if (state.responses[model]) {
+                downloadAsJson(`${model}-response`, state.responses[model]);
+            }
+        });
+
+        document.getElementById('downloadAllBtn').addEventListener('click', () => {
+            downloadAsJson('all-responses', state.responses);
+        });
+
+        function downloadAsJson(filename, data) {
+            const json = JSON.stringify(data, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${filename}-${Date.now()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Init
+        renderModels();
+    </script>
+</body>
+</html>
