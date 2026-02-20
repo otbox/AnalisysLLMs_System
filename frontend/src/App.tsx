@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 type ProfileKey = "GuideLLM" | "AnalisysComponentsLLM" | "CongnitiveWalktroughLLM";
@@ -83,10 +83,14 @@ function parseUiFromRaw(raw: any): UiComponent[] | null {
   }
 }
 
+type LLMAPIType = "OPENROUTER" | "GEMINI" | "NVIDIA"
+
 export default function LlmTesterPage() {
   const [sessionId, setSessionId] = useState("sess-001");
-  const [models, setModels] = useState<string[]>(["google/gemma-3-27b-it:free", "allenai/molmo-2-8b:free"]);
+  const [availableModels, setAvailableModels] = useState<string[]>([]); // Modelos disponíveis (EPI)
+  const [usingModels, setUsingModels] = useState<string[]>([]); // Modelos utilizando
   const [newModel, setNewModel] = useState("");
+  const [LLMAPI, setLLMAPI] = useState<LLMAPIType>("GEMINI")
   const [profiles, setProfiles] = useState<ProfileKey[]>(["AnalisysComponentsLLM"]);
   const [objective, setObjective] = useState("");
   const [stepIndex, setStepIndex] = useState(1);
@@ -95,9 +99,57 @@ export default function LlmTesterPage() {
   const [responses, setResponses] = useState<StepResult[]>([]);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [theme, setTheme] = useState<"light" | "dark">("dark");
-  const [loading, setLoading] = useState(false);
 
+  const [loading, setLoading] = useState(false);
   const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "";
+
+  useEffect(() => {
+    setUsingModels([]);
+    switch (LLMAPI) {
+      case "GEMINI":
+        setAvailableModels([]);
+        setUsingModels(["gemini-2.5-flash"]);
+        break;
+      case "NVIDIA":
+        setAvailableModels([]);
+        setUsingModels(["nemotriever"]);
+        break;
+      case "OPENROUTER":
+        readModelsAvaible();
+        break;
+    }
+  }, [LLMAPI])
+
+  async function readModelsAvaible() {
+    try {
+      const res = await fetch(`${API_BASE_URL}/openrouter/models`, {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      });
+
+      if (!res.ok) {
+        const msg = await res.text();
+        console.error(msg);
+        alert("Erro ao chamar backend");
+        setLoading(false);
+        return;
+      }
+
+      const data = await res.json();
+      setAvailableModels(data); // Carrega na lista de disponíveis
+      console.log(data)
+    } catch {
+      console.error("Erro ao carregar modelos");
+    }
+  }
+
+  // Função para mover modelo da lista disponível para utilizando
+  function moveToUsingModels(model: string) {
+    if (!availableModels.includes(model) || usingModels.includes(model)) return;
+
+    setAvailableModels(prev => prev.filter(m => m !== model));
+    setUsingModels(prev => [...prev, model]);
+  }
 
   async function fileToBase64(file: File): Promise<string> {
     return new Promise((resolve, reject) => {
@@ -132,19 +184,29 @@ export default function LlmTesterPage() {
       }
 
       const body = {
-        models,
+        models: usingModels, // Usa apenas os modelos da lista "Utilizando"
         objective,
         stepIndex,
         imageBase64,
         uiJson,
         profiles,
+        LLMAPI
       };
-
-      const res = await fetch(`${API_BASE_URL}/sessions/${sessionId}/steps`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
+      var res;
+      console.log("sent", body);
+      if (LLMAPI === "NVIDIA") {
+        res = await fetch(`${API_BASE_URL}/analisysNvidia`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+      }else {
+        res = await fetch(`${API_BASE_URL}/sessions/${sessionId}/steps`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+      }
 
       if (!res.ok) {
         const msg = await res.text();
@@ -162,7 +224,7 @@ export default function LlmTesterPage() {
       const enriched: StepResult[] = data.results.map(r => {
         const uiComponents = parseUiFromRaw(r.rawResponse);
         console.log(`Componentes parseados (${r.profile}):`, uiComponents);
-        
+
         return {
           ...r,
           ui: uiComponents,
@@ -209,8 +271,9 @@ export default function LlmTesterPage() {
     URL.revokeObjectURL(url);
   }
 
-  function handleRemoveModel(model: string) {
-    setModels(prev => prev.filter(m => m !== model));
+  function handleRemoveUsingModel(model: string) {
+    setUsingModels(prev => prev.filter(m => m !== model));
+    setAvailableModels(prev => [...prev, model]); // Volta para disponíveis
   }
 
   const current =
@@ -232,28 +295,28 @@ export default function LlmTesterPage() {
           <span className="component-type">{component.type}</span>
           <span className="component-id">{component.id}</span>
         </div>
-        
+
         {component.text && (
           <div className="component-field">
             <span className="field-label">Texto:</span>
             <span className="field-value">{component.text}</span>
           </div>
         )}
-        
+
         {component.region && (
           <div className="component-field">
             <span className="field-label">Região:</span>
             <span className="field-value">{component.region}</span>
           </div>
         )}
-        
+
         {component.state && (
           <div className="component-field">
             <span className="field-label">Estado:</span>
             <span className="field-value">{component.state}</span>
           </div>
         )}
-        
+
         {component.actions && component.actions.length > 0 && (
           <div className="component-field">
             <span className="field-label">Ações:</span>
@@ -264,7 +327,7 @@ export default function LlmTesterPage() {
             </div>
           </div>
         )}
-        
+
         {component.meta && Object.keys(component.meta).length > 0 && (
           <div className="component-field">
             <span className="field-label">Metadados:</span>
@@ -305,6 +368,20 @@ export default function LlmTesterPage() {
         <aside className="config-panel">
           <div className="panel-section">
             <h2 className="section-title">⚙️ Configuração</h2>
+            {/* Perfis */}
+            <div className="panel-section">
+              <h3 className="section-title">SERVIÇO</h3>
+              <select
+                value={LLMAPI}
+                onChange={e => setLLMAPI(e.target.value as LLMAPIType)}
+                className="input-field"
+              >
+          
+                <option value="GEMINI">GEMINI</option>
+                <option value="OPENROUTER">OPENROUTER</option>
+                <option value="NVIDIA">NVIDIA</option>
+              </select>
+            </div>
 
             <label className="input-group">
               <span className="input-label">Passo do Teste</span>
@@ -318,21 +395,48 @@ export default function LlmTesterPage() {
             </label>
           </div>
 
-          {/* Modelos */}
+          {/* NOVO: Modelos Disponíveis (EPI) - EM CIMA */}
+          {availableModels?.length > 0 ? (
+            <div className="panel-section">
+              <div className="section-header">
+                <h3 className="section-title">📦 Modelos Disponíveis (API)</h3>
+                <span className="badge">{availableModels.length}</span>
+              </div>
+
+              <ul className="models-list">
+                {availableModels.map(m => (
+                  <li key={m} className="model-item available">
+                    <span className="model-name">{m}</span>
+                    <button
+                      onClick={() => moveToUsingModels(m)}
+                      className="btn-add-small"
+                      title="Adicionar aos modelos utilizando"
+                    >
+                      +
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ): (<br></br>)} 
+
+
+          {/* Modelos Utilizando */}
           <div className="panel-section">
             <div className="section-header">
-              <h3 className="section-title">🎯 Modelos</h3>
-              <span className="badge">{models.length}</span>
+              <h3 className="section-title">🎯 Modelos Utilizando</h3>
+              <span className="badge">{usingModels.length}</span>
             </div>
 
             <ul className="models-list">
-              {models.map(m => (
-                <li key={m} className="model-item">
+              {usingModels.map(m => (
+                <li key={m} className="model-item using">
                   <span className="model-name">{m}</span>
                   <button
-                    onClick={() => handleRemoveModel(m)}
+                    onClick={() => handleRemoveUsingModel(m)}
                     className="btn-remove"
                     aria-label="Remover modelo"
+                    title="Remover dos utilizando (volta para disponíveis)"
                   >
                     ✕
                   </button>
@@ -340,17 +444,17 @@ export default function LlmTesterPage() {
               ))}
             </ul>
 
-            <div className="add-model-row">
+            {/* <div className="add-model-row">
               <input
                 value={newModel}
                 onChange={e => setNewModel(e.target.value)}
-                placeholder="Nome do modelo..."
+                placeholder="Novo modelo manual..."
                 className="input-field"
                 onKeyPress={e => {
                   if (e.key === "Enter") {
                     const trimmed = newModel.trim();
-                    if (trimmed && !models.includes(trimmed)) {
-                      setModels(prev => [...prev, trimmed]);
+                    if (trimmed && !availableModels.includes(trimmed) && !usingModels.includes(trimmed)) {
+                      setAvailableModels(prev => [...prev, trimmed]);
                       setNewModel("");
                     }
                   }
@@ -360,8 +464,8 @@ export default function LlmTesterPage() {
                 onClick={() => {
                   const trimmed = newModel.trim();
                   if (!trimmed) return;
-                  if (!models.includes(trimmed)) {
-                    setModels(prev => [...prev, trimmed]);
+                  if (!availableModels.includes(trimmed) && !usingModels.includes(trimmed)) {
+                    setAvailableModels(prev => [...prev, trimmed]);
                   }
                   setNewModel("");
                 }}
@@ -369,7 +473,7 @@ export default function LlmTesterPage() {
               >
                 +
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Perfis */}
@@ -434,7 +538,7 @@ export default function LlmTesterPage() {
           </div>
         </aside>
 
-        {/* Painel de Resultados */}
+        {/* Painel de Resultados - continua igual */}
         <section className="results-panel">
           <div className="results-header">
             <select
@@ -552,14 +656,14 @@ export default function LlmTesterPage() {
               onChange={e => setObjective(e.target.value)}
               placeholder="Descreva o objetivo do teste ou percurso do usuário..."
               onKeyPress={e => {
-                if (e.key === "Enter" && !loading && objective.trim() && models.length) {
+                if (e.key === "Enter" && !loading && objective.trim() && usingModels.length) {
                   handleSend();
                 }
               }}
             />
             <button
               onClick={handleSend}
-              disabled={loading || !objective.trim() || !models.length}
+              disabled={loading || !objective.trim() || !usingModels.length}
               className="btn-primary"
             >
               {loading ? "⏳ Enviando..." : "🚀 Enviar"}
