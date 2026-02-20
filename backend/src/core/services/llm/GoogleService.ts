@@ -17,6 +17,7 @@ export class GoogleLLMClient implements LLMClient {
   }
 
   async callStep(input: StepModelInput, signal?: AbortSignal): Promise<StepModelOutput> {
+    console.log("Calling google API")
     const model = this.client.getGenerativeModel({ 
       model: 'gemini-2.5-flash',
       generationConfig: {

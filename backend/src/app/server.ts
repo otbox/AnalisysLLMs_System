@@ -3,6 +3,14 @@ import Fastify from 'fastify';
 import { buildContainer } from '../config/di-container';
 import fastifyCors from "@fastify/cors";
 import 'dotenv/config'
+import { StepController } from '../core/controllers/LLMController';
+import { AnalisisLLM } from '../core/services/llm/AnalisisLLM';
+import { GoogleLLMClient } from '../core/services/llm/GoogleService';
+import { GuideStep } from '../core/services/llm/GuideStepLLM';
+import { OpenRouterLLMClient } from '../core/services/llm/OpenRouterService';
+import { MODELOS_DISPONIVEIS } from '../core/services/llm/LLMModesAvaible';
+import { NvidiaObjectDetectionService } from '../core/services/llm/nvidia/NvidiaService';
+import { NvidiaDetectionController } from '../core/controllers/NvidiaController';
 
 
 const app = Fastify({ logger: true });
@@ -14,8 +22,41 @@ app.register(fastifyCors, {
 const { stepController } = buildContainer();
 
 
+type LLMAPI = "OPENROUTER" | "GEMINI"
 
-app.post('/sessions/:sessionId/steps', stepController.createHandler);
+const llmClientMap: Record<LLMAPI, any> = {
+  OPENROUTER: new OpenRouterLLMClient(),
+  GEMINI: new GoogleLLMClient(),
+};
+
+app.get('/openrouter/models', (req,res) => {
+  res.send(MODELOS_DISPONIVEIS);
+})
+
+app.post('/sessions/:sessionId/steps', (req, res) => {
+  const { LLMAPI } = req.body as { LLMAPI: LLMAPI };
+
+  const llmClient = llmClientMap[LLMAPI];
+
+  const analysisService = new AnalisisLLM(llmClient);
+  const guideService = new GuideStep(llmClient);
+  const cognitiveService = new AnalisisLLM(llmClient);
+
+  const stepController = new StepController({ 
+    AnalisysComponentsLLM: analysisService,
+    GuideLLM: guideService,
+    CongnitiveWalktroughLLM: cognitiveService,
+  });
+
+  return stepController.createHandler(req,res)
+});
+
+app.post('/analisysNvidia', (req, res) => {
+  console.log("pong")
+  const nvidiaAnalisysController = new NvidiaDetectionController(new NvidiaObjectDetectionService); 
+
+  return nvidiaAnalisysController.detectHandler(req, res);
+})
 
 const PORT = Number(process.env.PORT) || 3000;
 

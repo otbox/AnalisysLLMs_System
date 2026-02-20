@@ -1,17 +1,19 @@
 // core/services/AnalysisLLMService.ts
 import type { ProfileKey, Profiles } from './LLMsProfiles';
 import type { ILLMService, LLMClient, StepModelInput, StepModelOutput } from './ILLMService';
+import { ModelsAvaibleKey } from './LLMModesAvaible';
+// import th from 'zod/v4/locales/th.js';
 
 export class AnalisisLLM implements ILLMService {
   public readonly profile: ProfileKey = 'AnalisysComponentsLLM'; 
-  public readonly model: string;
+  public readonly model: ModelsAvaibleKey;
   private history : string[] = []
 
   constructor(
     private readonly client: LLMClient,
-    model?: string,
+    model?: ModelsAvaibleKey,
   ) {
-    this.model = 'qwen/qwen-2.5-vl-7b-instruct:free';
+    this.model = model ?? 'google/gemma-3-12b-it:free';
   }
 
     addToHistory(entry: string) {
@@ -25,7 +27,7 @@ export class AnalisisLLM implements ILLMService {
 
   async callModel(params: StepModelInput): Promise<StepModelOutput> {
     const input: StepModelInput = {
-      model: this.model,
+      model: params.model,
       profile: this.profile,
       objective: params.objective,
       stepIndex: params.stepIndex,
@@ -33,7 +35,6 @@ export class AnalisisLLM implements ILLMService {
       uiJson: params.uiJson,
       imageBase64: params.imageBase64,
     };
-
     const output = await this.client.callStep(input)
 
     this.addToHistory(

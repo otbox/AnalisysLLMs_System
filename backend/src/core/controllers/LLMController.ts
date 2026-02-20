@@ -40,12 +40,12 @@ export class StepController {
     const results = await Promise.all(
       profilesToRun.flatMap((profileKey) =>
         models.map(async (model) => {
-            console.log(model)
+            console.log("aquu",model)
           const service = this.services[profileKey];
           if (!service) {
             throw new Error(`LLMService not found for profile: ${profileKey}`);
           }
-
+          
           const output = await service.callModel({
             objective,
             stepIndex,

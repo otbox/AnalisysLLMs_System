@@ -17,8 +17,9 @@ export class OpenRouterLLMClient implements LLMClient {
   constructor() {
     this.client = new OpenRouter(APIKEY!);
   }
-
+  
   async callStep(input: StepModelInput, signal?: AbortSignal): Promise<any> {
+    console.log("Calling OpenRouter Service")
     const messages = buildMessages(input);
 
     const result = await this.client.chat(
@@ -45,7 +46,7 @@ export class OpenRouterLLMClient implements LLMClient {
           },
         },
         temperature: 0.2,
-        max_tokens: 15000,
+        max_tokens: 20000,
       },
       signal,
     );
@@ -88,7 +89,7 @@ function buildMessages(input: StepModelInput): Message[] {
 
   // aqui dá para escolher o profile dinamicamente
   const systemPrompt = Profiles[input.profile] ?? Profiles['AnalisysComponentsLLM'];
-
+  // console.log(systemPrompt);
   return [
     {
       role: 'system',
