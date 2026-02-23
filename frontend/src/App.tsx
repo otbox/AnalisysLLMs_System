@@ -5,6 +5,31 @@ import "./App.css";
 
 type ProfileKey = "GuideLLM" | "AnalisysComponentsLLM" | "CongnitiveWalktroughLLM";
 
+type NvidiaBox = {
+  x_min: number;
+  y_min: number;
+  x_max: number;
+  y_max: number;
+};
+
+type NvidiaCategory = "table" | "title" | "paragraph" | "infographic" | "header_footer";
+
+type NvidiaDetections = {
+  [K in NvidiaCategory]?: NvidiaBox[];
+};
+
+type NvidiaApiResult = {
+  sessionId: string;
+  detections: {
+    data: Array<{
+      index: number;
+      bounding_boxes: Record<string, NvidiaBox[]>;
+    }>;
+    usage: unknown;
+  };
+  rawResponse: unknown;
+};
+
 type UiComponent = {
   id: string;
   type: string;
@@ -36,19 +61,18 @@ type ApiResult = {
   results: StepResult[];
 };
 
-// Função melhorada para extrair e fazer parse do JSON da UI
+
 function parseUiFromRaw(raw: any): UiComponent[] | null {
   try {
-    // Extrair o texto da resposta (suporta múltiplos formatos)
+    
     let textContent: string | null = null;
 
-    // Formato Parasail/Molmo/OpenAI: choices[0].message.content
     const msgContent = raw?.choices?.[0]?.message?.content;
     if (typeof msgContent === "string") {
       textContent = msgContent;
     }
 
-    // Formato Gemini: candidates[0].content.parts[0].text
+
     if (!textContent) {
       const partText = raw?.candidates?.[0]?.content?.parts?.[0]?.text;
       if (typeof partText === "string") {
@@ -58,20 +82,20 @@ function parseUiFromRaw(raw: any): UiComponent[] | null {
 
     if (!textContent) return null;
 
-    // Fazer parse do JSON
+
     const parsed = JSON.parse(textContent);
 
-    // Se é um array direto de componentes
+
     if (Array.isArray(parsed)) {
       return parsed;
     }
 
-    // Se tem a propriedade components
+
     if (parsed.components && Array.isArray(parsed.components)) {
       return parsed.components;
     }
 
-    // Se é um objeto único, transformar em array
+
     if (typeof parsed === "object" && parsed.id) {
       return [parsed];
     }
@@ -87,8 +111,8 @@ type LLMAPIType = "OPENROUTER" | "GEMINI" | "NVIDIA"
 
 export default function LlmTesterPage() {
   const [sessionId, setSessionId] = useState("sess-001");
-  const [availableModels, setAvailableModels] = useState<string[]>([]); // Modelos disponíveis (EPI)
-  const [usingModels, setUsingModels] = useState<string[]>([]); // Modelos utilizando
+  const [availableModels, setAvailableModels] = useState<string[]>([]); 
+  const [usingModels, setUsingModels] = useState<string[]>([]); 
   const [newModel, setNewModel] = useState("");
   const [LLMAPI, setLLMAPI] = useState<LLMAPIType>("GEMINI")
   const [profiles, setProfiles] = useState<ProfileKey[]>(["AnalisysComponentsLLM"]);
@@ -136,14 +160,14 @@ export default function LlmTesterPage() {
       }
 
       const data = await res.json();
-      setAvailableModels(data); // Carrega na lista de disponíveis
+      setAvailableModels(data);
       console.log(data)
     } catch {
       console.error("Erro ao carregar modelos");
     }
   }
 
-  // Função para mover modelo da lista disponível para utilizando
+
   function moveToUsingModels(model: string) {
     if (!availableModels.includes(model) || usingModels.includes(model)) return;
 
@@ -167,8 +191,7 @@ export default function LlmTesterPage() {
       let imageBase64: string | undefined;
       if (imageFile) {
         const dataUrl = await fileToBase64(imageFile);
-        const [, base64] = dataUrl.split(",");
-        imageBase64 = base64 ?? dataUrl;
+        imageBase64 = dataUrl;
       }
 
       let uiJson: string | undefined;
@@ -184,23 +207,23 @@ export default function LlmTesterPage() {
       }
 
       const body = {
-        models: usingModels, // Usa apenas os modelos da lista "Utilizando"
+        models: usingModels,
         objective,
         stepIndex,
         imageBase64,
         uiJson,
         profiles,
-        LLMAPI
+        LLMAPI,
       };
-      var res;
-      console.log("sent", body);
+
+      let res: Response;
       if (LLMAPI === "NVIDIA") {
         res = await fetch(`${API_BASE_URL}/analisysNvidia`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
+          body: JSON.stringify({ imageBase64 }), 
         });
-      }else {
+      } else {
         res = await fetch(`${API_BASE_URL}/sessions/${sessionId}/steps`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -216,24 +239,40 @@ export default function LlmTesterPage() {
         return;
       }
 
-      const data: ApiResult = await res.json();
+      if (LLMAPI === "NVIDIA") {
+        const data: NvidiaApiResult = await res.json();
+        console.log("Resposta NVIDIA:", data);
 
-      console.log("Resposta da API:", data);
+        const first = data.detections.data[0];
+        const boxes = first?.bounding_boxes ?? {};
 
-      // Processar cada resultado e extrair os componentes da UI
-      const enriched: StepResult[] = data.results.map(r => {
-        const uiComponents = parseUiFromRaw(r.rawResponse);
-        console.log(`Componentes parseados (${r.profile}):`, uiComponents);
-
-        return {
-          ...r,
-          ui: uiComponents,
+        const syntheticResult: StepResult = {
+          profile: "AnalisysComponentsLLM",
+          model: "nvidia/nemoretriever-page-elements-v3",
+          action: "Detecção de elementos de página concluída.",
+          rationale: JSON.stringify(boxes, null, 2),
+          confidence: 100,
+          ui: null,
+          rawResponse: data,
         };
-      });
 
-      console.log("Resultados enriquecidos:", enriched);
-      setResponses(enriched);
-      setSelectedIndex(enriched.length > 0 ? 0 : null);
+        setResponses([syntheticResult]);
+        setSelectedIndex(0);
+      } else {
+        const data: ApiResult = await res.json();
+        console.log("Resposta da API:", data);
+
+        const enriched: StepResult[] = data.results.map((r) => {
+          const uiComponents = parseUiFromRaw(r.rawResponse);
+          return {
+            ...r,
+            ui: uiComponents,
+          };
+        });
+
+        setResponses(enriched);
+        setSelectedIndex(enriched.length > 0 ? 0 : null);
+      }
 
       setLoading(false);
     } catch (err) {
@@ -242,6 +281,7 @@ export default function LlmTesterPage() {
       setLoading(false);
     }
   }
+
 
   function handleDownloadCurrent() {
     if (selectedIndex == null) return;
@@ -273,7 +313,7 @@ export default function LlmTesterPage() {
 
   function handleRemoveUsingModel(model: string) {
     setUsingModels(prev => prev.filter(m => m !== model));
-    setAvailableModels(prev => [...prev, model]); // Volta para disponíveis
+    setAvailableModels(prev => [...prev, model]); 
   }
 
   const current =
@@ -287,7 +327,6 @@ export default function LlmTesterPage() {
     CongnitiveWalktroughLLM: "🧠 Walkthrough Cognitivo",
   };
 
-  // Função helper para renderizar um componente individual
   function renderComponent(component: UiComponent, index: number) {
     return (
       <div key={component.id || index} className="component-card">
@@ -376,7 +415,7 @@ export default function LlmTesterPage() {
                 onChange={e => setLLMAPI(e.target.value as LLMAPIType)}
                 className="input-field"
               >
-          
+
                 <option value="GEMINI">GEMINI</option>
                 <option value="OPENROUTER">OPENROUTER</option>
                 <option value="NVIDIA">NVIDIA</option>
@@ -418,7 +457,7 @@ export default function LlmTesterPage() {
                 ))}
               </ul>
             </div>
-          ): (<br></br>)} 
+          ) : (<br></br>)}
 
 
           {/* Modelos Utilizando */}
