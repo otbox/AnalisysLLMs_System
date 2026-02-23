@@ -1,0 +1,659 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 49,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"top_promo_text\",\n    \"type\": \"text\",\n    \"text\": \"especial beleza • seu cuidado começa aqui • tudo em até 12x no cartão* • queeero >\",\n    \"region\": \"top-bar\",\n    \"state\": \"active\"\n  },\n  {\n    \"id\": \"logo_americanas\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search_input\",\n    \"type\": \"input\",\n    \"text\": \"busque aqui seu produto\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onFocus\"]\n  },\n  {\n    \"id\": \"search_button\",\n    \"type\": \"icon_button\",\n    \"icon\": \"search\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"user_account_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"olá, stoco8718... minha conta\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"store_icon\",\n    \"type\": \"icon_button\",\n    \"icon\": \"store\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"favorites_icon\",\n    \"type\": \"icon_button\",\n    \"icon\": \"heart\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"cart_icon\",\n    \"type\": \"icon_button\",\n    \"icon\": \"shopping_cart\",\n    \"meta\": {\n      \"item_count\": 1\n    },\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"informe_cep_link\",\n    \"type\": \"link\",\n    \"text\": \"informe seu CEP\",\n    \"icon\": \"location_pin\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_baixe_o_app\",\n    \"type\": \"link\",\n    \"text\": \"baixe o app\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_faca_seu_cartao\",\n    \"type\": \"link\",\n    \"text\": \"faça seu cartão\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_mais_vendidos\",\n    \"type\": \"link\",\n    \"text\": \"mais vendidos\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_nossas_lojas\",\n    \"type\": \"link\",\n    \"text\": \"nossas lojas\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_entrega_rapida\",\n    \"type\": \"link\",\n    \"text\": \"entrega rápida\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_leve_pague\",\n    \"type\": \"link\",\n    \"text\": \"leve+ pague-\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_ofertas_da_tv\",\n    \"type\": \"link\",\n    \"text\": \"ofertas da TV\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_outlet\",\n    \"type\": \"link\",\n    \"text\": \"outlet\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_oferta_do_dia\",\n    \"type\": \"link\",\n    \"text\": \"oferta do dia\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"todos_os_departamentos_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"todos os departamentos\",\n    \"icon\": \"menu\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_mercado\",\n    \"type\": \"link\",\n    \"text\": \"mercado\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_brinquedos\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onHover\", \"onClick\"]\n  },\n  {\n    \"id\": \"nav_celulares\",\n    \"type\": \"link\",\n    \"text\": \"celulares\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_eletrodomesticos\",\n    \"type\": \"link\",\n    \"text\": \"eletrodomésticos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_informatica\",\n    \"type\": \"link\",\n    \"text\": \"informática\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_audio_e_video\",\n    \"type\": \"link\",\n    \"text\": \"áudio e vídeo\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_eletroportateis\",\n    \"type\": \"link\",\n    \"text\": \"eletroportáteis\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_moveis\",\n    \"type\": \"link\",\n    \"text\": \"móveis\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_especial_beleza\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brinquedos_dropdown_menu\",\n    \"type\": \"menu\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"parent_element_id\": \"nav_brinquedos\"\n    },\n    \"children\": [\n      {\n        \"id\": \"link_ver_tudo_em_brinquedos\",\n        \"type\": \"link\",\n        \"text\": \"ver tudo em brinquedos\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_bicicleta_infantil\",\n        \"type\": \"link\",\n        \"text\": \"bicicleta infantil\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_quebra_cabeca\",\n        \"type\": \"link\",\n        \"text\": \"quebra cabeça\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_boneca\",\n        \"type\": \"link\",\n        \"text\": \"boneca\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_carrinho_de_controle_remoto\",\n        \"type\": \"link\",\n        \"text\": \"carrinho de controle remoto\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_bebe_reborn\",\n        \"type\": \"link\",\n        \"text\": \"bebê reborn\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_cozinha_infantil\",\n        \"type\": \"link\",\n        \"text\": \"cozinha infantil\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_consoles_e_games\",\n        \"type\": \"link\",\n        \"text\": \"consoles e games\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_jogos_de_tabuleiro\",\n        \"type\": \"link\",\n        \"text\": \"jogos de tabuleiro\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_dinossauros\",\n        \"type\": \"link\",\n        \"text\": \"dinossauros\",\n        \"state\": \"selected\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_baby_alive\",\n        \"type\": \"link\",\n        \"text\": \"baby alive\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_hoverboard\",\n        \"type\": \"link\",\n        \"text\": \"hoverboard\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_barbie\",\n        \"type\": \"link\",\n        \"text\": \"barbie\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_patinete_infantil\",\n        \"type\": \"link\",\n        \"text\": \"patinete infantil\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_hot_wheels\",\n        \"type\": \"link\",\n        \"text\": \"hot wheels\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_patins_infantil\",\n        \"type\": \"link\",\n        \"text\": \"patins infantil\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link_lego\",\n        \"type\": \"link\",\n        \"text\": \"lego\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"banner_app_promo_top\",\n    \"type\": \"banner\",\n    \"text\": \"só no app você aproveita ofertas exclusivas\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button_baixe_o_app_top\",\n    \"type\": \"button\",\n    \"text\": \"baixe o app\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main_carousel_banner\",\n    \"type\": \"carousel_banner\",\n    \"text\": \"a semana mais o que você só encontra aqui\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image_description\": \"Imagem de fundo com tons de vermelho e branco, texto promocional.\"\n    }\n  },\n  {\n    \"id\": \"button_aproveite_main_banner\",\n    \"type\": \"button\",\n    \"text\": \"aproveite\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"app_promo_card\",\n    \"type\": \"card\",\n    \"text\": \"vem pro app\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"description\": \"Aponte a câmera do seu celular pra escanear o quadradinho e baixe agora!\",\n      \"qr_code\": true\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"carousel_pagination_dots\",\n    \"type\": \"pagination\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"number_of_dots\": 8,\n      \"active_dot_index\": 0\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"disclaimer_50_percent_off\",\n    \"type\": \"text\",\n    \"text\": \"até 50% de desconto em itens selecionados.\",\n    \"icon\": \"info\",\n    \"region\": \"main-content\",\n    \"state\": \"info\"\n  },\n  {\n    \"id\": \"card_especial_beleza\",\n    \"type\": \"card\",\n    \"text\": \"especial beleza\",\n    \"icon\": \"sparkle\",\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_baixe_o_app\",\n    \"type\": \"card\",\n    \"text\": \"baixe o app!\",\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_entrega_rapida\",\n    \"type\": \"card\",\n    \"text\": \"entrega rápida\",\n    \"meta\": {\n      \"subtext\": \"consulte seu cep\"\n    },\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_leve_pague\",\n    \"type\": \"card\",\n    \"text\": \"leve + pague -\",\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_oferta_do_dia\",\n    \"type\": \"card\",\n    \"text\": \"oferta do dia\",\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_ofertas_da_tv\",\n    \"type\": \"card\",\n    \"text\": \"ofertas da TV\",\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_oba_cupom\",\n    \"type\": \"card\",\n    \"text\": \"oba, cupom!\",\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_frete_gratis\",\n    \"type\": \"card\",\n    \"text\": \"frete grátis\",\n    \"meta\": {\n      \"subtext\": \"consulte seu cep\"\n    },\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_gift_card\",\n    \"type\": \"card\",\n    \"text\": \"gift card\",\n    \"meta\": {\n      \"subtext\": \"voltou!\"\n    },\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_outlet\",\n    \"type\": \"card\",\n    \"text\": \"outlet\",\n    \"meta\": {\n      \"subtext\": \"até 75% de desconto\"\n    },\n    \"region\": \"feature-cards\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"banner_oba_cupom_10_percent\",\n    \"type\": \"banner\",\n    \"text\": \"oba, cupom! 10% de desconto\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"coupon_code\": \"TOMA10\",\n      \"app_exclusive\": true,\n      \"additional_text\": \"em itens selecionados\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_confira_as_regras\",\n    \"type\": \"link\",\n    \"text\": \"confira as regras.\",\n    \"icon\": \"info\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility_icon\",\n    \"type\": \"icon_button\",\n    \"icon\": \"accessibility\",\n    \"region\": \"bottom-right\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 3891,
+      "totalTokenCount": 5153,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 607
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "oLacabvpHrvrz7IPlqXjgQg"
+  },
+  "ui": [
+    {
+      "id": "top_promo_text",
+      "type": "text",
+      "text": "especial beleza • seu cuidado começa aqui • tudo em até 12x no cartão* • queeero >",
+      "region": "top-bar",
+      "state": "active"
+    },
+    {
+      "id": "logo_americanas",
+      "type": "image",
+      "text": "americanas",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search_input",
+      "type": "input",
+      "text": "busque aqui seu produto",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onFocus"
+      ]
+    },
+    {
+      "id": "search_button",
+      "type": "icon_button",
+      "icon": "search",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "user_account_dropdown",
+      "type": "dropdown",
+      "text": "olá, stoco8718... minha conta",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "store_icon",
+      "type": "icon_button",
+      "icon": "store",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "favorites_icon",
+      "type": "icon_button",
+      "icon": "heart",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "cart_icon",
+      "type": "icon_button",
+      "icon": "shopping_cart",
+      "meta": {
+        "item_count": 1
+      },
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "informe_cep_link",
+      "type": "link",
+      "text": "informe seu CEP",
+      "icon": "location_pin",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_baixe_o_app",
+      "type": "link",
+      "text": "baixe o app",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_faca_seu_cartao",
+      "type": "link",
+      "text": "faça seu cartão",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_mais_vendidos",
+      "type": "link",
+      "text": "mais vendidos",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_nossas_lojas",
+      "type": "link",
+      "text": "nossas lojas",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_entrega_rapida",
+      "type": "link",
+      "text": "entrega rápida",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_leve_pague",
+      "type": "link",
+      "text": "leve+ pague-",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_ofertas_da_tv",
+      "type": "link",
+      "text": "ofertas da TV",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_outlet",
+      "type": "link",
+      "text": "outlet",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_oferta_do_dia",
+      "type": "link",
+      "text": "oferta do dia",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "todos_os_departamentos_dropdown",
+      "type": "dropdown",
+      "text": "todos os departamentos",
+      "icon": "menu",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_mercado",
+      "type": "link",
+      "text": "mercado",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_brinquedos",
+      "type": "link",
+      "text": "brinquedos",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onHover",
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_celulares",
+      "type": "link",
+      "text": "celulares",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_eletrodomesticos",
+      "type": "link",
+      "text": "eletrodomésticos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_informatica",
+      "type": "link",
+      "text": "informática",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_audio_e_video",
+      "type": "link",
+      "text": "áudio e vídeo",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_eletroportateis",
+      "type": "link",
+      "text": "eletroportáteis",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_moveis",
+      "type": "link",
+      "text": "móveis",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_especial_beleza",
+      "type": "link",
+      "text": "especial beleza",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brinquedos_dropdown_menu",
+      "type": "menu",
+      "region": "main-content",
+      "meta": {
+        "parent_element_id": "nav_brinquedos"
+      },
+      "children": [
+        {
+          "id": "link_ver_tudo_em_brinquedos",
+          "type": "link",
+          "text": "ver tudo em brinquedos",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_bicicleta_infantil",
+          "type": "link",
+          "text": "bicicleta infantil",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_quebra_cabeca",
+          "type": "link",
+          "text": "quebra cabeça",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_boneca",
+          "type": "link",
+          "text": "boneca",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_carrinho_de_controle_remoto",
+          "type": "link",
+          "text": "carrinho de controle remoto",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_bebe_reborn",
+          "type": "link",
+          "text": "bebê reborn",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_cozinha_infantil",
+          "type": "link",
+          "text": "cozinha infantil",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_consoles_e_games",
+          "type": "link",
+          "text": "consoles e games",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_jogos_de_tabuleiro",
+          "type": "link",
+          "text": "jogos de tabuleiro",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_dinossauros",
+          "type": "link",
+          "text": "dinossauros",
+          "state": "selected",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_baby_alive",
+          "type": "link",
+          "text": "baby alive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_hoverboard",
+          "type": "link",
+          "text": "hoverboard",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_barbie",
+          "type": "link",
+          "text": "barbie",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_patinete_infantil",
+          "type": "link",
+          "text": "patinete infantil",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_hot_wheels",
+          "type": "link",
+          "text": "hot wheels",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_patins_infantil",
+          "type": "link",
+          "text": "patins infantil",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link_lego",
+          "type": "link",
+          "text": "lego",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banner_app_promo_top",
+      "type": "banner",
+      "text": "só no app você aproveita ofertas exclusivas",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button_baixe_o_app_top",
+      "type": "button",
+      "text": "baixe o app",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main_carousel_banner",
+      "type": "carousel_banner",
+      "text": "a semana mais o que você só encontra aqui",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image_description": "Imagem de fundo com tons de vermelho e branco, texto promocional."
+      }
+    },
+    {
+      "id": "button_aproveite_main_banner",
+      "type": "button",
+      "text": "aproveite",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "app_promo_card",
+      "type": "card",
+      "text": "vem pro app",
+      "region": "main-content",
+      "meta": {
+        "description": "Aponte a câmera do seu celular pra escanear o quadradinho e baixe agora!",
+        "qr_code": true
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "carousel_pagination_dots",
+      "type": "pagination",
+      "state": "active",
+      "region": "main-content",
+      "meta": {
+        "number_of_dots": 8,
+        "active_dot_index": 0
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "disclaimer_50_percent_off",
+      "type": "text",
+      "text": "até 50% de desconto em itens selecionados.",
+      "icon": "info",
+      "region": "main-content",
+      "state": "info"
+    },
+    {
+      "id": "card_especial_beleza",
+      "type": "card",
+      "text": "especial beleza",
+      "icon": "sparkle",
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_baixe_o_app",
+      "type": "card",
+      "text": "baixe o app!",
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_entrega_rapida",
+      "type": "card",
+      "text": "entrega rápida",
+      "meta": {
+        "subtext": "consulte seu cep"
+      },
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_leve_pague",
+      "type": "card",
+      "text": "leve + pague -",
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_oferta_do_dia",
+      "type": "card",
+      "text": "oferta do dia",
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_ofertas_da_tv",
+      "type": "card",
+      "text": "ofertas da TV",
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_oba_cupom",
+      "type": "card",
+      "text": "oba, cupom!",
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_frete_gratis",
+      "type": "card",
+      "text": "frete grátis",
+      "meta": {
+        "subtext": "consulte seu cep"
+      },
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_gift_card",
+      "type": "card",
+      "text": "gift card",
+      "meta": {
+        "subtext": "voltou!"
+      },
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_outlet",
+      "type": "card",
+      "text": "outlet",
+      "meta": {
+        "subtext": "até 75% de desconto"
+      },
+      "region": "feature-cards",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "banner_oba_cupom_10_percent",
+      "type": "banner",
+      "text": "oba, cupom! 10% de desconto",
+      "region": "main-content",
+      "meta": {
+        "coupon_code": "TOMA10",
+        "app_exclusive": true,
+        "additional_text": "em itens selecionados"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_confira_as_regras",
+      "type": "link",
+      "text": "confira as regras.",
+      "icon": "info",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility_icon",
+      "type": "icon_button",
+      "icon": "accessibility",
+      "region": "bottom-right",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

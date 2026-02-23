@@ -1,0 +1,570 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 22,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"banner-frete-gratis\",\n    \"type\": \"banner\",\n    \"text\": \"frete grátis Brasil\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"discount_type\": \"shipping\"\n    },\n    \"components\": [\n      {\n        \"id\": \"button-frete-gratis-quero\",\n        \"type\": \"button\",\n        \"text\": \"queeero\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-frete-gratis-regras\",\n        \"type\": \"link\",\n        \"text\": \"confira as regras.\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"banner-17-desconto\",\n    \"type\": \"banner\",\n    \"text\": \"17% de desconto\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"discount_percentage\": \"17%\"\n    },\n    \"components\": [\n      {\n        \"id\": \"button-17-desconto-quero\",\n        \"type\": \"button\",\n        \"text\": \"queeero\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-17-desconto-regras\",\n        \"type\": \"link\",\n        \"text\": \"confira as regras.\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"banner-15-desconto\",\n    \"type\": \"banner\",\n    \"text\": \"15% de desconto\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"discount_percentage\": \"15%\"\n    },\n    \"components\": [\n      {\n        \"id\": \"button-15-desconto-quero\",\n        \"type\": \"button\",\n        \"text\": \"queeero\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-15-desconto-regras\",\n        \"type\": \"link\",\n        \"text\": \"confira as regras.\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"banner-10-desconto-pix\",\n    \"type\": \"banner\",\n    \"text\": \"10% de desconto no Pix\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"discount_percentage\": \"10%\",\n      \"payment_method\": \"Pix\"\n    },\n    \"components\": [\n      {\n        \"id\": \"button-10-desconto-pix-quero\",\n        \"type\": \"button\",\n        \"text\": \"queeero\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-10-desconto-pix-regras\",\n        \"type\": \"link\",\n        \"text\": \"confira as regras.\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"label-navegue-por-categoria\",\n    \"type\": \"label\",\n    \"text\": \"navegue por categoria :)\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"category-brinquedos\",\n    \"type\": \"category-item\",\n    \"text\": \"brinquedos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"bear\"\n    }\n  },\n  {\n    \"id\": \"category-telefonia\",\n    \"type\": \"category-item\",\n    \"text\": \"telefonia\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"phone\"\n    }\n  },\n  {\n    \"id\": \"category-chocolate\",\n    \"type\": \"category-item\",\n    \"text\": \"chocolate\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"chocolate\"\n    }\n  },\n  {\n    \"id\": \"category-biscoitos\",\n    \"type\": \"category-item\",\n    \"text\": \"biscoitos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"cookie\"\n    }\n  },\n  {\n    \"id\": \"category-eletroportateis\",\n    \"type\": \"category-item\",\n    \"text\": \"eletroportáteis\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"air-fryer\"\n    }\n  },\n  {\n    \"id\": \"category-fraldas\",\n    \"type\": \"category-item\",\n    \"text\": \"fraldas\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"diaper\"\n    }\n  },\n  {\n    \"id\": \"category-beleza-perfumaria\",\n    \"type\": \"category-item\",\n    \"text\": \"beleza e perfumaria\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"bottles\"\n    }\n  },\n  {\n    \"id\": \"category-eletrodomesticos\",\n    \"type\": \"category-item\",\n    \"text\": \"eletrodomésticos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"refrigerator\"\n    }\n  },\n  {\n    \"id\": \"label-os-mais-vendidos\",\n    \"type\": \"label\",\n    \"text\": \"os mais vendidos\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"product-card-motorola-g15\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_name\": \"Smartphone Motorola Moto G15 256GB 12GB RAM Boo...\",\n      \"image_url\": \"image_of_motorola_g15\",\n      \"rating\": 5.0,\n      \"old_price\": \"R$ 1.299,00\",\n      \"discount_percentage\": \"38%\",\n      \"price_pix\": \"R$ 809,10\",\n      \"installment_info\": \"em 8x de R$ 112,37 sem juros no cartão de crédito\"\n    },\n    \"components\": [\n      {\n        \"id\": \"icon-add-to-cart-motorola-g15\",\n        \"type\": \"icon-button\",\n        \"text\": \"Adicionar ao carrinho\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"icon\": \"shopping-cart-plus\"\n        }\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-samsung-a06\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_name\": \"Smartphone Samsung Galaxy A06 128GB 4GB RAM RA...\",\n      \"image_url\": \"image_of_samsung_a06\",\n      \"rating\": 4.8,\n      \"old_price\": \"R$ 749,00\",\n      \"discount_percentage\": \"16%\",\n      \"price_pix\": \"R$ 629,10\",\n      \"installment_info\": \"em 8x de R$ 87,37 sem juros no cartão de crédito\"\n    },\n    \"components\": [\n      {\n        \"id\": \"button-decrement-samsung-a06\",\n        \"type\": \"button\",\n        \"text\": \"-\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"input-quantity-samsung-a06\",\n        \"type\": \"input\",\n        \"text\": \"1\",\n        \"state\": \"active\",\n        \"meta\": {\n          \"input_type\": \"number\",\n          \"current_value\": 1\n        }\n      },\n      {\n        \"id\": \"button-increment-samsung-a06\",\n        \"type\": \"button\",\n        \"text\": \"+\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"icon-remove-from-cart-samsung-a06\",\n        \"type\": \"icon-button\",\n        \"text\": \"Remover do carrinho\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"icon\": \"trash-can\"\n        }\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-samsung-a16\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_name\": \"Smartphone Samsung Galaxy A16 128GB 4GB RA...\",\n      \"image_url\": \"image_of_samsung_a16\",\n      \"rating\": 5.0,\n      \"old_price\": \"R$ 1.299,00\",\n      \"discount_percentage\": \"31%\",\n      \"price_pix\": \"R$ 899,00\",\n      \"installment_info\": \"em 8x de R$ 112,37 sem juros no cartão de crédito\"\n    },\n    \"components\": [\n      {\n        \"id\": \"icon-add-to-cart-samsung-a16\",\n        \"type\": \"icon-button\",\n        \"text\": \"Adicionar ao carrinho\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"icon\": \"shopping-cart-plus\"\n        }\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-motorola-g05\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_name\": \"Smartphone Motorola Moto G05 128GB 12GB RAM Boo...\",\n      \"image_url\": \"image_of_motorola_g05\",\n      \"rating\": 5.0,\n      \"old_price\": \"R$ 1.099,00\",\n      \"discount_percentage\": \"43%\",\n      \"price_pix\": \"R$ 629,10\",\n      \"installment_info\": \"em 8x de R$ 87,37 sem juros no cartão de crédito\"\n    },\n    \"components\": [\n      {\n        \"id\": \"icon-add-to-cart-motorola-g05\",\n        \"type\": \"icon-button\",\n        \"text\": \"Adicionar ao carrinho\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"icon\": \"shopping-cart-plus\"\n        }\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-samsung-a25\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_name\": \"Smartphone Samsung Galaxy A25 5G 256GB 8G...\",\n      \"image_url\": \"image_of_samsung_a25\",\n      \"rating\": 5.0,\n      \"old_price\": \"R$ 1.749,00\",\n      \"discount_percentage\": \"25%\",\n      \"price_pix\": \"R$ 1.304,10\",\n      \"installment_info\": \"em 8x de R$ 181,12 sem juros no cartão de crédito\"\n    },\n    \"components\": [\n      {\n        \"id\": \"icon-add-to-cart-samsung-a25\",\n        \"type\": \"icon-button\",\n        \"text\": \"Adicionar ao carrinho\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"icon\": \"shopping-cart-plus\"\n        }\n      }\n    ]\n  },\n  {\n    \"id\": \"sidebar-minha-cesta\",\n    \"type\": \"sidebar\",\n    \"text\": \"minha cesta\",\n    \"region\": \"right-sidebar\",\n    \"state\": \"open\",\n    \"components\": [\n      {\n        \"id\": \"icon-shopping-cart-header\",\n        \"type\": \"icon\",\n        \"meta\": {\n          \"icon\": \"shopping-cart\"\n        }\n      },\n      {\n        \"id\": \"button-close-sidebar\",\n        \"type\": \"icon-button\",\n        \"text\": \"Fechar\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"icon\": \"X\"\n        }\n      },\n      {\n        \"id\": \"cart-item-samsung-a06\",\n        \"type\": \"cart-item\",\n        \"meta\": {\n          \"product_name\": \"Smartphone Samsung Galaxy A06 128GB 4GB RAM Tela 6,7...\",\n          \"image_url\": \"image_of_samsung_a06\",\n          \"old_price\": \"R$ 749,00\",\n          \"current_price\": \"R$ 629,10\"\n        },\n        \"components\": [\n          {\n            \"id\": \"button-remove-item-samsung-a06\",\n            \"type\": \"icon-button\",\n            \"text\": \"Remover item\",\n            \"actions\": [\"onClick\"],\n            \"meta\": {\n              \"icon\": \"X\"\n            }\n          },\n          {\n            \"id\": \"button-decrement-cart-samsung-a06\",\n            \"type\": \"button\",\n            \"text\": \"-\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"input-quantity-cart-samsung-a06\",\n            \"type\": \"input\",\n            \"text\": \"1\",\n            \"state\": \"active\",\n            \"meta\": {\n              \"input_type\": \"number\",\n              \"current_value\": 1\n            }\n          },\n          {\n            \"id\": \"button-increment-cart-samsung-a06\",\n            \"type\": \"button\",\n            \"text\": \"+\",\n            \"actions\": [\"onClick\"]\n          }\n        ]\n      },\n      {\n        \"id\": \"label-subtotal\",\n        \"type\": \"label\",\n        \"text\": \"subtotal\",\n        \"region\": \"right-sidebar\"\n      },\n      {\n        \"id\": \"value-subtotal\",\n        \"type\": \"text\",\n        \"text\": \"R$ 749,00\",\n        \"region\": \"right-sidebar\"\n      },\n      {\n        \"id\": \"label-total\",\n        \"type\": \"label\",\n        \"text\": \"total\",\n        \"region\": \"right-sidebar\"\n      },\n      {\n        \"id\": \"value-total\",\n        \"type\": \"text\",\n        \"text\": \"R$ 629,10\",\n        \"region\": \"right-sidebar\"\n      },\n      {\n        \"id\": \"button-continuar\",\n        \"type\": \"button\",\n        \"text\": \"continuar\",\n        \"state\": \"active\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"style\": \"primary\"\n        }\n      },\n      {\n        \"id\": \"button-continuar-comprando\",\n        \"type\": \"button\",\n        \"text\": \"continuar comprando\",\n        \"state\": \"active\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"style\": \"secondary\"\n        }\n      }\n    ]\n  },\n  {\n    \"id\": \"icon-cookie-preferences\",\n    \"type\": \"icon-button\",\n    \"text\": \"Preferências de cookies\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"cookie\"\n    }\n  },\n  {\n    \"id\": \"icon-accessibility\",\n    \"type\": \"icon-button\",\n    \"text\": \"Acessibilidade\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"accessibility\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 3954,
+      "totalTokenCount": 6455,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 1846
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "a7acacCLDL3Oz7IPiPzduQs"
+  },
+  "ui": [
+    {
+      "id": "banner-frete-gratis",
+      "type": "banner",
+      "text": "frete grátis Brasil",
+      "region": "top-bar",
+      "meta": {
+        "discount_type": "shipping"
+      },
+      "components": [
+        {
+          "id": "button-frete-gratis-quero",
+          "type": "button",
+          "text": "queeero",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-frete-gratis-regras",
+          "type": "link",
+          "text": "confira as regras.",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banner-17-desconto",
+      "type": "banner",
+      "text": "17% de desconto",
+      "region": "top-bar",
+      "meta": {
+        "discount_percentage": "17%"
+      },
+      "components": [
+        {
+          "id": "button-17-desconto-quero",
+          "type": "button",
+          "text": "queeero",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-17-desconto-regras",
+          "type": "link",
+          "text": "confira as regras.",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banner-15-desconto",
+      "type": "banner",
+      "text": "15% de desconto",
+      "region": "top-bar",
+      "meta": {
+        "discount_percentage": "15%"
+      },
+      "components": [
+        {
+          "id": "button-15-desconto-quero",
+          "type": "button",
+          "text": "queeero",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-15-desconto-regras",
+          "type": "link",
+          "text": "confira as regras.",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banner-10-desconto-pix",
+      "type": "banner",
+      "text": "10% de desconto no Pix",
+      "region": "top-bar",
+      "meta": {
+        "discount_percentage": "10%",
+        "payment_method": "Pix"
+      },
+      "components": [
+        {
+          "id": "button-10-desconto-pix-quero",
+          "type": "button",
+          "text": "queeero",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-10-desconto-pix-regras",
+          "type": "link",
+          "text": "confira as regras.",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "label-navegue-por-categoria",
+      "type": "label",
+      "text": "navegue por categoria :)",
+      "region": "main-content"
+    },
+    {
+      "id": "category-brinquedos",
+      "type": "category-item",
+      "text": "brinquedos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "bear"
+      }
+    },
+    {
+      "id": "category-telefonia",
+      "type": "category-item",
+      "text": "telefonia",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "phone"
+      }
+    },
+    {
+      "id": "category-chocolate",
+      "type": "category-item",
+      "text": "chocolate",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "chocolate"
+      }
+    },
+    {
+      "id": "category-biscoitos",
+      "type": "category-item",
+      "text": "biscoitos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "cookie"
+      }
+    },
+    {
+      "id": "category-eletroportateis",
+      "type": "category-item",
+      "text": "eletroportáteis",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "air-fryer"
+      }
+    },
+    {
+      "id": "category-fraldas",
+      "type": "category-item",
+      "text": "fraldas",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "diaper"
+      }
+    },
+    {
+      "id": "category-beleza-perfumaria",
+      "type": "category-item",
+      "text": "beleza e perfumaria",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "bottles"
+      }
+    },
+    {
+      "id": "category-eletrodomesticos",
+      "type": "category-item",
+      "text": "eletrodomésticos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "refrigerator"
+      }
+    },
+    {
+      "id": "label-os-mais-vendidos",
+      "type": "label",
+      "text": "os mais vendidos",
+      "region": "main-content"
+    },
+    {
+      "id": "product-card-motorola-g15",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_name": "Smartphone Motorola Moto G15 256GB 12GB RAM Boo...",
+        "image_url": "image_of_motorola_g15",
+        "rating": 5,
+        "old_price": "R$ 1.299,00",
+        "discount_percentage": "38%",
+        "price_pix": "R$ 809,10",
+        "installment_info": "em 8x de R$ 112,37 sem juros no cartão de crédito"
+      },
+      "components": [
+        {
+          "id": "icon-add-to-cart-motorola-g15",
+          "type": "icon-button",
+          "text": "Adicionar ao carrinho",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "icon": "shopping-cart-plus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "product-card-samsung-a06",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_name": "Smartphone Samsung Galaxy A06 128GB 4GB RAM RA...",
+        "image_url": "image_of_samsung_a06",
+        "rating": 4.8,
+        "old_price": "R$ 749,00",
+        "discount_percentage": "16%",
+        "price_pix": "R$ 629,10",
+        "installment_info": "em 8x de R$ 87,37 sem juros no cartão de crédito"
+      },
+      "components": [
+        {
+          "id": "button-decrement-samsung-a06",
+          "type": "button",
+          "text": "-",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "input-quantity-samsung-a06",
+          "type": "input",
+          "text": "1",
+          "state": "active",
+          "meta": {
+            "input_type": "number",
+            "current_value": 1
+          }
+        },
+        {
+          "id": "button-increment-samsung-a06",
+          "type": "button",
+          "text": "+",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "icon-remove-from-cart-samsung-a06",
+          "type": "icon-button",
+          "text": "Remover do carrinho",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "icon": "trash-can"
+          }
+        }
+      ]
+    },
+    {
+      "id": "product-card-samsung-a16",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_name": "Smartphone Samsung Galaxy A16 128GB 4GB RA...",
+        "image_url": "image_of_samsung_a16",
+        "rating": 5,
+        "old_price": "R$ 1.299,00",
+        "discount_percentage": "31%",
+        "price_pix": "R$ 899,00",
+        "installment_info": "em 8x de R$ 112,37 sem juros no cartão de crédito"
+      },
+      "components": [
+        {
+          "id": "icon-add-to-cart-samsung-a16",
+          "type": "icon-button",
+          "text": "Adicionar ao carrinho",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "icon": "shopping-cart-plus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "product-card-motorola-g05",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_name": "Smartphone Motorola Moto G05 128GB 12GB RAM Boo...",
+        "image_url": "image_of_motorola_g05",
+        "rating": 5,
+        "old_price": "R$ 1.099,00",
+        "discount_percentage": "43%",
+        "price_pix": "R$ 629,10",
+        "installment_info": "em 8x de R$ 87,37 sem juros no cartão de crédito"
+      },
+      "components": [
+        {
+          "id": "icon-add-to-cart-motorola-g05",
+          "type": "icon-button",
+          "text": "Adicionar ao carrinho",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "icon": "shopping-cart-plus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "product-card-samsung-a25",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_name": "Smartphone Samsung Galaxy A25 5G 256GB 8G...",
+        "image_url": "image_of_samsung_a25",
+        "rating": 5,
+        "old_price": "R$ 1.749,00",
+        "discount_percentage": "25%",
+        "price_pix": "R$ 1.304,10",
+        "installment_info": "em 8x de R$ 181,12 sem juros no cartão de crédito"
+      },
+      "components": [
+        {
+          "id": "icon-add-to-cart-samsung-a25",
+          "type": "icon-button",
+          "text": "Adicionar ao carrinho",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "icon": "shopping-cart-plus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sidebar-minha-cesta",
+      "type": "sidebar",
+      "text": "minha cesta",
+      "region": "right-sidebar",
+      "state": "open",
+      "components": [
+        {
+          "id": "icon-shopping-cart-header",
+          "type": "icon",
+          "meta": {
+            "icon": "shopping-cart"
+          }
+        },
+        {
+          "id": "button-close-sidebar",
+          "type": "icon-button",
+          "text": "Fechar",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "icon": "X"
+          }
+        },
+        {
+          "id": "cart-item-samsung-a06",
+          "type": "cart-item",
+          "meta": {
+            "product_name": "Smartphone Samsung Galaxy A06 128GB 4GB RAM Tela 6,7...",
+            "image_url": "image_of_samsung_a06",
+            "old_price": "R$ 749,00",
+            "current_price": "R$ 629,10"
+          },
+          "components": [
+            {
+              "id": "button-remove-item-samsung-a06",
+              "type": "icon-button",
+              "text": "Remover item",
+              "actions": [
+                "onClick"
+              ],
+              "meta": {
+                "icon": "X"
+              }
+            },
+            {
+              "id": "button-decrement-cart-samsung-a06",
+              "type": "button",
+              "text": "-",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "input-quantity-cart-samsung-a06",
+              "type": "input",
+              "text": "1",
+              "state": "active",
+              "meta": {
+                "input_type": "number",
+                "current_value": 1
+              }
+            },
+            {
+              "id": "button-increment-cart-samsung-a06",
+              "type": "button",
+              "text": "+",
+              "actions": [
+                "onClick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "label-subtotal",
+          "type": "label",
+          "text": "subtotal",
+          "region": "right-sidebar"
+        },
+        {
+          "id": "value-subtotal",
+          "type": "text",
+          "text": "R$ 749,00",
+          "region": "right-sidebar"
+        },
+        {
+          "id": "label-total",
+          "type": "label",
+          "text": "total",
+          "region": "right-sidebar"
+        },
+        {
+          "id": "value-total",
+          "type": "text",
+          "text": "R$ 629,10",
+          "region": "right-sidebar"
+        },
+        {
+          "id": "button-continuar",
+          "type": "button",
+          "text": "continuar",
+          "state": "active",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "style": "primary"
+          }
+        },
+        {
+          "id": "button-continuar-comprando",
+          "type": "button",
+          "text": "continuar comprando",
+          "state": "active",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "style": "secondary"
+          }
+        }
+      ]
+    },
+    {
+      "id": "icon-cookie-preferences",
+      "type": "icon-button",
+      "text": "Preferências de cookies",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "cookie"
+      }
+    },
+    {
+      "id": "icon-accessibility",
+      "type": "icon-button",
+      "text": "Acessibilidade",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "accessibility"
+      }
+    }
+  ]
+}

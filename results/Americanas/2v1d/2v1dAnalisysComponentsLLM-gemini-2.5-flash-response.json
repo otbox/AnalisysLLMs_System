@@ -1,0 +1,1757 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 175,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"top_bar_link_cadence\",\n    \"type\": \"link\",\n    \"text\": \"cadence\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_simplifique\",\n    \"type\": \"link\",\n    \"text\": \"simplifique\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_saiba_mais\",\n    \"type\": \"link\",\n    \"text\": \"saiba mais >\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_publicidade\",\n    \"type\": \"link\",\n    \"text\": \"publicidade\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_celula_mais\",\n    \"type\": \"link\",\n    \"text\": \"célula mais >\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_americanas_empresas\",\n    \"type\": \"link\",\n    \"text\": \"americanas empresas\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_venda_na_americanas\",\n    \"type\": \"link\",\n    \"text\": \"venda na americanas\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_baixe_o_app\",\n    \"type\": \"link\",\n    \"text\": \"baixe o app\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_nossas_lojas\",\n    \"type\": \"link\",\n    \"text\": \"nossas lojas\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_entrega_rapida\",\n    \"type\": \"link\",\n    \"text\": \"entrega rápida\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_leve_pague\",\n    \"type\": \"link\",\n    \"text\": \"leve+ pague-\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_ofertas_da_tv\",\n    \"type\": \"link\",\n    \"text\": \"ofertas da TV\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_outlet\",\n    \"type\": \"link\",\n    \"text\": \"outlet\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_link_oferta_do_dia\",\n    \"type\": \"link\",\n    \"text\": \"oferta do dia\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_logo\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search_input\",\n    \"type\": \"input\",\n    \"text\": \"busque aqui seu produto\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onFocus\", \"onSubmit\"],\n    \"meta\": {\n      \"placeholder\": \"busque aqui seu produto\"\n    }\n  },\n  {\n    \"id\": \"search_icon\",\n    \"type\": \"icon\",\n    \"text\": \"search\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"user_account_link\",\n    \"type\": \"link\",\n    \"text\": \"olá, stoco8718... minha conta\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"user\"\n    }\n  },\n  {\n    \"id\": \"wishlist_link\",\n    \"type\": \"link\",\n    \"text\": \"favoritos\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"heart\"\n    }\n  },\n  {\n    \"id\": \"cart_link\",\n    \"type\": \"link\",\n    \"text\": \"carrinho\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"shopping-cart\",\n      \"item_count\": 1\n    }\n  },\n  {\n    \"id\": \"cep_info_link\",\n    \"type\": \"link\",\n    \"text\": \"informe seu CEP\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"location-pin\"\n    }\n  },\n  {\n    \"id\": \"baixe_o_app_link\",\n    \"type\": \"link\",\n    \"text\": \"baixe o app\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"faca_seu_cartao_link\",\n    \"type\": \"link\",\n    \"text\": \"faça seu cartão\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"mais_vendidos_link\",\n    \"type\": \"link\",\n    \"text\": \"mais vendidos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_all_departments\",\n    \"type\": \"select\",\n    \"text\": \"todos os departamentos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"icon\": \"hamburger-menu\"\n    }\n  },\n  {\n    \"id\": \"nav_link_mercado\",\n    \"type\": \"link\",\n    \"text\": \"mercado\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_brinquedos\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"state\": \"active\"\n  },\n  {\n    \"id\": \"nav_link_celulares\",\n    \"type\": \"link\",\n    \"text\": \"celulares\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_eletrodomesticos\",\n    \"type\": \"link\",\n    \"text\": \"eletrodomésticos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_informatica\",\n    \"type\": \"link\",\n    \"text\": \"informática\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_audio_e_video\",\n    \"type\": \"link\",\n    \"text\": \"áudio e vídeo\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_eletroportateis\",\n    \"type\": \"link\",\n    \"text\": \"eletroportáteis\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_moveis\",\n    \"type\": \"link\",\n    \"text\": \"móveis\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_dia_das_bruxas\",\n    \"type\": \"link\",\n    \"text\": \"dia das bruxas\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"banner_receba_em_casa\",\n    \"type\": \"banner\",\n    \"text\": \"receba em casa ou retire na loja em 2h\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"text_brinquedos_description\",\n    \"type\": \"text\",\n    \"text\": \"Tá procurando brinquedos para todas as idades e estilos? Aqui tem de tudo! Desde brinquedos baratos para economizar até opções que fazem sucesso, como bebê reborn, boneca Barbie e até urso de pelúcia fofinho. Quer diversão em grupo? Aposte nos jogos de tabuleiro que nunca saem de moda.\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"link_mostrar_mais_description\",\n    \"type\": \"link\",\n    \"text\": \"mostrar mais\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"section_title_queridinhos_dia_das_criancas\",\n    \"type\": \"label\",\n    \"text\": \"os queridinhos do dia das crianças 2025:\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"card_video_game\",\n    \"type\": \"card\",\n    \"text\": \"video game\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"card_hoverboard\",\n    \"type\": \"card\",\n    \"text\": \"hoverboard\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"card_bicicleta_infantil\",\n    \"type\": \"card\",\n    \"text\": \"bicicleta infantil\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"card_tablet_infantil\",\n    \"type\": \"card\",\n    \"text\": \"tablet infantil\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_casa_da_barbie\",\n    \"type\": \"card\",\n    \"text\": \"casa da Barbie\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_barbie\",\n    \"type\": \"card\",\n    \"text\": \"Barbie\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_bebe_reborn\",\n    \"type\": \"card\",\n    \"text\": \"bebê reborn\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_jogos_de_tabuleiro\",\n    \"type\": \"card\",\n    \"text\": \"jogos de tabuleiro\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_patinete_infantil\",\n    \"type\": \"card\",\n    \"text\": \"patinete infantil\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"banner_outlet_americanas\",\n    \"type\": \"banner\",\n    \"text\": \"outlet americanas ofertas imperdíveis com entrega rápida\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"page_title_brinquedos\",\n    \"type\": \"label\",\n    \"text\": \"Brinquedos\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"filter_title\",\n    \"type\": \"label\",\n    \"text\": \"filtrar por\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"filter_category_title\",\n    \"type\": \"label\",\n    \"text\": \"Categoria\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"checkbox_acessorios_para_bicicleta\",\n    \"type\": \"checkbox\",\n    \"text\": \"acessórios para bicicleta\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 6\n    }\n  },\n  {\n    \"id\": \"checkbox_artes_e_atividades\",\n    \"type\": \"checkbox\",\n    \"text\": \"artes e atividades\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 271\n    }\n  },\n  {\n    \"id\": \"checkbox_bicicleta_de_equilibrio\",\n    \"type\": \"checkbox\",\n    \"text\": \"bicicleta de equilíbrio\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 5\n    }\n  },\n  {\n    \"id\": \"checkbox_bicicleta_infantil\",\n    \"type\": \"checkbox\",\n    \"text\": \"bicicleta infantil\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 43\n    }\n  },\n  {\n    \"id\": \"checkbox_blocos_de_montar\",\n    \"type\": \"checkbox\",\n    \"text\": \"blocos de montar\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 167\n    }\n  },\n  {\n    \"id\": \"checkbox_boneca\",\n    \"type\": \"checkbox\",\n    \"text\": \"boneca\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 429\n    }\n  },\n  {\n    \"id\": \"link_ver_tudo_category\",\n    \"type\": \"link\",\n    \"text\": \"ver tudo\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"filter_gender_title\",\n    \"type\": \"label\",\n    \"text\": \"Gênero\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"checkbox_gender_menino\",\n    \"type\": \"checkbox\",\n    \"text\": \"menino\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 2\n    }\n  },\n  {\n    \"id\": \"checkbox_gender_unissex\",\n    \"type\": \"checkbox\",\n    \"text\": \"unissex\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 1\n    }\n  },\n  {\n    \"id\": \"filter_price_title\",\n    \"type\": \"label\",\n    \"text\": \"Preço\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"checkbox_price_0_25\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 0 - R$ 25\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_25_50\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 25 - R$ 50\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_50_100\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 50 - R$ 100\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_100_250\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 100 - R$ 250\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_250_500\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 250 - R$ 500\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_500_1000\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 500 - R$ 1.000\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"link_ver_tudo_price\",\n    \"type\": \"link\",\n    \"text\": \"ver tudo\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"filter_item_condition_title\",\n    \"type\": \"label\",\n    \"text\": \"Condição do Item\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"checkbox_item_condition_novo\",\n    \"type\": \"checkbox\",\n    \"text\": \"novo\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 12\n    }\n  },\n  {\n    \"id\": \"filter_brand_title\",\n    \"type\": \"label\",\n    \"text\": \"Marca\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"checkbox_brand_brink_plus\",\n    \"type\": \"checkbox\",\n    \"text\": \"brink+\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 2\n    }\n  },\n  {\n    \"id\": \"checkbox_brand_candide\",\n    \"type\": \"checkbox\",\n    \"text\": \"candide\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 2\n    }\n  },\n  {\n    \"id\": \"checkbox_brand_homeplay\",\n    \"type\": \"checkbox\",\n    \"text\": \"homeplay\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 1\n    }\n  },\n  {\n    \"id\": \"checkbox_brand_nao_disponivel\",\n    \"type\": \"checkbox\",\n    \"text\": \"não disponível\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 9\n    }\n  },\n  {\n    \"id\": \"filter_international_product_title\",\n    \"type\": \"label\",\n    \"text\": \"Produto Internacional\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"checkbox_international_product_nao\",\n    \"type\": \"checkbox\",\n    \"text\": \"não\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 9\n    }\n  },\n  {\n    \"id\": \"checkbox_international_product_sim\",\n    \"type\": \"checkbox\",\n    \"text\": \"sim\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 3\n    }\n  },\n  {\n    \"id\": \"product_list_title\",\n    \"type\": \"label\",\n    \"text\": \"listagem de produtos\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"product_count\",\n    \"type\": \"text\",\n    \"text\": \"14 produtos encontrados\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"sort_by_select\",\n    \"type\": \"select\",\n    \"text\": \"ordenar por: mais relevantes\",\n    \"state\": \"default\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"view_toggle_grid\",\n    \"type\": \"button\",\n    \"text\": \"grid\",\n    \"state\": \"selected\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"grid\"\n    }\n  },\n  {\n    \"id\": \"view_toggle_list\",\n    \"type\": \"button\",\n    \"text\": \"lista\",\n    \"state\": \"default\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"list\"\n    }\n  },\n  {\n    \"id\": \"product_card_dino_cegonheira\",\n    \"type\": \"card\",\n    \"text\": \"DINO CEGONHEIRA\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dino_cegonheira\",\n      \"price\": \"R$ 39,99\",\n      \"rating\": 0.0,\n      \"installments\": \"em 3x de R$ 13,33 sem juros no cartão de crédito\",\n      \"badge\": \"internacional\",\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_dino_dna_candide\",\n    \"type\": \"card\",\n    \"text\": \"ROBO ALIVE DINO DNA CANDIDE 1145\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dino_dna_candide\",\n      \"price\": \"R$ 149,99\",\n      \"rating\": 0.0,\n      \"installments\": \"em 3x de R$ 49,99 sem juros no cartão de crédito\",\n      \"badge\": \"internacional\",\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_dinossauro_eletronico_bota_ovos\",\n    \"type\": \"card\",\n    \"text\": \"Dinossauro Eletrônico Bota Ovos Brinquedo An...\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dinossauro_eletronico_bota_ovos\",\n      \"price\": \"R$ 63,59\",\n      \"rating\": 0.0,\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_king_monster_godzilla\",\n    \"type\": \"card\",\n    \"text\": \"King Monster Godzilla Gigante Dinossauro\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_king_monster_godzilla\",\n      \"price\": \"R$ 105,99\",\n      \"rating\": 0.0,\n      \"installments\": \"em 2x de R$ 52,99 sem juros no cartão de crédito\",\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_dinossauro_rex_brinquedo\",\n    \"type\": \"card\",\n    \"text\": \"Dinossauro Rex Brinquedo Anda E Solta...\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dinossauro_rex_brinquedo\",\n      \"price\": \"R$ 82,68\",\n      \"rating\": 5.0,\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_dinossauro_grande_braquiossauro\",\n    \"type\": \"card\",\n    \"text\": \"Dinossauro Grande Braquiossauro Marrom...\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dinossauro_grande_braquiossauro\",\n      \"price\": \"R$ 61,37\",\n      \"rating\": 0.0,\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_dino_world_dinossauros_beast_alive\",\n    \"type\": \"card\",\n    \"text\": \"DINOSSAUROS BEAST ALIVE CRIATURAS 1147...\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dino_world_dinossauros_beast_alive\",\n      \"price\": \"R$ 19,99\",\n      \"rating\": 0.0,\n      \"badge\": \"internacional\",\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_ovo_dinossauro_smashers_light_verde\",\n    \"type\": \"card\",\n    \"text\": \"Ovo Dinossauro Smashers Light Verde Série Grande...\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_ovo_dinossauro_smashers_light_verde\",\n      \"price\": \"R$ 466,35\",\n      \"rating\": 0.0,\n      \"installments\": \"em 8x de R$ 58,29 sem juros no cartão de crédito\",\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_dinossauro_tiranossauro_rex\",\n    \"type\": \"card\",\n    \"text\": \"Dinossauro Tiranossauro Rex Brinquedo...\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dinossauro_tiranossauro_rex\",\n      \"price\": \"R$ 148,99\",\n      \"rating\": 0.0,\n      \"installments\": \"em 3x de R$ 49,66 sem juros no cartão de crédito\",\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_dinossauro_world_tiranossauro_rex_2088\",\n    \"type\": \"card\",\n    \"text\": \"Dinossauro World Tiranossauro Rex 2088 -...\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dinossauro_world_tiranossauro_rex_2088\",\n      \"price\": \"R$ 444,84\",\n      \"rating\": 3.5,\n      \"installments\": \"em 6x de R$ 74,14 sem juros no cartão de crédito\",\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_smashers_ovo_dino_ilha_do_pirata\",\n    \"type\": \"card\",\n    \"text\": \"Smashers ovo dino ilha do pirata medio - fun\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_smashers_ovo_dino_ilha_do_pirata\",\n      \"price\": \"R$ 149,99\",\n      \"rating\": 0.0,\n      \"installments\": \"em 3x de R$ 49,99 sem juros no cartão de crédito\",\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_card_dragao_com_luz_e_som\",\n    \"type\": \"card\",\n    \"text\": \"Dragão com Luz e Som - Brink+\",\n    \"region\": \"product-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"product_image_dragao_com_luz_e_som\",\n      \"price\": \"R$ 49,99\",\n      \"rating\": 0.0,\n      \"add_to_cart_button\": true\n    }\n  },\n  {\n    \"id\": \"product_listing_pagination_info\",\n    \"type\": \"text\",\n    \"text\": \"Mostrando 12 de 14\",\n    \"region\": \"product-listing\"\n  },\n  {\n    \"id\": \"button_ver_mais_produtos\",\n    \"type\": \"button\",\n    \"text\": \"ver mais produtos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"section_title_melhores_marcas\",\n    \"type\": \"label\",\n    \"text\": \"as melhores marcas estão aqui na americanas\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"brand_logo_baby_alive\",\n    \"type\": \"image\",\n    \"text\": \"Baby Alive logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_hot_wheels\",\n    \"type\": \"image\",\n    \"text\": \"Hot Wheels logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_lego\",\n    \"type\": \"image\",\n    \"text\": \"Lego logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_mattel\",\n    \"type\": \"image\",\n    \"text\": \"Mattel logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_disney\",\n    \"type\": \"image\",\n    \"text\": \"Disney logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_estrela\",\n    \"type\": \"image\",\n    \"text\": \"Estrela logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_fisher_price\",\n    \"type\": \"image\",\n    \"text\": \"Fisher-Price logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_grow\",\n    \"type\": \"image\",\n    \"text\": \"Grow logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_caloi\",\n    \"type\": \"image\",\n    \"text\": \"Caloi logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_candide\",\n    \"type\": \"image\",\n    \"text\": \"Candide logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_hasbro\",\n    \"type\": \"image\",\n    \"text\": \"Hasbro logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brand_logo_sylvanian_families\",\n    \"type\": \"image\",\n    \"text\": \"Sylvanian Families logo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"section_title_jogos_bonecas_dinossauros\",\n    \"type\": \"label\",\n    \"text\": \"jogos, bonecas, dinossauros e muito mais: tudo que os pequenos amam!\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"card_dinossauros_category\",\n    \"type\": \"card\",\n    \"text\": \"dinossauros\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"card_jogos_category\",\n    \"type\": \"card\",\n    \"text\": \"jogos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_pelucias_category\",\n    \"type\": \"card\",\n    \"text\": \"pelúcias\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_quebra_cabeca_category\",\n    \"type\": \"card\",\n    \"text\": \"quebra-cabeça\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"card_boneca_category\",\n    \"type\": \"card\",\n    \"text\": \"boneca\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_boneco_category\",\n    \"type\": \"card\",\n    \"text\": \"boneco\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"section_title_mais_ideias_para_presentear\",\n    \"type\": \"label\",\n    \"text\": \"mais ideias para presentear\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"card_lancadores\",\n    \"type\": \"card\",\n    \"text\": \"lançadores\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_faz_de_conta\",\n    \"type\": \"card\",\n    \"text\": \"faz de conta\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_playground\",\n    \"type\": \"card\",\n    \"text\": \"playground\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_veiculos_de_brinquedo\",\n    \"type\": \"card\",\n    \"text\": \"veículos de brinquedo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_patins_patinetes_e_skates\",\n    \"type\": \"card\",\n    \"text\": \"patins, patinetes e skates\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_blocos_de_montar_category\",\n    \"type\": \"card\",\n    \"text\": \"blocos de montar\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_mini_veiculos_e_triciclos\",\n    \"type\": \"card\",\n    \"text\": \"mini veículos e triciclos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_colecionaveis_e_miniaturas\",\n    \"type\": \"card\",\n    \"text\": \"colecionáveis e miniaturas\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"section_title_veja_tambem\",\n    \"type\": \"label\",\n    \"text\": \"veja também:\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"card_cama_infantil_batman\",\n    \"type\": \"card\",\n    \"text\": \"cama infantil\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_cama_infantil_gavetas\",\n    \"type\": \"card\",\n    \"text\": \"cama infantil\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_guarda_roupa_infantil\",\n    \"type\": \"card\",\n    \"text\": \"guarda-roupa infantil\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_organizador_de_brinquedos\",\n    \"type\": \"card\",\n    \"text\": \"organizador de brinquedos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_mochila_infantil\",\n    \"type\": \"card\",\n    \"text\": \"mochila infantil\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"card_piscina_infantil\",\n    \"type\": \"card\",\n    \"text\": \"piscina infantil\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"text_brinquedos_para_todas_as_idades_description\",\n    \"type\": \"text\",\n    \"text\": \"Se tem uma coisa que a gente ama é ver a criançada feliz, né? E aqui na Americanas você encontra tudo para transformar qualquer dia em um momento especial. Tem brinquedos baratos para todos os gostos, desde os clássicos que nunca saem de moda até os lançamentos mais desejados. Bora conferir!\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"section_title_duvidas_sobre_brinquedos\",\n    \"type\": \"label\",\n    \"text\": \"dúvidas sobre brinquedos? a gente descomplica pra você!\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"faq_item_o_que_tem_de_brinquedo_para_crianca\",\n    \"type\": \"accordion-item\",\n    \"text\": \"O que tem de brinquedo para criança?\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"faq_item_qual_o_brinquedo_mais_vendido_hoje\",\n    \"type\": \"accordion-item\",\n    \"text\": \"Qual o brinquedo mais vendido hoje?\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"faq_item_quais_sao_os_brinquedos_populares\",\n    \"type\": \"accordion-item\",\n    \"text\": \"Quais são os brinquedos populares?\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"faq_item_o_que_sao_brinquedos_eletronicos\",\n    \"type\": \"accordion-item\",\n    \"text\": \"O que são brinquedos eletrônicos?\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"faq_item_o_que_sao_brinquedos_tradicionais\",\n    \"type\": \"accordion-item\",\n    \"text\": \"O que são brinquedos tradicionais?\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_artes_e_atividades\",\n    \"type\": \"link\",\n    \"text\": \"artes e atividades\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_bicicleta_infantil\",\n    \"type\": \"link\",\n    \"text\": \"bicicleta infantil\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_blocos_de_montar\",\n    \"type\": \"link\",\n    \"text\": \"blocos de montar\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_boneca\",\n    \"type\": \"link\",\n    \"text\": \"boneca\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_boneco\",\n    \"type\": \"link\",\n    \"text\": \"boneco\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_brinquedos_de_controle_remoto\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos de controle remoto\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_brinquedos_eletronicos\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos eletrônicos\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_brinquedos_esportivos\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos esportivos\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_colecionaveis_e_miniaturas_footer\",\n    \"type\": \"link\",\n    \"text\": \"colecionáveis e miniaturas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_dinossauros_footer\",\n    \"type\": \"link\",\n    \"text\": \"dinossauros\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_faz_de_conta_footer\",\n    \"type\": \"link\",\n    \"text\": \"faz de conta\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_jogos_footer\",\n    \"type\": \"link\",\n    \"text\": \"jogos\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_lancadores_footer\",\n    \"type\": \"link\",\n    \"text\": \"lançadores\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_mini_veiculos_e_triciclos_footer\",\n    \"type\": \"link\",\n    \"text\": \"mini veículos e triciclos\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_modelismo\",\n    \"type\": \"link\",\n    \"text\": \"modelismo\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_patins_patinetes_e_skates_footer\",\n    \"type\": \"link\",\n    \"text\": \"patins, patinetes e skates\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_pelucias_footer\",\n    \"type\": \"link\",\n    \"text\": \"pelúcias\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_playground_footer\",\n    \"type\": \"link\",\n    \"text\": \"playground\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_praia_e_piscina\",\n    \"type\": \"link\",\n    \"text\": \"praia e piscina\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_quebra_cabeca_footer\",\n    \"type\": \"link\",\n    \"text\": \"quebra-cabeça\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_sac\",\n    \"type\": \"link\",\n    \"text\": \"sac 4003 4848\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_guia_de_seguranca\",\n    \"type\": \"link\",\n    \"text\": \"guia de segurança\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_dia_das_bruxas_footer\",\n    \"type\": \"link\",\n    \"text\": \"dia das bruxas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_black_friday\",\n    \"type\": \"link\",\n    \"text\": \"black friday\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_entregas_e_devolucoes\",\n    \"type\": \"link\",\n    \"text\": \"entregas e devoluções\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_logo_americanas\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_mais_informacoes\",\n    \"type\": \"link\",\n    \"text\": \"mais informações\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social_icon_instagram\",\n    \"type\": \"icon\",\n    \"text\": \"Instagram\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social_icon_youtube\",\n    \"type\": \"icon\",\n    \"text\": \"YouTube\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social_icon_facebook\",\n    \"type\": \"icon\",\n    \"text\": \"Facebook\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social_icon_tiktok\",\n    \"type\": \"icon\",\n    \"text\": \"TikTok\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_copyright_text\",\n    \"type\": \"text\",\n    \"text\": \"americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_link_mapa_do_site\",\n    \"type\": \"link\",\n    \"text\": \"mapa do site\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility_icon\",\n    \"type\": \"icon\",\n    \"text\": \"accessibility\",\n    \"region\": \"fixed-right\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 12104,
+      "totalTokenCount": 13256,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 497
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "IL6cafjmEN3pz7IPkb2KoAc"
+  },
+  "ui": [
+    {
+      "id": "top_bar_link_cadence",
+      "type": "link",
+      "text": "cadence",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_simplifique",
+      "type": "link",
+      "text": "simplifique",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_saiba_mais",
+      "type": "link",
+      "text": "saiba mais >",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_publicidade",
+      "type": "link",
+      "text": "publicidade",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_celula_mais",
+      "type": "link",
+      "text": "célula mais >",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_americanas_empresas",
+      "type": "link",
+      "text": "americanas empresas",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_venda_na_americanas",
+      "type": "link",
+      "text": "venda na americanas",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_baixe_o_app",
+      "type": "link",
+      "text": "baixe o app",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_nossas_lojas",
+      "type": "link",
+      "text": "nossas lojas",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_entrega_rapida",
+      "type": "link",
+      "text": "entrega rápida",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_leve_pague",
+      "type": "link",
+      "text": "leve+ pague-",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_ofertas_da_tv",
+      "type": "link",
+      "text": "ofertas da TV",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_outlet",
+      "type": "link",
+      "text": "outlet",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_link_oferta_do_dia",
+      "type": "link",
+      "text": "oferta do dia",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_logo",
+      "type": "image",
+      "text": "americanas",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search_input",
+      "type": "input",
+      "text": "busque aqui seu produto",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onFocus",
+        "onSubmit"
+      ],
+      "meta": {
+        "placeholder": "busque aqui seu produto"
+      }
+    },
+    {
+      "id": "search_icon",
+      "type": "icon",
+      "text": "search",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "user_account_link",
+      "type": "link",
+      "text": "olá, stoco8718... minha conta",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "user"
+      }
+    },
+    {
+      "id": "wishlist_link",
+      "type": "link",
+      "text": "favoritos",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "heart"
+      }
+    },
+    {
+      "id": "cart_link",
+      "type": "link",
+      "text": "carrinho",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "shopping-cart",
+        "item_count": 1
+      }
+    },
+    {
+      "id": "cep_info_link",
+      "type": "link",
+      "text": "informe seu CEP",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "location-pin"
+      }
+    },
+    {
+      "id": "baixe_o_app_link",
+      "type": "link",
+      "text": "baixe o app",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "faca_seu_cartao_link",
+      "type": "link",
+      "text": "faça seu cartão",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "mais_vendidos_link",
+      "type": "link",
+      "text": "mais vendidos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_all_departments",
+      "type": "select",
+      "text": "todos os departamentos",
+      "region": "main-navigation",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "icon": "hamburger-menu"
+      }
+    },
+    {
+      "id": "nav_link_mercado",
+      "type": "link",
+      "text": "mercado",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_brinquedos",
+      "type": "link",
+      "text": "brinquedos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "state": "active"
+    },
+    {
+      "id": "nav_link_celulares",
+      "type": "link",
+      "text": "celulares",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_eletrodomesticos",
+      "type": "link",
+      "text": "eletrodomésticos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_informatica",
+      "type": "link",
+      "text": "informática",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_audio_e_video",
+      "type": "link",
+      "text": "áudio e vídeo",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_eletroportateis",
+      "type": "link",
+      "text": "eletroportáteis",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_moveis",
+      "type": "link",
+      "text": "móveis",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_dia_das_bruxas",
+      "type": "link",
+      "text": "dia das bruxas",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "banner_receba_em_casa",
+      "type": "banner",
+      "text": "receba em casa ou retire na loja em 2h",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "text_brinquedos_description",
+      "type": "text",
+      "text": "Tá procurando brinquedos para todas as idades e estilos? Aqui tem de tudo! Desde brinquedos baratos para economizar até opções que fazem sucesso, como bebê reborn, boneca Barbie e até urso de pelúcia fofinho. Quer diversão em grupo? Aposte nos jogos de tabuleiro que nunca saem de moda.",
+      "region": "main-content"
+    },
+    {
+      "id": "link_mostrar_mais_description",
+      "type": "link",
+      "text": "mostrar mais",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "section_title_queridinhos_dia_das_criancas",
+      "type": "label",
+      "text": "os queridinhos do dia das crianças 2025:",
+      "region": "main-content"
+    },
+    {
+      "id": "card_video_game",
+      "type": "card",
+      "text": "video game",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "queeero"
+      }
+    },
+    {
+      "id": "card_hoverboard",
+      "type": "card",
+      "text": "hoverboard",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "queeero"
+      }
+    },
+    {
+      "id": "card_bicicleta_infantil",
+      "type": "card",
+      "text": "bicicleta infantil",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "queeero"
+      }
+    },
+    {
+      "id": "card_tablet_infantil",
+      "type": "card",
+      "text": "tablet infantil",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_casa_da_barbie",
+      "type": "card",
+      "text": "casa da Barbie",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_barbie",
+      "type": "card",
+      "text": "Barbie",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_bebe_reborn",
+      "type": "card",
+      "text": "bebê reborn",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_jogos_de_tabuleiro",
+      "type": "card",
+      "text": "jogos de tabuleiro",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_patinete_infantil",
+      "type": "card",
+      "text": "patinete infantil",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "banner_outlet_americanas",
+      "type": "banner",
+      "text": "outlet americanas ofertas imperdíveis com entrega rápida",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "queeero"
+      }
+    },
+    {
+      "id": "page_title_brinquedos",
+      "type": "label",
+      "text": "Brinquedos",
+      "region": "main-content"
+    },
+    {
+      "id": "filter_title",
+      "type": "label",
+      "text": "filtrar por",
+      "region": "sidebar"
+    },
+    {
+      "id": "filter_category_title",
+      "type": "label",
+      "text": "Categoria",
+      "region": "sidebar"
+    },
+    {
+      "id": "checkbox_acessorios_para_bicicleta",
+      "type": "checkbox",
+      "text": "acessórios para bicicleta",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 6
+      }
+    },
+    {
+      "id": "checkbox_artes_e_atividades",
+      "type": "checkbox",
+      "text": "artes e atividades",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 271
+      }
+    },
+    {
+      "id": "checkbox_bicicleta_de_equilibrio",
+      "type": "checkbox",
+      "text": "bicicleta de equilíbrio",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 5
+      }
+    },
+    {
+      "id": "checkbox_bicicleta_infantil",
+      "type": "checkbox",
+      "text": "bicicleta infantil",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 43
+      }
+    },
+    {
+      "id": "checkbox_blocos_de_montar",
+      "type": "checkbox",
+      "text": "blocos de montar",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 167
+      }
+    },
+    {
+      "id": "checkbox_boneca",
+      "type": "checkbox",
+      "text": "boneca",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 429
+      }
+    },
+    {
+      "id": "link_ver_tudo_category",
+      "type": "link",
+      "text": "ver tudo",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "filter_gender_title",
+      "type": "label",
+      "text": "Gênero",
+      "region": "sidebar"
+    },
+    {
+      "id": "checkbox_gender_menino",
+      "type": "checkbox",
+      "text": "menino",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "id": "checkbox_gender_unissex",
+      "type": "checkbox",
+      "text": "unissex",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "id": "filter_price_title",
+      "type": "label",
+      "text": "Preço",
+      "region": "sidebar"
+    },
+    {
+      "id": "checkbox_price_0_25",
+      "type": "checkbox",
+      "text": "R$ 0 - R$ 25",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_25_50",
+      "type": "checkbox",
+      "text": "R$ 25 - R$ 50",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_50_100",
+      "type": "checkbox",
+      "text": "R$ 50 - R$ 100",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_100_250",
+      "type": "checkbox",
+      "text": "R$ 100 - R$ 250",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_250_500",
+      "type": "checkbox",
+      "text": "R$ 250 - R$ 500",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_500_1000",
+      "type": "checkbox",
+      "text": "R$ 500 - R$ 1.000",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "link_ver_tudo_price",
+      "type": "link",
+      "text": "ver tudo",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "filter_item_condition_title",
+      "type": "label",
+      "text": "Condição do Item",
+      "region": "sidebar"
+    },
+    {
+      "id": "checkbox_item_condition_novo",
+      "type": "checkbox",
+      "text": "novo",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 12
+      }
+    },
+    {
+      "id": "filter_brand_title",
+      "type": "label",
+      "text": "Marca",
+      "region": "sidebar"
+    },
+    {
+      "id": "checkbox_brand_brink_plus",
+      "type": "checkbox",
+      "text": "brink+",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "id": "checkbox_brand_candide",
+      "type": "checkbox",
+      "text": "candide",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "id": "checkbox_brand_homeplay",
+      "type": "checkbox",
+      "text": "homeplay",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "id": "checkbox_brand_nao_disponivel",
+      "type": "checkbox",
+      "text": "não disponível",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 9
+      }
+    },
+    {
+      "id": "filter_international_product_title",
+      "type": "label",
+      "text": "Produto Internacional",
+      "region": "sidebar"
+    },
+    {
+      "id": "checkbox_international_product_nao",
+      "type": "checkbox",
+      "text": "não",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 9
+      }
+    },
+    {
+      "id": "checkbox_international_product_sim",
+      "type": "checkbox",
+      "text": "sim",
+      "state": "unchecked",
+      "region": "sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 3
+      }
+    },
+    {
+      "id": "product_list_title",
+      "type": "label",
+      "text": "listagem de produtos",
+      "region": "main-content"
+    },
+    {
+      "id": "product_count",
+      "type": "text",
+      "text": "14 produtos encontrados",
+      "region": "main-content"
+    },
+    {
+      "id": "sort_by_select",
+      "type": "select",
+      "text": "ordenar por: mais relevantes",
+      "state": "default",
+      "region": "main-content",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "view_toggle_grid",
+      "type": "button",
+      "text": "grid",
+      "state": "selected",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "grid"
+      }
+    },
+    {
+      "id": "view_toggle_list",
+      "type": "button",
+      "text": "lista",
+      "state": "default",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "list"
+      }
+    },
+    {
+      "id": "product_card_dino_cegonheira",
+      "type": "card",
+      "text": "DINO CEGONHEIRA",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dino_cegonheira",
+        "price": "R$ 39,99",
+        "rating": 0,
+        "installments": "em 3x de R$ 13,33 sem juros no cartão de crédito",
+        "badge": "internacional",
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_dino_dna_candide",
+      "type": "card",
+      "text": "ROBO ALIVE DINO DNA CANDIDE 1145",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dino_dna_candide",
+        "price": "R$ 149,99",
+        "rating": 0,
+        "installments": "em 3x de R$ 49,99 sem juros no cartão de crédito",
+        "badge": "internacional",
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_dinossauro_eletronico_bota_ovos",
+      "type": "card",
+      "text": "Dinossauro Eletrônico Bota Ovos Brinquedo An...",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dinossauro_eletronico_bota_ovos",
+        "price": "R$ 63,59",
+        "rating": 0,
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_king_monster_godzilla",
+      "type": "card",
+      "text": "King Monster Godzilla Gigante Dinossauro",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_king_monster_godzilla",
+        "price": "R$ 105,99",
+        "rating": 0,
+        "installments": "em 2x de R$ 52,99 sem juros no cartão de crédito",
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_dinossauro_rex_brinquedo",
+      "type": "card",
+      "text": "Dinossauro Rex Brinquedo Anda E Solta...",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dinossauro_rex_brinquedo",
+        "price": "R$ 82,68",
+        "rating": 5,
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_dinossauro_grande_braquiossauro",
+      "type": "card",
+      "text": "Dinossauro Grande Braquiossauro Marrom...",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dinossauro_grande_braquiossauro",
+        "price": "R$ 61,37",
+        "rating": 0,
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_dino_world_dinossauros_beast_alive",
+      "type": "card",
+      "text": "DINOSSAUROS BEAST ALIVE CRIATURAS 1147...",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dino_world_dinossauros_beast_alive",
+        "price": "R$ 19,99",
+        "rating": 0,
+        "badge": "internacional",
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_ovo_dinossauro_smashers_light_verde",
+      "type": "card",
+      "text": "Ovo Dinossauro Smashers Light Verde Série Grande...",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_ovo_dinossauro_smashers_light_verde",
+        "price": "R$ 466,35",
+        "rating": 0,
+        "installments": "em 8x de R$ 58,29 sem juros no cartão de crédito",
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_dinossauro_tiranossauro_rex",
+      "type": "card",
+      "text": "Dinossauro Tiranossauro Rex Brinquedo...",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dinossauro_tiranossauro_rex",
+        "price": "R$ 148,99",
+        "rating": 0,
+        "installments": "em 3x de R$ 49,66 sem juros no cartão de crédito",
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_dinossauro_world_tiranossauro_rex_2088",
+      "type": "card",
+      "text": "Dinossauro World Tiranossauro Rex 2088 -...",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dinossauro_world_tiranossauro_rex_2088",
+        "price": "R$ 444,84",
+        "rating": 3.5,
+        "installments": "em 6x de R$ 74,14 sem juros no cartão de crédito",
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_smashers_ovo_dino_ilha_do_pirata",
+      "type": "card",
+      "text": "Smashers ovo dino ilha do pirata medio - fun",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_smashers_ovo_dino_ilha_do_pirata",
+        "price": "R$ 149,99",
+        "rating": 0,
+        "installments": "em 3x de R$ 49,99 sem juros no cartão de crédito",
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_card_dragao_com_luz_e_som",
+      "type": "card",
+      "text": "Dragão com Luz e Som - Brink+",
+      "region": "product-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "product_image_dragao_com_luz_e_som",
+        "price": "R$ 49,99",
+        "rating": 0,
+        "add_to_cart_button": true
+      }
+    },
+    {
+      "id": "product_listing_pagination_info",
+      "type": "text",
+      "text": "Mostrando 12 de 14",
+      "region": "product-listing"
+    },
+    {
+      "id": "button_ver_mais_produtos",
+      "type": "button",
+      "text": "ver mais produtos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "section_title_melhores_marcas",
+      "type": "label",
+      "text": "as melhores marcas estão aqui na americanas",
+      "region": "main-content"
+    },
+    {
+      "id": "brand_logo_baby_alive",
+      "type": "image",
+      "text": "Baby Alive logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_hot_wheels",
+      "type": "image",
+      "text": "Hot Wheels logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_lego",
+      "type": "image",
+      "text": "Lego logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_mattel",
+      "type": "image",
+      "text": "Mattel logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_disney",
+      "type": "image",
+      "text": "Disney logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_estrela",
+      "type": "image",
+      "text": "Estrela logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_fisher_price",
+      "type": "image",
+      "text": "Fisher-Price logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_grow",
+      "type": "image",
+      "text": "Grow logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_caloi",
+      "type": "image",
+      "text": "Caloi logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_candide",
+      "type": "image",
+      "text": "Candide logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_hasbro",
+      "type": "image",
+      "text": "Hasbro logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brand_logo_sylvanian_families",
+      "type": "image",
+      "text": "Sylvanian Families logo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "section_title_jogos_bonecas_dinossauros",
+      "type": "label",
+      "text": "jogos, bonecas, dinossauros e muito mais: tudo que os pequenos amam!",
+      "region": "main-content"
+    },
+    {
+      "id": "card_dinossauros_category",
+      "type": "card",
+      "text": "dinossauros",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "queeero"
+      }
+    },
+    {
+      "id": "card_jogos_category",
+      "type": "card",
+      "text": "jogos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_pelucias_category",
+      "type": "card",
+      "text": "pelúcias",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_quebra_cabeca_category",
+      "type": "card",
+      "text": "quebra-cabeça",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "queeero"
+      }
+    },
+    {
+      "id": "card_boneca_category",
+      "type": "card",
+      "text": "boneca",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_boneco_category",
+      "type": "card",
+      "text": "boneco",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "section_title_mais_ideias_para_presentear",
+      "type": "label",
+      "text": "mais ideias para presentear",
+      "region": "main-content"
+    },
+    {
+      "id": "card_lancadores",
+      "type": "card",
+      "text": "lançadores",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_faz_de_conta",
+      "type": "card",
+      "text": "faz de conta",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_playground",
+      "type": "card",
+      "text": "playground",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_veiculos_de_brinquedo",
+      "type": "card",
+      "text": "veículos de brinquedo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_patins_patinetes_e_skates",
+      "type": "card",
+      "text": "patins, patinetes e skates",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_blocos_de_montar_category",
+      "type": "card",
+      "text": "blocos de montar",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_mini_veiculos_e_triciclos",
+      "type": "card",
+      "text": "mini veículos e triciclos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_colecionaveis_e_miniaturas",
+      "type": "card",
+      "text": "colecionáveis e miniaturas",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "section_title_veja_tambem",
+      "type": "label",
+      "text": "veja também:",
+      "region": "main-content"
+    },
+    {
+      "id": "card_cama_infantil_batman",
+      "type": "card",
+      "text": "cama infantil",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_cama_infantil_gavetas",
+      "type": "card",
+      "text": "cama infantil",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_guarda_roupa_infantil",
+      "type": "card",
+      "text": "guarda-roupa infantil",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_organizador_de_brinquedos",
+      "type": "card",
+      "text": "organizador de brinquedos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_mochila_infantil",
+      "type": "card",
+      "text": "mochila infantil",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "card_piscina_infantil",
+      "type": "card",
+      "text": "piscina infantil",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "text_brinquedos_para_todas_as_idades_description",
+      "type": "text",
+      "text": "Se tem uma coisa que a gente ama é ver a criançada feliz, né? E aqui na Americanas você encontra tudo para transformar qualquer dia em um momento especial. Tem brinquedos baratos para todos os gostos, desde os clássicos que nunca saem de moda até os lançamentos mais desejados. Bora conferir!",
+      "region": "main-content"
+    },
+    {
+      "id": "section_title_duvidas_sobre_brinquedos",
+      "type": "label",
+      "text": "dúvidas sobre brinquedos? a gente descomplica pra você!",
+      "region": "main-content"
+    },
+    {
+      "id": "faq_item_o_que_tem_de_brinquedo_para_crianca",
+      "type": "accordion-item",
+      "text": "O que tem de brinquedo para criança?",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "faq_item_qual_o_brinquedo_mais_vendido_hoje",
+      "type": "accordion-item",
+      "text": "Qual o brinquedo mais vendido hoje?",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "faq_item_quais_sao_os_brinquedos_populares",
+      "type": "accordion-item",
+      "text": "Quais são os brinquedos populares?",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "faq_item_o_que_sao_brinquedos_eletronicos",
+      "type": "accordion-item",
+      "text": "O que são brinquedos eletrônicos?",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "faq_item_o_que_sao_brinquedos_tradicionais",
+      "type": "accordion-item",
+      "text": "O que são brinquedos tradicionais?",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_artes_e_atividades",
+      "type": "link",
+      "text": "artes e atividades",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_bicicleta_infantil",
+      "type": "link",
+      "text": "bicicleta infantil",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_blocos_de_montar",
+      "type": "link",
+      "text": "blocos de montar",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_boneca",
+      "type": "link",
+      "text": "boneca",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_boneco",
+      "type": "link",
+      "text": "boneco",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_brinquedos_de_controle_remoto",
+      "type": "link",
+      "text": "brinquedos de controle remoto",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_brinquedos_eletronicos",
+      "type": "link",
+      "text": "brinquedos eletrônicos",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_brinquedos_esportivos",
+      "type": "link",
+      "text": "brinquedos esportivos",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_colecionaveis_e_miniaturas_footer",
+      "type": "link",
+      "text": "colecionáveis e miniaturas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_dinossauros_footer",
+      "type": "link",
+      "text": "dinossauros",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_faz_de_conta_footer",
+      "type": "link",
+      "text": "faz de conta",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_jogos_footer",
+      "type": "link",
+      "text": "jogos",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_lancadores_footer",
+      "type": "link",
+      "text": "lançadores",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_mini_veiculos_e_triciclos_footer",
+      "type": "link",
+      "text": "mini veículos e triciclos",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_modelismo",
+      "type": "link",
+      "text": "modelismo",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_patins_patinetes_e_skates_footer",
+      "type": "link",
+      "text": "patins, patinetes e skates",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_pelucias_footer",
+      "type": "link",
+      "text": "pelúcias",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_playground_footer",
+      "type": "link",
+      "text": "playground",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_praia_e_piscina",
+      "type": "link",
+      "text": "praia e piscina",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_quebra_cabeca_footer",
+      "type": "link",
+      "text": "quebra-cabeça",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_sac",
+      "type": "link",
+      "text": "sac 4003 4848",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_guia_de_seguranca",
+      "type": "link",
+      "text": "guia de segurança",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_dia_das_bruxas_footer",
+      "type": "link",
+      "text": "dia das bruxas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_black_friday",
+      "type": "link",
+      "text": "black friday",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_entregas_e_devolucoes",
+      "type": "link",
+      "text": "entregas e devoluções",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_logo_americanas",
+      "type": "image",
+      "text": "americanas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_mais_informacoes",
+      "type": "link",
+      "text": "mais informações",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social_icon_instagram",
+      "type": "icon",
+      "text": "Instagram",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social_icon_youtube",
+      "type": "icon",
+      "text": "YouTube",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social_icon_facebook",
+      "type": "icon",
+      "text": "Facebook",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social_icon_tiktok",
+      "type": "icon",
+      "text": "TikTok",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_copyright_text",
+      "type": "text",
+      "text": "americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902",
+      "region": "footer"
+    },
+    {
+      "id": "footer_link_mapa_do_site",
+      "type": "link",
+      "text": "mapa do site",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility_icon",
+      "type": "icon",
+      "text": "accessibility",
+      "region": "fixed-right",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

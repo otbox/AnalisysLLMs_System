@@ -1,0 +1,599 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 60,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"top_banner\",\n    \"type\": \"banner\",\n    \"text\": \"Viva o que importa simplifique saiba mais >\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"promotional\": true\n    }\n  },\n  {\n    \"id\": \"header_logo\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search_input\",\n    \"type\": \"input\",\n    \"text\": \"busque aqui seu produto\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onSearch\"],\n    \"meta\": {\n      \"placeholder\": \"busque aqui seu produto\"\n    }\n  },\n  {\n    \"id\": \"user_greeting\",\n    \"type\": \"text\",\n    \"text\": \"olá, stoco8718...\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"my_account_link\",\n    \"type\": \"link\",\n    \"text\": \"minha conta\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"store_icon\",\n    \"type\": \"icon\",\n    \"text\": \"store\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"wishlist_icon\",\n    \"type\": \"icon\",\n    \"text\": \"heart\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"cart_icon_header\",\n    \"type\": \"icon-button\",\n    \"text\": \"minha cesta\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"inform_cep_link\",\n    \"type\": \"link\",\n    \"text\": \"informe seu CEP\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"all_departments_button\",\n    \"type\": \"button\",\n    \"text\": \"todos os departamentos\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"mercado_link\",\n    \"type\": \"link\",\n    \"text\": \"mercado\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"brinquedos_link\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"celulares_link\",\n    \"type\": \"link\",\n    \"text\": \"celulares\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"eletrodomesticos_link\",\n    \"type\": \"link\",\n    \"text\": \"eletrodomésticos\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"informatica_link\",\n    \"type\": \"link\",\n    \"text\": \"informática\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"audio_e_video_link\",\n    \"type\": \"link\",\n    \"text\": \"áudio e vídeo\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"eletroportateis_link\",\n    \"type\": \"link\",\n    \"text\": \"eletroportáteis\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"moveis_link\",\n    \"type\": \"link\",\n    \"text\": \"móveis\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"dia_das_maes_link\",\n    \"type\": \"link\",\n    \"text\": \"dia das mães\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_home\",\n    \"type\": \"link\",\n    \"text\": \"página inicial\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_current_category\",\n    \"type\": \"text\",\n    \"text\": \"familia-bis-xtra-03-25-bu-bomboniere-cl\",\n    \"region\": \"breadcrumbs\"\n  },\n  {\n    \"id\": \"page_title\",\n    \"type\": \"text\",\n    \"text\": \"familia-bis-xtra-03-25-bu-bomboniere-cl\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"filter_by_title\",\n    \"type\": \"text\",\n    \"text\": \"filtrar por\",\n    \"region\": \"main-content-sidebar\"\n  },\n  {\n    \"id\": \"department_filter_title\",\n    \"type\": \"text\",\n    \"text\": \"Departamento\",\n    \"region\": \"main-content-sidebar\"\n  },\n  {\n    \"id\": \"checkbox_alimentos_e_bebidas\",\n    \"type\": \"checkbox\",\n    \"text\": \"alimentos e bebidas\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 4\n    }\n  },\n  {\n    \"id\": \"category_filter_title\",\n    \"type\": \"text\",\n    \"text\": \"Categoria\",\n    \"region\": \"main-content-sidebar\"\n  },\n  {\n    \"id\": \"checkbox_bomboniere\",\n    \"type\": \"checkbox\",\n    \"text\": \"bomboniere\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 4\n    }\n  },\n  {\n    \"id\": \"subcategory_filter_title\",\n    \"type\": \"text\",\n    \"text\": \"Subcategoria\",\n    \"region\": \"main-content-sidebar\"\n  },\n  {\n    \"id\": \"checkbox_chocolate\",\n    \"type\": \"checkbox\",\n    \"text\": \"chocolate\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 4\n    }\n  },\n  {\n    \"id\": \"price_filter_title\",\n    \"type\": \"text\",\n    \"text\": \"Preço\",\n    \"region\": \"main-content-sidebar\"\n  },\n  {\n    \"id\": \"checkbox_price_0_25\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 0 - R$ 25\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_25_50\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 25 - R$ 50\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_50_100\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 50 - R$ 100\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_100_250\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 100 - R$ 250\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_250_500\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 250 - R$ 500\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_price_500_1000\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 500 - R$ 1.000\",\n    \"state\": \"unchecked\",\n    \"region\": \"main-content-sidebar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"product_list_title\",\n    \"type\": \"text\",\n    \"text\": \"listagem de produtos\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"product_found_count\",\n    \"type\": \"text\",\n    \"text\": \"4 produtos encontrados\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"sort_dropdown\",\n    \"type\": \"select\",\n    \"text\": \"ordenar por: mais relevantes\",\n    \"state\": \"default\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"view_toggle_grid\",\n    \"type\": \"icon-button\",\n    \"text\": \"grid\",\n    \"state\": \"selected\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"view_toggle_list\",\n    \"type\": \"icon-button\",\n    \"text\": \"list\",\n    \"state\": \"default\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"product_card_bis_xtra_branco\",\n    \"type\": \"product-card\",\n    \"text\": \"Bis Xtra Branco 45g\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image of Bis Xtra Branco 45g\",\n      \"rating\": \"4.9\",\n      \"price\": \"R$ 3,99\",\n      \"quantity\": 1,\n      \"in_cart\": true\n    }\n  },\n  {\n    \"id\": \"product_card_bis_xtra_chocolate_black\",\n    \"type\": \"product-card\",\n    \"text\": \"Bis Xtra Chocolate Black 45g\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image of Bis Xtra Chocolate Black 45g\",\n      \"rating\": \"4.7\",\n      \"price\": \"R$ 3,99\",\n      \"in_cart\": false\n    }\n  },\n  {\n    \"id\": \"product_card_bis_xtra_oreo\",\n    \"type\": \"product-card\",\n    \"text\": \"Bis Xtra Oreo 45g\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image of Bis Xtra Oreo 45g\",\n      \"rating\": \"4.7\",\n      \"price\": \"R$ 3,99\",\n      \"in_cart\": false\n    }\n  },\n  {\n    \"id\": \"product_card_bis_xtra_ao_leite\",\n    \"type\": \"product-card\",\n    \"text\": \"Bis Xtra ao Leite Lacta\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image of Bis Xtra ao Leite Lacta\",\n      \"rating\": \"4.6\",\n      \"price\": \"R$ 3,99\",\n      \"in_cart\": false\n    }\n  },\n  {\n    \"id\": \"cart_modal\",\n    \"type\": \"modal\",\n    \"text\": \"minha cesta\",\n    \"region\": \"right-sidebar\",\n    \"state\": \"open\"\n  },\n  {\n    \"id\": \"cart_modal_close_button\",\n    \"type\": \"icon-button\",\n    \"text\": \"X\",\n    \"region\": \"right-sidebar-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"cart_item_bis_xtra_branco\",\n    \"type\": \"cart-item\",\n    \"text\": \"Bis Xtra Branco 45g\",\n    \"region\": \"right-sidebar-content\",\n    \"meta\": {\n      \"image_src\": \"image of Bis Xtra Branco 45g\",\n      \"quantity\": 1,\n      \"price\": \"R$ 3,99\"\n    }\n  },\n  {\n    \"id\": \"cart_item_bis_xtra_branco_remove_button\",\n    \"type\": \"icon-button\",\n    \"text\": \"X\",\n    \"region\": \"right-sidebar-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"parent_item_id\": \"cart_item_bis_xtra_branco\"\n    }\n  },\n  {\n    \"id\": \"cart_item_bis_xtra_branco_quantity_minus\",\n    \"type\": \"button\",\n    \"text\": \"-\",\n    \"region\": \"right-sidebar-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"parent_item_id\": \"cart_item_bis_xtra_branco\"\n    }\n  },\n  {\n    \"id\": \"cart_item_bis_xtra_branco_quantity_input\",\n    \"type\": \"input\",\n    \"text\": \"1\",\n    \"region\": \"right-sidebar-content\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"parent_item_id\": \"cart_item_bis_xtra_branco\",\n      \"input_type\": \"number\"\n    }\n  },\n  {\n    \"id\": \"cart_item_bis_xtra_branco_quantity_plus\",\n    \"type\": \"button\",\n    \"text\": \"+\",\n    \"region\": \"right-sidebar-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"parent_item_id\": \"cart_item_bis_xtra_branco\"\n    }\n  },\n  {\n    \"id\": \"cart_subtotal_label\",\n    \"type\": \"text\",\n    \"text\": \"subtotal\",\n    \"region\": \"right-sidebar-footer\"\n  },\n  {\n    \"id\": \"cart_subtotal_value\",\n    \"type\": \"text\",\n    \"text\": \"R$ 3,99\",\n    \"region\": \"right-sidebar-footer\"\n  },\n  {\n    \"id\": \"cart_total_label\",\n    \"type\": \"text\",\n    \"text\": \"total\",\n    \"region\": \"right-sidebar-footer\"\n  },\n  {\n    \"id\": \"cart_total_value\",\n    \"type\": \"text\",\n    \"text\": \"R$ 3,99\",\n    \"region\": \"right-sidebar-footer\"\n  },\n  {\n    \"id\": \"continue_button\",\n    \"type\": \"button\",\n    \"text\": \"continuar\",\n    \"state\": \"primary\",\n    \"region\": \"right-sidebar-footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"continue_shopping_button\",\n    \"type\": \"button\",\n    \"text\": \"continuar comprando\",\n    \"state\": \"secondary\",\n    \"region\": \"right-sidebar-footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility_icon_button\",\n    \"type\": \"icon-button\",\n    \"text\": \"accessibility\",\n    \"region\": \"fixed-bottom-right\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"cookie_icon_button\",\n    \"type\": \"icon-button\",\n    \"text\": \"cookie\",\n    \"region\": \"fixed-bottom-left\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 4004,
+      "totalTokenCount": 6655,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 1996
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "7bWcabznG6HdqtsPvrLH6AE"
+  },
+  "ui": [
+    {
+      "id": "top_banner",
+      "type": "banner",
+      "text": "Viva o que importa simplifique saiba mais >",
+      "region": "top-bar",
+      "meta": {
+        "promotional": true
+      }
+    },
+    {
+      "id": "header_logo",
+      "type": "image",
+      "text": "americanas",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search_input",
+      "type": "input",
+      "text": "busque aqui seu produto",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onSearch"
+      ],
+      "meta": {
+        "placeholder": "busque aqui seu produto"
+      }
+    },
+    {
+      "id": "user_greeting",
+      "type": "text",
+      "text": "olá, stoco8718...",
+      "region": "header"
+    },
+    {
+      "id": "my_account_link",
+      "type": "link",
+      "text": "minha conta",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "store_icon",
+      "type": "icon",
+      "text": "store",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "wishlist_icon",
+      "type": "icon",
+      "text": "heart",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "cart_icon_header",
+      "type": "icon-button",
+      "text": "minha cesta",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "inform_cep_link",
+      "type": "link",
+      "text": "informe seu CEP",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "all_departments_button",
+      "type": "button",
+      "text": "todos os departamentos",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "mercado_link",
+      "type": "link",
+      "text": "mercado",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "brinquedos_link",
+      "type": "link",
+      "text": "brinquedos",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "celulares_link",
+      "type": "link",
+      "text": "celulares",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "eletrodomesticos_link",
+      "type": "link",
+      "text": "eletrodomésticos",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "informatica_link",
+      "type": "link",
+      "text": "informática",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "audio_e_video_link",
+      "type": "link",
+      "text": "áudio e vídeo",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "eletroportateis_link",
+      "type": "link",
+      "text": "eletroportáteis",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "moveis_link",
+      "type": "link",
+      "text": "móveis",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "dia_das_maes_link",
+      "type": "link",
+      "text": "dia das mães",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_home",
+      "type": "link",
+      "text": "página inicial",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_current_category",
+      "type": "text",
+      "text": "familia-bis-xtra-03-25-bu-bomboniere-cl",
+      "region": "breadcrumbs"
+    },
+    {
+      "id": "page_title",
+      "type": "text",
+      "text": "familia-bis-xtra-03-25-bu-bomboniere-cl",
+      "region": "main-content"
+    },
+    {
+      "id": "filter_by_title",
+      "type": "text",
+      "text": "filtrar por",
+      "region": "main-content-sidebar"
+    },
+    {
+      "id": "department_filter_title",
+      "type": "text",
+      "text": "Departamento",
+      "region": "main-content-sidebar"
+    },
+    {
+      "id": "checkbox_alimentos_e_bebidas",
+      "type": "checkbox",
+      "text": "alimentos e bebidas",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 4
+      }
+    },
+    {
+      "id": "category_filter_title",
+      "type": "text",
+      "text": "Categoria",
+      "region": "main-content-sidebar"
+    },
+    {
+      "id": "checkbox_bomboniere",
+      "type": "checkbox",
+      "text": "bomboniere",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 4
+      }
+    },
+    {
+      "id": "subcategory_filter_title",
+      "type": "text",
+      "text": "Subcategoria",
+      "region": "main-content-sidebar"
+    },
+    {
+      "id": "checkbox_chocolate",
+      "type": "checkbox",
+      "text": "chocolate",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 4
+      }
+    },
+    {
+      "id": "price_filter_title",
+      "type": "text",
+      "text": "Preço",
+      "region": "main-content-sidebar"
+    },
+    {
+      "id": "checkbox_price_0_25",
+      "type": "checkbox",
+      "text": "R$ 0 - R$ 25",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_25_50",
+      "type": "checkbox",
+      "text": "R$ 25 - R$ 50",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_50_100",
+      "type": "checkbox",
+      "text": "R$ 50 - R$ 100",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_100_250",
+      "type": "checkbox",
+      "text": "R$ 100 - R$ 250",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_250_500",
+      "type": "checkbox",
+      "text": "R$ 250 - R$ 500",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_price_500_1000",
+      "type": "checkbox",
+      "text": "R$ 500 - R$ 1.000",
+      "state": "unchecked",
+      "region": "main-content-sidebar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "product_list_title",
+      "type": "text",
+      "text": "listagem de produtos",
+      "region": "main-content"
+    },
+    {
+      "id": "product_found_count",
+      "type": "text",
+      "text": "4 produtos encontrados",
+      "region": "main-content"
+    },
+    {
+      "id": "sort_dropdown",
+      "type": "select",
+      "text": "ordenar por: mais relevantes",
+      "state": "default",
+      "region": "main-content",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "view_toggle_grid",
+      "type": "icon-button",
+      "text": "grid",
+      "state": "selected",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "view_toggle_list",
+      "type": "icon-button",
+      "text": "list",
+      "state": "default",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "product_card_bis_xtra_branco",
+      "type": "product-card",
+      "text": "Bis Xtra Branco 45g",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image of Bis Xtra Branco 45g",
+        "rating": "4.9",
+        "price": "R$ 3,99",
+        "quantity": 1,
+        "in_cart": true
+      }
+    },
+    {
+      "id": "product_card_bis_xtra_chocolate_black",
+      "type": "product-card",
+      "text": "Bis Xtra Chocolate Black 45g",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image of Bis Xtra Chocolate Black 45g",
+        "rating": "4.7",
+        "price": "R$ 3,99",
+        "in_cart": false
+      }
+    },
+    {
+      "id": "product_card_bis_xtra_oreo",
+      "type": "product-card",
+      "text": "Bis Xtra Oreo 45g",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image of Bis Xtra Oreo 45g",
+        "rating": "4.7",
+        "price": "R$ 3,99",
+        "in_cart": false
+      }
+    },
+    {
+      "id": "product_card_bis_xtra_ao_leite",
+      "type": "product-card",
+      "text": "Bis Xtra ao Leite Lacta",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image of Bis Xtra ao Leite Lacta",
+        "rating": "4.6",
+        "price": "R$ 3,99",
+        "in_cart": false
+      }
+    },
+    {
+      "id": "cart_modal",
+      "type": "modal",
+      "text": "minha cesta",
+      "region": "right-sidebar",
+      "state": "open"
+    },
+    {
+      "id": "cart_modal_close_button",
+      "type": "icon-button",
+      "text": "X",
+      "region": "right-sidebar-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "cart_item_bis_xtra_branco",
+      "type": "cart-item",
+      "text": "Bis Xtra Branco 45g",
+      "region": "right-sidebar-content",
+      "meta": {
+        "image_src": "image of Bis Xtra Branco 45g",
+        "quantity": 1,
+        "price": "R$ 3,99"
+      }
+    },
+    {
+      "id": "cart_item_bis_xtra_branco_remove_button",
+      "type": "icon-button",
+      "text": "X",
+      "region": "right-sidebar-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "parent_item_id": "cart_item_bis_xtra_branco"
+      }
+    },
+    {
+      "id": "cart_item_bis_xtra_branco_quantity_minus",
+      "type": "button",
+      "text": "-",
+      "region": "right-sidebar-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "parent_item_id": "cart_item_bis_xtra_branco"
+      }
+    },
+    {
+      "id": "cart_item_bis_xtra_branco_quantity_input",
+      "type": "input",
+      "text": "1",
+      "region": "right-sidebar-content",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "parent_item_id": "cart_item_bis_xtra_branco",
+        "input_type": "number"
+      }
+    },
+    {
+      "id": "cart_item_bis_xtra_branco_quantity_plus",
+      "type": "button",
+      "text": "+",
+      "region": "right-sidebar-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "parent_item_id": "cart_item_bis_xtra_branco"
+      }
+    },
+    {
+      "id": "cart_subtotal_label",
+      "type": "text",
+      "text": "subtotal",
+      "region": "right-sidebar-footer"
+    },
+    {
+      "id": "cart_subtotal_value",
+      "type": "text",
+      "text": "R$ 3,99",
+      "region": "right-sidebar-footer"
+    },
+    {
+      "id": "cart_total_label",
+      "type": "text",
+      "text": "total",
+      "region": "right-sidebar-footer"
+    },
+    {
+      "id": "cart_total_value",
+      "type": "text",
+      "text": "R$ 3,99",
+      "region": "right-sidebar-footer"
+    },
+    {
+      "id": "continue_button",
+      "type": "button",
+      "text": "continuar",
+      "state": "primary",
+      "region": "right-sidebar-footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "continue_shopping_button",
+      "type": "button",
+      "text": "continuar comprando",
+      "state": "secondary",
+      "region": "right-sidebar-footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility_icon_button",
+      "type": "icon-button",
+      "text": "accessibility",
+      "region": "fixed-bottom-right",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "cookie_icon_button",
+      "type": "icon-button",
+      "text": "cookie",
+      "region": "fixed-bottom-left",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

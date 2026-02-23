@@ -1,0 +1,1037 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 102,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"top_bar_special_beauty_link\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_care_link\",\n    \"type\": \"link\",\n    \"text\": \"seu cuidado começa aqui\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_installments_link\",\n    \"type\": \"link\",\n    \"text\": \"tudo em até 12x no cartão\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_queero_link\",\n    \"type\": \"link\",\n    \"text\": \"queero\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_heart_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Heart icon\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_shopping_cart_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Shopping cart icon\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_logo\",\n    \"type\": \"image\",\n    \"text\": \"americanas logo\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_search_input\",\n    \"type\": \"input\",\n    \"text\": \"Busque aqui seu produto\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onFocus\"]\n  },\n  {\n    \"id\": \"header_search_button\",\n    \"type\": \"button\",\n    \"text\": \"Search icon\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_login_button\",\n    \"type\": \"button\",\n    \"text\": \"Olá, faça seu lo...\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"header_register_button\",\n    \"type\": \"button\",\n    \"text\": \"ou cadastre-se\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_cep\",\n    \"type\": \"link\",\n    \"text\": \"Informe seu CEP\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_app\",\n    \"type\": \"link\",\n    \"text\": \"Baixe o app\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_card\",\n    \"type\": \"link\",\n    \"text\": \"Faça seu cartão\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_best_sellers\",\n    \"type\": \"link\",\n    \"text\": \"mais vendidos\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_our_stores\",\n    \"type\": \"link\",\n    \"text\": \"nossas lojas\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_fast_delivery\",\n    \"type\": \"link\",\n    \"text\": \"entrega rápida\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_offers\",\n    \"type\": \"link\",\n    \"text\": \"levar ofertas\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_tv_offers\",\n    \"type\": \"link\",\n    \"text\": \"ofertas de TV\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_outlet\",\n    \"type\": \"link\",\n    \"text\": \"outlet\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_nav_deal_of_the_day\",\n    \"type\": \"link\",\n    \"text\": \"oferta do dia\",\n    \"region\": \"header-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_departments_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"Todos os departamentos\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_market\",\n    \"type\": \"link\",\n    \"text\": \"Mercado\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_toys\",\n    \"type\": \"link\",\n    \"text\": \"Brinquedos\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_cellphones\",\n    \"type\": \"link\",\n    \"text\": \"Celulares\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_appliances\",\n    \"type\": \"link\",\n    \"text\": \"Eletrodomésticos\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_computing\",\n    \"type\": \"link\",\n    \"text\": \"Informática\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_audio_video\",\n    \"type\": \"link\",\n    \"text\": \"Áudio e vídeo\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_small_appliances\",\n    \"type\": \"link\",\n    \"text\": \"Eletroportáteis\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_furniture\",\n    \"type\": \"link\",\n    \"text\": \"Móveis\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sub_header_nav_special_beauty\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\",\n    \"region\": \"sub-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main_banner_image\",\n    \"type\": \"image\",\n    \"text\": \"Banner: comprou, ganhou um jogo da Disney ou Marvel no valor de R$79,99\",\n    \"region\": \"main-content-banner\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main_banner_button\",\n    \"type\": \"button\",\n    \"text\": \"Aproveite\",\n    \"region\": \"main-content-banner\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_home\",\n    \"type\": \"link\",\n    \"text\": \"Página inicial\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_our_stores\",\n    \"type\": \"label\",\n    \"text\": \"Nossas lojas\",\n    \"region\": \"breadcrumbs\"\n  },\n  {\n    \"id\": \"section_title_stores_by_state\",\n    \"type\": \"label\",\n    \"text\": \"Nossas lojas por estado\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"state_filter_ac\",\n    \"type\": \"link\",\n    \"text\": \"AC\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_al\",\n    \"type\": \"link\",\n    \"text\": \"AL\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_am\",\n    \"type\": \"link\",\n    \"text\": \"AM\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ap\",\n    \"type\": \"link\",\n    \"text\": \"AP\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ba\",\n    \"type\": \"link\",\n    \"text\": \"BA\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ce\",\n    \"type\": \"link\",\n    \"text\": \"CE\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_df\",\n    \"type\": \"link\",\n    \"text\": \"DF\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_es\",\n    \"type\": \"link\",\n    \"text\": \"ES\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_go\",\n    \"type\": \"link\",\n    \"text\": \"GO\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ma\",\n    \"type\": \"link\",\n    \"text\": \"MA\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_mg\",\n    \"type\": \"link\",\n    \"text\": \"MG\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ms\",\n    \"type\": \"link\",\n    \"text\": \"MS\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_mt\",\n    \"type\": \"link\",\n    \"text\": \"MT\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pa\",\n    \"type\": \"link\",\n    \"text\": \"PA\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pb\",\n    \"type\": \"link\",\n    \"text\": \"PB\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pe\",\n    \"type\": \"link\",\n    \"text\": \"PE\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pi\",\n    \"type\": \"link\",\n    \"text\": \"PI\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pr\",\n    \"type\": \"link\",\n    \"text\": \"PR\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_rj\",\n    \"type\": \"link\",\n    \"text\": \"RJ\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_rn\",\n    \"type\": \"link\",\n    \"text\": \"RN\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ro\",\n    \"type\": \"link\",\n    \"text\": \"RO\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_rr\",\n    \"type\": \"link\",\n    \"text\": \"RR\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_rs\",\n    \"type\": \"link\",\n    \"text\": \"RS\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_sc\",\n    \"type\": \"link\",\n    \"text\": \"SC\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_se\",\n    \"type\": \"link\",\n    \"text\": \"SE\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_sp\",\n    \"type\": \"link\",\n    \"text\": \"SP\",\n    \"state\": \"selected\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_to\",\n    \"type\": \"link\",\n    \"text\": \"TO\",\n    \"region\": \"state-filters\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_label_sao_paulo\",\n    \"type\": \"label\",\n    \"text\": \"São Paulo\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"store_card_carapicuiba_express\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"Carapicuíba Express\",\n      \"address\": \"Avenida Rui Barbosa, 171, Carapicuíba - SP\",\n      \"hours\": \"09h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_paulinia\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"PAULÍNIA\",\n      \"address\": \"AVENIDA JOSE PAULINO 774 QD C LT L, PAULINIA - SP\",\n      \"hours\": \"09h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_sumare_2\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"SUMARÉ 2\",\n      \"address\": \"AV SUMARE 1334, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_sao_jose\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"SÃO JOSÉ\",\n      \"address\": \"RUA DO COMERCIO BERLINO 20, SAO JOSE DOS CAMPOS - SP\",\n      \"hours\": \"09h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_jundiai\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"JUNDIAÍ\",\n      \"address\": \"AV NOVA DE JULHO 1200, JUNDIAI - SP\",\n      \"hours\": \"09h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_shc_continental\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"SHC CONTINENTAL\",\n      \"address\": \"AVENIDA DOUTOR ENÉAS PIRES DE ALMEIDA 100, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_cantareira\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"CANTAREIRA\",\n      \"address\": \"AV NOVA CANTAREIRA 2265, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_caetano_alvares\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"CAETANO ALVARES\",\n      \"address\": \"RUA PROFESSOR GUILHERO GULLI 104, SAO PAULO - SP\",\n      \"hours\": \"08h00 às 23h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_vila_mascote\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"VILA MASCOTE\",\n      \"address\": \"AV VEREADOR JOAO D. LUCA 483, SAO PAULO - SP\",\n      \"hours\": \"08h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_real_parque\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"REAL PARQUE\",\n      \"address\": \"AV MORUMBI 6683 6843, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_canal_3\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"CANAL 3\",\n      \"address\": \"AV WASHINGTON LUIS 484, SANTOS - SP\",\n      \"hours\": \"08h00 às 23h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_abilio_soares\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"ABÍLIO SOARES\",\n      \"address\": \"RUA ABILIO SOARES 978, SAO PAULO - SP\",\n      \"hours\": \"08h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_consolacao\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"CONSOLAÇÃO\",\n      \"address\": \"RUA SERGIPE 160, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_vila_madalena\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"VILA MADALENA\",\n      \"address\": \"RUA HARMONIA 375, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 23h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_ponta_da_praia\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"PONTA DA PRAIA\",\n      \"address\": \"RUA BARTOLOMEU DE GUSMAO 131, SANTOS - SP\",\n      \"hours\": \"08h00 às 21h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_campo_belo\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"CAMPO BELO\",\n      \"address\": \"AV VEREADOR DINIZ 3675 LJ 01, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 20h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_lapa\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"LAPA\",\n      \"address\": \"RUA PIO XI 801, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 21h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_alphaville_6\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"ALPHAVILLE 6\",\n      \"address\": \"AV DOUTOR YOJIRU TAKAOKA 474 CENTRO IL, BARUERI - SP\",\n      \"hours\": \"08h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_indianopolis\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"INDIANÓPOLIS\",\n      \"address\": \"AV INDIANAPOLIS 440, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_nove_de_julho\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"NOVE DE JULHO\",\n      \"address\": \"AV NOVE DE JULHO 550, SAO JOSE DOS CAMPOS - SP\",\n      \"hours\": \"09h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_colinas\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"COLINAS\",\n      \"address\": \"AV SAO JOAO 2136, SAO JOSE DOS CAMPOS - SP\",\n      \"hours\": \"08h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_itapuira\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"ITAPUIRA\",\n      \"address\": \"RUA ITAPUIRA 721 742, SAO PAULO - SP\",\n      \"hours\": \"08h00 às 20h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_norte_sul\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"NORTE SUL\",\n      \"address\": \"RUA JOSE DE SOUZA CAMPOS 1066, CAMPINAS - SP\",\n      \"hours\": \"08h00 às 23h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_vila_olimpia\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"VILA OLIMPIA\",\n      \"address\": \"RUA GOMES DE AMORIM 1299, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_local_itau\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"LOCAL ITAÚ\",\n      \"address\": \"RUA LIBERIO MATOSO 891 LOJA 03, SAO PAULO - SP\",\n      \"hours\": \"09h00 às 22h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_monte_aprazivel\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"MONTE APRAZÍVEL\",\n      \"address\": \"RUA CORONEL LAURENTINO ALVARES 128, MONTE APRAZIVEL - SP\",\n      \"hours\": \"08h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"store_card_piracicaba_digital\",\n    \"type\": \"card\",\n    \"region\": \"main-content-store-list\",\n    \"meta\": {\n      \"store_icon\": \"Store icon\",\n      \"name\": \"PIRACICABA DIGITAL\",\n      \"address\": \"RUA GOVERNADOR PEDRO DE TOLEDO 865, PIRACICABA - SP\",\n      \"hours\": \"09h00 às 19h00\",\n      \"status\": \"Fechada\"\n    }\n  },\n  {\n    \"id\": \"footer_sac_link\",\n    \"type\": \"link\",\n    \"text\": \"sac 4003.4848\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_security_guide_link\",\n    \"type\": \"link\",\n    \"text\": \"guia de segurança\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_special_beauty_link\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_advertising_link\",\n    \"type\": \"link\",\n    \"text\": \"americanas advertising\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_deliveries_returns_link\",\n    \"type\": \"link\",\n    \"text\": \"entregas e devoluções\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_more_info_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"mais informações\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_instagram_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Instagram icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_facebook_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Facebook icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_youtube_icon\",\n    \"type\": \"icon\",\n    \"text\": \"YouTube icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_copyright_text\",\n    \"type\": \"label\",\n    \"text\": \"americanas s.a. / CNPJ 00.776.574/0006-60 / Inscrição Estadual 85.687.99-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_sitemap_link\",\n    \"type\": \"link\",\n    \"text\": \"Mapa do site\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 7679,
+      "totalTokenCount": 9732,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 1398
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "u7GcadTBD5CfqtsPxqDb-Q4"
+  },
+  "ui": [
+    {
+      "id": "top_bar_special_beauty_link",
+      "type": "link",
+      "text": "especial beleza",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_care_link",
+      "type": "link",
+      "text": "seu cuidado começa aqui",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_installments_link",
+      "type": "link",
+      "text": "tudo em até 12x no cartão",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_queero_link",
+      "type": "link",
+      "text": "queero",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_heart_icon",
+      "type": "icon",
+      "text": "Heart icon",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_shopping_cart_icon",
+      "type": "icon",
+      "text": "Shopping cart icon",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_logo",
+      "type": "image",
+      "text": "americanas logo",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_search_input",
+      "type": "input",
+      "text": "Busque aqui seu produto",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onFocus"
+      ]
+    },
+    {
+      "id": "header_search_button",
+      "type": "button",
+      "text": "Search icon",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_login_button",
+      "type": "button",
+      "text": "Olá, faça seu lo...",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "header_register_button",
+      "type": "button",
+      "text": "ou cadastre-se",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_cep",
+      "type": "link",
+      "text": "Informe seu CEP",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_app",
+      "type": "link",
+      "text": "Baixe o app",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_card",
+      "type": "link",
+      "text": "Faça seu cartão",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_best_sellers",
+      "type": "link",
+      "text": "mais vendidos",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_our_stores",
+      "type": "link",
+      "text": "nossas lojas",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_fast_delivery",
+      "type": "link",
+      "text": "entrega rápida",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_offers",
+      "type": "link",
+      "text": "levar ofertas",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_tv_offers",
+      "type": "link",
+      "text": "ofertas de TV",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_outlet",
+      "type": "link",
+      "text": "outlet",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_nav_deal_of_the_day",
+      "type": "link",
+      "text": "oferta do dia",
+      "region": "header-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_departments_dropdown",
+      "type": "dropdown",
+      "text": "Todos os departamentos",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_market",
+      "type": "link",
+      "text": "Mercado",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_toys",
+      "type": "link",
+      "text": "Brinquedos",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_cellphones",
+      "type": "link",
+      "text": "Celulares",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_appliances",
+      "type": "link",
+      "text": "Eletrodomésticos",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_computing",
+      "type": "link",
+      "text": "Informática",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_audio_video",
+      "type": "link",
+      "text": "Áudio e vídeo",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_small_appliances",
+      "type": "link",
+      "text": "Eletroportáteis",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_furniture",
+      "type": "link",
+      "text": "Móveis",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sub_header_nav_special_beauty",
+      "type": "link",
+      "text": "especial beleza",
+      "region": "sub-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main_banner_image",
+      "type": "image",
+      "text": "Banner: comprou, ganhou um jogo da Disney ou Marvel no valor de R$79,99",
+      "region": "main-content-banner",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main_banner_button",
+      "type": "button",
+      "text": "Aproveite",
+      "region": "main-content-banner",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_home",
+      "type": "link",
+      "text": "Página inicial",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_our_stores",
+      "type": "label",
+      "text": "Nossas lojas",
+      "region": "breadcrumbs"
+    },
+    {
+      "id": "section_title_stores_by_state",
+      "type": "label",
+      "text": "Nossas lojas por estado",
+      "region": "main-content"
+    },
+    {
+      "id": "state_filter_ac",
+      "type": "link",
+      "text": "AC",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_al",
+      "type": "link",
+      "text": "AL",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_am",
+      "type": "link",
+      "text": "AM",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ap",
+      "type": "link",
+      "text": "AP",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ba",
+      "type": "link",
+      "text": "BA",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ce",
+      "type": "link",
+      "text": "CE",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_df",
+      "type": "link",
+      "text": "DF",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_es",
+      "type": "link",
+      "text": "ES",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_go",
+      "type": "link",
+      "text": "GO",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ma",
+      "type": "link",
+      "text": "MA",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_mg",
+      "type": "link",
+      "text": "MG",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ms",
+      "type": "link",
+      "text": "MS",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_mt",
+      "type": "link",
+      "text": "MT",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pa",
+      "type": "link",
+      "text": "PA",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pb",
+      "type": "link",
+      "text": "PB",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pe",
+      "type": "link",
+      "text": "PE",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pi",
+      "type": "link",
+      "text": "PI",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pr",
+      "type": "link",
+      "text": "PR",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_rj",
+      "type": "link",
+      "text": "RJ",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_rn",
+      "type": "link",
+      "text": "RN",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ro",
+      "type": "link",
+      "text": "RO",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_rr",
+      "type": "link",
+      "text": "RR",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_rs",
+      "type": "link",
+      "text": "RS",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_sc",
+      "type": "link",
+      "text": "SC",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_se",
+      "type": "link",
+      "text": "SE",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_sp",
+      "type": "link",
+      "text": "SP",
+      "state": "selected",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_to",
+      "type": "link",
+      "text": "TO",
+      "region": "state-filters",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_label_sao_paulo",
+      "type": "label",
+      "text": "São Paulo",
+      "region": "main-content"
+    },
+    {
+      "id": "store_card_carapicuiba_express",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "Carapicuíba Express",
+        "address": "Avenida Rui Barbosa, 171, Carapicuíba - SP",
+        "hours": "09h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_paulinia",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "PAULÍNIA",
+        "address": "AVENIDA JOSE PAULINO 774 QD C LT L, PAULINIA - SP",
+        "hours": "09h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_sumare_2",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "SUMARÉ 2",
+        "address": "AV SUMARE 1334, SAO PAULO - SP",
+        "hours": "09h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_sao_jose",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "SÃO JOSÉ",
+        "address": "RUA DO COMERCIO BERLINO 20, SAO JOSE DOS CAMPOS - SP",
+        "hours": "09h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_jundiai",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "JUNDIAÍ",
+        "address": "AV NOVA DE JULHO 1200, JUNDIAI - SP",
+        "hours": "09h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_shc_continental",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "SHC CONTINENTAL",
+        "address": "AVENIDA DOUTOR ENÉAS PIRES DE ALMEIDA 100, SAO PAULO - SP",
+        "hours": "09h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_cantareira",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "CANTAREIRA",
+        "address": "AV NOVA CANTAREIRA 2265, SAO PAULO - SP",
+        "hours": "09h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_caetano_alvares",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "CAETANO ALVARES",
+        "address": "RUA PROFESSOR GUILHERO GULLI 104, SAO PAULO - SP",
+        "hours": "08h00 às 23h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_vila_mascote",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "VILA MASCOTE",
+        "address": "AV VEREADOR JOAO D. LUCA 483, SAO PAULO - SP",
+        "hours": "08h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_real_parque",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "REAL PARQUE",
+        "address": "AV MORUMBI 6683 6843, SAO PAULO - SP",
+        "hours": "09h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_canal_3",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "CANAL 3",
+        "address": "AV WASHINGTON LUIS 484, SANTOS - SP",
+        "hours": "08h00 às 23h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_abilio_soares",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "ABÍLIO SOARES",
+        "address": "RUA ABILIO SOARES 978, SAO PAULO - SP",
+        "hours": "08h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_consolacao",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "CONSOLAÇÃO",
+        "address": "RUA SERGIPE 160, SAO PAULO - SP",
+        "hours": "09h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_vila_madalena",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "VILA MADALENA",
+        "address": "RUA HARMONIA 375, SAO PAULO - SP",
+        "hours": "09h00 às 23h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_ponta_da_praia",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "PONTA DA PRAIA",
+        "address": "RUA BARTOLOMEU DE GUSMAO 131, SANTOS - SP",
+        "hours": "08h00 às 21h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_campo_belo",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "CAMPO BELO",
+        "address": "AV VEREADOR DINIZ 3675 LJ 01, SAO PAULO - SP",
+        "hours": "09h00 às 20h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_lapa",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "LAPA",
+        "address": "RUA PIO XI 801, SAO PAULO - SP",
+        "hours": "09h00 às 21h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_alphaville_6",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "ALPHAVILLE 6",
+        "address": "AV DOUTOR YOJIRU TAKAOKA 474 CENTRO IL, BARUERI - SP",
+        "hours": "08h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_indianopolis",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "INDIANÓPOLIS",
+        "address": "AV INDIANAPOLIS 440, SAO PAULO - SP",
+        "hours": "09h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_nove_de_julho",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "NOVE DE JULHO",
+        "address": "AV NOVE DE JULHO 550, SAO JOSE DOS CAMPOS - SP",
+        "hours": "09h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_colinas",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "COLINAS",
+        "address": "AV SAO JOAO 2136, SAO JOSE DOS CAMPOS - SP",
+        "hours": "08h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_itapuira",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "ITAPUIRA",
+        "address": "RUA ITAPUIRA 721 742, SAO PAULO - SP",
+        "hours": "08h00 às 20h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_norte_sul",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "NORTE SUL",
+        "address": "RUA JOSE DE SOUZA CAMPOS 1066, CAMPINAS - SP",
+        "hours": "08h00 às 23h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_vila_olimpia",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "VILA OLIMPIA",
+        "address": "RUA GOMES DE AMORIM 1299, SAO PAULO - SP",
+        "hours": "09h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_local_itau",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "LOCAL ITAÚ",
+        "address": "RUA LIBERIO MATOSO 891 LOJA 03, SAO PAULO - SP",
+        "hours": "09h00 às 22h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_monte_aprazivel",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "MONTE APRAZÍVEL",
+        "address": "RUA CORONEL LAURENTINO ALVARES 128, MONTE APRAZIVEL - SP",
+        "hours": "08h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "store_card_piracicaba_digital",
+      "type": "card",
+      "region": "main-content-store-list",
+      "meta": {
+        "store_icon": "Store icon",
+        "name": "PIRACICABA DIGITAL",
+        "address": "RUA GOVERNADOR PEDRO DE TOLEDO 865, PIRACICABA - SP",
+        "hours": "09h00 às 19h00",
+        "status": "Fechada"
+      }
+    },
+    {
+      "id": "footer_sac_link",
+      "type": "link",
+      "text": "sac 4003.4848",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_security_guide_link",
+      "type": "link",
+      "text": "guia de segurança",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_special_beauty_link",
+      "type": "link",
+      "text": "especial beleza",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_advertising_link",
+      "type": "link",
+      "text": "americanas advertising",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_deliveries_returns_link",
+      "type": "link",
+      "text": "entregas e devoluções",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_more_info_dropdown",
+      "type": "dropdown",
+      "text": "mais informações",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_instagram_icon",
+      "type": "icon",
+      "text": "Instagram icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_facebook_icon",
+      "type": "icon",
+      "text": "Facebook icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_youtube_icon",
+      "type": "icon",
+      "text": "YouTube icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_copyright_text",
+      "type": "label",
+      "text": "americanas s.a. / CNPJ 00.776.574/0006-60 / Inscrição Estadual 85.687.99-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902",
+      "region": "footer"
+    },
+    {
+      "id": "footer_sitemap_link",
+      "type": "link",
+      "text": "Mapa do site",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

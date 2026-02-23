@@ -1,0 +1,334 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "nvidia/nemoretriever-page-elements-v3",
+  "action": "Detecção de elementos de página concluída.",
+  "rationale": "{\n  \"table\": [\n    {\n      \"x_min\": 0.1216,\n      \"y_min\": 0.8354,\n      \"x_max\": 0.937,\n      \"y_max\": 0.9345,\n      \"confidence\": 0.1482\n    }\n  ],\n  \"title\": [\n    {\n      \"x_min\": 0.1676,\n      \"y_min\": 0.1801,\n      \"x_max\": 0.4857,\n      \"y_max\": 0.2029,\n      \"confidence\": 0.5901\n    },\n    {\n      \"x_min\": 0.1734,\n      \"y_min\": 0.0469,\n      \"x_max\": 0.2565,\n      \"y_max\": 0.0666,\n      \"confidence\": 0.3784\n    },\n    {\n      \"x_min\": 0.2879,\n      \"y_min\": 0.0502,\n      \"x_max\": 0.381,\n      \"y_max\": 0.0643,\n      \"confidence\": 0.3367\n    },\n    {\n      \"x_min\": 0.3393,\n      \"y_min\": 0.2405,\n      \"x_max\": 0.4649,\n      \"y_max\": 0.2592,\n      \"confidence\": 0.2698\n    },\n    {\n      \"x_min\": 0.5212,\n      \"y_min\": 0.0026,\n      \"x_max\": 0.6429,\n      \"y_max\": 0.0294,\n      \"confidence\": 0.1488\n    }\n  ],\n  \"infographic\": [\n    {\n      \"x_min\": 0.094,\n      \"y_min\": 0.1482,\n      \"x_max\": 0.9128,\n      \"y_max\": 0.7196,\n      \"confidence\": 0.6431\n    }\n  ],\n  \"paragraph\": [\n    {\n      \"x_min\": 0.5535,\n      \"y_min\": 0.6163,\n      \"x_max\": 0.6125,\n      \"y_max\": 0.626,\n      \"confidence\": 0.4721\n    },\n    {\n      \"x_min\": 0.1736,\n      \"y_min\": 0.0497,\n      \"x_max\": 0.3649,\n      \"y_max\": 0.1487,\n      \"confidence\": 0.4235\n    },\n    {\n      \"x_min\": 0.1744,\n      \"y_min\": 0.8683,\n      \"x_max\": 0.2316,\n      \"y_max\": 0.8784,\n      \"confidence\": 0.2367\n    },\n    {\n      \"x_min\": 0.6576,\n      \"y_min\": 0.0451,\n      \"x_max\": 0.7174,\n      \"y_max\": 0.0664,\n      \"confidence\": 0.1915\n    },\n    {\n      \"x_min\": 0.1744,\n      \"y_min\": 0.7742,\n      \"x_max\": 0.2611,\n      \"y_max\": 0.7855,\n      \"confidence\": 0.1901\n    },\n    {\n      \"x_min\": 0.7695,\n      \"y_min\": 0.1111,\n      \"x_max\": 0.8213,\n      \"y_max\": 0.1209,\n      \"confidence\": 0.1603\n    },\n    {\n      \"x_min\": 0.3439,\n      \"y_min\": 0.321,\n      \"x_max\": 0.4652,\n      \"y_max\": 0.3328,\n      \"confidence\": 0.1585\n    },\n    {\n      \"x_min\": 0.1756,\n      \"y_min\": 0.0481,\n      \"x_max\": 0.2861,\n      \"y_max\": 0.1256,\n      \"confidence\": 0.115\n    }\n  ],\n  \"header_footer\": [\n    {\n      \"x_min\": 0.1735,\n      \"y_min\": 0.9141,\n      \"x_max\": 0.2613,\n      \"y_max\": 0.9299,\n      \"confidence\": 0.447\n    },\n    {\n      \"x_min\": 0.2772,\n      \"y_min\": 0.9608,\n      \"x_max\": 0.713,\n      \"y_max\": 0.9717,\n      \"confidence\": 0.3757\n    },\n    {\n      \"x_min\": 0.6714,\n      \"y_min\": 0.008,\n      \"x_max\": 0.7407,\n      \"y_max\": 0.0211,\n      \"confidence\": 0.3122\n    },\n    {\n      \"x_min\": 0.347,\n      \"y_min\": 0.006,\n      \"x_max\": 0.3898,\n      \"y_max\": 0.024,\n      \"confidence\": 0.2846\n    },\n    {\n      \"x_min\": 0.2635,\n      \"y_min\": 0.0067,\n      \"x_max\": 0.3269,\n      \"y_max\": 0.0214,\n      \"confidence\": 0.1904\n    }\n  ]\n}",
+  "confidence": 100,
+  "ui": null,
+  "rawResponse": {
+    "detections": {
+      "data": [
+        {
+          "index": 0,
+          "bounding_boxes": {
+            "table": [
+              {
+                "x_min": 0.1216,
+                "y_min": 0.8354,
+                "x_max": 0.937,
+                "y_max": 0.9345,
+                "confidence": 0.1482
+              }
+            ],
+            "title": [
+              {
+                "x_min": 0.1676,
+                "y_min": 0.1801,
+                "x_max": 0.4857,
+                "y_max": 0.2029,
+                "confidence": 0.5901
+              },
+              {
+                "x_min": 0.1734,
+                "y_min": 0.0469,
+                "x_max": 0.2565,
+                "y_max": 0.0666,
+                "confidence": 0.3784
+              },
+              {
+                "x_min": 0.2879,
+                "y_min": 0.0502,
+                "x_max": 0.381,
+                "y_max": 0.0643,
+                "confidence": 0.3367
+              },
+              {
+                "x_min": 0.3393,
+                "y_min": 0.2405,
+                "x_max": 0.4649,
+                "y_max": 0.2592,
+                "confidence": 0.2698
+              },
+              {
+                "x_min": 0.5212,
+                "y_min": 0.0026,
+                "x_max": 0.6429,
+                "y_max": 0.0294,
+                "confidence": 0.1488
+              }
+            ],
+            "infographic": [
+              {
+                "x_min": 0.094,
+                "y_min": 0.1482,
+                "x_max": 0.9128,
+                "y_max": 0.7196,
+                "confidence": 0.6431
+              }
+            ],
+            "paragraph": [
+              {
+                "x_min": 0.5535,
+                "y_min": 0.6163,
+                "x_max": 0.6125,
+                "y_max": 0.626,
+                "confidence": 0.4721
+              },
+              {
+                "x_min": 0.1736,
+                "y_min": 0.0497,
+                "x_max": 0.3649,
+                "y_max": 0.1487,
+                "confidence": 0.4235
+              },
+              {
+                "x_min": 0.1744,
+                "y_min": 0.8683,
+                "x_max": 0.2316,
+                "y_max": 0.8784,
+                "confidence": 0.2367
+              },
+              {
+                "x_min": 0.6576,
+                "y_min": 0.0451,
+                "x_max": 0.7174,
+                "y_max": 0.0664,
+                "confidence": 0.1915
+              },
+              {
+                "x_min": 0.1744,
+                "y_min": 0.7742,
+                "x_max": 0.2611,
+                "y_max": 0.7855,
+                "confidence": 0.1901
+              },
+              {
+                "x_min": 0.7695,
+                "y_min": 0.1111,
+                "x_max": 0.8213,
+                "y_max": 0.1209,
+                "confidence": 0.1603
+              },
+              {
+                "x_min": 0.3439,
+                "y_min": 0.321,
+                "x_max": 0.4652,
+                "y_max": 0.3328,
+                "confidence": 0.1585
+              },
+              {
+                "x_min": 0.1756,
+                "y_min": 0.0481,
+                "x_max": 0.2861,
+                "y_max": 0.1256,
+                "confidence": 0.115
+              }
+            ],
+            "header_footer": [
+              {
+                "x_min": 0.1735,
+                "y_min": 0.9141,
+                "x_max": 0.2613,
+                "y_max": 0.9299,
+                "confidence": 0.447
+              },
+              {
+                "x_min": 0.2772,
+                "y_min": 0.9608,
+                "x_max": 0.713,
+                "y_max": 0.9717,
+                "confidence": 0.3757
+              },
+              {
+                "x_min": 0.6714,
+                "y_min": 0.008,
+                "x_max": 0.7407,
+                "y_max": 0.0211,
+                "confidence": 0.3122
+              },
+              {
+                "x_min": 0.347,
+                "y_min": 0.006,
+                "x_max": 0.3898,
+                "y_max": 0.024,
+                "confidence": 0.2846
+              },
+              {
+                "x_min": 0.2635,
+                "y_min": 0.0067,
+                "x_max": 0.3269,
+                "y_max": 0.0214,
+                "confidence": 0.1904
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "images_size_mb": 0.4130392074584961
+      }
+    },
+    "rawResponse": {
+      "data": [
+        {
+          "index": 0,
+          "bounding_boxes": {
+            "table": [
+              {
+                "x_min": 0.1216,
+                "y_min": 0.8354,
+                "x_max": 0.937,
+                "y_max": 0.9345,
+                "confidence": 0.1482
+              }
+            ],
+            "title": [
+              {
+                "x_min": 0.1676,
+                "y_min": 0.1801,
+                "x_max": 0.4857,
+                "y_max": 0.2029,
+                "confidence": 0.5901
+              },
+              {
+                "x_min": 0.1734,
+                "y_min": 0.0469,
+                "x_max": 0.2565,
+                "y_max": 0.0666,
+                "confidence": 0.3784
+              },
+              {
+                "x_min": 0.2879,
+                "y_min": 0.0502,
+                "x_max": 0.381,
+                "y_max": 0.0643,
+                "confidence": 0.3367
+              },
+              {
+                "x_min": 0.3393,
+                "y_min": 0.2405,
+                "x_max": 0.4649,
+                "y_max": 0.2592,
+                "confidence": 0.2698
+              },
+              {
+                "x_min": 0.5212,
+                "y_min": 0.0026,
+                "x_max": 0.6429,
+                "y_max": 0.0294,
+                "confidence": 0.1488
+              }
+            ],
+            "infographic": [
+              {
+                "x_min": 0.094,
+                "y_min": 0.1482,
+                "x_max": 0.9128,
+                "y_max": 0.7196,
+                "confidence": 0.6431
+              }
+            ],
+            "paragraph": [
+              {
+                "x_min": 0.5535,
+                "y_min": 0.6163,
+                "x_max": 0.6125,
+                "y_max": 0.626,
+                "confidence": 0.4721
+              },
+              {
+                "x_min": 0.1736,
+                "y_min": 0.0497,
+                "x_max": 0.3649,
+                "y_max": 0.1487,
+                "confidence": 0.4235
+              },
+              {
+                "x_min": 0.1744,
+                "y_min": 0.8683,
+                "x_max": 0.2316,
+                "y_max": 0.8784,
+                "confidence": 0.2367
+              },
+              {
+                "x_min": 0.6576,
+                "y_min": 0.0451,
+                "x_max": 0.7174,
+                "y_max": 0.0664,
+                "confidence": 0.1915
+              },
+              {
+                "x_min": 0.1744,
+                "y_min": 0.7742,
+                "x_max": 0.2611,
+                "y_max": 0.7855,
+                "confidence": 0.1901
+              },
+              {
+                "x_min": 0.7695,
+                "y_min": 0.1111,
+                "x_max": 0.8213,
+                "y_max": 0.1209,
+                "confidence": 0.1603
+              },
+              {
+                "x_min": 0.3439,
+                "y_min": 0.321,
+                "x_max": 0.4652,
+                "y_max": 0.3328,
+                "confidence": 0.1585
+              },
+              {
+                "x_min": 0.1756,
+                "y_min": 0.0481,
+                "x_max": 0.2861,
+                "y_max": 0.1256,
+                "confidence": 0.115
+              }
+            ],
+            "header_footer": [
+              {
+                "x_min": 0.1735,
+                "y_min": 0.9141,
+                "x_max": 0.2613,
+                "y_max": 0.9299,
+                "confidence": 0.447
+              },
+              {
+                "x_min": 0.2772,
+                "y_min": 0.9608,
+                "x_max": 0.713,
+                "y_max": 0.9717,
+                "confidence": 0.3757
+              },
+              {
+                "x_min": 0.6714,
+                "y_min": 0.008,
+                "x_max": 0.7407,
+                "y_max": 0.0211,
+                "confidence": 0.3122
+              },
+              {
+                "x_min": 0.347,
+                "y_min": 0.006,
+                "x_max": 0.3898,
+                "y_max": 0.024,
+                "confidence": 0.2846
+              },
+              {
+                "x_min": 0.2635,
+                "y_min": 0.0067,
+                "x_max": 0.3269,
+                "y_max": 0.0214,
+                "confidence": 0.1904
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "images_size_mb": 0.4130392074584961
+      }
+    }
+  }
+}

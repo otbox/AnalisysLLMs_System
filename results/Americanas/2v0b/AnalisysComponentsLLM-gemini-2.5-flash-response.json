@@ -1,0 +1,1070 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 90,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"top_bar_logo_cadence\",\n    \"type\": \"image\",\n    \"text\": \"cadence\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_text_viva_o_que_importa\",\n    \"type\": \"text\",\n    \"text\": \"Viva o que importa\",\n    \"region\": \"top-bar\"\n  },\n  {\n    \"id\": \"top_bar_logo_americanas\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search_input\",\n    \"type\": \"input\",\n    \"text\": \"busque aqui seu produto\",\n    \"placeholder\": \"busque aqui seu produto\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onChange\", \"onSearchSubmit\"],\n    \"meta\": {\n      \"icon\": \"search\"\n    }\n  },\n  {\n    \"id\": \"user_account_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"olá, stoco8718... minha conta\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"user\"\n    }\n  },\n  {\n    \"id\": \"store_icon\",\n    \"type\": \"icon\",\n    \"text\": \"loja\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"favorites_icon\",\n    \"type\": \"icon\",\n    \"text\": \"favoritos\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"cart_icon\",\n    \"type\": \"icon\",\n    \"text\": \"carrinho\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"notification_count\": 1\n    }\n  },\n  {\n    \"id\": \"link_informe_seu_cep\",\n    \"type\": \"link\",\n    \"text\": \"informe seu CEP\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"location\"\n    }\n  },\n  {\n    \"id\": \"link_baixe_o_app\",\n    \"type\": \"link\",\n    \"text\": \"baixe o app\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_faca_seu_cartao\",\n    \"type\": \"link\",\n    \"text\": \"faça seu cartão\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_mais_vendidos\",\n    \"type\": \"link\",\n    \"text\": \"mais vendidos\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_nossas_lojas\",\n    \"type\": \"link\",\n    \"text\": \"nossas lojas\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_entrega_rapida\",\n    \"type\": \"link\",\n    \"text\": \"entrega rápida\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_leve_pague\",\n    \"type\": \"link\",\n    \"text\": \"leve+ pague-\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_ofertas_da_tv\",\n    \"type\": \"link\",\n    \"text\": \"ofertas da TV\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_outlet\",\n    \"type\": \"link\",\n    \"text\": \"outlet\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_oferta_do_dia\",\n    \"type\": \"link\",\n    \"text\": \"oferta do dia\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"dropdown_todos_os_departamentos\",\n    \"type\": \"dropdown\",\n    \"text\": \"todos os departamentos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"menu\"\n    }\n  },\n  {\n    \"id\": \"nav_link_mercado\",\n    \"type\": \"link\",\n    \"text\": \"mercado\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_brinquedos\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_celulares\",\n    \"type\": \"link\",\n    \"text\": \"celulares\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_eletrodomesticos\",\n    \"type\": \"link\",\n    \"text\": \"eletrodomésticos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_informatica\",\n    \"type\": \"link\",\n    \"text\": \"informática\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_audio_e_video\",\n    \"type\": \"link\",\n    \"text\": \"áudio e vídeo\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_eletroportateis\",\n    \"type\": \"link\",\n    \"text\": \"eletroportáteis\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_moveis\",\n    \"type\": \"link\",\n    \"text\": \"móveis\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_dia_das_bruxas\",\n    \"type\": \"link\",\n    \"text\": \"dia das bruxas\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"page_title\",\n    \"type\": \"text\",\n    \"text\": \"Dinossauros de brinquedo\",\n    \"region\": \"main-content-header\"\n  },\n  {\n    \"id\": \"filter_section_title\",\n    \"type\": \"label\",\n    \"text\": \"filtrar por\",\n    \"region\": \"sidebar-filter\"\n  },\n  {\n    \"id\": \"filter_category_label\",\n    \"type\": \"label\",\n    \"text\": \"Categoria\",\n    \"region\": \"sidebar-filter\"\n  },\n  {\n    \"id\": \"filter_category_acessorios_bicicleta\",\n    \"type\": \"checkbox\",\n    \"text\": \"acessórios para bicicleta\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 6\n    }\n  },\n  {\n    \"id\": \"filter_category_artes_atividades\",\n    \"type\": \"checkbox\",\n    \"text\": \"artes e atividades\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 271\n    }\n  },\n  {\n    \"id\": \"filter_category_bicicleta_equilibrio\",\n    \"type\": \"checkbox\",\n    \"text\": \"bicicleta de equilíbrio\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 5\n    }\n  },\n  {\n    \"id\": \"filter_category_bicicleta_infantil\",\n    \"type\": \"checkbox\",\n    \"text\": \"bicicleta infantil\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 43\n    }\n  },\n  {\n    \"id\": \"filter_category_blocos_montar\",\n    \"type\": \"checkbox\",\n    \"text\": \"blocos de montar\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 167\n    }\n  },\n  {\n    \"id\": \"filter_category_boneca\",\n    \"type\": \"checkbox\",\n    \"text\": \"boneca\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 429\n    }\n  },\n  {\n    \"id\": \"filter_category_ver_tudo\",\n    \"type\": \"link\",\n    \"text\": \"ver tudo\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"filter_genero_label\",\n    \"type\": \"label\",\n    \"text\": \"Gênero\",\n    \"region\": \"sidebar-filter\"\n  },\n  {\n    \"id\": \"filter_genero_menino\",\n    \"type\": \"checkbox\",\n    \"text\": \"menino\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 2\n    }\n  },\n  {\n    \"id\": \"filter_genero_unissex\",\n    \"type\": \"checkbox\",\n    \"text\": \"unissex\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 1\n    }\n  },\n  {\n    \"id\": \"filter_preco_label\",\n    \"type\": \"label\",\n    \"text\": \"Preço\",\n    \"region\": \"sidebar-filter\"\n  },\n  {\n    \"id\": \"filter_preco_0_25\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 0 - R$ 25\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"filter_preco_25_50\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 25 - R$ 50\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"filter_preco_50_100\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 50 - R$ 100\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"filter_preco_100_250\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 100 - R$ 250\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"filter_preco_250_500\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 250 - R$ 500\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"filter_preco_500_1000\",\n    \"type\": \"checkbox\",\n    \"text\": \"R$ 500 - R$ 1.000\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"filter_preco_ver_tudo\",\n    \"type\": \"link\",\n    \"text\": \"ver tudo\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"filter_condicao_item_label\",\n    \"type\": \"label\",\n    \"text\": \"Condição do Item\",\n    \"region\": \"sidebar-filter\"\n  },\n  {\n    \"id\": \"filter_condicao_item_novo\",\n    \"type\": \"checkbox\",\n    \"text\": \"novo\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 12\n    }\n  },\n  {\n    \"id\": \"filter_marca_label\",\n    \"type\": \"label\",\n    \"text\": \"Marca\",\n    \"region\": \"sidebar-filter\"\n  },\n  {\n    \"id\": \"filter_marca_brink_plus\",\n    \"type\": \"checkbox\",\n    \"text\": \"brink+\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 2\n    }\n  },\n  {\n    \"id\": \"filter_marca_candide\",\n    \"type\": \"checkbox\",\n    \"text\": \"candide\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 2\n    }\n  },\n  {\n    \"id\": \"filter_marca_homeplay\",\n    \"type\": \"checkbox\",\n    \"text\": \"homeplay\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 1\n    }\n  },\n  {\n    \"id\": \"filter_marca_nao_disponivel\",\n    \"type\": \"checkbox\",\n    \"text\": \"não disponível\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 9\n    }\n  },\n  {\n    \"id\": \"filter_produto_internacional_label\",\n    \"type\": \"label\",\n    \"text\": \"Produto Internacional\",\n    \"region\": \"sidebar-filter\"\n  },\n  {\n    \"id\": \"filter_produto_internacional_nao\",\n    \"type\": \"checkbox\",\n    \"text\": \"não\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 9\n    }\n  },\n  {\n    \"id\": \"filter_produto_internacional_sim\",\n    \"type\": \"checkbox\",\n    \"text\": \"sim\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar-filter\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"count\": 3\n    }\n  },\n  {\n    \"id\": \"product_list_title\",\n    \"type\": \"label\",\n    \"text\": \"listagem de produtos\",\n    \"region\": \"main-content-listing\"\n  },\n  {\n    \"id\": \"product_count\",\n    \"type\": \"text\",\n    \"text\": \"14 produtos encontrados\",\n    \"region\": \"main-content-listing\"\n  },\n  {\n    \"id\": \"sort_dropdown\",\n    \"type\": \"select\",\n    \"text\": \"ordenar por: mais relevantes\",\n    \"state\": \"active\",\n    \"region\": \"main-content-listing\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"selected_option\": \"mais relevantes\"\n    }\n  },\n  {\n    \"id\": \"view_toggle_grid\",\n    \"type\": \"button\",\n    \"text\": \"grid\",\n    \"state\": \"selected\",\n    \"region\": \"main-content-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"grid\"\n    }\n  },\n  {\n    \"id\": \"view_toggle_lista\",\n    \"type\": \"button\",\n    \"text\": \"lista\",\n    \"state\": \"unselected\",\n    \"region\": \"main-content-listing\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"list\"\n    }\n  },\n  {\n    \"id\": \"product_card_1\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_dino_cegonheira\",\n      \"tag\": \"Internacional\",\n      \"title\": \"DINO CEGONHEIRA\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 39,99\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_2\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_cjt_com_2_dinossauros\",\n      \"title\": \"CJT COM 2 DINOSSAUROS BRINK+\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 19,99\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_3\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_robo_alive_dino_dna\",\n      \"tag\": \"Internacional\",\n      \"title\": \"ROBO ALIVE DINO DNA CANDIDE 1145\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 149,99\",\n      \"installment_info\": \"em 3x de R$ 49,99 sem juros no cartão de crédito\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_4\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_king_monster_godzilla\",\n      \"title\": \"King Monster Godzilla Gigante Dinossauro\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 105,99\",\n      \"installment_info\": \"em 2x de R$ 52,99 sem juros no cartão de crédito\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_5\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_dinossauro_cibernetico\",\n      \"title\": \"Dinossauro Cibernético Rex Que Anda E Solta...\",\n      \"rating\": {\n        \"score\": 5.0,\n        \"max_score\": 5,\n        \"star_type\": \"filled\"\n      },\n      \"price\": \"R$ 82,68\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_6\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_dinossauro_grande_braquiossauro\",\n      \"title\": \"Dinossauro Grande Braquiossauro Marrom...\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 61,37\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_7\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_dinossauros_beast_alive\",\n      \"tag\": \"Internacional\",\n      \"title\": \"DINOSSAUROS BEAST ALIVE CRIATURAS 1147...\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 19,99\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_8\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_ovo_dinossauro_smashers\",\n      \"title\": \"Ovo Dinossauro Smashers Light Verde Série Grande...\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 466,35\",\n      \"installment_info\": \"em 8x de R$ 58,29 sem juros no cartão de crédito\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_9\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_dinossauro_world_tiranossauro\",\n      \"title\": \"Dinossauro World Tiranossauro Rex 2088 -...\",\n      \"rating\": {\n        \"score\": 3.5,\n        \"max_score\": 5,\n        \"star_type\": \"partial\"\n      },\n      \"price\": \"R$ 148,29\",\n      \"installment_info\": \"em 2x de R$ 74,14 sem juros no cartão de crédito\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_10\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_smashers_ovo_dino_ilha\",\n      \"title\": \"Smashers ovo dino ilha do pirata medio - fun\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 149,99\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"product_card_11\",\n    \"type\": \"card\",\n    \"region\": \"main-content-listing\",\n    \"meta\": {\n      \"image_url\": \"image_of_dragao_com_luz_e_som\",\n      \"title\": \"Dragão com Luz e Som - Brink+\",\n      \"rating\": {\n        \"score\": 0.0,\n        \"max_score\": 5,\n        \"star_type\": \"empty\"\n      },\n      \"price\": \"R$ 49,99\",\n      \"actions\": [\n        {\n          \"type\": \"button\",\n          \"text\": \"Adicionar ao carrinho\",\n          \"icon\": \"add_to_cart\",\n          \"action\": \"onClick\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"pagination_info\",\n    \"type\": \"text\",\n    \"text\": \"Mostrando 12 de 14\",\n    \"region\": \"main-content-listing\"\n  },\n  {\n    \"id\": \"button_ver_mais_produtos\",\n    \"type\": \"button\",\n    \"text\": \"ver mais produtos\",\n    \"state\": \"active\",\n    \"region\": \"main-content-listing\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_sac_info\",\n    \"type\": \"text\",\n    \"text\": \"sac 4003 4848\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_link_guia_seguranca\",\n    \"type\": \"link\",\n    \"text\": \"guia de segurança\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_dia_das_bruxas\",\n    \"type\": \"link\",\n    \"text\": \"dia das bruxas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_black_friday\",\n    \"type\": \"link\",\n    \"text\": \"black friday\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_entregas_devolucoes\",\n    \"type\": \"link\",\n    \"text\": \"entregas e devoluções\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_logo_americanas\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_dropdown_mais_informacoes\",\n    \"type\": \"dropdown\",\n    \"text\": \"mais informações\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_social_instagram\",\n    \"type\": \"icon\",\n    \"text\": \"Instagram\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_social_youtube\",\n    \"type\": \"icon\",\n    \"text\": \"YouTube\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_social_facebook\",\n    \"type\": \"icon\",\n    \"text\": \"Facebook\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_social_tiktok\",\n    \"type\": \"icon\",\n    \"text\": \"TikTok\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_copyright_text\",\n    \"type\": \"text\",\n    \"text\": \"americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_link_mapa_do_site\",\n    \"type\": \"link\",\n    \"text\": \"Mapa do site\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 7378,
+      "totalTokenCount": 9987,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 1954
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "0LecaYaGLeSeqtsP6IqV-Q4"
+  },
+  "ui": [
+    {
+      "id": "top_bar_logo_cadence",
+      "type": "image",
+      "text": "cadence",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_text_viva_o_que_importa",
+      "type": "text",
+      "text": "Viva o que importa",
+      "region": "top-bar"
+    },
+    {
+      "id": "top_bar_logo_americanas",
+      "type": "image",
+      "text": "americanas",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search_input",
+      "type": "input",
+      "text": "busque aqui seu produto",
+      "placeholder": "busque aqui seu produto",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onChange",
+        "onSearchSubmit"
+      ],
+      "meta": {
+        "icon": "search"
+      }
+    },
+    {
+      "id": "user_account_dropdown",
+      "type": "dropdown",
+      "text": "olá, stoco8718... minha conta",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "user"
+      }
+    },
+    {
+      "id": "store_icon",
+      "type": "icon",
+      "text": "loja",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "favorites_icon",
+      "type": "icon",
+      "text": "favoritos",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "cart_icon",
+      "type": "icon",
+      "text": "carrinho",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "notification_count": 1
+      }
+    },
+    {
+      "id": "link_informe_seu_cep",
+      "type": "link",
+      "text": "informe seu CEP",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "location"
+      }
+    },
+    {
+      "id": "link_baixe_o_app",
+      "type": "link",
+      "text": "baixe o app",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_faca_seu_cartao",
+      "type": "link",
+      "text": "faça seu cartão",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_mais_vendidos",
+      "type": "link",
+      "text": "mais vendidos",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_nossas_lojas",
+      "type": "link",
+      "text": "nossas lojas",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_entrega_rapida",
+      "type": "link",
+      "text": "entrega rápida",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_leve_pague",
+      "type": "link",
+      "text": "leve+ pague-",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_ofertas_da_tv",
+      "type": "link",
+      "text": "ofertas da TV",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_outlet",
+      "type": "link",
+      "text": "outlet",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_oferta_do_dia",
+      "type": "link",
+      "text": "oferta do dia",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "dropdown_todos_os_departamentos",
+      "type": "dropdown",
+      "text": "todos os departamentos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "menu"
+      }
+    },
+    {
+      "id": "nav_link_mercado",
+      "type": "link",
+      "text": "mercado",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_brinquedos",
+      "type": "link",
+      "text": "brinquedos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_celulares",
+      "type": "link",
+      "text": "celulares",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_eletrodomesticos",
+      "type": "link",
+      "text": "eletrodomésticos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_informatica",
+      "type": "link",
+      "text": "informática",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_audio_e_video",
+      "type": "link",
+      "text": "áudio e vídeo",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_eletroportateis",
+      "type": "link",
+      "text": "eletroportáteis",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_moveis",
+      "type": "link",
+      "text": "móveis",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_dia_das_bruxas",
+      "type": "link",
+      "text": "dia das bruxas",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "page_title",
+      "type": "text",
+      "text": "Dinossauros de brinquedo",
+      "region": "main-content-header"
+    },
+    {
+      "id": "filter_section_title",
+      "type": "label",
+      "text": "filtrar por",
+      "region": "sidebar-filter"
+    },
+    {
+      "id": "filter_category_label",
+      "type": "label",
+      "text": "Categoria",
+      "region": "sidebar-filter"
+    },
+    {
+      "id": "filter_category_acessorios_bicicleta",
+      "type": "checkbox",
+      "text": "acessórios para bicicleta",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 6
+      }
+    },
+    {
+      "id": "filter_category_artes_atividades",
+      "type": "checkbox",
+      "text": "artes e atividades",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 271
+      }
+    },
+    {
+      "id": "filter_category_bicicleta_equilibrio",
+      "type": "checkbox",
+      "text": "bicicleta de equilíbrio",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 5
+      }
+    },
+    {
+      "id": "filter_category_bicicleta_infantil",
+      "type": "checkbox",
+      "text": "bicicleta infantil",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 43
+      }
+    },
+    {
+      "id": "filter_category_blocos_montar",
+      "type": "checkbox",
+      "text": "blocos de montar",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 167
+      }
+    },
+    {
+      "id": "filter_category_boneca",
+      "type": "checkbox",
+      "text": "boneca",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 429
+      }
+    },
+    {
+      "id": "filter_category_ver_tudo",
+      "type": "link",
+      "text": "ver tudo",
+      "region": "sidebar-filter",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "filter_genero_label",
+      "type": "label",
+      "text": "Gênero",
+      "region": "sidebar-filter"
+    },
+    {
+      "id": "filter_genero_menino",
+      "type": "checkbox",
+      "text": "menino",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "id": "filter_genero_unissex",
+      "type": "checkbox",
+      "text": "unissex",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "id": "filter_preco_label",
+      "type": "label",
+      "text": "Preço",
+      "region": "sidebar-filter"
+    },
+    {
+      "id": "filter_preco_0_25",
+      "type": "checkbox",
+      "text": "R$ 0 - R$ 25",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "filter_preco_25_50",
+      "type": "checkbox",
+      "text": "R$ 25 - R$ 50",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "filter_preco_50_100",
+      "type": "checkbox",
+      "text": "R$ 50 - R$ 100",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "filter_preco_100_250",
+      "type": "checkbox",
+      "text": "R$ 100 - R$ 250",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "filter_preco_250_500",
+      "type": "checkbox",
+      "text": "R$ 250 - R$ 500",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "filter_preco_500_1000",
+      "type": "checkbox",
+      "text": "R$ 500 - R$ 1.000",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "filter_preco_ver_tudo",
+      "type": "link",
+      "text": "ver tudo",
+      "region": "sidebar-filter",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "filter_condicao_item_label",
+      "type": "label",
+      "text": "Condição do Item",
+      "region": "sidebar-filter"
+    },
+    {
+      "id": "filter_condicao_item_novo",
+      "type": "checkbox",
+      "text": "novo",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 12
+      }
+    },
+    {
+      "id": "filter_marca_label",
+      "type": "label",
+      "text": "Marca",
+      "region": "sidebar-filter"
+    },
+    {
+      "id": "filter_marca_brink_plus",
+      "type": "checkbox",
+      "text": "brink+",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "id": "filter_marca_candide",
+      "type": "checkbox",
+      "text": "candide",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "id": "filter_marca_homeplay",
+      "type": "checkbox",
+      "text": "homeplay",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "id": "filter_marca_nao_disponivel",
+      "type": "checkbox",
+      "text": "não disponível",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 9
+      }
+    },
+    {
+      "id": "filter_produto_internacional_label",
+      "type": "label",
+      "text": "Produto Internacional",
+      "region": "sidebar-filter"
+    },
+    {
+      "id": "filter_produto_internacional_nao",
+      "type": "checkbox",
+      "text": "não",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 9
+      }
+    },
+    {
+      "id": "filter_produto_internacional_sim",
+      "type": "checkbox",
+      "text": "sim",
+      "state": "unchecked",
+      "region": "sidebar-filter",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "count": 3
+      }
+    },
+    {
+      "id": "product_list_title",
+      "type": "label",
+      "text": "listagem de produtos",
+      "region": "main-content-listing"
+    },
+    {
+      "id": "product_count",
+      "type": "text",
+      "text": "14 produtos encontrados",
+      "region": "main-content-listing"
+    },
+    {
+      "id": "sort_dropdown",
+      "type": "select",
+      "text": "ordenar por: mais relevantes",
+      "state": "active",
+      "region": "main-content-listing",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "selected_option": "mais relevantes"
+      }
+    },
+    {
+      "id": "view_toggle_grid",
+      "type": "button",
+      "text": "grid",
+      "state": "selected",
+      "region": "main-content-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "grid"
+      }
+    },
+    {
+      "id": "view_toggle_lista",
+      "type": "button",
+      "text": "lista",
+      "state": "unselected",
+      "region": "main-content-listing",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "list"
+      }
+    },
+    {
+      "id": "product_card_1",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_dino_cegonheira",
+        "tag": "Internacional",
+        "title": "DINO CEGONHEIRA",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 39,99",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_2",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_cjt_com_2_dinossauros",
+        "title": "CJT COM 2 DINOSSAUROS BRINK+",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 19,99",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_3",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_robo_alive_dino_dna",
+        "tag": "Internacional",
+        "title": "ROBO ALIVE DINO DNA CANDIDE 1145",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 149,99",
+        "installment_info": "em 3x de R$ 49,99 sem juros no cartão de crédito",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_4",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_king_monster_godzilla",
+        "title": "King Monster Godzilla Gigante Dinossauro",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 105,99",
+        "installment_info": "em 2x de R$ 52,99 sem juros no cartão de crédito",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_5",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_dinossauro_cibernetico",
+        "title": "Dinossauro Cibernético Rex Que Anda E Solta...",
+        "rating": {
+          "score": 5,
+          "max_score": 5,
+          "star_type": "filled"
+        },
+        "price": "R$ 82,68",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_6",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_dinossauro_grande_braquiossauro",
+        "title": "Dinossauro Grande Braquiossauro Marrom...",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 61,37",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_7",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_dinossauros_beast_alive",
+        "tag": "Internacional",
+        "title": "DINOSSAUROS BEAST ALIVE CRIATURAS 1147...",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 19,99",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_8",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_ovo_dinossauro_smashers",
+        "title": "Ovo Dinossauro Smashers Light Verde Série Grande...",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 466,35",
+        "installment_info": "em 8x de R$ 58,29 sem juros no cartão de crédito",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_9",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_dinossauro_world_tiranossauro",
+        "title": "Dinossauro World Tiranossauro Rex 2088 -...",
+        "rating": {
+          "score": 3.5,
+          "max_score": 5,
+          "star_type": "partial"
+        },
+        "price": "R$ 148,29",
+        "installment_info": "em 2x de R$ 74,14 sem juros no cartão de crédito",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_10",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_smashers_ovo_dino_ilha",
+        "title": "Smashers ovo dino ilha do pirata medio - fun",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 149,99",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "product_card_11",
+      "type": "card",
+      "region": "main-content-listing",
+      "meta": {
+        "image_url": "image_of_dragao_com_luz_e_som",
+        "title": "Dragão com Luz e Som - Brink+",
+        "rating": {
+          "score": 0,
+          "max_score": 5,
+          "star_type": "empty"
+        },
+        "price": "R$ 49,99",
+        "actions": [
+          {
+            "type": "button",
+            "text": "Adicionar ao carrinho",
+            "icon": "add_to_cart",
+            "action": "onClick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pagination_info",
+      "type": "text",
+      "text": "Mostrando 12 de 14",
+      "region": "main-content-listing"
+    },
+    {
+      "id": "button_ver_mais_produtos",
+      "type": "button",
+      "text": "ver mais produtos",
+      "state": "active",
+      "region": "main-content-listing",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_sac_info",
+      "type": "text",
+      "text": "sac 4003 4848",
+      "region": "footer"
+    },
+    {
+      "id": "footer_link_guia_seguranca",
+      "type": "link",
+      "text": "guia de segurança",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_dia_das_bruxas",
+      "type": "link",
+      "text": "dia das bruxas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_black_friday",
+      "type": "link",
+      "text": "black friday",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_entregas_devolucoes",
+      "type": "link",
+      "text": "entregas e devoluções",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_logo_americanas",
+      "type": "image",
+      "text": "americanas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_dropdown_mais_informacoes",
+      "type": "dropdown",
+      "text": "mais informações",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_social_instagram",
+      "type": "icon",
+      "text": "Instagram",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_social_youtube",
+      "type": "icon",
+      "text": "YouTube",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_social_facebook",
+      "type": "icon",
+      "text": "Facebook",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_social_tiktok",
+      "type": "icon",
+      "text": "TikTok",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_copyright_text",
+      "type": "text",
+      "text": "americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902",
+      "region": "footer"
+    },
+    {
+      "id": "footer_link_mapa_do_site",
+      "type": "link",
+      "text": "Mapa do site",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

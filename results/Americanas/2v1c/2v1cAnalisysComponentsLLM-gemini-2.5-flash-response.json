@@ -1,0 +1,699 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 44,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"page-title\",\n    \"type\": \"heading\",\n    \"text\": \"Brinquedos\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"level\": 1\n    }\n  },\n  {\n    \"id\": \"filter-by-label\",\n    \"type\": \"label\",\n    \"text\": \"filtrar por\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"category-label\",\n    \"type\": \"label\",\n    \"text\": \"Categoria\",\n    \"region\": \"sidebar\"\n  },\n  {\n    \"id\": \"checkbox-acessorios-bicicleta\",\n    \"type\": \"checkbox\",\n    \"text\": \"acessórios para bicicleta\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 6\n    }\n  },\n  {\n    \"id\": \"checkbox-artes-atividades\",\n    \"type\": \"checkbox\",\n    \"text\": \"artes e atividades\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 271\n    }\n  },\n  {\n    \"id\": \"checkbox-bicicleta-equilibrio\",\n    \"type\": \"checkbox\",\n    \"text\": \"bicicleta de equilíbrio\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 5\n    }\n  },\n  {\n    \"id\": \"checkbox-bicicleta-infantil\",\n    \"type\": \"checkbox\",\n    \"text\": \"bicicleta infantil\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 43\n    }\n  },\n  {\n    \"id\": \"checkbox-blocos-montar\",\n    \"type\": \"checkbox\",\n    \"text\": \"blocos de montar\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 167\n    }\n  },\n  {\n    \"id\": \"checkbox-boneca\",\n    \"type\": \"checkbox\",\n    \"text\": \"boneca\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 429\n    }\n  },\n  {\n    \"id\": \"checkbox-boneco\",\n    \"type\": \"checkbox\",\n    \"text\": \"boneco\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 215\n    }\n  },\n  {\n    \"id\": \"checkbox-brinquedos-controle-remoto\",\n    \"type\": \"checkbox\",\n    \"text\": \"brinquedos de controle remoto\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 2\n    }\n  },\n  {\n    \"id\": \"checkbox-brinquedos-eletronicos\",\n    \"type\": \"checkbox\",\n    \"text\": \"brinquedos eletrônicos\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 31\n    }\n  },\n  {\n    \"id\": \"checkbox-brinquedos-esportivos\",\n    \"type\": \"checkbox\",\n    \"text\": \"brinquedos esportivos\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 23\n    }\n  },\n  {\n    \"id\": \"checkbox-colecionaveis-miniaturas\",\n    \"type\": \"checkbox\",\n    \"text\": \"colecionáveis e miniaturas\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 114\n    }\n  },\n  {\n    \"id\": \"checkbox-dinossauros\",\n    \"type\": \"checkbox\",\n    \"text\": \"dinossauros\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 14\n    }\n  },\n  {\n    \"id\": \"checkbox-faz-de-conta\",\n    \"type\": \"checkbox\",\n    \"text\": \"faz de conta\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 172\n    }\n  },\n  {\n    \"id\": \"checkbox-jogos\",\n    \"type\": \"checkbox\",\n    \"text\": \"jogos\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 473\n    }\n  },\n  {\n    \"id\": \"checkbox-lancadores\",\n    \"type\": \"checkbox\",\n    \"text\": \"lançadores\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 54\n    }\n  },\n  {\n    \"id\": \"checkbox-mini-veiculos-triciclos\",\n    \"type\": \"checkbox\",\n    \"text\": \"mini veículos e triciclos\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 70\n    }\n  },\n  {\n    \"id\": \"checkbox-modelismo\",\n    \"type\": \"checkbox\",\n    \"text\": \"modelismo\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 2\n    }\n  },\n  {\n    \"id\": \"checkbox-moveis-criancas\",\n    \"type\": \"checkbox\",\n    \"text\": \"móveis para crianças\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 96\n    }\n  },\n  {\n    \"id\": \"checkbox-patins-patinetes-skates\",\n    \"type\": \"checkbox\",\n    \"text\": \"patins, patinetes e skates\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 63\n    }\n  },\n  {\n    \"id\": \"checkbox-pelucias\",\n    \"type\": \"checkbox\",\n    \"text\": \"pelúcias\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 151\n    }\n  },\n  {\n    \"id\": \"checkbox-playground\",\n    \"type\": \"checkbox\",\n    \"text\": \"playground\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 70\n    }\n  },\n  {\n    \"id\": \"checkbox-praia-piscina\",\n    \"type\": \"checkbox\",\n    \"text\": \"praia e piscina\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 30\n    }\n  },\n  {\n    \"id\": \"checkbox-quebra-cabeca\",\n    \"type\": \"checkbox\",\n    \"text\": \"quebra-cabeça\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 113\n    }\n  },\n  {\n    \"id\": \"checkbox-veiculos-brinquedo\",\n    \"type\": \"checkbox\",\n    \"text\": \"veículos de brinquedo\",\n    \"state\": \"unchecked\",\n    \"region\": \"sidebar\",\n    \"meta\": {\n      \"count\": 330\n    }\n  },\n  {\n    \"id\": \"link-ver-menos\",\n    \"type\": \"link\",\n    \"text\": \"ver menos\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"product-listing-title\",\n    \"type\": \"heading\",\n    \"text\": \"listagem de produtos\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"level\": 2\n    }\n  },\n  {\n    \"id\": \"product-count\",\n    \"type\": \"text\",\n    \"text\": \"3001 produtos encontrados\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"sort-by-label\",\n    \"type\": \"label\",\n    \"text\": \"ordenar por:\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"sort-by-dropdown\",\n    \"type\": \"select\",\n    \"text\": \"mais relevantes\",\n    \"state\": \"default\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"options\": [\n        \"mais relevantes\",\n        \"menor preço\",\n        \"maior preço\",\n        \"melhores avaliações\"\n      ]\n    }\n  },\n  {\n    \"id\": \"view-toggle-grid\",\n    \"type\": \"button\",\n    \"text\": \"grid\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"grid-layout\"\n    }\n  },\n  {\n    \"id\": \"view-toggle-list\",\n    \"type\": \"button\",\n    \"text\": \"lista\",\n    \"state\": \"inactive\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"list-layout\"\n    }\n  },\n  {\n    \"id\": \"product-card-1\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_id\": \"JQP9170\"\n    },\n    \"components\": [\n      {\n        \"type\": \"image\",\n        \"alt\": \"Jogo Quiz Princesas 9170\",\n        \"src\": \"image-jogo-quiz-princesas.jpg\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"JOGO QUIZ PRINCESAS 9170\"\n      },\n      {\n        \"type\": \"rating\",\n        \"value\": 0.0,\n        \"max_value\": 5,\n        \"visual_stars\": 0\n      },\n      {\n        \"type\": \"price\",\n        \"text\": \"R$ 19,99\",\n        \"currency\": \"BRL\",\n        \"value\": 19.99\n      },\n      {\n        \"type\": \"icon-button\",\n        \"icon\": \"shopping-bag\",\n        \"actions\": [\"onClick\"],\n        \"text\": \"Adicionar ao carrinho\"\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-2\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_id\": \"JQM9171\"\n    },\n    \"components\": [\n      {\n        \"type\": \"image\",\n        \"alt\": \"Jogo Quiz Marvel 9171\",\n        \"src\": \"image-jogo-quiz-marvel.jpg\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"JOGO QUIZ MARVEL 9171\"\n      },\n      {\n        \"type\": \"rating\",\n        \"value\": 0.0,\n        \"max_value\": 5,\n        \"visual_stars\": 0\n      },\n      {\n        \"type\": \"price\",\n        \"text\": \"R$ 19,99\",\n        \"currency\": \"BRL\",\n        \"value\": 19.99\n      },\n      {\n        \"type\": \"icon-button\",\n        \"icon\": \"shopping-bag\",\n        \"actions\": [\"onClick\"],\n        \"text\": \"Adicionar ao carrinho\"\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-3\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_id\": \"BBT7439\"\n    },\n    \"components\": [\n      {\n        \"type\": \"image\",\n        \"alt\": \"Boneca Barbie Fashion T7439 Sortida - Mattel\",\n        \"src\": \"image-boneca-barbie-fashion.jpg\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"Boneca Barbie Fashion T7439 Sortida - Mattel\"\n      },\n      {\n        \"type\": \"rating\",\n        \"value\": 4.5,\n        \"max_value\": 5,\n        \"visual_stars\": 4.5\n      },\n      {\n        \"type\": \"price\",\n        \"text\": \"R$ 39,99\",\n        \"currency\": \"BRL\",\n        \"value\": 39.99\n      },\n      {\n        \"type\": \"icon-button\",\n        \"icon\": \"shopping-bag\",\n        \"actions\": [\"onClick\"],\n        \"text\": \"Adicionar ao carrinho\"\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-4\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"product_id\": \"JT_SPIDERMAN\"\n    },\n    \"components\": [\n      {\n        \"type\": \"image\",\n        \"alt\": \"João Teimoso Spider-Man 87cm - brink+\",\n        \"src\": \"image-joao-teimoso-spiderman.jpg\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"João Teimoso Spider-Man 87cm - brink+\"\n      },\n      {\n        \"type\": \"rating\",\n        \"value\": 4.6,\n        \"max_value\": 5,\n        \"visual_stars\": 4.5\n      },\n      {\n        \"type\": \"price\",\n        \"text\": \"R$ 29,99\",\n        \"currency\": \"BRL\",\n        \"value\": 29.99\n      },\n      {\n        \"type\": \"icon-button\",\n        \"icon\": \"shopping-bag\",\n        \"actions\": [\"onClick\"],\n        \"text\": \"Adicionar ao carrinho\"\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-5\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"components\": [\n      {\n        \"type\": \"image\",\n        \"alt\": \"Patinete infantil rosa\",\n        \"src\": \"image-patinete-rosa.jpg\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"[Nome do produto não visível]\"\n      },\n      {\n        \"type\": \"rating\",\n        \"value\": null,\n        \"max_value\": 5,\n        \"visual_stars\": null\n      },\n      {\n        \"type\": \"price\",\n        \"text\": \"[Preço não visível]\",\n        \"currency\": \"BRL\",\n        \"value\": null\n      },\n      {\n        \"type\": \"icon-button\",\n        \"icon\": \"shopping-bag\",\n        \"actions\": [\"onClick\"],\n        \"text\": \"Adicionar ao carrinho\"\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-6\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"components\": [\n      {\n        \"type\": \"image\",\n        \"alt\": \"Boneca loira com vestido azul\",\n        \"src\": \"image-boneca-loira-vestido-azul.jpg\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"[Nome do produto não visível]\"\n      },\n      {\n        \"type\": \"rating\",\n        \"value\": null,\n        \"max_value\": 5,\n        \"visual_stars\": null\n      },\n      {\n        \"type\": \"price\",\n        \"text\": \"[Preço não visível]\",\n        \"currency\": \"BRL\",\n        \"value\": null\n      },\n      {\n        \"type\": \"icon-button\",\n        \"icon\": \"shopping-bag\",\n        \"actions\": [\"onClick\"],\n        \"text\": \"Adicionar ao carrinho\"\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-7\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"components\": [\n      {\n        \"type\": \"image\",\n        \"alt\": \"Pelúcia Stitch\",\n        \"src\": \"image-pelucia-stitch.jpg\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"[Nome do produto não visível]\"\n      },\n      {\n        \"type\": \"rating\",\n        \"value\": null,\n        \"max_value\": 5,\n        \"visual_stars\": null\n      },\n      {\n        \"type\": \"price\",\n        \"text\": \"[Preço não visível]\",\n        \"currency\": \"BRL\",\n        \"value\": null\n      },\n      {\n        \"type\": \"icon-button\",\n        \"icon\": \"shopping-bag\",\n        \"actions\": [\"onClick\"],\n        \"text\": \"Adicionar ao carrinho\"\n      }\n    ]\n  },\n  {\n    \"id\": \"product-card-8\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"components\": [\n      {\n        \"type\": \"image\",\n        \"alt\": \"Conjunto de bonecas Barbie\",\n        \"src\": \"image-conjunto-bonecas-barbie.jpg\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"[Nome do produto não visível]\"\n      },\n      {\n        \"type\": \"rating\",\n        \"value\": null,\n        \"max_value\": 5,\n        \"visual_stars\": null\n      },\n      {\n        \"type\": \"price\",\n        \"text\": \"[Preço não visível]\",\n        \"currency\": \"BRL\",\n        \"value\": null\n      },\n      {\n        \"type\": \"icon-button\",\n        \"icon\": \"shopping-bag\",\n        \"actions\": [\"onClick\"],\n        \"text\": \"Adicionar ao carrinho\"\n      }\n    ]\n  },\n  {\n    \"id\": \"accessibility-button\",\n    \"type\": \"icon-button\",\n    \"icon\": \"accessibility\",\n    \"text\": \"Acessibilidade\",\n    \"region\": \"bottom-right\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"cookie-settings-button\",\n    \"type\": \"icon-button\",\n    \"icon\": \"cookie\",\n    \"text\": \"Configurações de cookies\",\n    \"region\": \"bottom-left\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 4607,
+      "totalTokenCount": 8386,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 3124
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "zr2caeK0Hqjpz7IPqP6AqQU"
+  },
+  "ui": [
+    {
+      "id": "page-title",
+      "type": "heading",
+      "text": "Brinquedos",
+      "region": "top-bar",
+      "meta": {
+        "level": 1
+      }
+    },
+    {
+      "id": "filter-by-label",
+      "type": "label",
+      "text": "filtrar por",
+      "region": "sidebar"
+    },
+    {
+      "id": "category-label",
+      "type": "label",
+      "text": "Categoria",
+      "region": "sidebar"
+    },
+    {
+      "id": "checkbox-acessorios-bicicleta",
+      "type": "checkbox",
+      "text": "acessórios para bicicleta",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 6
+      }
+    },
+    {
+      "id": "checkbox-artes-atividades",
+      "type": "checkbox",
+      "text": "artes e atividades",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 271
+      }
+    },
+    {
+      "id": "checkbox-bicicleta-equilibrio",
+      "type": "checkbox",
+      "text": "bicicleta de equilíbrio",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 5
+      }
+    },
+    {
+      "id": "checkbox-bicicleta-infantil",
+      "type": "checkbox",
+      "text": "bicicleta infantil",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 43
+      }
+    },
+    {
+      "id": "checkbox-blocos-montar",
+      "type": "checkbox",
+      "text": "blocos de montar",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 167
+      }
+    },
+    {
+      "id": "checkbox-boneca",
+      "type": "checkbox",
+      "text": "boneca",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 429
+      }
+    },
+    {
+      "id": "checkbox-boneco",
+      "type": "checkbox",
+      "text": "boneco",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 215
+      }
+    },
+    {
+      "id": "checkbox-brinquedos-controle-remoto",
+      "type": "checkbox",
+      "text": "brinquedos de controle remoto",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "id": "checkbox-brinquedos-eletronicos",
+      "type": "checkbox",
+      "text": "brinquedos eletrônicos",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 31
+      }
+    },
+    {
+      "id": "checkbox-brinquedos-esportivos",
+      "type": "checkbox",
+      "text": "brinquedos esportivos",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 23
+      }
+    },
+    {
+      "id": "checkbox-colecionaveis-miniaturas",
+      "type": "checkbox",
+      "text": "colecionáveis e miniaturas",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 114
+      }
+    },
+    {
+      "id": "checkbox-dinossauros",
+      "type": "checkbox",
+      "text": "dinossauros",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 14
+      }
+    },
+    {
+      "id": "checkbox-faz-de-conta",
+      "type": "checkbox",
+      "text": "faz de conta",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 172
+      }
+    },
+    {
+      "id": "checkbox-jogos",
+      "type": "checkbox",
+      "text": "jogos",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 473
+      }
+    },
+    {
+      "id": "checkbox-lancadores",
+      "type": "checkbox",
+      "text": "lançadores",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 54
+      }
+    },
+    {
+      "id": "checkbox-mini-veiculos-triciclos",
+      "type": "checkbox",
+      "text": "mini veículos e triciclos",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 70
+      }
+    },
+    {
+      "id": "checkbox-modelismo",
+      "type": "checkbox",
+      "text": "modelismo",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "id": "checkbox-moveis-criancas",
+      "type": "checkbox",
+      "text": "móveis para crianças",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 96
+      }
+    },
+    {
+      "id": "checkbox-patins-patinetes-skates",
+      "type": "checkbox",
+      "text": "patins, patinetes e skates",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 63
+      }
+    },
+    {
+      "id": "checkbox-pelucias",
+      "type": "checkbox",
+      "text": "pelúcias",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 151
+      }
+    },
+    {
+      "id": "checkbox-playground",
+      "type": "checkbox",
+      "text": "playground",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 70
+      }
+    },
+    {
+      "id": "checkbox-praia-piscina",
+      "type": "checkbox",
+      "text": "praia e piscina",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 30
+      }
+    },
+    {
+      "id": "checkbox-quebra-cabeca",
+      "type": "checkbox",
+      "text": "quebra-cabeça",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 113
+      }
+    },
+    {
+      "id": "checkbox-veiculos-brinquedo",
+      "type": "checkbox",
+      "text": "veículos de brinquedo",
+      "state": "unchecked",
+      "region": "sidebar",
+      "meta": {
+        "count": 330
+      }
+    },
+    {
+      "id": "link-ver-menos",
+      "type": "link",
+      "text": "ver menos",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "product-listing-title",
+      "type": "heading",
+      "text": "listagem de produtos",
+      "region": "main-content",
+      "meta": {
+        "level": 2
+      }
+    },
+    {
+      "id": "product-count",
+      "type": "text",
+      "text": "3001 produtos encontrados",
+      "region": "main-content"
+    },
+    {
+      "id": "sort-by-label",
+      "type": "label",
+      "text": "ordenar por:",
+      "region": "main-content"
+    },
+    {
+      "id": "sort-by-dropdown",
+      "type": "select",
+      "text": "mais relevantes",
+      "state": "default",
+      "region": "main-content",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "options": [
+          "mais relevantes",
+          "menor preço",
+          "maior preço",
+          "melhores avaliações"
+        ]
+      }
+    },
+    {
+      "id": "view-toggle-grid",
+      "type": "button",
+      "text": "grid",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "grid-layout"
+      }
+    },
+    {
+      "id": "view-toggle-list",
+      "type": "button",
+      "text": "lista",
+      "state": "inactive",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "list-layout"
+      }
+    },
+    {
+      "id": "product-card-1",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_id": "JQP9170"
+      },
+      "components": [
+        {
+          "type": "image",
+          "alt": "Jogo Quiz Princesas 9170",
+          "src": "image-jogo-quiz-princesas.jpg"
+        },
+        {
+          "type": "text",
+          "text": "JOGO QUIZ PRINCESAS 9170"
+        },
+        {
+          "type": "rating",
+          "value": 0,
+          "max_value": 5,
+          "visual_stars": 0
+        },
+        {
+          "type": "price",
+          "text": "R$ 19,99",
+          "currency": "BRL",
+          "value": 19.99
+        },
+        {
+          "type": "icon-button",
+          "icon": "shopping-bag",
+          "actions": [
+            "onClick"
+          ],
+          "text": "Adicionar ao carrinho"
+        }
+      ]
+    },
+    {
+      "id": "product-card-2",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_id": "JQM9171"
+      },
+      "components": [
+        {
+          "type": "image",
+          "alt": "Jogo Quiz Marvel 9171",
+          "src": "image-jogo-quiz-marvel.jpg"
+        },
+        {
+          "type": "text",
+          "text": "JOGO QUIZ MARVEL 9171"
+        },
+        {
+          "type": "rating",
+          "value": 0,
+          "max_value": 5,
+          "visual_stars": 0
+        },
+        {
+          "type": "price",
+          "text": "R$ 19,99",
+          "currency": "BRL",
+          "value": 19.99
+        },
+        {
+          "type": "icon-button",
+          "icon": "shopping-bag",
+          "actions": [
+            "onClick"
+          ],
+          "text": "Adicionar ao carrinho"
+        }
+      ]
+    },
+    {
+      "id": "product-card-3",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_id": "BBT7439"
+      },
+      "components": [
+        {
+          "type": "image",
+          "alt": "Boneca Barbie Fashion T7439 Sortida - Mattel",
+          "src": "image-boneca-barbie-fashion.jpg"
+        },
+        {
+          "type": "text",
+          "text": "Boneca Barbie Fashion T7439 Sortida - Mattel"
+        },
+        {
+          "type": "rating",
+          "value": 4.5,
+          "max_value": 5,
+          "visual_stars": 4.5
+        },
+        {
+          "type": "price",
+          "text": "R$ 39,99",
+          "currency": "BRL",
+          "value": 39.99
+        },
+        {
+          "type": "icon-button",
+          "icon": "shopping-bag",
+          "actions": [
+            "onClick"
+          ],
+          "text": "Adicionar ao carrinho"
+        }
+      ]
+    },
+    {
+      "id": "product-card-4",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "product_id": "JT_SPIDERMAN"
+      },
+      "components": [
+        {
+          "type": "image",
+          "alt": "João Teimoso Spider-Man 87cm - brink+",
+          "src": "image-joao-teimoso-spiderman.jpg"
+        },
+        {
+          "type": "text",
+          "text": "João Teimoso Spider-Man 87cm - brink+"
+        },
+        {
+          "type": "rating",
+          "value": 4.6,
+          "max_value": 5,
+          "visual_stars": 4.5
+        },
+        {
+          "type": "price",
+          "text": "R$ 29,99",
+          "currency": "BRL",
+          "value": 29.99
+        },
+        {
+          "type": "icon-button",
+          "icon": "shopping-bag",
+          "actions": [
+            "onClick"
+          ],
+          "text": "Adicionar ao carrinho"
+        }
+      ]
+    },
+    {
+      "id": "product-card-5",
+      "type": "card",
+      "region": "main-content",
+      "components": [
+        {
+          "type": "image",
+          "alt": "Patinete infantil rosa",
+          "src": "image-patinete-rosa.jpg"
+        },
+        {
+          "type": "text",
+          "text": "[Nome do produto não visível]"
+        },
+        {
+          "type": "rating",
+          "value": null,
+          "max_value": 5,
+          "visual_stars": null
+        },
+        {
+          "type": "price",
+          "text": "[Preço não visível]",
+          "currency": "BRL",
+          "value": null
+        },
+        {
+          "type": "icon-button",
+          "icon": "shopping-bag",
+          "actions": [
+            "onClick"
+          ],
+          "text": "Adicionar ao carrinho"
+        }
+      ]
+    },
+    {
+      "id": "product-card-6",
+      "type": "card",
+      "region": "main-content",
+      "components": [
+        {
+          "type": "image",
+          "alt": "Boneca loira com vestido azul",
+          "src": "image-boneca-loira-vestido-azul.jpg"
+        },
+        {
+          "type": "text",
+          "text": "[Nome do produto não visível]"
+        },
+        {
+          "type": "rating",
+          "value": null,
+          "max_value": 5,
+          "visual_stars": null
+        },
+        {
+          "type": "price",
+          "text": "[Preço não visível]",
+          "currency": "BRL",
+          "value": null
+        },
+        {
+          "type": "icon-button",
+          "icon": "shopping-bag",
+          "actions": [
+            "onClick"
+          ],
+          "text": "Adicionar ao carrinho"
+        }
+      ]
+    },
+    {
+      "id": "product-card-7",
+      "type": "card",
+      "region": "main-content",
+      "components": [
+        {
+          "type": "image",
+          "alt": "Pelúcia Stitch",
+          "src": "image-pelucia-stitch.jpg"
+        },
+        {
+          "type": "text",
+          "text": "[Nome do produto não visível]"
+        },
+        {
+          "type": "rating",
+          "value": null,
+          "max_value": 5,
+          "visual_stars": null
+        },
+        {
+          "type": "price",
+          "text": "[Preço não visível]",
+          "currency": "BRL",
+          "value": null
+        },
+        {
+          "type": "icon-button",
+          "icon": "shopping-bag",
+          "actions": [
+            "onClick"
+          ],
+          "text": "Adicionar ao carrinho"
+        }
+      ]
+    },
+    {
+      "id": "product-card-8",
+      "type": "card",
+      "region": "main-content",
+      "components": [
+        {
+          "type": "image",
+          "alt": "Conjunto de bonecas Barbie",
+          "src": "image-conjunto-bonecas-barbie.jpg"
+        },
+        {
+          "type": "text",
+          "text": "[Nome do produto não visível]"
+        },
+        {
+          "type": "rating",
+          "value": null,
+          "max_value": 5,
+          "visual_stars": null
+        },
+        {
+          "type": "price",
+          "text": "[Preço não visível]",
+          "currency": "BRL",
+          "value": null
+        },
+        {
+          "type": "icon-button",
+          "icon": "shopping-bag",
+          "actions": [
+            "onClick"
+          ],
+          "text": "Adicionar ao carrinho"
+        }
+      ]
+    },
+    {
+      "id": "accessibility-button",
+      "type": "icon-button",
+      "icon": "accessibility",
+      "text": "Acessibilidade",
+      "region": "bottom-right",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "cookie-settings-button",
+      "type": "icon-button",
+      "icon": "cookie",
+      "text": "Configurações de cookies",
+      "region": "bottom-left",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

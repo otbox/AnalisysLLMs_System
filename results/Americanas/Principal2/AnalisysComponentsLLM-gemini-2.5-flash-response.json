@@ -1,0 +1,1406 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 75,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"top_banner_especial_beleza\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_parcelamento\",\n    \"type\": \"link\",\n    \"text\": \"tudo em até 12x no cartão*\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_queeero\",\n    \"type\": \"link\",\n    \"text\": \"queeero\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_app_exclusive\",\n    \"type\": \"link\",\n    \"text\": \"só no app você aproveita ofertas exclusivas\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_cartao_ame\",\n    \"type\": \"link\",\n    \"text\": \"cartão ame\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_mais_vendidos\",\n    \"type\": \"link\",\n    \"text\": \"mais vendidos\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_entrega_rapida\",\n    \"type\": \"link\",\n    \"text\": \"entrega rápida\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_ofertas_tv\",\n    \"type\": \"link\",\n    \"text\": \"ofertas da TV\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_outlet\",\n    \"type\": \"link\",\n    \"text\": \"outlet\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_banner_oferta_dia\",\n    \"type\": \"link\",\n    \"text\": \"oferta do dia\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_cep_info\",\n    \"type\": \"link\",\n    \"text\": \"informe seu CEP\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"location_pin\"\n    }\n  },\n  {\n    \"id\": \"top_bar_baixe_app\",\n    \"type\": \"link\",\n    \"text\": \"baixe o app\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_faca_seu_cartao\",\n    \"type\": \"link\",\n    \"text\": \"faça seu cartão\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_mais_vendidos_link\",\n    \"type\": \"link\",\n    \"text\": \"mais vendidos\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"top_bar_login_register\",\n    \"type\": \"link\",\n    \"text\": \"olá, faça seu lo... ou cadastre-se\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"user\"\n    }\n  },\n  {\n    \"id\": \"top_bar_minhas_lojas\",\n    \"type\": \"link\",\n    \"text\": \"minhas lojas\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"store\"\n    }\n  },\n  {\n    \"id\": \"top_bar_wishlist\",\n    \"type\": \"link\",\n    \"text\": \"\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"heart\"\n    }\n  },\n  {\n    \"id\": \"top_bar_cart\",\n    \"type\": \"link\",\n    \"text\": \"\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"shopping_cart\",\n      \"item_count\": 0\n    }\n  },\n  {\n    \"id\": \"logo_americanas\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search_input\",\n    \"type\": \"input\",\n    \"placeholder\": \"busque aqui seu produto\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onSearch\"],\n    \"meta\": {\n      \"icon\": \"search\"\n    }\n  },\n  {\n    \"id\": \"departments_dropdown\",\n    \"type\": \"select\",\n    \"text\": \"todos os departamentos\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"icon\": \"menu\"\n    }\n  },\n  {\n    \"id\": \"nav_link_mercado\",\n    \"type\": \"link\",\n    \"text\": \"mercado\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_brinquedos\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_celulares\",\n    \"type\": \"link\",\n    \"text\": \"celulares\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_eletrodomesticos\",\n    \"type\": \"link\",\n    \"text\": \"eletrodomésticos\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_informatica\",\n    \"type\": \"link\",\n    \"text\": \"informática\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_audio_video\",\n    \"type\": \"link\",\n    \"text\": \"áudio e vídeo\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_eletroportateis\",\n    \"type\": \"link\",\n    \"text\": \"eletroportáteis\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_moveis\",\n    \"type\": \"link\",\n    \"text\": \"móveis\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_link_especial_beleza_nav\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\",\n    \"region\": \"navigation-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"banner_app_exclusive_top\",\n    \"type\": \"banner\",\n    \"text\": \"só no app você aproveita ofertas exclusivas\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"coupon_icon\"\n    }\n  },\n  {\n    \"id\": \"main_banner_semana_acabou\",\n    \"type\": \"banner\",\n    \"text\": \"a semana acabou, mas o cestaaço tá só começando olha só essas ofertas!\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"aproveite\",\n      \"carousel_indicators\": 5,\n      \"current_slide\": 1\n    }\n  },\n  {\n    \"id\": \"promo_card_especial_beleza\",\n    \"type\": \"card\",\n    \"text\": \"especial beleza\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"star\"\n    }\n  },\n  {\n    \"id\": \"promo_card_baixe_app\",\n    \"type\": \"card\",\n    \"text\": \"baixe o app!\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"phone\"\n    }\n  },\n  {\n    \"id\": \"promo_card_entrega_rapida\",\n    \"type\": \"card\",\n    \"text\": \"entrega rápida\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"info\": \"consulte seu cep\"\n    }\n  },\n  {\n    \"id\": \"promo_card_leve_pague\",\n    \"type\": \"card\",\n    \"text\": \"leve + pague\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"plus\"\n    }\n  },\n  {\n    \"id\": \"promo_card_oferta_dia\",\n    \"type\": \"card\",\n    \"text\": \"oferta do dia\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"promo_card_ofertas_tv\",\n    \"type\": \"card\",\n    \"text\": \"ofertas da TV\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"promo_card_oba_cupom\",\n    \"type\": \"card\",\n    \"text\": \"oba, cupom!\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"promo_card_frete_gratis\",\n    \"type\": \"card\",\n    \"text\": \"frete grátis\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"info\": \"consulte seu cep\"\n    }\n  },\n  {\n    \"id\": \"promo_card_gift_card\",\n    \"type\": \"card\",\n    \"text\": \"gift card voltou!\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"promo_card_outlet\",\n    \"type\": \"card\",\n    \"text\": \"outlet\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"discount\": \"até 75% de desconto\"\n    }\n  },\n  {\n    \"id\": \"banner_cupom_10_desconto\",\n    \"type\": \"banner\",\n    \"text\": \"oba, cupom! 10% de desconto\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"coupon_code\": \"TOMA10\",\n      \"info\": \"em itens selecionados\",\n      \"link\": \"confira as regras\"\n    }\n  },\n  {\n    \"id\": \"banner_cupom_15_desconto\",\n    \"type\": \"banner\",\n    \"text\": \"R$15 de desconto com o cupom APP15\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"baixe o app\",\n      \"info\": \"válido em pedidos a partir de R$100. Consulte as regras.\"\n    }\n  },\n  {\n    \"id\": \"banner_cestaco_50_desconto\",\n    \"type\": \"banner\",\n    \"text\": \"até 50% cestaaço\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"info\": \"até 50% de desconto em itens selecionados.\",\n      \"carousel_indicators\": 5,\n      \"current_slide\": 1\n    }\n  },\n  {\n    \"id\": \"section_title_retire_na_loja_2h\",\n    \"type\": \"label\",\n    \"text\": \"retire na loja em 2h\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"product_card_kitkat\",\n    \"type\": \"card\",\n    \"text\": \"Kit Kat 41,5g Nestlé leve 4 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Kit Kat chocolate\",\n      \"price\": \"R$3,25 cada\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"retire na loja em 2h\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_bis_xtra\",\n    \"type\": \"card\",\n    \"text\": \"Bis Xtra - leve 4 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Bis Xtra chocolate\",\n      \"price\": \"R$2,74 cada\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"oferta exclusiva online\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_bis_leve3\",\n    \"type\": \"card\",\n    \"text\": \"Bis • leve 3 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Bis chocolate\",\n      \"price\": \"R$5,33 cada\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"retire na loja em 2h\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_lacta_tabletes\",\n    \"type\": \"card\",\n    \"text\": \"tabletes Lacta 80g/ 90g/ 98g/ 104g • leve 2 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Lacta chocolate\",\n      \"price\": \"R$5,99 cada\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"oferta exclusiva online\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_elma_chips\",\n    \"type\": \"card\",\n    \"text\": \"Elma Chips bag M leve 4 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Elma Chips\",\n      \"price\": \"R$6,09 cada\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"oferta do dia\",\n      \"coupon\": \"ELMACHIPS\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_shampoo_seda\",\n    \"type\": \"card\",\n    \"text\": \"kit shampoo + condicionador Seda • de R$19,99 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Shampoo Seda\",\n      \"price\": \"R$15,99 cada\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_pringles\",\n    \"type\": \"card\",\n    \"text\": \"batata Pringles 104/109g leve 2 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Pringles\",\n      \"price\": \"R$9,99 cada\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"retire na loja em 2h\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_huggies_pampers\",\n    \"type\": \"card\",\n    \"text\": \"tudo para seu bebê a partir de\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Huggies Pampers\",\n      \"price\": \"R$6,98\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"retire na loja em 2h\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_sanduicheira_mondial\",\n    \"type\": \"card\",\n    \"text\": \"sanduicheira fast s12 Mondial de R$99 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Sanduicheira Mondial\",\n      \"price\": \"R$69 no Pix\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"retire na loja em 2h\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_caixa_bombom_lacta\",\n    \"type\": \"card\",\n    \"text\": \"caixa de bombom Lacta ou Ouro Branco e Sonho de Valsa leve 2 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Bombons Lacta\",\n      \"price\": \"R$11,99 cada\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"oferta exclusiva online\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_samsung_galaxy_a16\",\n    \"type\": \"card\",\n    \"text\": \"Samsung Galaxy A16 5G 128GB de R$1.499 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Samsung Galaxy A16\",\n      \"price\": \"R$987,30 no Pix\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"retire na loja em 2h\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_secador_cabelo_britania\",\n    \"type\": \"card\",\n    \"text\": \"secador de cabelos Britânia 2100W BSC2150 bivolt de R$179 por\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Secador de Cabelo Britânia\",\n      \"price\": \"R$95\",\n      \"vendor\": \"vendido por Americanas.\",\n      \"tag\": \"retire na loja em 2h\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"product_card_smartphones_8x_sem_juros\",\n    \"type\": \"card\",\n    \"text\": \"smartphones em até\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Smartphones\",\n      \"price\": \"8x sem juros*\",\n      \"tag\": \"retire na loja em 2h\",\n      \"link\": \"queeero\"\n    }\n  },\n  {\n    \"id\": \"section_title_melhores_ofertas\",\n    \"type\": \"label\",\n    \"text\": \"as melhoooores ofertas pra você:\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"offer_card_celular_samsung\",\n    \"type\": \"card\",\n    \"text\": \"celular Samsung com até\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Celular Samsung\",\n      \"discount\": \"12% de desconto no Pix\",\n      \"link\": \"queeero\",\n      \"info\": \"confira as regras.\"\n    }\n  },\n  {\n    \"id\": \"offer_card_ar_condicionado_ventiladores\",\n    \"type\": \"card\",\n    \"text\": \"ar-condicionados e ventiladores com até\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Ar Condicionado e Ventilador\",\n      \"discount\": \"12% de desconto no Pix\",\n      \"link\": \"queeero\",\n      \"info\": \"confira as regras.\"\n    }\n  },\n  {\n    \"id\": \"offer_card_smart_tvs_caixas_som\",\n    \"type\": \"card\",\n    \"text\": \"smart TVs, caixas de som e mais com até\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Smart TV e Caixa de Som\",\n      \"discount\": \"15% de desconto no Pix\",\n      \"link\": \"queeero\",\n      \"info\": \"confira as regras.\"\n    }\n  },\n  {\n    \"id\": \"offer_card_fogoes_geladeiras\",\n    \"type\": \"card\",\n    \"text\": \"fogões, geladeiras e mais com até\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Fogão e Geladeira\",\n      \"discount\": \"14% de desconto no Pix\",\n      \"link\": \"queeero\",\n      \"info\": \"confira as regras.\"\n    }\n  },\n  {\n    \"id\": \"offer_card_colchao_novo_frete_gratis\",\n    \"type\": \"card\",\n    \"text\": \"colchão novo com\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Colchão\",\n      \"discount\": \"frete grátis Brasil\",\n      \"link\": \"queeero\",\n      \"info\": \"confira as regras.\"\n    }\n  },\n  {\n    \"id\": \"offer_card_selecao_moveis\",\n    \"type\": \"card\",\n    \"text\": \"seleção de móveis com até\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Sofá\",\n      \"discount\": \"17% de desconto\",\n      \"link\": \"queeero\",\n      \"info\": \"confira as regras.\"\n    }\n  },\n  {\n    \"id\": \"offer_card_desktops_notebooks\",\n    \"type\": \"card\",\n    \"text\": \"desktops e notebooks com até\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Desktop e Notebook\",\n      \"discount\": \"15% de desconto\",\n      \"link\": \"queeero\",\n      \"info\": \"confira as regras.\"\n    }\n  },\n  {\n    \"id\": \"offer_card_freezers_cervejeiras\",\n    \"type\": \"card\",\n    \"text\": \"freezers e cervejeiras com\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Freezer e Cervejeira\",\n      \"discount\": \"10% de desconto no Pix\",\n      \"link\": \"queeero\",\n      \"info\": \"confira as regras.\"\n    }\n  },\n  {\n    \"id\": \"section_title_navegue_por_categoria\",\n    \"type\": \"label\",\n    \"text\": \"navegue por categoria :)\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"category_brinquedos\",\n    \"type\": \"category-icon\",\n    \"text\": \"brinquedos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"bear\"\n    }\n  },\n  {\n    \"id\": \"category_telefonia\",\n    \"type\": \"category-icon\",\n    \"text\": \"telefonia\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"phone\"\n    }\n  },\n  {\n    \"id\": \"category_chocolate\",\n    \"type\": \"category-icon\",\n    \"text\": \"chocolate\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"chocolate\"\n    }\n  },\n  {\n    \"id\": \"category_biscoitos\",\n    \"type\": \"category-icon\",\n    \"text\": \"biscoitos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"cookie\"\n    }\n  },\n  {\n    \"id\": \"category_eletroportateis\",\n    \"type\": \"category-icon\",\n    \"text\": \"eletroportáteis\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"blender\"\n    }\n  },\n  {\n    \"id\": \"category_fraldas\",\n    \"type\": \"category-icon\",\n    \"text\": \"fraldas\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"diaper\"\n    }\n  },\n  {\n    \"id\": \"category_beleza_perfumaria\",\n    \"type\": \"category-icon\",\n    \"text\": \"beleza e perfumaria\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"lotion\"\n    }\n  },\n  {\n    \"id\": \"category_eletrodomesticos\",\n    \"type\": \"category-icon\",\n    \"text\": \"eletrodomésticos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"refrigerator\"\n    }\n  },\n  {\n    \"id\": \"category_carousel_arrow_left\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow_left\",\n      \"associated_carousel\": \"category_navigation\"\n    }\n  },\n  {\n    \"id\": \"category_carousel_arrow_right\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow_right\",\n      \"associated_carousel\": \"category_navigation\"\n    }\n  },\n  {\n    \"id\": \"section_title_mais_vendidos\",\n    \"type\": \"label\",\n    \"text\": \"os mais vendidos\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"product_card_motorola_moto_g15\",\n    \"type\": \"card\",\n    \"text\": \"Smartphone Motorola Moto G15 256GB 12GB RAM Boo...\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Motorola Moto G15\",\n      \"rating\": 5.0,\n      \"old_price\": \"R$1.299,00\",\n      \"discount_percentage\": \"38%\",\n      \"price\": \"R$809,10 no Pix\",\n      \"installments\": \"em 8x de R$ 112,37 sem juros no cartão de crédito\",\n      \"icon\": \"shopping_basket\"\n    }\n  },\n  {\n    \"id\": \"product_card_samsung_galaxy_a06\",\n    \"type\": \"card\",\n    \"text\": \"Smartphone Samsung Galaxy A06 128GB 4GB RA...\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Samsung Galaxy A06\",\n      \"rating\": 4.8,\n      \"old_price\": \"R$749,00\",\n      \"discount_percentage\": \"16%\",\n      \"price\": \"R$629,10 no Pix\",\n      \"installments\": \"em 8x de R$ 87,37 sem juros no cartão de crédito\",\n      \"icon\": \"shopping_basket\"\n    }\n  },\n  {\n    \"id\": \"product_card_samsung_galaxy_a16_lite\",\n    \"type\": \"card\",\n    \"text\": \"Smartphone Samsung Galaxy A16 128GB...\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Samsung Galaxy A16 Lite\",\n      \"rating\": 4.9,\n      \"old_price\": \"R$799,00\",\n      \"discount_percentage\": \"25%\",\n      \"price\": \"R$599,25 no Pix\",\n      \"installments\": \"em 8x de R$ 83,19 sem juros no cartão de crédito\",\n      \"icon\": \"shopping_basket\"\n    }\n  },\n  {\n    \"id\": \"product_card_motorola_moto_g05\",\n    \"type\": \"card\",\n    \"text\": \"Smartphone Motorola Moto G05 128GB 12GB RAM Boo...\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Motorola Moto G05\",\n      \"rating\": 5.0,\n      \"old_price\": \"R$1.099,00\",\n      \"discount_percentage\": \"43%\",\n      \"price\": \"R$629,10 no Pix\",\n      \"installments\": \"em 8x de R$ 87,37 sem juros no cartão de crédito\",\n      \"icon\": \"shopping_basket\"\n    }\n  },\n  {\n    \"id\": \"product_card_samsung_galaxy_a25\",\n    \"type\": \"card\",\n    \"text\": \"Smartphone Samsung Galaxy A25 5G 256GB 8GB ...\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image\": \"Samsung Galaxy A25\",\n      \"rating\": 5.0,\n      \"old_price\": \"R$1.749,00\",\n      \"discount_percentage\": \"25%\",\n      \"price\": \"R$1.304,10 no Pix\",\n      \"installments\": \"em 8x de R$ 181,12 sem juros no cartão de crédito\",\n      \"icon\": \"shopping_basket\"\n    }\n  },\n  {\n    \"id\": \"product_carousel_arrow_left\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow_left\",\n      \"associated_carousel\": \"mais_vendidos\"\n    }\n  },\n  {\n    \"id\": \"product_carousel_arrow_right\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow_right\",\n      \"associated_carousel\": \"mais_vendidos\"\n    }\n  },\n  {\n    \"id\": \"banner_cartao_cliente_americanas\",\n    \"type\": \"banner\",\n    \"text\": \"Novidade! Chegou o cartão cliente americanas com benefícios exclusivos, perfeito pra você!\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"conheça agora\",\n      \"info\": \"sujeito a análise de crédito.\"\n    }\n  },\n  {\n    \"id\": \"banner_anuncie_americanas\",\n    \"type\": \"banner\",\n    \"text\": \"anuncie na Americanas transformando audiência qualificada em vendas\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"quero anunciar\"\n    }\n  },\n  {\n    \"id\": \"banner_vem_pro_app\",\n    \"type\": \"banner\",\n    \"text\": \"vem pro app aqui tem cupom e ofertas exclusivas\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"qr_code\": true,\n      \"button_text\": \"baixe o app\"\n    }\n  },\n  {\n    \"id\": \"banner_americanas_ao_vivo\",\n    \"type\": \"banner\",\n    \"text\": \"americanas • ao vivo aproveite ofertas exclusivas e descubra produtos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"button_text\": \"veeem\"\n    }\n  },\n  {\n    \"id\": \"footer_title_ofertas_voce_precisa_ver\",\n    \"type\": \"label\",\n    \"text\": \"ofertas que você também precisa ver\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_link_fogao_4_bocas\",\n    \"type\": \"link\",\n    \"text\": \"fogão 4 bocas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_geladeira\",\n    \"type\": \"link\",\n    \"text\": \"geladeira\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_celular_samsung\",\n    \"type\": \"link\",\n    \"text\": \"celular samsung\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_geladeira_frost_free\",\n    \"type\": \"link\",\n    \"text\": \"geladeira frost free\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_guarda_roupa_casal\",\n    \"type\": \"link\",\n    \"text\": \"guarda roupa casal\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_celular\",\n    \"type\": \"link\",\n    \"text\": \"celular\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_iphone\",\n    \"type\": \"link\",\n    \"text\": \"iphone\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_fone_ouvido_bluetooth\",\n    \"type\": \"link\",\n    \"text\": \"fone de ouvido bluetooth\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_notebook\",\n    \"type\": \"link\",\n    \"text\": \"notebook\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_nintendo_switch\",\n    \"type\": \"link\",\n    \"text\": \"nintendo switch\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_air_fryer\",\n    \"type\": \"link\",\n    \"text\": \"air fryer\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_jogo_panelas\",\n    \"type\": \"link\",\n    \"text\": \"jogo de panelas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_ps5\",\n    \"type\": \"link\",\n    \"text\": \"ps5\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_panela_pressao\",\n    \"type\": \"link\",\n    \"text\": \"panela de pressão\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_cafeteira\",\n    \"type\": \"link\",\n    \"text\": \"cafeteira\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_microondas\",\n    \"type\": \"link\",\n    \"text\": \"microondas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_liquidificador\",\n    \"type\": \"link\",\n    \"text\": \"liquidificador\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_celular_motorola\",\n    \"type\": \"link\",\n    \"text\": \"celular motorola\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_sac\",\n    \"type\": \"label\",\n    \"text\": \"sac 4003 4848\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_link_guia_seguranca\",\n    \"type\": \"link\",\n    \"text\": \"guia de segurança\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_link_mais_informacoes\",\n    \"type\": \"select\",\n    \"text\": \"mais informações\",\n    \"region\": \"footer\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"footer_social_instagram\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"footer_social_youtube\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"youtube\"\n    }\n  },\n  {\n    \"id\": \"footer_social_facebook\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"footer_social_tiktok\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"tiktok\"\n    }\n  },\n  {\n    \"id\": \"footer_copyright\",\n    \"type\": \"label\",\n    \"text\": \"americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_mapa_site\",\n    \"type\": \"link\",\n    \"text\": \"Mapa do site\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 9913,
+      "totalTokenCount": 11187,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 619
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "brOcaZzjKabnz7IPrczM6QY"
+  },
+  "ui": [
+    {
+      "id": "top_banner_especial_beleza",
+      "type": "link",
+      "text": "especial beleza",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_parcelamento",
+      "type": "link",
+      "text": "tudo em até 12x no cartão*",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_queeero",
+      "type": "link",
+      "text": "queeero",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_app_exclusive",
+      "type": "link",
+      "text": "só no app você aproveita ofertas exclusivas",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_cartao_ame",
+      "type": "link",
+      "text": "cartão ame",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_mais_vendidos",
+      "type": "link",
+      "text": "mais vendidos",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_entrega_rapida",
+      "type": "link",
+      "text": "entrega rápida",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_ofertas_tv",
+      "type": "link",
+      "text": "ofertas da TV",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_outlet",
+      "type": "link",
+      "text": "outlet",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_banner_oferta_dia",
+      "type": "link",
+      "text": "oferta do dia",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_cep_info",
+      "type": "link",
+      "text": "informe seu CEP",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "location_pin"
+      }
+    },
+    {
+      "id": "top_bar_baixe_app",
+      "type": "link",
+      "text": "baixe o app",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_faca_seu_cartao",
+      "type": "link",
+      "text": "faça seu cartão",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_mais_vendidos_link",
+      "type": "link",
+      "text": "mais vendidos",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "top_bar_login_register",
+      "type": "link",
+      "text": "olá, faça seu lo... ou cadastre-se",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "user"
+      }
+    },
+    {
+      "id": "top_bar_minhas_lojas",
+      "type": "link",
+      "text": "minhas lojas",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "store"
+      }
+    },
+    {
+      "id": "top_bar_wishlist",
+      "type": "link",
+      "text": "",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "heart"
+      }
+    },
+    {
+      "id": "top_bar_cart",
+      "type": "link",
+      "text": "",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "shopping_cart",
+        "item_count": 0
+      }
+    },
+    {
+      "id": "logo_americanas",
+      "type": "image",
+      "text": "americanas",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search_input",
+      "type": "input",
+      "placeholder": "busque aqui seu produto",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onSearch"
+      ],
+      "meta": {
+        "icon": "search"
+      }
+    },
+    {
+      "id": "departments_dropdown",
+      "type": "select",
+      "text": "todos os departamentos",
+      "region": "navigation-bar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "icon": "menu"
+      }
+    },
+    {
+      "id": "nav_link_mercado",
+      "type": "link",
+      "text": "mercado",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_brinquedos",
+      "type": "link",
+      "text": "brinquedos",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_celulares",
+      "type": "link",
+      "text": "celulares",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_eletrodomesticos",
+      "type": "link",
+      "text": "eletrodomésticos",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_informatica",
+      "type": "link",
+      "text": "informática",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_audio_video",
+      "type": "link",
+      "text": "áudio e vídeo",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_eletroportateis",
+      "type": "link",
+      "text": "eletroportáteis",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_moveis",
+      "type": "link",
+      "text": "móveis",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_link_especial_beleza_nav",
+      "type": "link",
+      "text": "especial beleza",
+      "region": "navigation-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "banner_app_exclusive_top",
+      "type": "banner",
+      "text": "só no app você aproveita ofertas exclusivas",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "coupon_icon"
+      }
+    },
+    {
+      "id": "main_banner_semana_acabou",
+      "type": "banner",
+      "text": "a semana acabou, mas o cestaaço tá só começando olha só essas ofertas!",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "aproveite",
+        "carousel_indicators": 5,
+        "current_slide": 1
+      }
+    },
+    {
+      "id": "promo_card_especial_beleza",
+      "type": "card",
+      "text": "especial beleza",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "star"
+      }
+    },
+    {
+      "id": "promo_card_baixe_app",
+      "type": "card",
+      "text": "baixe o app!",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "phone"
+      }
+    },
+    {
+      "id": "promo_card_entrega_rapida",
+      "type": "card",
+      "text": "entrega rápida",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "info": "consulte seu cep"
+      }
+    },
+    {
+      "id": "promo_card_leve_pague",
+      "type": "card",
+      "text": "leve + pague",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "plus"
+      }
+    },
+    {
+      "id": "promo_card_oferta_dia",
+      "type": "card",
+      "text": "oferta do dia",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "promo_card_ofertas_tv",
+      "type": "card",
+      "text": "ofertas da TV",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "promo_card_oba_cupom",
+      "type": "card",
+      "text": "oba, cupom!",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "promo_card_frete_gratis",
+      "type": "card",
+      "text": "frete grátis",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "info": "consulte seu cep"
+      }
+    },
+    {
+      "id": "promo_card_gift_card",
+      "type": "card",
+      "text": "gift card voltou!",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "promo_card_outlet",
+      "type": "card",
+      "text": "outlet",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "discount": "até 75% de desconto"
+      }
+    },
+    {
+      "id": "banner_cupom_10_desconto",
+      "type": "banner",
+      "text": "oba, cupom! 10% de desconto",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "coupon_code": "TOMA10",
+        "info": "em itens selecionados",
+        "link": "confira as regras"
+      }
+    },
+    {
+      "id": "banner_cupom_15_desconto",
+      "type": "banner",
+      "text": "R$15 de desconto com o cupom APP15",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "baixe o app",
+        "info": "válido em pedidos a partir de R$100. Consulte as regras."
+      }
+    },
+    {
+      "id": "banner_cestaco_50_desconto",
+      "type": "banner",
+      "text": "até 50% cestaaço",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "info": "até 50% de desconto em itens selecionados.",
+        "carousel_indicators": 5,
+        "current_slide": 1
+      }
+    },
+    {
+      "id": "section_title_retire_na_loja_2h",
+      "type": "label",
+      "text": "retire na loja em 2h",
+      "region": "main-content"
+    },
+    {
+      "id": "product_card_kitkat",
+      "type": "card",
+      "text": "Kit Kat 41,5g Nestlé leve 4 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Kit Kat chocolate",
+        "price": "R$3,25 cada",
+        "vendor": "vendido por Americanas.",
+        "tag": "retire na loja em 2h",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_bis_xtra",
+      "type": "card",
+      "text": "Bis Xtra - leve 4 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Bis Xtra chocolate",
+        "price": "R$2,74 cada",
+        "vendor": "vendido por Americanas.",
+        "tag": "oferta exclusiva online",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_bis_leve3",
+      "type": "card",
+      "text": "Bis • leve 3 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Bis chocolate",
+        "price": "R$5,33 cada",
+        "vendor": "vendido por Americanas.",
+        "tag": "retire na loja em 2h",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_lacta_tabletes",
+      "type": "card",
+      "text": "tabletes Lacta 80g/ 90g/ 98g/ 104g • leve 2 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Lacta chocolate",
+        "price": "R$5,99 cada",
+        "vendor": "vendido por Americanas.",
+        "tag": "oferta exclusiva online",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_elma_chips",
+      "type": "card",
+      "text": "Elma Chips bag M leve 4 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Elma Chips",
+        "price": "R$6,09 cada",
+        "vendor": "vendido por Americanas.",
+        "tag": "oferta do dia",
+        "coupon": "ELMACHIPS",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_shampoo_seda",
+      "type": "card",
+      "text": "kit shampoo + condicionador Seda • de R$19,99 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Shampoo Seda",
+        "price": "R$15,99 cada",
+        "vendor": "vendido por Americanas.",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_pringles",
+      "type": "card",
+      "text": "batata Pringles 104/109g leve 2 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Pringles",
+        "price": "R$9,99 cada",
+        "vendor": "vendido por Americanas.",
+        "tag": "retire na loja em 2h",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_huggies_pampers",
+      "type": "card",
+      "text": "tudo para seu bebê a partir de",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Huggies Pampers",
+        "price": "R$6,98",
+        "vendor": "vendido por Americanas.",
+        "tag": "retire na loja em 2h",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_sanduicheira_mondial",
+      "type": "card",
+      "text": "sanduicheira fast s12 Mondial de R$99 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Sanduicheira Mondial",
+        "price": "R$69 no Pix",
+        "vendor": "vendido por Americanas.",
+        "tag": "retire na loja em 2h",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_caixa_bombom_lacta",
+      "type": "card",
+      "text": "caixa de bombom Lacta ou Ouro Branco e Sonho de Valsa leve 2 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Bombons Lacta",
+        "price": "R$11,99 cada",
+        "vendor": "vendido por Americanas.",
+        "tag": "oferta exclusiva online",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_samsung_galaxy_a16",
+      "type": "card",
+      "text": "Samsung Galaxy A16 5G 128GB de R$1.499 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Samsung Galaxy A16",
+        "price": "R$987,30 no Pix",
+        "vendor": "vendido por Americanas.",
+        "tag": "retire na loja em 2h",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_secador_cabelo_britania",
+      "type": "card",
+      "text": "secador de cabelos Britânia 2100W BSC2150 bivolt de R$179 por",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Secador de Cabelo Britânia",
+        "price": "R$95",
+        "vendor": "vendido por Americanas.",
+        "tag": "retire na loja em 2h",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "product_card_smartphones_8x_sem_juros",
+      "type": "card",
+      "text": "smartphones em até",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Smartphones",
+        "price": "8x sem juros*",
+        "tag": "retire na loja em 2h",
+        "link": "queeero"
+      }
+    },
+    {
+      "id": "section_title_melhores_ofertas",
+      "type": "label",
+      "text": "as melhoooores ofertas pra você:",
+      "region": "main-content"
+    },
+    {
+      "id": "offer_card_celular_samsung",
+      "type": "card",
+      "text": "celular Samsung com até",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Celular Samsung",
+        "discount": "12% de desconto no Pix",
+        "link": "queeero",
+        "info": "confira as regras."
+      }
+    },
+    {
+      "id": "offer_card_ar_condicionado_ventiladores",
+      "type": "card",
+      "text": "ar-condicionados e ventiladores com até",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Ar Condicionado e Ventilador",
+        "discount": "12% de desconto no Pix",
+        "link": "queeero",
+        "info": "confira as regras."
+      }
+    },
+    {
+      "id": "offer_card_smart_tvs_caixas_som",
+      "type": "card",
+      "text": "smart TVs, caixas de som e mais com até",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Smart TV e Caixa de Som",
+        "discount": "15% de desconto no Pix",
+        "link": "queeero",
+        "info": "confira as regras."
+      }
+    },
+    {
+      "id": "offer_card_fogoes_geladeiras",
+      "type": "card",
+      "text": "fogões, geladeiras e mais com até",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Fogão e Geladeira",
+        "discount": "14% de desconto no Pix",
+        "link": "queeero",
+        "info": "confira as regras."
+      }
+    },
+    {
+      "id": "offer_card_colchao_novo_frete_gratis",
+      "type": "card",
+      "text": "colchão novo com",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Colchão",
+        "discount": "frete grátis Brasil",
+        "link": "queeero",
+        "info": "confira as regras."
+      }
+    },
+    {
+      "id": "offer_card_selecao_moveis",
+      "type": "card",
+      "text": "seleção de móveis com até",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Sofá",
+        "discount": "17% de desconto",
+        "link": "queeero",
+        "info": "confira as regras."
+      }
+    },
+    {
+      "id": "offer_card_desktops_notebooks",
+      "type": "card",
+      "text": "desktops e notebooks com até",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Desktop e Notebook",
+        "discount": "15% de desconto",
+        "link": "queeero",
+        "info": "confira as regras."
+      }
+    },
+    {
+      "id": "offer_card_freezers_cervejeiras",
+      "type": "card",
+      "text": "freezers e cervejeiras com",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Freezer e Cervejeira",
+        "discount": "10% de desconto no Pix",
+        "link": "queeero",
+        "info": "confira as regras."
+      }
+    },
+    {
+      "id": "section_title_navegue_por_categoria",
+      "type": "label",
+      "text": "navegue por categoria :)",
+      "region": "main-content"
+    },
+    {
+      "id": "category_brinquedos",
+      "type": "category-icon",
+      "text": "brinquedos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "bear"
+      }
+    },
+    {
+      "id": "category_telefonia",
+      "type": "category-icon",
+      "text": "telefonia",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "phone"
+      }
+    },
+    {
+      "id": "category_chocolate",
+      "type": "category-icon",
+      "text": "chocolate",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "chocolate"
+      }
+    },
+    {
+      "id": "category_biscoitos",
+      "type": "category-icon",
+      "text": "biscoitos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "cookie"
+      }
+    },
+    {
+      "id": "category_eletroportateis",
+      "type": "category-icon",
+      "text": "eletroportáteis",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "blender"
+      }
+    },
+    {
+      "id": "category_fraldas",
+      "type": "category-icon",
+      "text": "fraldas",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "diaper"
+      }
+    },
+    {
+      "id": "category_beleza_perfumaria",
+      "type": "category-icon",
+      "text": "beleza e perfumaria",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "lotion"
+      }
+    },
+    {
+      "id": "category_eletrodomesticos",
+      "type": "category-icon",
+      "text": "eletrodomésticos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "refrigerator"
+      }
+    },
+    {
+      "id": "category_carousel_arrow_left",
+      "type": "icon",
+      "text": "",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow_left",
+        "associated_carousel": "category_navigation"
+      }
+    },
+    {
+      "id": "category_carousel_arrow_right",
+      "type": "icon",
+      "text": "",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow_right",
+        "associated_carousel": "category_navigation"
+      }
+    },
+    {
+      "id": "section_title_mais_vendidos",
+      "type": "label",
+      "text": "os mais vendidos",
+      "region": "main-content"
+    },
+    {
+      "id": "product_card_motorola_moto_g15",
+      "type": "card",
+      "text": "Smartphone Motorola Moto G15 256GB 12GB RAM Boo...",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Motorola Moto G15",
+        "rating": 5,
+        "old_price": "R$1.299,00",
+        "discount_percentage": "38%",
+        "price": "R$809,10 no Pix",
+        "installments": "em 8x de R$ 112,37 sem juros no cartão de crédito",
+        "icon": "shopping_basket"
+      }
+    },
+    {
+      "id": "product_card_samsung_galaxy_a06",
+      "type": "card",
+      "text": "Smartphone Samsung Galaxy A06 128GB 4GB RA...",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Samsung Galaxy A06",
+        "rating": 4.8,
+        "old_price": "R$749,00",
+        "discount_percentage": "16%",
+        "price": "R$629,10 no Pix",
+        "installments": "em 8x de R$ 87,37 sem juros no cartão de crédito",
+        "icon": "shopping_basket"
+      }
+    },
+    {
+      "id": "product_card_samsung_galaxy_a16_lite",
+      "type": "card",
+      "text": "Smartphone Samsung Galaxy A16 128GB...",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Samsung Galaxy A16 Lite",
+        "rating": 4.9,
+        "old_price": "R$799,00",
+        "discount_percentage": "25%",
+        "price": "R$599,25 no Pix",
+        "installments": "em 8x de R$ 83,19 sem juros no cartão de crédito",
+        "icon": "shopping_basket"
+      }
+    },
+    {
+      "id": "product_card_motorola_moto_g05",
+      "type": "card",
+      "text": "Smartphone Motorola Moto G05 128GB 12GB RAM Boo...",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Motorola Moto G05",
+        "rating": 5,
+        "old_price": "R$1.099,00",
+        "discount_percentage": "43%",
+        "price": "R$629,10 no Pix",
+        "installments": "em 8x de R$ 87,37 sem juros no cartão de crédito",
+        "icon": "shopping_basket"
+      }
+    },
+    {
+      "id": "product_card_samsung_galaxy_a25",
+      "type": "card",
+      "text": "Smartphone Samsung Galaxy A25 5G 256GB 8GB ...",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image": "Samsung Galaxy A25",
+        "rating": 5,
+        "old_price": "R$1.749,00",
+        "discount_percentage": "25%",
+        "price": "R$1.304,10 no Pix",
+        "installments": "em 8x de R$ 181,12 sem juros no cartão de crédito",
+        "icon": "shopping_basket"
+      }
+    },
+    {
+      "id": "product_carousel_arrow_left",
+      "type": "icon",
+      "text": "",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow_left",
+        "associated_carousel": "mais_vendidos"
+      }
+    },
+    {
+      "id": "product_carousel_arrow_right",
+      "type": "icon",
+      "text": "",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow_right",
+        "associated_carousel": "mais_vendidos"
+      }
+    },
+    {
+      "id": "banner_cartao_cliente_americanas",
+      "type": "banner",
+      "text": "Novidade! Chegou o cartão cliente americanas com benefícios exclusivos, perfeito pra você!",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "conheça agora",
+        "info": "sujeito a análise de crédito."
+      }
+    },
+    {
+      "id": "banner_anuncie_americanas",
+      "type": "banner",
+      "text": "anuncie na Americanas transformando audiência qualificada em vendas",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "quero anunciar"
+      }
+    },
+    {
+      "id": "banner_vem_pro_app",
+      "type": "banner",
+      "text": "vem pro app aqui tem cupom e ofertas exclusivas",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "qr_code": true,
+        "button_text": "baixe o app"
+      }
+    },
+    {
+      "id": "banner_americanas_ao_vivo",
+      "type": "banner",
+      "text": "americanas • ao vivo aproveite ofertas exclusivas e descubra produtos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "button_text": "veeem"
+      }
+    },
+    {
+      "id": "footer_title_ofertas_voce_precisa_ver",
+      "type": "label",
+      "text": "ofertas que você também precisa ver",
+      "region": "footer"
+    },
+    {
+      "id": "footer_link_fogao_4_bocas",
+      "type": "link",
+      "text": "fogão 4 bocas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_geladeira",
+      "type": "link",
+      "text": "geladeira",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_celular_samsung",
+      "type": "link",
+      "text": "celular samsung",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_geladeira_frost_free",
+      "type": "link",
+      "text": "geladeira frost free",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_guarda_roupa_casal",
+      "type": "link",
+      "text": "guarda roupa casal",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_celular",
+      "type": "link",
+      "text": "celular",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_iphone",
+      "type": "link",
+      "text": "iphone",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_fone_ouvido_bluetooth",
+      "type": "link",
+      "text": "fone de ouvido bluetooth",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_notebook",
+      "type": "link",
+      "text": "notebook",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_nintendo_switch",
+      "type": "link",
+      "text": "nintendo switch",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_air_fryer",
+      "type": "link",
+      "text": "air fryer",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_jogo_panelas",
+      "type": "link",
+      "text": "jogo de panelas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_ps5",
+      "type": "link",
+      "text": "ps5",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_panela_pressao",
+      "type": "link",
+      "text": "panela de pressão",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_cafeteira",
+      "type": "link",
+      "text": "cafeteira",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_microondas",
+      "type": "link",
+      "text": "microondas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_liquidificador",
+      "type": "link",
+      "text": "liquidificador",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_celular_motorola",
+      "type": "link",
+      "text": "celular motorola",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_sac",
+      "type": "label",
+      "text": "sac 4003 4848",
+      "region": "footer"
+    },
+    {
+      "id": "footer_link_guia_seguranca",
+      "type": "link",
+      "text": "guia de segurança",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_link_mais_informacoes",
+      "type": "select",
+      "text": "mais informações",
+      "region": "footer",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "footer_social_instagram",
+      "type": "icon",
+      "text": "",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "instagram"
+      }
+    },
+    {
+      "id": "footer_social_youtube",
+      "type": "icon",
+      "text": "",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "youtube"
+      }
+    },
+    {
+      "id": "footer_social_facebook",
+      "type": "icon",
+      "text": "",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "facebook"
+      }
+    },
+    {
+      "id": "footer_social_tiktok",
+      "type": "icon",
+      "text": "",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "tiktok"
+      }
+    },
+    {
+      "id": "footer_copyright",
+      "type": "label",
+      "text": "americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902",
+      "region": "footer"
+    },
+    {
+      "id": "footer_mapa_site",
+      "type": "link",
+      "text": "Mapa do site",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}
