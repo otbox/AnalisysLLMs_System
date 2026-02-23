@@ -13,7 +13,7 @@ import { NvidiaObjectDetectionService } from '../core/services/llm/nvidia/Nvidia
 import { NvidiaDetectionController } from '../core/controllers/NvidiaController';
 
 
-const app = Fastify({ logger: true });
+const app = Fastify({ logger: true, bodyLimit: 10 * 1024 * 1024, });
 
 app.register(fastifyCors, {
   origin: true, // ou "http://localhost:5173" se quiser travar

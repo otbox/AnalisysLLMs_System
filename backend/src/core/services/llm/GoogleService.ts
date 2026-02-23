@@ -18,7 +18,7 @@ export class GoogleLLMClient implements LLMClient {
 
   async callStep(input: StepModelInput, signal?: AbortSignal): Promise<StepModelOutput> {
     console.log("Calling google API")
-    const model = this.client.getGenerativeModel({ 
+    const model = this.client.getGenerativeModel({
       model: 'gemini-2.5-flash',
       generationConfig: {
         temperature: 0.2,
@@ -60,10 +60,14 @@ function buildContents(input: StepModelInput): Content[] {
   const parts: Part[] = [{ text: userText }];
 
   if (input.imageBase64) {
+    const pureBase64 = input.imageBase64.startsWith("data:")
+      ? input.imageBase64.split(",")[1] ?? ""
+      : input.imageBase64;
+
     parts.push({
       inlineData: {
-        mimeType: 'image/png',
-        data: input.imageBase64,
+        mimeType: "image/png",
+        data: pureBase64,
       },
     });
   }
