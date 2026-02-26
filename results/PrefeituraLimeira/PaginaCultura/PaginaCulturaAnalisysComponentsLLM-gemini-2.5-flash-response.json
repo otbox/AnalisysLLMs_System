@@ -1,0 +1,1118 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 94,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"accessibility-contrast\",\n    \"type\": \"icon\",\n    \"text\": \"Aumentar Contraste\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"contrast\"\n    }\n  },\n  {\n    \"id\": \"accessibility-font-increase\",\n    \"type\": \"icon\",\n    \"text\": \"Aumentar Fonte\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"font-size-plus\"\n    }\n  },\n  {\n    \"id\": \"accessibility-font-decrease\",\n    \"type\": \"icon\",\n    \"text\": \"Diminuir Fonte\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"font-size-minus\"\n    }\n  },\n  {\n    \"id\": \"accessibility-search\",\n    \"type\": \"icon\",\n    \"text\": \"Ir para a busca\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"search\"\n    }\n  },\n  {\n    \"id\": \"accessibility-sitemap\",\n    \"type\": \"icon\",\n    \"text\": \"Mapa do Site\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"sitemap\"\n    }\n  },\n  {\n    \"id\": \"accessibility-libras\",\n    \"type\": \"icon\",\n    \"text\": \"Libras\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"libras\"\n    }\n  },\n  {\n    \"id\": \"link-ir-para-conteudo\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o conteúdo\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-menu\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o menu\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-busca\",\n    \"type\": \"link\",\n    \"text\": \"Ir para a busca\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-rodape\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o rodapé\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira - Estado de São Paulo - Brasil\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search-input-header\",\n    \"type\": \"input\",\n    \"text\": \"Digite a sua busca\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onSubmit\"],\n    \"meta\": {\n      \"placeholder\": \"Digite a sua busca\"\n    }\n  },\n  {\n    \"id\": \"search-button-header\",\n    \"type\": \"button\",\n    \"text\": \"Buscar\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"search\"\n    }\n  },\n  {\n    \"id\": \"link-portal-transparencia\",\n    \"type\": \"link\",\n    \"text\": \"PORTAL DA TRANSPARÊNCIA\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"info\"\n    }\n  },\n  {\n    \"id\": \"weather-info\",\n    \"type\": \"text\",\n    \"text\": \"34° Chuva Fraca\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"meta\": {\n      \"icon\": \"cloud-rain\"\n    }\n  },\n  {\n    \"id\": \"social-facebook\",\n    \"type\": \"link\",\n    \"text\": \"Facebook\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"social-instagram\",\n    \"type\": \"link\",\n    \"text\": \"Instagram\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"social-youtube\",\n    \"type\": \"link\",\n    \"text\": \"YouTube\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"youtube\"\n    }\n  },\n  {\n    \"id\": \"social-linkedin\",\n    \"type\": \"link\",\n    \"text\": \"LinkedIn\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"social-rss\",\n    \"type\": \"link\",\n    \"text\": \"RSS Feed\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"rss\"\n    }\n  },\n  {\n    \"id\": \"social-flicker\",\n    \"type\": \"link\",\n    \"text\": \"Flickr\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"flickr\"\n    }\n  },\n  {\n    \"id\": \"link-em-alta-iptu-2025\",\n    \"type\": \"link\",\n    \"text\": \"IPTU 2025\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-em-alta-nota-fiscal-eletronica\",\n    \"type\": \"link\",\n    \"text\": \"Nota Fiscal Eletrônica\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-em-alta-licitacoes\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"state\": \"active\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-a-prefeitura\",\n    \"type\": \"link\",\n    \"text\": \"A Prefeitura\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-imprensa\",\n    \"type\": \"link\",\n    \"text\": \"Imprensa\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-leis-municipais\",\n    \"type\": \"link\",\n    \"text\": \"Leis Municipais\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-consultas\",\n    \"type\": \"link\",\n    \"text\": \"Consultas\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-button-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-button-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-button-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-button-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-inicio\",\n    \"type\": \"link\",\n    \"text\": \"Início\",\n    \"state\": \"active\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"state\": \"active\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-cultura\",\n    \"type\": \"select\",\n    \"text\": \"Cultura\",\n    \"state\": \"active\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"currentValue\": \"Cultura\"\n    }\n  },\n  {\n    \"id\": \"page-title-cultura\",\n    \"type\": \"title\",\n    \"text\": \"Cultura\",\n    \"state\": \"active\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"section-title-secretaria-municipal-cultura\",\n    \"type\": \"heading\",\n    \"text\": \"SECRETARIA MUNICIPAL DE CULTURA\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"level\": 2\n    }\n  },\n  {\n    \"id\": \"icon-pin-secretaria-municipal-cultura\",\n    \"type\": \"icon\",\n    \"text\": \"Pin\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"icon\": \"pin\"\n    }\n  },\n  {\n    \"id\": \"article-link-departamento-politicas-raciais\",\n    \"type\": \"link\",\n    \"text\": \"Departamento vai coordenar políticas públicas para promoção da igualdade racial em Limeira\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"article-subtitle-departamento-politicas-raciais\",\n    \"type\": \"text\",\n    \"text\": \"Nova estrutura ligada à Secretaria de Cultura foi oficialmente lançada nesta quarta-feira (1º)\",\n    \"state\": \"active\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"section-title-departamento-promocao-igualdade-racial\",\n    \"type\": \"heading\",\n    \"text\": \"DEPARTAMENTO DE PROMOÇÃO DA IGUALDADE RACIAL\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"level\": 2\n    }\n  },\n  {\n    \"id\": \"article-link-agenda-eventos-cultura-turismo\",\n    \"type\": \"link\",\n    \"text\": \"Agenda de Eventos - Cultura e Turismo Limeira\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"article-link-visita-virtual-museu\",\n    \"type\": \"link\",\n    \"text\": \"Visita Virtual ao Museu\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"article-link-lei-aldir-blanc-2025\",\n    \"type\": \"link\",\n    \"text\": \"LEI ALDIR BLANC 2 - (2025)\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"article-link-oficinas-culturais-2024\",\n    \"type\": \"link\",\n    \"text\": \"Oficinas Culturais 2024 - Edital de Chamamento\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"article-link-solicitacao-data-teatro-vitoria\",\n    \"type\": \"link\",\n    \"text\": \"Solicitação de data para o Teatro Vitória\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"article-link-parque-cidade\",\n    \"type\": \"link\",\n    \"text\": \"Parque Cidade\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"article-link-agenda-cultura-eventos\",\n    \"type\": \"link\",\n    \"text\": \"Agenda de Cultura e Eventos\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"pagination-current-page\",\n    \"type\": \"select\",\n    \"text\": \"1\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"currentValue\": \"1\",\n      \"options\": [\"1\", \"2\"]\n    }\n  },\n  {\n    \"id\": \"pagination-total-pages\",\n    \"type\": \"text\",\n    \"text\": \"/ 2\",\n    \"state\": \"active\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"pagination-next-page\",\n    \"type\": \"button\",\n    \"text\": \"Próxima página\",\n    \"state\": \"active\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow-right\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-regulamentos\",\n    \"type\": \"link\",\n    \"text\": \"REGULAMENTOS\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-teatro\",\n    \"type\": \"link\",\n    \"text\": \"TEATRO\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-bibliotecas\",\n    \"type\": \"link\",\n    \"text\": \"BIBLIOTECAS\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-carta-servicos\",\n    \"type\": \"link\",\n    \"text\": \"CARTA DE SERVIÇOS\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-conselho-municipal-cultura\",\n    \"type\": \"link\",\n    \"text\": \"CONSELHO MUNICIPAL DE CULTURA\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-editais\",\n    \"type\": \"link\",\n    \"text\": \"EDITAIS\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-centro-ciencias-cultura\",\n    \"type\": \"link\",\n    \"text\": \"CENTRO DE CIÊNCIAS E CULTURA\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-lei-aldir-blanc\",\n    \"type\": \"link\",\n    \"text\": \"LEI ALDIR BLANC\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-oficinas-culturais-2022\",\n    \"type\": \"link\",\n    \"text\": \"OFICINAS CULTURAIS 2022\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-fundo-municipal-cultura\",\n    \"type\": \"link\",\n    \"text\": \"FUNDO MUNICIPAL DE CULTURA\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-museu\",\n    \"type\": \"link\",\n    \"text\": \"MUSEU\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-cadastro-municipal-artistas\",\n    \"type\": \"link\",\n    \"text\": \"CADASTRO MUNICIPAL DE ARTISTAS E ESPAÇOS CULTURAIS\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-lei-paulo-gustavo\",\n    \"type\": \"link\",\n    \"text\": \"LEI PAULO GUSTAVO\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-consulta-publica-artistas-limeirenses\",\n    \"type\": \"link\",\n    \"text\": \"CONSULTA PÚBLICA DE ARTISTAS LIMEIRENSES\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar-link-agenda-cultural\",\n    \"type\": \"link\",\n    \"text\": \"AGENDA CULTURAL\",\n    \"state\": \"active\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"floating-button-accessibility\",\n    \"type\": \"button\",\n    \"text\": \"Acessibilidade\",\n    \"state\": \"active\",\n    \"region\": \"floating\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"hand\"\n    }\n  },\n  {\n    \"id\": \"floating-button-scroll-to-top\",\n    \"type\": \"button\",\n    \"text\": \"Voltar ao topo\",\n    \"state\": \"active\",\n    \"region\": \"floating\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow-up\"\n    }\n  },\n  {\n    \"id\": \"footer-button-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-button-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-button-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-button-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-leis-municipais\",\n    \"type\": \"link\",\n    \"text\": \"Leis Municipais\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-nav-secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-nav-imprensa\",\n    \"type\": \"link\",\n    \"text\": \"Imprensa\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-nav-consultas\",\n    \"type\": \"link\",\n    \"text\": \"Consultas\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-nav-autarquias-conselhos\",\n    \"type\": \"link\",\n    \"text\": \"Autarquias e Conselhos\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira - Estado de São Paulo - Brasil\",\n    \"state\": \"active\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-address-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Ícone de localização\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"location\"\n    }\n  },\n  {\n    \"id\": \"footer-address-text\",\n    \"type\": \"text\",\n    \"text\": \"Endereço: Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900\",\n    \"state\": \"active\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-cnpj-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Ícone de documento\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"footer-cnpj-text\",\n    \"type\": \"text\",\n    \"text\": \"CNPJ: 45.132.495/0001-40\",\n    \"state\": \"active\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-social-facebook\",\n    \"type\": \"link\",\n    \"text\": \"Facebook\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"footer-social-instagram\",\n    \"type\": \"link\",\n    \"text\": \"Instagram\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"footer-social-youtube\",\n    \"type\": \"link\",\n    \"text\": \"YouTube\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"youtube\"\n    }\n  },\n  {\n    \"id\": \"footer-social-linkedin\",\n    \"type\": \"link\",\n    \"text\": \"LinkedIn\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"footer-social-rss\",\n    \"type\": \"link\",\n    \"text\": \"RSS Feed\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"rss\"\n    }\n  },\n  {\n    \"id\": \"footer-social-flicker\",\n    \"type\": \"link\",\n    \"text\": \"Flickr\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"flickr\"\n    }\n  },\n  {\n    \"id\": \"footer-phone-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Ícone de telefone\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"phone\"\n    }\n  },\n  {\n    \"id\": \"footer-phone-text\",\n    \"type\": \"text\",\n    \"text\": \"Telefone: (19) 3404-9600\",\n    \"state\": \"active\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-privacy-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Ícone de cadeado\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"lock\"\n    }\n  },\n  {\n    \"id\": \"footer-privacy-link\",\n    \"type\": \"link\",\n    \"text\": \"Termo de Uso e Políticas de Privacidade LGPD - Pesquisa de Satisfação\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-ecrie-logo\",\n    \"type\": \"image\",\n    \"text\": \"Logo eCrie\",\n    \"state\": \"active\",\n    \"region\": \"footer\"\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 7103,
+      "totalTokenCount": 8465,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 707
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "67GfabbQCuDqz7IP0NvsuAQ"
+  },
+  "ui": [
+    {
+      "id": "accessibility-contrast",
+      "type": "icon",
+      "text": "Aumentar Contraste",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "contrast"
+      }
+    },
+    {
+      "id": "accessibility-font-increase",
+      "type": "icon",
+      "text": "Aumentar Fonte",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "font-size-plus"
+      }
+    },
+    {
+      "id": "accessibility-font-decrease",
+      "type": "icon",
+      "text": "Diminuir Fonte",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "font-size-minus"
+      }
+    },
+    {
+      "id": "accessibility-search",
+      "type": "icon",
+      "text": "Ir para a busca",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "search"
+      }
+    },
+    {
+      "id": "accessibility-sitemap",
+      "type": "icon",
+      "text": "Mapa do Site",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "sitemap"
+      }
+    },
+    {
+      "id": "accessibility-libras",
+      "type": "icon",
+      "text": "Libras",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "libras"
+      }
+    },
+    {
+      "id": "link-ir-para-conteudo",
+      "type": "link",
+      "text": "Ir para o conteúdo",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-menu",
+      "type": "link",
+      "text": "Ir para o menu",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-busca",
+      "type": "link",
+      "text": "Ir para a busca",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-rodape",
+      "type": "link",
+      "text": "Ir para o rodapé",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira - Estado de São Paulo - Brasil",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search-input-header",
+      "type": "input",
+      "text": "Digite a sua busca",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onSubmit"
+      ],
+      "meta": {
+        "placeholder": "Digite a sua busca"
+      }
+    },
+    {
+      "id": "search-button-header",
+      "type": "button",
+      "text": "Buscar",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "search"
+      }
+    },
+    {
+      "id": "link-portal-transparencia",
+      "type": "link",
+      "text": "PORTAL DA TRANSPARÊNCIA",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "info"
+      }
+    },
+    {
+      "id": "weather-info",
+      "type": "text",
+      "text": "34° Chuva Fraca",
+      "state": "active",
+      "region": "header",
+      "meta": {
+        "icon": "cloud-rain"
+      }
+    },
+    {
+      "id": "social-facebook",
+      "type": "link",
+      "text": "Facebook",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "facebook"
+      }
+    },
+    {
+      "id": "social-instagram",
+      "type": "link",
+      "text": "Instagram",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "instagram"
+      }
+    },
+    {
+      "id": "social-youtube",
+      "type": "link",
+      "text": "YouTube",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "youtube"
+      }
+    },
+    {
+      "id": "social-linkedin",
+      "type": "link",
+      "text": "LinkedIn",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "linkedin"
+      }
+    },
+    {
+      "id": "social-rss",
+      "type": "link",
+      "text": "RSS Feed",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "rss"
+      }
+    },
+    {
+      "id": "social-flicker",
+      "type": "link",
+      "text": "Flickr",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "flickr"
+      }
+    },
+    {
+      "id": "link-em-alta-iptu-2025",
+      "type": "link",
+      "text": "IPTU 2025",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-em-alta-nota-fiscal-eletronica",
+      "type": "link",
+      "text": "Nota Fiscal Eletrônica",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-em-alta-licitacoes",
+      "type": "link",
+      "text": "Licitações",
+      "state": "active",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-a-prefeitura",
+      "type": "link",
+      "text": "A Prefeitura",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-imprensa",
+      "type": "link",
+      "text": "Imprensa",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-leis-municipais",
+      "type": "link",
+      "text": "Leis Municipais",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-consultas",
+      "type": "link",
+      "text": "Consultas",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-button-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-button-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-button-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-button-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-inicio",
+      "type": "link",
+      "text": "Início",
+      "state": "active",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "state": "active",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-cultura",
+      "type": "select",
+      "text": "Cultura",
+      "state": "active",
+      "region": "breadcrumbs",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "currentValue": "Cultura"
+      }
+    },
+    {
+      "id": "page-title-cultura",
+      "type": "title",
+      "text": "Cultura",
+      "state": "active",
+      "region": "main-content"
+    },
+    {
+      "id": "section-title-secretaria-municipal-cultura",
+      "type": "heading",
+      "text": "SECRETARIA MUNICIPAL DE CULTURA",
+      "state": "active",
+      "region": "main-content",
+      "meta": {
+        "level": 2
+      }
+    },
+    {
+      "id": "icon-pin-secretaria-municipal-cultura",
+      "type": "icon",
+      "text": "Pin",
+      "state": "active",
+      "region": "main-content",
+      "meta": {
+        "icon": "pin"
+      }
+    },
+    {
+      "id": "article-link-departamento-politicas-raciais",
+      "type": "link",
+      "text": "Departamento vai coordenar políticas públicas para promoção da igualdade racial em Limeira",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "article-subtitle-departamento-politicas-raciais",
+      "type": "text",
+      "text": "Nova estrutura ligada à Secretaria de Cultura foi oficialmente lançada nesta quarta-feira (1º)",
+      "state": "active",
+      "region": "main-content"
+    },
+    {
+      "id": "section-title-departamento-promocao-igualdade-racial",
+      "type": "heading",
+      "text": "DEPARTAMENTO DE PROMOÇÃO DA IGUALDADE RACIAL",
+      "state": "active",
+      "region": "main-content",
+      "meta": {
+        "level": 2
+      }
+    },
+    {
+      "id": "article-link-agenda-eventos-cultura-turismo",
+      "type": "link",
+      "text": "Agenda de Eventos - Cultura e Turismo Limeira",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "article-link-visita-virtual-museu",
+      "type": "link",
+      "text": "Visita Virtual ao Museu",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "article-link-lei-aldir-blanc-2025",
+      "type": "link",
+      "text": "LEI ALDIR BLANC 2 - (2025)",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "article-link-oficinas-culturais-2024",
+      "type": "link",
+      "text": "Oficinas Culturais 2024 - Edital de Chamamento",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "article-link-solicitacao-data-teatro-vitoria",
+      "type": "link",
+      "text": "Solicitação de data para o Teatro Vitória",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "article-link-parque-cidade",
+      "type": "link",
+      "text": "Parque Cidade",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "article-link-agenda-cultura-eventos",
+      "type": "link",
+      "text": "Agenda de Cultura e Eventos",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "pagination-current-page",
+      "type": "select",
+      "text": "1",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "currentValue": "1",
+        "options": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "id": "pagination-total-pages",
+      "type": "text",
+      "text": "/ 2",
+      "state": "active",
+      "region": "main-content"
+    },
+    {
+      "id": "pagination-next-page",
+      "type": "button",
+      "text": "Próxima página",
+      "state": "active",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow-right"
+      }
+    },
+    {
+      "id": "sidebar-link-regulamentos",
+      "type": "link",
+      "text": "REGULAMENTOS",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-teatro",
+      "type": "link",
+      "text": "TEATRO",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-bibliotecas",
+      "type": "link",
+      "text": "BIBLIOTECAS",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-carta-servicos",
+      "type": "link",
+      "text": "CARTA DE SERVIÇOS",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-conselho-municipal-cultura",
+      "type": "link",
+      "text": "CONSELHO MUNICIPAL DE CULTURA",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-editais",
+      "type": "link",
+      "text": "EDITAIS",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-centro-ciencias-cultura",
+      "type": "link",
+      "text": "CENTRO DE CIÊNCIAS E CULTURA",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-lei-aldir-blanc",
+      "type": "link",
+      "text": "LEI ALDIR BLANC",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-oficinas-culturais-2022",
+      "type": "link",
+      "text": "OFICINAS CULTURAIS 2022",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-fundo-municipal-cultura",
+      "type": "link",
+      "text": "FUNDO MUNICIPAL DE CULTURA",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-museu",
+      "type": "link",
+      "text": "MUSEU",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-cadastro-municipal-artistas",
+      "type": "link",
+      "text": "CADASTRO MUNICIPAL DE ARTISTAS E ESPAÇOS CULTURAIS",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-lei-paulo-gustavo",
+      "type": "link",
+      "text": "LEI PAULO GUSTAVO",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-consulta-publica-artistas-limeirenses",
+      "type": "link",
+      "text": "CONSULTA PÚBLICA DE ARTISTAS LIMEIRENSES",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "sidebar-link-agenda-cultural",
+      "type": "link",
+      "text": "AGENDA CULTURAL",
+      "state": "active",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "floating-button-accessibility",
+      "type": "button",
+      "text": "Acessibilidade",
+      "state": "active",
+      "region": "floating",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "hand"
+      }
+    },
+    {
+      "id": "floating-button-scroll-to-top",
+      "type": "button",
+      "text": "Voltar ao topo",
+      "state": "active",
+      "region": "floating",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow-up"
+      }
+    },
+    {
+      "id": "footer-button-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-button-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-button-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-button-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-leis-municipais",
+      "type": "link",
+      "text": "Leis Municipais",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-nav-secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-nav-imprensa",
+      "type": "link",
+      "text": "Imprensa",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-nav-consultas",
+      "type": "link",
+      "text": "Consultas",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-nav-autarquias-conselhos",
+      "type": "link",
+      "text": "Autarquias e Conselhos",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira - Estado de São Paulo - Brasil",
+      "state": "active",
+      "region": "footer"
+    },
+    {
+      "id": "footer-address-icon",
+      "type": "icon",
+      "text": "Ícone de localização",
+      "state": "active",
+      "region": "footer",
+      "meta": {
+        "icon": "location"
+      }
+    },
+    {
+      "id": "footer-address-text",
+      "type": "text",
+      "text": "Endereço: Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900",
+      "state": "active",
+      "region": "footer"
+    },
+    {
+      "id": "footer-cnpj-icon",
+      "type": "icon",
+      "text": "Ícone de documento",
+      "state": "active",
+      "region": "footer",
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "footer-cnpj-text",
+      "type": "text",
+      "text": "CNPJ: 45.132.495/0001-40",
+      "state": "active",
+      "region": "footer"
+    },
+    {
+      "id": "footer-social-facebook",
+      "type": "link",
+      "text": "Facebook",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "facebook"
+      }
+    },
+    {
+      "id": "footer-social-instagram",
+      "type": "link",
+      "text": "Instagram",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "instagram"
+      }
+    },
+    {
+      "id": "footer-social-youtube",
+      "type": "link",
+      "text": "YouTube",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "youtube"
+      }
+    },
+    {
+      "id": "footer-social-linkedin",
+      "type": "link",
+      "text": "LinkedIn",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "linkedin"
+      }
+    },
+    {
+      "id": "footer-social-rss",
+      "type": "link",
+      "text": "RSS Feed",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "rss"
+      }
+    },
+    {
+      "id": "footer-social-flicker",
+      "type": "link",
+      "text": "Flickr",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "flickr"
+      }
+    },
+    {
+      "id": "footer-phone-icon",
+      "type": "icon",
+      "text": "Ícone de telefone",
+      "state": "active",
+      "region": "footer",
+      "meta": {
+        "icon": "phone"
+      }
+    },
+    {
+      "id": "footer-phone-text",
+      "type": "text",
+      "text": "Telefone: (19) 3404-9600",
+      "state": "active",
+      "region": "footer"
+    },
+    {
+      "id": "footer-privacy-icon",
+      "type": "icon",
+      "text": "Ícone de cadeado",
+      "state": "active",
+      "region": "footer",
+      "meta": {
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "footer-privacy-link",
+      "type": "link",
+      "text": "Termo de Uso e Políticas de Privacidade LGPD - Pesquisa de Satisfação",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-ecrie-logo",
+      "type": "image",
+      "text": "Logo eCrie",
+      "state": "active",
+      "region": "footer"
+    }
+  ]
+}

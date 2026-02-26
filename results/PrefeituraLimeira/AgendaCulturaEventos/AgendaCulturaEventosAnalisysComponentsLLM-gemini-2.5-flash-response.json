@@ -1,0 +1,1467 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 116,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"accessibility-increase-font\",\n    \"type\": \"icon-button\",\n    \"text\": \"A+\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Aumentar fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility-reset-font\",\n    \"type\": \"icon-button\",\n    \"text\": \"A\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Tamanho normal da fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility-decrease-font\",\n    \"type\": \"icon-button\",\n    \"text\": \"A-\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Diminuir fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility-contrast\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"icon\": \"contrast\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Alto contraste\"\n    }\n  },\n  {\n    \"id\": \"accessibility-sitemap\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"icon\": \"sitemap\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Mapa do site\"\n    }\n  },\n  {\n    \"id\": \"link-content\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o conteúdo\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-menu\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o menu\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-search\",\n    \"type\": \"link\",\n    \"text\": \"Ir para a busca\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-footer\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o rodapé\",\n    \"region\": \"header-top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search-input\",\n    \"type\": \"input\",\n    \"text\": null,\n    \"placeholder\": \"Digite a sua busca\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onSubmit\"],\n    \"meta\": {\n      \"inputType\": \"search\"\n    }\n  },\n  {\n    \"id\": \"search-button\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"icon\": \"search\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"alt\": \"Logo da Prefeitura de Limeira\"\n    }\n  },\n  {\n    \"id\": \"link-portal-transparencia\",\n    \"type\": \"link\",\n    \"text\": \"PORTAL DA TRANSPARÊNCIA\",\n    \"icon\": \"lightbulb\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"weather-icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"icon\": \"cloud-rain\",\n    \"region\": \"header\",\n    \"meta\": {\n      \"description\": \"Ícone de chuva\"\n    }\n  },\n  {\n    \"id\": \"weather-temperature\",\n    \"type\": \"label\",\n    \"text\": \"34°\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"weather-condition\",\n    \"type\": \"label\",\n    \"text\": \"Chuva Fraca\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"social-media-facebook-header\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"facebook\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-instagram-header\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"instagram\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-youtube-header\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"youtube\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-linkedin-header\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"linkedin\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-twitter-header\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"twitter\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-rss-header\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"rss\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"hot-topic-iptu-2025\",\n    \"type\": \"link\",\n    \"text\": \"IPTU 2025\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"category\": \"Em alta\"\n    }\n  },\n  {\n    \"id\": \"hot-topic-nota-fiscal-eletronica\",\n    \"type\": \"link\",\n    \"text\": \"Nota Fiscal Eletrônica\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"category\": \"Em alta\"\n    }\n  },\n  {\n    \"id\": \"hot-topic-licitacoes\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"category\": \"Em alta\"\n    }\n  },\n  {\n    \"id\": \"nav-a-prefeitura\",\n    \"type\": \"link\",\n    \"text\": \"A Prefeitura\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-imprensa\",\n    \"type\": \"link\",\n    \"text\": \"Imprensa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-leis-municipais\",\n    \"type\": \"link\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-consultas\",\n    \"type\": \"link\",\n    \"text\": \"Consultas\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-inicio\",\n    \"type\": \"link\",\n    \"text\": \"Início\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-cultura\",\n    \"type\": \"dropdown\",\n    \"text\": \"Cultura\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"page-title\",\n    \"type\": \"label\",\n    \"text\": \"Agenda de Cultura e Eventos\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"share-instagram\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"icon\": \"instagram\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Compartilhar no Instagram\"\n    }\n  },\n  {\n    \"id\": \"share-facebook\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"icon\": \"facebook\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Compartilhar no Facebook\"\n    }\n  },\n  {\n    \"id\": \"share-x\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"icon\": \"x\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Compartilhar no X (Twitter)\"\n    }\n  },\n  {\n    \"id\": \"share-whatsapp\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"icon\": \"whatsapp\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Compartilhar no WhatsApp\"\n    }\n  },\n  {\n    \"id\": \"banner-agenda-cultura-eventos\",\n    \"type\": \"image\",\n    \"text\": \"AGENDA DE CULTURA E EVENTOS\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"alt\": \"Banner com o título Agenda de Cultura e Eventos e ilustrações de arte e música.\"\n    }\n  },\n  {\n    \"id\": \"intro-text-agenda\",\n    \"type\": \"text-block\",\n    \"text\": \"Confira a Agenda Cultural de Limeira com os eventos do mês de outubro de 2025. A programação reúne música, teatro, dança, exposições, palestras e muito mais, oferecendo opções gratuitas e pagas para todos os públicos.\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"event-01-10-2025\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"01/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Música: \\\"Musical Pink Floyd – Vinicius Schneider\\\"\",\n      \"time\": \"01, às 20h\",\n      \"location\": \"Teatro Vitória\",\n      \"description\": \"Para celebrar a maior ópera rock do mundo, a Produtora Carbureto convidou o diretor musical Alexandre Santos (Escola de Música Villa Jazz) para recriar com fidelidade o álbum The Wall (1979), do Pink Floyd, em um espetáculo imersivo e tecnologicamente inovador. Painéis de LED de última geração e sistema SURROUND completam a experiência audiovisual.\",\n      \"entry\": \"Plateia: R$ 120,00 (inteira), R$ 60,00 (meia) | Mezanino/Balcão: R$ 100,00 (inteira), R$ 50,00 (meia)\",\n      \"classification\": \"16 anos\",\n      \"realization\": \"Produtora Carbureto, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"120min\"\n    }\n  },\n  {\n    \"id\": \"event-02-10-2025\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"02/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Teatro: \\\"O Pequeno Príncipe\\\"\",\n      \"time\": \"02, às 9h30 e às 14h\",\n      \"location\": \"Teatro Vitória\",\n      \"description\": \"Inspirado na obra clássica de Antoine de Saint-Exupéry, o espetáculo retrata a amizade entre um piloto e um principezinho em busca de um carneiro para salvar sua terra natal. Uma reflexão sobre a essência das pequenas coisas.\",\n      \"entry\": \"R$ 60,00 (inteira), R$ 30,00 (meia)\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Cia dos Três, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"60min\"\n    }\n  },\n  {\n    \"id\": \"event-03-10-2025\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"03/10/2025\",\n      \"day\": \"Sexta-feira\",\n      \"title\": \"Teatro: \\\"5ª Mostra de Talentos – Sindsel\\\"\",\n      \"time\": \"03, às 19h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Evento cultural aberto a toda a cidade, celebrando a diversidade e o talento dos servidores públicos.\",\n      \"entry\": \"Livre\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Sindsel, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"210min\"\n    }\n  },\n  {\n    \"id\": \"event-04-10-2025\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"04/10/2025\",\n      \"day\": \"Sábado\",\n      \"title\": \"Palestra: \\\"Como Vencer a Depressão\\\"\",\n      \"time\": \"04, às 19h30\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Marcelo Galante, especialista em terapias holísticas emocionais, hipnoterapia e reprogramação mental, apresenta palestra inspiradora sobre saúde emocional.\",\n      \"entry\": \"1 litro de leite (a ser destinado ao Fundo Social de Solidariedade)\",\n      \"classification\": \"16 anos\",\n      \"realization\": \"Evento independente, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"120min\"\n    }\n  },\n  {\n    \"id\": \"event-05-10-2025-banda-na-praca\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"05/10/2025\",\n      \"day\": \"Domingo\",\n      \"title\": \"Música: \\\"Banda na Praça – Banda Henrique Marques\\\"\",\n      \"time\": \"05, às 10h30\",\n      \"location\": \"Coreto da Praça Toledo de Barros.\",\n      \"description\": \"A tradicional Banda Henrique Marques realiza mais uma edição do projeto “Banda na Praça”, levando música de qualidade para toda a população em uma manhã especial ao ar livre, no coração da cidade.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Banda Henrique Marques, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"60min\"\n    }\n  },\n  {\n    \"id\": \"event-05-10-2025-festival-unicamp\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"05/10/2025\",\n      \"day\": \"Domingo\",\n      \"title\": \"Música: \\\"20º Festival Unicamp de Corais\\\"\",\n      \"time\": \"05, às 18h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"O festival integra a comemoração dos 40 anos do Coral Unicamp Zíper na Boca e reúne grupos em uma mostra das múltiplas possibilidades do canto coletivo.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"UNICAMP, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"150min\"\n    }\n  },\n  {\n    \"id\": \"event-09-10-2025\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"09/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Música: \\\"Symphonic Queen 20 anos\\\"\",\n      \"time\": \"09, às 20h30\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Apresentação da Temporada Pró-Sinfônica, celebrando duas décadas de sucesso do espetáculo.\",\n      \"entry\": \"Plateia R$ 30,00 (inteira), R$ 15,00 (meia)\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Sociedade Pró-Sinfônica de Limeira, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"90min\"\n    }\n  },\n  {\n    \"id\": \"event-10-10-2025-sessoes-planetario\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"10/10/2025\",\n      \"day\": \"Sexta-feira\",\n      \"title\": \"Ciência: \\\"Sessões do Planetário\\\"\",\n      \"time\": \"10, às 9h, 10h, 11h, 13h, 14h e 15h\",\n      \"location\": \"Espaço C3.\",\n      \"description\": \"A atividade educativa convida o público a explorar o universo em sessões imersivas e interativas.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"45min cada sessão\"\n    }\n  },\n  {\n    \"id\": \"event-10-10-2025-symphonic-queen\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"10/10/2025\",\n      \"day\": \"Sexta-feira\",\n      \"title\": \"Música: \\\"Symphonic Queen 20 anos\\\"\",\n      \"time\": \"10, às 20h30\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Apresentação da Temporada Pró-Sinfônica, celebrando duas décadas de sucesso do espetáculo.\",\n      \"entry\": \"Plateia R$ 30,00 (inteira), R$ 15,00 (meia)\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Sociedade Pró-Sinfônica de Limeira, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"90min\"\n    }\n  },\n  {\n    \"id\": \"event-11-10-2025-macrame\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"11/10/2025\",\n      \"day\": \"Sábado\",\n      \"title\": \"Oficina: Macramê\",\n      \"time\": \"11, às 14h\",\n      \"location\": \"Espaço MaBê Cultural.\",\n      \"description\": \"Atividade gratuita que ensina técnicas de tecelagem manual para criação de peças como arandelas e suportes para plantas.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"A partir de 14 anos\",\n      \"realization\": \"Prefeitura de Limeira, por meio da Secretaria de Cultura, com recursos da Lei Aldir Blanc e Ministério da Cultura\",\n      \"duration\": null,\n      \"additional_info\": \"Preferencial para mulheres a partir de 14 anos.\"\n    }\n  },\n  {\n    \"id\": \"event-11-10-2025-divas-lendas-pop\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"11/10/2025\",\n      \"day\": \"Sábado\",\n      \"title\": \"Teatro/Música: \\\"Divas e Lendas do Pop\\\"\",\n      \"time\": \"11, às 19h30\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Espetáculo idealizado pela cantora Claudia Nascimento, em homenagem a grandes nomes da música internacional como Whitney Houston, Michael Jackson e Tina Turner.\",\n      \"entry\": \"R$ 50,00 (inteira), R$ 25,00 (meia), R$ 25,00 (bônus – primeiras 50 vendas)\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Bonin Produções, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"100min\"\n    }\n  },\n  {\n    \"id\": \"event-14-10-2025\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"14/10/2025\",\n      \"day\": \"Terça-feira\",\n      \"title\": \"Evento Fechado: \\\"APAE – Próxima Parada Estação Destino\\\"\",\n      \"time\": \"14, às 19h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Concerto intimista com repertório de compositores clássicos.\",\n      \"entry\": \"Fechado\",\n      \"classification\": \"Livre\",\n      \"realization\": \"APAE, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"70min\"\n    }\n  },\n  {\n    \"id\": \"event-15-10-2025-escola-musica\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"15/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Música: \\\"Escola de Música – Concerto 2025 – Instituto Anderson Fernando\\\"\",\n      \"time\": \"15, às 20h\",\n      \"location\": \"Instituto Anderson Fernando.\",\n      \"description\": \"Concerto beneficente com repertório clássico.\",\n      \"entry\": \"1 litro de leite em prol da Associação das Crianças\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Anderson Fernando, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"60min\"\n    }\n  },\n  {\n    \"id\": \"event-15-10-2025-tem-sarau-biblioteca\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"15/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Tem Sarau na Biblioteca: \\\"Poesias de Terror\\\"\",\n      \"time\": \"15, às 18h\",\n      \"location\": \"Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).\",\n      \"description\": \"O público é convidado a uma noite especial de poesia e suspense, com declamações e interpretações inspiradas em histórias de terror. Um encontro para celebrar a literatura e o clima do Halloween.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"A partir de 13 anos\",\n      \"realization\": \"Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"120min\"\n    }\n  },\n  {\n    \"id\": \"event-16-10-2025-starlight-concert\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"16/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Música: \\\"Starlight Concert – Músicas Clássicas\\\"\",\n      \"time\": \"16, às 20h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Concerto intimista com obras de Beethoven, Mozart e Chopin.\",\n      \"entry\": \"Setor A – R$ 140,00 (inteira), R$ 70,00 (meia); Setor B – R$ 120,00 (inteira), R$ 60,00 (meia); Mezanino – R$ 100,00 (inteira), R$ 50,00 (meia)\",\n      \"classification\": \"Livre\",\n      \"realization\": \"GT Teatro, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"70min\"\n    }\n  },\n  {\n    \"id\": \"event-16-10-2025-biblioteca-geada\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"16/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Biblioteca Geada – Clube de Leitura: \\\"Ler o Mundo Além das Palavras\\\"\",\n      \"time\": \"16, às 17h\",\n      \"location\": \"Biblioteca CEU Geada.\",\n      \"description\": \"Mediação: Carina Crislai. Tema do Encontro: “Terror”.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"A partir de 13 anos\",\n      \"realization\": \"Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"60min\"\n    }\n  },\n  {\n    \"id\": \"event-18-10-2025\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"18/10/2025\",\n      \"day\": \"Sábado\",\n      \"title\": \"Evento Fechado: \\\"XX Festival Fantasia\\\"\",\n      \"time\": \"18, às 19h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Mostra dos trabalhos da Escola Integração e Colégio Portal.\",\n      \"entry\": \"1kg de alimento não perecível\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Colégio Portal/Integração, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"120min\"\n    }\n  },\n  {\n    \"id\": \"event-21-10-2025-cerimonia-encerramento\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"21/10/2025\",\n      \"day\": \"Terça-feira\",\n      \"title\": \"Evento Fechado: \\\"Cerimônia de Encerramento Projeto Empresários do Futuro 2025\\\"\",\n      \"time\": \"21, às 19h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Cerimônia do projeto que incentiva o empreendedorismo jovem.\",\n      \"entry\": \"Fechado\",\n      \"classification\": \"Livre\",\n      \"realization\": \"IDELI, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"180min\"\n    }\n  },\n  {\n    \"id\": \"event-21-10-2025-lancamento-ep-fissuras\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"21/10/2025\",\n      \"day\": \"Terça-feira\",\n      \"title\": \"Música: \\\"Lançamento do EP Fissuras – Eu, a Véia e os Caras\\\"\",\n      \"time\": \"21 de outubro\",\n      \"location\": \"Plataformas digitais.\",\n      \"description\": \"EP com quatro faixas inéditas que abordam temas atuais como depressão, ansiedade e esperança.\",\n      \"entry\": \"Livre\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Banda Eu, a Véia e os Caras, com apoio da Prefeitura de Limeira, e do Ministério da Cultura, via Lei Aldir Blanc\",\n      \"duration\": null\n    }\n  },\n  {\n    \"id\": \"event-22-10-2025-clube-do-livro\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"22/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Biblioteca: Clube do Livro\",\n      \"time\": \"22, às 18h15\",\n      \"location\": \"Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).\",\n      \"description\": \"Leitura do Encontro: “Antes que o Café Esfrie”, de Toshikazu Kawagushi. Sobre o livro: Em um café de Tóquio, os clientes podem viajar no tempo, mas precisam voltar antes que o café esfrie. A obra reflete sobre amor, perda e arrependimento em histórias que tocam o coração. Mediação: Daniele Pedroso.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Maiores de 16 anos\",\n      \"realization\": \"Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"60min\"\n    }\n  },\n  {\n    \"id\": \"event-22-10-2025-lancamento-ep-afro-kumbayah\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"22/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Música: \\\"Legado\\\" – Lançamento do primeiro EP do Coral Afro Kumbayah\",\n      \"time\": \"22, às 19h30\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"Lançamento do primeiro EP do coral, com músicas autorais e em línguas africanas.\",\n      \"entry\": \"1kg de alimento não perecível\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Associação Afro Kumbayah, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"60min\"\n    }\n  },\n  {\n    \"id\": \"event-22-10-2025-serie-relicario\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"22/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Música: \\\"Série Relicário– Mozart e Salieri\\\"\",\n      \"time\": \"22, às 20h30\",\n      \"location\": \"Igreja Boa Morte.\",\n      \"description\": \"Concerto gratuito da Sociedade Pró-Sinfônica de Limeira com obras dos compositores clássicos.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Sociedade Pró-Sinfônica de Limeira (SPSL) e Prefeitura Municipal de Limeira\",\n      \"duration\": \"90min\"\n    }\n  },\n  {\n    \"id\": \"event-22-10-2025-exposicao-legado\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"22/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Exposição: \\\"Legado\\\"\",\n      \"time\": \"De 22 a 30/10\",\n      \"location\": \"Galeria do Teatro Vitória.\",\n      \"description\": \"Mostra fotográfica de Lizzahara Meireles sobre o Coral Afro Kumbayah.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Kauê Braga, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": null\n    }\n  },\n  {\n    \"id\": \"event-23-10-2025-biblioteca-magica\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"23/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Teatro Infantil: \\\"A Biblioteca Mágica e os Sentimentos\\\"\",\n      \"time\": \"23, às 10h e 14h\",\n      \"location\": \"EMEIF Waldemar Lucato.\",\n      \"description\": \"Espetáculo infantil inédito para crianças de 3 a 6 anos, que explora emoções por meio de leitura, poesia, cores e música. A história acompanha uma boneca apaixonada por livros e música que ganha vida, vivenciando aventuras com seu amigo e descobrindo sentimentos como alegria, medo e coragem. Duração: 45 minutos, com intérprete de Libras.\",\n      \"entry\": \"Gratuita – sujeita à lotação\",\n      \"classification\": \"3 a 6 anos\",\n      \"realization\": \"Produção de Shirley Caires, direção de Ro Mártims, com apoio da Prefeitura de Limeira\",\n      \"duration\": null\n    }\n  },\n  {\n    \"id\": \"event-23-10-2025-semana-unimediana\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"23/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Musical: \\\"Semana Unimediana\\\"\",\n      \"time\": \"23, às 20h30\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": null,\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Unimed, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"90min\"\n    }\n  },\n  {\n    \"id\": \"event-23-10-2025-viagem-literaria\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"23/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Viagem Literária: Bate-papo com o autor Bruno Ribeiro\",\n      \"time\": \"23, às 19h\",\n      \"location\": \"Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).\",\n      \"description\": \"Sobre o evento: Em sua 17ª edição, o programa Viagem Literária leva autores e contadores de histórias a bibliotecas de todo o Estado, valorizando a literatura afro-brasileira e o encontro entre escritores e leitores. Sobre o autor: Bruno Ribeiro é escritor, tradutor e roteirista, autor de “Porco da Raça” e “Era Apenas um Presente para o meu Irmão”. Premiado e traduzido em diversos países, é reconhecido por sua escrita criativa e sensível.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Governo do Estado de São Paulo, por meio da Secretaria de Cultura, Economia e Indústria Criativa, através do Sistema Estadual de Bibliotecas Públicas, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"240min\"\n    }\n  },\n  {\n    \"id\": \"event-24-10-2025-sessoes-planetario\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"24/10/2025\",\n      \"day\": \"Sexta-feira\",\n      \"title\": \"Ciência: \\\"Sessões do Planetário\\\"\",\n      \"time\": \"24, às 9h, 10h, 11h, 13h, 14h e 15h\",\n      \"location\": \"Espaço C3.\",\n      \"description\": \"A atividade educativa convida o público a explorar o universo em sessões imersivas e interativas.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"45min cada sessão\"\n    }\n  },\n  {\n    \"id\": \"event-24-10-2025-hora-conto\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"24/10/2025\",\n      \"day\": \"Sexta-feira\",\n      \"title\": \"Hora do Conto com Recanto das Histórias\",\n      \"time\": \"24, às 9h e às 14h30\",\n      \"location\": \"Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).\",\n      \"description\": \"Sobre o evento: Uma viagem pelo mundo da imaginação, com histórias contadas de forma lúdica e encantadora pelo grupo Recanto das Histórias. Pela manhã, a contadora Mara Belo conduz a atividade. À tarde, as contadoras Amanda Hergert e Priscilla Celestino assumem o comando, convidando as crianças a mergulharem em universos mágicos e despertarem o amor pela leitura.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Prefeitura de Limeira, por meio da Secretaria de Cultura, em parceria com a Secretaria de Educação\",\n      \"duration\": \"45min cada sessão\"\n    }\n  },\n  {\n    \"id\": \"event-25-10-2025-macrame\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"25/10/2025\",\n      \"day\": \"Sábado\",\n      \"title\": \"Oficina: Macramê\",\n      \"time\": \"25, às 14h\",\n      \"location\": \"Espaço MaBê Cultural.\",\n      \"description\": \"Atividade gratuita que ensina técnicas de tecelagem manual para criação de peças como arandelas e suportes para plantas.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"A partir de 14 anos\",\n      \"realization\": \"Prefeitura de Limeira\",\n      \"duration\": null,\n      \"additional_info\": \"Preferencial para mulheres a partir de 14 anos.\"\n    }\n  },\n  {\n    \"id\": \"event-25-10-2025-matilda-musical\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"25/10/2025\",\n      \"day\": \"Sábado\",\n      \"title\": \"Dança: \\\"Matilda – O Musical\\\"\",\n      \"time\": \"25, às 15h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": null,\n      \"entry\": \"R$ 80,00 (inteira), R$ 40,00 (meia e bônus antecipado até 24/10)\",\n      \"classification\": \"Livre\",\n      \"realization\": null,\n      \"duration\": \"90min\"\n    }\n  },\n  {\n    \"id\": \"event-25-10-2025-britney-spears\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"25/10/2025\",\n      \"day\": \"Sábado\",\n      \"title\": \"Dança: \\\"Britney Spears – A Princesinha do Pop\\\"\",\n      \"time\": \"25, às 20h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": null,\n      \"entry\": \"R$ 80,00 (inteira), R$ 40,00 (meia e bônus antecipado até 24/10)\",\n      \"classification\": \"Livre\",\n      \"realization\": null,\n      \"duration\": \"90min\"\n    }\n  },\n  {\n    \"id\": \"event-25-10-2025-leia-mulheres\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"25/10/2025\",\n      \"day\": \"Sábado\",\n      \"title\": \"Leia Mulheres (Clube do Livro – Letícia e Nayara)\",\n      \"time\": \"25, às 16h\",\n      \"location\": \"Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).\",\n      \"description\": \"Sobre o evento: Inspirado no projeto internacional #ReadWomen2014, o clube Leia Mulheres promove encontros mensais para discutir obras escritas por autoras. Em Limeira, o grupo existe desde 2018 e já debateu mais de 40 livros. A mediação é feita por Letícia Reis e Nayara M. Pires, mestra e doutora em Estudos Literários pela UFSCar e professora da rede pública estadual.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Leia Mulheres, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"180min\"\n    }\n  },\n  {\n    \"id\": \"event-26-10-2025-matilda-musical\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"26/10/2025\",\n      \"day\": \"Domingo\",\n      \"title\": \"Dança: \\\"Matilda – O Musical\\\"\",\n      \"time\": \"26, às 15h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": null,\n      \"entry\": \"R$ 80,00 (inteira), R$ 40,00 (meia e bônus antecipado até 24/10)\",\n      \"classification\": \"Livre\",\n      \"realization\": null,\n      \"duration\": \"90min\"\n    }\n  },\n  {\n    \"id\": \"event-26-10-2025-britney-spears\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"26/10/2025\",\n      \"day\": \"Domingo\",\n      \"title\": \"Dança: \\\"Britney Spears – A Princesinha do Pop\\\"\",\n      \"time\": \"26, às 20h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": null,\n      \"entry\": \"R$ 80,00 (inteira), R$ 40,00 (meia e bônus antecipado até 24/10)\",\n      \"classification\": \"Livre\",\n      \"realization\": null,\n      \"duration\": \"90min\"\n    }\n  },\n  {\n    \"id\": \"event-29-10-2025-biblioteca-magica\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"29/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Teatro Infantil: \\\"A Biblioteca Mágica e os Sentimentos\\\"\",\n      \"time\": \"29, às 14h (para convidados) e às 19h30 (público geral)\",\n      \"location\": \"Bibliotecas Municipais.\",\n      \"description\": \"Espetáculo infantil inédito para crianças de 3 a 6 anos, que explora emoções por meio de leitura, poesia, cores e música. A história acompanha uma boneca apaixonada por livros e música que ganha vida, vivenciando aventuras com seu amigo e descobrindo sentimentos como alegria, medo e coragem. Duração: 45 minutos, com intérprete de Libras.\",\n      \"entry\": \"Gratuita – sujeita à lotação\",\n      \"classification\": \"3 a 6 anos\",\n      \"realization\": \"Produção de Shirley Caires e Ro Mártims, com apoio da Prefeitura de Limeira\",\n      \"duration\": null\n    }\n  },\n  {\n    \"id\": \"event-29-10-2025-jogos-tabuleiro\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"29/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Dia de Jogar: Jogos de Tabuleiro com a Equipe da Biblioteca\",\n      \"time\": \"29, às 17h\",\n      \"location\": \"Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).\",\n      \"description\": \"Sobre o evento: Atividade voltada a quem gosta de desafios e diversão em grupo. O público poderá jogar clássicos como Detetive, Monopoly, Scrabble, Imagem & Ação, Banco Imobiliário, War, Jogo da Vida, Perfil, Quest e Batalha Naval, entre outros.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Maiores de 9 anos\",\n      \"realization\": \"Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"120min\"\n    }\n  },\n  {\n    \"id\": \"event-29-10-2025-luz-camera-emocao\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"29/10/2025\",\n      \"day\": \"Quarta-feira\",\n      \"title\": \"Evento Fechado: \\\"Luz, Câmera, Emoção\\\"\",\n      \"time\": \"29, às 19h30\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"O Colégio Acadêmico apresenta “Luz, Câmera, Emoção”, espetáculo de música e dança que destaca o talento e a dedicação dos alunos. Uma noite de arte e emoção para encantar o público.\",\n      \"entry\": \"R$ 50,00 (inteira), R$ 25,00 (meia)\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Colégio Acadêmico\",\n      \"duration\": null\n    }\n  },\n  {\n    \"id\": \"event-30-10-2025-espaco-thulany\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"30/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Evento Fechado: \\\"Espaço Thulany In Concert\\\"\",\n      \"time\": \"30, às 19h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": null,\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Associação Afro Thulany, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"180min\"\n    }\n  },\n  {\n    \"id\": \"event-30-10-2025-encerramento-exposicao-legado\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"30/10/2025\",\n      \"day\": \"Quinta-feira\",\n      \"title\": \"Encerramento da Exposição: \\\"Legado\\\"\",\n      \"time\": \"30\",\n      \"location\": \"Galeria do Teatro Vitória.\",\n      \"description\": null,\n      \"entry\": null,\n      \"classification\": null,\n      \"realization\": null,\n      \"duration\": null\n    }\n  },\n  {\n    \"id\": \"event-31-10-2025\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"date\": \"31/10/2025\",\n      \"day\": \"Sexta-feira\",\n      \"title\": \"Evento Fechado: \\\"Show de Talentos\\\"\",\n      \"time\": \"31, às 19h\",\n      \"location\": \"Teatro Vitória.\",\n      \"description\": \"O musical “Nova Vida – Anos 90”, realizado pelo Núcleo Nova Vida, apresenta teatro, música e dança. As crianças mostram as atividades do ano em uma viagem divertida pelos anos 90.\",\n      \"entry\": \"Gratuita\",\n      \"classification\": \"Livre\",\n      \"realization\": \"Núcleo Nova Vida, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura\",\n      \"duration\": \"75min\"\n    }\n  },\n  {\n    \"id\": \"sidebar-regulamentos\",\n    \"type\": \"link\",\n    \"text\": \"REGULAMENTOS\",\n    \"icon\": \"document\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-teatro\",\n    \"type\": \"link\",\n    \"text\": \"TEATRO\",\n    \"icon\": \"theater\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-bibliotecas\",\n    \"type\": \"link\",\n    \"text\": \"BIBLIOTECAS\",\n    \"icon\": \"book\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-carta-servicos\",\n    \"type\": \"link\",\n    \"text\": \"CARTA DE SERVIÇOS\",\n    \"icon\": \"document\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-conselho-municipal-cultura\",\n    \"type\": \"link\",\n    \"text\": \"CONSELHO MUNICIPAL DE CULTURA\",\n    \"icon\": \"document\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-editais\",\n    \"type\": \"link\",\n    \"text\": \"EDITAIS\",\n    \"icon\": \"document\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-centro-ciencias-cultura\",\n    \"type\": \"link\",\n    \"text\": \"CENTRO DE CIÊNCIAS E CULTURA\",\n    \"icon\": \"flask\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-lei-aldir-blanc\",\n    \"type\": \"link\",\n    \"text\": \"LEI ALDIR BLANC\",\n    \"icon\": \"document\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-oficinas-culturais-2022\",\n    \"type\": \"link\",\n    \"text\": \"OFICINAS CULTURAIS 2022\",\n    \"icon\": \"palette\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-fundo-municipal-cultura\",\n    \"type\": \"link\",\n    \"text\": \"FUNDO MUNICIPAL DE CULTURA\",\n    \"icon\": \"money-bag\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-museu\",\n    \"type\": \"link\",\n    \"text\": \"MUSEU\",\n    \"icon\": \"museum\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-cadastro-municipal-artistas\",\n    \"type\": \"link\",\n    \"text\": \"CADASTRO MUNICIPAL DE ARTISTAS E ESPAÇOS CULTURAIS\",\n    \"icon\": \"document\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-lei-paulo-gustavo\",\n    \"type\": \"link\",\n    \"text\": \"LEI PAULO GUSTAVO\",\n    \"icon\": \"document\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-consulta-publica-artistas\",\n    \"type\": \"link\",\n    \"text\": \"CONSULTA PÚBLICA DE ARTISTAS LIMEIRENSES\",\n    \"icon\": \"document\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-agenda-cultural\",\n    \"type\": \"link\",\n    \"text\": \"AGENDA CULTURAL\",\n    \"icon\": \"calendar\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"state\": \"active\"\n  },\n  {\n    \"id\": \"scroll-to-top-button\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"icon\": \"arrow-up\",\n    \"region\": \"floating\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"ariaLabel\": \"Voltar ao topo\"\n    }\n  },\n  {\n    \"id\": \"footer-logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"alt\": \"Logo da Prefeitura de Limeira\"\n    }\n  },\n  {\n    \"id\": \"footer-address-label\",\n    \"type\": \"label\",\n    \"text\": \"Endereço:\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-address-value\",\n    \"type\": \"text-block\",\n    \"text\": \"Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-phone-label\",\n    \"type\": \"label\",\n    \"text\": \"Telefone:\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-phone-value\",\n    \"type\": \"text-block\",\n    \"text\": \"(19) 3404-9600\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-cnpj-label\",\n    \"type\": \"label\",\n    \"text\": \"CNPJ:\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-cnpj-value\",\n    \"type\": \"text-block\",\n    \"text\": \"45.132.495/0001-40\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-social-media-facebook\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"facebook\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-instagram\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"instagram\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-linkedin\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"linkedin\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-youtube\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"youtube\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-twitter\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"twitter\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-email\",\n    \"type\": \"icon-link\",\n    \"text\": null,\n    \"icon\": \"email\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-link-termos-uso\",\n    \"type\": \"link\",\n    \"text\": \"Termo de Uso e Políticas de Privacidade\",\n    \"icon\": \"lock\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-link-lgpd-pesquisa-satisfacao\",\n    \"type\": \"link\",\n    \"text\": \"LGPD - Pesquisa de Satisfação\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-eCrie-logo\",\n    \"type\": \"image\",\n    \"text\": \"eCrie\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"alt\": \"Logo eCrie\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 14566,
+      "totalTokenCount": 15953,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 732
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "eLGfaYyGAtboz7IP_OqS0Q8"
+  },
+  "ui": [
+    {
+      "id": "accessibility-increase-font",
+      "type": "icon-button",
+      "text": "A+",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Aumentar fonte"
+      }
+    },
+    {
+      "id": "accessibility-reset-font",
+      "type": "icon-button",
+      "text": "A",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Tamanho normal da fonte"
+      }
+    },
+    {
+      "id": "accessibility-decrease-font",
+      "type": "icon-button",
+      "text": "A-",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Diminuir fonte"
+      }
+    },
+    {
+      "id": "accessibility-contrast",
+      "type": "icon-button",
+      "text": null,
+      "icon": "contrast",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Alto contraste"
+      }
+    },
+    {
+      "id": "accessibility-sitemap",
+      "type": "icon-button",
+      "text": null,
+      "icon": "sitemap",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Mapa do site"
+      }
+    },
+    {
+      "id": "link-content",
+      "type": "link",
+      "text": "Ir para o conteúdo",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-menu",
+      "type": "link",
+      "text": "Ir para o menu",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-search",
+      "type": "link",
+      "text": "Ir para a busca",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-footer",
+      "type": "link",
+      "text": "Ir para o rodapé",
+      "region": "header-top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search-input",
+      "type": "input",
+      "text": null,
+      "placeholder": "Digite a sua busca",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onSubmit"
+      ],
+      "meta": {
+        "inputType": "search"
+      }
+    },
+    {
+      "id": "search-button",
+      "type": "icon-button",
+      "text": null,
+      "icon": "search",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "alt": "Logo da Prefeitura de Limeira"
+      }
+    },
+    {
+      "id": "link-portal-transparencia",
+      "type": "link",
+      "text": "PORTAL DA TRANSPARÊNCIA",
+      "icon": "lightbulb",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "weather-icon",
+      "type": "icon",
+      "text": null,
+      "icon": "cloud-rain",
+      "region": "header",
+      "meta": {
+        "description": "Ícone de chuva"
+      }
+    },
+    {
+      "id": "weather-temperature",
+      "type": "label",
+      "text": "34°",
+      "region": "header"
+    },
+    {
+      "id": "weather-condition",
+      "type": "label",
+      "text": "Chuva Fraca",
+      "region": "header"
+    },
+    {
+      "id": "social-media-facebook-header",
+      "type": "icon-link",
+      "text": null,
+      "icon": "facebook",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-instagram-header",
+      "type": "icon-link",
+      "text": null,
+      "icon": "instagram",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-youtube-header",
+      "type": "icon-link",
+      "text": null,
+      "icon": "youtube",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-linkedin-header",
+      "type": "icon-link",
+      "text": null,
+      "icon": "linkedin",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-twitter-header",
+      "type": "icon-link",
+      "text": null,
+      "icon": "twitter",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-rss-header",
+      "type": "icon-link",
+      "text": null,
+      "icon": "rss",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "hot-topic-iptu-2025",
+      "type": "link",
+      "text": "IPTU 2025",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "category": "Em alta"
+      }
+    },
+    {
+      "id": "hot-topic-nota-fiscal-eletronica",
+      "type": "link",
+      "text": "Nota Fiscal Eletrônica",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "category": "Em alta"
+      }
+    },
+    {
+      "id": "hot-topic-licitacoes",
+      "type": "link",
+      "text": "Licitações",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "category": "Em alta"
+      }
+    },
+    {
+      "id": "nav-a-prefeitura",
+      "type": "link",
+      "text": "A Prefeitura",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-imprensa",
+      "type": "link",
+      "text": "Imprensa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-leis-municipais",
+      "type": "link",
+      "text": "Leis Municipais",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-consultas",
+      "type": "link",
+      "text": "Consultas",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-inicio",
+      "type": "link",
+      "text": "Início",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-cultura",
+      "type": "dropdown",
+      "text": "Cultura",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "page-title",
+      "type": "label",
+      "text": "Agenda de Cultura e Eventos",
+      "region": "main-content"
+    },
+    {
+      "id": "share-instagram",
+      "type": "icon-button",
+      "text": null,
+      "icon": "instagram",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Compartilhar no Instagram"
+      }
+    },
+    {
+      "id": "share-facebook",
+      "type": "icon-button",
+      "text": null,
+      "icon": "facebook",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Compartilhar no Facebook"
+      }
+    },
+    {
+      "id": "share-x",
+      "type": "icon-button",
+      "text": null,
+      "icon": "x",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Compartilhar no X (Twitter)"
+      }
+    },
+    {
+      "id": "share-whatsapp",
+      "type": "icon-button",
+      "text": null,
+      "icon": "whatsapp",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Compartilhar no WhatsApp"
+      }
+    },
+    {
+      "id": "banner-agenda-cultura-eventos",
+      "type": "image",
+      "text": "AGENDA DE CULTURA E EVENTOS",
+      "region": "main-content",
+      "meta": {
+        "alt": "Banner com o título Agenda de Cultura e Eventos e ilustrações de arte e música."
+      }
+    },
+    {
+      "id": "intro-text-agenda",
+      "type": "text-block",
+      "text": "Confira a Agenda Cultural de Limeira com os eventos do mês de outubro de 2025. A programação reúne música, teatro, dança, exposições, palestras e muito mais, oferecendo opções gratuitas e pagas para todos os públicos.",
+      "region": "main-content"
+    },
+    {
+      "id": "event-01-10-2025",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "01/10/2025",
+        "day": "Quarta-feira",
+        "title": "Música: \"Musical Pink Floyd – Vinicius Schneider\"",
+        "time": "01, às 20h",
+        "location": "Teatro Vitória",
+        "description": "Para celebrar a maior ópera rock do mundo, a Produtora Carbureto convidou o diretor musical Alexandre Santos (Escola de Música Villa Jazz) para recriar com fidelidade o álbum The Wall (1979), do Pink Floyd, em um espetáculo imersivo e tecnologicamente inovador. Painéis de LED de última geração e sistema SURROUND completam a experiência audiovisual.",
+        "entry": "Plateia: R$ 120,00 (inteira), R$ 60,00 (meia) | Mezanino/Balcão: R$ 100,00 (inteira), R$ 50,00 (meia)",
+        "classification": "16 anos",
+        "realization": "Produtora Carbureto, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "120min"
+      }
+    },
+    {
+      "id": "event-02-10-2025",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "02/10/2025",
+        "day": "Quinta-feira",
+        "title": "Teatro: \"O Pequeno Príncipe\"",
+        "time": "02, às 9h30 e às 14h",
+        "location": "Teatro Vitória",
+        "description": "Inspirado na obra clássica de Antoine de Saint-Exupéry, o espetáculo retrata a amizade entre um piloto e um principezinho em busca de um carneiro para salvar sua terra natal. Uma reflexão sobre a essência das pequenas coisas.",
+        "entry": "R$ 60,00 (inteira), R$ 30,00 (meia)",
+        "classification": "Livre",
+        "realization": "Cia dos Três, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "60min"
+      }
+    },
+    {
+      "id": "event-03-10-2025",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "03/10/2025",
+        "day": "Sexta-feira",
+        "title": "Teatro: \"5ª Mostra de Talentos – Sindsel\"",
+        "time": "03, às 19h",
+        "location": "Teatro Vitória.",
+        "description": "Evento cultural aberto a toda a cidade, celebrando a diversidade e o talento dos servidores públicos.",
+        "entry": "Livre",
+        "classification": "Livre",
+        "realization": "Sindsel, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "210min"
+      }
+    },
+    {
+      "id": "event-04-10-2025",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "04/10/2025",
+        "day": "Sábado",
+        "title": "Palestra: \"Como Vencer a Depressão\"",
+        "time": "04, às 19h30",
+        "location": "Teatro Vitória.",
+        "description": "Marcelo Galante, especialista em terapias holísticas emocionais, hipnoterapia e reprogramação mental, apresenta palestra inspiradora sobre saúde emocional.",
+        "entry": "1 litro de leite (a ser destinado ao Fundo Social de Solidariedade)",
+        "classification": "16 anos",
+        "realization": "Evento independente, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "120min"
+      }
+    },
+    {
+      "id": "event-05-10-2025-banda-na-praca",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "05/10/2025",
+        "day": "Domingo",
+        "title": "Música: \"Banda na Praça – Banda Henrique Marques\"",
+        "time": "05, às 10h30",
+        "location": "Coreto da Praça Toledo de Barros.",
+        "description": "A tradicional Banda Henrique Marques realiza mais uma edição do projeto “Banda na Praça”, levando música de qualidade para toda a população em uma manhã especial ao ar livre, no coração da cidade.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Banda Henrique Marques, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "60min"
+      }
+    },
+    {
+      "id": "event-05-10-2025-festival-unicamp",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "05/10/2025",
+        "day": "Domingo",
+        "title": "Música: \"20º Festival Unicamp de Corais\"",
+        "time": "05, às 18h",
+        "location": "Teatro Vitória.",
+        "description": "O festival integra a comemoração dos 40 anos do Coral Unicamp Zíper na Boca e reúne grupos em uma mostra das múltiplas possibilidades do canto coletivo.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "UNICAMP, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "150min"
+      }
+    },
+    {
+      "id": "event-09-10-2025",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "09/10/2025",
+        "day": "Quinta-feira",
+        "title": "Música: \"Symphonic Queen 20 anos\"",
+        "time": "09, às 20h30",
+        "location": "Teatro Vitória.",
+        "description": "Apresentação da Temporada Pró-Sinfônica, celebrando duas décadas de sucesso do espetáculo.",
+        "entry": "Plateia R$ 30,00 (inteira), R$ 15,00 (meia)",
+        "classification": "Livre",
+        "realization": "Sociedade Pró-Sinfônica de Limeira, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "90min"
+      }
+    },
+    {
+      "id": "event-10-10-2025-sessoes-planetario",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "10/10/2025",
+        "day": "Sexta-feira",
+        "title": "Ciência: \"Sessões do Planetário\"",
+        "time": "10, às 9h, 10h, 11h, 13h, 14h e 15h",
+        "location": "Espaço C3.",
+        "description": "A atividade educativa convida o público a explorar o universo em sessões imersivas e interativas.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "45min cada sessão"
+      }
+    },
+    {
+      "id": "event-10-10-2025-symphonic-queen",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "10/10/2025",
+        "day": "Sexta-feira",
+        "title": "Música: \"Symphonic Queen 20 anos\"",
+        "time": "10, às 20h30",
+        "location": "Teatro Vitória.",
+        "description": "Apresentação da Temporada Pró-Sinfônica, celebrando duas décadas de sucesso do espetáculo.",
+        "entry": "Plateia R$ 30,00 (inteira), R$ 15,00 (meia)",
+        "classification": "Livre",
+        "realization": "Sociedade Pró-Sinfônica de Limeira, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "90min"
+      }
+    },
+    {
+      "id": "event-11-10-2025-macrame",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "11/10/2025",
+        "day": "Sábado",
+        "title": "Oficina: Macramê",
+        "time": "11, às 14h",
+        "location": "Espaço MaBê Cultural.",
+        "description": "Atividade gratuita que ensina técnicas de tecelagem manual para criação de peças como arandelas e suportes para plantas.",
+        "entry": "Gratuita",
+        "classification": "A partir de 14 anos",
+        "realization": "Prefeitura de Limeira, por meio da Secretaria de Cultura, com recursos da Lei Aldir Blanc e Ministério da Cultura",
+        "duration": null,
+        "additional_info": "Preferencial para mulheres a partir de 14 anos."
+      }
+    },
+    {
+      "id": "event-11-10-2025-divas-lendas-pop",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "11/10/2025",
+        "day": "Sábado",
+        "title": "Teatro/Música: \"Divas e Lendas do Pop\"",
+        "time": "11, às 19h30",
+        "location": "Teatro Vitória.",
+        "description": "Espetáculo idealizado pela cantora Claudia Nascimento, em homenagem a grandes nomes da música internacional como Whitney Houston, Michael Jackson e Tina Turner.",
+        "entry": "R$ 50,00 (inteira), R$ 25,00 (meia), R$ 25,00 (bônus – primeiras 50 vendas)",
+        "classification": "Livre",
+        "realization": "Bonin Produções, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "100min"
+      }
+    },
+    {
+      "id": "event-14-10-2025",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "14/10/2025",
+        "day": "Terça-feira",
+        "title": "Evento Fechado: \"APAE – Próxima Parada Estação Destino\"",
+        "time": "14, às 19h",
+        "location": "Teatro Vitória.",
+        "description": "Concerto intimista com repertório de compositores clássicos.",
+        "entry": "Fechado",
+        "classification": "Livre",
+        "realization": "APAE, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "70min"
+      }
+    },
+    {
+      "id": "event-15-10-2025-escola-musica",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "15/10/2025",
+        "day": "Quarta-feira",
+        "title": "Música: \"Escola de Música – Concerto 2025 – Instituto Anderson Fernando\"",
+        "time": "15, às 20h",
+        "location": "Instituto Anderson Fernando.",
+        "description": "Concerto beneficente com repertório clássico.",
+        "entry": "1 litro de leite em prol da Associação das Crianças",
+        "classification": "Livre",
+        "realization": "Anderson Fernando, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "60min"
+      }
+    },
+    {
+      "id": "event-15-10-2025-tem-sarau-biblioteca",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "15/10/2025",
+        "day": "Quarta-feira",
+        "title": "Tem Sarau na Biblioteca: \"Poesias de Terror\"",
+        "time": "15, às 18h",
+        "location": "Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).",
+        "description": "O público é convidado a uma noite especial de poesia e suspense, com declamações e interpretações inspiradas em histórias de terror. Um encontro para celebrar a literatura e o clima do Halloween.",
+        "entry": "Gratuita",
+        "classification": "A partir de 13 anos",
+        "realization": "Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "120min"
+      }
+    },
+    {
+      "id": "event-16-10-2025-starlight-concert",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "16/10/2025",
+        "day": "Quinta-feira",
+        "title": "Música: \"Starlight Concert – Músicas Clássicas\"",
+        "time": "16, às 20h",
+        "location": "Teatro Vitória.",
+        "description": "Concerto intimista com obras de Beethoven, Mozart e Chopin.",
+        "entry": "Setor A – R$ 140,00 (inteira), R$ 70,00 (meia); Setor B – R$ 120,00 (inteira), R$ 60,00 (meia); Mezanino – R$ 100,00 (inteira), R$ 50,00 (meia)",
+        "classification": "Livre",
+        "realization": "GT Teatro, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "70min"
+      }
+    },
+    {
+      "id": "event-16-10-2025-biblioteca-geada",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "16/10/2025",
+        "day": "Quinta-feira",
+        "title": "Biblioteca Geada – Clube de Leitura: \"Ler o Mundo Além das Palavras\"",
+        "time": "16, às 17h",
+        "location": "Biblioteca CEU Geada.",
+        "description": "Mediação: Carina Crislai. Tema do Encontro: “Terror”.",
+        "entry": "Gratuita",
+        "classification": "A partir de 13 anos",
+        "realization": "Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "60min"
+      }
+    },
+    {
+      "id": "event-18-10-2025",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "18/10/2025",
+        "day": "Sábado",
+        "title": "Evento Fechado: \"XX Festival Fantasia\"",
+        "time": "18, às 19h",
+        "location": "Teatro Vitória.",
+        "description": "Mostra dos trabalhos da Escola Integração e Colégio Portal.",
+        "entry": "1kg de alimento não perecível",
+        "classification": "Livre",
+        "realization": "Colégio Portal/Integração, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "120min"
+      }
+    },
+    {
+      "id": "event-21-10-2025-cerimonia-encerramento",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "21/10/2025",
+        "day": "Terça-feira",
+        "title": "Evento Fechado: \"Cerimônia de Encerramento Projeto Empresários do Futuro 2025\"",
+        "time": "21, às 19h",
+        "location": "Teatro Vitória.",
+        "description": "Cerimônia do projeto que incentiva o empreendedorismo jovem.",
+        "entry": "Fechado",
+        "classification": "Livre",
+        "realization": "IDELI, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "180min"
+      }
+    },
+    {
+      "id": "event-21-10-2025-lancamento-ep-fissuras",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "21/10/2025",
+        "day": "Terça-feira",
+        "title": "Música: \"Lançamento do EP Fissuras – Eu, a Véia e os Caras\"",
+        "time": "21 de outubro",
+        "location": "Plataformas digitais.",
+        "description": "EP com quatro faixas inéditas que abordam temas atuais como depressão, ansiedade e esperança.",
+        "entry": "Livre",
+        "classification": "Livre",
+        "realization": "Banda Eu, a Véia e os Caras, com apoio da Prefeitura de Limeira, e do Ministério da Cultura, via Lei Aldir Blanc",
+        "duration": null
+      }
+    },
+    {
+      "id": "event-22-10-2025-clube-do-livro",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "22/10/2025",
+        "day": "Quarta-feira",
+        "title": "Biblioteca: Clube do Livro",
+        "time": "22, às 18h15",
+        "location": "Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).",
+        "description": "Leitura do Encontro: “Antes que o Café Esfrie”, de Toshikazu Kawagushi. Sobre o livro: Em um café de Tóquio, os clientes podem viajar no tempo, mas precisam voltar antes que o café esfrie. A obra reflete sobre amor, perda e arrependimento em histórias que tocam o coração. Mediação: Daniele Pedroso.",
+        "entry": "Gratuita",
+        "classification": "Maiores de 16 anos",
+        "realization": "Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "60min"
+      }
+    },
+    {
+      "id": "event-22-10-2025-lancamento-ep-afro-kumbayah",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "22/10/2025",
+        "day": "Quarta-feira",
+        "title": "Música: \"Legado\" – Lançamento do primeiro EP do Coral Afro Kumbayah",
+        "time": "22, às 19h30",
+        "location": "Teatro Vitória.",
+        "description": "Lançamento do primeiro EP do coral, com músicas autorais e em línguas africanas.",
+        "entry": "1kg de alimento não perecível",
+        "classification": "Livre",
+        "realization": "Associação Afro Kumbayah, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "60min"
+      }
+    },
+    {
+      "id": "event-22-10-2025-serie-relicario",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "22/10/2025",
+        "day": "Quarta-feira",
+        "title": "Música: \"Série Relicário– Mozart e Salieri\"",
+        "time": "22, às 20h30",
+        "location": "Igreja Boa Morte.",
+        "description": "Concerto gratuito da Sociedade Pró-Sinfônica de Limeira com obras dos compositores clássicos.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Sociedade Pró-Sinfônica de Limeira (SPSL) e Prefeitura Municipal de Limeira",
+        "duration": "90min"
+      }
+    },
+    {
+      "id": "event-22-10-2025-exposicao-legado",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "22/10/2025",
+        "day": "Quarta-feira",
+        "title": "Exposição: \"Legado\"",
+        "time": "De 22 a 30/10",
+        "location": "Galeria do Teatro Vitória.",
+        "description": "Mostra fotográfica de Lizzahara Meireles sobre o Coral Afro Kumbayah.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Kauê Braga, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": null
+      }
+    },
+    {
+      "id": "event-23-10-2025-biblioteca-magica",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "23/10/2025",
+        "day": "Quinta-feira",
+        "title": "Teatro Infantil: \"A Biblioteca Mágica e os Sentimentos\"",
+        "time": "23, às 10h e 14h",
+        "location": "EMEIF Waldemar Lucato.",
+        "description": "Espetáculo infantil inédito para crianças de 3 a 6 anos, que explora emoções por meio de leitura, poesia, cores e música. A história acompanha uma boneca apaixonada por livros e música que ganha vida, vivenciando aventuras com seu amigo e descobrindo sentimentos como alegria, medo e coragem. Duração: 45 minutos, com intérprete de Libras.",
+        "entry": "Gratuita – sujeita à lotação",
+        "classification": "3 a 6 anos",
+        "realization": "Produção de Shirley Caires, direção de Ro Mártims, com apoio da Prefeitura de Limeira",
+        "duration": null
+      }
+    },
+    {
+      "id": "event-23-10-2025-semana-unimediana",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "23/10/2025",
+        "day": "Quinta-feira",
+        "title": "Musical: \"Semana Unimediana\"",
+        "time": "23, às 20h30",
+        "location": "Teatro Vitória.",
+        "description": null,
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Unimed, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "90min"
+      }
+    },
+    {
+      "id": "event-23-10-2025-viagem-literaria",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "23/10/2025",
+        "day": "Quinta-feira",
+        "title": "Viagem Literária: Bate-papo com o autor Bruno Ribeiro",
+        "time": "23, às 19h",
+        "location": "Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).",
+        "description": "Sobre o evento: Em sua 17ª edição, o programa Viagem Literária leva autores e contadores de histórias a bibliotecas de todo o Estado, valorizando a literatura afro-brasileira e o encontro entre escritores e leitores. Sobre o autor: Bruno Ribeiro é escritor, tradutor e roteirista, autor de “Porco da Raça” e “Era Apenas um Presente para o meu Irmão”. Premiado e traduzido em diversos países, é reconhecido por sua escrita criativa e sensível.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Governo do Estado de São Paulo, por meio da Secretaria de Cultura, Economia e Indústria Criativa, através do Sistema Estadual de Bibliotecas Públicas, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "240min"
+      }
+    },
+    {
+      "id": "event-24-10-2025-sessoes-planetario",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "24/10/2025",
+        "day": "Sexta-feira",
+        "title": "Ciência: \"Sessões do Planetário\"",
+        "time": "24, às 9h, 10h, 11h, 13h, 14h e 15h",
+        "location": "Espaço C3.",
+        "description": "A atividade educativa convida o público a explorar o universo em sessões imersivas e interativas.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "45min cada sessão"
+      }
+    },
+    {
+      "id": "event-24-10-2025-hora-conto",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "24/10/2025",
+        "day": "Sexta-feira",
+        "title": "Hora do Conto com Recanto das Histórias",
+        "time": "24, às 9h e às 14h30",
+        "location": "Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).",
+        "description": "Sobre o evento: Uma viagem pelo mundo da imaginação, com histórias contadas de forma lúdica e encantadora pelo grupo Recanto das Histórias. Pela manhã, a contadora Mara Belo conduz a atividade. À tarde, as contadoras Amanda Hergert e Priscilla Celestino assumem o comando, convidando as crianças a mergulharem em universos mágicos e despertarem o amor pela leitura.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Prefeitura de Limeira, por meio da Secretaria de Cultura, em parceria com a Secretaria de Educação",
+        "duration": "45min cada sessão"
+      }
+    },
+    {
+      "id": "event-25-10-2025-macrame",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "25/10/2025",
+        "day": "Sábado",
+        "title": "Oficina: Macramê",
+        "time": "25, às 14h",
+        "location": "Espaço MaBê Cultural.",
+        "description": "Atividade gratuita que ensina técnicas de tecelagem manual para criação de peças como arandelas e suportes para plantas.",
+        "entry": "Gratuita",
+        "classification": "A partir de 14 anos",
+        "realization": "Prefeitura de Limeira",
+        "duration": null,
+        "additional_info": "Preferencial para mulheres a partir de 14 anos."
+      }
+    },
+    {
+      "id": "event-25-10-2025-matilda-musical",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "25/10/2025",
+        "day": "Sábado",
+        "title": "Dança: \"Matilda – O Musical\"",
+        "time": "25, às 15h",
+        "location": "Teatro Vitória.",
+        "description": null,
+        "entry": "R$ 80,00 (inteira), R$ 40,00 (meia e bônus antecipado até 24/10)",
+        "classification": "Livre",
+        "realization": null,
+        "duration": "90min"
+      }
+    },
+    {
+      "id": "event-25-10-2025-britney-spears",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "25/10/2025",
+        "day": "Sábado",
+        "title": "Dança: \"Britney Spears – A Princesinha do Pop\"",
+        "time": "25, às 20h",
+        "location": "Teatro Vitória.",
+        "description": null,
+        "entry": "R$ 80,00 (inteira), R$ 40,00 (meia e bônus antecipado até 24/10)",
+        "classification": "Livre",
+        "realization": null,
+        "duration": "90min"
+      }
+    },
+    {
+      "id": "event-25-10-2025-leia-mulheres",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "25/10/2025",
+        "day": "Sábado",
+        "title": "Leia Mulheres (Clube do Livro – Letícia e Nayara)",
+        "time": "25, às 16h",
+        "location": "Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).",
+        "description": "Sobre o evento: Inspirado no projeto internacional #ReadWomen2014, o clube Leia Mulheres promove encontros mensais para discutir obras escritas por autoras. Em Limeira, o grupo existe desde 2018 e já debateu mais de 40 livros. A mediação é feita por Letícia Reis e Nayara M. Pires, mestra e doutora em Estudos Literários pela UFSCar e professora da rede pública estadual.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Leia Mulheres, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "180min"
+      }
+    },
+    {
+      "id": "event-26-10-2025-matilda-musical",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "26/10/2025",
+        "day": "Domingo",
+        "title": "Dança: \"Matilda – O Musical\"",
+        "time": "26, às 15h",
+        "location": "Teatro Vitória.",
+        "description": null,
+        "entry": "R$ 80,00 (inteira), R$ 40,00 (meia e bônus antecipado até 24/10)",
+        "classification": "Livre",
+        "realization": null,
+        "duration": "90min"
+      }
+    },
+    {
+      "id": "event-26-10-2025-britney-spears",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "26/10/2025",
+        "day": "Domingo",
+        "title": "Dança: \"Britney Spears – A Princesinha do Pop\"",
+        "time": "26, às 20h",
+        "location": "Teatro Vitória.",
+        "description": null,
+        "entry": "R$ 80,00 (inteira), R$ 40,00 (meia e bônus antecipado até 24/10)",
+        "classification": "Livre",
+        "realization": null,
+        "duration": "90min"
+      }
+    },
+    {
+      "id": "event-29-10-2025-biblioteca-magica",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "29/10/2025",
+        "day": "Quarta-feira",
+        "title": "Teatro Infantil: \"A Biblioteca Mágica e os Sentimentos\"",
+        "time": "29, às 14h (para convidados) e às 19h30 (público geral)",
+        "location": "Bibliotecas Municipais.",
+        "description": "Espetáculo infantil inédito para crianças de 3 a 6 anos, que explora emoções por meio de leitura, poesia, cores e música. A história acompanha uma boneca apaixonada por livros e música que ganha vida, vivenciando aventuras com seu amigo e descobrindo sentimentos como alegria, medo e coragem. Duração: 45 minutos, com intérprete de Libras.",
+        "entry": "Gratuita – sujeita à lotação",
+        "classification": "3 a 6 anos",
+        "realization": "Produção de Shirley Caires e Ro Mártims, com apoio da Prefeitura de Limeira",
+        "duration": null
+      }
+    },
+    {
+      "id": "event-29-10-2025-jogos-tabuleiro",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "29/10/2025",
+        "day": "Quarta-feira",
+        "title": "Dia de Jogar: Jogos de Tabuleiro com a Equipe da Biblioteca",
+        "time": "29, às 17h",
+        "location": "Biblioteca Municipal de Limeira (Rua José Botelho Veloso, s/n – Parque Cidade de Limeira).",
+        "description": "Sobre o evento: Atividade voltada a quem gosta de desafios e diversão em grupo. O público poderá jogar clássicos como Detetive, Monopoly, Scrabble, Imagem & Ação, Banco Imobiliário, War, Jogo da Vida, Perfil, Quest e Batalha Naval, entre outros.",
+        "entry": "Gratuita",
+        "classification": "Maiores de 9 anos",
+        "realization": "Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "120min"
+      }
+    },
+    {
+      "id": "event-29-10-2025-luz-camera-emocao",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "29/10/2025",
+        "day": "Quarta-feira",
+        "title": "Evento Fechado: \"Luz, Câmera, Emoção\"",
+        "time": "29, às 19h30",
+        "location": "Teatro Vitória.",
+        "description": "O Colégio Acadêmico apresenta “Luz, Câmera, Emoção”, espetáculo de música e dança que destaca o talento e a dedicação dos alunos. Uma noite de arte e emoção para encantar o público.",
+        "entry": "R$ 50,00 (inteira), R$ 25,00 (meia)",
+        "classification": "Livre",
+        "realization": "Colégio Acadêmico",
+        "duration": null
+      }
+    },
+    {
+      "id": "event-30-10-2025-espaco-thulany",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "30/10/2025",
+        "day": "Quinta-feira",
+        "title": "Evento Fechado: \"Espaço Thulany In Concert\"",
+        "time": "30, às 19h",
+        "location": "Teatro Vitória.",
+        "description": null,
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Associação Afro Thulany, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "180min"
+      }
+    },
+    {
+      "id": "event-30-10-2025-encerramento-exposicao-legado",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "30/10/2025",
+        "day": "Quinta-feira",
+        "title": "Encerramento da Exposição: \"Legado\"",
+        "time": "30",
+        "location": "Galeria do Teatro Vitória.",
+        "description": null,
+        "entry": null,
+        "classification": null,
+        "realization": null,
+        "duration": null
+      }
+    },
+    {
+      "id": "event-31-10-2025",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "date": "31/10/2025",
+        "day": "Sexta-feira",
+        "title": "Evento Fechado: \"Show de Talentos\"",
+        "time": "31, às 19h",
+        "location": "Teatro Vitória.",
+        "description": "O musical “Nova Vida – Anos 90”, realizado pelo Núcleo Nova Vida, apresenta teatro, música e dança. As crianças mostram as atividades do ano em uma viagem divertida pelos anos 90.",
+        "entry": "Gratuita",
+        "classification": "Livre",
+        "realization": "Núcleo Nova Vida, com apoio da Prefeitura de Limeira, por meio da Secretaria de Cultura",
+        "duration": "75min"
+      }
+    },
+    {
+      "id": "sidebar-regulamentos",
+      "type": "link",
+      "text": "REGULAMENTOS",
+      "icon": "document",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-teatro",
+      "type": "link",
+      "text": "TEATRO",
+      "icon": "theater",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-bibliotecas",
+      "type": "link",
+      "text": "BIBLIOTECAS",
+      "icon": "book",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-carta-servicos",
+      "type": "link",
+      "text": "CARTA DE SERVIÇOS",
+      "icon": "document",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-conselho-municipal-cultura",
+      "type": "link",
+      "text": "CONSELHO MUNICIPAL DE CULTURA",
+      "icon": "document",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-editais",
+      "type": "link",
+      "text": "EDITAIS",
+      "icon": "document",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-centro-ciencias-cultura",
+      "type": "link",
+      "text": "CENTRO DE CIÊNCIAS E CULTURA",
+      "icon": "flask",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-lei-aldir-blanc",
+      "type": "link",
+      "text": "LEI ALDIR BLANC",
+      "icon": "document",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-oficinas-culturais-2022",
+      "type": "link",
+      "text": "OFICINAS CULTURAIS 2022",
+      "icon": "palette",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-fundo-municipal-cultura",
+      "type": "link",
+      "text": "FUNDO MUNICIPAL DE CULTURA",
+      "icon": "money-bag",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-museu",
+      "type": "link",
+      "text": "MUSEU",
+      "icon": "museum",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-cadastro-municipal-artistas",
+      "type": "link",
+      "text": "CADASTRO MUNICIPAL DE ARTISTAS E ESPAÇOS CULTURAIS",
+      "icon": "document",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-lei-paulo-gustavo",
+      "type": "link",
+      "text": "LEI PAULO GUSTAVO",
+      "icon": "document",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-consulta-publica-artistas",
+      "type": "link",
+      "text": "CONSULTA PÚBLICA DE ARTISTAS LIMEIRENSES",
+      "icon": "document",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-agenda-cultural",
+      "type": "link",
+      "text": "AGENDA CULTURAL",
+      "icon": "calendar",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "state": "active"
+    },
+    {
+      "id": "scroll-to-top-button",
+      "type": "icon-button",
+      "text": null,
+      "icon": "arrow-up",
+      "region": "floating",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "ariaLabel": "Voltar ao topo"
+      }
+    },
+    {
+      "id": "footer-logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "footer",
+      "meta": {
+        "alt": "Logo da Prefeitura de Limeira"
+      }
+    },
+    {
+      "id": "footer-address-label",
+      "type": "label",
+      "text": "Endereço:",
+      "region": "footer"
+    },
+    {
+      "id": "footer-address-value",
+      "type": "text-block",
+      "text": "Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900",
+      "region": "footer"
+    },
+    {
+      "id": "footer-phone-label",
+      "type": "label",
+      "text": "Telefone:",
+      "region": "footer"
+    },
+    {
+      "id": "footer-phone-value",
+      "type": "text-block",
+      "text": "(19) 3404-9600",
+      "region": "footer"
+    },
+    {
+      "id": "footer-cnpj-label",
+      "type": "label",
+      "text": "CNPJ:",
+      "region": "footer"
+    },
+    {
+      "id": "footer-cnpj-value",
+      "type": "text-block",
+      "text": "45.132.495/0001-40",
+      "region": "footer"
+    },
+    {
+      "id": "footer-social-media-facebook",
+      "type": "icon-link",
+      "text": null,
+      "icon": "facebook",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-instagram",
+      "type": "icon-link",
+      "text": null,
+      "icon": "instagram",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-linkedin",
+      "type": "icon-link",
+      "text": null,
+      "icon": "linkedin",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-youtube",
+      "type": "icon-link",
+      "text": null,
+      "icon": "youtube",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-twitter",
+      "type": "icon-link",
+      "text": null,
+      "icon": "twitter",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-email",
+      "type": "icon-link",
+      "text": null,
+      "icon": "email",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-link-termos-uso",
+      "type": "link",
+      "text": "Termo de Uso e Políticas de Privacidade",
+      "icon": "lock",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-link-lgpd-pesquisa-satisfacao",
+      "type": "link",
+      "text": "LGPD - Pesquisa de Satisfação",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-eCrie-logo",
+      "type": "image",
+      "text": "eCrie",
+      "region": "footer",
+      "meta": {
+        "alt": "Logo eCrie"
+      }
+    }
+  ]
+}

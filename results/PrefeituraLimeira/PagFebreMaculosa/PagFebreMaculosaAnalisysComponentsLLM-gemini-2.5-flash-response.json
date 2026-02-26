@@ -1,0 +1,1488 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 132,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"accessibility_contrast_dark\",\n    \"type\": \"button\",\n    \"text\": \"A\",\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"aria_label\": \"Contraste escuro\"\n    }\n  },\n  {\n    \"id\": \"accessibility_increase_font\",\n    \"type\": \"button\",\n    \"text\": \"A+\",\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"aria_label\": \"Aumentar fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility_decrease_font\",\n    \"type\": \"button\",\n    \"text\": \"A-\",\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"aria_label\": \"Diminuir fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility_search_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"search\"\n    }\n  },\n  {\n    \"id\": \"accessibility_contrast_light\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"contrast\"\n    }\n  },\n  {\n    \"id\": \"accessibility_sitemap\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"sitemap\"\n    }\n  },\n  {\n    \"id\": \"accessibility_social_media_facebook_top\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"accessibility_social_media_instagram_top\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"accessibility_social_media_linkedin_top\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"accessibility_social_media_rss_top\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"rss\"\n    }\n  },\n  {\n    \"id\": \"accessibility_social_media_podcast_top\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"podcast\"\n    }\n  },\n  {\n    \"id\": \"link_ir_para_conteudo\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o conteúdo\",\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_ir_para_menu\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o menu\",\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_ir_para_busca\",\n    \"type\": \"link\",\n    \"text\": \"Ir para a busca\",\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_ir_para_rodape\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o rodapé\",\n    \"state\": \"default\",\n    \"region\": \"top_bar_utility\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_logo\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"alt_text\": \"Logo da Prefeitura de Limeira - Estado de São Paulo - Brasil\"\n    }\n  },\n  {\n    \"id\": \"header_search_input\",\n    \"type\": \"input\",\n    \"text\": \"Digite a sua busca\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onSubmit\"],\n    \"meta\": {\n      \"input_type\": \"text\",\n      \"placeholder\": \"Digite a sua busca\"\n    }\n  },\n  {\n    \"id\": \"header_search_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"search\"\n    }\n  },\n  {\n    \"id\": \"header_label_em_alta\",\n    \"type\": \"label\",\n    \"text\": \"Em alta:\",\n    \"state\": \"default\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"header_link_iptu_2025\",\n    \"type\": \"link\",\n    \"text\": \"IPTU 2025\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_link_nota_fiscal_eletronica\",\n    \"type\": \"link\",\n    \"text\": \"Nota Fiscal Eletrônica\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_link_licitacoes\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_portal_transparencia\",\n    \"type\": \"link\",\n    \"text\": \"PORTAL DA TRANSPARÊNCIA\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"info\"\n    }\n  },\n  {\n    \"id\": \"header_weather_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"meta\": {\n      \"icon_name\": \"cloud_rain\"\n    }\n  },\n  {\n    \"id\": \"header_weather_temperature\",\n    \"type\": \"text\",\n    \"text\": \"34°\",\n    \"state\": \"default\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"header_weather_description\",\n    \"type\": \"text\",\n    \"text\": \"Chuva Fraca\",\n    \"state\": \"default\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"header_social_media_facebook\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"header_social_media_instagram\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"header_social_media_linkedin\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"header_social_media_rss\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"rss\"\n    }\n  },\n  {\n    \"id\": \"header_social_media_podcast\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"podcast\"\n    }\n  },\n  {\n    \"id\": \"nav_a_prefeitura\",\n    \"type\": \"navigation_item\",\n    \"text\": \"A Prefeitura\",\n    \"state\": \"default\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_secretarias\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Secretarias\",\n    \"state\": \"default\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_imprensa\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Imprensa\",\n    \"state\": \"default\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_leis_municipais\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Leis Municipais\",\n    \"state\": \"default\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_consultas\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Consultas\",\n    \"state\": \"default\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"state\": \"active\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"state\": \"default\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"state\": \"default\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"state\": \"default\",\n    \"region\": \"main_navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_inicio\",\n    \"type\": \"link\",\n    \"text\": \"Início\",\n    \"state\": \"default\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_saude\",\n    \"type\": \"link\",\n    \"text\": \"Saúde\",\n    \"state\": \"default\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_divisao_vigilancia_zoonoses\",\n    \"type\": \"select\",\n    \"text\": \"Divisão de Vigilância de Zoonoses\",\n    \"state\": \"default\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"current_value\": \"Divisão de Vigilância de Zoonoses\"\n    }\n  },\n  {\n    \"id\": \"article_title\",\n    \"type\": \"text\",\n    \"text\": \"Febre Maculosa\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h1\"\n    }\n  },\n  {\n    \"id\": \"share_label\",\n    \"type\": \"label\",\n    \"text\": \"Compartilhe\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"share_button_print\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"print\"\n    }\n  },\n  {\n    \"id\": \"share_button_instagram\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"share_button_facebook\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"share_button_twitter_x\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"twitter_x\"\n    }\n  },\n  {\n    \"id\": \"share_button_whatsapp\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"whatsapp\"\n    }\n  },\n  {\n    \"id\": \"article_banner_image\",\n    \"type\": \"image\",\n    \"text\": \"FEBRE MACULOSA O QUE PRECISO SABER?\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"alt_text\": \"Banner com o título Febre Maculosa e a pergunta O que preciso saber?\"\n    }\n  },\n  {\n    \"id\": \"section_title_o_que_e\",\n    \"type\": \"text\",\n    \"text\": \"O que é?\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h2\"\n    }\n  },\n  {\n    \"id\": \"text_o_que_e_description\",\n    \"type\": \"text\",\n    \"text\": \"Uma doença transmitida pela picada ou esmagamento do carrapato-estrela infectado pela bactéria da febre maculosa.\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"p\"\n    }\n  },\n  {\n    \"id\": \"section_title_como_e_o_carrapato_estrela\",\n    \"type\": \"text\",\n    \"text\": \"Como é o carrapato estrela?\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h2\"\n    }\n  },\n  {\n    \"id\": \"image_tick_lifecycle\",\n    \"type\": \"image\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"alt_text\": \"Imagens do carrapato estrela nas fases de Larva (micuim), Ninfa (vermelhinho) e Adulto\"\n    }\n  },\n  {\n    \"id\": \"label_tick_larva\",\n    \"type\": \"label\",\n    \"text\": \"Larva (micuim)\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"label_tick_ninfa\",\n    \"type\": \"label\",\n    \"text\": \"Ninfa (vermelhinho)\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"label_tick_adulto\",\n    \"type\": \"label\",\n    \"text\": \"Adulto\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"text_tick_transmission_info\",\n    \"type\": \"text\",\n    \"text\": \"Todas as fases podem transmitir a bactéria da febre maculosa!\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"p\"\n    }\n  },\n  {\n    \"id\": \"section_title_onde_pode_ocorrer_o_carrapato\",\n    \"type\": \"text\",\n    \"text\": \"Onde pode ocorrer o carrapato?\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h2\"\n    }\n  },\n  {\n    \"id\": \"text_onde_pode_ocorrer_description\",\n    \"type\": \"text\",\n    \"text\": \"Áreas verdes diversas com gramado, pasto, além de mata fechada. Principalmente se esses locais forem próximos de lagos, rios e córregos, e frequentados por capivaras, cavalos ou outros animais silvestres.\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"p\"\n    }\n  },\n  {\n    \"id\": \"alert_atencao\",\n    \"type\": \"text\",\n    \"text\": \"Atenção!!\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h3\",\n      \"style\": \"highlighted\"\n    }\n  },\n  {\n    \"id\": \"alert_carrapato_nao_e_visto\",\n    \"type\": \"text\",\n    \"text\": \"Às vezes, o carrapato não é visto. Nem a picada sentida!\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h3\",\n      \"style\": \"highlighted\"\n    }\n  },\n  {\n    \"id\": \"alert_text_procure_medico\",\n    \"type\": \"text\",\n    \"text\": \"Se você frequentar uma área suspeita da ocorrência do carrapato e entre 2 e 14 dias apresentar um dos sintomas, procure imediatamente o atendimento médico e informe que esteve nesse local!\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"p\"\n    }\n  },\n  {\n    \"id\": \"alert_text_informacao_salva_vidas\",\n    \"type\": \"text\",\n    \"text\": \"Essa informação salva vidas!\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"p\"\n    }\n  },\n  {\n    \"id\": \"section_title_quais_sao_os_sintomas\",\n    \"type\": \"text\",\n    \"text\": \"Quais são os sintomas?\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h2\"\n    }\n  },\n  {\n    \"id\": \"symptom_febre\",\n    \"type\": \"list_item\",\n    \"text\": \"Febre;\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"symptom_dor_cabeca_corpo\",\n    \"type\": \"list_item\",\n    \"text\": \"Dor de cabeça e no corpo;\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"symptom_falta_apetite_diarreia_vomito\",\n    \"type\": \"list_item\",\n    \"text\": \"Falta de apetite, diarreia e vômito;\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"symptom_manchas_vermelhas\",\n    \"type\": \"list_item\",\n    \"text\": \"Manchas vermelhas pelo corpo.\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"symptom_important_untreated\",\n    \"type\": \"text\",\n    \"text\": \"Importante: se a doença não for tratada nos primeiros dias, pode agravar-se e levar à morte.\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"p\",\n      \"style\": \"bold\"\n    }\n  },\n  {\n    \"id\": \"section_title_qual_o_tratamento\",\n    \"type\": \"text\",\n    \"text\": \"Qual o tratamento?\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h2\"\n    }\n  },\n  {\n    \"id\": \"text_tratamento_description\",\n    \"type\": \"text\",\n    \"text\": \"Tratamento com prescrição médica, preferencialmente com Doxiciclina e como segunda opção, o Cloranfenicol.\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"p\"\n    }\n  },\n  {\n    \"id\": \"section_title_como_se_prevenir\",\n    \"type\": \"text\",\n    \"text\": \"Como se prevenir?\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h2\"\n    }\n  },\n  {\n    \"id\": \"prevention_evite_caminhar_sentar\",\n    \"type\": \"list_item\",\n    \"text\": \"Evite caminhar, sentar ou deitar em áreas verdes;\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"prevention_roupas_claras_bota\",\n    \"type\": \"list_item\",\n    \"text\": \"Caso precise andar nesses locais, utilize roupas claras, bota, calça comprida (com a barra da calça presa à bota com fita adesiva larga);\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"prevention_manter_animais_areas_suspeitas\",\n    \"type\": \"list_item\",\n    \"text\": \"Evite manter animais em áreas suspeitas para infestação de carrapato;\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"prevention_inspecione_corpo_animal\",\n    \"type\": \"list_item\",\n    \"text\": \"Ao entrar nessas áreas, inspecione seu corpo e o seu animal a cada 2 a 3 horas, minuciosamente, à procura de carrapato;\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"prevention_controle_prevencao_carrapatos\",\n    \"type\": \"list_item\",\n    \"text\": \"Realize o controle e prevenção de carrapatos nos seus animais, seguindo orientação do veterinário;\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"prevention_gramado_rente_ao_solo\",\n    \"type\": \"list_item\",\n    \"text\": \"Mantenha o gramado rente ao solo.\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"section_title_como_retirar_o_carrapato\",\n    \"type\": \"text\",\n    \"text\": \"Como retirar o carrapato?\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"meta\": {\n      \"element_type\": \"h2\"\n    }\n  },\n  {\n    \"id\": \"removal_pinça_torcao\",\n    \"type\": \"list_item\",\n    \"text\": \"Retire com uma pinça, fazendo uma leve torção;\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"removal_nao_espremer\",\n    \"type\": \"list_item\",\n    \"text\": \"Não espremê-lo com as unhas para evitar a infecção.\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"link_guia_vigilancia_saude\",\n    \"type\": \"link\",\n    \"text\": \"Clique aqui e acesse o Guia de Vigilância em Saúde com informações detalhadas\",\n    \"state\": \"default\",\n    \"region\": \"main_content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"info_label_informacoes\",\n    \"type\": \"label\",\n    \"text\": \"Informações:\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"info_divisao_epidemiologica\",\n    \"type\": \"text\",\n    \"text\": \"Divisão de Vigilância Epidemiológica: 3441.1914 • 3442.5984\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"info_divisao_zoonoses\",\n    \"type\": \"text\",\n    \"text\": \"Divisão de Vigilância de Zoonoses: 3441.3548 • 3451.3546\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"info_eouve\",\n    \"type\": \"text\",\n    \"text\": \"eOuve: 156\",\n    \"state\": \"default\",\n    \"region\": \"main_content\"\n  },\n  {\n    \"id\": \"sidebar_link_limeira_digital\",\n    \"type\": \"link\",\n    \"text\": \"Limeira Digital\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_iptu_divida_ativa\",\n    \"type\": \"link\",\n    \"text\": \"IPTU e Dívida Ativa/ Mobiliário\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_with_chart\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_consulta_medicamentos\",\n    \"type\": \"link\",\n    \"text\": \"Consulta Medicamentos\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"heart_with_pills\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_consulta_processos\",\n    \"type\": \"link\",\n    \"text\": \"Consulta de Processos\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"question_mark_document\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_multas_transito\",\n    \"type\": \"link\",\n    \"text\": \"Multas de Trânsito\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_with_car\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_certidoes\",\n    \"type\": \"link\",\n    \"text\": \"Certidões\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"envelope\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_leis_orcamentarias\",\n    \"type\": \"link\",\n    \"text\": \"Leis orçamentárias\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_with_chart\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_vagas_pat\",\n    \"type\": \"link\",\n    \"text\": \"Vagas do PAT\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_with_person\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_procon\",\n    \"type\": \"link\",\n    \"text\": \"PROCON\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"computer\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_chamamento_publico\",\n    \"type\": \"link\",\n    \"text\": \"Chamamento Público\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"handshake\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_parcelamento_online\",\n    \"type\": \"link\",\n    \"text\": \"Parcelamen- to Online\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"globe\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_licitacoes_vlibras\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_with_handshake\",\n      \"has_ad\": true,\n      \"ad_content\": \"Acessivel.com VLibras\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_plano_diretor\",\n    \"type\": \"link\",\n    \"text\": \"Plano Diretor 2025-2035\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"magnifying_glass\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_dengue\",\n    \"type\": \"link\",\n    \"text\": \"Dengue\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"mosquito\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_cadastro_habitacional\",\n    \"type\": \"link\",\n    \"text\": \"Cadastro Habitacional\",\n    \"state\": \"default\",\n    \"region\": \"sidebar_right\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"house\"\n    }\n  },\n  {\n    \"id\": \"footer_nav_cidadao\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Cidadão\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_empresa\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Empresa\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_servidor\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Servidor\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_turismo\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Turismo\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_leis_municipais\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Leis Municipais\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"footer_nav_secretarias\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Secretarias\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"footer_nav_imprensa\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Imprensa\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"footer_nav_consultas\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Consultas\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"footer_nav_autarquias_conselhos\",\n    \"type\": \"navigation_item\",\n    \"text\": \"Autarquias e Conselhos\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"footer_logo\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"alt_text\": \"Logo da Prefeitura de Limeira - Estado de São Paulo - Brasil\"\n    }\n  },\n  {\n    \"id\": \"footer_social_media_facebook\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"footer_social_media_instagram\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"footer_social_media_linkedin\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"footer_social_media_rss\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"rss\"\n    }\n  },\n  {\n    \"id\": \"footer_social_media_podcast\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"podcast\"\n    }\n  },\n  {\n    \"id\": \"footer_address_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon_name\": \"location\"\n    }\n  },\n  {\n    \"id\": \"footer_address_label\",\n    \"type\": \"label\",\n    \"text\": \"Endereço:\",\n    \"state\": \"default\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_address_text\",\n    \"type\": \"text\",\n    \"text\": \"Rua Prefeito Doutor Alberto Ferreira nº 179\\nCentro, Limeira/SP - CEP: 13481-900\",\n    \"state\": \"default\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_cnpj_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon_name\": \"document\"\n    }\n  },\n  {\n    \"id\": \"footer_cnpj_label\",\n    \"type\": \"label\",\n    \"text\": \"CNPJ:\",\n    \"state\": \"default\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_cnpj_number\",\n    \"type\": \"text\",\n    \"text\": \"45.132.495/0001-40\",\n    \"state\": \"default\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_phone_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon_name\": \"phone\"\n    }\n  },\n  {\n    \"id\": \"footer_phone_label\",\n    \"type\": \"label\",\n    \"text\": \"Telefone:\",\n    \"state\": \"default\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_phone_number\",\n    \"type\": \"text\",\n    \"text\": \"(19) 3404-9600\",\n    \"state\": \"default\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_privacy_policy_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon_name\": \"lock\"\n    }\n  },\n  {\n    \"id\": \"footer_privacy_policy_link\",\n    \"type\": \"link\",\n    \"text\": \"Termo de Uso e Políticas de Privacidade LGPD - Pesquisa de Satisfação\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_ecrie_logo\",\n    \"type\": \"image\",\n    \"text\": \"eCrie\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"alt_text\": \"Logo eCrie\"\n    }\n  },\n  {\n    \"id\": \"floating_vlibras_widget\",\n    \"type\": \"widget\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"floating_elements\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"widget_name\": \"VLibras\",\n      \"icon_name\": \"hand_waving\"\n    }\n  },\n  {\n    \"id\": \"floating_scroll_to_top_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"state\": \"default\",\n    \"region\": \"floating_elements\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"arrow_up\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "citationMetadata": {
+          "citationSources": [
+            {
+              "startIndex": 12497,
+              "endIndex": 12698,
+              "uri": "https://www.limeira.sp.gov.br/cidadao/saude/vigilancia-sanitaria/febre-maculosa",
+              "license": ""
+            }
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 10323,
+      "totalTokenCount": 12568,
+      "cachedContentTokenCount": 472,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 286
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 186
+        }
+      ],
+      "thoughtsTokenCount": 1590
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "P3CeacKSMLjqz7IP0IeeuAk"
+  },
+  "ui": [
+    {
+      "id": "accessibility_contrast_dark",
+      "type": "button",
+      "text": "A",
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "aria_label": "Contraste escuro"
+      }
+    },
+    {
+      "id": "accessibility_increase_font",
+      "type": "button",
+      "text": "A+",
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "aria_label": "Aumentar fonte"
+      }
+    },
+    {
+      "id": "accessibility_decrease_font",
+      "type": "button",
+      "text": "A-",
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "aria_label": "Diminuir fonte"
+      }
+    },
+    {
+      "id": "accessibility_search_icon",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "search"
+      }
+    },
+    {
+      "id": "accessibility_contrast_light",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "contrast"
+      }
+    },
+    {
+      "id": "accessibility_sitemap",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "sitemap"
+      }
+    },
+    {
+      "id": "accessibility_social_media_facebook_top",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "facebook"
+      }
+    },
+    {
+      "id": "accessibility_social_media_instagram_top",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "instagram"
+      }
+    },
+    {
+      "id": "accessibility_social_media_linkedin_top",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "linkedin"
+      }
+    },
+    {
+      "id": "accessibility_social_media_rss_top",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "rss"
+      }
+    },
+    {
+      "id": "accessibility_social_media_podcast_top",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "podcast"
+      }
+    },
+    {
+      "id": "link_ir_para_conteudo",
+      "type": "link",
+      "text": "Ir para o conteúdo",
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_ir_para_menu",
+      "type": "link",
+      "text": "Ir para o menu",
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_ir_para_busca",
+      "type": "link",
+      "text": "Ir para a busca",
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_ir_para_rodape",
+      "type": "link",
+      "text": "Ir para o rodapé",
+      "state": "default",
+      "region": "top_bar_utility",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_logo",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "alt_text": "Logo da Prefeitura de Limeira - Estado de São Paulo - Brasil"
+      }
+    },
+    {
+      "id": "header_search_input",
+      "type": "input",
+      "text": "Digite a sua busca",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onSubmit"
+      ],
+      "meta": {
+        "input_type": "text",
+        "placeholder": "Digite a sua busca"
+      }
+    },
+    {
+      "id": "header_search_button",
+      "type": "button",
+      "text": null,
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "search"
+      }
+    },
+    {
+      "id": "header_label_em_alta",
+      "type": "label",
+      "text": "Em alta:",
+      "state": "default",
+      "region": "header"
+    },
+    {
+      "id": "header_link_iptu_2025",
+      "type": "link",
+      "text": "IPTU 2025",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_link_nota_fiscal_eletronica",
+      "type": "link",
+      "text": "Nota Fiscal Eletrônica",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_link_licitacoes",
+      "type": "link",
+      "text": "Licitações",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_portal_transparencia",
+      "type": "link",
+      "text": "PORTAL DA TRANSPARÊNCIA",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "info"
+      }
+    },
+    {
+      "id": "header_weather_icon",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "header",
+      "meta": {
+        "icon_name": "cloud_rain"
+      }
+    },
+    {
+      "id": "header_weather_temperature",
+      "type": "text",
+      "text": "34°",
+      "state": "default",
+      "region": "header"
+    },
+    {
+      "id": "header_weather_description",
+      "type": "text",
+      "text": "Chuva Fraca",
+      "state": "default",
+      "region": "header"
+    },
+    {
+      "id": "header_social_media_facebook",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "facebook"
+      }
+    },
+    {
+      "id": "header_social_media_instagram",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "instagram"
+      }
+    },
+    {
+      "id": "header_social_media_linkedin",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "linkedin"
+      }
+    },
+    {
+      "id": "header_social_media_rss",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "rss"
+      }
+    },
+    {
+      "id": "header_social_media_podcast",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "podcast"
+      }
+    },
+    {
+      "id": "nav_a_prefeitura",
+      "type": "navigation_item",
+      "text": "A Prefeitura",
+      "state": "default",
+      "region": "main_navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_secretarias",
+      "type": "navigation_item",
+      "text": "Secretarias",
+      "state": "default",
+      "region": "main_navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_imprensa",
+      "type": "navigation_item",
+      "text": "Imprensa",
+      "state": "default",
+      "region": "main_navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_leis_municipais",
+      "type": "navigation_item",
+      "text": "Leis Municipais",
+      "state": "default",
+      "region": "main_navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_consultas",
+      "type": "navigation_item",
+      "text": "Consultas",
+      "state": "default",
+      "region": "main_navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "state": "active",
+      "region": "main_navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_empresa",
+      "type": "button",
+      "text": "Empresa",
+      "state": "default",
+      "region": "main_navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_servidor",
+      "type": "button",
+      "text": "Servidor",
+      "state": "default",
+      "region": "main_navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_turismo",
+      "type": "button",
+      "text": "Turismo",
+      "state": "default",
+      "region": "main_navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_inicio",
+      "type": "link",
+      "text": "Início",
+      "state": "default",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_saude",
+      "type": "link",
+      "text": "Saúde",
+      "state": "default",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_divisao_vigilancia_zoonoses",
+      "type": "select",
+      "text": "Divisão de Vigilância de Zoonoses",
+      "state": "default",
+      "region": "breadcrumbs",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "current_value": "Divisão de Vigilância de Zoonoses"
+      }
+    },
+    {
+      "id": "article_title",
+      "type": "text",
+      "text": "Febre Maculosa",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h1"
+      }
+    },
+    {
+      "id": "share_label",
+      "type": "label",
+      "text": "Compartilhe",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "share_button_print",
+      "type": "button",
+      "text": null,
+      "state": "default",
+      "region": "main_content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "print"
+      }
+    },
+    {
+      "id": "share_button_instagram",
+      "type": "button",
+      "text": null,
+      "state": "default",
+      "region": "main_content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "instagram"
+      }
+    },
+    {
+      "id": "share_button_facebook",
+      "type": "button",
+      "text": null,
+      "state": "default",
+      "region": "main_content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "facebook"
+      }
+    },
+    {
+      "id": "share_button_twitter_x",
+      "type": "button",
+      "text": null,
+      "state": "default",
+      "region": "main_content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "twitter_x"
+      }
+    },
+    {
+      "id": "share_button_whatsapp",
+      "type": "button",
+      "text": null,
+      "state": "default",
+      "region": "main_content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "whatsapp"
+      }
+    },
+    {
+      "id": "article_banner_image",
+      "type": "image",
+      "text": "FEBRE MACULOSA O QUE PRECISO SABER?",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "alt_text": "Banner com o título Febre Maculosa e a pergunta O que preciso saber?"
+      }
+    },
+    {
+      "id": "section_title_o_que_e",
+      "type": "text",
+      "text": "O que é?",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h2"
+      }
+    },
+    {
+      "id": "text_o_que_e_description",
+      "type": "text",
+      "text": "Uma doença transmitida pela picada ou esmagamento do carrapato-estrela infectado pela bactéria da febre maculosa.",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "p"
+      }
+    },
+    {
+      "id": "section_title_como_e_o_carrapato_estrela",
+      "type": "text",
+      "text": "Como é o carrapato estrela?",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h2"
+      }
+    },
+    {
+      "id": "image_tick_lifecycle",
+      "type": "image",
+      "text": null,
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "alt_text": "Imagens do carrapato estrela nas fases de Larva (micuim), Ninfa (vermelhinho) e Adulto"
+      }
+    },
+    {
+      "id": "label_tick_larva",
+      "type": "label",
+      "text": "Larva (micuim)",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "label_tick_ninfa",
+      "type": "label",
+      "text": "Ninfa (vermelhinho)",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "label_tick_adulto",
+      "type": "label",
+      "text": "Adulto",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "text_tick_transmission_info",
+      "type": "text",
+      "text": "Todas as fases podem transmitir a bactéria da febre maculosa!",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "p"
+      }
+    },
+    {
+      "id": "section_title_onde_pode_ocorrer_o_carrapato",
+      "type": "text",
+      "text": "Onde pode ocorrer o carrapato?",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h2"
+      }
+    },
+    {
+      "id": "text_onde_pode_ocorrer_description",
+      "type": "text",
+      "text": "Áreas verdes diversas com gramado, pasto, além de mata fechada. Principalmente se esses locais forem próximos de lagos, rios e córregos, e frequentados por capivaras, cavalos ou outros animais silvestres.",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "p"
+      }
+    },
+    {
+      "id": "alert_atencao",
+      "type": "text",
+      "text": "Atenção!!",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h3",
+        "style": "highlighted"
+      }
+    },
+    {
+      "id": "alert_carrapato_nao_e_visto",
+      "type": "text",
+      "text": "Às vezes, o carrapato não é visto. Nem a picada sentida!",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h3",
+        "style": "highlighted"
+      }
+    },
+    {
+      "id": "alert_text_procure_medico",
+      "type": "text",
+      "text": "Se você frequentar uma área suspeita da ocorrência do carrapato e entre 2 e 14 dias apresentar um dos sintomas, procure imediatamente o atendimento médico e informe que esteve nesse local!",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "p"
+      }
+    },
+    {
+      "id": "alert_text_informacao_salva_vidas",
+      "type": "text",
+      "text": "Essa informação salva vidas!",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "p"
+      }
+    },
+    {
+      "id": "section_title_quais_sao_os_sintomas",
+      "type": "text",
+      "text": "Quais são os sintomas?",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h2"
+      }
+    },
+    {
+      "id": "symptom_febre",
+      "type": "list_item",
+      "text": "Febre;",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "symptom_dor_cabeca_corpo",
+      "type": "list_item",
+      "text": "Dor de cabeça e no corpo;",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "symptom_falta_apetite_diarreia_vomito",
+      "type": "list_item",
+      "text": "Falta de apetite, diarreia e vômito;",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "symptom_manchas_vermelhas",
+      "type": "list_item",
+      "text": "Manchas vermelhas pelo corpo.",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "symptom_important_untreated",
+      "type": "text",
+      "text": "Importante: se a doença não for tratada nos primeiros dias, pode agravar-se e levar à morte.",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "p",
+        "style": "bold"
+      }
+    },
+    {
+      "id": "section_title_qual_o_tratamento",
+      "type": "text",
+      "text": "Qual o tratamento?",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h2"
+      }
+    },
+    {
+      "id": "text_tratamento_description",
+      "type": "text",
+      "text": "Tratamento com prescrição médica, preferencialmente com Doxiciclina e como segunda opção, o Cloranfenicol.",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "p"
+      }
+    },
+    {
+      "id": "section_title_como_se_prevenir",
+      "type": "text",
+      "text": "Como se prevenir?",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h2"
+      }
+    },
+    {
+      "id": "prevention_evite_caminhar_sentar",
+      "type": "list_item",
+      "text": "Evite caminhar, sentar ou deitar em áreas verdes;",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "prevention_roupas_claras_bota",
+      "type": "list_item",
+      "text": "Caso precise andar nesses locais, utilize roupas claras, bota, calça comprida (com a barra da calça presa à bota com fita adesiva larga);",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "prevention_manter_animais_areas_suspeitas",
+      "type": "list_item",
+      "text": "Evite manter animais em áreas suspeitas para infestação de carrapato;",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "prevention_inspecione_corpo_animal",
+      "type": "list_item",
+      "text": "Ao entrar nessas áreas, inspecione seu corpo e o seu animal a cada 2 a 3 horas, minuciosamente, à procura de carrapato;",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "prevention_controle_prevencao_carrapatos",
+      "type": "list_item",
+      "text": "Realize o controle e prevenção de carrapatos nos seus animais, seguindo orientação do veterinário;",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "prevention_gramado_rente_ao_solo",
+      "type": "list_item",
+      "text": "Mantenha o gramado rente ao solo.",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "section_title_como_retirar_o_carrapato",
+      "type": "text",
+      "text": "Como retirar o carrapato?",
+      "state": "default",
+      "region": "main_content",
+      "meta": {
+        "element_type": "h2"
+      }
+    },
+    {
+      "id": "removal_pinça_torcao",
+      "type": "list_item",
+      "text": "Retire com uma pinça, fazendo uma leve torção;",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "removal_nao_espremer",
+      "type": "list_item",
+      "text": "Não espremê-lo com as unhas para evitar a infecção.",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "link_guia_vigilancia_saude",
+      "type": "link",
+      "text": "Clique aqui e acesse o Guia de Vigilância em Saúde com informações detalhadas",
+      "state": "default",
+      "region": "main_content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "info_label_informacoes",
+      "type": "label",
+      "text": "Informações:",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "info_divisao_epidemiologica",
+      "type": "text",
+      "text": "Divisão de Vigilância Epidemiológica: 3441.1914 • 3442.5984",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "info_divisao_zoonoses",
+      "type": "text",
+      "text": "Divisão de Vigilância de Zoonoses: 3441.3548 • 3451.3546",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "info_eouve",
+      "type": "text",
+      "text": "eOuve: 156",
+      "state": "default",
+      "region": "main_content"
+    },
+    {
+      "id": "sidebar_link_limeira_digital",
+      "type": "link",
+      "text": "Limeira Digital",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document"
+      }
+    },
+    {
+      "id": "sidebar_link_iptu_divida_ativa",
+      "type": "link",
+      "text": "IPTU e Dívida Ativa/ Mobiliário",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_with_chart"
+      }
+    },
+    {
+      "id": "sidebar_link_consulta_medicamentos",
+      "type": "link",
+      "text": "Consulta Medicamentos",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "heart_with_pills"
+      }
+    },
+    {
+      "id": "sidebar_link_consulta_processos",
+      "type": "link",
+      "text": "Consulta de Processos",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "question_mark_document"
+      }
+    },
+    {
+      "id": "sidebar_link_multas_transito",
+      "type": "link",
+      "text": "Multas de Trânsito",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_with_car"
+      }
+    },
+    {
+      "id": "sidebar_link_certidoes",
+      "type": "link",
+      "text": "Certidões",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "envelope"
+      }
+    },
+    {
+      "id": "sidebar_link_leis_orcamentarias",
+      "type": "link",
+      "text": "Leis orçamentárias",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_with_chart"
+      }
+    },
+    {
+      "id": "sidebar_link_vagas_pat",
+      "type": "link",
+      "text": "Vagas do PAT",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_with_person"
+      }
+    },
+    {
+      "id": "sidebar_link_procon",
+      "type": "link",
+      "text": "PROCON",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "computer"
+      }
+    },
+    {
+      "id": "sidebar_link_chamamento_publico",
+      "type": "link",
+      "text": "Chamamento Público",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "handshake"
+      }
+    },
+    {
+      "id": "sidebar_link_parcelamento_online",
+      "type": "link",
+      "text": "Parcelamen- to Online",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "globe"
+      }
+    },
+    {
+      "id": "sidebar_link_licitacoes_vlibras",
+      "type": "link",
+      "text": "Licitações",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_with_handshake",
+        "has_ad": true,
+        "ad_content": "Acessivel.com VLibras"
+      }
+    },
+    {
+      "id": "sidebar_link_plano_diretor",
+      "type": "link",
+      "text": "Plano Diretor 2025-2035",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "magnifying_glass"
+      }
+    },
+    {
+      "id": "sidebar_link_dengue",
+      "type": "link",
+      "text": "Dengue",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "mosquito"
+      }
+    },
+    {
+      "id": "sidebar_link_cadastro_habitacional",
+      "type": "link",
+      "text": "Cadastro Habitacional",
+      "state": "default",
+      "region": "sidebar_right",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "house"
+      }
+    },
+    {
+      "id": "footer_nav_cidadao",
+      "type": "navigation_item",
+      "text": "Cidadão",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_empresa",
+      "type": "navigation_item",
+      "text": "Empresa",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_servidor",
+      "type": "navigation_item",
+      "text": "Servidor",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_turismo",
+      "type": "navigation_item",
+      "text": "Turismo",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_leis_municipais",
+      "type": "navigation_item",
+      "text": "Leis Municipais",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "footer_nav_secretarias",
+      "type": "navigation_item",
+      "text": "Secretarias",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "footer_nav_imprensa",
+      "type": "navigation_item",
+      "text": "Imprensa",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "footer_nav_consultas",
+      "type": "navigation_item",
+      "text": "Consultas",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "footer_nav_autarquias_conselhos",
+      "type": "navigation_item",
+      "text": "Autarquias e Conselhos",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "footer_logo",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "alt_text": "Logo da Prefeitura de Limeira - Estado de São Paulo - Brasil"
+      }
+    },
+    {
+      "id": "footer_social_media_facebook",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "facebook"
+      }
+    },
+    {
+      "id": "footer_social_media_instagram",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "instagram"
+      }
+    },
+    {
+      "id": "footer_social_media_linkedin",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "linkedin"
+      }
+    },
+    {
+      "id": "footer_social_media_rss",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "rss"
+      }
+    },
+    {
+      "id": "footer_social_media_podcast",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "podcast"
+      }
+    },
+    {
+      "id": "footer_address_icon",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "meta": {
+        "icon_name": "location"
+      }
+    },
+    {
+      "id": "footer_address_label",
+      "type": "label",
+      "text": "Endereço:",
+      "state": "default",
+      "region": "footer"
+    },
+    {
+      "id": "footer_address_text",
+      "type": "text",
+      "text": "Rua Prefeito Doutor Alberto Ferreira nº 179\nCentro, Limeira/SP - CEP: 13481-900",
+      "state": "default",
+      "region": "footer"
+    },
+    {
+      "id": "footer_cnpj_icon",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "meta": {
+        "icon_name": "document"
+      }
+    },
+    {
+      "id": "footer_cnpj_label",
+      "type": "label",
+      "text": "CNPJ:",
+      "state": "default",
+      "region": "footer"
+    },
+    {
+      "id": "footer_cnpj_number",
+      "type": "text",
+      "text": "45.132.495/0001-40",
+      "state": "default",
+      "region": "footer"
+    },
+    {
+      "id": "footer_phone_icon",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "meta": {
+        "icon_name": "phone"
+      }
+    },
+    {
+      "id": "footer_phone_label",
+      "type": "label",
+      "text": "Telefone:",
+      "state": "default",
+      "region": "footer"
+    },
+    {
+      "id": "footer_phone_number",
+      "type": "text",
+      "text": "(19) 3404-9600",
+      "state": "default",
+      "region": "footer"
+    },
+    {
+      "id": "footer_privacy_policy_icon",
+      "type": "icon",
+      "text": null,
+      "state": "default",
+      "region": "footer",
+      "meta": {
+        "icon_name": "lock"
+      }
+    },
+    {
+      "id": "footer_privacy_policy_link",
+      "type": "link",
+      "text": "Termo de Uso e Políticas de Privacidade LGPD - Pesquisa de Satisfação",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_ecrie_logo",
+      "type": "image",
+      "text": "eCrie",
+      "state": "default",
+      "region": "footer",
+      "meta": {
+        "alt_text": "Logo eCrie"
+      }
+    },
+    {
+      "id": "floating_vlibras_widget",
+      "type": "widget",
+      "text": null,
+      "state": "default",
+      "region": "floating_elements",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "widget_name": "VLibras",
+        "icon_name": "hand_waving"
+      }
+    },
+    {
+      "id": "floating_scroll_to_top_button",
+      "type": "button",
+      "text": null,
+      "state": "default",
+      "region": "floating_elements",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "arrow_up"
+      }
+    }
+  ]
+}

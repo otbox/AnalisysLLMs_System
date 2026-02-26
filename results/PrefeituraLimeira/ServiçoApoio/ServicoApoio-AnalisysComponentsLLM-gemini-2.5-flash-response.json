@@ -1,0 +1,971 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 106,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"skip_content_link\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o conteúdo\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"skip_menu_link\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o menu\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"skip_search_link\",\n    \"type\": \"link\",\n    \"text\": \"Ir para a busca\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"skip_footer_link\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o rodapé\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"contrast_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Contraste\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"font_increase_button\",\n    \"type\": \"button\",\n    \"text\": \"A+\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"font_decrease_button\",\n    \"type\": \"button\",\n    \"text\": \"A-\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search_icon_top\",\n    \"type\": \"icon\",\n    \"text\": \"Pesquisar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sitemap_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Mapa do Site\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Acessibilidade\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"transparency_portal_link\",\n    \"type\": \"link\",\n    \"text\": \"PORTAL DA TRANSPARÊNCIA\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"icon\": \"info\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"weather_info\",\n    \"type\": \"text\",\n    \"text\": \"34° Chuva Fraca\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"icon\": \"cloud-rain\"\n    }\n  },\n  {\n    \"id\": \"facebook_social_icon_top\",\n    \"type\": \"icon\",\n    \"text\": \"Facebook\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"instagram_social_icon_top\",\n    \"type\": \"icon\",\n    \"text\": \"Instagram\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"youtube_social_icon_top\",\n    \"type\": \"icon\",\n    \"text\": \"YouTube\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"linkedin_social_icon_top\",\n    \"type\": \"icon\",\n    \"text\": \"LinkedIn\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"rss_social_icon_top\",\n    \"type\": \"icon\",\n    \"text\": \"RSS\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"flickr_social_icon_top\",\n    \"type\": \"icon\",\n    \"text\": \"Flickr\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"prefeitura_logo_header\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"search_input_header\",\n    \"type\": \"input\",\n    \"placeholder\": \"Digite a sua busca\",\n    \"region\": \"header\",\n    \"actions\": [\"onSearch\"]\n  },\n  {\n    \"id\": \"search_button_header\",\n    \"type\": \"button\",\n    \"text\": \"Buscar\",\n    \"region\": \"header\",\n    \"meta\": {\n      \"icon\": \"search\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"em_alta_label\",\n    \"type\": \"label\",\n    \"text\": \"Em alta:\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"iptu_2025_link\",\n    \"type\": \"link\",\n    \"text\": \"IPTU 2025\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nota_fiscal_eletronica_link\",\n    \"type\": \"link\",\n    \"text\": \"Nota Fiscal Eletrônica\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"licitacoes_link_header\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_a_prefeitura\",\n    \"type\": \"link\",\n    \"text\": \"A Prefeitura\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_imprensa\",\n    \"type\": \"link\",\n    \"text\": \"Imprensa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_leis_municipais\",\n    \"type\": \"link\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_consultas\",\n    \"type\": \"link\",\n    \"text\": \"Consultas\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"nav_autarquias_conselhos\",\n    \"type\": \"link\",\n    \"text\": \"Autarquias e Conselhos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_submenu\": true\n    }\n  },\n  {\n    \"id\": \"quick_access_cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"region\": \"quick-access-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"quick_access_empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"region\": \"quick-access-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"quick_access_servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"region\": \"quick-access-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"quick_access_turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"region\": \"quick-access-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_inicio\",\n    \"type\": \"link\",\n    \"text\": \"Início\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_saude\",\n    \"type\": \"link\",\n    \"text\": \"Saúde\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_locais_atendimentos\",\n    \"type\": \"select\",\n    \"text\": \"Locais de Atendimentos\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"page_title\",\n    \"type\": \"heading\",\n    \"text\": \"Serviços de Apoio\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"share_label\",\n    \"type\": \"label\",\n    \"text\": \"Compartilhe\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"share_facebook\",\n    \"type\": \"icon\",\n    \"text\": \"Facebook\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"share_instagram\",\n    \"type\": \"icon\",\n    \"text\": \"Instagram\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"share_x\",\n    \"type\": \"icon\",\n    \"text\": \"X\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"share_whatsapp\",\n    \"type\": \"icon\",\n    \"text\": \"WhatsApp\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"service_policlinica\",\n    \"type\": \"text-block\",\n    \"text\": \"POLICLINICA\\nEndereço.: Avenida Ana Carolina de Barros Levy, 220 – Centro\\nTelefone: (19) 3441-2453 / 3441-2065 / 3442-5240\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_vigilancia_sanitaria\",\n    \"type\": \"text-block\",\n    \"text\": \"VIGILÂNCIA SANITÁRIA (VISA)\\nEndereço: Av.: Dr. Alberto Ferreira, 179 – Centro.\\nTelefone: (19) 3441-6152/ 3404-9867 / 3404-9606\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_vigilancia_epidemiologica\",\n    \"type\": \"text-block\",\n    \"text\": \"VIGILÂNCIA EPIDEMIOLÓGICA\\nEndereço: Av.: Ana Carolina de Barros Levy, 650 – Centro.\\nTelefone: (19) 3442.5984/3441.1914\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_assessoria_saude_mental\",\n    \"type\": \"text-block\",\n    \"text\": \"ASSESSORIA DEPARTAMENTAL DE SAÚDE MENTAL\\nTelefone: (19) 3497-3853 / 3451-3643\\nEndereço: Avenida: Ana Carolina de Barros Levy, 650 – Centro\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_zoonoses\",\n    \"type\": \"text-block\",\n    \"text\": \"ZOONOSES\\nEndereço: Rua Caminho da Servidão, 251 - Campos Elíseos\\nTelefone: (19) 3441.3548 / 3451.3546\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_assessoria_odontologia\",\n    \"type\": \"text-block\",\n    \"text\": \"ASSESSORIA DEPARTAMENTAL DE ODONTOLOGIA MUNICIPAL - ADOM\\nEndereço: Rua Alagoas, 701 – Vila Cláudia.\\nTelefone: (19) 3442.4598/3446.1555\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_centro_autista_cema\",\n    \"type\": \"text-block\",\n    \"text\": \"CENTRO DE ESPECIALIZAÇÃO MUNICIPAL DO AUTISTA – CEMA\\nEndereço: Rua José Conegundes, 375 - Jardim Vanessa\\nTelefone: (19) 3442. 8746\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_ambulatorio_dst_aids_semil\",\n    \"type\": \"text-block\",\n    \"text\": \"AMBULATÓRIO DST/AIDS – SEMIL (Serviço Especializado em Moléstias Infecto-Contagiosas)\\nEndereço: Rua Sergipe, 906 – Vila Cláudia\\nTelefone: (19) 3442.4796 / 3444-2020\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_pad_atendimento_domiciliar\",\n    \"type\": \"text-block\",\n    \"text\": \"PAD – PROGRAMA DE ATENDIMENTO DOMICILIAR\\nEndereço: Vereador Samuel Berto, s/nº, Jd. Nova Suíça\\nTelefone: (19) 3495.0702\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_casm_saude_mulher\",\n    \"type\": \"text-block\",\n    \"text\": \"CASM – Centro de Atenção à Saúde da Mulher\\nEndereço: Av. Antônio Ometto, 1300, Vila Cláudia\\nTelefone: (19) 3441-5060 / 3495-6098\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_farmacia_municipal\",\n    \"type\": \"text-block\",\n    \"text\": \"FARMÁCIA MUNICIPAL\\nEndereço: Rua Boa Morte, 656 - Centro\\nTelefone: (19) 3443-5395\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_farmacia_alto_custo\",\n    \"type\": \"text-block\",\n    \"text\": \"FARMÁCIA ALTO CUSTO\\nEndereço: R. Des. Júlio César da Silveira, 1114 - Vila Claudia\\nTelefone: (19) 3451-3643\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_central_medicamentos\",\n    \"type\": \"text-block\",\n    \"text\": \"CENTRAL DE MEDICAMENTOS\\nEndereço: Rua Dr. Alberto Ferreira, nº 179 – Centro.\\nTelefone: (19) 3442.5983\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_central_ambulancias\",\n    \"type\": \"text-block\",\n    \"text\": \"CENTRAL DE AMBULÂNCIAS\\nEndereço: Rua Cunha Bastos ,210, centro\\nTelefone: (19) 3442.4896 / 3443.1930 / 3441.8314\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_centro_patologia_clinica\",\n    \"type\": \"text-block\",\n    \"text\": \"CENTRO DE PATOLOGIA CLÍNICA MUNICIPAL – LABORATÓRIO\\nEndereço: Rua João Machado Gomes Júnior, nº54./ Esquina c/ Rua Piauí - Vila Cláudia\\nTelefone: (19) 3442.3761 / 3444.1744\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_centro_idoso\",\n    \"type\": \"text-block\",\n    \"text\": \"Centro do Idoso\\nTelefone: (19) 3441-1316\\nEndereço: Avenida Campinas, s/nº - Centro\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_samu\",\n    \"type\": \"text-block\",\n    \"text\": \"SAMU\\nEndereço: Gustavo Dória, nº400 - Santa Cecília\\nTelefone: (19) 3446-4766 / 192\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_csb_saude_bucal\",\n    \"type\": \"text-block\",\n    \"text\": \"CSB (Centro de Saúde Bucal)\\nTelefone: (19) 3445-7984\\nEndereço: Rua Senador Vergueiro nº 1230\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_pronto_atendimento_jardim_aeroporto\",\n    \"type\": \"text-block\",\n    \"text\": \"Pronto Atendimento do Jardim Aeroporto – 24 horas\\nTelefone: (19) 3452-9938\\nEndereço: Rua Antônio de Luna, esquina com a Rua Emília.\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_pronto_atendimento_parque_hipolito\",\n    \"type\": \"text-block\",\n    \"text\": \"Pronto Atendimento Parque Hipólito– 24 horas\\nTelefone: (19) 3452-0187\\nEndereço: Rua Arlindo A Ribeiro s/nº - Parque Hipólito\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_caps_ij\",\n    \"type\": \"text-block\",\n    \"text\": \"CAPS IJ (Centro de Atenção Psicossocial Infantojuvenil)\\nTelefone: (19) 3444-3892\\nEndereço: Rua Samuel Chequi, 355 - Jardim Montezuma\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_caps_ii\",\n    \"type\": \"text-block\",\n    \"text\": \"CAPS II (Centro de Atenção Psicossocial II)\\nTelefone: (19) 3443-3432\\nEndereço: Rua 13 de maio, 82 - Centro\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_caps_ad\",\n    \"type\": \"text-block\",\n    \"text\": \"CAPS AD Centro de Atenção Psicossocial Álcool e Drogas)\\nTelefone: (19) 3443-4428\\nEndereço: Rua Vicente de Felice, 112 - Jardim Ouro Verde\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_pst_programa_saude_trabalhador\",\n    \"type\": \"text-block\",\n    \"text\": \"PST – Programa Saúde do Trabalhador\\nTelefone: (19) 3442-5859\\nEndereço: Farmacêutico Jacob Fanelli, nº 660 - Vila São João\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_humanitaria\",\n    \"type\": \"text-block\",\n    \"text\": \"Humanitária\\nTelefone: (19) 3446-7700\\nRua Antônia Valverde Cruanes, 70 - Jd. Nova Itália\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_santa_casa\",\n    \"type\": \"text-block\",\n    \"text\": \"Santa Casa\\nTelefone: (19) 3446-6100\\nAvenida antônio Ometto, 375 - vila Cláudia\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"service_hospital_dia\",\n    \"type\": \"text-block\",\n    \"text\": \"Hospital Dia\\nTelefone: (19) 3404-3111\\nRua: benedito kuhl, 999 - vila Cláudia\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"quick_link_limeira_digital\",\n    \"type\": \"card\",\n    \"text\": \"Limeira Digital\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"folder\"\n    }\n  },\n  {\n    \"id\": \"quick_link_iptu_divida_ativa\",\n    \"type\": \"card\",\n    \"text\": \"IPTU e Dívida Ativa/ Mobiliário\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document\"\n    }\n  },\n  {\n    \"id\": \"quick_link_consulta_medicamentos\",\n    \"type\": \"card\",\n    \"text\": \"Consulta Medicamentos\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"pill\"\n    }\n  },\n  {\n    \"id\": \"quick_link_consulta_processos\",\n    \"type\": \"card\",\n    \"text\": \"Consulta de Processos\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"question-mark\"\n    }\n  },\n  {\n    \"id\": \"quick_link_multas_transito\",\n    \"type\": \"card\",\n    \"text\": \"Multas de Trânsito\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"traffic-sign\"\n    }\n  },\n  {\n    \"id\": \"quick_link_certidoes\",\n    \"type\": \"card\",\n    \"text\": \"Certidões\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"envelope\"\n    }\n  },\n  {\n    \"id\": \"quick_link_leis_orcamentarias\",\n    \"type\": \"card\",\n    \"text\": \"Leis orçamentárias\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document-list\"\n    }\n  },\n  {\n    \"id\": \"quick_link_vagas_pat\",\n    \"type\": \"card\",\n    \"text\": \"Vagas do PAT\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"clipboard\"\n    }\n  },\n  {\n    \"id\": \"quick_link_procon\",\n    \"type\": \"card\",\n    \"text\": \"PROCON\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"computer\"\n    }\n  },\n  {\n    \"id\": \"quick_link_chamamento_publico\",\n    \"type\": \"card\",\n    \"text\": \"Chamamento Público\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"handshake\"\n    }\n  },\n  {\n    \"id\": \"quick_link_parcelamento_online\",\n    \"type\": \"card\",\n    \"text\": \"Parcelamen- to Online\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"globe\"\n    }\n  },\n  {\n    \"id\": \"quick_link_licitacoes_sidebar\",\n    \"type\": \"card\",\n    \"text\": \"Licitações\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"gavel\"\n    }\n  },\n  {\n    \"id\": \"quick_link_plano_diretor\",\n    \"type\": \"card\",\n    \"text\": \"Plano Diretor 2025-2035\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"chart\"\n    }\n  },\n  {\n    \"id\": \"quick_link_dengue\",\n    \"type\": \"card\",\n    \"text\": \"Dengue\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"mosquito\"\n    }\n  },\n  {\n    \"id\": \"quick_link_cadastro_habitacional\",\n    \"type\": \"card\",\n    \"text\": \"Cadastro Habitacional\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"house\"\n    }\n  },\n  {\n    \"id\": \"floating_accessibility_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"hand\"\n    }\n  },\n  {\n    \"id\": \"footer_nav_a_prefeitura\",\n    \"type\": \"link\",\n    \"text\": \"A Prefeitura\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_imprensa\",\n    \"type\": \"link\",\n    \"text\": \"Imprensa\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_leis_municipais\",\n    \"type\": \"link\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_consultas\",\n    \"type\": \"link\",\n    \"text\": \"Consultas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_nav_autarquias_conselhos\",\n    \"type\": \"link\",\n    \"text\": \"Autarquias e Conselhos\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_prefeitura_logo\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_address\",\n    \"type\": \"text\",\n    \"text\": \"Endereço: Rua Dr. Alberto Ferreira nº 179 Centro, Limeira/SP – CEP: 13481-900\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"map-marker\"\n    }\n  },\n  {\n    \"id\": \"footer_phone\",\n    \"type\": \"text\",\n    \"text\": \"Telefone: (19) 3404-9600\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"phone\"\n    }\n  },\n  {\n    \"id\": \"footer_cnpj\",\n    \"type\": \"text\",\n    \"text\": \"CNPJ: 45.132.495/0001-40\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_facebook_social_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Facebook\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_instagram_social_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Instagram\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_youtube_social_icon\",\n    \"type\": \"icon\",\n    \"text\": \"YouTube\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_linkedin_social_icon\",\n    \"type\": \"icon\",\n    \"text\": \"LinkedIn\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_rss_social_icon\",\n    \"type\": \"icon\",\n    \"text\": \"RSS\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_flickr_social_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Flickr\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_termo_uso_politicas_privacidade_link\",\n    \"type\": \"link\",\n    \"text\": \"Termo de Uso e Políticas de Privacidade\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"lock\"\n    }\n  },\n  {\n    \"id\": \"footer_lgpd_pesquisa_satisfacao_link\",\n    \"type\": \"link\",\n    \"text\": \"LGPD - Pesquisa de Satisfação\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_ecrie_logo\",\n    \"type\": \"image\",\n    \"text\": \"eCrie\",\n    \"region\": \"footer\"\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 7581,
+      "totalTokenCount": 10022,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 1786
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "92meaYm5GYygz7IPiObM2AU"
+  },
+  "ui": [
+    {
+      "id": "skip_content_link",
+      "type": "link",
+      "text": "Ir para o conteúdo",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "skip_menu_link",
+      "type": "link",
+      "text": "Ir para o menu",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "skip_search_link",
+      "type": "link",
+      "text": "Ir para a busca",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "skip_footer_link",
+      "type": "link",
+      "text": "Ir para o rodapé",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "contrast_icon",
+      "type": "icon",
+      "text": "Contraste",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "font_increase_button",
+      "type": "button",
+      "text": "A+",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "font_decrease_button",
+      "type": "button",
+      "text": "A-",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search_icon_top",
+      "type": "icon",
+      "text": "Pesquisar",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sitemap_icon",
+      "type": "icon",
+      "text": "Mapa do Site",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility_icon",
+      "type": "icon",
+      "text": "Acessibilidade",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "transparency_portal_link",
+      "type": "link",
+      "text": "PORTAL DA TRANSPARÊNCIA",
+      "region": "top-bar",
+      "meta": {
+        "icon": "info"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "weather_info",
+      "type": "text",
+      "text": "34° Chuva Fraca",
+      "region": "top-bar",
+      "meta": {
+        "icon": "cloud-rain"
+      }
+    },
+    {
+      "id": "facebook_social_icon_top",
+      "type": "icon",
+      "text": "Facebook",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "instagram_social_icon_top",
+      "type": "icon",
+      "text": "Instagram",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "youtube_social_icon_top",
+      "type": "icon",
+      "text": "YouTube",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "linkedin_social_icon_top",
+      "type": "icon",
+      "text": "LinkedIn",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "rss_social_icon_top",
+      "type": "icon",
+      "text": "RSS",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "flickr_social_icon_top",
+      "type": "icon",
+      "text": "Flickr",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "prefeitura_logo_header",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "header"
+    },
+    {
+      "id": "search_input_header",
+      "type": "input",
+      "placeholder": "Digite a sua busca",
+      "region": "header",
+      "actions": [
+        "onSearch"
+      ]
+    },
+    {
+      "id": "search_button_header",
+      "type": "button",
+      "text": "Buscar",
+      "region": "header",
+      "meta": {
+        "icon": "search"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "em_alta_label",
+      "type": "label",
+      "text": "Em alta:",
+      "region": "header"
+    },
+    {
+      "id": "iptu_2025_link",
+      "type": "link",
+      "text": "IPTU 2025",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nota_fiscal_eletronica_link",
+      "type": "link",
+      "text": "Nota Fiscal Eletrônica",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "licitacoes_link_header",
+      "type": "link",
+      "text": "Licitações",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_a_prefeitura",
+      "type": "link",
+      "text": "A Prefeitura",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_imprensa",
+      "type": "link",
+      "text": "Imprensa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_leis_municipais",
+      "type": "link",
+      "text": "Leis Municipais",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_consultas",
+      "type": "link",
+      "text": "Consultas",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "nav_autarquias_conselhos",
+      "type": "link",
+      "text": "Autarquias e Conselhos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_submenu": true
+      }
+    },
+    {
+      "id": "quick_access_cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "region": "quick-access-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "quick_access_empresa",
+      "type": "button",
+      "text": "Empresa",
+      "region": "quick-access-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "quick_access_servidor",
+      "type": "button",
+      "text": "Servidor",
+      "region": "quick-access-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "quick_access_turismo",
+      "type": "button",
+      "text": "Turismo",
+      "region": "quick-access-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_inicio",
+      "type": "link",
+      "text": "Início",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_saude",
+      "type": "link",
+      "text": "Saúde",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_locais_atendimentos",
+      "type": "select",
+      "text": "Locais de Atendimentos",
+      "region": "breadcrumbs",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "page_title",
+      "type": "heading",
+      "text": "Serviços de Apoio",
+      "region": "main-content"
+    },
+    {
+      "id": "share_label",
+      "type": "label",
+      "text": "Compartilhe",
+      "region": "main-content"
+    },
+    {
+      "id": "share_facebook",
+      "type": "icon",
+      "text": "Facebook",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "share_instagram",
+      "type": "icon",
+      "text": "Instagram",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "share_x",
+      "type": "icon",
+      "text": "X",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "share_whatsapp",
+      "type": "icon",
+      "text": "WhatsApp",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "service_policlinica",
+      "type": "text-block",
+      "text": "POLICLINICA\nEndereço.: Avenida Ana Carolina de Barros Levy, 220 – Centro\nTelefone: (19) 3441-2453 / 3441-2065 / 3442-5240",
+      "region": "main-content"
+    },
+    {
+      "id": "service_vigilancia_sanitaria",
+      "type": "text-block",
+      "text": "VIGILÂNCIA SANITÁRIA (VISA)\nEndereço: Av.: Dr. Alberto Ferreira, 179 – Centro.\nTelefone: (19) 3441-6152/ 3404-9867 / 3404-9606",
+      "region": "main-content"
+    },
+    {
+      "id": "service_vigilancia_epidemiologica",
+      "type": "text-block",
+      "text": "VIGILÂNCIA EPIDEMIOLÓGICA\nEndereço: Av.: Ana Carolina de Barros Levy, 650 – Centro.\nTelefone: (19) 3442.5984/3441.1914",
+      "region": "main-content"
+    },
+    {
+      "id": "service_assessoria_saude_mental",
+      "type": "text-block",
+      "text": "ASSESSORIA DEPARTAMENTAL DE SAÚDE MENTAL\nTelefone: (19) 3497-3853 / 3451-3643\nEndereço: Avenida: Ana Carolina de Barros Levy, 650 – Centro",
+      "region": "main-content"
+    },
+    {
+      "id": "service_zoonoses",
+      "type": "text-block",
+      "text": "ZOONOSES\nEndereço: Rua Caminho da Servidão, 251 - Campos Elíseos\nTelefone: (19) 3441.3548 / 3451.3546",
+      "region": "main-content"
+    },
+    {
+      "id": "service_assessoria_odontologia",
+      "type": "text-block",
+      "text": "ASSESSORIA DEPARTAMENTAL DE ODONTOLOGIA MUNICIPAL - ADOM\nEndereço: Rua Alagoas, 701 – Vila Cláudia.\nTelefone: (19) 3442.4598/3446.1555",
+      "region": "main-content"
+    },
+    {
+      "id": "service_centro_autista_cema",
+      "type": "text-block",
+      "text": "CENTRO DE ESPECIALIZAÇÃO MUNICIPAL DO AUTISTA – CEMA\nEndereço: Rua José Conegundes, 375 - Jardim Vanessa\nTelefone: (19) 3442. 8746",
+      "region": "main-content"
+    },
+    {
+      "id": "service_ambulatorio_dst_aids_semil",
+      "type": "text-block",
+      "text": "AMBULATÓRIO DST/AIDS – SEMIL (Serviço Especializado em Moléstias Infecto-Contagiosas)\nEndereço: Rua Sergipe, 906 – Vila Cláudia\nTelefone: (19) 3442.4796 / 3444-2020",
+      "region": "main-content"
+    },
+    {
+      "id": "service_pad_atendimento_domiciliar",
+      "type": "text-block",
+      "text": "PAD – PROGRAMA DE ATENDIMENTO DOMICILIAR\nEndereço: Vereador Samuel Berto, s/nº, Jd. Nova Suíça\nTelefone: (19) 3495.0702",
+      "region": "main-content"
+    },
+    {
+      "id": "service_casm_saude_mulher",
+      "type": "text-block",
+      "text": "CASM – Centro de Atenção à Saúde da Mulher\nEndereço: Av. Antônio Ometto, 1300, Vila Cláudia\nTelefone: (19) 3441-5060 / 3495-6098",
+      "region": "main-content"
+    },
+    {
+      "id": "service_farmacia_municipal",
+      "type": "text-block",
+      "text": "FARMÁCIA MUNICIPAL\nEndereço: Rua Boa Morte, 656 - Centro\nTelefone: (19) 3443-5395",
+      "region": "main-content"
+    },
+    {
+      "id": "service_farmacia_alto_custo",
+      "type": "text-block",
+      "text": "FARMÁCIA ALTO CUSTO\nEndereço: R. Des. Júlio César da Silveira, 1114 - Vila Claudia\nTelefone: (19) 3451-3643",
+      "region": "main-content"
+    },
+    {
+      "id": "service_central_medicamentos",
+      "type": "text-block",
+      "text": "CENTRAL DE MEDICAMENTOS\nEndereço: Rua Dr. Alberto Ferreira, nº 179 – Centro.\nTelefone: (19) 3442.5983",
+      "region": "main-content"
+    },
+    {
+      "id": "service_central_ambulancias",
+      "type": "text-block",
+      "text": "CENTRAL DE AMBULÂNCIAS\nEndereço: Rua Cunha Bastos ,210, centro\nTelefone: (19) 3442.4896 / 3443.1930 / 3441.8314",
+      "region": "main-content"
+    },
+    {
+      "id": "service_centro_patologia_clinica",
+      "type": "text-block",
+      "text": "CENTRO DE PATOLOGIA CLÍNICA MUNICIPAL – LABORATÓRIO\nEndereço: Rua João Machado Gomes Júnior, nº54./ Esquina c/ Rua Piauí - Vila Cláudia\nTelefone: (19) 3442.3761 / 3444.1744",
+      "region": "main-content"
+    },
+    {
+      "id": "service_centro_idoso",
+      "type": "text-block",
+      "text": "Centro do Idoso\nTelefone: (19) 3441-1316\nEndereço: Avenida Campinas, s/nº - Centro",
+      "region": "main-content"
+    },
+    {
+      "id": "service_samu",
+      "type": "text-block",
+      "text": "SAMU\nEndereço: Gustavo Dória, nº400 - Santa Cecília\nTelefone: (19) 3446-4766 / 192",
+      "region": "main-content"
+    },
+    {
+      "id": "service_csb_saude_bucal",
+      "type": "text-block",
+      "text": "CSB (Centro de Saúde Bucal)\nTelefone: (19) 3445-7984\nEndereço: Rua Senador Vergueiro nº 1230",
+      "region": "main-content"
+    },
+    {
+      "id": "service_pronto_atendimento_jardim_aeroporto",
+      "type": "text-block",
+      "text": "Pronto Atendimento do Jardim Aeroporto – 24 horas\nTelefone: (19) 3452-9938\nEndereço: Rua Antônio de Luna, esquina com a Rua Emília.",
+      "region": "main-content"
+    },
+    {
+      "id": "service_pronto_atendimento_parque_hipolito",
+      "type": "text-block",
+      "text": "Pronto Atendimento Parque Hipólito– 24 horas\nTelefone: (19) 3452-0187\nEndereço: Rua Arlindo A Ribeiro s/nº - Parque Hipólito",
+      "region": "main-content"
+    },
+    {
+      "id": "service_caps_ij",
+      "type": "text-block",
+      "text": "CAPS IJ (Centro de Atenção Psicossocial Infantojuvenil)\nTelefone: (19) 3444-3892\nEndereço: Rua Samuel Chequi, 355 - Jardim Montezuma",
+      "region": "main-content"
+    },
+    {
+      "id": "service_caps_ii",
+      "type": "text-block",
+      "text": "CAPS II (Centro de Atenção Psicossocial II)\nTelefone: (19) 3443-3432\nEndereço: Rua 13 de maio, 82 - Centro",
+      "region": "main-content"
+    },
+    {
+      "id": "service_caps_ad",
+      "type": "text-block",
+      "text": "CAPS AD Centro de Atenção Psicossocial Álcool e Drogas)\nTelefone: (19) 3443-4428\nEndereço: Rua Vicente de Felice, 112 - Jardim Ouro Verde",
+      "region": "main-content"
+    },
+    {
+      "id": "service_pst_programa_saude_trabalhador",
+      "type": "text-block",
+      "text": "PST – Programa Saúde do Trabalhador\nTelefone: (19) 3442-5859\nEndereço: Farmacêutico Jacob Fanelli, nº 660 - Vila São João",
+      "region": "main-content"
+    },
+    {
+      "id": "service_humanitaria",
+      "type": "text-block",
+      "text": "Humanitária\nTelefone: (19) 3446-7700\nRua Antônia Valverde Cruanes, 70 - Jd. Nova Itália",
+      "region": "main-content"
+    },
+    {
+      "id": "service_santa_casa",
+      "type": "text-block",
+      "text": "Santa Casa\nTelefone: (19) 3446-6100\nAvenida antônio Ometto, 375 - vila Cláudia",
+      "region": "main-content"
+    },
+    {
+      "id": "service_hospital_dia",
+      "type": "text-block",
+      "text": "Hospital Dia\nTelefone: (19) 3404-3111\nRua: benedito kuhl, 999 - vila Cláudia",
+      "region": "main-content"
+    },
+    {
+      "id": "quick_link_limeira_digital",
+      "type": "card",
+      "text": "Limeira Digital",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "folder"
+      }
+    },
+    {
+      "id": "quick_link_iptu_divida_ativa",
+      "type": "card",
+      "text": "IPTU e Dívida Ativa/ Mobiliário",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document"
+      }
+    },
+    {
+      "id": "quick_link_consulta_medicamentos",
+      "type": "card",
+      "text": "Consulta Medicamentos",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "pill"
+      }
+    },
+    {
+      "id": "quick_link_consulta_processos",
+      "type": "card",
+      "text": "Consulta de Processos",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "question-mark"
+      }
+    },
+    {
+      "id": "quick_link_multas_transito",
+      "type": "card",
+      "text": "Multas de Trânsito",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "traffic-sign"
+      }
+    },
+    {
+      "id": "quick_link_certidoes",
+      "type": "card",
+      "text": "Certidões",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "envelope"
+      }
+    },
+    {
+      "id": "quick_link_leis_orcamentarias",
+      "type": "card",
+      "text": "Leis orçamentárias",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document-list"
+      }
+    },
+    {
+      "id": "quick_link_vagas_pat",
+      "type": "card",
+      "text": "Vagas do PAT",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "clipboard"
+      }
+    },
+    {
+      "id": "quick_link_procon",
+      "type": "card",
+      "text": "PROCON",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "computer"
+      }
+    },
+    {
+      "id": "quick_link_chamamento_publico",
+      "type": "card",
+      "text": "Chamamento Público",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "handshake"
+      }
+    },
+    {
+      "id": "quick_link_parcelamento_online",
+      "type": "card",
+      "text": "Parcelamen- to Online",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "quick_link_licitacoes_sidebar",
+      "type": "card",
+      "text": "Licitações",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "gavel"
+      }
+    },
+    {
+      "id": "quick_link_plano_diretor",
+      "type": "card",
+      "text": "Plano Diretor 2025-2035",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "chart"
+      }
+    },
+    {
+      "id": "quick_link_dengue",
+      "type": "card",
+      "text": "Dengue",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "mosquito"
+      }
+    },
+    {
+      "id": "quick_link_cadastro_habitacional",
+      "type": "card",
+      "text": "Cadastro Habitacional",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "house"
+      }
+    },
+    {
+      "id": "floating_accessibility_button",
+      "type": "button",
+      "text": null,
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "hand"
+      }
+    },
+    {
+      "id": "footer_nav_a_prefeitura",
+      "type": "link",
+      "text": "A Prefeitura",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_imprensa",
+      "type": "link",
+      "text": "Imprensa",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_leis_municipais",
+      "type": "link",
+      "text": "Leis Municipais",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_consultas",
+      "type": "link",
+      "text": "Consultas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_nav_autarquias_conselhos",
+      "type": "link",
+      "text": "Autarquias e Conselhos",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_prefeitura_logo",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "footer"
+    },
+    {
+      "id": "footer_address",
+      "type": "text",
+      "text": "Endereço: Rua Dr. Alberto Ferreira nº 179 Centro, Limeira/SP – CEP: 13481-900",
+      "region": "footer",
+      "meta": {
+        "icon": "map-marker"
+      }
+    },
+    {
+      "id": "footer_phone",
+      "type": "text",
+      "text": "Telefone: (19) 3404-9600",
+      "region": "footer",
+      "meta": {
+        "icon": "phone"
+      }
+    },
+    {
+      "id": "footer_cnpj",
+      "type": "text",
+      "text": "CNPJ: 45.132.495/0001-40",
+      "region": "footer"
+    },
+    {
+      "id": "footer_facebook_social_icon",
+      "type": "icon",
+      "text": "Facebook",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_instagram_social_icon",
+      "type": "icon",
+      "text": "Instagram",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_youtube_social_icon",
+      "type": "icon",
+      "text": "YouTube",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_linkedin_social_icon",
+      "type": "icon",
+      "text": "LinkedIn",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_rss_social_icon",
+      "type": "icon",
+      "text": "RSS",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_flickr_social_icon",
+      "type": "icon",
+      "text": "Flickr",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_termo_uso_politicas_privacidade_link",
+      "type": "link",
+      "text": "Termo de Uso e Políticas de Privacidade",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "footer_lgpd_pesquisa_satisfacao_link",
+      "type": "link",
+      "text": "LGPD - Pesquisa de Satisfação",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_ecrie_logo",
+      "type": "image",
+      "text": "eCrie",
+      "region": "footer"
+    }
+  ]
+}

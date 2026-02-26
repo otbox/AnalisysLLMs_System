@@ -1,0 +1,547 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 42,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"header_number\",\n    \"type\": \"label\",\n    \"text\": \"1.408.260.768\",\n    \"region\": \"top-bar\",\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_icon\",\n    \"type\": \"icon\",\n    \"text\": \"Menu\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hamburger_menu\"\n    }\n  },\n  {\n    \"id\": \"card_total_atendimentos_esic\",\n    \"type\": \"card\",\n    \"text\": \"Total Atendimentos e-SIC\\n328\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"info_circle\"\n    }\n  },\n  {\n    \"id\": \"card_total_acessos\",\n    \"type\": \"card\",\n    \"text\": \"Total Acessos\\n874.470\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"info_bubble\"\n    }\n  },\n  {\n    \"id\": \"card_compras_licitacoes_contratos\",\n    \"type\": \"card\",\n    \"text\": \"Compras / Licitações / Contratos\\n63.220.145,47\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"folder\"\n    }\n  },\n  {\n    \"id\": \"card_total_funcionarios\",\n    \"type\": \"card\",\n    \"text\": \"Total de Funcionários\\n6.913\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"building_people\"\n    }\n  },\n  {\n    \"id\": \"card_saldo_anterior_restos_a_pagar\",\n    \"type\": \"card\",\n    \"text\": \"Saldo Anterior - Restos a pagar\\n54.283.278,67\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"money_arrow_left\"\n    }\n  },\n  {\n    \"id\": \"card_pago_no_exercicio_restos_a_pagar\",\n    \"type\": \"card\",\n    \"text\": \"Pago no Exercício referente a Restos a Pagar\\n117.690.821,18\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"money_arrow_left\"\n    }\n  },\n  {\n    \"id\": \"card_investimento_em_saude\",\n    \"type\": \"card\",\n    \"text\": \"Investimento em Saúde\\n158.881.952,91\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"hospital_plus\"\n    }\n  },\n  {\n    \"id\": \"card_diarias_viagens_adiantamentos\",\n    \"type\": \"card\",\n    \"text\": \"Diárias/Viagens e Adiantamentos\\n926.623,00\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"map_pin_money\"\n    }\n  },\n  {\n    \"id\": \"tab_despesa\",\n    \"type\": \"tab\",\n    \"text\": \"Despesa\",\n    \"state\": \"selected\",\n    \"region\": \"left-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"despesa_fixado_total\",\n    \"type\": \"data_display\",\n    \"text\": \"Fixado Total: 1.972.234.376,60\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"building_money\",\n      \"additional_info\": \"Menu icon on the right\"\n    }\n  },\n  {\n    \"id\": \"despesa_empenhado\",\n    \"type\": \"data_display\",\n    \"text\": \"Empenhado: 1.537.142.880,92\\nPercentual empenhado sobre o total fixado: 77,94%\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"building_money\"\n    }\n  },\n  {\n    \"id\": \"despesa_processado\",\n    \"type\": \"data_display\",\n    \"text\": \"Processado: 1.215.329.072,17\\nPercentual processado sobre o total fixado: 61,62%\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"building_money\"\n    }\n  },\n  {\n    \"id\": \"despesa_pago\",\n    \"type\": \"data_display\",\n    \"text\": \"Pago: 1.121.643.655,38\\nPercentual pago sobre o total fixado: 56,87%\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"icon_name\": \"building_money\"\n    }\n  },\n  {\n    \"id\": \"tab_estatistica_de_acessos\",\n    \"type\": \"tab\",\n    \"text\": \"Estatística de Acessos\",\n    \"state\": \"unselected\",\n    \"region\": \"left-sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"chart_estatistica_de_acessos\",\n    \"type\": \"chart\",\n    \"text\": \"Gráfico de barras mostrando acessos por mês\",\n    \"region\": \"left-sidebar\",\n    \"meta\": {\n      \"chart_type\": \"bar_chart\",\n      \"data_points\": [\n        {\"month\": \"Janeiro/2025\", \"value\": \"approx 100.000\"},\n        {\"month\": \"Fevereiro/2025\", \"value\": \"approx 60.000\"},\n        {\"month\": \"Março/2025\", \"value\": \"approx 70.000\"},\n        {\"month\": \"Abril/2025\", \"value\": \"approx 80.000\"},\n        {\"month\": \"Maio/2025\", \"value\": \"approx 80.000\"},\n        {\"month\": \"Junho/2025\", \"value\": \"approx 90.000\"},\n        {\"month\": \"Julho/2025\", \"value\": \"approx 85.000\"},\n        {\"month\": \"Agosto/2025\", \"value\": \"approx 85.000\"},\n        {\"month\": \"Setembro/2025\", \"value\": \"approx 75.000\"},\n        {\"month\": \"Outubro/2025\", \"value\": \"approx 70.000\"}\n      ],\n      \"y_axis_label\": \"Quantidade\",\n      \"x_axis_label\": \"Mês/Ano\"\n    }\n  },\n  {\n    \"id\": \"link_compras_licitacoes_main\",\n    \"type\": \"link\",\n    \"text\": \"Compras/Licitacões\\nnossas compras/nossos fornecedores\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"folder\"\n    }\n  },\n  {\n    \"id\": \"link_concursos_selecoes_publicas\",\n    \"type\": \"link\",\n    \"text\": \"Concursos e seleções públicas\\nPagina de divulgação de editais de concursos e seleções públicas\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_people\"\n    }\n  },\n  {\n    \"id\": \"link_contas_publicas\",\n    \"type\": \"link\",\n    \"text\": \"Contas Públicas\\ntransparência da gestão fiscal: relatórios - artigo 48 da Lei de Responsabilidade Fiscal\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"building_chart\"\n    }\n  },\n  {\n    \"id\": \"link_consulta_de_processos_online\",\n    \"type\": \"link\",\n    \"text\": \"Consulta de Processos Online\\nProcessos Online\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_magnifying_glass\"\n    }\n  },\n  {\n    \"id\": \"link_contratos\",\n    \"type\": \"link\",\n    \"text\": \"Contratos\\nContratos firmados\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_pencil\"\n    }\n  },\n  {\n    \"id\": \"link_convenios\",\n    \"type\": \"link\",\n    \"text\": \"Convênios\\nConvênios firmados junto a outros Órgãos Públicos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"handshake\"\n    }\n  },\n  {\n    \"id\": \"link_curriculos\",\n    \"type\": \"link\",\n    \"text\": \"Currículos\\nCurrículos e Portarias de Nomeações de Funcionários Comissionados\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"building_people_grid\"\n    }\n  },\n  {\n    \"id\": \"link_decretos_municipais\",\n    \"type\": \"link\",\n    \"text\": \"Decretos Municipais\\ndecretos municipais\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_gavel\"\n    }\n  },\n  {\n    \"id\": \"link_decreto_despesas_diarias_viagens_adiantamentos\",\n    \"type\": \"link\",\n    \"text\": \"Decreto Despesas com diárias, viagens e adiantamentos\\ngastos públicos com diárias e passagens\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"map_pin_money\"\n    }\n  },\n  {\n    \"id\": \"link_incentivo_cultural\",\n    \"type\": \"link\",\n    \"text\": \"Incentivo Cultural\\nDeclarações referentes aos exercícios de 2023 e 2024.\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"trophy\"\n    }\n  },\n  {\n    \"id\": \"link_despesas_main\",\n    \"type\": \"link\",\n    \"text\": \"Despesas\\nonde estamos aplicando o seu dinheiro\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"building_coins\"\n    }\n  },\n  {\n    \"id\": \"link_despesas_com_diarias_viagens_adiantamentos_main\",\n    \"type\": \"link\",\n    \"text\": \"Despesas com diárias, viagens e adiantamentos\\ngastos públicos com diárias e passagens\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"map_pin_money_2\"\n    }\n  },\n  {\n    \"id\": \"link_editais_de_licitacao\",\n    \"type\": \"link\",\n    \"text\": \"Editais de Licitação\\nintegra dos Editais de Licitação\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"stacked_documents\"\n    }\n  },\n  {\n    \"id\": \"link_e_sic\",\n    \"type\": \"link\",\n    \"text\": \"e-SIC\\nServiço de protocolo eletrônico de pedidos de acesso à informação pública\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"info_circle_large\"\n    }\n  },\n  {\n    \"id\": \"link_emendas_parlamentares_estadual_federal\",\n    \"type\": \"link\",\n    \"text\": \"Emendas parlamentares\\nEstaduais e Federais\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"money_hand\"\n    }\n  },\n  {\n    \"id\": \"link_emendas_parlamentares_pix\",\n    \"type\": \"link\",\n    \"text\": \"Emendas Parlamentares\\nPix\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"money_refresh\"\n    }\n  },\n  {\n    \"id\": \"link_estrutura_administrativa\",\n    \"type\": \"link\",\n    \"text\": \"Estrutura Administrativa\\nConheça a estrutura de nossas Secretarias\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"envelope_clock\"\n    }\n  },\n  {\n    \"id\": \"link_extracao_de_dados_em_formato_aberto\",\n    \"type\": \"link\",\n    \"text\": \"Extração de dados em formato aberto\\nfaça aqui o download das informações públicas que quiser\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"download_arrow\"\n    }\n  },\n  {\n    \"id\": \"link_perguntas_mais_frequentes\",\n    \"type\": \"link\",\n    \"text\": \"Perguntas mais frequentes\\nrespostas a perguntas mais frequentes da sociedade\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"question_mark_people\"\n    }\n  },\n  {\n    \"id\": \"link_facebook\",\n    \"type\": \"link\",\n    \"text\": \"Facebook\\nacesse nossa página no Facebook\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"facebook_logo\"\n    }\n  },\n  {\n    \"id\": \"icon_map_pin_bottom\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"map_pin\"\n    }\n  },\n  {\n    \"id\": \"icon_person_coins_bottom\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"person_coins\"\n    }\n  },\n  {\n    \"id\": \"icon_az_document_bottom\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"az_document\"\n    }\n  },\n  {\n    \"id\": \"icon_do_document_bottom\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"do_document\"\n    }\n  },\n  {\n    \"id\": \"icon_magnifying_glass_lines_bottom\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"magnifying_glass_lines\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 4028,
+      "totalTokenCount": 5234,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 551
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "MbGfaY-vMZCIz7IPv_PFgAs"
+  },
+  "ui": [
+    {
+      "id": "header_number",
+      "type": "label",
+      "text": "1.408.260.768",
+      "region": "top-bar",
+      "meta": {}
+    },
+    {
+      "id": "menu_icon",
+      "type": "icon",
+      "text": "Menu",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hamburger_menu"
+      }
+    },
+    {
+      "id": "card_total_atendimentos_esic",
+      "type": "card",
+      "text": "Total Atendimentos e-SIC\n328",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "info_circle"
+      }
+    },
+    {
+      "id": "card_total_acessos",
+      "type": "card",
+      "text": "Total Acessos\n874.470",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "info_bubble"
+      }
+    },
+    {
+      "id": "card_compras_licitacoes_contratos",
+      "type": "card",
+      "text": "Compras / Licitações / Contratos\n63.220.145,47",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "folder"
+      }
+    },
+    {
+      "id": "card_total_funcionarios",
+      "type": "card",
+      "text": "Total de Funcionários\n6.913",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "building_people"
+      }
+    },
+    {
+      "id": "card_saldo_anterior_restos_a_pagar",
+      "type": "card",
+      "text": "Saldo Anterior - Restos a pagar\n54.283.278,67",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "money_arrow_left"
+      }
+    },
+    {
+      "id": "card_pago_no_exercicio_restos_a_pagar",
+      "type": "card",
+      "text": "Pago no Exercício referente a Restos a Pagar\n117.690.821,18",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "money_arrow_left"
+      }
+    },
+    {
+      "id": "card_investimento_em_saude",
+      "type": "card",
+      "text": "Investimento em Saúde\n158.881.952,91",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "hospital_plus"
+      }
+    },
+    {
+      "id": "card_diarias_viagens_adiantamentos",
+      "type": "card",
+      "text": "Diárias/Viagens e Adiantamentos\n926.623,00",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "map_pin_money"
+      }
+    },
+    {
+      "id": "tab_despesa",
+      "type": "tab",
+      "text": "Despesa",
+      "state": "selected",
+      "region": "left-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {}
+    },
+    {
+      "id": "despesa_fixado_total",
+      "type": "data_display",
+      "text": "Fixado Total: 1.972.234.376,60",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "building_money",
+        "additional_info": "Menu icon on the right"
+      }
+    },
+    {
+      "id": "despesa_empenhado",
+      "type": "data_display",
+      "text": "Empenhado: 1.537.142.880,92\nPercentual empenhado sobre o total fixado: 77,94%",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "building_money"
+      }
+    },
+    {
+      "id": "despesa_processado",
+      "type": "data_display",
+      "text": "Processado: 1.215.329.072,17\nPercentual processado sobre o total fixado: 61,62%",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "building_money"
+      }
+    },
+    {
+      "id": "despesa_pago",
+      "type": "data_display",
+      "text": "Pago: 1.121.643.655,38\nPercentual pago sobre o total fixado: 56,87%",
+      "region": "left-sidebar",
+      "meta": {
+        "icon_name": "building_money"
+      }
+    },
+    {
+      "id": "tab_estatistica_de_acessos",
+      "type": "tab",
+      "text": "Estatística de Acessos",
+      "state": "unselected",
+      "region": "left-sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {}
+    },
+    {
+      "id": "chart_estatistica_de_acessos",
+      "type": "chart",
+      "text": "Gráfico de barras mostrando acessos por mês",
+      "region": "left-sidebar",
+      "meta": {
+        "chart_type": "bar_chart",
+        "data_points": [
+          {
+            "month": "Janeiro/2025",
+            "value": "approx 100.000"
+          },
+          {
+            "month": "Fevereiro/2025",
+            "value": "approx 60.000"
+          },
+          {
+            "month": "Março/2025",
+            "value": "approx 70.000"
+          },
+          {
+            "month": "Abril/2025",
+            "value": "approx 80.000"
+          },
+          {
+            "month": "Maio/2025",
+            "value": "approx 80.000"
+          },
+          {
+            "month": "Junho/2025",
+            "value": "approx 90.000"
+          },
+          {
+            "month": "Julho/2025",
+            "value": "approx 85.000"
+          },
+          {
+            "month": "Agosto/2025",
+            "value": "approx 85.000"
+          },
+          {
+            "month": "Setembro/2025",
+            "value": "approx 75.000"
+          },
+          {
+            "month": "Outubro/2025",
+            "value": "approx 70.000"
+          }
+        ],
+        "y_axis_label": "Quantidade",
+        "x_axis_label": "Mês/Ano"
+      }
+    },
+    {
+      "id": "link_compras_licitacoes_main",
+      "type": "link",
+      "text": "Compras/Licitacões\nnossas compras/nossos fornecedores",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "folder"
+      }
+    },
+    {
+      "id": "link_concursos_selecoes_publicas",
+      "type": "link",
+      "text": "Concursos e seleções públicas\nPagina de divulgação de editais de concursos e seleções públicas",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_people"
+      }
+    },
+    {
+      "id": "link_contas_publicas",
+      "type": "link",
+      "text": "Contas Públicas\ntransparência da gestão fiscal: relatórios - artigo 48 da Lei de Responsabilidade Fiscal",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "building_chart"
+      }
+    },
+    {
+      "id": "link_consulta_de_processos_online",
+      "type": "link",
+      "text": "Consulta de Processos Online\nProcessos Online",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_magnifying_glass"
+      }
+    },
+    {
+      "id": "link_contratos",
+      "type": "link",
+      "text": "Contratos\nContratos firmados",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_pencil"
+      }
+    },
+    {
+      "id": "link_convenios",
+      "type": "link",
+      "text": "Convênios\nConvênios firmados junto a outros Órgãos Públicos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "handshake"
+      }
+    },
+    {
+      "id": "link_curriculos",
+      "type": "link",
+      "text": "Currículos\nCurrículos e Portarias de Nomeações de Funcionários Comissionados",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "building_people_grid"
+      }
+    },
+    {
+      "id": "link_decretos_municipais",
+      "type": "link",
+      "text": "Decretos Municipais\ndecretos municipais",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_gavel"
+      }
+    },
+    {
+      "id": "link_decreto_despesas_diarias_viagens_adiantamentos",
+      "type": "link",
+      "text": "Decreto Despesas com diárias, viagens e adiantamentos\ngastos públicos com diárias e passagens",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "map_pin_money"
+      }
+    },
+    {
+      "id": "link_incentivo_cultural",
+      "type": "link",
+      "text": "Incentivo Cultural\nDeclarações referentes aos exercícios de 2023 e 2024.",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "trophy"
+      }
+    },
+    {
+      "id": "link_despesas_main",
+      "type": "link",
+      "text": "Despesas\nonde estamos aplicando o seu dinheiro",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "building_coins"
+      }
+    },
+    {
+      "id": "link_despesas_com_diarias_viagens_adiantamentos_main",
+      "type": "link",
+      "text": "Despesas com diárias, viagens e adiantamentos\ngastos públicos com diárias e passagens",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "map_pin_money_2"
+      }
+    },
+    {
+      "id": "link_editais_de_licitacao",
+      "type": "link",
+      "text": "Editais de Licitação\nintegra dos Editais de Licitação",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "stacked_documents"
+      }
+    },
+    {
+      "id": "link_e_sic",
+      "type": "link",
+      "text": "e-SIC\nServiço de protocolo eletrônico de pedidos de acesso à informação pública",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "info_circle_large"
+      }
+    },
+    {
+      "id": "link_emendas_parlamentares_estadual_federal",
+      "type": "link",
+      "text": "Emendas parlamentares\nEstaduais e Federais",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "money_hand"
+      }
+    },
+    {
+      "id": "link_emendas_parlamentares_pix",
+      "type": "link",
+      "text": "Emendas Parlamentares\nPix",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "money_refresh"
+      }
+    },
+    {
+      "id": "link_estrutura_administrativa",
+      "type": "link",
+      "text": "Estrutura Administrativa\nConheça a estrutura de nossas Secretarias",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "envelope_clock"
+      }
+    },
+    {
+      "id": "link_extracao_de_dados_em_formato_aberto",
+      "type": "link",
+      "text": "Extração de dados em formato aberto\nfaça aqui o download das informações públicas que quiser",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "download_arrow"
+      }
+    },
+    {
+      "id": "link_perguntas_mais_frequentes",
+      "type": "link",
+      "text": "Perguntas mais frequentes\nrespostas a perguntas mais frequentes da sociedade",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "question_mark_people"
+      }
+    },
+    {
+      "id": "link_facebook",
+      "type": "link",
+      "text": "Facebook\nacesse nossa página no Facebook",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "facebook_logo"
+      }
+    },
+    {
+      "id": "icon_map_pin_bottom",
+      "type": "icon",
+      "text": null,
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "map_pin"
+      }
+    },
+    {
+      "id": "icon_person_coins_bottom",
+      "type": "icon",
+      "text": null,
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "person_coins"
+      }
+    },
+    {
+      "id": "icon_az_document_bottom",
+      "type": "icon",
+      "text": null,
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "az_document"
+      }
+    },
+    {
+      "id": "icon_do_document_bottom",
+      "type": "icon",
+      "text": null,
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "do_document"
+      }
+    },
+    {
+      "id": "icon_magnifying_glass_lines_bottom",
+      "type": "icon",
+      "text": null,
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "magnifying_glass_lines"
+      }
+    }
+  ]
+}

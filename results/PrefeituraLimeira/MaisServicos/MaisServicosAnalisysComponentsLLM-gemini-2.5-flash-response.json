@@ -1,0 +1,1952 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 80,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"accessibility-increase-font-size-a-plus\",\n    \"type\": \"button\",\n    \"text\": \"A+\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Aumentar tamanho da fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility-decrease-font-size-a-minus\",\n    \"type\": \"button\",\n    \"text\": \"A-\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Diminuir tamanho da fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility-high-contrast\",\n    \"type\": \"button\",\n    \"text\": \"Q\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Alto contraste\"\n    }\n  },\n  {\n    \"id\": \"accessibility-libras\",\n    \"type\": \"button\",\n    \"text\": \"Libras icon\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Ativar Libras\"\n    }\n  },\n  {\n    \"id\": \"accessibility-sitemap\",\n    \"type\": \"button\",\n    \"text\": \"Sitemap icon\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Mapa do site\"\n    }\n  },\n  {\n    \"id\": \"link-ir-para-o-conteudo\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o conteúdo\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-o-menu\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o menu\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-a-busca\",\n    \"type\": \"link\",\n    \"text\": \"Ir para a busca\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-o-rodape\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o rodapé\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"header\",\n    \"meta\": {\n      \"description\": \"Brasão e nome da Prefeitura de Limeira, Estado de São Paulo - Brasil\"\n    }\n  },\n  {\n    \"id\": \"search-input\",\n    \"type\": \"input\",\n    \"text\": \"Digite a sua busca\",\n    \"state\": \"default\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onFocus\", \"onBlur\"],\n    \"meta\": {\n      \"placeholder\": \"Digite a sua busca\"\n    }\n  },\n  {\n    \"id\": \"search-button\",\n    \"type\": \"button\",\n    \"text\": \"Search icon\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"portal-da-transparencia-link\",\n    \"type\": \"link\",\n    \"text\": \"Portal da Transparência\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"info\"\n    }\n  },\n  {\n    \"id\": \"weather-info\",\n    \"type\": \"text\",\n    \"text\": \"34° Chuva Fraca\",\n    \"region\": \"header\",\n    \"meta\": {\n      \"icon\": \"cloud-rain\"\n    }\n  },\n  {\n    \"id\": \"social-media-facebook\",\n    \"type\": \"link\",\n    \"text\": \"Facebook icon\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-instagram\",\n    \"type\": \"link\",\n    \"text\": \"Instagram icon\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-youtube\",\n    \"type\": \"link\",\n    \"text\": \"YouTube icon\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-linkedin\",\n    \"type\": \"link\",\n    \"text\": \"LinkedIn icon\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-twitter\",\n    \"type\": \"link\",\n    \"text\": \"Twitter icon\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"em-alta-label\",\n    \"type\": \"label\",\n    \"text\": \"Em alta:\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"em-alta-iptu-2025\",\n    \"type\": \"link\",\n    \"text\": \"IPTU 2025\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"em-alta-nota-fiscal-eletronica\",\n    \"type\": \"link\",\n    \"text\": \"Nota Fiscal Eletrônica\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"em-alta-licitacoes\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-a-prefeitura\",\n    \"type\": \"link\",\n    \"text\": \"A Prefeitura\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-imprensa\",\n    \"type\": \"link\",\n    \"text\": \"Imprensa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-leis-municipais\",\n    \"type\": \"link\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-consultas\",\n    \"type\": \"link\",\n    \"text\": \"Consultas\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"state\": \"default\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"state\": \"default\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"state\": \"default\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main-title-cidadao\",\n    \"type\": \"title\",\n    \"text\": \"Cidadão\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"section-animais\",\n    \"type\": \"card\",\n    \"text\": \"Animais\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-atendimento-animal\",\n        \"type\": \"link\",\n        \"text\": \"Atendimento animal\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-castracao\",\n        \"type\": \"link\",\n        \"text\": \"Castração\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-programa-castra-limeira\",\n        \"type\": \"link\",\n        \"text\": \"Programa Castra + Limeira\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-microchipagem\",\n        \"type\": \"link\",\n        \"text\": \"Microchipagem\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-resgate-de-animais\",\n        \"type\": \"link\",\n        \"text\": \"Resgate de Animais\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-atendimento\",\n    \"type\": \"card\",\n    \"text\": \"Atendimento\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-limeira-digital\",\n        \"type\": \"link\",\n        \"text\": \"Limeira Digital\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-carta-de-servicos\",\n        \"type\": \"link\",\n        \"text\": \"Carta de Serviços\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-certidoes\",\n        \"type\": \"link\",\n        \"text\": \"Certidões\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-lei-de-acesso-a-informacao\",\n        \"type\": \"link\",\n        \"text\": \"Lei de Acesso à Informação\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-manual-de-procedimentos-de-processos-administrativos\",\n        \"type\": \"link\",\n        \"text\": \"Manual de Procedimentos de Processos Administrativos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-governo\",\n        \"type\": \"link\",\n        \"text\": \"Governo\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-telefones-uteis\",\n        \"type\": \"link\",\n        \"text\": \"Telefones úteis\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-lista-telefonica\",\n        \"type\": \"link\",\n        \"text\": \"Lista Telefônica\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-casa-e-moradia\",\n    \"type\": \"card\",\n    \"text\": \"Casa e Moradia\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-certidoes-e-documentos\",\n        \"type\": \"link\",\n        \"text\": \"Certidões e Documentos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-conjuntos-habitacionais\",\n        \"type\": \"link\",\n        \"text\": \"Conjuntos Habitacionais\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-construcao-e-reforma\",\n        \"type\": \"link\",\n        \"text\": \"Construção e Reforma\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-copias\",\n        \"type\": \"link\",\n        \"text\": \"Cópias\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-impostos-e-taxas\",\n        \"type\": \"link\",\n        \"text\": \"Impostos e Taxas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-regularizacao\",\n        \"type\": \"link\",\n        \"text\": \"Regularização\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-cadastro-habitacional\",\n        \"type\": \"link\",\n        \"text\": \"Cadastro Habitacional\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-conselhos\",\n    \"type\": \"card\",\n    \"text\": \"Conselhos\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-conselhos-municipais-de-politicas-publicas\",\n        \"type\": \"link\",\n        \"text\": \"Conselhos Municipais de Políticas Públicas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-consultas\",\n    \"type\": \"card\",\n    \"text\": \"Consultas\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-processos-leis-e-decretos\",\n        \"type\": \"link\",\n        \"text\": \"Processos, Leis e Decretos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-feriados-municipais-e-pontos-facultativos\",\n        \"type\": \"link\",\n        \"text\": \"Feriados Municipais e Pontos Facultativos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-ldo-consulta-publica\",\n        \"type\": \"link\",\n        \"text\": \"LDO - Consulta Pública\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-medicamentos\",\n        \"type\": \"link\",\n        \"text\": \"Medicamentos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-audiencias-e-consultas-publicas\",\n        \"type\": \"link\",\n        \"text\": \"Audiências e Consultas Públicas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-cultura\",\n    \"type\": \"card\",\n    \"text\": \"Cultura\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-bibliotecas-cultura\",\n        \"type\": \"link\",\n        \"text\": \"Bibliotecas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-centro-de-ciencias\",\n        \"type\": \"link\",\n        \"text\": \"Centro de Ciências\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-cursos-cultura\",\n        \"type\": \"link\",\n        \"text\": \"Cursos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-feira-de-artes\",\n        \"type\": \"link\",\n        \"text\": \"Feira de Artes\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-identidade\",\n        \"type\": \"link\",\n        \"text\": \"Identidade\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-orquestras-e-bandas\",\n        \"type\": \"link\",\n        \"text\": \"Orquestras e Bandas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-teatro\",\n        \"type\": \"link\",\n        \"text\": \"Teatro\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-regulamentos-cultura\",\n        \"type\": \"link\",\n        \"text\": \"Regulamentos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-denuncias-e-fiscalizacao\",\n    \"type\": \"card\",\n    \"text\": \"Denúncias e Fiscalização\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-alimentos-ou-medicamentos-estragados\",\n        \"type\": \"link\",\n        \"text\": \"Alimentos ou Medicamentos Estragados\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-alvaras\",\n        \"type\": \"link\",\n        \"text\": \"Alvarás\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-maus-tratos-animais\",\n        \"type\": \"link\",\n        \"text\": \"Maus-Tratos Animais\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-meio-ambiente-denuncias\",\n        \"type\": \"link\",\n        \"text\": \"Meio Ambiente\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-poluicao-sonora\",\n        \"type\": \"link\",\n        \"text\": \"Poluição Sonora\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-publicidade\",\n        \"type\": \"link\",\n        \"text\": \"Publicidade\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-terreno-particular\",\n        \"type\": \"link\",\n        \"text\": \"Terreno Particular\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-educacao\",\n    \"type\": \"card\",\n    \"text\": \"Educação\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-alfabetizacao-de-jovens\",\n        \"type\": \"link\",\n        \"text\": \"Alfabetização de Jovens\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-atendimento-especial\",\n        \"type\": \"link\",\n        \"text\": \"Atendimento Especial\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-bibliotecas-educacao\",\n        \"type\": \"link\",\n        \"text\": \"Bibliotecas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-bolsas-de-estudos\",\n        \"type\": \"link\",\n        \"text\": \"Bolsas de Estudos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-centro-de-formacao-dos-professores\",\n        \"type\": \"link\",\n        \"text\": \"Centro de Formação dos Professores\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-cursos-educacao\",\n        \"type\": \"link\",\n        \"text\": \"Cursos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-da-creche-a-faculdade\",\n        \"type\": \"link\",\n        \"text\": \"Da Creche à Faculdade\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-escola-da-familia\",\n        \"type\": \"link\",\n        \"text\": \"Escola da Família\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-legislacao-educacao\",\n        \"type\": \"link\",\n        \"text\": \"Legislação Educação\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-seminarios-e-palestras\",\n        \"type\": \"link\",\n        \"text\": \"Seminários e Palestras\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-transporte-escolar-educacao\",\n        \"type\": \"link\",\n        \"text\": \"Transporte Escolar\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-vagas\",\n        \"type\": \"link\",\n        \"text\": \"Vagas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-esporte-e-lazer\",\n    \"type\": \"card\",\n    \"text\": \"Esporte e Lazer\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-centros-comunitarios\",\n        \"type\": \"link\",\n        \"text\": \"Centros Comunitários\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-espacos-publicos\",\n        \"type\": \"link\",\n        \"text\": \"Espaços Públicos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-eventos-esportivos\",\n        \"type\": \"link\",\n        \"text\": \"Eventos Esportivos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-ginasios\",\n        \"type\": \"link\",\n        \"text\": \"Ginásios\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-parques-zoo-e-horto\",\n        \"type\": \"link\",\n        \"text\": \"Parques, Zoo e Horto\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-familia-e-assistencia-social\",\n    \"type\": \"card\",\n    \"text\": \"Família e Assistência Social\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-casamento-comunitario\",\n        \"type\": \"link\",\n        \"text\": \"Casamento Comunitário\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-central-do-voluntariado\",\n        \"type\": \"link\",\n        \"text\": \"Central do Voluntariado\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-centros-de-acolhimento\",\n        \"type\": \"link\",\n        \"text\": \"Centros de Acolhimento\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-restaurante-de-baixo-custo\",\n        \"type\": \"link\",\n        \"text\": \"Restaurante de Baixo Custo\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-servicos-para-a-familia\",\n        \"type\": \"link\",\n        \"text\": \"Serviços para a Família\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-servicos-para-crianca-e-adolescente\",\n        \"type\": \"link\",\n        \"text\": \"Serviços para Criança e Adolescente\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-servicos-para-o-idoso\",\n        \"type\": \"link\",\n        \"text\": \"Serviços para o Idoso\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-servicos-para-pessoas-com-deficiencia\",\n        \"type\": \"link\",\n        \"text\": \"Serviços para Pessoas com Deficiência\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-unidades-de-assistencia-social\",\n        \"type\": \"link\",\n        \"text\": \"Unidades de Assistência Social\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-financas-e-documentos\",\n    \"type\": \"card\",\n    \"text\": \"Finanças e Documentos\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-divida-ativa\",\n        \"type\": \"link\",\n        \"text\": \"Dívida Ativa\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-iptu-e-itbi\",\n        \"type\": \"link\",\n        \"text\": \"IPTU e ITBI\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-impostos-e-taxas\",\n    \"type\": \"card\",\n    \"text\": \"Impostos e Taxas\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-conselho-municipal-de-contribuintes\",\n        \"type\": \"link\",\n        \"text\": \"Conselho Municipal de Contribuintes\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-meio-ambiente\",\n    \"type\": \"card\",\n    \"text\": \"Meio Ambiente\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-agricultor\",\n        \"type\": \"link\",\n        \"text\": \"Agricultor\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-agua\",\n        \"type\": \"link\",\n        \"text\": \"Água\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-alvaras-licencas-e-autorizacoes\",\n        \"type\": \"link\",\n        \"text\": \"Alvarás, Licenças e Autorizações\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-arvores-e-mudas\",\n        \"type\": \"link\",\n        \"text\": \"Árvores e Mudas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-aterro-sanitario\",\n        \"type\": \"link\",\n        \"text\": \"Aterro Sanitário\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-educacao-ambiental\",\n        \"type\": \"link\",\n        \"text\": \"Educação Ambiental\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-fiscalizacao-meio-ambiente\",\n        \"type\": \"link\",\n        \"text\": \"Fiscalização\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-parques-zoo-e-horto-meio-ambiente\",\n        \"type\": \"link\",\n        \"text\": \"Parques, Zoo e Horto\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-podadores-de-arvores\",\n        \"type\": \"link\",\n        \"text\": \"Podadores de Árvores\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-psa\",\n        \"type\": \"link\",\n        \"text\": \"PSA\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-reciclagem\",\n        \"type\": \"link\",\n        \"text\": \"Reciclagem\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-ouvidoria-geral\",\n    \"type\": \"card\",\n    \"text\": \"Ouvidoria Geral\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-ouvidoria\",\n        \"type\": \"link\",\n        \"text\": \"Ouvidoria\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-atendimento-ao-cidadao\",\n    \"type\": \"card\",\n    \"text\": \"Atendimento ao Cidadão\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-banco-do-povo\",\n        \"type\": \"link\",\n        \"text\": \"Banco do Povo\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-poupatempo-estadual\",\n        \"type\": \"link\",\n        \"text\": \"Poupatempo Estadual\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-pat\",\n        \"type\": \"link\",\n        \"text\": \"PAT\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-procon\",\n        \"type\": \"link\",\n        \"text\": \"Procon\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-sala-do-empreendedor\",\n        \"type\": \"link\",\n        \"text\": \"Sala do Empreendedor\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-rua-e-bairro\",\n    \"type\": \"card\",\n    \"text\": \"Rua e Bairro\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-audiencias-publicas\",\n        \"type\": \"link\",\n        \"text\": \"Audiências Públicas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-controle-de-pragas-urbanas\",\n        \"type\": \"link\",\n        \"text\": \"Controle de Pragas Urbanas\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-dengue\",\n        \"type\": \"link\",\n        \"text\": \"Dengue\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-feiras-e-mercados\",\n        \"type\": \"link\",\n        \"text\": \"Feiras e Mercados\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-feiras-livres\",\n        \"type\": \"link\",\n        \"text\": \"Feiras Livres\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-interdicao-de-rua\",\n        \"type\": \"link\",\n        \"text\": \"Interdição de Rua\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-limpeza\",\n        \"type\": \"link\",\n        \"text\": \"Limpeza\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-manutencao\",\n        \"type\": \"link\",\n        \"text\": \"Manutenção\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-rede-de-galerias\",\n        \"type\": \"link\",\n        \"text\": \"Rede de Galerias\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-saude\",\n    \"type\": \"card\",\n    \"text\": \"Saúde\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-atendimento-saude\",\n        \"type\": \"link\",\n        \"text\": \"Atendimento\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-conselho-municipal-de-saude\",\n        \"type\": \"link\",\n        \"text\": \"Conselho Municipal de Saúde\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-especialidades\",\n        \"type\": \"link\",\n        \"text\": \"Especialidades\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-exames-laboratoriais\",\n        \"type\": \"link\",\n        \"text\": \"Exames Laboratoriais\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-infeccoes-sexualmente-transmissiveis\",\n        \"type\": \"link\",\n        \"text\": \"Infecções Sexualmente Transmissíveis\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-locais-de-atendimentos\",\n        \"type\": \"link\",\n        \"text\": \"Locais de Atendimentos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-medicamentos-saude\",\n        \"type\": \"link\",\n        \"text\": \"Medicamentos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-nutricao\",\n        \"type\": \"link\",\n        \"text\": \"Nutrição\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-ouvidoria-saude\",\n        \"type\": \"link\",\n        \"text\": \"Ouvidoria Saúde\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-saude-bucal\",\n        \"type\": \"link\",\n        \"text\": \"Saúde Bucal\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-saude-da-crianca-e-adolescente\",\n        \"type\": \"link\",\n        \"text\": \"Saúde da Criança e Adolescente\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-saude-da-mulher\",\n        \"type\": \"link\",\n        \"text\": \"Saúde da Mulher\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-saude-do-idoso\",\n        \"type\": \"link\",\n        \"text\": \"Saúde do Idoso\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-saude-deficientes\",\n        \"type\": \"link\",\n        \"text\": \"Saúde Deficientes\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-saude-mental\",\n        \"type\": \"link\",\n        \"text\": \"Saúde Mental\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-vacina\",\n        \"type\": \"link\",\n        \"text\": \"Vacina\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-vigilancia-epidemiologica\",\n        \"type\": \"link\",\n        \"text\": \"Vigilância Epidemiológica\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-vigilancia-sanitaria\",\n        \"type\": \"link\",\n        \"text\": \"Vigilância Sanitária\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-vigilancia-saude-do-trabalhador\",\n        \"type\": \"link\",\n        \"text\": \"Vigilância Saúde do Trabalhador\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-divisao-de-vigilancia-de-zoonoses\",\n        \"type\": \"link\",\n        \"text\": \"Divisão de Vigilância de Zoonoses\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-seguranca\",\n    \"type\": \"card\",\n    \"text\": \"Segurança\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-orgaos\",\n        \"type\": \"link\",\n        \"text\": \"Órgãos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-trabalho\",\n    \"type\": \"card\",\n    \"text\": \"Trabalho\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-cursos-profissionalizantes\",\n        \"type\": \"link\",\n        \"text\": \"Cursos Profissionalizantes\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-posto-de-atendimento-ao-trabalhador-pat\",\n        \"type\": \"link\",\n        \"text\": \"Posto de Atendimento ao Trabalhador - PAT\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-concursos-publicos\",\n        \"type\": \"link\",\n        \"text\": \"Concursos Públicos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"section-transporte\",\n    \"type\": \"card\",\n    \"text\": \"Transporte\",\n    \"region\": \"main-content\",\n    \"children\": [\n      {\n        \"id\": \"link-estacionamentos\",\n        \"type\": \"link\",\n        \"text\": \"Estacionamentos\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-estradas-rurais\",\n        \"type\": \"link\",\n        \"text\": \"Estradas Rurais\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-pedagio\",\n        \"type\": \"link\",\n        \"text\": \"Pedágio\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-pedala-limeira\",\n        \"type\": \"link\",\n        \"text\": \"Pedala Limeira\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-taxi\",\n        \"type\": \"link\",\n        \"text\": \"Táxi\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-transporte-coletivo\",\n        \"type\": \"link\",\n        \"text\": \"Transporte Coletivo\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-transporte-de-passageiros\",\n        \"type\": \"link\",\n        \"text\": \"Transporte de Passageiros\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-transporte-escolar\",\n        \"type\": \"link\",\n        \"text\": \"Transporte Escolar\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-transporte-para-deficientes\",\n        \"type\": \"link\",\n        \"text\": \"Transporte para Deficientes\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"link-transporte-publico\",\n        \"type\": \"link\",\n        \"text\": \"Transporte Público\",\n        \"region\": \"main-content\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"footer-nav-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"state\": \"default\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-leis-municipais\",\n    \"type\": \"link\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-nav-secretarias\",\n    \"type\": \"link\",\n    \"text\": \"Secretarias\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-nav-imprensa\",\n    \"type\": \"link\",\n    \"text\": \"Imprensa\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-nav-consultas\",\n    \"type\": \"link\",\n    \"text\": \"Consultas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-nav-autarquias-e-conselhos\",\n    \"type\": \"link\",\n    \"text\": \"Autarquias e Conselhos\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"footer-logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"description\": \"Brasão e nome da Prefeitura de Limeira, Estado de São Paulo - Brasil\"\n    }\n  },\n  {\n    \"id\": \"footer-address-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Location pin icon\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-address-text\",\n    \"type\": \"text\",\n    \"text\": \"Endereço: Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-phone-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Phone icon\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-phone-text\",\n    \"type\": \"text\",\n    \"text\": \"Telefone: (19) 3404-9600\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-social-media-facebook\",\n    \"type\": \"link\",\n    \"text\": \"Facebook icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-instagram\",\n    \"type\": \"link\",\n    \"text\": \"Instagram icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-youtube\",\n    \"type\": \"link\",\n    \"text\": \"YouTube icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-linkedin\",\n    \"type\": \"link\",\n    \"text\": \"LinkedIn icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-twitter\",\n    \"type\": \"link\",\n    \"text\": \"Twitter icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-rss\",\n    \"type\": \"link\",\n    \"text\": \"RSS icon\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-cnpj-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Document icon\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-cnpj-text\",\n    \"type\": \"text\",\n    \"text\": \"CNPJ: 45.132.495/0001-40\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-privacy-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Lock icon\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-termo-de-uso-e-politicas-de-privacidade\",\n    \"type\": \"link\",\n    \"text\": \"Termo de Uso e Políticas de Privacidade\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-lgpd-pesquisa-de-satisfacao\",\n    \"type\": \"link\",\n    \"text\": \"LGPD - Pesquisa de Satisfação\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-developed-by-ecrie\",\n    \"type\": \"image\",\n    \"text\": \"eCrie logo\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"description\": \"Desenvolvido por eCrie\"\n    }\n  },\n  {\n    \"id\": \"floating-accessibility-button\",\n    \"type\": \"button\",\n    \"text\": \"Accessibility icon (hand)\",\n    \"region\": \"floating\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Botão flutuante de acessibilidade\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 12539,
+      "totalTokenCount": 13501,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 307
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "Ia-fadnCKrfpz7IP75GIgQg"
+  },
+  "ui": [
+    {
+      "id": "accessibility-increase-font-size-a-plus",
+      "type": "button",
+      "text": "A+",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Aumentar tamanho da fonte"
+      }
+    },
+    {
+      "id": "accessibility-decrease-font-size-a-minus",
+      "type": "button",
+      "text": "A-",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Diminuir tamanho da fonte"
+      }
+    },
+    {
+      "id": "accessibility-high-contrast",
+      "type": "button",
+      "text": "Q",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Alto contraste"
+      }
+    },
+    {
+      "id": "accessibility-libras",
+      "type": "button",
+      "text": "Libras icon",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Ativar Libras"
+      }
+    },
+    {
+      "id": "accessibility-sitemap",
+      "type": "button",
+      "text": "Sitemap icon",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Mapa do site"
+      }
+    },
+    {
+      "id": "link-ir-para-o-conteudo",
+      "type": "link",
+      "text": "Ir para o conteúdo",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-o-menu",
+      "type": "link",
+      "text": "Ir para o menu",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-a-busca",
+      "type": "link",
+      "text": "Ir para a busca",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-o-rodape",
+      "type": "link",
+      "text": "Ir para o rodapé",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "header",
+      "meta": {
+        "description": "Brasão e nome da Prefeitura de Limeira, Estado de São Paulo - Brasil"
+      }
+    },
+    {
+      "id": "search-input",
+      "type": "input",
+      "text": "Digite a sua busca",
+      "state": "default",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onFocus",
+        "onBlur"
+      ],
+      "meta": {
+        "placeholder": "Digite a sua busca"
+      }
+    },
+    {
+      "id": "search-button",
+      "type": "button",
+      "text": "Search icon",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "portal-da-transparencia-link",
+      "type": "link",
+      "text": "Portal da Transparência",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "info"
+      }
+    },
+    {
+      "id": "weather-info",
+      "type": "text",
+      "text": "34° Chuva Fraca",
+      "region": "header",
+      "meta": {
+        "icon": "cloud-rain"
+      }
+    },
+    {
+      "id": "social-media-facebook",
+      "type": "link",
+      "text": "Facebook icon",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-instagram",
+      "type": "link",
+      "text": "Instagram icon",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-youtube",
+      "type": "link",
+      "text": "YouTube icon",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-linkedin",
+      "type": "link",
+      "text": "LinkedIn icon",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-twitter",
+      "type": "link",
+      "text": "Twitter icon",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "em-alta-label",
+      "type": "label",
+      "text": "Em alta:",
+      "region": "header"
+    },
+    {
+      "id": "em-alta-iptu-2025",
+      "type": "link",
+      "text": "IPTU 2025",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "em-alta-nota-fiscal-eletronica",
+      "type": "link",
+      "text": "Nota Fiscal Eletrônica",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "em-alta-licitacoes",
+      "type": "link",
+      "text": "Licitações",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-a-prefeitura",
+      "type": "link",
+      "text": "A Prefeitura",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-imprensa",
+      "type": "link",
+      "text": "Imprensa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-leis-municipais",
+      "type": "link",
+      "text": "Leis Municipais",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-consultas",
+      "type": "link",
+      "text": "Consultas",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "state": "default",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "state": "default",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "state": "default",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main-title-cidadao",
+      "type": "title",
+      "text": "Cidadão",
+      "region": "main-content"
+    },
+    {
+      "id": "section-animais",
+      "type": "card",
+      "text": "Animais",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-atendimento-animal",
+          "type": "link",
+          "text": "Atendimento animal",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-castracao",
+          "type": "link",
+          "text": "Castração",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-programa-castra-limeira",
+          "type": "link",
+          "text": "Programa Castra + Limeira",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-microchipagem",
+          "type": "link",
+          "text": "Microchipagem",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-resgate-de-animais",
+          "type": "link",
+          "text": "Resgate de Animais",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-atendimento",
+      "type": "card",
+      "text": "Atendimento",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-limeira-digital",
+          "type": "link",
+          "text": "Limeira Digital",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-carta-de-servicos",
+          "type": "link",
+          "text": "Carta de Serviços",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-certidoes",
+          "type": "link",
+          "text": "Certidões",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-lei-de-acesso-a-informacao",
+          "type": "link",
+          "text": "Lei de Acesso à Informação",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-manual-de-procedimentos-de-processos-administrativos",
+          "type": "link",
+          "text": "Manual de Procedimentos de Processos Administrativos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-governo",
+          "type": "link",
+          "text": "Governo",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-telefones-uteis",
+          "type": "link",
+          "text": "Telefones úteis",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-lista-telefonica",
+          "type": "link",
+          "text": "Lista Telefônica",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-casa-e-moradia",
+      "type": "card",
+      "text": "Casa e Moradia",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-certidoes-e-documentos",
+          "type": "link",
+          "text": "Certidões e Documentos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-conjuntos-habitacionais",
+          "type": "link",
+          "text": "Conjuntos Habitacionais",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-construcao-e-reforma",
+          "type": "link",
+          "text": "Construção e Reforma",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-copias",
+          "type": "link",
+          "text": "Cópias",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-impostos-e-taxas",
+          "type": "link",
+          "text": "Impostos e Taxas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-regularizacao",
+          "type": "link",
+          "text": "Regularização",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-cadastro-habitacional",
+          "type": "link",
+          "text": "Cadastro Habitacional",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-conselhos",
+      "type": "card",
+      "text": "Conselhos",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-conselhos-municipais-de-politicas-publicas",
+          "type": "link",
+          "text": "Conselhos Municipais de Políticas Públicas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-consultas",
+      "type": "card",
+      "text": "Consultas",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-processos-leis-e-decretos",
+          "type": "link",
+          "text": "Processos, Leis e Decretos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-feriados-municipais-e-pontos-facultativos",
+          "type": "link",
+          "text": "Feriados Municipais e Pontos Facultativos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-ldo-consulta-publica",
+          "type": "link",
+          "text": "LDO - Consulta Pública",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-medicamentos",
+          "type": "link",
+          "text": "Medicamentos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-audiencias-e-consultas-publicas",
+          "type": "link",
+          "text": "Audiências e Consultas Públicas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-cultura",
+      "type": "card",
+      "text": "Cultura",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-bibliotecas-cultura",
+          "type": "link",
+          "text": "Bibliotecas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-centro-de-ciencias",
+          "type": "link",
+          "text": "Centro de Ciências",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-cursos-cultura",
+          "type": "link",
+          "text": "Cursos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-feira-de-artes",
+          "type": "link",
+          "text": "Feira de Artes",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-identidade",
+          "type": "link",
+          "text": "Identidade",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-orquestras-e-bandas",
+          "type": "link",
+          "text": "Orquestras e Bandas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-teatro",
+          "type": "link",
+          "text": "Teatro",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-regulamentos-cultura",
+          "type": "link",
+          "text": "Regulamentos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-denuncias-e-fiscalizacao",
+      "type": "card",
+      "text": "Denúncias e Fiscalização",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-alimentos-ou-medicamentos-estragados",
+          "type": "link",
+          "text": "Alimentos ou Medicamentos Estragados",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-alvaras",
+          "type": "link",
+          "text": "Alvarás",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-maus-tratos-animais",
+          "type": "link",
+          "text": "Maus-Tratos Animais",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-meio-ambiente-denuncias",
+          "type": "link",
+          "text": "Meio Ambiente",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-poluicao-sonora",
+          "type": "link",
+          "text": "Poluição Sonora",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-publicidade",
+          "type": "link",
+          "text": "Publicidade",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-terreno-particular",
+          "type": "link",
+          "text": "Terreno Particular",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-educacao",
+      "type": "card",
+      "text": "Educação",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-alfabetizacao-de-jovens",
+          "type": "link",
+          "text": "Alfabetização de Jovens",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-atendimento-especial",
+          "type": "link",
+          "text": "Atendimento Especial",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-bibliotecas-educacao",
+          "type": "link",
+          "text": "Bibliotecas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-bolsas-de-estudos",
+          "type": "link",
+          "text": "Bolsas de Estudos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-centro-de-formacao-dos-professores",
+          "type": "link",
+          "text": "Centro de Formação dos Professores",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-cursos-educacao",
+          "type": "link",
+          "text": "Cursos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-da-creche-a-faculdade",
+          "type": "link",
+          "text": "Da Creche à Faculdade",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-escola-da-familia",
+          "type": "link",
+          "text": "Escola da Família",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-legislacao-educacao",
+          "type": "link",
+          "text": "Legislação Educação",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-seminarios-e-palestras",
+          "type": "link",
+          "text": "Seminários e Palestras",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-transporte-escolar-educacao",
+          "type": "link",
+          "text": "Transporte Escolar",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-vagas",
+          "type": "link",
+          "text": "Vagas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-esporte-e-lazer",
+      "type": "card",
+      "text": "Esporte e Lazer",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-centros-comunitarios",
+          "type": "link",
+          "text": "Centros Comunitários",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-espacos-publicos",
+          "type": "link",
+          "text": "Espaços Públicos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-eventos-esportivos",
+          "type": "link",
+          "text": "Eventos Esportivos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-ginasios",
+          "type": "link",
+          "text": "Ginásios",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-parques-zoo-e-horto",
+          "type": "link",
+          "text": "Parques, Zoo e Horto",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-familia-e-assistencia-social",
+      "type": "card",
+      "text": "Família e Assistência Social",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-casamento-comunitario",
+          "type": "link",
+          "text": "Casamento Comunitário",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-central-do-voluntariado",
+          "type": "link",
+          "text": "Central do Voluntariado",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-centros-de-acolhimento",
+          "type": "link",
+          "text": "Centros de Acolhimento",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-restaurante-de-baixo-custo",
+          "type": "link",
+          "text": "Restaurante de Baixo Custo",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-servicos-para-a-familia",
+          "type": "link",
+          "text": "Serviços para a Família",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-servicos-para-crianca-e-adolescente",
+          "type": "link",
+          "text": "Serviços para Criança e Adolescente",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-servicos-para-o-idoso",
+          "type": "link",
+          "text": "Serviços para o Idoso",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-servicos-para-pessoas-com-deficiencia",
+          "type": "link",
+          "text": "Serviços para Pessoas com Deficiência",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-unidades-de-assistencia-social",
+          "type": "link",
+          "text": "Unidades de Assistência Social",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-financas-e-documentos",
+      "type": "card",
+      "text": "Finanças e Documentos",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-divida-ativa",
+          "type": "link",
+          "text": "Dívida Ativa",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-iptu-e-itbi",
+          "type": "link",
+          "text": "IPTU e ITBI",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-impostos-e-taxas",
+      "type": "card",
+      "text": "Impostos e Taxas",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-conselho-municipal-de-contribuintes",
+          "type": "link",
+          "text": "Conselho Municipal de Contribuintes",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-meio-ambiente",
+      "type": "card",
+      "text": "Meio Ambiente",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-agricultor",
+          "type": "link",
+          "text": "Agricultor",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-agua",
+          "type": "link",
+          "text": "Água",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-alvaras-licencas-e-autorizacoes",
+          "type": "link",
+          "text": "Alvarás, Licenças e Autorizações",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-arvores-e-mudas",
+          "type": "link",
+          "text": "Árvores e Mudas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-aterro-sanitario",
+          "type": "link",
+          "text": "Aterro Sanitário",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-educacao-ambiental",
+          "type": "link",
+          "text": "Educação Ambiental",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-fiscalizacao-meio-ambiente",
+          "type": "link",
+          "text": "Fiscalização",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-parques-zoo-e-horto-meio-ambiente",
+          "type": "link",
+          "text": "Parques, Zoo e Horto",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-podadores-de-arvores",
+          "type": "link",
+          "text": "Podadores de Árvores",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-psa",
+          "type": "link",
+          "text": "PSA",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-reciclagem",
+          "type": "link",
+          "text": "Reciclagem",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-ouvidoria-geral",
+      "type": "card",
+      "text": "Ouvidoria Geral",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-ouvidoria",
+          "type": "link",
+          "text": "Ouvidoria",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-atendimento-ao-cidadao",
+      "type": "card",
+      "text": "Atendimento ao Cidadão",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-banco-do-povo",
+          "type": "link",
+          "text": "Banco do Povo",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-poupatempo-estadual",
+          "type": "link",
+          "text": "Poupatempo Estadual",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-pat",
+          "type": "link",
+          "text": "PAT",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-procon",
+          "type": "link",
+          "text": "Procon",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-sala-do-empreendedor",
+          "type": "link",
+          "text": "Sala do Empreendedor",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-rua-e-bairro",
+      "type": "card",
+      "text": "Rua e Bairro",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-audiencias-publicas",
+          "type": "link",
+          "text": "Audiências Públicas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-controle-de-pragas-urbanas",
+          "type": "link",
+          "text": "Controle de Pragas Urbanas",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-dengue",
+          "type": "link",
+          "text": "Dengue",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-feiras-e-mercados",
+          "type": "link",
+          "text": "Feiras e Mercados",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-feiras-livres",
+          "type": "link",
+          "text": "Feiras Livres",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-interdicao-de-rua",
+          "type": "link",
+          "text": "Interdição de Rua",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-limpeza",
+          "type": "link",
+          "text": "Limpeza",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-manutencao",
+          "type": "link",
+          "text": "Manutenção",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-rede-de-galerias",
+          "type": "link",
+          "text": "Rede de Galerias",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-saude",
+      "type": "card",
+      "text": "Saúde",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-atendimento-saude",
+          "type": "link",
+          "text": "Atendimento",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-conselho-municipal-de-saude",
+          "type": "link",
+          "text": "Conselho Municipal de Saúde",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-especialidades",
+          "type": "link",
+          "text": "Especialidades",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-exames-laboratoriais",
+          "type": "link",
+          "text": "Exames Laboratoriais",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-infeccoes-sexualmente-transmissiveis",
+          "type": "link",
+          "text": "Infecções Sexualmente Transmissíveis",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-locais-de-atendimentos",
+          "type": "link",
+          "text": "Locais de Atendimentos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-medicamentos-saude",
+          "type": "link",
+          "text": "Medicamentos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-nutricao",
+          "type": "link",
+          "text": "Nutrição",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-ouvidoria-saude",
+          "type": "link",
+          "text": "Ouvidoria Saúde",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-saude-bucal",
+          "type": "link",
+          "text": "Saúde Bucal",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-saude-da-crianca-e-adolescente",
+          "type": "link",
+          "text": "Saúde da Criança e Adolescente",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-saude-da-mulher",
+          "type": "link",
+          "text": "Saúde da Mulher",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-saude-do-idoso",
+          "type": "link",
+          "text": "Saúde do Idoso",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-saude-deficientes",
+          "type": "link",
+          "text": "Saúde Deficientes",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-saude-mental",
+          "type": "link",
+          "text": "Saúde Mental",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-vacina",
+          "type": "link",
+          "text": "Vacina",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-vigilancia-epidemiologica",
+          "type": "link",
+          "text": "Vigilância Epidemiológica",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-vigilancia-sanitaria",
+          "type": "link",
+          "text": "Vigilância Sanitária",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-vigilancia-saude-do-trabalhador",
+          "type": "link",
+          "text": "Vigilância Saúde do Trabalhador",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-divisao-de-vigilancia-de-zoonoses",
+          "type": "link",
+          "text": "Divisão de Vigilância de Zoonoses",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-seguranca",
+      "type": "card",
+      "text": "Segurança",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-orgaos",
+          "type": "link",
+          "text": "Órgãos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-trabalho",
+      "type": "card",
+      "text": "Trabalho",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-cursos-profissionalizantes",
+          "type": "link",
+          "text": "Cursos Profissionalizantes",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-posto-de-atendimento-ao-trabalhador-pat",
+          "type": "link",
+          "text": "Posto de Atendimento ao Trabalhador - PAT",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-concursos-publicos",
+          "type": "link",
+          "text": "Concursos Públicos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-transporte",
+      "type": "card",
+      "text": "Transporte",
+      "region": "main-content",
+      "children": [
+        {
+          "id": "link-estacionamentos",
+          "type": "link",
+          "text": "Estacionamentos",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-estradas-rurais",
+          "type": "link",
+          "text": "Estradas Rurais",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-pedagio",
+          "type": "link",
+          "text": "Pedágio",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-pedala-limeira",
+          "type": "link",
+          "text": "Pedala Limeira",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-taxi",
+          "type": "link",
+          "text": "Táxi",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-transporte-coletivo",
+          "type": "link",
+          "text": "Transporte Coletivo",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-transporte-de-passageiros",
+          "type": "link",
+          "text": "Transporte de Passageiros",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-transporte-escolar",
+          "type": "link",
+          "text": "Transporte Escolar",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-transporte-para-deficientes",
+          "type": "link",
+          "text": "Transporte para Deficientes",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "link-transporte-publico",
+          "type": "link",
+          "text": "Transporte Público",
+          "region": "main-content",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer-nav-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "state": "default",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-leis-municipais",
+      "type": "link",
+      "text": "Leis Municipais",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-nav-secretarias",
+      "type": "link",
+      "text": "Secretarias",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-nav-imprensa",
+      "type": "link",
+      "text": "Imprensa",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-nav-consultas",
+      "type": "link",
+      "text": "Consultas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-nav-autarquias-e-conselhos",
+      "type": "link",
+      "text": "Autarquias e Conselhos",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "footer-logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "footer",
+      "meta": {
+        "description": "Brasão e nome da Prefeitura de Limeira, Estado de São Paulo - Brasil"
+      }
+    },
+    {
+      "id": "footer-address-icon",
+      "type": "icon",
+      "text": "Location pin icon",
+      "region": "footer"
+    },
+    {
+      "id": "footer-address-text",
+      "type": "text",
+      "text": "Endereço: Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900",
+      "region": "footer"
+    },
+    {
+      "id": "footer-phone-icon",
+      "type": "icon",
+      "text": "Phone icon",
+      "region": "footer"
+    },
+    {
+      "id": "footer-phone-text",
+      "type": "text",
+      "text": "Telefone: (19) 3404-9600",
+      "region": "footer"
+    },
+    {
+      "id": "footer-social-media-facebook",
+      "type": "link",
+      "text": "Facebook icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-instagram",
+      "type": "link",
+      "text": "Instagram icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-youtube",
+      "type": "link",
+      "text": "YouTube icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-linkedin",
+      "type": "link",
+      "text": "LinkedIn icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-twitter",
+      "type": "link",
+      "text": "Twitter icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-rss",
+      "type": "link",
+      "text": "RSS icon",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-cnpj-icon",
+      "type": "icon",
+      "text": "Document icon",
+      "region": "footer"
+    },
+    {
+      "id": "footer-cnpj-text",
+      "type": "text",
+      "text": "CNPJ: 45.132.495/0001-40",
+      "region": "footer"
+    },
+    {
+      "id": "footer-privacy-icon",
+      "type": "icon",
+      "text": "Lock icon",
+      "region": "footer"
+    },
+    {
+      "id": "footer-termo-de-uso-e-politicas-de-privacidade",
+      "type": "link",
+      "text": "Termo de Uso e Políticas de Privacidade",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-lgpd-pesquisa-de-satisfacao",
+      "type": "link",
+      "text": "LGPD - Pesquisa de Satisfação",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-developed-by-ecrie",
+      "type": "image",
+      "text": "eCrie logo",
+      "region": "footer",
+      "meta": {
+        "description": "Desenvolvido por eCrie"
+      }
+    },
+    {
+      "id": "floating-accessibility-button",
+      "type": "button",
+      "text": "Accessibility icon (hand)",
+      "region": "floating",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Botão flutuante de acessibilidade"
+      }
+    }
+  ]
+}

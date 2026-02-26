@@ -1,0 +1,604 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 7,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"app_menu_bar\",\n    \"type\": \"menu_bar\",\n    \"region\": \"top-bar\",\n    \"components\": [\n      {\n        \"id\": \"menu_aplicativos\",\n        \"type\": \"menu_item\",\n        \"text\": \"Menu de aplicativos\",\n        \"region\": \"top-bar\"\n      },\n      {\n        \"id\": \"menu_arquivo\",\n        \"type\": \"menu_item\",\n        \"text\": \"Arquivo\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_editar\",\n        \"type\": \"menu_item\",\n        \"text\": \"Editar\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_exibir\",\n        \"type\": \"menu_item\",\n        \"text\": \"Exibir\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_inserir\",\n        \"type\": \"menu_item\",\n        \"text\": \"Inserir\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_formatar\",\n        \"type\": \"menu_item\",\n        \"text\": \"Formatar\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_estilos\",\n        \"type\": \"menu_item\",\n        \"text\": \"Estilos\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_tabela\",\n        \"type\": \"menu_item\",\n        \"text\": \"Tabela\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_formulario\",\n        \"type\": \"menu_item\",\n        \"text\": \"Formulário\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_ferramentas\",\n        \"type\": \"menu_item\",\n        \"text\": \"Ferramentas\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_janela\",\n        \"type\": \"menu_item\",\n        \"text\": \"Janela\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_ajuda\",\n        \"type\": \"menu_item\",\n        \"text\": \"Ajuda\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"app_title_bar\",\n    \"type\": \"title_bar\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"region\": \"top-bar\",\n    \"components\": [\n      {\n        \"id\": \"app_minimize_button\",\n        \"type\": \"button\",\n        \"text\": \"Minimizar\",\n        \"icon\": \"minimize\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"app_maximize_button\",\n        \"type\": \"button\",\n        \"text\": \"Maximizar\",\n        \"icon\": \"maximize\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"app_close_button\",\n        \"type\": \"button\",\n        \"text\": \"Fechar\",\n        \"icon\": \"close\",\n        \"region\": \"top-bar\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"app_toolbar_main\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"components\": [\n      {\n        \"id\": \"toolbar_save_button\",\n        \"type\": \"button\",\n        \"icon\": \"save\",\n        \"text\": \"Salvar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"toolbar_print_button\",\n        \"type\": \"button\",\n        \"icon\": \"print\",\n        \"text\": \"Imprimir\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"toolbar_cut_button\",\n        \"type\": \"button\",\n        \"icon\": \"cut\",\n        \"text\": \"Recortar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"toolbar_copy_button\",\n        \"type\": \"button\",\n        \"icon\": \"copy\",\n        \"text\": \"Copiar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"toolbar_paste_button\",\n        \"type\": \"button\",\n        \"icon\": \"paste\",\n        \"text\": \"Colar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"toolbar_undo_button\",\n        \"type\": \"button\",\n        \"icon\": \"undo\",\n        \"text\": \"Desfazer\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"toolbar_redo_button\",\n        \"type\": \"button\",\n        \"icon\": \"redo\",\n        \"text\": \"Refazer\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"app_toolbar_formatting\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"components\": [\n      {\n        \"id\": \"style_dropdown\",\n        \"type\": \"select\",\n        \"text\": \"Estilo de parágrafo Padrão\",\n        \"actions\": [\"onChange\"]\n      },\n      {\n        \"id\": \"font_family_dropdown\",\n        \"type\": \"select\",\n        \"text\": \"Arial\",\n        \"actions\": [\"onChange\"]\n      },\n      {\n        \"id\": \"font_size_dropdown\",\n        \"type\": \"select\",\n        \"text\": \"12 pt\",\n        \"actions\": [\"onChange\"]\n      },\n      {\n        \"id\": \"bold_button\",\n        \"type\": \"button\",\n        \"icon\": \"bold\",\n        \"text\": \"Negrito\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"italic_button\",\n        \"type\": \"button\",\n        \"icon\": \"italic\",\n        \"text\": \"Itálico\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"underline_button\",\n        \"type\": \"button\",\n        \"icon\": \"underline\",\n        \"text\": \"Sublinhado\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"document_area\",\n    \"type\": \"document_editor\",\n    \"region\": \"main-content\",\n    \"state\": \"focused\"\n  },\n  {\n    \"id\": \"status_bar\",\n    \"type\": \"status_bar\",\n    \"region\": \"footer\",\n    \"components\": [\n      {\n        \"id\": \"status_page_info\",\n        \"type\": \"label\",\n        \"text\": \"Página 1 de 1\",\n        \"region\": \"footer\"\n      },\n      {\n        \"id\": \"status_word_count\",\n        \"type\": \"label\",\n        \"text\": \"0 palavra, 0 caractere\",\n        \"region\": \"footer\"\n      },\n      {\n        \"id\": \"status_page_style\",\n        \"type\": \"label\",\n        \"text\": \"Estilo de página Padrão\",\n        \"region\": \"footer\"\n      },\n      {\n        \"id\": \"status_language\",\n        \"type\": \"label\",\n        \"text\": \"Português (Brasil)\",\n        \"region\": \"footer\"\n      }\n    ]\n  },\n  {\n    \"id\": \"insert_table_modal\",\n    \"type\": \"modal\",\n    \"text\": \"Inserir tabela\",\n    \"region\": \"center\",\n    \"components\": [\n      {\n        \"id\": \"modal_minimize_button\",\n        \"type\": \"button\",\n        \"icon\": \"minimize\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"modal_maximize_button\",\n        \"type\": \"button\",\n        \"icon\": \"maximize\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"modal_close_button\",\n        \"type\": \"button\",\n        \"icon\": \"close\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"section_geral\",\n        \"type\": \"section_header\",\n        \"text\": \"Geral\"\n      },\n      {\n        \"id\": \"label_nome\",\n        \"type\": \"label\",\n        \"text\": \"Nome:\"\n      },\n      {\n        \"id\": \"input_nome_tabela\",\n        \"type\": \"input\",\n        \"text\": \"tabela1\",\n        \"state\": \"focused\",\n        \"actions\": [\"onChange\"]\n      },\n      {\n        \"id\": \"label_colunas\",\n        \"type\": \"label\",\n        \"text\": \"Colunas:\"\n      },\n      {\n        \"id\": \"input_colunas\",\n        \"type\": \"spinner_input\",\n        \"value\": \"2\",\n        \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"]\n      },\n      {\n        \"id\": \"label_linhas\",\n        \"type\": \"label\",\n        \"text\": \"Linhas:\"\n      },\n      {\n        \"id\": \"input_linhas\",\n        \"type\": \"spinner_input\",\n        \"value\": \"2\",\n        \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"]\n      },\n      {\n        \"id\": \"section_opcoes\",\n        \"type\": \"section_header\",\n        \"text\": \"Opções\"\n      },\n      {\n        \"id\": \"checkbox_titulo\",\n        \"type\": \"checkbox\",\n        \"text\": \"Título\",\n        \"state\": \"unchecked\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"checkbox_repetir_linhas_titulo\",\n        \"type\": \"checkbox\",\n        \"text\": \"Repetir linhas de título nas novas páginas\",\n        \"state\": \"checked\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"label_linhas_de_titulo\",\n        \"type\": \"label\",\n        \"text\": \"Linhas de título:\",\n        \"state\": \"disabled\",\n        \"meta\": {\n          \"reason_disabled\": \"checkbox_titulo is unchecked\"\n        }\n      },\n      {\n        \"id\": \"input_linhas_de_titulo\",\n        \"type\": \"spinner_input\",\n        \"value\": \"1\",\n        \"state\": \"disabled\",\n        \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n        \"meta\": {\n          \"reason_disabled\": \"checkbox_titulo is unchecked\"\n        }\n      },\n      {\n        \"id\": \"checkbox_nao_dividir_tabela\",\n        \"type\": \"checkbox\",\n        \"text\": \"Não dividir tabela entre páginas\",\n        \"state\": \"unchecked\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"section_estilos\",\n        \"type\": \"section_header\",\n        \"text\": \"Estilos\"\n      },\n      {\n        \"id\": \"listbox_estilos\",\n        \"type\": \"listbox\",\n        \"components\": [\n          {\n            \"id\": \"list_item_nenhum\",\n            \"type\": \"list_item\",\n            \"text\": \"Nenhum\",\n            \"state\": \"selected\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"list_item_estilo_tabela_padrao\",\n            \"type\": \"list_item\",\n            \"text\": \"Estilo de tabela Padrão\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"list_item_academico\",\n            \"type\": \"list_item\",\n            \"text\": \"Acadêmico\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"list_item_mundo_azul\",\n            \"type\": \"list_item\",\n            \"text\": \"Mundo azul\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"list_item_mundo_verde\",\n            \"type\": \"list_item\",\n            \"text\": \"Mundo verde\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"list_item_mundo_escarlate\",\n            \"type\": \"list_item\",\n            \"text\": \"Mundo escarlate\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"list_item_mundo_alvorada\",\n            \"type\": \"list_item\",\n            \"text\": \"Mundo da alvorada\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"list_item_elegante\",\n            \"type\": \"list_item\",\n            \"text\": \"Elegante\",\n            \"actions\": [\"onClick\"]\n          }\n        ]\n      },\n      {\n        \"id\": \"table_preview\",\n        \"type\": \"table\",\n        \"text\": \"Jan Fev Mar Soma\\nNorte 6 7 8 21\\nMeio 11 12 13 36\\nSul 16 17 18 51\\nSoma 33 36 39 108\",\n        \"meta\": {\n          \"description\": \"Preview of the selected table style\"\n        }\n      },\n      {\n        \"id\": \"button_ajuda\",\n        \"type\": \"button\",\n        \"text\": \"Ajuda\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"button_inserir\",\n        \"type\": \"button\",\n        \"text\": \"Inserir\",\n        \"state\": \"enabled\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"button_cancelar\",\n        \"type\": \"button\",\n        \"text\": \"Cancelar\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 3500,
+      "totalTokenCount": 4409,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 254
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "PPedac_GE7zhz7IP4t6W6Q0"
+  },
+  "ui": [
+    {
+      "id": "app_menu_bar",
+      "type": "menu_bar",
+      "region": "top-bar",
+      "components": [
+        {
+          "id": "menu_aplicativos",
+          "type": "menu_item",
+          "text": "Menu de aplicativos",
+          "region": "top-bar"
+        },
+        {
+          "id": "menu_arquivo",
+          "type": "menu_item",
+          "text": "Arquivo",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_editar",
+          "type": "menu_item",
+          "text": "Editar",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_exibir",
+          "type": "menu_item",
+          "text": "Exibir",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_inserir",
+          "type": "menu_item",
+          "text": "Inserir",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_formatar",
+          "type": "menu_item",
+          "text": "Formatar",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_estilos",
+          "type": "menu_item",
+          "text": "Estilos",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_tabela",
+          "type": "menu_item",
+          "text": "Tabela",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_formulario",
+          "type": "menu_item",
+          "text": "Formulário",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_ferramentas",
+          "type": "menu_item",
+          "text": "Ferramentas",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_janela",
+          "type": "menu_item",
+          "text": "Janela",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_ajuda",
+          "type": "menu_item",
+          "text": "Ajuda",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app_title_bar",
+      "type": "title_bar",
+      "text": "Sem título 1 — LibreOffice Writer",
+      "region": "top-bar",
+      "components": [
+        {
+          "id": "app_minimize_button",
+          "type": "button",
+          "text": "Minimizar",
+          "icon": "minimize",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "app_maximize_button",
+          "type": "button",
+          "text": "Maximizar",
+          "icon": "maximize",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "app_close_button",
+          "type": "button",
+          "text": "Fechar",
+          "icon": "close",
+          "region": "top-bar",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app_toolbar_main",
+      "type": "toolbar",
+      "region": "top-bar",
+      "components": [
+        {
+          "id": "toolbar_save_button",
+          "type": "button",
+          "icon": "save",
+          "text": "Salvar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "toolbar_print_button",
+          "type": "button",
+          "icon": "print",
+          "text": "Imprimir",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "toolbar_cut_button",
+          "type": "button",
+          "icon": "cut",
+          "text": "Recortar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "toolbar_copy_button",
+          "type": "button",
+          "icon": "copy",
+          "text": "Copiar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "toolbar_paste_button",
+          "type": "button",
+          "icon": "paste",
+          "text": "Colar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "toolbar_undo_button",
+          "type": "button",
+          "icon": "undo",
+          "text": "Desfazer",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "toolbar_redo_button",
+          "type": "button",
+          "icon": "redo",
+          "text": "Refazer",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app_toolbar_formatting",
+      "type": "toolbar",
+      "region": "top-bar",
+      "components": [
+        {
+          "id": "style_dropdown",
+          "type": "select",
+          "text": "Estilo de parágrafo Padrão",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "font_family_dropdown",
+          "type": "select",
+          "text": "Arial",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "font_size_dropdown",
+          "type": "select",
+          "text": "12 pt",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "bold_button",
+          "type": "button",
+          "icon": "bold",
+          "text": "Negrito",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "italic_button",
+          "type": "button",
+          "icon": "italic",
+          "text": "Itálico",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "underline_button",
+          "type": "button",
+          "icon": "underline",
+          "text": "Sublinhado",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "document_area",
+      "type": "document_editor",
+      "region": "main-content",
+      "state": "focused"
+    },
+    {
+      "id": "status_bar",
+      "type": "status_bar",
+      "region": "footer",
+      "components": [
+        {
+          "id": "status_page_info",
+          "type": "label",
+          "text": "Página 1 de 1",
+          "region": "footer"
+        },
+        {
+          "id": "status_word_count",
+          "type": "label",
+          "text": "0 palavra, 0 caractere",
+          "region": "footer"
+        },
+        {
+          "id": "status_page_style",
+          "type": "label",
+          "text": "Estilo de página Padrão",
+          "region": "footer"
+        },
+        {
+          "id": "status_language",
+          "type": "label",
+          "text": "Português (Brasil)",
+          "region": "footer"
+        }
+      ]
+    },
+    {
+      "id": "insert_table_modal",
+      "type": "modal",
+      "text": "Inserir tabela",
+      "region": "center",
+      "components": [
+        {
+          "id": "modal_minimize_button",
+          "type": "button",
+          "icon": "minimize",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "modal_maximize_button",
+          "type": "button",
+          "icon": "maximize",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "modal_close_button",
+          "type": "button",
+          "icon": "close",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "section_geral",
+          "type": "section_header",
+          "text": "Geral"
+        },
+        {
+          "id": "label_nome",
+          "type": "label",
+          "text": "Nome:"
+        },
+        {
+          "id": "input_nome_tabela",
+          "type": "input",
+          "text": "tabela1",
+          "state": "focused",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "label_colunas",
+          "type": "label",
+          "text": "Colunas:"
+        },
+        {
+          "id": "input_colunas",
+          "type": "spinner_input",
+          "value": "2",
+          "actions": [
+            "onChange",
+            "onIncrement",
+            "onDecrement"
+          ]
+        },
+        {
+          "id": "label_linhas",
+          "type": "label",
+          "text": "Linhas:"
+        },
+        {
+          "id": "input_linhas",
+          "type": "spinner_input",
+          "value": "2",
+          "actions": [
+            "onChange",
+            "onIncrement",
+            "onDecrement"
+          ]
+        },
+        {
+          "id": "section_opcoes",
+          "type": "section_header",
+          "text": "Opções"
+        },
+        {
+          "id": "checkbox_titulo",
+          "type": "checkbox",
+          "text": "Título",
+          "state": "unchecked",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "checkbox_repetir_linhas_titulo",
+          "type": "checkbox",
+          "text": "Repetir linhas de título nas novas páginas",
+          "state": "checked",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "label_linhas_de_titulo",
+          "type": "label",
+          "text": "Linhas de título:",
+          "state": "disabled",
+          "meta": {
+            "reason_disabled": "checkbox_titulo is unchecked"
+          }
+        },
+        {
+          "id": "input_linhas_de_titulo",
+          "type": "spinner_input",
+          "value": "1",
+          "state": "disabled",
+          "actions": [
+            "onChange",
+            "onIncrement",
+            "onDecrement"
+          ],
+          "meta": {
+            "reason_disabled": "checkbox_titulo is unchecked"
+          }
+        },
+        {
+          "id": "checkbox_nao_dividir_tabela",
+          "type": "checkbox",
+          "text": "Não dividir tabela entre páginas",
+          "state": "unchecked",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "section_estilos",
+          "type": "section_header",
+          "text": "Estilos"
+        },
+        {
+          "id": "listbox_estilos",
+          "type": "listbox",
+          "components": [
+            {
+              "id": "list_item_nenhum",
+              "type": "list_item",
+              "text": "Nenhum",
+              "state": "selected",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "list_item_estilo_tabela_padrao",
+              "type": "list_item",
+              "text": "Estilo de tabela Padrão",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "list_item_academico",
+              "type": "list_item",
+              "text": "Acadêmico",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "list_item_mundo_azul",
+              "type": "list_item",
+              "text": "Mundo azul",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "list_item_mundo_verde",
+              "type": "list_item",
+              "text": "Mundo verde",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "list_item_mundo_escarlate",
+              "type": "list_item",
+              "text": "Mundo escarlate",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "list_item_mundo_alvorada",
+              "type": "list_item",
+              "text": "Mundo da alvorada",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "list_item_elegante",
+              "type": "list_item",
+              "text": "Elegante",
+              "actions": [
+                "onClick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "table_preview",
+          "type": "table",
+          "text": "Jan Fev Mar Soma\nNorte 6 7 8 21\nMeio 11 12 13 36\nSul 16 17 18 51\nSoma 33 36 39 108",
+          "meta": {
+            "description": "Preview of the selected table style"
+          }
+        },
+        {
+          "id": "button_ajuda",
+          "type": "button",
+          "text": "Ajuda",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "button_inserir",
+          "type": "button",
+          "text": "Inserir",
+          "state": "enabled",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "button_cancelar",
+          "type": "button",
+          "text": "Cancelar",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"window_title_bar\",\n    \"type\": \"container\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"controls\": [\n        {\"id\": \"minimize_button\", \"type\": \"button\", \"icon\": \"minimize\", \"actions\": [\"onClick\"]},\n        {\"id\": \"maximize_restore_button\", \"type\": \"button\", \"icon\": \"maximize/restore\", \"actions\": [\"onClick\"]},\n        {\"id\": \"close_button\", \"type\": \"button\", \"icon\": \"close\", \"actions\": [\"onClick\"]}\n      ]\n    }\n  },\n  {\n    \"id\": \"menu_bar\",\n    \"type\": \"menu\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"items\": [\n        {\"id\": \"menu_arquivo\", \"type\": \"menu-item\", \"text\": \"Arquivo\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_editar\", \"type\": \"menu-item\", \"text\": \"Editar\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_exibir\", \"type\": \"menu-item\", \"text\": \"Exibir\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_inserir\", \"type\": \"menu-item\", \"text\": \"Inserir\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_formatar\", \"type\": \"menu-item\", \"text\": \"Formatar\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_estilos\", \"type\": \"menu-item\", \"text\": \"Estilos\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_tabela\", \"type\": \"menu-item\", \"text\": \"Tabela\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_formulario\", \"type\": \"menu-item\", \"text\": \"Formulário\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_ferramentas\", \"type\": \"menu-item\", \"text\": \"Ferramentas\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_janela\", \"type\": \"menu-item\", \"text\": \"Janela\", \"actions\": [\"onClick\"]},\n        {\"id\": \"menu_ajuda\", \"type\": \"menu-item\", \"text\": \"Ajuda\", \"actions\": [\"onClick\"]}\n      ]\n    }\n  },\n  {\n    \"id\": \"toolbar_standard\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"items\": [\n        {\"id\": \"button_new\", \"type\": \"button\", \"icon\": \"new_document\", \"actions\": [\"onClick\"]},\n        {\"id\": \"button_open\", \"type\": \"button\", \"icon\": \"open_document\", \"actions\": [\"onClick\"]},\n        {\"id\": \"button_save\", \"type\": \"button\", \"icon\": \"save_document\", \"actions\": [\"onClick\"]},\n        {\"id\": \"button_print\", \"type\": \"button\", \"icon\": \"print\", \"actions\": [\"onClick\"]},\n        {\"id\": \"button_print_preview\", \"type\": \"button\", \"icon\": \"print_preview\", \"actions\": [\"onClick\"]},\n        {\"id\": \"button_cut\", \"type\": \"button\", \"icon\": \"cut\", \"actions\": [\"onClick\"]},\n        {\"id\": \"button"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 788,
+      "totalTokenCount": 20641,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 19198
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "PmieaYDzINbhz7IP3siFkQE"
+  },
+  "ui": null
+}

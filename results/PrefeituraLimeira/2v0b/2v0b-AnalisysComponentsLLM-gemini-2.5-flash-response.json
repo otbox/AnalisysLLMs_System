@@ -1,0 +1,572 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 42,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"header_value_total\",\n    \"type\": \"text\",\n    \"text\": \"1.408.260.768\",\n    \"region\": \"header\",\n    \"meta\": {\n      \"description\": \"Valor total exibido no cabeçalho superior esquerdo\"\n    }\n  },\n  {\n    \"id\": \"info_card_contratos\",\n    \"type\": \"info_card\",\n    \"text\": \"Contratos\",\n    \"value\": \"63.220.145,47\",\n    \"region\": \"left_sidebar_financial_data\",\n    \"meta\": {\n      \"icon\": \"building_icon\"\n    }\n  },\n  {\n    \"id\": \"info_card_total_funcionarios\",\n    \"type\": \"info_card\",\n    \"text\": \"Total de Funcionários\",\n    \"value\": \"6.913\",\n    \"region\": \"left_sidebar_financial_data\",\n    \"meta\": {\n      \"icon\": \"building_people_icon\"\n    }\n  },\n  {\n    \"id\": \"info_card_saldo_anterior_restos_a_pagar\",\n    \"type\": \"info_card\",\n    \"text\": \"Saldo Anterior - Restos a pagar\",\n    \"value\": \"54.283.278,67\",\n    \"region\": \"left_sidebar_financial_data\",\n    \"meta\": {\n      \"icon\": \"money_arrow_icon\"\n    }\n  },\n  {\n    \"id\": \"info_card_pago_exercicio_restos_a_pagar\",\n    \"type\": \"info_card\",\n    \"text\": \"Pago no Exercício referente a Restos a Pagar\",\n    \"value\": \"117.690.821,18\",\n    \"region\": \"left_sidebar_financial_data\",\n    \"meta\": {\n      \"icon\": \"money_arrow_icon\"\n    }\n  },\n  {\n    \"id\": \"info_card_investimento_saude\",\n    \"type\": \"info_card\",\n    \"text\": \"Investimento em Saúde\",\n    \"value\": \"158.881.952,91\",\n    \"region\": \"left_sidebar_financial_data\",\n    \"meta\": {\n      \"icon\": \"hospital_bed_plus_icon\"\n    }\n  },\n  {\n    \"id\": \"info_card_diarias_viagens_adiantamentos_1\",\n    \"type\": \"info_card\",\n    \"text\": \"Diárias/Viagens e Adiantamentos\",\n    \"value\": \"926.623,00\",\n    \"region\": \"left_sidebar_financial_data\",\n    \"meta\": {\n      \"icon\": \"map_pin_path_icon\"\n    }\n  },\n  {\n    \"id\": \"info_card_diarias_viagens_adiantamentos_2\",\n    \"type\": \"info_card\",\n    \"text\": \"Diárias/Viagens e Adiantamentos\",\n    \"value\": \"926.623,00\",\n    \"region\": \"left_sidebar_financial_data\",\n    \"meta\": {\n      \"icon\": \"map_pin_path_icon\"\n    }\n  },\n  {\n    \"id\": \"info_card_deposito_precatorios\",\n    \"type\": \"info_card\",\n    \"text\": \"Depósito de Precatórios\",\n    \"value\": \"45.493.014,71\",\n    \"region\": \"left_sidebar_financial_data\",\n    \"meta\": {\n      \"icon\": \"gavel_icon\"\n    }\n  },\n  {\n    \"id\": \"tab_despesa\",\n    \"type\": \"tab\",\n    \"text\": \"Despesa\",\n    \"state\": \"active\",\n    \"region\": \"left_sidebar_despesa_section\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"despesa_card_fixado_total\",\n    \"type\": \"data_card\",\n    \"text\": \"Fixado Total:\",\n    \"value\": \"1.972.234.376,60\",\n    \"region\": \"left_sidebar_despesa_section\",\n    \"meta\": {\n      \"icon\": \"building_icon\"\n    },\n    \"actions\": [\"onClick_menu\"]\n  },\n  {\n    \"id\": \"despesa_card_empenhado\",\n    \"type\": \"data_card\",\n    \"text\": \"Empenhado:\",\n    \"value\": \"1.537.142.880,92\",\n    \"region\": \"left_sidebar_despesa_section\",\n    \"meta\": {\n      \"icon\": \"building_icon\",\n      \"secondary_text\": \"Percentual empenhado sobre o total fixado:\",\n      \"secondary_value\": \"77,94%\"\n    }\n  },\n  {\n    \"id\": \"despesa_card_processado\",\n    \"type\": \"data_card\",\n    \"text\": \"Processado:\",\n    \"value\": \"1.215.329.072,17\",\n    \"region\": \"left_sidebar_despesa_section\",\n    \"meta\": {\n      \"icon\": \"building_icon\",\n      \"secondary_text\": \"Percentual processado sobre o total fixado:\",\n      \"secondary_value\": \"61,62%\"\n    }\n  },\n  {\n    \"id\": \"despesa_card_pago\",\n    \"type\": \"data_card\",\n    \"text\": \"Pago:\",\n    \"value\": \"1.121.643.655,38\",\n    \"region\": \"left_sidebar_despesa_section\",\n    \"meta\": {\n      \"icon\": \"building_icon\",\n      \"secondary_text\": \"Percentual pago sobre o total fixado:\",\n      \"secondary_value\": \"56,87%\"\n    }\n  },\n  {\n    \"id\": \"tab_estatistica_acessos\",\n    \"type\": \"tab\",\n    \"text\": \"Estatística de Acessos\",\n    \"state\": \"active\",\n    \"region\": \"left_sidebar_chart_section\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"chart_acessos_mensal\",\n    \"type\": \"bar_chart\",\n    \"text\": \"Estatística de Acessos\",\n    \"region\": \"left_sidebar_chart_section\",\n    \"meta\": {\n      \"y_axis_labels\": [\"0\", \"22.000\", \"44.000\", \"66.000\", \"88.000\", \"110.000\"],\n      \"x_axis_labels\": [\"Janeiro /2025\", \"Fevereiro /2025\", \"Março/2025\", \"Abril/2025\", \"Maio/2025\", \"Junho/2025\", \"Julho/2025\", \"Agosto /2025\", \"Setembro/2025\", \"Outubro/2025\"],\n      \"description\": \"Gráfico de barras mostrando estatísticas de acessos mensais.\"\n    },\n    \"actions\": [\"onClick_menu\"]\n  },\n  {\n    \"id\": \"link_card_administrativa\",\n    \"type\": \"link_card\",\n    \"text\": \"Administrativa\",\n    \"description\": \"Conheça a estrutura de nossas Secretarias\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"building_structure_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_formato_aberto\",\n    \"type\": \"link_card\",\n    \"text\": \"Formato aberto\",\n    \"description\": \"faça aqui o download das informações públicas que quiser\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"document_arrow_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_perguntas_frequentes\",\n    \"type\": \"link_card\",\n    \"text\": \"Perguntas frequentes\",\n    \"description\": \"respostas a perguntas mais frequentes da sociedade\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"speech_bubbles_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_facebook\",\n    \"type\": \"link_card\",\n    \"text\": \"Facebook\",\n    \"description\": \"acesse nossa página no Facebook\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"facebook_logo_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_parlamentares\",\n    \"type\": \"link_card\",\n    \"text\": \"Parlamentares\",\n    \"description\": \"Pix\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"building_columns_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_fluxograma_prestacao_contas\",\n    \"type\": \"link_card\",\n    \"text\": \"Fluxograma - Prestação de Contas\",\n    \"description\": \"Fluxograma das Prestações de Contas do Regime de Adiantamento\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"map_pin_document_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_fundeb_transparente\",\n    \"type\": \"link_card\",\n    \"text\": \"FUNDEB transparente\",\n    \"description\": \"Lei 6840-2022\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"person_money_stack_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_glossario_termos_orcamentarios\",\n    \"type\": \"link_card\",\n    \"text\": \"Glossário de termos orçamentários\",\n    \"description\": \"\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"az_book_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_jornal_oficial_municipio\",\n    \"type\": \"link_card\",\n    \"text\": \"Jornal Oficial do Município\",\n    \"description\": \"jornal oficial do município\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"newspaper_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_legislacao_municipal\",\n    \"type\": \"link_card\",\n    \"text\": \"Legislação municipal\",\n    \"description\": \"pesquise aqui a legislação municipal\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"magnifying_glass_document_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_leis_orcamentarias\",\n    \"type\": \"link_card\",\n    \"text\": \"Leis Orçamentárias\",\n    \"description\": \"PPA / LDO / LOA\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"pie_chart_money_stack_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_lei_9452_1997\",\n    \"type\": \"link_card\",\n    \"text\": \"Lei 9.452/1997\",\n    \"description\": \"Notificações de Liberação de Recursos Federais- Lei 9.452/1997\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"pie_chart_money_stack_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_licitacoes_online\",\n    \"type\": \"link_card\",\n    \"text\": \"Licitações Online\",\n    \"description\": \"Licitações Online\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"youtube_logo_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_multas_transito\",\n    \"type\": \"link_card\",\n    \"text\": \"Multas de Trânsito\",\n    \"description\": \"multas de transito\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"police_officer_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_multas_processadas\",\n    \"type\": \"link_card\",\n    \"text\": \"Multas Processadas\",\n    \"description\": \"Relatório de Multas Processadas no Município\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"document_pen_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_norma_local\",\n    \"type\": \"link_card\",\n    \"text\": \"Norma local\",\n    \"description\": \"regulamentação do acesso à informação em âmbito municipal\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"books_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_obras_municipais\",\n    \"type\": \"link_card\",\n    \"text\": \"Obras municipais\",\n    \"description\": \"acompanhe aqui o andamento de todas as obras municipais\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"person_shovel_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_ouvidoria\",\n    \"type\": \"link_card\",\n    \"text\": \"Ouvidoria\",\n    \"description\": \"informações sobre o atendimento pela Ouvidoria\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"happy_face_speech_bubble_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_pedagio_1\",\n    \"type\": \"link_card\",\n    \"text\": \"Pedágio\",\n    \"description\": \"Arrecadação x Pagamentos\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"red_toll_booth_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_pedagio_2\",\n    \"type\": \"link_card\",\n    \"text\": \"Pedágio\",\n    \"description\": \"Arrecadação de pedágio do município. Lei-5708-2016\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"red_toll_booth_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_plano_acao_siafic\",\n    \"type\": \"link_card\",\n    \"text\": \"Plano de Ação - SIAFIC\",\n    \"description\": \"Plano de Ação - SIAFIC\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"siafic_logo_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_plano_contratacoes_anual\",\n    \"type\": \"link_card\",\n    \"text\": \"Plano de contratações anual\",\n    \"description\": \"Plano de contratações anual\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"books_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_planos_gestao_planejamento_sus\",\n    \"type\": \"link_card\",\n    \"text\": \"Planos de Gestão - Planejamento do SUS\",\n    \"description\": \"Planos de Gestão - Planejamento do SUS\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"document_person_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_plano_municipal_educacao\",\n    \"type\": \"link_card\",\n    \"text\": \"Plano Municipal de Educação\",\n    \"description\": \"Plano Municipal de Educação\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"person_graduation_money_stack_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_card_plano_municipal_saude\",\n    \"type\": \"link_card\",\n    \"text\": \"Plano Municipal de Saúde\",\n    \"description\": \"acesso ao Plano Municipal de Saúde\",\n    \"region\": \"main_content_grid\",\n    \"meta\": {\n      \"icon\": \"money_stack_medical_cross_icon\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility_icon_button\",\n    \"type\": \"icon_button\",\n    \"text\": null,\n    \"region\": \"floating_right\",\n    \"meta\": {\n      \"icon\": \"blue_hand_accessibility_icon\",\n      \"description\": \"Botão de acessibilidade\"\n    },\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 4462,
+      "totalTokenCount": 8066,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 2949
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "cm2eaffBOtbhz7IP3siFkQE"
+  },
+  "ui": [
+    {
+      "id": "header_value_total",
+      "type": "text",
+      "text": "1.408.260.768",
+      "region": "header",
+      "meta": {
+        "description": "Valor total exibido no cabeçalho superior esquerdo"
+      }
+    },
+    {
+      "id": "info_card_contratos",
+      "type": "info_card",
+      "text": "Contratos",
+      "value": "63.220.145,47",
+      "region": "left_sidebar_financial_data",
+      "meta": {
+        "icon": "building_icon"
+      }
+    },
+    {
+      "id": "info_card_total_funcionarios",
+      "type": "info_card",
+      "text": "Total de Funcionários",
+      "value": "6.913",
+      "region": "left_sidebar_financial_data",
+      "meta": {
+        "icon": "building_people_icon"
+      }
+    },
+    {
+      "id": "info_card_saldo_anterior_restos_a_pagar",
+      "type": "info_card",
+      "text": "Saldo Anterior - Restos a pagar",
+      "value": "54.283.278,67",
+      "region": "left_sidebar_financial_data",
+      "meta": {
+        "icon": "money_arrow_icon"
+      }
+    },
+    {
+      "id": "info_card_pago_exercicio_restos_a_pagar",
+      "type": "info_card",
+      "text": "Pago no Exercício referente a Restos a Pagar",
+      "value": "117.690.821,18",
+      "region": "left_sidebar_financial_data",
+      "meta": {
+        "icon": "money_arrow_icon"
+      }
+    },
+    {
+      "id": "info_card_investimento_saude",
+      "type": "info_card",
+      "text": "Investimento em Saúde",
+      "value": "158.881.952,91",
+      "region": "left_sidebar_financial_data",
+      "meta": {
+        "icon": "hospital_bed_plus_icon"
+      }
+    },
+    {
+      "id": "info_card_diarias_viagens_adiantamentos_1",
+      "type": "info_card",
+      "text": "Diárias/Viagens e Adiantamentos",
+      "value": "926.623,00",
+      "region": "left_sidebar_financial_data",
+      "meta": {
+        "icon": "map_pin_path_icon"
+      }
+    },
+    {
+      "id": "info_card_diarias_viagens_adiantamentos_2",
+      "type": "info_card",
+      "text": "Diárias/Viagens e Adiantamentos",
+      "value": "926.623,00",
+      "region": "left_sidebar_financial_data",
+      "meta": {
+        "icon": "map_pin_path_icon"
+      }
+    },
+    {
+      "id": "info_card_deposito_precatorios",
+      "type": "info_card",
+      "text": "Depósito de Precatórios",
+      "value": "45.493.014,71",
+      "region": "left_sidebar_financial_data",
+      "meta": {
+        "icon": "gavel_icon"
+      }
+    },
+    {
+      "id": "tab_despesa",
+      "type": "tab",
+      "text": "Despesa",
+      "state": "active",
+      "region": "left_sidebar_despesa_section",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "despesa_card_fixado_total",
+      "type": "data_card",
+      "text": "Fixado Total:",
+      "value": "1.972.234.376,60",
+      "region": "left_sidebar_despesa_section",
+      "meta": {
+        "icon": "building_icon"
+      },
+      "actions": [
+        "onClick_menu"
+      ]
+    },
+    {
+      "id": "despesa_card_empenhado",
+      "type": "data_card",
+      "text": "Empenhado:",
+      "value": "1.537.142.880,92",
+      "region": "left_sidebar_despesa_section",
+      "meta": {
+        "icon": "building_icon",
+        "secondary_text": "Percentual empenhado sobre o total fixado:",
+        "secondary_value": "77,94%"
+      }
+    },
+    {
+      "id": "despesa_card_processado",
+      "type": "data_card",
+      "text": "Processado:",
+      "value": "1.215.329.072,17",
+      "region": "left_sidebar_despesa_section",
+      "meta": {
+        "icon": "building_icon",
+        "secondary_text": "Percentual processado sobre o total fixado:",
+        "secondary_value": "61,62%"
+      }
+    },
+    {
+      "id": "despesa_card_pago",
+      "type": "data_card",
+      "text": "Pago:",
+      "value": "1.121.643.655,38",
+      "region": "left_sidebar_despesa_section",
+      "meta": {
+        "icon": "building_icon",
+        "secondary_text": "Percentual pago sobre o total fixado:",
+        "secondary_value": "56,87%"
+      }
+    },
+    {
+      "id": "tab_estatistica_acessos",
+      "type": "tab",
+      "text": "Estatística de Acessos",
+      "state": "active",
+      "region": "left_sidebar_chart_section",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "chart_acessos_mensal",
+      "type": "bar_chart",
+      "text": "Estatística de Acessos",
+      "region": "left_sidebar_chart_section",
+      "meta": {
+        "y_axis_labels": [
+          "0",
+          "22.000",
+          "44.000",
+          "66.000",
+          "88.000",
+          "110.000"
+        ],
+        "x_axis_labels": [
+          "Janeiro /2025",
+          "Fevereiro /2025",
+          "Março/2025",
+          "Abril/2025",
+          "Maio/2025",
+          "Junho/2025",
+          "Julho/2025",
+          "Agosto /2025",
+          "Setembro/2025",
+          "Outubro/2025"
+        ],
+        "description": "Gráfico de barras mostrando estatísticas de acessos mensais."
+      },
+      "actions": [
+        "onClick_menu"
+      ]
+    },
+    {
+      "id": "link_card_administrativa",
+      "type": "link_card",
+      "text": "Administrativa",
+      "description": "Conheça a estrutura de nossas Secretarias",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "building_structure_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_formato_aberto",
+      "type": "link_card",
+      "text": "Formato aberto",
+      "description": "faça aqui o download das informações públicas que quiser",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "document_arrow_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_perguntas_frequentes",
+      "type": "link_card",
+      "text": "Perguntas frequentes",
+      "description": "respostas a perguntas mais frequentes da sociedade",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "speech_bubbles_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_facebook",
+      "type": "link_card",
+      "text": "Facebook",
+      "description": "acesse nossa página no Facebook",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "facebook_logo_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_parlamentares",
+      "type": "link_card",
+      "text": "Parlamentares",
+      "description": "Pix",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "building_columns_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_fluxograma_prestacao_contas",
+      "type": "link_card",
+      "text": "Fluxograma - Prestação de Contas",
+      "description": "Fluxograma das Prestações de Contas do Regime de Adiantamento",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "map_pin_document_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_fundeb_transparente",
+      "type": "link_card",
+      "text": "FUNDEB transparente",
+      "description": "Lei 6840-2022",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "person_money_stack_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_glossario_termos_orcamentarios",
+      "type": "link_card",
+      "text": "Glossário de termos orçamentários",
+      "description": "",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "az_book_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_jornal_oficial_municipio",
+      "type": "link_card",
+      "text": "Jornal Oficial do Município",
+      "description": "jornal oficial do município",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "newspaper_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_legislacao_municipal",
+      "type": "link_card",
+      "text": "Legislação municipal",
+      "description": "pesquise aqui a legislação municipal",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "magnifying_glass_document_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_leis_orcamentarias",
+      "type": "link_card",
+      "text": "Leis Orçamentárias",
+      "description": "PPA / LDO / LOA",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "pie_chart_money_stack_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_lei_9452_1997",
+      "type": "link_card",
+      "text": "Lei 9.452/1997",
+      "description": "Notificações de Liberação de Recursos Federais- Lei 9.452/1997",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "pie_chart_money_stack_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_licitacoes_online",
+      "type": "link_card",
+      "text": "Licitações Online",
+      "description": "Licitações Online",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "youtube_logo_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_multas_transito",
+      "type": "link_card",
+      "text": "Multas de Trânsito",
+      "description": "multas de transito",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "police_officer_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_multas_processadas",
+      "type": "link_card",
+      "text": "Multas Processadas",
+      "description": "Relatório de Multas Processadas no Município",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "document_pen_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_norma_local",
+      "type": "link_card",
+      "text": "Norma local",
+      "description": "regulamentação do acesso à informação em âmbito municipal",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "books_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_obras_municipais",
+      "type": "link_card",
+      "text": "Obras municipais",
+      "description": "acompanhe aqui o andamento de todas as obras municipais",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "person_shovel_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_ouvidoria",
+      "type": "link_card",
+      "text": "Ouvidoria",
+      "description": "informações sobre o atendimento pela Ouvidoria",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "happy_face_speech_bubble_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_pedagio_1",
+      "type": "link_card",
+      "text": "Pedágio",
+      "description": "Arrecadação x Pagamentos",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "red_toll_booth_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_pedagio_2",
+      "type": "link_card",
+      "text": "Pedágio",
+      "description": "Arrecadação de pedágio do município. Lei-5708-2016",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "red_toll_booth_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_plano_acao_siafic",
+      "type": "link_card",
+      "text": "Plano de Ação - SIAFIC",
+      "description": "Plano de Ação - SIAFIC",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "siafic_logo_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_plano_contratacoes_anual",
+      "type": "link_card",
+      "text": "Plano de contratações anual",
+      "description": "Plano de contratações anual",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "books_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_planos_gestao_planejamento_sus",
+      "type": "link_card",
+      "text": "Planos de Gestão - Planejamento do SUS",
+      "description": "Planos de Gestão - Planejamento do SUS",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "document_person_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_plano_municipal_educacao",
+      "type": "link_card",
+      "text": "Plano Municipal de Educação",
+      "description": "Plano Municipal de Educação",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "person_graduation_money_stack_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_card_plano_municipal_saude",
+      "type": "link_card",
+      "text": "Plano Municipal de Saúde",
+      "description": "acesso ao Plano Municipal de Saúde",
+      "region": "main_content_grid",
+      "meta": {
+        "icon": "money_stack_medical_cross_icon"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility_icon_button",
+      "type": "icon_button",
+      "text": null,
+      "region": "floating_right",
+      "meta": {
+        "icon": "blue_hand_accessibility_icon",
+        "description": "Botão de acessibilidade"
+      },
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1062 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 86,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"header_logo\",\n    \"type\": \"logo\",\n    \"text\": \"PREFEITURA MUNICIPAL DE LIMEIRA\",\n    \"region\": \"header\",\n    \"meta\": {\n      \"image_alt\": \"Logo da Prefeitura Municipal de Limeira\"\n    }\n  },\n  {\n    \"id\": \"header_menu_icon_left\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hamburger_menu\"\n    }\n  },\n  {\n    \"id\": \"header_dados_abertos_link\",\n    \"type\": \"link\",\n    \"text\": \"Dados Abertos\",\n    \"state\": \"enabled\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header_font_size_a_plus\",\n    \"type\": \"button\",\n    \"text\": \"A+\",\n    \"state\": \"enabled\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Aumentar tamanho da fonte\"\n    }\n  },\n  {\n    \"id\": \"header_font_size_a_default\",\n    \"type\": \"button\",\n    \"text\": \"A\",\n    \"state\": \"enabled\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Tamanho da fonte padrão\"\n    }\n  },\n  {\n    \"id\": \"header_font_size_a_minus\",\n    \"type\": \"button\",\n    \"text\": \"A-\",\n    \"state\": \"enabled\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Diminuir tamanho da fonte\"\n    }\n  },\n  {\n    \"id\": \"header_accessibility_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"accessibility_libras\",\n      \"description\": \"Ativar/Desativar modo de acessibilidade (Libras)\"\n    }\n  },\n  {\n    \"id\": \"header_menu_icon_right\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hamburger_menu\"\n    }\n  },\n  {\n    \"id\": \"header_brazilian_flag_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"brazilian_flag\",\n      \"description\": \"Idioma: Português\"\n    }\n  },\n  {\n    \"id\": \"header_etransparencia_logo\",\n    \"type\": \"logo\",\n    \"text\": \"etransparência pública\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image_alt\": \"Logo eTransparência Pública\"\n    }\n  },\n  {\n    \"id\": \"header_conam_logo\",\n    \"type\": \"logo\",\n    \"text\": \"conam\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image_alt\": \"Logo Conam\"\n    }\n  },\n  {\n    \"id\": \"lai_acesso_rapido_title\",\n    \"type\": \"section-header\",\n    \"text\": \"LAI - Acesso Rápido(...)\",\n    \"region\": \"left-column\"\n  },\n  {\n    \"id\": \"lai_acesso_rapido_close_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"close\"\n    }\n  },\n  {\n    \"id\": \"exercicio_section_header\",\n    \"type\": \"section-header\",\n    \"text\": \"Exercício\",\n    \"region\": \"left-column\"\n  },\n  {\n    \"id\": \"exercicio_menu_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hamburger_menu\"\n    }\n  },\n  {\n    \"id\": \"exercicio_button_2025\",\n    \"type\": \"button\",\n    \"text\": \"2025\",\n    \"state\": \"selected\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"exercicio_button_2024\",\n    \"type\": \"button\",\n    \"text\": \"2024\",\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"exercicio_button_2023\",\n    \"type\": \"button\",\n    \"text\": \"2023\",\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"exercicio_button_2022\",\n    \"type\": \"button\",\n    \"text\": \"2022\",\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"exercicio_button_2021\",\n    \"type\": \"button\",\n    \"text\": \"2021\",\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"exercicio_button_2020\",\n    \"type\": \"button\",\n    \"text\": \"2020\",\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"receita_section_header\",\n    \"type\": \"section-header\",\n    \"text\": \"Receita\",\n    \"region\": \"left-column\"\n  },\n  {\n    \"id\": \"receita_menu_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hamburger_menu\"\n    }\n  },\n  {\n    \"id\": \"receita_valor_previsto_label\",\n    \"type\": \"label\",\n    \"text\": \"Valor Previsto\",\n    \"region\": \"left-column\"\n  },\n  {\n    \"id\": \"receita_valor_previsto_value\",\n    \"type\": \"value-display\",\n    \"text\": \"1.999.042.000\",\n    \"region\": \"left-column\",\n    \"meta\": {\n      \"is_currency\": true,\n      \"currency_symbol\": \"R$\"\n    }\n  },\n  {\n    \"id\": \"receita_percentual_arrecadado_progress\",\n    \"type\": \"progress-bar\",\n    \"text\": \"70,45%\",\n    \"state\": \"success\",\n    \"region\": \"left-column\",\n    \"meta\": {\n      \"value\": 70.45,\n      \"unit\": \"%\"\n    }\n  },\n  {\n    \"id\": \"receita_percentual_arrecadado_label\",\n    \"type\": \"label\",\n    \"text\": \"Percentual Arrecadado sobre o Previsto\",\n    \"region\": \"left-column\"\n  },\n  {\n    \"id\": \"receita_valor_arrecadado_label\",\n    \"type\": \"label\",\n    \"text\": \"Valor Arrecadado\",\n    \"region\": \"left-column\"\n  },\n  {\n    \"id\": \"receita_valor_arrecadado_value\",\n    \"type\": \"value-display\",\n    \"text\": \"1.408.260.768\",\n    \"region\": \"left-column\",\n    \"meta\": {\n      \"is_currency\": true,\n      \"currency_symbol\": \"R$\"\n    }\n  },\n  {\n    \"id\": \"despesa_section_header\",\n    \"type\": \"section-header\",\n    \"text\": \"Despesa\",\n    \"region\": \"left-column\"\n  },\n  {\n    \"id\": \"despesa_menu_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"left-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hamburger_menu\"\n    }\n  },\n  {\n    \"id\": \"despesa_card_fixado_total\",\n    \"type\": \"card\",\n    \"text\": null,\n    \"region\": \"left-column\",\n    \"meta\": {\n      \"icon\": \"building\",\n      \"label\": \"Fixado Total:\",\n      \"value\": \"1.972.234.376,60\",\n      \"is_currency\": true\n    }\n  },\n  {\n    \"id\": \"despesa_card_empenhado\",\n    \"type\": \"card\",\n    \"text\": null,\n    \"region\": \"left-column\",\n    \"meta\": {\n      \"icon\": \"building\",\n      \"label\": \"Empenhado:\",\n      \"value\": \"1.537.142.880,92\",\n      \"is_currency\": true,\n      \"sub_label\": \"Percentual empenhado sobre o total fixado:\",\n      \"sub_value\": \"77,94%\"\n    }\n  },\n  {\n    \"id\": \"despesa_card_processado\",\n    \"type\": \"card\",\n    \"text\": null,\n    \"region\": \"left-column\",\n    \"meta\": {\n      \"icon\": \"building\",\n      \"label\": \"Processado:\",\n      \"value\": \"1.215.329.072,17\",\n      \"is_currency\": true,\n      \"sub_label\": \"Percentual processado sobre o total fixado:\",\n      \"sub_value\": \"61,62%\"\n    }\n  },\n  {\n    \"id\": \"despesa_card_pago\",\n    \"type\": \"card\",\n    \"text\": null,\n    \"region\": \"left-column\",\n    \"meta\": {\n      \"icon\": \"building\",\n      \"label\": \"Pago:\",\n      \"value\": \"1.121.643.655,38\",\n      \"is_currency\": true,\n      \"sub_label\": \"Percentual pago sobre o total fixado:\",\n      \"sub_value\": \"56,86%\"\n    }\n  },\n  {\n    \"id\": \"despesa_card_restos_a_pagar\",\n    \"type\": \"card\",\n    \"text\": null,\n    \"region\": \"left-column\",\n    \"meta\": {\n      \"icon\": \"building\",\n      \"label\": \"Restos a Pagar:\",\n      \"value\": \"416.191.224,48\",\n      \"is_currency\": true,\n      \"sub_label\": \"Percentual de Restos a Pagar sobre o total fixado:\",\n      \"sub_value\": \"21,10%\"\n    }\n  },\n  {\n    \"id\": \"whatsapp_section_header\",\n    \"type\": \"section-header\",\n    \"text\": \"WhatsApp\",\n    \"region\": \"middle-column\"\n  },\n  {\n    \"id\": \"whatsapp_menu_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"middle-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hamburger_menu\"\n    }\n  },\n  {\n    \"id\": \"whatsapp_card\",\n    \"type\": \"card\",\n    \"text\": \"WhatsApp\",\n    \"state\": \"enabled\",\n    \"region\": \"middle-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"whatsapp_logo\"\n    }\n  },\n  {\n    \"id\": \"resumo_section_header\",\n    \"type\": \"section-header\",\n    \"text\": \"Resumo\",\n    \"region\": \"middle-column\"\n  },\n  {\n    \"id\": \"resumo_menu_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"middle-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hamburger_menu\"\n    }\n  },\n  {\n    \"id\": \"resumo_item_atualizacao_portal\",\n    \"type\": \"list-item\",\n    \"text\": \"Atualização do Portal\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"refresh_clock\",\n      \"value\": \"28/10/2025 00:01:17\"\n    }\n  },\n  {\n    \"id\": \"resumo_item_investimento_educacao\",\n    \"type\": \"list-item\",\n    \"text\": \"Investimento em Educação\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"person_money\",\n      \"value\": \"262.167.334,70\",\n      \"is_currency\": true\n    }\n  },\n  {\n    \"id\": \"resumo_item_total_atendimentos_e_sic\",\n    \"type\": \"list-item\",\n    \"text\": \"Total Atendimentos e-SIC\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"info\",\n      \"value\": \"328\"\n    }\n  },\n  {\n    \"id\": \"resumo_item_total_acessos\",\n    \"type\": \"list-item\",\n    \"text\": \"Total Acessos\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"info_yellow\",\n      \"value\": \"874.470\"\n    }\n  },\n  {\n    \"id\": \"resumo_item_compras_licitacoes_contratos\",\n    \"type\": \"list-item\",\n    \"text\": \"Compras / Licitações / Contratos\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"folder\",\n      \"value\": \"63.220.145,47\",\n      \"is_currency\": true\n    }\n  },\n  {\n    \"id\": \"resumo_item_total_funcionarios\",\n    \"type\": \"list-item\",\n    \"text\": \"Total de Funcionários\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"building_people\",\n      \"value\": \"6.913\"\n    }\n  },\n  {\n    \"id\": \"resumo_item_saldo_anterior_restos_a_pagar\",\n    \"type\": \"list-item\",\n    \"text\": \"Saldo Anterior - Restos a pagar\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"money_rs\",\n      \"value\": \"54.283.278,67\",\n      \"is_currency\": true\n    }\n  },\n  {\n    \"id\": \"resumo_item_pago_exercicio_restos_a_pagar\",\n    \"type\": \"list-item\",\n    \"text\": \"Pago no Exercício referente a Restos a Pagar\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"money_rs\",\n      \"value\": \"117.690.821,18\",\n      \"is_currency\": true\n    }\n  },\n  {\n    \"id\": \"resumo_item_investimento_saude\",\n    \"type\": \"list-item\",\n    \"text\": \"Investimento em Saúde\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"medical_cross\",\n      \"value\": \"158.001.055,94\",\n      \"is_currency\": true\n    }\n  },\n  {\n    \"id\": \"resumo_item_total_servidores_ativos\",\n    \"type\": \"list-item\",\n    \"text\": \"Total de Servidores Ativos\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"building_people\",\n      \"value\": \"3.256\"\n    }\n  },\n  {\n    \"id\": \"resumo_item_total_servidores_inativos\",\n    \"type\": \"list-item\",\n    \"text\": \"Total de Servidores Inativos\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"building_people\",\n      \"value\": \"1.912\"\n    }\n  },\n  {\n    \"id\": \"resumo_item_total_pensionistas\",\n    \"type\": \"list-item\",\n    \"text\": \"Total de Pensionistas\",\n    \"region\": \"middle-column\",\n    \"meta\": {\n      \"icon\": \"building_people\",\n      \"value\": \"1.745\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_section_header\",\n    \"type\": \"section-header\",\n    \"text\": \"Acesso Rápido\",\n    \"region\": \"right-column\"\n  },\n  {\n    \"id\": \"acesso_rapido_search_input\",\n    \"type\": \"input\",\n    \"text\": null,\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"placeholder\": \"O QUE PROCURA?\",\n      \"icon\": \"magnifying_glass\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_filter_button\",\n    \"type\": \"button\",\n    \"text\": \"Filtrar\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"filter\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_atualizacao_portal\",\n    \"type\": \"card\",\n    \"text\": \"Atualização do Portal\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"refresh_clock\",\n      \"description\": \"verifique aqui se o Portal está sendo alimentado em tempo real\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_cargos_e_salarios\",\n    \"type\": \"card\",\n    \"text\": \"CARGOS E SALÁRIOS\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"books\",\n      \"description\": \"CARGOS E SALÁRIOS DE 2025\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_carta_de_servicos\",\n    \"type\": \"card\",\n    \"text\": \"Carta de Serviços\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"envelope_clock\",\n      \"description\": \"Carta de Serviços ao Cidadão\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_cardapio_merenda_escolar\",\n    \"type\": \"card\",\n    \"text\": \"Cardápio da Merenda Escolar\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"newspaper\",\n      \"description\": \"cardápio da merenda escolar\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_conselhos_municipais\",\n    \"type\": \"card\",\n    \"text\": \"Conselhos municipais\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"people_group\",\n      \"description\": \"conheça nossos conselheiros\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_compras_licitacoes\",\n    \"type\": \"card\",\n    \"text\": \"Compras/Licitações\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"folder\",\n      \"description\": \"nossas compras/nossos fornecedores\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_concursos_selecoes_publicas\",\n    \"type\": \"card\",\n    \"text\": \"Concursos e seleções públicas\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"person_document\",\n      \"description\": \"Página de divulgação de editais de concursos e seleções públicas\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_contas_publicas\",\n    \"type\": \"card\",\n    \"text\": \"Contas Públicas\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"bar_chart_rs\",\n      \"description\": \"transparência da gestão fiscal: relatórios - artigo 48 da Lei de Responsabilidade Fiscal\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_consulta_processos_online\",\n    \"type\": \"card\",\n    \"text\": \"Consulta de Processos Online\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"globe_document\",\n      \"description\": \"Processos Online\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_contratos\",\n    \"type\": \"card\",\n    \"text\": \"Contratos\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_hand_pen\",\n      \"description\": \"Contratos firmados\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_convenios\",\n    \"type\": \"card\",\n    \"text\": \"Convênios\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"handshake\",\n      \"description\": \"Convênios firmados junto a outros Órgãos Públicos\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_curriculos\",\n    \"type\": \"card\",\n    \"text\": \"Currículos\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"building_people\",\n      \"description\": \"Currículos e Portarias de Nomeações de Funcionários Comissionados\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_decretos_municipais\",\n    \"type\": \"card\",\n    \"text\": \"Decretos Municipais\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"gavel_document\",\n      \"description\": \"decretos municipais\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_decreto_despesas_diarias_viagens_adiantamentos\",\n    \"type\": \"card\",\n    \"text\": \"Decreto Despesas com diárias, viagens e adiantamentos\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"money_rs_map_pin\",\n      \"description\": \"gastos públicos com diárias e passagens\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_incentivo_cultural\",\n    \"type\": \"card\",\n    \"text\": \"Incentivo Cultural\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"building_people\",\n      \"description\": \"Declarações referentes aos exercícios de 2023 e 2024.\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_legislacao\",\n    \"type\": \"card\",\n    \"text\": \"Legislação\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_checkmark\",\n      \"description\": \"leis, decretos, portarias, resoluções, etc.\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_ouvidoria\",\n    \"type\": \"card\",\n    \"text\": \"Ouvidoria\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"info\",\n      \"description\": \"fale com a ouvidoria\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_pagamento_fornecedores\",\n    \"type\": \"card\",\n    \"text\": \"Pagamento de Fornecedores\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"refresh_clock_rs\",\n      \"description\": \"acompanhe o pagamento dos fornecedores\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_plano_cargos_salarios\",\n    \"type\": \"card\",\n    \"text\": \"Plano de Cargos e Salários\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_pen\",\n      \"description\": \"plano de cargos e salários\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_ppa\",\n    \"type\": \"card\",\n    \"text\": \"Plano Plurianual (PPA)\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Plano Plurianual (PPA)\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_ldo\",\n    \"type\": \"card\",\n    \"text\": \"Lei de Diretrizes Orçamentárias (LDO)\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Lei de Diretrizes Orçamentárias (LDO)\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_loa\",\n    \"type\": \"card\",\n    \"text\": \"Lei Orçamentária Anual (LOA)\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Lei Orçamentária Anual (LOA)\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_rgf\",\n    \"type\": \"card\",\n    \"text\": \"Relatório de Gestão Fiscal (RGF)\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Relatório de Gestão Fiscal (RGF)\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_rreo\",\n    \"type\": \"card\",\n    \"text\": \"Relatório Resumido da Execução Orçamentária (RREO)\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Relatório Resumido da Execução Orçamentária (RREO)\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_relatorios_auditoria\",\n    \"type\": \"card\",\n    \"text\": \"Relatórios de Auditoria\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Relatórios de Auditoria\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_relatorios_gestao\",\n    \"type\": \"card\",\n    \"text\": \"Relatórios de Gestão\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Relatórios de Gestão\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_relatorios_transparencia\",\n    \"type\": \"card\",\n    \"text\": \"Relatórios de Transparência\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Relatórios de Transparência\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_servicos_online\",\n    \"type\": \"card\",\n    \"text\": \"Serviços Online\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"serviços online\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_sic\",\n    \"type\": \"card\",\n    \"text\": \"SIC - Serviço de Informação ao Cidadão\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"Serviço de Informação ao Cidadão\"\n    }\n  },\n  {\n    \"id\": \"acesso_rapido_card_transparencia\",\n    \"type\": \"card\",\n    \"text\": \"Transparência\",\n    \"state\": \"enabled\",\n    \"region\": \"right-column\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"document_chart\",\n      \"description\": \"transparência\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 7910,
+      "totalTokenCount": 11637,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 3072
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "rGueab3WNs2vqtsPvry5mA8"
+  },
+  "ui": [
+    {
+      "id": "header_logo",
+      "type": "logo",
+      "text": "PREFEITURA MUNICIPAL DE LIMEIRA",
+      "region": "header",
+      "meta": {
+        "image_alt": "Logo da Prefeitura Municipal de Limeira"
+      }
+    },
+    {
+      "id": "header_menu_icon_left",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hamburger_menu"
+      }
+    },
+    {
+      "id": "header_dados_abertos_link",
+      "type": "link",
+      "text": "Dados Abertos",
+      "state": "enabled",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header_font_size_a_plus",
+      "type": "button",
+      "text": "A+",
+      "state": "enabled",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Aumentar tamanho da fonte"
+      }
+    },
+    {
+      "id": "header_font_size_a_default",
+      "type": "button",
+      "text": "A",
+      "state": "enabled",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Tamanho da fonte padrão"
+      }
+    },
+    {
+      "id": "header_font_size_a_minus",
+      "type": "button",
+      "text": "A-",
+      "state": "enabled",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Diminuir tamanho da fonte"
+      }
+    },
+    {
+      "id": "header_accessibility_icon",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "accessibility_libras",
+        "description": "Ativar/Desativar modo de acessibilidade (Libras)"
+      }
+    },
+    {
+      "id": "header_menu_icon_right",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hamburger_menu"
+      }
+    },
+    {
+      "id": "header_brazilian_flag_icon",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "brazilian_flag",
+        "description": "Idioma: Português"
+      }
+    },
+    {
+      "id": "header_etransparencia_logo",
+      "type": "logo",
+      "text": "etransparência pública",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image_alt": "Logo eTransparência Pública"
+      }
+    },
+    {
+      "id": "header_conam_logo",
+      "type": "logo",
+      "text": "conam",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image_alt": "Logo Conam"
+      }
+    },
+    {
+      "id": "lai_acesso_rapido_title",
+      "type": "section-header",
+      "text": "LAI - Acesso Rápido(...)",
+      "region": "left-column"
+    },
+    {
+      "id": "lai_acesso_rapido_close_button",
+      "type": "button",
+      "text": null,
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "close"
+      }
+    },
+    {
+      "id": "exercicio_section_header",
+      "type": "section-header",
+      "text": "Exercício",
+      "region": "left-column"
+    },
+    {
+      "id": "exercicio_menu_icon",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hamburger_menu"
+      }
+    },
+    {
+      "id": "exercicio_button_2025",
+      "type": "button",
+      "text": "2025",
+      "state": "selected",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "exercicio_button_2024",
+      "type": "button",
+      "text": "2024",
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "exercicio_button_2023",
+      "type": "button",
+      "text": "2023",
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "exercicio_button_2022",
+      "type": "button",
+      "text": "2022",
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "exercicio_button_2021",
+      "type": "button",
+      "text": "2021",
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "exercicio_button_2020",
+      "type": "button",
+      "text": "2020",
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "receita_section_header",
+      "type": "section-header",
+      "text": "Receita",
+      "region": "left-column"
+    },
+    {
+      "id": "receita_menu_icon",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hamburger_menu"
+      }
+    },
+    {
+      "id": "receita_valor_previsto_label",
+      "type": "label",
+      "text": "Valor Previsto",
+      "region": "left-column"
+    },
+    {
+      "id": "receita_valor_previsto_value",
+      "type": "value-display",
+      "text": "1.999.042.000",
+      "region": "left-column",
+      "meta": {
+        "is_currency": true,
+        "currency_symbol": "R$"
+      }
+    },
+    {
+      "id": "receita_percentual_arrecadado_progress",
+      "type": "progress-bar",
+      "text": "70,45%",
+      "state": "success",
+      "region": "left-column",
+      "meta": {
+        "value": 70.45,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "receita_percentual_arrecadado_label",
+      "type": "label",
+      "text": "Percentual Arrecadado sobre o Previsto",
+      "region": "left-column"
+    },
+    {
+      "id": "receita_valor_arrecadado_label",
+      "type": "label",
+      "text": "Valor Arrecadado",
+      "region": "left-column"
+    },
+    {
+      "id": "receita_valor_arrecadado_value",
+      "type": "value-display",
+      "text": "1.408.260.768",
+      "region": "left-column",
+      "meta": {
+        "is_currency": true,
+        "currency_symbol": "R$"
+      }
+    },
+    {
+      "id": "despesa_section_header",
+      "type": "section-header",
+      "text": "Despesa",
+      "region": "left-column"
+    },
+    {
+      "id": "despesa_menu_icon",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "left-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hamburger_menu"
+      }
+    },
+    {
+      "id": "despesa_card_fixado_total",
+      "type": "card",
+      "text": null,
+      "region": "left-column",
+      "meta": {
+        "icon": "building",
+        "label": "Fixado Total:",
+        "value": "1.972.234.376,60",
+        "is_currency": true
+      }
+    },
+    {
+      "id": "despesa_card_empenhado",
+      "type": "card",
+      "text": null,
+      "region": "left-column",
+      "meta": {
+        "icon": "building",
+        "label": "Empenhado:",
+        "value": "1.537.142.880,92",
+        "is_currency": true,
+        "sub_label": "Percentual empenhado sobre o total fixado:",
+        "sub_value": "77,94%"
+      }
+    },
+    {
+      "id": "despesa_card_processado",
+      "type": "card",
+      "text": null,
+      "region": "left-column",
+      "meta": {
+        "icon": "building",
+        "label": "Processado:",
+        "value": "1.215.329.072,17",
+        "is_currency": true,
+        "sub_label": "Percentual processado sobre o total fixado:",
+        "sub_value": "61,62%"
+      }
+    },
+    {
+      "id": "despesa_card_pago",
+      "type": "card",
+      "text": null,
+      "region": "left-column",
+      "meta": {
+        "icon": "building",
+        "label": "Pago:",
+        "value": "1.121.643.655,38",
+        "is_currency": true,
+        "sub_label": "Percentual pago sobre o total fixado:",
+        "sub_value": "56,86%"
+      }
+    },
+    {
+      "id": "despesa_card_restos_a_pagar",
+      "type": "card",
+      "text": null,
+      "region": "left-column",
+      "meta": {
+        "icon": "building",
+        "label": "Restos a Pagar:",
+        "value": "416.191.224,48",
+        "is_currency": true,
+        "sub_label": "Percentual de Restos a Pagar sobre o total fixado:",
+        "sub_value": "21,10%"
+      }
+    },
+    {
+      "id": "whatsapp_section_header",
+      "type": "section-header",
+      "text": "WhatsApp",
+      "region": "middle-column"
+    },
+    {
+      "id": "whatsapp_menu_icon",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "middle-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hamburger_menu"
+      }
+    },
+    {
+      "id": "whatsapp_card",
+      "type": "card",
+      "text": "WhatsApp",
+      "state": "enabled",
+      "region": "middle-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "whatsapp_logo"
+      }
+    },
+    {
+      "id": "resumo_section_header",
+      "type": "section-header",
+      "text": "Resumo",
+      "region": "middle-column"
+    },
+    {
+      "id": "resumo_menu_icon",
+      "type": "icon",
+      "text": null,
+      "state": "enabled",
+      "region": "middle-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hamburger_menu"
+      }
+    },
+    {
+      "id": "resumo_item_atualizacao_portal",
+      "type": "list-item",
+      "text": "Atualização do Portal",
+      "region": "middle-column",
+      "meta": {
+        "icon": "refresh_clock",
+        "value": "28/10/2025 00:01:17"
+      }
+    },
+    {
+      "id": "resumo_item_investimento_educacao",
+      "type": "list-item",
+      "text": "Investimento em Educação",
+      "region": "middle-column",
+      "meta": {
+        "icon": "person_money",
+        "value": "262.167.334,70",
+        "is_currency": true
+      }
+    },
+    {
+      "id": "resumo_item_total_atendimentos_e_sic",
+      "type": "list-item",
+      "text": "Total Atendimentos e-SIC",
+      "region": "middle-column",
+      "meta": {
+        "icon": "info",
+        "value": "328"
+      }
+    },
+    {
+      "id": "resumo_item_total_acessos",
+      "type": "list-item",
+      "text": "Total Acessos",
+      "region": "middle-column",
+      "meta": {
+        "icon": "info_yellow",
+        "value": "874.470"
+      }
+    },
+    {
+      "id": "resumo_item_compras_licitacoes_contratos",
+      "type": "list-item",
+      "text": "Compras / Licitações / Contratos",
+      "region": "middle-column",
+      "meta": {
+        "icon": "folder",
+        "value": "63.220.145,47",
+        "is_currency": true
+      }
+    },
+    {
+      "id": "resumo_item_total_funcionarios",
+      "type": "list-item",
+      "text": "Total de Funcionários",
+      "region": "middle-column",
+      "meta": {
+        "icon": "building_people",
+        "value": "6.913"
+      }
+    },
+    {
+      "id": "resumo_item_saldo_anterior_restos_a_pagar",
+      "type": "list-item",
+      "text": "Saldo Anterior - Restos a pagar",
+      "region": "middle-column",
+      "meta": {
+        "icon": "money_rs",
+        "value": "54.283.278,67",
+        "is_currency": true
+      }
+    },
+    {
+      "id": "resumo_item_pago_exercicio_restos_a_pagar",
+      "type": "list-item",
+      "text": "Pago no Exercício referente a Restos a Pagar",
+      "region": "middle-column",
+      "meta": {
+        "icon": "money_rs",
+        "value": "117.690.821,18",
+        "is_currency": true
+      }
+    },
+    {
+      "id": "resumo_item_investimento_saude",
+      "type": "list-item",
+      "text": "Investimento em Saúde",
+      "region": "middle-column",
+      "meta": {
+        "icon": "medical_cross",
+        "value": "158.001.055,94",
+        "is_currency": true
+      }
+    },
+    {
+      "id": "resumo_item_total_servidores_ativos",
+      "type": "list-item",
+      "text": "Total de Servidores Ativos",
+      "region": "middle-column",
+      "meta": {
+        "icon": "building_people",
+        "value": "3.256"
+      }
+    },
+    {
+      "id": "resumo_item_total_servidores_inativos",
+      "type": "list-item",
+      "text": "Total de Servidores Inativos",
+      "region": "middle-column",
+      "meta": {
+        "icon": "building_people",
+        "value": "1.912"
+      }
+    },
+    {
+      "id": "resumo_item_total_pensionistas",
+      "type": "list-item",
+      "text": "Total de Pensionistas",
+      "region": "middle-column",
+      "meta": {
+        "icon": "building_people",
+        "value": "1.745"
+      }
+    },
+    {
+      "id": "acesso_rapido_section_header",
+      "type": "section-header",
+      "text": "Acesso Rápido",
+      "region": "right-column"
+    },
+    {
+      "id": "acesso_rapido_search_input",
+      "type": "input",
+      "text": null,
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "placeholder": "O QUE PROCURA?",
+        "icon": "magnifying_glass"
+      }
+    },
+    {
+      "id": "acesso_rapido_filter_button",
+      "type": "button",
+      "text": "Filtrar",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "filter"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_atualizacao_portal",
+      "type": "card",
+      "text": "Atualização do Portal",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "refresh_clock",
+        "description": "verifique aqui se o Portal está sendo alimentado em tempo real"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_cargos_e_salarios",
+      "type": "card",
+      "text": "CARGOS E SALÁRIOS",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "books",
+        "description": "CARGOS E SALÁRIOS DE 2025"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_carta_de_servicos",
+      "type": "card",
+      "text": "Carta de Serviços",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "envelope_clock",
+        "description": "Carta de Serviços ao Cidadão"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_cardapio_merenda_escolar",
+      "type": "card",
+      "text": "Cardápio da Merenda Escolar",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "newspaper",
+        "description": "cardápio da merenda escolar"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_conselhos_municipais",
+      "type": "card",
+      "text": "Conselhos municipais",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "people_group",
+        "description": "conheça nossos conselheiros"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_compras_licitacoes",
+      "type": "card",
+      "text": "Compras/Licitações",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "folder",
+        "description": "nossas compras/nossos fornecedores"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_concursos_selecoes_publicas",
+      "type": "card",
+      "text": "Concursos e seleções públicas",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "person_document",
+        "description": "Página de divulgação de editais de concursos e seleções públicas"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_contas_publicas",
+      "type": "card",
+      "text": "Contas Públicas",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "bar_chart_rs",
+        "description": "transparência da gestão fiscal: relatórios - artigo 48 da Lei de Responsabilidade Fiscal"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_consulta_processos_online",
+      "type": "card",
+      "text": "Consulta de Processos Online",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "globe_document",
+        "description": "Processos Online"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_contratos",
+      "type": "card",
+      "text": "Contratos",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_hand_pen",
+        "description": "Contratos firmados"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_convenios",
+      "type": "card",
+      "text": "Convênios",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "handshake",
+        "description": "Convênios firmados junto a outros Órgãos Públicos"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_curriculos",
+      "type": "card",
+      "text": "Currículos",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "building_people",
+        "description": "Currículos e Portarias de Nomeações de Funcionários Comissionados"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_decretos_municipais",
+      "type": "card",
+      "text": "Decretos Municipais",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "gavel_document",
+        "description": "decretos municipais"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_decreto_despesas_diarias_viagens_adiantamentos",
+      "type": "card",
+      "text": "Decreto Despesas com diárias, viagens e adiantamentos",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "money_rs_map_pin",
+        "description": "gastos públicos com diárias e passagens"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_incentivo_cultural",
+      "type": "card",
+      "text": "Incentivo Cultural",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "building_people",
+        "description": "Declarações referentes aos exercícios de 2023 e 2024."
+      }
+    },
+    {
+      "id": "acesso_rapido_card_legislacao",
+      "type": "card",
+      "text": "Legislação",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_checkmark",
+        "description": "leis, decretos, portarias, resoluções, etc."
+      }
+    },
+    {
+      "id": "acesso_rapido_card_ouvidoria",
+      "type": "card",
+      "text": "Ouvidoria",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "info",
+        "description": "fale com a ouvidoria"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_pagamento_fornecedores",
+      "type": "card",
+      "text": "Pagamento de Fornecedores",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "refresh_clock_rs",
+        "description": "acompanhe o pagamento dos fornecedores"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_plano_cargos_salarios",
+      "type": "card",
+      "text": "Plano de Cargos e Salários",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_pen",
+        "description": "plano de cargos e salários"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_ppa",
+      "type": "card",
+      "text": "Plano Plurianual (PPA)",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Plano Plurianual (PPA)"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_ldo",
+      "type": "card",
+      "text": "Lei de Diretrizes Orçamentárias (LDO)",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Lei de Diretrizes Orçamentárias (LDO)"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_loa",
+      "type": "card",
+      "text": "Lei Orçamentária Anual (LOA)",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Lei Orçamentária Anual (LOA)"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_rgf",
+      "type": "card",
+      "text": "Relatório de Gestão Fiscal (RGF)",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Relatório de Gestão Fiscal (RGF)"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_rreo",
+      "type": "card",
+      "text": "Relatório Resumido da Execução Orçamentária (RREO)",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Relatório Resumido da Execução Orçamentária (RREO)"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_relatorios_auditoria",
+      "type": "card",
+      "text": "Relatórios de Auditoria",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Relatórios de Auditoria"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_relatorios_gestao",
+      "type": "card",
+      "text": "Relatórios de Gestão",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Relatórios de Gestão"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_relatorios_transparencia",
+      "type": "card",
+      "text": "Relatórios de Transparência",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Relatórios de Transparência"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_servicos_online",
+      "type": "card",
+      "text": "Serviços Online",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "serviços online"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_sic",
+      "type": "card",
+      "text": "SIC - Serviço de Informação ao Cidadão",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "Serviço de Informação ao Cidadão"
+      }
+    },
+    {
+      "id": "acesso_rapido_card_transparencia",
+      "type": "card",
+      "text": "Transparência",
+      "state": "enabled",
+      "region": "right-column",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "document_chart",
+        "description": "transparência"
+      }
+    }
+  ]
+}

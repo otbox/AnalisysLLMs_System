@@ -1,0 +1,490 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 27,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"header-logo\",\n    \"type\": \"image\",\n    \"text\": \"PREFEITURA MUNICIPAL DE LIMEIRA\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"alt\": \"Logo da Prefeitura Municipal de Limeira\"\n    }\n  },\n  {\n    \"id\": \"header-menu-button\",\n    \"type\": \"button\",\n    \"text\": \"Menu\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"hamburger\"\n    }\n  },\n  {\n    \"id\": \"dados-abertos-link\",\n    \"type\": \"link\",\n    \"text\": \"Dados Abertos\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility-increase-font\",\n    \"type\": \"button\",\n    \"text\": \"A+\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"font-size-increase\"\n    }\n  },\n  {\n    \"id\": \"accessibility-decrease-font\",\n    \"type\": \"button\",\n    \"text\": \"A-\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"font-size-decrease\"\n    }\n  },\n  {\n    \"id\": \"header-menu-button-2\",\n    \"type\": \"button\",\n    \"text\": \"Menu\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"hamburger\"\n    }\n  },\n  {\n    \"id\": \"e-transparencia-publica-button\",\n    \"type\": \"button\",\n    \"text\": \"e-transparência pública\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"brazil-flag\"\n    }\n  },\n  {\n    \"id\": \"conam-button\",\n    \"type\": \"button\",\n    \"text\": \"conam\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"conam-logo\"\n    }\n  },\n  {\n    \"id\": \"tab-lai-acesso-rapido\",\n    \"type\": \"tab\",\n    \"text\": \"LAI - Acesso Rápido(...)\",\n    \"state\": \"inactive\",\n    \"region\": \"tab-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"closable\": true\n    }\n  },\n  {\n    \"id\": \"tab-lai-obras-novo\",\n    \"type\": \"tab\",\n    \"text\": \"LAI - Obras (Novo).\",\n    \"state\": \"active\",\n    \"region\": \"tab-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"closable\": true\n    }\n  },\n  {\n    \"id\": \"section-title-lai-obras-novo\",\n    \"type\": \"label\",\n    \"text\": \"LAI - Obras (Novo).\",\n    \"region\": \"main-content-header\"\n  },\n  {\n    \"id\": \"input-obra\",\n    \"type\": \"input\",\n    \"text\": \"Obra\",\n    \"placeholder\": \"\",\n    \"state\": \"enabled\",\n    \"region\": \"filter-section\",\n    \"actions\": [\"onChange\", \"onFocus\", \"onBlur\"]\n  },\n  {\n    \"id\": \"select-ano-processo\",\n    \"type\": \"select\",\n    \"text\": \"Ano Processo\",\n    \"placeholder\": \"(Todos)\",\n    \"state\": \"enabled\",\n    \"region\": \"filter-section\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"options\": [\"(Todos)\", \"2023\", \"2022\", \"2021\", \"2020\", \"2019\", \"2018\"]\n    }\n  },\n  {\n    \"id\": \"select-situacao\",\n    \"type\": \"select\",\n    \"text\": \"Situação\",\n    \"placeholder\": \"(Todos)\",\n    \"state\": \"open\",\n    \"region\": \"filter-section\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"options\": [\n        {\"value\": \"todos\", \"text\": \"(Todos)\", \"state\": \"selected\"},\n        {\"value\": \"em-execucao\", \"text\": \"EM EXECUCAO\"},\n        {\"value\": \"nao-informada\", \"text\": \"(Não informada)\"},\n        {\"value\": \"sem-medicao\", \"text\": \"Sem medicao\"},\n        {\"value\": \"encerrado-cumprimento-integral\", \"text\": \"ENCERRADO - CUMPRIMENTO INTEGRAL\"}\n      ]\n    }\n  },\n  {\n    \"id\": \"label-ultima-atualizacao\",\n    \"type\": \"label\",\n    \"text\": \"Última Atualização\",\n    \"region\": \"filter-section\"\n  },\n  {\n    \"id\": \"display-ultima-atualizacao\",\n    \"type\": \"text-display\",\n    \"text\": \"27/10/2025 23:00:39\",\n    \"region\": \"filter-section\",\n    \"meta\": {\n      \"format\": \"datetime\"\n    }\n  },\n  {\n    \"id\": \"button-filtrar\",\n    \"type\": \"button\",\n    \"text\": \"Filtrar\",\n    \"state\": \"enabled\",\n    \"region\": \"filter-section\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"filter\"\n    }\n  },\n  {\n    \"id\": \"chart-section-title\",\n    \"type\": \"label\",\n    \"text\": \"Situação\",\n    \"region\": \"chart-section\"\n  },\n  {\n    \"id\": \"chart-section-menu-button\",\n    \"type\": \"button\",\n    \"text\": \"Menu\",\n    \"region\": \"chart-section\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"hamburger\"\n    }\n  },\n  {\n    \"id\": \"pie-chart-situacao\",\n    \"type\": \"chart\",\n    \"text\": \"Gráfico de Situação\",\n    \"region\": \"chart-section\",\n    \"meta\": {\n      \"chartType\": \"pie\",\n      \"data\": [\n        {\"label\": \"(Não informada)\", \"value\": \"unknown\"},\n        {\"label\": \"EM EXECUCAO\", \"value\": \"executing\"},\n        {\"label\": \"Sem medicao\", \"value\": \"no-measurement\"},\n        {\"label\": \"ENCERRADO - CUMPRIMENTO INTEGRAL\", \"value\": \"closed-full-compliance\"}\n      ]\n    }\n  },\n  {\n    \"id\": \"accessibility-libras-icon\",\n    \"type\": \"icon\",\n    \"text\": \"Libras\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"hands-libras\",\n      \"description\": \"Ícone de acessibilidade para Libras\"\n    }\n  },\n  {\n    \"id\": \"table-obras-title\",\n    \"type\": \"label\",\n    \"text\": \"Obras\",\n    \"region\": \"table-section\"\n  },\n  {\n    \"id\": \"table-obras-menu-button\",\n    \"type\": \"button\",\n    \"text\": \"Menu\",\n    \"region\": \"table-section\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"hamburger\"\n    }\n  },\n  {\n    \"id\": \"table-obras\",\n    \"type\": \"table\",\n    \"text\": \"Tabela de Obras\",\n    \"region\": \"table-section\",\n    \"meta\": {\n      \"headers\": [\n        {\"id\": \"nro-processo\", \"text\": \"Nro Processo\"},\n        {\"id\": \"ano\", \"text\": \"Ano\"},\n        {\"id\": \"situacao\", \"text\": \"Situação\"},\n        {\"id\": \"obra\", \"text\": \"Obra\"}\n      ],\n      \"rows\": [\n        {\"nro-processo\": {\"type\": \"link\", \"text\": \"C00001\"}, \"ano\": \"2018\", \"situacao\": \"ENCERRADO - CUMPRIMENTO INTEGRAL\", \"obra\": {\"type\": \"link\", \"text\": \"Sem descricao'\"}},\n        {\"nro-processo\": {\"type\": \"link\", \"text\": \"C00001\"}, \"ano\": \"2019\", \"situacao\": \"EM EXECUCAO\", \"obra\": {\"type\": \"link\", \"text\": \"Sem descricao'\"}},\n        {\"nro-processo\": {\"type\": \"link\", \"text\": \"C00001\"}, \"ano\": \"2020\", \"situacao\": \"ENCERRADO - CUMPRIMENTO INTEGRAL\", \"obra\": {\"type\": \"link\", \"text\": \"Sem descricao'\"}},\n        {\"nro-processo\": {\"type\": \"link\", \"text\": \"C00001\"}, \"ano\": \"2021\", \"situacao\": \"ENCERRADO - CUMPRIMENTO INTEGRAL\", \"obra\": {\"type\": \"link\", \"text\": \"Sem descricao'\"}},\n        {\"nro-processo\": {\"type\": \"link\", \"text\": \"C00001\"}, \"ano\": \"2022\", \"situacao\": \"(Não informada)\", \"obra\": {\"type\": \"link\", \"text\": \"Sem descricao'\"}},\n        {\"nro-processo\": {\"type\": \"link\", \"text\": \"C00001\"}, \"ano\": \"2023\", \"situacao\": \"(Não informada)\", \"obra\": {\"type\": \"link\", \"text\": \"Sem descricao'\"}},\n        {\"nro-processo\": {\"type\": \"link\", \"text\": \"C00002\"}, \"ano\": \"2018\", \"situacao\": \"ENCERRADO - CUMPRIMENTO INTEGRAL\", \"obra\": {\"type\": \"link\", \"text\": \"Sem descricao'\"}},\n        {\"nro-processo\": {\"type\": \"link\", \"text\": \"C00002\"}, \"ano\": \"2019\", \"situacao\": \"ENCERRADO - CUMPRIMENTO INTEGRAL\", \"obra\": {\"type\": \"link\", \"text\": \"Sem descricao'\"}}\n      ]\n    }\n  },\n  {\n    \"id\": \"detail-section-title\",\n    \"type\": \"label\",\n    \"text\": \"Detalhe\",\n    \"region\": \"detail-section\"\n  },\n  {\n    \"id\": \"detail-section-menu-button\",\n    \"type\": \"button\",\n    \"text\": \"Menu\",\n    \"region\": \"detail-section\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"hamburger\"\n    }\n  },\n  {\n    \"id\": \"detail-placeholder-text\",\n    \"type\": \"text-display\",\n    \"text\": \"Selecione um processo Licitatório\",\n    \"region\": \"detail-section\",\n    \"state\": \"empty\"\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 2734,
+      "totalTokenCount": 3767,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 378
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "umyeacWjGu6jqtsPzbeg0QQ"
+  },
+  "ui": [
+    {
+      "id": "header-logo",
+      "type": "image",
+      "text": "PREFEITURA MUNICIPAL DE LIMEIRA",
+      "region": "top-bar",
+      "meta": {
+        "alt": "Logo da Prefeitura Municipal de Limeira"
+      }
+    },
+    {
+      "id": "header-menu-button",
+      "type": "button",
+      "text": "Menu",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "hamburger"
+      }
+    },
+    {
+      "id": "dados-abertos-link",
+      "type": "link",
+      "text": "Dados Abertos",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility-increase-font",
+      "type": "button",
+      "text": "A+",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "font-size-increase"
+      }
+    },
+    {
+      "id": "accessibility-decrease-font",
+      "type": "button",
+      "text": "A-",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "font-size-decrease"
+      }
+    },
+    {
+      "id": "header-menu-button-2",
+      "type": "button",
+      "text": "Menu",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "hamburger"
+      }
+    },
+    {
+      "id": "e-transparencia-publica-button",
+      "type": "button",
+      "text": "e-transparência pública",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "brazil-flag"
+      }
+    },
+    {
+      "id": "conam-button",
+      "type": "button",
+      "text": "conam",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "conam-logo"
+      }
+    },
+    {
+      "id": "tab-lai-acesso-rapido",
+      "type": "tab",
+      "text": "LAI - Acesso Rápido(...)",
+      "state": "inactive",
+      "region": "tab-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "closable": true
+      }
+    },
+    {
+      "id": "tab-lai-obras-novo",
+      "type": "tab",
+      "text": "LAI - Obras (Novo).",
+      "state": "active",
+      "region": "tab-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "closable": true
+      }
+    },
+    {
+      "id": "section-title-lai-obras-novo",
+      "type": "label",
+      "text": "LAI - Obras (Novo).",
+      "region": "main-content-header"
+    },
+    {
+      "id": "input-obra",
+      "type": "input",
+      "text": "Obra",
+      "placeholder": "",
+      "state": "enabled",
+      "region": "filter-section",
+      "actions": [
+        "onChange",
+        "onFocus",
+        "onBlur"
+      ]
+    },
+    {
+      "id": "select-ano-processo",
+      "type": "select",
+      "text": "Ano Processo",
+      "placeholder": "(Todos)",
+      "state": "enabled",
+      "region": "filter-section",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "options": [
+          "(Todos)",
+          "2023",
+          "2022",
+          "2021",
+          "2020",
+          "2019",
+          "2018"
+        ]
+      }
+    },
+    {
+      "id": "select-situacao",
+      "type": "select",
+      "text": "Situação",
+      "placeholder": "(Todos)",
+      "state": "open",
+      "region": "filter-section",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "options": [
+          {
+            "value": "todos",
+            "text": "(Todos)",
+            "state": "selected"
+          },
+          {
+            "value": "em-execucao",
+            "text": "EM EXECUCAO"
+          },
+          {
+            "value": "nao-informada",
+            "text": "(Não informada)"
+          },
+          {
+            "value": "sem-medicao",
+            "text": "Sem medicao"
+          },
+          {
+            "value": "encerrado-cumprimento-integral",
+            "text": "ENCERRADO - CUMPRIMENTO INTEGRAL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "label-ultima-atualizacao",
+      "type": "label",
+      "text": "Última Atualização",
+      "region": "filter-section"
+    },
+    {
+      "id": "display-ultima-atualizacao",
+      "type": "text-display",
+      "text": "27/10/2025 23:00:39",
+      "region": "filter-section",
+      "meta": {
+        "format": "datetime"
+      }
+    },
+    {
+      "id": "button-filtrar",
+      "type": "button",
+      "text": "Filtrar",
+      "state": "enabled",
+      "region": "filter-section",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "filter"
+      }
+    },
+    {
+      "id": "chart-section-title",
+      "type": "label",
+      "text": "Situação",
+      "region": "chart-section"
+    },
+    {
+      "id": "chart-section-menu-button",
+      "type": "button",
+      "text": "Menu",
+      "region": "chart-section",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "hamburger"
+      }
+    },
+    {
+      "id": "pie-chart-situacao",
+      "type": "chart",
+      "text": "Gráfico de Situação",
+      "region": "chart-section",
+      "meta": {
+        "chartType": "pie",
+        "data": [
+          {
+            "label": "(Não informada)",
+            "value": "unknown"
+          },
+          {
+            "label": "EM EXECUCAO",
+            "value": "executing"
+          },
+          {
+            "label": "Sem medicao",
+            "value": "no-measurement"
+          },
+          {
+            "label": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+            "value": "closed-full-compliance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "accessibility-libras-icon",
+      "type": "icon",
+      "text": "Libras",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "hands-libras",
+        "description": "Ícone de acessibilidade para Libras"
+      }
+    },
+    {
+      "id": "table-obras-title",
+      "type": "label",
+      "text": "Obras",
+      "region": "table-section"
+    },
+    {
+      "id": "table-obras-menu-button",
+      "type": "button",
+      "text": "Menu",
+      "region": "table-section",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "hamburger"
+      }
+    },
+    {
+      "id": "table-obras",
+      "type": "table",
+      "text": "Tabela de Obras",
+      "region": "table-section",
+      "meta": {
+        "headers": [
+          {
+            "id": "nro-processo",
+            "text": "Nro Processo"
+          },
+          {
+            "id": "ano",
+            "text": "Ano"
+          },
+          {
+            "id": "situacao",
+            "text": "Situação"
+          },
+          {
+            "id": "obra",
+            "text": "Obra"
+          }
+        ],
+        "rows": [
+          {
+            "nro-processo": {
+              "type": "link",
+              "text": "C00001"
+            },
+            "ano": "2018",
+            "situacao": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+            "obra": {
+              "type": "link",
+              "text": "Sem descricao'"
+            }
+          },
+          {
+            "nro-processo": {
+              "type": "link",
+              "text": "C00001"
+            },
+            "ano": "2019",
+            "situacao": "EM EXECUCAO",
+            "obra": {
+              "type": "link",
+              "text": "Sem descricao'"
+            }
+          },
+          {
+            "nro-processo": {
+              "type": "link",
+              "text": "C00001"
+            },
+            "ano": "2020",
+            "situacao": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+            "obra": {
+              "type": "link",
+              "text": "Sem descricao'"
+            }
+          },
+          {
+            "nro-processo": {
+              "type": "link",
+              "text": "C00001"
+            },
+            "ano": "2021",
+            "situacao": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+            "obra": {
+              "type": "link",
+              "text": "Sem descricao'"
+            }
+          },
+          {
+            "nro-processo": {
+              "type": "link",
+              "text": "C00001"
+            },
+            "ano": "2022",
+            "situacao": "(Não informada)",
+            "obra": {
+              "type": "link",
+              "text": "Sem descricao'"
+            }
+          },
+          {
+            "nro-processo": {
+              "type": "link",
+              "text": "C00001"
+            },
+            "ano": "2023",
+            "situacao": "(Não informada)",
+            "obra": {
+              "type": "link",
+              "text": "Sem descricao'"
+            }
+          },
+          {
+            "nro-processo": {
+              "type": "link",
+              "text": "C00002"
+            },
+            "ano": "2018",
+            "situacao": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+            "obra": {
+              "type": "link",
+              "text": "Sem descricao'"
+            }
+          },
+          {
+            "nro-processo": {
+              "type": "link",
+              "text": "C00002"
+            },
+            "ano": "2019",
+            "situacao": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+            "obra": {
+              "type": "link",
+              "text": "Sem descricao'"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "detail-section-title",
+      "type": "label",
+      "text": "Detalhe",
+      "region": "detail-section"
+    },
+    {
+      "id": "detail-section-menu-button",
+      "type": "button",
+      "text": "Menu",
+      "region": "detail-section",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "hamburger"
+      }
+    },
+    {
+      "id": "detail-placeholder-text",
+      "type": "text-display",
+      "text": "Selecione um processo Licitatório",
+      "region": "detail-section",
+      "state": "empty"
+    }
+  ]
+}

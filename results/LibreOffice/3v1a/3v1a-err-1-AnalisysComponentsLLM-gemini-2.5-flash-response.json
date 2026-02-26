@@ -1,0 +1,42 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"window-title-bar\",\n    \"type\": \"window-bar\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"application\": \"LibreOffice Writer\",\n      \"document_name\": \"Sem título 1\"\n    }\n  },\n  {\n    \"id\": \"minimize-button\",\n    \"type\": \"button\",\n    \"text\": \"Minimizar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"maximize-restore-button\",\n    \"type\": \"button\",\n    \"text\": \"Maximizar/Restaurar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"close-button\",\n    \"type\": \"button\",\n    \"text\": \"Fechar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-arquivo\",\n    \"type\": \"menu-item\",\n    \"text\": \"Arquivo\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-editar\",\n    \"type\": \"menu-item\",\n    \"text\": \"Editar\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-exibir\",\n    \"type\": \"menu-item\",\n    \"text\": \"Exibir\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-inserir\",\n    \"type\": \"menu-item\",\n    \"text\": \"Inserir\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-formatar\",\n    \"type\": \"menu-item\",\n    \"text\": \"Formatar\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-estilos\",\n    \"type\": \"menu-item\",\n    \"text\": \"Estilos\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-tabela\",\n    \"type\": \"menu-item\",\n    \"text\": \"Tabela\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-formulario\",\n    \"type\": \"menu-item\",\n    \"text\": \"Formulário\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-ferramentas\",\n    \"type\": \"menu-item\",\n    \"text\": \"Ferramentas\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu-janela\",\n    \"type\": \"menu-item\",\n    \"text\": \"Janela\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 787,
+      "totalTokenCount": 20641,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 19199
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "Og2eacfQHoqsz7IP_pD1-QE"
+  },
+  "ui": null
+}

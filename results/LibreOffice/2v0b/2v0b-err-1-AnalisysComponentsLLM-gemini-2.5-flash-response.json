@@ -1,0 +1,436 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 4,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"application_menu_bar\",\n    \"type\": \"menu_bar\",\n    \"region\": \"top-bar\",\n    \"components\": [\n      {\n        \"id\": \"menu_arquivo\",\n        \"type\": \"menu_item\",\n        \"text\": \"Arquivo\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_editar\",\n        \"type\": \"menu_item\",\n        \"text\": \"Editar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_exibir\",\n        \"type\": \"menu_item\",\n        \"text\": \"Exibir\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_inserir\",\n        \"type\": \"menu_item\",\n        \"text\": \"Inserir\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_formatar\",\n        \"type\": \"menu_item\",\n        \"text\": \"Formatar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_estilos\",\n        \"type\": \"menu_item\",\n        \"text\": \"Estilos\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_tabela\",\n        \"type\": \"menu_item\",\n        \"text\": \"Tabela\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_formulario\",\n        \"type\": \"menu_item\",\n        \"text\": \"Formulário\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_ferramentas\",\n        \"type\": \"menu_item\",\n        \"text\": \"Ferramentas\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_janela\",\n        \"type\": \"menu_item\",\n        \"text\": \"Janela\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_ajuda\",\n        \"type\": \"menu_item\",\n        \"text\": \"Ajuda\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"application_toolbar\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"description\": \"Main application toolbar with various formatting and editing controls.\"\n    }\n  },\n  {\n    \"id\": \"modal_inserir_tabela\",\n    \"type\": \"modal\",\n    \"text\": \"Inserir tabela\",\n    \"region\": \"main-content\",\n    \"components\": [\n      {\n        \"id\": \"modal_title\",\n        \"type\": \"label\",\n        \"text\": \"Inserir tabela\",\n        \"region\": \"modal-header\"\n      },\n      {\n        \"id\": \"modal_close_button\",\n        \"type\": \"button\",\n        \"text\": \"X\",\n        \"region\": \"modal-header\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"section_geral\",\n        \"type\": \"section\",\n        \"text\": \"Geral\",\n        \"components\": [\n          {\n            \"id\": \"label_nome\",\n            \"type\": \"label\",\n            \"text\": \"Nome:\"\n          },\n          {\n            \"id\": \"input_nome_tabela\",\n            \"type\": \"input\",\n            \"text\": \"tabela1\",\n            \"state\": \"focused\",\n            \"actions\": [\"onChange\", \"onInput\"]\n          },\n          {\n            \"id\": \"label_colunas\",\n            \"type\": \"label\",\n            \"text\": \"Colunas:\"\n          },\n          {\n            \"id\": \"input_colunas\",\n            \"type\": \"number_input\",\n            \"text\": \"2\",\n            \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"]\n          },\n          {\n            \"id\": \"label_linhas\",\n            \"type\": \"label\",\n            \"text\": \"Linhas:\"\n          },\n          {\n            \"id\": \"input_linhas\",\n            \"type\": \"number_input\",\n            \"text\": \"2\",\n            \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"]\n          }\n        ]\n      },\n      {\n        \"id\": \"section_opcoes\",\n        \"type\": \"section\",\n        \"text\": \"Opções\",\n        \"components\": [\n          {\n            \"id\": \"checkbox_titulo\",\n            \"type\": \"checkbox\",\n            \"text\": \"Título\",\n            \"state\": \"unchecked\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"checkbox_repetir_linhas_titulo\",\n            \"type\": \"checkbox\",\n            \"text\": \"Repetir linhas de título nas novas páginas\",\n            \"state\": \"checked\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"label_linhas_de_titulo\",\n            \"type\": \"label\",\n            \"text\": \"Linhas de título:\",\n            \"state\": \"disabled\",\n            \"meta\": {\n              \"reason_disabled\": \"Checkbox 'Título' is unchecked\"\n            }\n          },\n          {\n            \"id\": \"input_linhas_de_titulo\",\n            \"type\": \"number_input\",\n            \"text\": \"1\",\n            \"state\": \"disabled\",\n            \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n            \"meta\": {\n              \"reason_disabled\": \"Checkbox 'Título' is unchecked\"\n            }\n          },\n          {\n            \"id\": \"checkbox_nao_dividir_tabela\",\n            \"type\": \"checkbox\",\n            \"text\": \"Não dividir tabela entre páginas\",\n            \"state\": \"unchecked\",\n            \"actions\": [\"onClick\"]\n          }\n        ]\n      },\n      {\n        \"id\": \"section_estilos\",\n        \"type\": \"section\",\n        \"text\": \"Estilos\",\n        \"components\": [\n          {\n            \"id\": \"list_estilos\",\n            \"type\": \"listbox\",\n            \"state\": \"active\",\n            \"actions\": [\"onSelect\"],\n            \"components\": [\n              {\n                \"id\": \"list_item_nenhum\",\n                \"type\": \"list_item\",\n                \"text\": \"Nenhum\",\n                \"state\": \"selected\",\n                \"actions\": [\"onClick\"]\n              },\n              {\n                \"id\": \"list_item_estilo_padrao\",\n                \"type\": \"list_item\",\n                \"text\": \"Estilo de tabela Padrão\",\n                \"state\": \"unselected\",\n                \"actions\": [\"onClick\"]\n              },\n              {\n                \"id\": \"list_item_academico\",\n                \"type\": \"list_item\",\n                \"text\": \"Acadêmico\",\n                \"state\": \"unselected\",\n                \"actions\": [\"onClick\"]\n              },\n              {\n                \"id\": \"list_item_mundo_azul\",\n                \"type\": \"list_item\",\n                \"text\": \"Mundo azul\",\n                \"state\": \"unselected\",\n                \"actions\": [\"onClick\"]\n              },\n              {\n                \"id\": \"list_item_mundo_verde\",\n                \"type\": \"list_item\",\n                \"text\": \"Mundo verde\",\n                \"state\": \"unselected\",\n                \"actions\": [\"onClick\"]\n              },\n              {\n                \"id\": \"list_item_mundo_escarlate\",\n                \"type\": \"list_item\",\n                \"text\": \"Mundo escarlate\",\n                \"state\": \"unselected\",\n                \"actions\": [\"onClick\"]\n              },\n              {\n                \"id\": \"list_item_mundo_alvorada\",\n                \"type\": \"list_item\",\n                \"text\": \"Mundo da alvorada\",\n                \"state\": \"unselected\",\n                \"actions\": [\"onClick\"]\n              },\n              {\n                \"id\": \"list_item_elegante\",\n                \"type\": \"list_item\",\n                \"text\": \"Elegante\",\n                \"state\": \"unselected\",\n                \"actions\": [\"onClick\"]\n              }\n            ]\n          },\n          {\n            \"id\": \"preview_table_estilos\",\n            \"type\": \"table\",\n            \"text\": \"Jan Fev Mar Soma Norte 6 7 8 21 Meio 11 12 13 36 Sul 16 17 18 51 Soma 33 36 39 108\",\n            \"meta\": {\n              \"description\": \"Preview of the selected table style, showing example data.\"\n            }\n          }\n        ]\n      },\n      {\n        \"id\": \"button_ajuda\",\n        \"type\": \"button\",\n        \"text\": \"Ajuda\",\n        \"region\": \"modal-footer\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"button_inserir\",\n        \"type\": \"button\",\n        \"text\": \"Inserir\",\n        \"state\": \"active\",\n        \"region\": \"modal-footer\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"button_cancelar\",\n        \"type\": \"button\",\n        \"text\": \"Cancelar\",\n        \"region\": \"modal-footer\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"status_bar\",\n    \"type\": \"status_bar\",\n    \"region\": \"footer\",\n    \"components\": [\n      {\n        \"id\": \"status_page_info\",\n        \"type\": \"label\",\n        \"text\": \"Página 1 de 1\"\n      },\n      {\n        \"id\": \"status_word_count\",\n        \"type\": \"label\",\n        \"text\": \"0 palavra\"\n      },\n      {\n        \"id\": \"status_char_count\",\n        \"type\": \"label\",\n        \"text\": \"0 caractere\"\n      },\n      {\n        \"id\": \"status_page_style\",\n        \"type\": \"label\",\n        \"text\": \"Estilo de página Padrão\"\n      },\n      {\n        \"id\": \"status_language\",\n        \"type\": \"label\",\n        \"text\": \"Português (Brasil)\"\n      }\n    ]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 2484,
+      "totalTokenCount": 3846,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 707
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "A_edaaOrF47oz7IP_YXG8AY"
+  },
+  "ui": [
+    {
+      "id": "application_menu_bar",
+      "type": "menu_bar",
+      "region": "top-bar",
+      "components": [
+        {
+          "id": "menu_arquivo",
+          "type": "menu_item",
+          "text": "Arquivo",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_editar",
+          "type": "menu_item",
+          "text": "Editar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_exibir",
+          "type": "menu_item",
+          "text": "Exibir",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_inserir",
+          "type": "menu_item",
+          "text": "Inserir",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_formatar",
+          "type": "menu_item",
+          "text": "Formatar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_estilos",
+          "type": "menu_item",
+          "text": "Estilos",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_tabela",
+          "type": "menu_item",
+          "text": "Tabela",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_formulario",
+          "type": "menu_item",
+          "text": "Formulário",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_ferramentas",
+          "type": "menu_item",
+          "text": "Ferramentas",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_janela",
+          "type": "menu_item",
+          "text": "Janela",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_ajuda",
+          "type": "menu_item",
+          "text": "Ajuda",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "application_toolbar",
+      "type": "toolbar",
+      "region": "top-bar",
+      "meta": {
+        "description": "Main application toolbar with various formatting and editing controls."
+      }
+    },
+    {
+      "id": "modal_inserir_tabela",
+      "type": "modal",
+      "text": "Inserir tabela",
+      "region": "main-content",
+      "components": [
+        {
+          "id": "modal_title",
+          "type": "label",
+          "text": "Inserir tabela",
+          "region": "modal-header"
+        },
+        {
+          "id": "modal_close_button",
+          "type": "button",
+          "text": "X",
+          "region": "modal-header",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "section_geral",
+          "type": "section",
+          "text": "Geral",
+          "components": [
+            {
+              "id": "label_nome",
+              "type": "label",
+              "text": "Nome:"
+            },
+            {
+              "id": "input_nome_tabela",
+              "type": "input",
+              "text": "tabela1",
+              "state": "focused",
+              "actions": [
+                "onChange",
+                "onInput"
+              ]
+            },
+            {
+              "id": "label_colunas",
+              "type": "label",
+              "text": "Colunas:"
+            },
+            {
+              "id": "input_colunas",
+              "type": "number_input",
+              "text": "2",
+              "actions": [
+                "onChange",
+                "onIncrement",
+                "onDecrement"
+              ]
+            },
+            {
+              "id": "label_linhas",
+              "type": "label",
+              "text": "Linhas:"
+            },
+            {
+              "id": "input_linhas",
+              "type": "number_input",
+              "text": "2",
+              "actions": [
+                "onChange",
+                "onIncrement",
+                "onDecrement"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "section_opcoes",
+          "type": "section",
+          "text": "Opções",
+          "components": [
+            {
+              "id": "checkbox_titulo",
+              "type": "checkbox",
+              "text": "Título",
+              "state": "unchecked",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "checkbox_repetir_linhas_titulo",
+              "type": "checkbox",
+              "text": "Repetir linhas de título nas novas páginas",
+              "state": "checked",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "label_linhas_de_titulo",
+              "type": "label",
+              "text": "Linhas de título:",
+              "state": "disabled",
+              "meta": {
+                "reason_disabled": "Checkbox 'Título' is unchecked"
+              }
+            },
+            {
+              "id": "input_linhas_de_titulo",
+              "type": "number_input",
+              "text": "1",
+              "state": "disabled",
+              "actions": [
+                "onChange",
+                "onIncrement",
+                "onDecrement"
+              ],
+              "meta": {
+                "reason_disabled": "Checkbox 'Título' is unchecked"
+              }
+            },
+            {
+              "id": "checkbox_nao_dividir_tabela",
+              "type": "checkbox",
+              "text": "Não dividir tabela entre páginas",
+              "state": "unchecked",
+              "actions": [
+                "onClick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "section_estilos",
+          "type": "section",
+          "text": "Estilos",
+          "components": [
+            {
+              "id": "list_estilos",
+              "type": "listbox",
+              "state": "active",
+              "actions": [
+                "onSelect"
+              ],
+              "components": [
+                {
+                  "id": "list_item_nenhum",
+                  "type": "list_item",
+                  "text": "Nenhum",
+                  "state": "selected",
+                  "actions": [
+                    "onClick"
+                  ]
+                },
+                {
+                  "id": "list_item_estilo_padrao",
+                  "type": "list_item",
+                  "text": "Estilo de tabela Padrão",
+                  "state": "unselected",
+                  "actions": [
+                    "onClick"
+                  ]
+                },
+                {
+                  "id": "list_item_academico",
+                  "type": "list_item",
+                  "text": "Acadêmico",
+                  "state": "unselected",
+                  "actions": [
+                    "onClick"
+                  ]
+                },
+                {
+                  "id": "list_item_mundo_azul",
+                  "type": "list_item",
+                  "text": "Mundo azul",
+                  "state": "unselected",
+                  "actions": [
+                    "onClick"
+                  ]
+                },
+                {
+                  "id": "list_item_mundo_verde",
+                  "type": "list_item",
+                  "text": "Mundo verde",
+                  "state": "unselected",
+                  "actions": [
+                    "onClick"
+                  ]
+                },
+                {
+                  "id": "list_item_mundo_escarlate",
+                  "type": "list_item",
+                  "text": "Mundo escarlate",
+                  "state": "unselected",
+                  "actions": [
+                    "onClick"
+                  ]
+                },
+                {
+                  "id": "list_item_mundo_alvorada",
+                  "type": "list_item",
+                  "text": "Mundo da alvorada",
+                  "state": "unselected",
+                  "actions": [
+                    "onClick"
+                  ]
+                },
+                {
+                  "id": "list_item_elegante",
+                  "type": "list_item",
+                  "text": "Elegante",
+                  "state": "unselected",
+                  "actions": [
+                    "onClick"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "preview_table_estilos",
+              "type": "table",
+              "text": "Jan Fev Mar Soma Norte 6 7 8 21 Meio 11 12 13 36 Sul 16 17 18 51 Soma 33 36 39 108",
+              "meta": {
+                "description": "Preview of the selected table style, showing example data."
+              }
+            }
+          ]
+        },
+        {
+          "id": "button_ajuda",
+          "type": "button",
+          "text": "Ajuda",
+          "region": "modal-footer",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "button_inserir",
+          "type": "button",
+          "text": "Inserir",
+          "state": "active",
+          "region": "modal-footer",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "button_cancelar",
+          "type": "button",
+          "text": "Cancelar",
+          "region": "modal-footer",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "status_bar",
+      "type": "status_bar",
+      "region": "footer",
+      "components": [
+        {
+          "id": "status_page_info",
+          "type": "label",
+          "text": "Página 1 de 1"
+        },
+        {
+          "id": "status_word_count",
+          "type": "label",
+          "text": "0 palavra"
+        },
+        {
+          "id": "status_char_count",
+          "type": "label",
+          "text": "0 caractere"
+        },
+        {
+          "id": "status_page_style",
+          "type": "label",
+          "text": "Estilo de página Padrão"
+        },
+        {
+          "id": "status_language",
+          "type": "label",
+          "text": "Português (Brasil)"
+        }
+      ]
+    }
+  ]
+}

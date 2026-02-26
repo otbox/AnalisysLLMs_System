@@ -1,0 +1,473 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 44,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"app_window_libreoffice_writer\",\n    \"type\": \"application_window\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"application_name\": \"LibreOffice Writer\",\n      \"document_title\": \"Sem título 1\"\n    }\n  },\n  {\n    \"id\": \"menu_arquivo\",\n    \"type\": \"menu_item\",\n    \"text\": \"Arquivo\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_editar\",\n    \"type\": \"menu_item\",\n    \"text\": \"Editar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_exibir\",\n    \"type\": \"menu_item\",\n    \"text\": \"Exibir\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_inserir\",\n    \"type\": \"menu_item\",\n    \"text\": \"Inserir\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_formatar\",\n    \"type\": \"menu_item\",\n    \"text\": \"Formatar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_estilos\",\n    \"type\": \"menu_item\",\n    \"text\": \"Estilos\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_tabela\",\n    \"type\": \"menu_item\",\n    \"text\": \"Tabela\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_formulario\",\n    \"type\": \"menu_item\",\n    \"text\": \"Formulário\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_ferramentas\",\n    \"type\": \"menu_item\",\n    \"text\": \"Ferramentas\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_janela\",\n    \"type\": \"menu_item\",\n    \"text\": \"Janela\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_ajuda\",\n    \"type\": \"menu_item\",\n    \"text\": \"Ajuda\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_paragraph_style\",\n    \"type\": \"dropdown\",\n    \"text\": \"Estilo de parágrafo Padrão\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"toolbar_font_family\",\n    \"type\": \"dropdown\",\n    \"text\": \"Arial\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"toolbar_font_size\",\n    \"type\": \"dropdown\",\n    \"text\": \"12 pt\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"toolbar_bold\",\n    \"type\": \"button\",\n    \"text\": \"Negrito\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"B\"\n    }\n  },\n  {\n    \"id\": \"toolbar_italic\",\n    \"type\": \"button\",\n    \"text\": \"Itálico\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"I\"\n    }\n  },\n  {\n    \"id\": \"toolbar_underline\",\n    \"type\": \"button\",\n    \"text\": \"Sublinhado\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"S\"\n    }\n  },\n  {\n    \"id\": \"document_area\",\n    \"type\": \"document_canvas\",\n    \"text\": null,\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"status\": \"empty\"\n    }\n  },\n  {\n    \"id\": \"status_bar_page_info\",\n    \"type\": \"label\",\n    \"text\": \"Página 1 de 1\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"status_bar_word_count\",\n    \"type\": \"label\",\n    \"text\": \"0 palavra, 0 caractere\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"status_bar_page_style\",\n    \"type\": \"label\",\n    \"text\": \"Estilo de página Padrão\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"status_bar_language\",\n    \"type\": \"label\",\n    \"text\": \"Português (Brasil)\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"status_bar_zoom_slider\",\n    \"type\": \"slider\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"meta\": {\n      \"min\": 20,\n      \"max\": 600,\n      \"current_value\": \"100%\"\n    },\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"modal_signature_line\",\n    \"type\": \"modal\",\n    \"text\": \"Linha de assinatura\",\n    \"region\": \"center\",\n    \"meta\": {\n      \"title\": \"Linha de assinatura\"\n    }\n  },\n  {\n    \"id\": \"modal_button_minimize\",\n    \"type\": \"button\",\n    \"text\": \"Minimizar\",\n    \"region\": \"modal_header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"minimize\"\n    }\n  },\n  {\n    \"id\": \"modal_button_maximize_restore\",\n    \"type\": \"button\",\n    \"text\": \"Maximizar/Restaurar\",\n    \"region\": \"modal_header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"maximize/restore\"\n    }\n  },\n  {\n    \"id\": \"modal_button_close\",\n    \"type\": \"button\",\n    \"text\": \"Fechar\",\n    \"region\": \"modal_header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"close\"\n    }\n  },\n  {\n    \"id\": \"modal_section_signatario_sugerido\",\n    \"type\": \"section_title\",\n    \"text\": \"Signatário sugerido\",\n    \"region\": \"modal_content\"\n  },\n  {\n    \"id\": \"label_nome\",\n    \"type\": \"label\",\n    \"text\": \"Nome:\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"for\": \"input_nome\"\n    }\n  },\n  {\n    \"id\": \"input_nome\",\n    \"type\": \"input\",\n    \"text\": \"José da Silva\",\n    \"state\": \"filled\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onInput\", \"onChange\"],\n    \"meta\": {\n      \"input_type\": \"text\"\n    }\n  },\n  {\n    \"id\": \"label_titulo\",\n    \"type\": \"label\",\n    \"text\": \"Título:\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"for\": \"input_titulo\"\n    }\n  },\n  {\n    \"id\": \"input_titulo\",\n    \"type\": \"input\",\n    \"text\": \"Diretor\",\n    \"state\": \"placeholder\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onInput\", \"onChange\"],\n    \"meta\": {\n      \"input_type\": \"text\"\n    }\n  },\n  {\n    \"id\": \"label_email\",\n    \"type\": \"label\",\n    \"text\": \"E-mail:\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"for\": \"input_email\"\n    }\n  },\n  {\n    \"id\": \"input_email\",\n    \"type\": \"input\",\n    \"text\": \"silva@exemplo.org\",\n    \"state\": \"filled\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onInput\", \"onChange\"],\n    \"meta\": {\n      \"input_type\": \"email\"\n    }\n  },\n  {\n    \"id\": \"modal_section_mais\",\n    \"type\": \"section_title\",\n    \"text\": \"Mais\",\n    \"region\": \"modal_content\"\n  },\n  {\n    \"id\": \"checkbox_anotacoes\",\n    \"type\": \"checkbox\",\n    \"text\": \"Signatário pode adicionar anotações\",\n    \"state\": \"checked\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onClick\", \"onChange\"]\n  },\n  {\n    \"id\": \"checkbox_mostrar_data\",\n    \"type\": \"checkbox\",\n    \"text\": \"Mostrar data da assinatura na linha de assinatura\",\n    \"state\": \"checked\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onClick\", \"onChange\"]\n  },\n  {\n    \"id\": \"label_instrucoes_signatario\",\n    \"type\": \"label\",\n    \"text\": \"Instruções para o signatário:\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"for\": \"textarea_instrucoes\"\n    }\n  },\n  {\n    \"id\": \"textarea_instrucoes\",\n    \"type\": \"textarea\",\n    \"text\": null,\n    \"state\": \"empty\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onInput\", \"onChange\"]\n  },\n  {\n    \"id\": \"button_ajuda\",\n    \"type\": \"button\",\n    \"text\": \"Ajuda\",\n    \"region\": \"modal_footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button_ok\",\n    \"type\": \"button\",\n    \"text\": \"OK\",\n    \"state\": \"active\",\n    \"region\": \"modal_footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"is_primary\": true\n    }\n  },\n  {\n    \"id\": \"button_cancelar\",\n    \"type\": \"button\",\n    \"text\": \"Cancelar\",\n    \"region\": \"modal_footer\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 2672,
+      "totalTokenCount": 3786,
+      "cachedContentTokenCount": 577,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 227
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 350
+        }
+      ],
+      "thoughtsTokenCount": 459
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "fmGeaYnyKqLPz7IP5KKUqA0"
+  },
+  "ui": [
+    {
+      "id": "app_window_libreoffice_writer",
+      "type": "application_window",
+      "text": "Sem título 1 — LibreOffice Writer",
+      "region": "top-bar",
+      "meta": {
+        "application_name": "LibreOffice Writer",
+        "document_title": "Sem título 1"
+      }
+    },
+    {
+      "id": "menu_arquivo",
+      "type": "menu_item",
+      "text": "Arquivo",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_editar",
+      "type": "menu_item",
+      "text": "Editar",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_exibir",
+      "type": "menu_item",
+      "text": "Exibir",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_inserir",
+      "type": "menu_item",
+      "text": "Inserir",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_formatar",
+      "type": "menu_item",
+      "text": "Formatar",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_estilos",
+      "type": "menu_item",
+      "text": "Estilos",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_tabela",
+      "type": "menu_item",
+      "text": "Tabela",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_formulario",
+      "type": "menu_item",
+      "text": "Formulário",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_ferramentas",
+      "type": "menu_item",
+      "text": "Ferramentas",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_janela",
+      "type": "menu_item",
+      "text": "Janela",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_ajuda",
+      "type": "menu_item",
+      "text": "Ajuda",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_paragraph_style",
+      "type": "dropdown",
+      "text": "Estilo de parágrafo Padrão",
+      "region": "toolbar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "toolbar_font_family",
+      "type": "dropdown",
+      "text": "Arial",
+      "region": "toolbar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "toolbar_font_size",
+      "type": "dropdown",
+      "text": "12 pt",
+      "region": "toolbar",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "toolbar_bold",
+      "type": "button",
+      "text": "Negrito",
+      "region": "toolbar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "B"
+      }
+    },
+    {
+      "id": "toolbar_italic",
+      "type": "button",
+      "text": "Itálico",
+      "region": "toolbar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "I"
+      }
+    },
+    {
+      "id": "toolbar_underline",
+      "type": "button",
+      "text": "Sublinhado",
+      "region": "toolbar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "S"
+      }
+    },
+    {
+      "id": "document_area",
+      "type": "document_canvas",
+      "text": null,
+      "region": "main-content",
+      "meta": {
+        "status": "empty"
+      }
+    },
+    {
+      "id": "status_bar_page_info",
+      "type": "label",
+      "text": "Página 1 de 1",
+      "region": "footer"
+    },
+    {
+      "id": "status_bar_word_count",
+      "type": "label",
+      "text": "0 palavra, 0 caractere",
+      "region": "footer"
+    },
+    {
+      "id": "status_bar_page_style",
+      "type": "label",
+      "text": "Estilo de página Padrão",
+      "region": "footer"
+    },
+    {
+      "id": "status_bar_language",
+      "type": "label",
+      "text": "Português (Brasil)",
+      "region": "footer"
+    },
+    {
+      "id": "status_bar_zoom_slider",
+      "type": "slider",
+      "text": null,
+      "region": "footer",
+      "meta": {
+        "min": 20,
+        "max": 600,
+        "current_value": "100%"
+      },
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "modal_signature_line",
+      "type": "modal",
+      "text": "Linha de assinatura",
+      "region": "center",
+      "meta": {
+        "title": "Linha de assinatura"
+      }
+    },
+    {
+      "id": "modal_button_minimize",
+      "type": "button",
+      "text": "Minimizar",
+      "region": "modal_header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "minimize"
+      }
+    },
+    {
+      "id": "modal_button_maximize_restore",
+      "type": "button",
+      "text": "Maximizar/Restaurar",
+      "region": "modal_header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "maximize/restore"
+      }
+    },
+    {
+      "id": "modal_button_close",
+      "type": "button",
+      "text": "Fechar",
+      "region": "modal_header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "close"
+      }
+    },
+    {
+      "id": "modal_section_signatario_sugerido",
+      "type": "section_title",
+      "text": "Signatário sugerido",
+      "region": "modal_content"
+    },
+    {
+      "id": "label_nome",
+      "type": "label",
+      "text": "Nome:",
+      "region": "modal_content",
+      "meta": {
+        "for": "input_nome"
+      }
+    },
+    {
+      "id": "input_nome",
+      "type": "input",
+      "text": "José da Silva",
+      "state": "filled",
+      "region": "modal_content",
+      "actions": [
+        "onInput",
+        "onChange"
+      ],
+      "meta": {
+        "input_type": "text"
+      }
+    },
+    {
+      "id": "label_titulo",
+      "type": "label",
+      "text": "Título:",
+      "region": "modal_content",
+      "meta": {
+        "for": "input_titulo"
+      }
+    },
+    {
+      "id": "input_titulo",
+      "type": "input",
+      "text": "Diretor",
+      "state": "placeholder",
+      "region": "modal_content",
+      "actions": [
+        "onInput",
+        "onChange"
+      ],
+      "meta": {
+        "input_type": "text"
+      }
+    },
+    {
+      "id": "label_email",
+      "type": "label",
+      "text": "E-mail:",
+      "region": "modal_content",
+      "meta": {
+        "for": "input_email"
+      }
+    },
+    {
+      "id": "input_email",
+      "type": "input",
+      "text": "silva@exemplo.org",
+      "state": "filled",
+      "region": "modal_content",
+      "actions": [
+        "onInput",
+        "onChange"
+      ],
+      "meta": {
+        "input_type": "email"
+      }
+    },
+    {
+      "id": "modal_section_mais",
+      "type": "section_title",
+      "text": "Mais",
+      "region": "modal_content"
+    },
+    {
+      "id": "checkbox_anotacoes",
+      "type": "checkbox",
+      "text": "Signatário pode adicionar anotações",
+      "state": "checked",
+      "region": "modal_content",
+      "actions": [
+        "onClick",
+        "onChange"
+      ]
+    },
+    {
+      "id": "checkbox_mostrar_data",
+      "type": "checkbox",
+      "text": "Mostrar data da assinatura na linha de assinatura",
+      "state": "checked",
+      "region": "modal_content",
+      "actions": [
+        "onClick",
+        "onChange"
+      ]
+    },
+    {
+      "id": "label_instrucoes_signatario",
+      "type": "label",
+      "text": "Instruções para o signatário:",
+      "region": "modal_content",
+      "meta": {
+        "for": "textarea_instrucoes"
+      }
+    },
+    {
+      "id": "textarea_instrucoes",
+      "type": "textarea",
+      "text": null,
+      "state": "empty",
+      "region": "modal_content",
+      "actions": [
+        "onInput",
+        "onChange"
+      ]
+    },
+    {
+      "id": "button_ajuda",
+      "type": "button",
+      "text": "Ajuda",
+      "region": "modal_footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button_ok",
+      "type": "button",
+      "text": "OK",
+      "state": "active",
+      "region": "modal_footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "is_primary": true
+      }
+    },
+    {
+      "id": "button_cancelar",
+      "type": "button",
+      "text": "Cancelar",
+      "region": "modal_footer",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

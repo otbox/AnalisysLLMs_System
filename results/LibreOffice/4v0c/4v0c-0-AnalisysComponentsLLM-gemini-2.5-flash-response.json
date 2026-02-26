@@ -1,0 +1,541 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 27,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"app-window-title-bar\",\n    \"type\": \"window-title-bar\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"appName\": \"LibreOffice Writer\",\n      \"documentName\": \"Sem título 1\"\n    }\n  },\n  {\n    \"id\": \"app-menu-bar\",\n    \"type\": \"menu-bar\",\n    \"region\": \"top-bar\",\n    \"text\": \"Menu Principal\",\n    \"meta\": {\n      \"items\": [\n        \"Arquivo\",\n        \"Editar\",\n        \"Exibir\",\n        \"Inserir\",\n        \"Formatar\",\n        \"Estilos\",\n        \"Tabela\",\n        \"Formulário\",\n        \"Ferramentas\",\n        \"Janela\",\n        \"Ajuda\"\n      ]\n    }\n  },\n  {\n    \"id\": \"app-toolbar-standard\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"items\": [\n        {\"type\": \"icon-button\", \"label\": \"Novo\"},\n        {\"type\": \"icon-button\", \"label\": \"Abrir\"},\n        {\"type\": \"icon-button\", \"label\": \"Salvar\"},\n        {\"type\": \"icon-button\", \"label\": \"Imprimir\"},\n        {\"type\": \"icon-button\", \"label\": \"Visualizar impressão\"},\n        {\"type\": \"icon-button\", \"label\": \"Recortar\"},\n        {\"type\": \"icon-button\", \"label\": \"Copiar\"},\n        {\"type\": \"icon-button\", \"label\": \"Colar\"},\n        {\"type\": \"icon-button\", \"label\": \"Desfazer\"},\n        {\"type\": \"icon-button\", \"label\": \"Refazer\"}\n      ]\n    }\n  },\n  {\n    \"id\": \"app-toolbar-formatting\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"items\": [\n        {\"id\": \"style-dropdown\", \"type\": \"select\", \"text\": \"Estilo de parágrafo Padrão\", \"actions\": [\"onChange\"]},\n        {\"id\": \"font-family-dropdown\", \"type\": \"select\", \"text\": \"Arial\", \"actions\": [\"onChange\"]},\n        {\"id\": \"font-size-dropdown\", \"type\": \"select\", \"text\": \"12 pt\", \"actions\": [\"onChange\"]},\n        {\"id\": \"bold-button\", \"type\": \"button\", \"text\": \"N\", \"meta\": {\"style\": \"bold\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"italic-button\", \"type\": \"button\", \"text\": \"I\", \"meta\": {\"style\": \"italic\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"underline-button\", \"type\": \"button\", \"text\": \"S\", \"meta\": {\"style\": \"underline\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"strikethrough-button\", \"type\": \"button\", \"text\": \"S\", \"meta\": {\"style\": \"strikethrough\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"superscript-button\", \"type\": \"button\", \"text\": \"A\", \"meta\": {\"style\": \"superscript\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"subscript-button\", \"type\": \"button\", \"text\": \"A\", \"meta\": {\"style\": \"subscript\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"font-color-button\", \"type\": \"button\", \"text\": \"A\", \"meta\": {\"action\": \"open-font-color-picker\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"highlight-color-button\", \"type\": \"button\", \"text\": \"A\", \"meta\": {\"action\": \"open-highlight-color-picker\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"clear-formatting-button\", \"type\": \"button\", \"text\": \"T\", \"meta\": {\"action\": \"clear-direct-formatting\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"align-left-button\", \"type\": \"button\", \"meta\": {\"alignment\": \"left\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"align-center-button\", \"type\": \"button\", \"meta\": {\"alignment\": \"center\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"align-right-button\", \"type\": \"button\", \"meta\": {\"alignment\": \"right\"}, \"actions\": [\"onClick\"]},\n        {\"id\": \"justify-button\", \"type\": \"button\", \"meta\": {\"alignment\": \"justify\"}, \"actions\": [\"onClick\"]}\n      ]\n    }\n  },\n  {\n    \"id\": \"app-ruler-horizontal\",\n    \"type\": \"ruler\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"orientation\": \"horizontal\"\n    }\n  },\n  {\n    \"id\": \"app-document-editor\",\n    \"type\": \"document-editor\",\n    \"region\": \"main-content\",\n    \"state\": \"inactive\"\n  },\n  {\n    \"id\": \"app-sidebar\",\n    \"type\": \"sidebar\",\n    \"region\": \"right-sidebar\",\n    \"state\": \"collapsed\",\n    \"meta\": {\n      \"icons\": [\n        {\"label\": \"Propriedades\", \"type\": \"icon\"},\n        {\"label\": \"Estilos\", \"type\": \"icon\"},\n        {\"label\": \"Galeria\", \"type\": \"icon\"},\n        {\"label\": \"Navegador\", \"type\": \"icon\"}\n      ]\n    }\n  },\n  {\n    \"id\": \"app-status-bar\",\n    \"type\": \"status-bar\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"items\": [\n        {\"type\": \"text\", \"text\": \"Página 1 de 1\"},\n        {\"type\": \"text\", \"text\": \"0 palavra, 0 caractere\"},\n        {\"type\": \"text\", \"text\": \"Estilo de página Padrão\"},\n        {\"type\": \"text\", \"text\": \"Português (Brasil)\"},\n        {\"type\": \"zoom-control\", \"text\": \"100%\", \"actions\": [\"onZoomChange\"]}\n      ]\n    }\n  },\n  {\n    \"id\": \"signature-line-modal\",\n    \"type\": \"modal\",\n    \"text\": \"Linha de assinatura\",\n    \"state\": \"active\",\n    \"region\": \"center\",\n    \"meta\": {\n      \"title\": \"Linha de assinatura\"\n    }\n  },\n  {\n    \"id\": \"modal-title-bar-close\",\n    \"type\": \"icon-button\",\n    \"text\": \"Fechar\",\n    \"region\": \"modal-title-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"modal-title-bar-maximize\",\n    \"type\": \"icon-button\",\n    \"text\": \"Maximizar\",\n    \"region\": \"modal-title-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"modal-title-bar-minimize\",\n    \"type\": \"icon-button\",\n    \"text\": \"Minimizar\",\n    \"region\": \"modal-title-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"header-signatario-sugerido\",\n    \"type\": \"header\",\n    \"text\": \"Signatário sugerido\",\n    \"region\": \"modal\"\n  },\n  {\n    \"id\": \"label-nome\",\n    \"type\": \"label\",\n    \"text\": \"Nome:\",\n    \"region\": \"modal\",\n    \"meta\": {\n      \"associatedInput\": \"input-nome\"\n    }\n  },\n  {\n    \"id\": \"input-nome\",\n    \"type\": \"input\",\n    \"text\": \"jose da silva\",\n    \"state\": \"filled\",\n    \"region\": \"modal\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"label-titulo\",\n    \"type\": \"label\",\n    \"text\": \"Título:\",\n    \"region\": \"modal\",\n    \"meta\": {\n      \"associatedInput\": \"input-titulo\"\n    }\n  },\n  {\n    \"id\": \"input-titulo\",\n    \"type\": \"input\",\n    \"text\": \"diretor\",\n    \"state\": \"filled\",\n    \"region\": \"modal\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"label-email\",\n    \"type\": \"label\",\n    \"text\": \"E-mail:\",\n    \"region\": \"modal\",\n    \"meta\": {\n      \"associatedInput\": \"input-email\"\n    }\n  },\n  {\n    \"id\": \"input-email\",\n    \"type\": \"input\",\n    \"text\": \"silva@silva.com\",\n    \"state\": \"filled, focused\",\n    \"region\": \"modal\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"header-mais\",\n    \"type\": \"header\",\n    \"text\": \"Mais\",\n    \"region\": \"modal\"\n  },\n  {\n    \"id\": \"checkbox-anotacoes\",\n    \"type\": \"checkbox\",\n    \"text\": \"Signatário pode adicionar anotações\",\n    \"state\": \"checked\",\n    \"region\": \"modal\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"checkbox-data-assinatura\",\n    \"type\": \"checkbox\",\n    \"text\": \"Mostrar data da assinatura na linha de assinatura\",\n    \"state\": \"checked\",\n    \"region\": \"modal\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"label-instrucoes\",\n    \"type\": \"label\",\n    \"text\": \"Instruções para o signatário:\",\n    \"region\": \"modal\",\n    \"meta\": {\n      \"associatedInput\": \"textarea-instrucoes\"\n    }\n  },\n  {\n    \"id\": \"textarea-instrucoes\",\n    \"type\": \"textarea\",\n    \"text\": \"\",\n    \"state\": \"empty\",\n    \"region\": \"modal\",\n    \"actions\": [\"onChange\"]\n  },\n  {\n    \"id\": \"button-ajuda\",\n    \"type\": \"button\",\n    \"text\": \"Ajuda\",\n    \"region\": \"modal-footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button-ok\",\n    \"type\": \"button\",\n    \"text\": \"OK\",\n    \"state\": \"primary\",\n    \"region\": \"modal-footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button-cancelar\",\n    \"type\": \"button\",\n    \"text\": \"Cancelar\",\n    \"region\": \"modal-footer\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 2599,
+      "totalTokenCount": 5764,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 2510
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "72GeaeoOrePPsg-WqYuADQ"
+  },
+  "ui": [
+    {
+      "id": "app-window-title-bar",
+      "type": "window-title-bar",
+      "text": "Sem título 1 — LibreOffice Writer",
+      "region": "top-bar",
+      "meta": {
+        "appName": "LibreOffice Writer",
+        "documentName": "Sem título 1"
+      }
+    },
+    {
+      "id": "app-menu-bar",
+      "type": "menu-bar",
+      "region": "top-bar",
+      "text": "Menu Principal",
+      "meta": {
+        "items": [
+          "Arquivo",
+          "Editar",
+          "Exibir",
+          "Inserir",
+          "Formatar",
+          "Estilos",
+          "Tabela",
+          "Formulário",
+          "Ferramentas",
+          "Janela",
+          "Ajuda"
+        ]
+      }
+    },
+    {
+      "id": "app-toolbar-standard",
+      "type": "toolbar",
+      "region": "top-bar",
+      "meta": {
+        "items": [
+          {
+            "type": "icon-button",
+            "label": "Novo"
+          },
+          {
+            "type": "icon-button",
+            "label": "Abrir"
+          },
+          {
+            "type": "icon-button",
+            "label": "Salvar"
+          },
+          {
+            "type": "icon-button",
+            "label": "Imprimir"
+          },
+          {
+            "type": "icon-button",
+            "label": "Visualizar impressão"
+          },
+          {
+            "type": "icon-button",
+            "label": "Recortar"
+          },
+          {
+            "type": "icon-button",
+            "label": "Copiar"
+          },
+          {
+            "type": "icon-button",
+            "label": "Colar"
+          },
+          {
+            "type": "icon-button",
+            "label": "Desfazer"
+          },
+          {
+            "type": "icon-button",
+            "label": "Refazer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-toolbar-formatting",
+      "type": "toolbar",
+      "region": "top-bar",
+      "meta": {
+        "items": [
+          {
+            "id": "style-dropdown",
+            "type": "select",
+            "text": "Estilo de parágrafo Padrão",
+            "actions": [
+              "onChange"
+            ]
+          },
+          {
+            "id": "font-family-dropdown",
+            "type": "select",
+            "text": "Arial",
+            "actions": [
+              "onChange"
+            ]
+          },
+          {
+            "id": "font-size-dropdown",
+            "type": "select",
+            "text": "12 pt",
+            "actions": [
+              "onChange"
+            ]
+          },
+          {
+            "id": "bold-button",
+            "type": "button",
+            "text": "N",
+            "meta": {
+              "style": "bold"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "italic-button",
+            "type": "button",
+            "text": "I",
+            "meta": {
+              "style": "italic"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "underline-button",
+            "type": "button",
+            "text": "S",
+            "meta": {
+              "style": "underline"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "strikethrough-button",
+            "type": "button",
+            "text": "S",
+            "meta": {
+              "style": "strikethrough"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "superscript-button",
+            "type": "button",
+            "text": "A",
+            "meta": {
+              "style": "superscript"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "subscript-button",
+            "type": "button",
+            "text": "A",
+            "meta": {
+              "style": "subscript"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "font-color-button",
+            "type": "button",
+            "text": "A",
+            "meta": {
+              "action": "open-font-color-picker"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "highlight-color-button",
+            "type": "button",
+            "text": "A",
+            "meta": {
+              "action": "open-highlight-color-picker"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "clear-formatting-button",
+            "type": "button",
+            "text": "T",
+            "meta": {
+              "action": "clear-direct-formatting"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "align-left-button",
+            "type": "button",
+            "meta": {
+              "alignment": "left"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "align-center-button",
+            "type": "button",
+            "meta": {
+              "alignment": "center"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "align-right-button",
+            "type": "button",
+            "meta": {
+              "alignment": "right"
+            },
+            "actions": [
+              "onClick"
+            ]
+          },
+          {
+            "id": "justify-button",
+            "type": "button",
+            "meta": {
+              "alignment": "justify"
+            },
+            "actions": [
+              "onClick"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-ruler-horizontal",
+      "type": "ruler",
+      "region": "main-content",
+      "meta": {
+        "orientation": "horizontal"
+      }
+    },
+    {
+      "id": "app-document-editor",
+      "type": "document-editor",
+      "region": "main-content",
+      "state": "inactive"
+    },
+    {
+      "id": "app-sidebar",
+      "type": "sidebar",
+      "region": "right-sidebar",
+      "state": "collapsed",
+      "meta": {
+        "icons": [
+          {
+            "label": "Propriedades",
+            "type": "icon"
+          },
+          {
+            "label": "Estilos",
+            "type": "icon"
+          },
+          {
+            "label": "Galeria",
+            "type": "icon"
+          },
+          {
+            "label": "Navegador",
+            "type": "icon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-status-bar",
+      "type": "status-bar",
+      "region": "footer",
+      "meta": {
+        "items": [
+          {
+            "type": "text",
+            "text": "Página 1 de 1"
+          },
+          {
+            "type": "text",
+            "text": "0 palavra, 0 caractere"
+          },
+          {
+            "type": "text",
+            "text": "Estilo de página Padrão"
+          },
+          {
+            "type": "text",
+            "text": "Português (Brasil)"
+          },
+          {
+            "type": "zoom-control",
+            "text": "100%",
+            "actions": [
+              "onZoomChange"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "signature-line-modal",
+      "type": "modal",
+      "text": "Linha de assinatura",
+      "state": "active",
+      "region": "center",
+      "meta": {
+        "title": "Linha de assinatura"
+      }
+    },
+    {
+      "id": "modal-title-bar-close",
+      "type": "icon-button",
+      "text": "Fechar",
+      "region": "modal-title-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "modal-title-bar-maximize",
+      "type": "icon-button",
+      "text": "Maximizar",
+      "region": "modal-title-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "modal-title-bar-minimize",
+      "type": "icon-button",
+      "text": "Minimizar",
+      "region": "modal-title-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "header-signatario-sugerido",
+      "type": "header",
+      "text": "Signatário sugerido",
+      "region": "modal"
+    },
+    {
+      "id": "label-nome",
+      "type": "label",
+      "text": "Nome:",
+      "region": "modal",
+      "meta": {
+        "associatedInput": "input-nome"
+      }
+    },
+    {
+      "id": "input-nome",
+      "type": "input",
+      "text": "jose da silva",
+      "state": "filled",
+      "region": "modal",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "label-titulo",
+      "type": "label",
+      "text": "Título:",
+      "region": "modal",
+      "meta": {
+        "associatedInput": "input-titulo"
+      }
+    },
+    {
+      "id": "input-titulo",
+      "type": "input",
+      "text": "diretor",
+      "state": "filled",
+      "region": "modal",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "label-email",
+      "type": "label",
+      "text": "E-mail:",
+      "region": "modal",
+      "meta": {
+        "associatedInput": "input-email"
+      }
+    },
+    {
+      "id": "input-email",
+      "type": "input",
+      "text": "silva@silva.com",
+      "state": "filled, focused",
+      "region": "modal",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "header-mais",
+      "type": "header",
+      "text": "Mais",
+      "region": "modal"
+    },
+    {
+      "id": "checkbox-anotacoes",
+      "type": "checkbox",
+      "text": "Signatário pode adicionar anotações",
+      "state": "checked",
+      "region": "modal",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "checkbox-data-assinatura",
+      "type": "checkbox",
+      "text": "Mostrar data da assinatura na linha de assinatura",
+      "state": "checked",
+      "region": "modal",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "label-instrucoes",
+      "type": "label",
+      "text": "Instruções para o signatário:",
+      "region": "modal",
+      "meta": {
+        "associatedInput": "textarea-instrucoes"
+      }
+    },
+    {
+      "id": "textarea-instrucoes",
+      "type": "textarea",
+      "text": "",
+      "state": "empty",
+      "region": "modal",
+      "actions": [
+        "onChange"
+      ]
+    },
+    {
+      "id": "button-ajuda",
+      "type": "button",
+      "text": "Ajuda",
+      "region": "modal-footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button-ok",
+      "type": "button",
+      "text": "OK",
+      "state": "primary",
+      "region": "modal-footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button-cancelar",
+      "type": "button",
+      "text": "Cancelar",
+      "region": "modal-footer",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1410 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 134,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"accessibility-contrast\",\n    \"type\": \"icon-button\",\n    \"text\": \"Contraste\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility-font-increase\",\n    \"type\": \"icon-button\",\n    \"text\": \"Aumentar Fonte\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility-font-decrease\",\n    \"type\": \"icon-button\",\n    \"text\": \"Diminuir Fonte\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility-search\",\n    \"type\": \"icon-button\",\n    \"text\": \"Pesquisar\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility-libras\",\n    \"type\": \"icon-button\",\n    \"text\": \"Libras\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility-sitemap\",\n    \"type\": \"icon-button\",\n    \"text\": \"Mapa do Site\",\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-conteudo\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o conteúdo\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-menu\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o menu\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-busca\",\n    \"type\": \"link\",\n    \"text\": \"Ir para a busca\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-para-rodape\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o rodapé\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"portal-transparencia-link\",\n    \"type\": \"link\",\n    \"text\": \"PORTAL DA TRANSPARÊNCIA\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"info-circle\"\n    }\n  },\n  {\n    \"id\": \"weather-info\",\n    \"type\": \"text\",\n    \"text\": \"34° Chuva Fraca\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"icon\": \"cloud-rain\"\n    }\n  },\n  {\n    \"id\": \"social-facebook\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"social-instagram\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"social-youtube\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"youtube\"\n    }\n  },\n  {\n    \"id\": \"social-linkedin\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"social-rss\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"rss\"\n    }\n  },\n  {\n    \"id\": \"social-fale-conosco\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"headset\"\n    }\n  },\n  {\n    \"id\": \"logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira Estado de São Paulo - Brasil\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"search-input\",\n    \"type\": \"input\",\n    \"text\": null,\n    \"placeholder\": \"Digite a sua busca\",\n    \"region\": \"header\",\n    \"actions\": [\"onSearch\"],\n    \"meta\": {\n      \"icon\": \"search\"\n    }\n  },\n  {\n    \"id\": \"em-alta-label\",\n    \"type\": \"label\",\n    \"text\": \"Em alta:\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"link-iptu-2025\",\n    \"type\": \"link\",\n    \"text\": \"IPTU 2025\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-nota-fiscal-eletronica\",\n    \"type\": \"link\",\n    \"text\": \"Nota Fiscal Eletrônica\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-licitacoes-header\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main-nav-a-prefeitura\",\n    \"type\": \"navigation-item\",\n    \"text\": \"A Prefeitura\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main-nav-secretarias\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Secretarias\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main-nav-imprensa\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Imprensa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"dropdown-imprensa-secretaria-comunicacao\",\n    \"type\": \"link\",\n    \"text\": \"Secretaria de Comunicação\",\n    \"region\": \"main-navigation-dropdown\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"dropdown-imprensa-noticias\",\n    \"type\": \"link\",\n    \"text\": \"Notícias\",\n    \"region\": \"main-navigation-dropdown\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"dropdown-imprensa-jornal-oficial\",\n    \"type\": \"link\",\n    \"text\": \"Jornal Oficial\",\n    \"region\": \"main-navigation-dropdown\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main-nav-leis-municipais\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main-nav-consultas\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Consultas\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"user-type-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"state\": \"active\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"user-type-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"state\": \"inactive\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"user-type-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"state\": \"inactive\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"user-type-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"state\": \"inactive\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"banner-dividas-prefeitura\",\n    \"type\": \"banner\",\n    \"text\": \"Não perca essa oportunidade! Dívidas com a Prefeitura? Pague com até 90% de desconto de juros e multa\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image\": \"ilustracao-dinheiro-moedas\"\n    }\n  },\n  {\n    \"id\": \"button-saiba-mais-dividas\",\n    \"type\": \"button\",\n    \"text\": \"Saiba mais\",\n    \"region\": \"banner\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"quick-access-title\",\n    \"type\": \"label\",\n    \"text\": \"Acesso Rápido\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"link-mais-servicos\",\n    \"type\": \"link\",\n    \"text\": \"Mais serviços\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow-right\"\n    }\n  },\n  {\n    \"id\": \"quick-access-limeira-digital\",\n    \"type\": \"link\",\n    \"text\": \"Limeira Digital\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"desktop\"\n    }\n  },\n  {\n    \"id\": \"quick-access-agenda-eventos\",\n    \"type\": \"link\",\n    \"text\": \"Agenda de Eventos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"calendar\"\n    }\n  },\n  {\n    \"id\": \"quick-access-medicamentos\",\n    \"type\": \"link\",\n    \"text\": \"Medicamentos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"plus-circle\"\n    }\n  },\n  {\n    \"id\": \"quick-access-vacinacao\",\n    \"type\": \"link\",\n    \"text\": \"Vacinação\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"syringe\"\n    }\n  },\n  {\n    \"id\": \"quick-access-iptu-divida-mobiliario\",\n    \"type\": \"link\",\n    \"text\": \"IPTU e Dívida Ativa/Mobiliário\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"home\"\n    }\n  },\n  {\n    \"id\": \"quick-access-consulta-processos\",\n    \"type\": \"link\",\n    \"text\": \"Consulta de Processos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"search\"\n    }\n  },\n  {\n    \"id\": \"quick-access-agenda-facil-saude\",\n    \"type\": \"link\",\n    \"text\": \"Agenda Fácil Saúde\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"calendar-check\"\n    }\n  },\n  {\n    \"id\": \"quick-access-multas-transito\",\n    \"type\": \"link\",\n    \"text\": \"Multas de Trânsito\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"dollar-sign\"\n    }\n  },\n  {\n    \"id\": \"quick-access-castra-mais\",\n    \"type\": \"link\",\n    \"text\": \"Castra +\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"paw\"\n    }\n  },\n  {\n    \"id\": \"card-limeirense-voz\",\n    \"type\": \"card\",\n    \"text\": \"Limeirense, aqui você tem voz! Nossa central de atendimento ao cidadão está pronta para receber sua participação nos assuntos cotidianos do município.\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image\": \"app-156-limeira\"\n    }\n  },\n  {\n    \"id\": \"button-acesse-aqui-limeirense-voz\",\n    \"type\": \"button\",\n    \"text\": \"Acesse aqui\",\n    \"region\": \"card-limeirense-voz\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"main-news-article\",\n    \"type\": \"card\",\n    \"text\": \"Ação inclusiva garante acesso à mamografia para mulheres com deficiência em Limeira\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image\": \"mamografia-mulheres-deficiencia\",\n      \"description\": \"Exames podem ser feitos na Policlínica, dia (23), sem necessidade de agendamento\",\n      \"time_elapsed\": \"Há 23 horas\",\n      \"share_icon\": true,\n      \"gallery_thumbnails\": [\"image1\", \"image2\", \"image3\", \"image4\", \"image5\"]\n    }\n  },\n  {\n    \"id\": \"lia-chat-banner\",\n    \"type\": \"banner\",\n    \"text\": \"o chat inteligente da Prefeitura de Limeira\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image\": \"ilustracao-lia-chatbot\"\n    }\n  },\n  {\n    \"id\": \"button-falar-com-lia\",\n    \"type\": \"button\",\n    \"text\": \"Clique aqui para falar com a Lia\",\n    \"region\": \"lia-chat-banner\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"acontece-em-limeira-title\",\n    \"type\": \"label\",\n    \"text\": \"Acontece em Limeira\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"select-categoria-acontece\",\n    \"type\": \"select\",\n    \"text\": \"Selecionar categoria\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"icon\": \"arrow-down\"\n    }\n  },\n  {\n    \"id\": \"button-ver-todos-acontece\",\n    \"type\": \"button\",\n    \"text\": \"Ver todos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow-right\"\n    }\n  },\n  {\n    \"id\": \"news-item-banda-henrique-marques\",\n    \"type\": \"card\",\n    \"text\": \"Banda Henrique Marques toca especiais da Disney para comemorar mês das crianças no domingo na Praça Toledo Barros\",\n    \"region\": \"main-content-news\",\n    \"meta\": {\n      \"category\": \"Cultura\",\n      \"time_elapsed\": \"há 6 horas\",\n      \"image\": \"banda-henrique-marques\",\n      \"share_icon\": true\n    }\n  },\n  {\n    \"id\": \"news-item-operacao-so-cacareco\",\n    \"type\": \"card\",\n    \"text\": \"Operação Só Cacareco percorrerá 15 bairros na próxima semana; veja quais áreas serão atendidas\",\n    \"region\": \"main-content-news\",\n    \"meta\": {\n      \"category\": \"Geral\",\n      \"description\": \"Materiais inservíveis serão recolhidos e devem ser colocados na calçada no dia anterior\",\n      \"time_elapsed\": \"há 59 minutos\",\n      \"image\": \"operacao-cacareco\",\n      \"share_icon\": true\n    }\n  },\n  {\n    \"id\": \"news-item-banda-limeirense-eu-a-veia\",\n    \"type\": \"card\",\n    \"text\": \"Banda limeirense “Eu, a Véia e os Caras” lança EP “fissuras” no dia 21 de outubro\",\n    \"region\": \"main-content-news\",\n    \"meta\": {\n      \"category\": \"Cultura\",\n      \"time_elapsed\": \"há 6 horas\",\n      \"image\": \"banda-eu-a-veia-e-os-caras\",\n      \"share_icon\": true\n    }\n  },\n  {\n    \"id\": \"news-item-espetaculo-infantil\",\n    \"type\": \"card\",\n    \"text\": \"Espetáculo infantil “A Biblioteca Mágica e os Sentimentos” tem apresentações gratuitas\",\n    \"region\": \"main-content-news\",\n    \"meta\": {\n      \"category\": \"Cultura\",\n      \"time_elapsed\": \"há 6 horas\",\n      \"image\": \"espetaculo-infantil\",\n      \"share_icon\": true\n    }\n  },\n  {\n    \"id\": \"news-item-limeira-aumento-vacinacao\",\n    \"type\": \"card\",\n    \"text\": \"Limeira registra aumento de 33% nas vacinas aplicadas em 2025 e consolida avanço na imunização\",\n    \"region\": \"main-content-news\",\n    \"meta\": {\n      \"category\": \"Geral\",\n      \"time_elapsed\": \"há 3 horas\",\n      \"image\": \"vacinacao-limeira\",\n      \"share_icon\": true\n    }\n  },\n  {\n    \"id\": \"news-item-prefeitura-alerta-golpe\",\n    \"type\": \"card\",\n    \"text\": \"Prefeitura alerta sobre possível golpe envolvendo cadastro habitacional em Limeira\",\n    \"region\": \"main-content-news\",\n    \"meta\": {\n      \"category\": \"Geral\",\n      \"time_elapsed\": \"há 22 horas\",\n      \"image\": \"alerta-golpe\",\n      \"share_icon\": true\n    }\n  },\n  {\n    \"id\": \"servicos-title\",\n    \"type\": \"label\",\n    \"text\": \"Serviços\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"servico-certidoes\",\n    \"type\": \"link\",\n    \"text\": \"Certidões\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"star\"\n    }\n  },\n  {\n    \"id\": \"servico-refis-2025\",\n    \"type\": \"link\",\n    \"text\": \"Refis 2025\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"file-alt\"\n    }\n  },\n  {\n    \"id\": \"servico-leis-orcamentarias\",\n    \"type\": \"link\",\n    \"text\": \"Leis Orçamentárias\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"balance-scale\"\n    }\n  },\n  {\n    \"id\": \"servico-limeira-geo\",\n    \"type\": \"link\",\n    \"text\": \"LIMEIRA GEO\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"map-marker-alt\"\n    }\n  },\n  {\n    \"id\": \"servico-parcelamento-online\",\n    \"type\": \"link\",\n    \"text\": \"Parcelamento Online\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"credit-card\"\n    }\n  },\n  {\n    \"id\": \"servico-licitacoes\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"gavel\"\n    }\n  },\n  {\n    \"id\": \"servico-plano-diretor\",\n    \"type\": \"link\",\n    \"text\": \"Plano Diretor 2025-2035\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"map\"\n    }\n  },\n  {\n    \"id\": \"servico-dengue\",\n    \"type\": \"link\",\n    \"text\": \"Dengue\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"bug\"\n    }\n  },\n  {\n    \"id\": \"servico-vagas-pat\",\n    \"type\": \"link\",\n    \"text\": \"Vagas do PAT\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"briefcase\"\n    }\n  },\n  {\n    \"id\": \"servico-convenios-bnds\",\n    \"type\": \"link\",\n    \"text\": \"Convênios BNDS\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"handshake\"\n    }\n  },\n  {\n    \"id\": \"servico-vagas-creche\",\n    \"type\": \"link\",\n    \"text\": \"Vagas em creche\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"smile\"\n    }\n  },\n  {\n    \"id\": \"servico-posicao-fila-exames\",\n    \"type\": \"link\",\n    \"text\": \"Posição Fila (exames consultas)\",\n    \"region\": \"main-content-services\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"shoe-prints\"\n    }\n  },\n  {\n    \"id\": \"as-mais-lidas-title\",\n    \"type\": \"label\",\n    \"text\": \"As mais lidas da semana\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"most-read-item-1\",\n    \"type\": \"list-item\",\n    \"text\": \"Mês dos Animais: alunos participam de trilha e simulam resgate de animais\",\n    \"region\": \"main-content-most-read\",\n    \"meta\": {\n      \"number\": 1\n    }\n  },\n  {\n    \"id\": \"most-read-item-2\",\n    \"type\": \"list-item\",\n    \"text\": \"Banda Henrique Marques toca especiais da Disney para comemorar mês das crianças no domingo na Praça Toledo Barros\",\n    \"region\": \"main-content-most-read\",\n    \"meta\": {\n      \"number\": 2\n    }\n  },\n  {\n    \"id\": \"most-read-item-3\",\n    \"type\": \"list-item\",\n    \"text\": \"Espetáculo infantil “A Biblioteca Mágica e os Sentimentos” tem apresentações gratuitas\",\n    \"region\": \"main-content-most-read\",\n    \"meta\": {\n      \"number\": 3\n    }\n  },\n  {\n    \"id\": \"most-read-item-4\",\n    \"type\": \"list-item\",\n    \"text\": \"Banda limeirense “Eu, a Véia e os Caras” lança EP “fissuras” no dia 21 de outubro\",\n    \"region\": \"main-content-most-read\",\n    \"meta\": {\n      \"number\": 4\n    }\n  },\n  {\n    \"id\": \"most-read-item-5\",\n    \"type\": \"list-item\",\n    \"text\": \"Prefeitura alerta sobre possível golpe envolvendo cadastro habitacional em Limeira\",\n    \"region\": \"main-content-most-read\",\n    \"meta\": {\n      \"number\": 5\n    }\n  },\n  {\n    \"id\": \"most-read-item-6\",\n    \"type\": \"list-item\",\n    \"text\": \"Ruas do Jardim Ipiranga terão sentido único a partir de segunda-feira (20)\",\n    \"region\": \"main-content-most-read\",\n    \"meta\": {\n      \"number\": 6\n    }\n  },\n  {\n    \"id\": \"most-read-item-7\",\n    \"type\": \"list-item\",\n    \"text\": \"Ceprosom é referência no Congresso Nacional de Vigilância Socioassistencial\",\n    \"region\": \"main-content-most-read\",\n    \"meta\": {\n      \"number\": 7\n    }\n  },\n  {\n    \"id\": \"most-read-item-8\",\n    \"type\": \"list-item\",\n    \"text\": \"Ação inclusiva garante acesso à mamografia para mulheres com deficiência em Limeira\",\n    \"region\": \"main-content-most-read\",\n    \"meta\": {\n      \"number\": 8\n    }\n  },\n  {\n    \"id\": \"vagas-emprego-title\",\n    \"type\": \"label\",\n    \"text\": \"Vagas de Emprego\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"button-ver-todos-vagas\",\n    \"type\": \"button\",\n    \"text\": \"Ver todos\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow-right\"\n    }\n  },\n  {\n    \"id\": \"vaga-pat-limeira-description\",\n    \"type\": \"text\",\n    \"text\": \"O PAT Limeira tem a vaga ideal para dar um upgrade na sua trajetória profissional. Confira as oportunidades:\",\n    \"region\": \"main-content-jobs\"\n  },\n  {\n    \"id\": \"job-vaga-consultor-vendas\",\n    \"type\": \"card\",\n    \"text\": \"VAGA PARA: CONSULTOR DE VENDAS MTE ACEITA PcD\",\n    \"region\": \"main-content-jobs\",\n    \"meta\": {\n      \"escolaridade\": \"Ensino Médio\"\n    }\n  },\n  {\n    \"id\": \"job-vaga-pedreiro\",\n    \"type\": \"card\",\n    \"text\": \"VAGA PARA: PEDREIRO MTE\",\n    \"region\": \"main-content-jobs\",\n    \"meta\": {\n      \"escolaridade\": \"Ensino Fundamental Incompleto\"\n    }\n  },\n  {\n    \"id\": \"job-vaga-ajudante-geral\",\n    \"type\": \"card\",\n    \"text\": \"VAGA PARA: AJUDANTE GERAL II MTE\",\n    \"region\": \"main-content-jobs\",\n    \"meta\": {\n      \"escolaridade\": \"Ensino Médio Incompleto\"\n    }\n  },\n  {\n    \"id\": \"job-vaga-atendente-mte\",\n    \"type\": \"card\",\n    \"text\": \"VAGA PARA: ATENDENTE MTE VAGA TEMPORÁRIA\",\n    \"region\": \"main-content-jobs\",\n    \"meta\": {\n      \"escolaridade\": \"Ensino Fundamental\"\n    }\n  },\n  {\n    \"id\": \"job-vaga-cozinheiro\",\n    \"type\": \"card\",\n    \"text\": \"VAGA PARA: COZINHEIRO MTE ACEITA PcD\",\n    \"region\": \"main-content-jobs\",\n    \"meta\": {\n      \"escolaridade\": \"Ensino Fundamental\"\n    }\n  },\n  {\n    \"id\": \"job-vaga-assistente-casa-lar\",\n    \"type\": \"card\",\n    \"text\": \"VAGA PARA: ASSISTENTE DE CASA LAR MTE ACEITA PcD\",\n    \"region\": \"main-content-jobs\",\n    \"meta\": {\n      \"escolaridade\": \"Ensino Médio\"\n    }\n  },\n  {\n    \"id\": \"historias-title\",\n    \"type\": \"label\",\n    \"text\": \"Histórias\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"historias-description\",\n    \"type\": \"text\",\n    \"text\": \"Vídeos curtinhos para você acompanhar o dia a dia de Limeira.\",\n    \"region\": \"main-content-stories\"\n  },\n  {\n    \"id\": \"stories-carousel\",\n    \"type\": \"carousel\",\n    \"text\": null,\n    \"region\": \"main-content-stories\",\n    \"meta\": {\n      \"items\": [\n        {\n          \"id\": \"story-1\",\n          \"type\": \"image\",\n          \"text\": \"Mulher sorrindo, com texto 'desconto para contribuintes que desejam quitar débitos com o município'\",\n          \"actions\": [\"onClick\"]\n        }\n      ],\n      \"navigation_arrows\": [\"left\", \"right\"]\n    }\n  },\n  {\n    \"id\": \"desbrave-nossa-terra-title\",\n    \"type\": \"label\",\n    \"text\": \"Desbrave nossa terra\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"button-acesso-portal-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Acesse nosso portal de turismo\",\n    \"region\": \"main-content\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"arrow-right\"\n    }\n  },\n  {\n    \"id\": \"desbrave-carousel\",\n    \"type\": \"carousel\",\n    \"text\": null,\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"items\": [\n        {\n          \"id\": \"desbrave-image-1\",\n          \"type\": \"image\",\n          \"text\": \"Vista aérea da cidade\"\n        }\n      ]\n    }\n  },\n  {\n    \"id\": \"limeira-description-card\",\n    \"type\": \"card\",\n    \"text\": \"Limeira, no coração do interior paulista, é uma cidade que surpreende quem a visita. Conhecida nacionalmente como a Capital da Semijoia, uma tradição industrial, charme urbano e uma energia acolhedora típica do interior.\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"title\": \"Limeira\"\n    }\n  },\n  {\n    \"id\": \"link-descubra-improviso-semijoias\",\n    \"type\": \"link\",\n    \"text\": \"Descubra como um improviso transformou Limeira numa potência de semijoias\",\n    \"region\": \"main-content-desbrave\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"statistic-populacao\",\n    \"type\": \"statistic-card\",\n    \"text\": \"População\",\n    \"value\": \"300.728\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"icon\": \"user-circle\"\n    }\n  },\n  {\n    \"id\": \"statistic-fundacao\",\n    \"type\": \"statistic-card\",\n    \"text\": \"Fundação\",\n    \"value\": \"1826\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"icon\": \"heart\"\n    }\n  },\n  {\n    \"id\": \"statistic-gentilico\",\n    \"type\": \"statistic-card\",\n    \"text\": \"Gentílico\",\n    \"value\": \"Limeirense\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"icon\": \"star-of-life\"\n    }\n  },\n  {\n    \"id\": \"statistic-cep\",\n    \"type\": \"statistic-card\",\n    \"text\": \"CEP\",\n    \"value\": \"13480-000\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"icon\": \"home\"\n    }\n  },\n  {\n    \"id\": \"statistic-ddd\",\n    \"type\": \"statistic-card\",\n    \"text\": \"DDD\",\n    \"value\": \"19\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"icon\": \"phone\"\n    }\n  },\n  {\n    \"id\": \"statistic-territorio\",\n    \"type\": \"statistic-card\",\n    \"text\": \"Território\",\n    \"value\": \"580,711 km²\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"icon\": \"map-marked-alt\"\n    }\n  },\n  {\n    \"id\": \"statistic-prefeito\",\n    \"type\": \"statistic-card\",\n    \"text\": \"Prefeito\",\n    \"value\": \"Murilo Félix\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"icon\": \"building\"\n    }\n  },\n  {\n    \"id\": \"guide-hospedagem\",\n    \"type\": \"card\",\n    \"text\": \"Hospedagem\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"type\": \"Guia\",\n      \"image\": \"guia-hospedagem\"\n    }\n  },\n  {\n    \"id\": \"guide-gastronomico\",\n    \"type\": \"card\",\n    \"text\": \"Gastronômico\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"type\": \"Guia\",\n      \"image\": \"guia-gastronomico\"\n    }\n  },\n  {\n    \"id\": \"guide-lugares-incriveis\",\n    \"type\": \"card\",\n    \"text\": \"Lugares Incríveis\",\n    \"region\": \"main-content-desbrave\",\n    \"meta\": {\n      \"type\": \"Guia\",\n      \"image\": \"guia-lugares-incriveis\"\n    }\n  },\n  {\n    \"id\": \"footer-nav-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"state\": \"active\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"state\": \"inactive\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"state\": \"inactive\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"state\": \"inactive\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-leis-municipais\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-secretarias\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Secretarias\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-imprensa\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Imprensa\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-consultas\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Consultas\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-autarquias-conselhos\",\n    \"type\": \"navigation-item\",\n    \"text\": \"Autarquias e Conselhos\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira Estado de São Paulo - Brasil\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-social-facebook\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"footer-social-instagram\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"footer-social-youtube\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"youtube\"\n    }\n  },\n  {\n    \"id\": \"footer-social-linkedin\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"footer-social-rss\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"rss\"\n    }\n  },\n  {\n    \"id\": \"footer-social-fale-conosco\",\n    \"type\": \"icon-button\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"headset\"\n    }\n  },\n  {\n    \"id\": \"footer-address\",\n    \"type\": \"text\",\n    \"text\": \"Endereço: Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"map-marker-alt\"\n    }\n  },\n  {\n    \"id\": \"footer-cnpj\",\n    \"type\": \"text\",\n    \"text\": \"CNPJ: 45.132.495/0001-40\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"file-alt\"\n    }\n  },\n  {\n    \"id\": \"footer-phone\",\n    \"type\": \"text\",\n    \"text\": \"Telefone: (19) 3404-9600\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"icon\": \"phone\"\n    }\n  },\n  {\n    \"id\": \"footer-link-termo-uso-privacidade\",\n    \"type\": \"link\",\n    \"text\": \"Termo de Uso e Políticas de Privacidade\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"lock\"\n    }\n  },\n  {\n    \"id\": \"footer-link-lgpd-pesquisa-satisfacao\",\n    \"type\": \"link\",\n    \"text\": \"LGPD - Pesquisa de Satisfação\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-ecrie-logo\",\n    \"type\": \"image\",\n    \"text\": \"eCrie\",\n    \"region\": \"footer\"\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 10074,
+      "totalTokenCount": 11494,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 765
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "3K-faYz2Ktboz7IP_OqS0Q8"
+  },
+  "ui": [
+    {
+      "id": "accessibility-contrast",
+      "type": "icon-button",
+      "text": "Contraste",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility-font-increase",
+      "type": "icon-button",
+      "text": "Aumentar Fonte",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility-font-decrease",
+      "type": "icon-button",
+      "text": "Diminuir Fonte",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility-search",
+      "type": "icon-button",
+      "text": "Pesquisar",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility-libras",
+      "type": "icon-button",
+      "text": "Libras",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility-sitemap",
+      "type": "icon-button",
+      "text": "Mapa do Site",
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-conteudo",
+      "type": "link",
+      "text": "Ir para o conteúdo",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-menu",
+      "type": "link",
+      "text": "Ir para o menu",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-busca",
+      "type": "link",
+      "text": "Ir para a busca",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-para-rodape",
+      "type": "link",
+      "text": "Ir para o rodapé",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "portal-transparencia-link",
+      "type": "link",
+      "text": "PORTAL DA TRANSPARÊNCIA",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "info-circle"
+      }
+    },
+    {
+      "id": "weather-info",
+      "type": "text",
+      "text": "34° Chuva Fraca",
+      "region": "top-bar",
+      "meta": {
+        "icon": "cloud-rain"
+      }
+    },
+    {
+      "id": "social-facebook",
+      "type": "icon-button",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "facebook"
+      }
+    },
+    {
+      "id": "social-instagram",
+      "type": "icon-button",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "instagram"
+      }
+    },
+    {
+      "id": "social-youtube",
+      "type": "icon-button",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "youtube"
+      }
+    },
+    {
+      "id": "social-linkedin",
+      "type": "icon-button",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "linkedin"
+      }
+    },
+    {
+      "id": "social-rss",
+      "type": "icon-button",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "rss"
+      }
+    },
+    {
+      "id": "social-fale-conosco",
+      "type": "icon-button",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "headset"
+      }
+    },
+    {
+      "id": "logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira Estado de São Paulo - Brasil",
+      "region": "header"
+    },
+    {
+      "id": "search-input",
+      "type": "input",
+      "text": null,
+      "placeholder": "Digite a sua busca",
+      "region": "header",
+      "actions": [
+        "onSearch"
+      ],
+      "meta": {
+        "icon": "search"
+      }
+    },
+    {
+      "id": "em-alta-label",
+      "type": "label",
+      "text": "Em alta:",
+      "region": "header"
+    },
+    {
+      "id": "link-iptu-2025",
+      "type": "link",
+      "text": "IPTU 2025",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-nota-fiscal-eletronica",
+      "type": "link",
+      "text": "Nota Fiscal Eletrônica",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-licitacoes-header",
+      "type": "link",
+      "text": "Licitações",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main-nav-a-prefeitura",
+      "type": "navigation-item",
+      "text": "A Prefeitura",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main-nav-secretarias",
+      "type": "navigation-item",
+      "text": "Secretarias",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main-nav-imprensa",
+      "type": "navigation-item",
+      "text": "Imprensa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "dropdown-imprensa-secretaria-comunicacao",
+      "type": "link",
+      "text": "Secretaria de Comunicação",
+      "region": "main-navigation-dropdown",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "dropdown-imprensa-noticias",
+      "type": "link",
+      "text": "Notícias",
+      "region": "main-navigation-dropdown",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "dropdown-imprensa-jornal-oficial",
+      "type": "link",
+      "text": "Jornal Oficial",
+      "region": "main-navigation-dropdown",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main-nav-leis-municipais",
+      "type": "navigation-item",
+      "text": "Leis Municipais",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main-nav-consultas",
+      "type": "navigation-item",
+      "text": "Consultas",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "user-type-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "state": "active",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "user-type-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "state": "inactive",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "user-type-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "state": "inactive",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "user-type-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "state": "inactive",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "banner-dividas-prefeitura",
+      "type": "banner",
+      "text": "Não perca essa oportunidade! Dívidas com a Prefeitura? Pague com até 90% de desconto de juros e multa",
+      "region": "main-content",
+      "meta": {
+        "image": "ilustracao-dinheiro-moedas"
+      }
+    },
+    {
+      "id": "button-saiba-mais-dividas",
+      "type": "button",
+      "text": "Saiba mais",
+      "region": "banner",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "quick-access-title",
+      "type": "label",
+      "text": "Acesso Rápido",
+      "region": "main-content"
+    },
+    {
+      "id": "link-mais-servicos",
+      "type": "link",
+      "text": "Mais serviços",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow-right"
+      }
+    },
+    {
+      "id": "quick-access-limeira-digital",
+      "type": "link",
+      "text": "Limeira Digital",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "desktop"
+      }
+    },
+    {
+      "id": "quick-access-agenda-eventos",
+      "type": "link",
+      "text": "Agenda de Eventos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "calendar"
+      }
+    },
+    {
+      "id": "quick-access-medicamentos",
+      "type": "link",
+      "text": "Medicamentos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "plus-circle"
+      }
+    },
+    {
+      "id": "quick-access-vacinacao",
+      "type": "link",
+      "text": "Vacinação",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "syringe"
+      }
+    },
+    {
+      "id": "quick-access-iptu-divida-mobiliario",
+      "type": "link",
+      "text": "IPTU e Dívida Ativa/Mobiliário",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "home"
+      }
+    },
+    {
+      "id": "quick-access-consulta-processos",
+      "type": "link",
+      "text": "Consulta de Processos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "search"
+      }
+    },
+    {
+      "id": "quick-access-agenda-facil-saude",
+      "type": "link",
+      "text": "Agenda Fácil Saúde",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "calendar-check"
+      }
+    },
+    {
+      "id": "quick-access-multas-transito",
+      "type": "link",
+      "text": "Multas de Trânsito",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "dollar-sign"
+      }
+    },
+    {
+      "id": "quick-access-castra-mais",
+      "type": "link",
+      "text": "Castra +",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "paw"
+      }
+    },
+    {
+      "id": "card-limeirense-voz",
+      "type": "card",
+      "text": "Limeirense, aqui você tem voz! Nossa central de atendimento ao cidadão está pronta para receber sua participação nos assuntos cotidianos do município.",
+      "region": "main-content",
+      "meta": {
+        "image": "app-156-limeira"
+      }
+    },
+    {
+      "id": "button-acesse-aqui-limeirense-voz",
+      "type": "button",
+      "text": "Acesse aqui",
+      "region": "card-limeirense-voz",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "main-news-article",
+      "type": "card",
+      "text": "Ação inclusiva garante acesso à mamografia para mulheres com deficiência em Limeira",
+      "region": "main-content",
+      "meta": {
+        "image": "mamografia-mulheres-deficiencia",
+        "description": "Exames podem ser feitos na Policlínica, dia (23), sem necessidade de agendamento",
+        "time_elapsed": "Há 23 horas",
+        "share_icon": true,
+        "gallery_thumbnails": [
+          "image1",
+          "image2",
+          "image3",
+          "image4",
+          "image5"
+        ]
+      }
+    },
+    {
+      "id": "lia-chat-banner",
+      "type": "banner",
+      "text": "o chat inteligente da Prefeitura de Limeira",
+      "region": "main-content",
+      "meta": {
+        "image": "ilustracao-lia-chatbot"
+      }
+    },
+    {
+      "id": "button-falar-com-lia",
+      "type": "button",
+      "text": "Clique aqui para falar com a Lia",
+      "region": "lia-chat-banner",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "acontece-em-limeira-title",
+      "type": "label",
+      "text": "Acontece em Limeira",
+      "region": "main-content"
+    },
+    {
+      "id": "select-categoria-acontece",
+      "type": "select",
+      "text": "Selecionar categoria",
+      "region": "main-content",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "icon": "arrow-down"
+      }
+    },
+    {
+      "id": "button-ver-todos-acontece",
+      "type": "button",
+      "text": "Ver todos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow-right"
+      }
+    },
+    {
+      "id": "news-item-banda-henrique-marques",
+      "type": "card",
+      "text": "Banda Henrique Marques toca especiais da Disney para comemorar mês das crianças no domingo na Praça Toledo Barros",
+      "region": "main-content-news",
+      "meta": {
+        "category": "Cultura",
+        "time_elapsed": "há 6 horas",
+        "image": "banda-henrique-marques",
+        "share_icon": true
+      }
+    },
+    {
+      "id": "news-item-operacao-so-cacareco",
+      "type": "card",
+      "text": "Operação Só Cacareco percorrerá 15 bairros na próxima semana; veja quais áreas serão atendidas",
+      "region": "main-content-news",
+      "meta": {
+        "category": "Geral",
+        "description": "Materiais inservíveis serão recolhidos e devem ser colocados na calçada no dia anterior",
+        "time_elapsed": "há 59 minutos",
+        "image": "operacao-cacareco",
+        "share_icon": true
+      }
+    },
+    {
+      "id": "news-item-banda-limeirense-eu-a-veia",
+      "type": "card",
+      "text": "Banda limeirense “Eu, a Véia e os Caras” lança EP “fissuras” no dia 21 de outubro",
+      "region": "main-content-news",
+      "meta": {
+        "category": "Cultura",
+        "time_elapsed": "há 6 horas",
+        "image": "banda-eu-a-veia-e-os-caras",
+        "share_icon": true
+      }
+    },
+    {
+      "id": "news-item-espetaculo-infantil",
+      "type": "card",
+      "text": "Espetáculo infantil “A Biblioteca Mágica e os Sentimentos” tem apresentações gratuitas",
+      "region": "main-content-news",
+      "meta": {
+        "category": "Cultura",
+        "time_elapsed": "há 6 horas",
+        "image": "espetaculo-infantil",
+        "share_icon": true
+      }
+    },
+    {
+      "id": "news-item-limeira-aumento-vacinacao",
+      "type": "card",
+      "text": "Limeira registra aumento de 33% nas vacinas aplicadas em 2025 e consolida avanço na imunização",
+      "region": "main-content-news",
+      "meta": {
+        "category": "Geral",
+        "time_elapsed": "há 3 horas",
+        "image": "vacinacao-limeira",
+        "share_icon": true
+      }
+    },
+    {
+      "id": "news-item-prefeitura-alerta-golpe",
+      "type": "card",
+      "text": "Prefeitura alerta sobre possível golpe envolvendo cadastro habitacional em Limeira",
+      "region": "main-content-news",
+      "meta": {
+        "category": "Geral",
+        "time_elapsed": "há 22 horas",
+        "image": "alerta-golpe",
+        "share_icon": true
+      }
+    },
+    {
+      "id": "servicos-title",
+      "type": "label",
+      "text": "Serviços",
+      "region": "main-content"
+    },
+    {
+      "id": "servico-certidoes",
+      "type": "link",
+      "text": "Certidões",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "star"
+      }
+    },
+    {
+      "id": "servico-refis-2025",
+      "type": "link",
+      "text": "Refis 2025",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "file-alt"
+      }
+    },
+    {
+      "id": "servico-leis-orcamentarias",
+      "type": "link",
+      "text": "Leis Orçamentárias",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "balance-scale"
+      }
+    },
+    {
+      "id": "servico-limeira-geo",
+      "type": "link",
+      "text": "LIMEIRA GEO",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "map-marker-alt"
+      }
+    },
+    {
+      "id": "servico-parcelamento-online",
+      "type": "link",
+      "text": "Parcelamento Online",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "credit-card"
+      }
+    },
+    {
+      "id": "servico-licitacoes",
+      "type": "link",
+      "text": "Licitações",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "gavel"
+      }
+    },
+    {
+      "id": "servico-plano-diretor",
+      "type": "link",
+      "text": "Plano Diretor 2025-2035",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "map"
+      }
+    },
+    {
+      "id": "servico-dengue",
+      "type": "link",
+      "text": "Dengue",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "bug"
+      }
+    },
+    {
+      "id": "servico-vagas-pat",
+      "type": "link",
+      "text": "Vagas do PAT",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "briefcase"
+      }
+    },
+    {
+      "id": "servico-convenios-bnds",
+      "type": "link",
+      "text": "Convênios BNDS",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "handshake"
+      }
+    },
+    {
+      "id": "servico-vagas-creche",
+      "type": "link",
+      "text": "Vagas em creche",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "smile"
+      }
+    },
+    {
+      "id": "servico-posicao-fila-exames",
+      "type": "link",
+      "text": "Posição Fila (exames consultas)",
+      "region": "main-content-services",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "shoe-prints"
+      }
+    },
+    {
+      "id": "as-mais-lidas-title",
+      "type": "label",
+      "text": "As mais lidas da semana",
+      "region": "main-content"
+    },
+    {
+      "id": "most-read-item-1",
+      "type": "list-item",
+      "text": "Mês dos Animais: alunos participam de trilha e simulam resgate de animais",
+      "region": "main-content-most-read",
+      "meta": {
+        "number": 1
+      }
+    },
+    {
+      "id": "most-read-item-2",
+      "type": "list-item",
+      "text": "Banda Henrique Marques toca especiais da Disney para comemorar mês das crianças no domingo na Praça Toledo Barros",
+      "region": "main-content-most-read",
+      "meta": {
+        "number": 2
+      }
+    },
+    {
+      "id": "most-read-item-3",
+      "type": "list-item",
+      "text": "Espetáculo infantil “A Biblioteca Mágica e os Sentimentos” tem apresentações gratuitas",
+      "region": "main-content-most-read",
+      "meta": {
+        "number": 3
+      }
+    },
+    {
+      "id": "most-read-item-4",
+      "type": "list-item",
+      "text": "Banda limeirense “Eu, a Véia e os Caras” lança EP “fissuras” no dia 21 de outubro",
+      "region": "main-content-most-read",
+      "meta": {
+        "number": 4
+      }
+    },
+    {
+      "id": "most-read-item-5",
+      "type": "list-item",
+      "text": "Prefeitura alerta sobre possível golpe envolvendo cadastro habitacional em Limeira",
+      "region": "main-content-most-read",
+      "meta": {
+        "number": 5
+      }
+    },
+    {
+      "id": "most-read-item-6",
+      "type": "list-item",
+      "text": "Ruas do Jardim Ipiranga terão sentido único a partir de segunda-feira (20)",
+      "region": "main-content-most-read",
+      "meta": {
+        "number": 6
+      }
+    },
+    {
+      "id": "most-read-item-7",
+      "type": "list-item",
+      "text": "Ceprosom é referência no Congresso Nacional de Vigilância Socioassistencial",
+      "region": "main-content-most-read",
+      "meta": {
+        "number": 7
+      }
+    },
+    {
+      "id": "most-read-item-8",
+      "type": "list-item",
+      "text": "Ação inclusiva garante acesso à mamografia para mulheres com deficiência em Limeira",
+      "region": "main-content-most-read",
+      "meta": {
+        "number": 8
+      }
+    },
+    {
+      "id": "vagas-emprego-title",
+      "type": "label",
+      "text": "Vagas de Emprego",
+      "region": "main-content"
+    },
+    {
+      "id": "button-ver-todos-vagas",
+      "type": "button",
+      "text": "Ver todos",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow-right"
+      }
+    },
+    {
+      "id": "vaga-pat-limeira-description",
+      "type": "text",
+      "text": "O PAT Limeira tem a vaga ideal para dar um upgrade na sua trajetória profissional. Confira as oportunidades:",
+      "region": "main-content-jobs"
+    },
+    {
+      "id": "job-vaga-consultor-vendas",
+      "type": "card",
+      "text": "VAGA PARA: CONSULTOR DE VENDAS MTE ACEITA PcD",
+      "region": "main-content-jobs",
+      "meta": {
+        "escolaridade": "Ensino Médio"
+      }
+    },
+    {
+      "id": "job-vaga-pedreiro",
+      "type": "card",
+      "text": "VAGA PARA: PEDREIRO MTE",
+      "region": "main-content-jobs",
+      "meta": {
+        "escolaridade": "Ensino Fundamental Incompleto"
+      }
+    },
+    {
+      "id": "job-vaga-ajudante-geral",
+      "type": "card",
+      "text": "VAGA PARA: AJUDANTE GERAL II MTE",
+      "region": "main-content-jobs",
+      "meta": {
+        "escolaridade": "Ensino Médio Incompleto"
+      }
+    },
+    {
+      "id": "job-vaga-atendente-mte",
+      "type": "card",
+      "text": "VAGA PARA: ATENDENTE MTE VAGA TEMPORÁRIA",
+      "region": "main-content-jobs",
+      "meta": {
+        "escolaridade": "Ensino Fundamental"
+      }
+    },
+    {
+      "id": "job-vaga-cozinheiro",
+      "type": "card",
+      "text": "VAGA PARA: COZINHEIRO MTE ACEITA PcD",
+      "region": "main-content-jobs",
+      "meta": {
+        "escolaridade": "Ensino Fundamental"
+      }
+    },
+    {
+      "id": "job-vaga-assistente-casa-lar",
+      "type": "card",
+      "text": "VAGA PARA: ASSISTENTE DE CASA LAR MTE ACEITA PcD",
+      "region": "main-content-jobs",
+      "meta": {
+        "escolaridade": "Ensino Médio"
+      }
+    },
+    {
+      "id": "historias-title",
+      "type": "label",
+      "text": "Histórias",
+      "region": "main-content"
+    },
+    {
+      "id": "historias-description",
+      "type": "text",
+      "text": "Vídeos curtinhos para você acompanhar o dia a dia de Limeira.",
+      "region": "main-content-stories"
+    },
+    {
+      "id": "stories-carousel",
+      "type": "carousel",
+      "text": null,
+      "region": "main-content-stories",
+      "meta": {
+        "items": [
+          {
+            "id": "story-1",
+            "type": "image",
+            "text": "Mulher sorrindo, com texto 'desconto para contribuintes que desejam quitar débitos com o município'",
+            "actions": [
+              "onClick"
+            ]
+          }
+        ],
+        "navigation_arrows": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "desbrave-nossa-terra-title",
+      "type": "label",
+      "text": "Desbrave nossa terra",
+      "region": "main-content"
+    },
+    {
+      "id": "button-acesso-portal-turismo",
+      "type": "button",
+      "text": "Acesse nosso portal de turismo",
+      "region": "main-content",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "arrow-right"
+      }
+    },
+    {
+      "id": "desbrave-carousel",
+      "type": "carousel",
+      "text": null,
+      "region": "main-content-desbrave",
+      "meta": {
+        "items": [
+          {
+            "id": "desbrave-image-1",
+            "type": "image",
+            "text": "Vista aérea da cidade"
+          }
+        ]
+      }
+    },
+    {
+      "id": "limeira-description-card",
+      "type": "card",
+      "text": "Limeira, no coração do interior paulista, é uma cidade que surpreende quem a visita. Conhecida nacionalmente como a Capital da Semijoia, uma tradição industrial, charme urbano e uma energia acolhedora típica do interior.",
+      "region": "main-content-desbrave",
+      "meta": {
+        "title": "Limeira"
+      }
+    },
+    {
+      "id": "link-descubra-improviso-semijoias",
+      "type": "link",
+      "text": "Descubra como um improviso transformou Limeira numa potência de semijoias",
+      "region": "main-content-desbrave",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "statistic-populacao",
+      "type": "statistic-card",
+      "text": "População",
+      "value": "300.728",
+      "region": "main-content-desbrave",
+      "meta": {
+        "icon": "user-circle"
+      }
+    },
+    {
+      "id": "statistic-fundacao",
+      "type": "statistic-card",
+      "text": "Fundação",
+      "value": "1826",
+      "region": "main-content-desbrave",
+      "meta": {
+        "icon": "heart"
+      }
+    },
+    {
+      "id": "statistic-gentilico",
+      "type": "statistic-card",
+      "text": "Gentílico",
+      "value": "Limeirense",
+      "region": "main-content-desbrave",
+      "meta": {
+        "icon": "star-of-life"
+      }
+    },
+    {
+      "id": "statistic-cep",
+      "type": "statistic-card",
+      "text": "CEP",
+      "value": "13480-000",
+      "region": "main-content-desbrave",
+      "meta": {
+        "icon": "home"
+      }
+    },
+    {
+      "id": "statistic-ddd",
+      "type": "statistic-card",
+      "text": "DDD",
+      "value": "19",
+      "region": "main-content-desbrave",
+      "meta": {
+        "icon": "phone"
+      }
+    },
+    {
+      "id": "statistic-territorio",
+      "type": "statistic-card",
+      "text": "Território",
+      "value": "580,711 km²",
+      "region": "main-content-desbrave",
+      "meta": {
+        "icon": "map-marked-alt"
+      }
+    },
+    {
+      "id": "statistic-prefeito",
+      "type": "statistic-card",
+      "text": "Prefeito",
+      "value": "Murilo Félix",
+      "region": "main-content-desbrave",
+      "meta": {
+        "icon": "building"
+      }
+    },
+    {
+      "id": "guide-hospedagem",
+      "type": "card",
+      "text": "Hospedagem",
+      "region": "main-content-desbrave",
+      "meta": {
+        "type": "Guia",
+        "image": "guia-hospedagem"
+      }
+    },
+    {
+      "id": "guide-gastronomico",
+      "type": "card",
+      "text": "Gastronômico",
+      "region": "main-content-desbrave",
+      "meta": {
+        "type": "Guia",
+        "image": "guia-gastronomico"
+      }
+    },
+    {
+      "id": "guide-lugares-incriveis",
+      "type": "card",
+      "text": "Lugares Incríveis",
+      "region": "main-content-desbrave",
+      "meta": {
+        "type": "Guia",
+        "image": "guia-lugares-incriveis"
+      }
+    },
+    {
+      "id": "footer-nav-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "state": "active",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "state": "inactive",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "state": "inactive",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "state": "inactive",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-leis-municipais",
+      "type": "navigation-item",
+      "text": "Leis Municipais",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-secretarias",
+      "type": "navigation-item",
+      "text": "Secretarias",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-imprensa",
+      "type": "navigation-item",
+      "text": "Imprensa",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-consultas",
+      "type": "navigation-item",
+      "text": "Consultas",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-autarquias-conselhos",
+      "type": "navigation-item",
+      "text": "Autarquias e Conselhos",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira Estado de São Paulo - Brasil",
+      "region": "footer"
+    },
+    {
+      "id": "footer-social-facebook",
+      "type": "icon-button",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "facebook"
+      }
+    },
+    {
+      "id": "footer-social-instagram",
+      "type": "icon-button",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "instagram"
+      }
+    },
+    {
+      "id": "footer-social-youtube",
+      "type": "icon-button",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "youtube"
+      }
+    },
+    {
+      "id": "footer-social-linkedin",
+      "type": "icon-button",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "linkedin"
+      }
+    },
+    {
+      "id": "footer-social-rss",
+      "type": "icon-button",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "rss"
+      }
+    },
+    {
+      "id": "footer-social-fale-conosco",
+      "type": "icon-button",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "headset"
+      }
+    },
+    {
+      "id": "footer-address",
+      "type": "text",
+      "text": "Endereço: Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900",
+      "region": "footer",
+      "meta": {
+        "icon": "map-marker-alt"
+      }
+    },
+    {
+      "id": "footer-cnpj",
+      "type": "text",
+      "text": "CNPJ: 45.132.495/0001-40",
+      "region": "footer",
+      "meta": {
+        "icon": "file-alt"
+      }
+    },
+    {
+      "id": "footer-phone",
+      "type": "text",
+      "text": "Telefone: (19) 3404-9600",
+      "region": "footer",
+      "meta": {
+        "icon": "phone"
+      }
+    },
+    {
+      "id": "footer-link-termo-uso-privacidade",
+      "type": "link",
+      "text": "Termo de Uso e Políticas de Privacidade",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "footer-link-lgpd-pesquisa-satisfacao",
+      "type": "link",
+      "text": "LGPD - Pesquisa de Satisfação",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-ecrie-logo",
+      "type": "image",
+      "text": "eCrie",
+      "region": "footer"
+    }
+  ]
+}

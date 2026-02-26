@@ -1,0 +1,1113 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 95,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"accessibility_increase_font\",\n    \"type\": \"button\",\n    \"text\": \"A+\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Aumentar tamanho da fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility_decrease_font\",\n    \"type\": \"button\",\n    \"text\": \"A-\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Diminuir tamanho da fonte\"\n    }\n  },\n  {\n    \"id\": \"accessibility_libras\",\n    \"type\": \"button\",\n    \"text\": \"Q\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Ativar/Desativar Libras\"\n    }\n  },\n  {\n    \"id\": \"accessibility_print\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"print\",\n      \"description\": \"Imprimir página\"\n    }\n  },\n  {\n    \"id\": \"accessibility_contrast\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"contrast\",\n      \"description\": \"Ativar/Desativar alto contraste\"\n    }\n  },\n  {\n    \"id\": \"link_skip_content\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o conteúdo\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_skip_menu\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o menu\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_skip_search\",\n    \"type\": \"link\",\n    \"text\": \"Ir para a busca\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_skip_footer\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o rodapé\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"logo_prefeitura_limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"alt_text\": \"Brasão da Prefeitura de Limeira\"\n    }\n  },\n  {\n    \"id\": \"search_input\",\n    \"type\": \"input\",\n    \"text\": null,\n    \"state\": \"active\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onChange\", \"onFocus\", \"onBlur\"],\n    \"meta\": {\n      \"placeholder\": \"Digite a sua busca\",\n      \"input_type\": \"text\"\n    }\n  },\n  {\n    \"id\": \"search_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"search\"\n    }\n  },\n  {\n    \"id\": \"info_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"info\",\n      \"description\": \"Informações\"\n    }\n  },\n  {\n    \"id\": \"link_portal_transparencia\",\n    \"type\": \"link\",\n    \"text\": \"PORTAL DA TRANSPARÊNCIA\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"weather_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"icon_name\": \"cloud_rain\",\n      \"description\": \"Ícone de chuva\"\n    }\n  },\n  {\n    \"id\": \"weather_temperature\",\n    \"type\": \"label\",\n    \"text\": \"34°\",\n    \"region\": \"top-bar\"\n  },\n  {\n    \"id\": \"weather_description\",\n    \"type\": \"label\",\n    \"text\": \"Chuva Fraca\",\n    \"region\": \"top-bar\"\n  },\n  {\n    \"id\": \"social_facebook\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"social_instagram\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"social_youtube\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"youtube\"\n    }\n  },\n  {\n    \"id\": \"social_linkedin\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"social_twitter\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"twitter\"\n    }\n  },\n  {\n    \"id\": \"social_whatsapp\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"whatsapp\"\n    }\n  },\n  {\n    \"id\": \"quick_link_email\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"email\",\n      \"description\": \"E-mail\"\n    }\n  },\n  {\n    \"id\": \"quick_link_phone\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"phone\",\n      \"description\": \"Telefone\"\n    }\n  },\n  {\n    \"id\": \"quick_link_calendar\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"calendar\",\n      \"description\": \"Calendário\"\n    }\n  },\n  {\n    \"id\": \"quick_link_user\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"user\",\n      \"description\": \"Usuário\"\n    }\n  },\n  {\n    \"id\": \"label_em_alta\",\n    \"type\": \"label\",\n    \"text\": \"Em alta:\",\n    \"region\": \"top-bar\"\n  },\n  {\n    \"id\": \"link_iptu_2025\",\n    \"type\": \"link\",\n    \"text\": \"IPTU 2025\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_nota_fiscal_eletronica\",\n    \"type\": \"link\",\n    \"text\": \"Nota Fiscal Eletrônica\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_licitacoes_top\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav_a_prefeitura\",\n    \"type\": \"menu_item\",\n    \"text\": \"A Prefeitura\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav_secretarias\",\n    \"type\": \"menu_item\",\n    \"text\": \"Secretarias\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav_imprensa\",\n    \"type\": \"menu_item\",\n    \"text\": \"Imprensa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav_leis_municipais\",\n    \"type\": \"menu_item\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav_consultas\",\n    \"type\": \"menu_item\",\n    \"text\": \"Consultas\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav_autarquias_e_conselhos\",\n    \"type\": \"menu_item\",\n    \"text\": \"Autarquias e Conselhos\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\", \"onHover\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"button_cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button_empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button_servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button_turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_inicio\",\n    \"type\": \"link\",\n    \"text\": \"Início\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_topo\",\n    \"type\": \"link\",\n    \"text\": \"Topo\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_noticias\",\n    \"type\": \"link\",\n    \"text\": \"Notícias\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_assuntos_juridicos\",\n    \"type\": \"link\",\n    \"text\": \"Assuntos Jurídicos\",\n    \"state\": \"active\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"has_dropdown\": true\n    }\n  },\n  {\n    \"id\": \"page_title_assuntos_juridicos\",\n    \"type\": \"label\",\n    \"text\": \"Assuntos Jurídicos\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"tag\": \"h1\"\n    }\n  },\n  {\n    \"id\": \"news_card_golpistas\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_alert_prefeitura_limeira.png\",\n      \"date\": \"09/10/2025\",\n      \"time\": \"18h26\",\n      \"title\": \"Prefeitura de Limeira alerta: golpistas usam nomes de procuradores para aplicar golpes\",\n      \"description\": \"Pessoas lesadas devem registrar boletim de ocorrência no 1º DP\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_cameras\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_cameras_irregulares.png\",\n      \"date\": \"01/09/2025\",\n      \"time\": \"17h22\",\n      \"title\": \"Prefeitura notifica empresa de câmeras por irregularidades no serviço\",\n      \"description\": \"Administração apurou pagamento indevido de R$ 746,1 mil por itens não entregues ou não executados\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_conselho_direitos_humanos\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_hands_together.png\",\n      \"date\": \"22/08/2025\",\n      \"time\": \"15h31\",\n      \"title\": \"Entidades devem se credenciar para participar de eleição no Conselho Municipal de Direitos Humanos\",\n      \"description\": \"Credenciamento vai até o dia 25 de setembro e assembleia geral de eleição dos representantes da sociedade civil será no dia 29\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_fabiano_dandrea\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_fabiano_dandrea.png\",\n      \"date\": \"20/08/2025\",\n      \"time\": \"9h47\",\n      \"title\": \"Fabiano D'Andréa assume interinamente Secretaria de Assuntos Jurídicos\",\n      \"description\": \"Com sólida trajetória na advocacia, D'Andréa passa a responder pela assistência e representação jurídica da administração municipal a partir desta quarta-feira (20).\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_horto_incra\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_comunicado.png\",\n      \"date\": \"17/07/2025\",\n      \"time\": \"17h41\",\n      \"title\": \"Prefeitura tomará medidas contra cessão arbitrária da área do Horto ao Incra\",\n      \"category\": \"NOTA À IMPRENSA\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_avcb_predios_publicos\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_predio_prada.png\",\n      \"date\": \"11/07/2025\",\n      \"time\": \"14h44\",\n      \"title\": \"Prefeitura apura falta de AVCB em prédios públicos e inicia processo de regularização\",\n      \"category\": \"SINDICÂNCIA\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_nota_de_pesar\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_nota_de_pesar.png\",\n      \"date\": \"06/06/2025\",\n      \"time\": \"14h29\",\n      \"title\": \"NOTA DE PESAR\",\n      \"category\": \"PESAR\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_frota_onibus\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_onibus.png\",\n      \"date\": \"30/05/2025\",\n      \"time\": \"17h43\",\n      \"title\": \"Justiça determina manutenção de 70% da frota de ônibus em Limeira durante possível greve\",\n      \"category\": \"TRANSPORTE PÚBLICO\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_microsoft_tratativas\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_predio_prada_aerial.png\",\n      \"date\": \"19/05/2025\",\n      \"time\": \"21h06\",\n      \"title\": \"Prefeitura esclarece à Câmara que tratativas com a Microsoft foram encerradas em outubro de 2024\",\n      \"category\": \"REQUERIMENTO\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"news_card_servicos_essenciais\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"image_src\": \"image_predio_prada_aerial_2.png\",\n      \"date\": \"27/03/2025\",\n      \"time\": \"9h00\",\n      \"title\": \"Prefeitura fará vistoria para garantir 70% dos serviços essenciais\",\n      \"category\": \"SAÚDE E EDUCAÇÃO\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_link_limeira_digital\",\n    \"type\": \"link\",\n    \"text\": \"Limeira Digital\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_iptu_divida_ativa\",\n    \"type\": \"link\",\n    \"text\": \"IPTU e Dívida Ativa/ Mobiliário\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_with_coin\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_consulta_medicamentos\",\n    \"type\": \"link\",\n    \"text\": \"Consulta Medicamentos\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"heart_plus\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_consulta_processos\",\n    \"type\": \"link\",\n    \"text\": \"Consulta de Processos\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"folder\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_multas_transito\",\n    \"type\": \"link\",\n    \"text\": \"Multas de Trânsito\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"car_document\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_certidoes\",\n    \"type\": \"link\",\n    \"text\": \"Certidões\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"envelope\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_leis_orcamentarias\",\n    \"type\": \"link\",\n    \"text\": \"Leis Orçamentárias\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"book\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_vagas_pat\",\n    \"type\": \"link\",\n    \"text\": \"Vagas do PAT\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_with_check\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_procon\",\n    \"type\": \"link\",\n    \"text\": \"PROCON\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"computer\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_chamamento_publico\",\n    \"type\": \"link\",\n    \"text\": \"Chamamento Público\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hand_shake\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_parcelamento_online\",\n    \"type\": \"link\",\n    \"text\": \"Parcelamen- to Online\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"globe\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_licitacoes\",\n    \"type\": \"link\",\n    \"text\": \"Licitações\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"document_list\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_plano_diretor\",\n    \"type\": \"link\",\n    \"text\": \"Plano Diretor 2025-2035\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"magnifying_glass\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_dengue\",\n    \"type\": \"link\",\n    \"text\": \"Dengue\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"mosquito\"\n    }\n  },\n  {\n    \"id\": \"sidebar_link_cadastro_habitacional\",\n    \"type\": \"link\",\n    \"text\": \"Cadastro Habitacional\",\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"house\"\n    }\n  },\n  {\n    \"id\": \"floating_accessibility_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"region\": \"sidebar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"hand\",\n      \"description\": \"Botão flutuante de acessibilidade\"\n    }\n  },\n  {\n    \"id\": \"pagination_current_page\",\n    \"type\": \"select\",\n    \"text\": \"1 / 3\",\n    \"region\": \"pagination\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"current_value\": \"1\",\n      \"total_pages\": \"3\"\n    }\n  },\n  {\n    \"id\": \"pagination_next_page\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"region\": \"pagination\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"chevron_right\",\n      \"description\": \"Próxima página\"\n    }\n  },\n  {\n    \"id\": \"footer_button_cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_button_empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_button_servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_button_turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_logo_prefeitura_limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"alt_text\": \"Brasão da Prefeitura de Limeira\"\n    }\n  },\n  {\n    \"id\": \"footer_address_label\",\n    \"type\": \"label\",\n    \"text\": \"Endereço:\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_address_value\",\n    \"type\": \"label\",\n    \"text\": \"Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_phone_label\",\n    \"type\": \"label\",\n    \"text\": \"Telefone:\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_phone_value\",\n    \"type\": \"label\",\n    \"text\": \"(19) 3404-9600\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_cnpj_label\",\n    \"type\": \"label\",\n    \"text\": \"CNPJ:\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_cnpj_value\",\n    \"type\": \"label\",\n    \"text\": \"45.132.495/0001-40\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer_social_facebook\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"footer_social_instagram\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"footer_social_youtube\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"youtube\"\n    }\n  },\n  {\n    \"id\": \"footer_social_linkedin\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"linkedin\"\n    }\n  },\n  {\n    \"id\": \"footer_social_twitter\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"twitter\"\n    }\n  },\n  {\n    \"id\": \"footer_social_whatsapp\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"whatsapp\"\n    }\n  },\n  {\n    \"id\": \"footer_social_email\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"email\"\n    }\n  },\n  {\n    \"id\": \"footer_link_termos_uso_privacidade\",\n    \"type\": \"link\",\n    \"text\": \"Termo de Uso e Políticas de Privacidade\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon_name\": \"lock\"\n    }\n  },\n  {\n    \"id\": \"footer_link_lgpd_pesquisa_satisfacao\",\n    \"type\": \"link\",\n    \"text\": \"LGPD - Pesquisa de Satisfação\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_powered_by\",\n    \"type\": \"label\",\n    \"text\": \"eCrie\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"description\": \"Desenvolvido por eCrie\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 7272,
+      "totalTokenCount": 9008,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 1081
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "CG2eaZeQKdPoz7IPuNKouAY"
+  },
+  "ui": [
+    {
+      "id": "accessibility_increase_font",
+      "type": "button",
+      "text": "A+",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Aumentar tamanho da fonte"
+      }
+    },
+    {
+      "id": "accessibility_decrease_font",
+      "type": "button",
+      "text": "A-",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Diminuir tamanho da fonte"
+      }
+    },
+    {
+      "id": "accessibility_libras",
+      "type": "button",
+      "text": "Q",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Ativar/Desativar Libras"
+      }
+    },
+    {
+      "id": "accessibility_print",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "print",
+        "description": "Imprimir página"
+      }
+    },
+    {
+      "id": "accessibility_contrast",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "contrast",
+        "description": "Ativar/Desativar alto contraste"
+      }
+    },
+    {
+      "id": "link_skip_content",
+      "type": "link",
+      "text": "Ir para o conteúdo",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_skip_menu",
+      "type": "link",
+      "text": "Ir para o menu",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_skip_search",
+      "type": "link",
+      "text": "Ir para a busca",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_skip_footer",
+      "type": "link",
+      "text": "Ir para o rodapé",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "logo_prefeitura_limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "alt_text": "Brasão da Prefeitura de Limeira"
+      }
+    },
+    {
+      "id": "search_input",
+      "type": "input",
+      "text": null,
+      "state": "active",
+      "region": "top-bar",
+      "actions": [
+        "onChange",
+        "onFocus",
+        "onBlur"
+      ],
+      "meta": {
+        "placeholder": "Digite a sua busca",
+        "input_type": "text"
+      }
+    },
+    {
+      "id": "search_button",
+      "type": "button",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "search"
+      }
+    },
+    {
+      "id": "info_icon",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "info",
+        "description": "Informações"
+      }
+    },
+    {
+      "id": "link_portal_transparencia",
+      "type": "link",
+      "text": "PORTAL DA TRANSPARÊNCIA",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "weather_icon",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "meta": {
+        "icon_name": "cloud_rain",
+        "description": "Ícone de chuva"
+      }
+    },
+    {
+      "id": "weather_temperature",
+      "type": "label",
+      "text": "34°",
+      "region": "top-bar"
+    },
+    {
+      "id": "weather_description",
+      "type": "label",
+      "text": "Chuva Fraca",
+      "region": "top-bar"
+    },
+    {
+      "id": "social_facebook",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "facebook"
+      }
+    },
+    {
+      "id": "social_instagram",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "instagram"
+      }
+    },
+    {
+      "id": "social_youtube",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "youtube"
+      }
+    },
+    {
+      "id": "social_linkedin",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "linkedin"
+      }
+    },
+    {
+      "id": "social_twitter",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "twitter"
+      }
+    },
+    {
+      "id": "social_whatsapp",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "whatsapp"
+      }
+    },
+    {
+      "id": "quick_link_email",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "email",
+        "description": "E-mail"
+      }
+    },
+    {
+      "id": "quick_link_phone",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "phone",
+        "description": "Telefone"
+      }
+    },
+    {
+      "id": "quick_link_calendar",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "calendar",
+        "description": "Calendário"
+      }
+    },
+    {
+      "id": "quick_link_user",
+      "type": "icon",
+      "text": null,
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "user",
+        "description": "Usuário"
+      }
+    },
+    {
+      "id": "label_em_alta",
+      "type": "label",
+      "text": "Em alta:",
+      "region": "top-bar"
+    },
+    {
+      "id": "link_iptu_2025",
+      "type": "link",
+      "text": "IPTU 2025",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_nota_fiscal_eletronica",
+      "type": "link",
+      "text": "Nota Fiscal Eletrônica",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link_licitacoes_top",
+      "type": "link",
+      "text": "Licitações",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav_a_prefeitura",
+      "type": "menu_item",
+      "text": "A Prefeitura",
+      "region": "main-navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "nav_secretarias",
+      "type": "menu_item",
+      "text": "Secretarias",
+      "region": "main-navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "nav_imprensa",
+      "type": "menu_item",
+      "text": "Imprensa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "nav_leis_municipais",
+      "type": "menu_item",
+      "text": "Leis Municipais",
+      "region": "main-navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "nav_consultas",
+      "type": "menu_item",
+      "text": "Consultas",
+      "region": "main-navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "nav_autarquias_e_conselhos",
+      "type": "menu_item",
+      "text": "Autarquias e Conselhos",
+      "region": "main-navigation",
+      "actions": [
+        "onClick",
+        "onHover"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "button_cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button_empresa",
+      "type": "button",
+      "text": "Empresa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button_servidor",
+      "type": "button",
+      "text": "Servidor",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button_turismo",
+      "type": "button",
+      "text": "Turismo",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_inicio",
+      "type": "link",
+      "text": "Início",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_topo",
+      "type": "link",
+      "text": "Topo",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_noticias",
+      "type": "link",
+      "text": "Notícias",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_assuntos_juridicos",
+      "type": "link",
+      "text": "Assuntos Jurídicos",
+      "state": "active",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "has_dropdown": true
+      }
+    },
+    {
+      "id": "page_title_assuntos_juridicos",
+      "type": "label",
+      "text": "Assuntos Jurídicos",
+      "region": "main-content",
+      "meta": {
+        "tag": "h1"
+      }
+    },
+    {
+      "id": "news_card_golpistas",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_alert_prefeitura_limeira.png",
+        "date": "09/10/2025",
+        "time": "18h26",
+        "title": "Prefeitura de Limeira alerta: golpistas usam nomes de procuradores para aplicar golpes",
+        "description": "Pessoas lesadas devem registrar boletim de ocorrência no 1º DP"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_cameras",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_cameras_irregulares.png",
+        "date": "01/09/2025",
+        "time": "17h22",
+        "title": "Prefeitura notifica empresa de câmeras por irregularidades no serviço",
+        "description": "Administração apurou pagamento indevido de R$ 746,1 mil por itens não entregues ou não executados"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_conselho_direitos_humanos",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_hands_together.png",
+        "date": "22/08/2025",
+        "time": "15h31",
+        "title": "Entidades devem se credenciar para participar de eleição no Conselho Municipal de Direitos Humanos",
+        "description": "Credenciamento vai até o dia 25 de setembro e assembleia geral de eleição dos representantes da sociedade civil será no dia 29"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_fabiano_dandrea",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_fabiano_dandrea.png",
+        "date": "20/08/2025",
+        "time": "9h47",
+        "title": "Fabiano D'Andréa assume interinamente Secretaria de Assuntos Jurídicos",
+        "description": "Com sólida trajetória na advocacia, D'Andréa passa a responder pela assistência e representação jurídica da administração municipal a partir desta quarta-feira (20)."
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_horto_incra",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_comunicado.png",
+        "date": "17/07/2025",
+        "time": "17h41",
+        "title": "Prefeitura tomará medidas contra cessão arbitrária da área do Horto ao Incra",
+        "category": "NOTA À IMPRENSA"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_avcb_predios_publicos",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_predio_prada.png",
+        "date": "11/07/2025",
+        "time": "14h44",
+        "title": "Prefeitura apura falta de AVCB em prédios públicos e inicia processo de regularização",
+        "category": "SINDICÂNCIA"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_nota_de_pesar",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_nota_de_pesar.png",
+        "date": "06/06/2025",
+        "time": "14h29",
+        "title": "NOTA DE PESAR",
+        "category": "PESAR"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_frota_onibus",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_onibus.png",
+        "date": "30/05/2025",
+        "time": "17h43",
+        "title": "Justiça determina manutenção de 70% da frota de ônibus em Limeira durante possível greve",
+        "category": "TRANSPORTE PÚBLICO"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_microsoft_tratativas",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_predio_prada_aerial.png",
+        "date": "19/05/2025",
+        "time": "21h06",
+        "title": "Prefeitura esclarece à Câmara que tratativas com a Microsoft foram encerradas em outubro de 2024",
+        "category": "REQUERIMENTO"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "news_card_servicos_essenciais",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "image_src": "image_predio_prada_aerial_2.png",
+        "date": "27/03/2025",
+        "time": "9h00",
+        "title": "Prefeitura fará vistoria para garantir 70% dos serviços essenciais",
+        "category": "SAÚDE E EDUCAÇÃO"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_link_limeira_digital",
+      "type": "link",
+      "text": "Limeira Digital",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document"
+      }
+    },
+    {
+      "id": "sidebar_link_iptu_divida_ativa",
+      "type": "link",
+      "text": "IPTU e Dívida Ativa/ Mobiliário",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_with_coin"
+      }
+    },
+    {
+      "id": "sidebar_link_consulta_medicamentos",
+      "type": "link",
+      "text": "Consulta Medicamentos",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "heart_plus"
+      }
+    },
+    {
+      "id": "sidebar_link_consulta_processos",
+      "type": "link",
+      "text": "Consulta de Processos",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "folder"
+      }
+    },
+    {
+      "id": "sidebar_link_multas_transito",
+      "type": "link",
+      "text": "Multas de Trânsito",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "car_document"
+      }
+    },
+    {
+      "id": "sidebar_link_certidoes",
+      "type": "link",
+      "text": "Certidões",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "envelope"
+      }
+    },
+    {
+      "id": "sidebar_link_leis_orcamentarias",
+      "type": "link",
+      "text": "Leis Orçamentárias",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "book"
+      }
+    },
+    {
+      "id": "sidebar_link_vagas_pat",
+      "type": "link",
+      "text": "Vagas do PAT",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_with_check"
+      }
+    },
+    {
+      "id": "sidebar_link_procon",
+      "type": "link",
+      "text": "PROCON",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "computer"
+      }
+    },
+    {
+      "id": "sidebar_link_chamamento_publico",
+      "type": "link",
+      "text": "Chamamento Público",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hand_shake"
+      }
+    },
+    {
+      "id": "sidebar_link_parcelamento_online",
+      "type": "link",
+      "text": "Parcelamen- to Online",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "globe"
+      }
+    },
+    {
+      "id": "sidebar_link_licitacoes",
+      "type": "link",
+      "text": "Licitações",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "document_list"
+      }
+    },
+    {
+      "id": "sidebar_link_plano_diretor",
+      "type": "link",
+      "text": "Plano Diretor 2025-2035",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "magnifying_glass"
+      }
+    },
+    {
+      "id": "sidebar_link_dengue",
+      "type": "link",
+      "text": "Dengue",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "mosquito"
+      }
+    },
+    {
+      "id": "sidebar_link_cadastro_habitacional",
+      "type": "link",
+      "text": "Cadastro Habitacional",
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "house"
+      }
+    },
+    {
+      "id": "floating_accessibility_button",
+      "type": "button",
+      "text": null,
+      "region": "sidebar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "hand",
+        "description": "Botão flutuante de acessibilidade"
+      }
+    },
+    {
+      "id": "pagination_current_page",
+      "type": "select",
+      "text": "1 / 3",
+      "region": "pagination",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "current_value": "1",
+        "total_pages": "3"
+      }
+    },
+    {
+      "id": "pagination_next_page",
+      "type": "button",
+      "text": null,
+      "region": "pagination",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "chevron_right",
+        "description": "Próxima página"
+      }
+    },
+    {
+      "id": "footer_button_cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_button_empresa",
+      "type": "button",
+      "text": "Empresa",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_button_servidor",
+      "type": "button",
+      "text": "Servidor",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_button_turismo",
+      "type": "button",
+      "text": "Turismo",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_logo_prefeitura_limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "alt_text": "Brasão da Prefeitura de Limeira"
+      }
+    },
+    {
+      "id": "footer_address_label",
+      "type": "label",
+      "text": "Endereço:",
+      "region": "footer"
+    },
+    {
+      "id": "footer_address_value",
+      "type": "label",
+      "text": "Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900",
+      "region": "footer"
+    },
+    {
+      "id": "footer_phone_label",
+      "type": "label",
+      "text": "Telefone:",
+      "region": "footer"
+    },
+    {
+      "id": "footer_phone_value",
+      "type": "label",
+      "text": "(19) 3404-9600",
+      "region": "footer"
+    },
+    {
+      "id": "footer_cnpj_label",
+      "type": "label",
+      "text": "CNPJ:",
+      "region": "footer"
+    },
+    {
+      "id": "footer_cnpj_value",
+      "type": "label",
+      "text": "45.132.495/0001-40",
+      "region": "footer"
+    },
+    {
+      "id": "footer_social_facebook",
+      "type": "icon",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "facebook"
+      }
+    },
+    {
+      "id": "footer_social_instagram",
+      "type": "icon",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "instagram"
+      }
+    },
+    {
+      "id": "footer_social_youtube",
+      "type": "icon",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "youtube"
+      }
+    },
+    {
+      "id": "footer_social_linkedin",
+      "type": "icon",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "linkedin"
+      }
+    },
+    {
+      "id": "footer_social_twitter",
+      "type": "icon",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "twitter"
+      }
+    },
+    {
+      "id": "footer_social_whatsapp",
+      "type": "icon",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "whatsapp"
+      }
+    },
+    {
+      "id": "footer_social_email",
+      "type": "icon",
+      "text": null,
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "email"
+      }
+    },
+    {
+      "id": "footer_link_termos_uso_privacidade",
+      "type": "link",
+      "text": "Termo de Uso e Políticas de Privacidade",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon_name": "lock"
+      }
+    },
+    {
+      "id": "footer_link_lgpd_pesquisa_satisfacao",
+      "type": "link",
+      "text": "LGPD - Pesquisa de Satisfação",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_powered_by",
+      "type": "label",
+      "text": "eCrie",
+      "region": "footer",
+      "meta": {
+        "description": "Desenvolvido por eCrie"
+      }
+    }
+  ]
+}

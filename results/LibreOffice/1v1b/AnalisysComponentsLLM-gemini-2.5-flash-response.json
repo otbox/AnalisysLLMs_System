@@ -1,0 +1,740 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 18,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"window_title_bar\",\n    \"type\": \"window_title_bar\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"application_name\": \"LibreOffice Writer\",\n      \"document_name\": \"Sem título 1\"\n    }\n  },\n  {\n    \"id\": \"menu_arquivo\",\n    \"type\": \"menu_item\",\n    \"text\": \"Arquivo\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_editar\",\n    \"type\": \"menu_item\",\n    \"text\": \"Editar\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_exibir\",\n    \"type\": \"menu_item\",\n    \"text\": \"Exibir\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_inserir\",\n    \"type\": \"menu_item\",\n    \"text\": \"Inserir\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_formatar\",\n    \"type\": \"menu_item\",\n    \"text\": \"Formatar\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_estilos\",\n    \"type\": \"menu_item\",\n    \"text\": \"Estilos\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_tabela\",\n    \"type\": \"menu_item\",\n    \"text\": \"Tabela\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_formulario\",\n    \"type\": \"menu_item\",\n    \"text\": \"Formulário\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_ferramentas\",\n    \"type\": \"menu_item\",\n    \"text\": \"Ferramentas\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_janela\",\n    \"type\": \"menu_item\",\n    \"text\": \"Janela\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_ajuda\",\n    \"type\": \"menu_item\",\n    \"text\": \"Ajuda\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"label\": \"Barra de Ferramentas Padrão\"\n    },\n    \"components\": [\n      { \"id\": \"btn_new\", \"type\": \"button\", \"icon\": \"new_document\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_open\", \"type\": \"button\", \"icon\": \"open_document\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_save\", \"type\": \"button\", \"icon\": \"save_document\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_print\", \"type\": \"button\", \"icon\": \"print\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_print_preview\", \"type\": \"button\", \"icon\": \"print_preview\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_cut\", \"type\": \"button\", \"icon\": \"cut\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_copy\", \"type\": \"button\", \"icon\": \"copy\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_paste\", \"type\": \"button\", \"icon\": \"paste\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_format_painter\", \"type\": \"button\", \"icon\": \"format_painter\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_undo\", \"type\": \"button\", \"icon\": \"undo\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_redo\", \"type\": \"button\", \"icon\": \"redo\", \"actions\": [\"onClick\"] }\n    ]\n  },\n  {\n    \"id\": \"toolbar_formatting\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"label\": \"Barra de Ferramentas de Formatação\"\n    },\n    \"components\": [\n      {\n        \"id\": \"dropdown_paragraph_style\",\n        \"type\": \"dropdown\",\n        \"text\": \"Estilo de parágrafo Padrão\",\n        \"state\": \"active\",\n        \"actions\": [\"onSelect\"]\n      },\n      { \"id\": \"btn_clear_direct_formatting\", \"type\": \"button\", \"icon\": \"clear_formatting\", \"actions\": [\"onClick\"] },\n      {\n        \"id\": \"dropdown_font_name\",\n        \"type\": \"dropdown\",\n        \"text\": \"Arial\",\n        \"state\": \"active\",\n        \"actions\": [\"onSelect\"]\n      },\n      {\n        \"id\": \"dropdown_font_size\",\n        \"type\": \"dropdown\",\n        \"text\": \"12 pt\",\n        \"state\": \"active\",\n        \"actions\": [\"onSelect\"]\n      },\n      { \"id\": \"btn_bold\", \"type\": \"button\", \"text\": \"N\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_italic\", \"type\": \"button\", \"text\": \"I\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_underline\", \"type\": \"button\", \"text\": \"S\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_strikethrough\", \"type\": \"button\", \"text\": \"S\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_superscript\", \"type\": \"button\", \"icon\": \"superscript\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_subscript\", \"type\": \"button\", \"icon\": \"subscript\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_font_color\", \"type\": \"button\", \"icon\": \"font_color\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_highlight_color\", \"type\": \"button\", \"icon\": \"highlight_color\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_clear_formatting\", \"type\": \"button\", \"icon\": \"clear_formatting\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_align_left\", \"type\": \"button\", \"icon\": \"align_left\", \"state\": \"active\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_align_center\", \"type\": \"button\", \"icon\": \"align_center\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_align_right\", \"type\": \"button\", \"icon\": \"align_right\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_justify\", \"type\": \"button\", \"icon\": \"justify\", \"state\": \"inactive\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_line_spacing\", \"type\": \"button\", \"icon\": \"line_spacing\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_increase_indent\", \"type\": \"button\", \"icon\": \"increase_indent\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_decrease_indent\", \"type\": \"button\", \"icon\": \"decrease_indent\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_bullet_list\", \"type\": \"button\", \"icon\": \"bullet_list\", \"actions\": [\"onClick\"] },\n      { \"id\": \"btn_numbered_list\", \"type\": \"button\", \"icon\": \"numbered_list\", \"actions\": [\"onClick\"] }\n    ]\n  },\n  {\n    \"id\": \"horizontal_ruler\",\n    \"type\": \"ruler\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"orientation\": \"horizontal\",\n      \"unit\": \"cm\"\n    }\n  },\n  {\n    \"id\": \"document_area\",\n    \"type\": \"text_editor\",\n    \"text\": \"\",\n    \"region\": \"main-content\",\n    \"state\": \"focused\",\n    \"meta\": {\n      \"placeholder\": \"Type your text here\",\n      \"cursor_position\": \"start\"\n    }\n  },\n  {\n    \"id\": \"sidebar\",\n    \"type\": \"sidebar\",\n    \"region\": \"right-sidebar\",\n    \"state\": \"open\",\n    \"components\": [\n      {\n        \"id\": \"sidebar_header\",\n        \"type\": \"header\",\n        \"text\": \"Propriedades\",\n        \"components\": [\n          { \"id\": \"btn_help_sidebar\", \"type\": \"button\", \"icon\": \"help\", \"actions\": [\"onClick\"] },\n          { \"id\": \"btn_close_sidebar\", \"type\": \"button\", \"icon\": \"close\", \"actions\": [\"onClick\"] },\n          { \"id\": \"btn_sidebar_menu\", \"type\": \"button\", \"icon\": \"menu\", \"actions\": [\"onClick\"] }\n        ]\n      },\n      {\n        \"id\": \"section_estilo\",\n        \"type\": \"section\",\n        \"text\": \"Estilo\",\n        \"components\": [\n          {\n            \"id\": \"dropdown_estilo_paragrafo_sidebar\",\n            \"type\": \"dropdown\",\n            \"text\": \"Estilo de parágrafo Padrão\",\n            \"state\": \"open\",\n            \"actions\": [\"onSelect\"],\n            \"meta\": {\n              \"current_value\": \"Estilo de parágrafo Padrão\"\n            }\n          },\n          { \"id\": \"btn_update_style\", \"type\": \"button\", \"icon\": \"update_style\", \"actions\": [\"onClick\"] },\n          { \"id\": \"btn_new_style\", \"type\": \"button\", \"icon\": \"new_style\", \"actions\": [\"onClick\"] }\n        ]\n      },\n      {\n        \"id\": \"dropdown_menu_estilo_paragrafo\",\n        \"type\": \"menu\",\n        \"state\": \"open\",\n        \"region\": \"right-sidebar\",\n        \"meta\": {\n          \"associated_with\": \"dropdown_estilo_paragrafo_sidebar\"\n        },\n        \"components\": [\n          { \"id\": \"menu_item_limpar_formatacao\", \"type\": \"menu_item\", \"text\": \"Limpar formatação\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_estilo_paragrafo_padrao\", \"type\": \"menu_item\", \"text\": \"Estilo de parágrafo Padrão\", \"state\": \"selected\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_corpo_de_texto\", \"type\": \"menu_item\", \"text\": \"Corpo de texto\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_titulo_do_documento\", \"type\": \"menu_item\", \"text\": \"Título do documento\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_subtitulo\", \"type\": \"menu_item\", \"text\": \"Subtítulo\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_titulo_1\", \"type\": \"menu_item\", \"text\": \"Título 1\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_titulo_2\", \"type\": \"menu_item\", \"text\": \"Título 2\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_titulo_3\", \"type\": \"menu_item\", \"text\": \"Título 3\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_titulo_4\", \"type\": \"menu_item\", \"text\": \"Título 4\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_bloco_de_citacao\", \"type\": \"menu_item\", \"text\": \"Bloco de citação\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_texto_preformatado\", \"type\": \"menu_item\", \"text\": \"Texto pré-formatado\", \"actions\": [\"onClick\"] },\n          { \"id\": \"menu_item_outros_estilos\", \"type\": \"menu_item\", \"text\": \"Outros estilos...\", \"actions\": [\"onClick\"] }\n        ]\n      },\n      {\n        \"id\": \"sidebar_tab_properties\",\n        \"type\": \"tab\",\n        \"icon\": \"properties\",\n        \"state\": \"selected\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"sidebar_tab_styles\",\n        \"type\": \"tab\",\n        \"icon\": \"styles\",\n        \"state\": \"inactive\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"sidebar_tab_gallery\",\n        \"type\": \"tab\",\n        \"icon\": \"gallery\",\n        \"state\": \"inactive\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"sidebar_tab_navigator\",\n        \"type\": \"tab\",\n        \"icon\": \"navigator\",\n        \"state\": \"inactive\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"status_bar\",\n    \"type\": \"status_bar\",\n    \"region\": \"footer\",\n    \"components\": [\n      { \"id\": \"status_page_info\", \"type\": \"label\", \"text\": \"Página 1 de 1\", \"actions\": [\"onClick\"] },\n      { \"id\": \"status_word_count\", \"type\": \"label\", \"text\": \"0 palavra, 0 caractere\", \"actions\": [\"onClick\"] },\n      { \"id\": \"status_page_style\", \"type\": \"label\", \"text\": \"Estilo de página Padrão\", \"actions\": [\"onClick\"] },\n      { \"id\": \"status_language\", \"type\": \"label\", \"text\": \"Português (Brasil)\", \"actions\": [\"onClick\"] },\n      { \"id\": \"status_zoom_slider\", \"type\": \"slider\", \"text\": \"100%\", \"actions\": [\"onChange\"], \"meta\": { \"min\": \"20%\", \"max\": \"600%\", \"current_value\": \"100%\" } }\n    ]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 3582,
+      "totalTokenCount": 4718,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 481
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "VPSdaZHUJaXsz7IP_5Xu6Q0"
+  },
+  "ui": [
+    {
+      "id": "window_title_bar",
+      "type": "window_title_bar",
+      "text": "Sem título 1 — LibreOffice Writer",
+      "region": "top-bar",
+      "meta": {
+        "application_name": "LibreOffice Writer",
+        "document_name": "Sem título 1"
+      }
+    },
+    {
+      "id": "menu_arquivo",
+      "type": "menu_item",
+      "text": "Arquivo",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_editar",
+      "type": "menu_item",
+      "text": "Editar",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_exibir",
+      "type": "menu_item",
+      "text": "Exibir",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_inserir",
+      "type": "menu_item",
+      "text": "Inserir",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_formatar",
+      "type": "menu_item",
+      "text": "Formatar",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_estilos",
+      "type": "menu_item",
+      "text": "Estilos",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_tabela",
+      "type": "menu_item",
+      "text": "Tabela",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_formulario",
+      "type": "menu_item",
+      "text": "Formulário",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_ferramentas",
+      "type": "menu_item",
+      "text": "Ferramentas",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_janela",
+      "type": "menu_item",
+      "text": "Janela",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_ajuda",
+      "type": "menu_item",
+      "text": "Ajuda",
+      "region": "menu-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard",
+      "type": "toolbar",
+      "region": "top-bar",
+      "meta": {
+        "label": "Barra de Ferramentas Padrão"
+      },
+      "components": [
+        {
+          "id": "btn_new",
+          "type": "button",
+          "icon": "new_document",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_open",
+          "type": "button",
+          "icon": "open_document",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_save",
+          "type": "button",
+          "icon": "save_document",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_print",
+          "type": "button",
+          "icon": "print",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_print_preview",
+          "type": "button",
+          "icon": "print_preview",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_cut",
+          "type": "button",
+          "icon": "cut",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_copy",
+          "type": "button",
+          "icon": "copy",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_paste",
+          "type": "button",
+          "icon": "paste",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_format_painter",
+          "type": "button",
+          "icon": "format_painter",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_undo",
+          "type": "button",
+          "icon": "undo",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_redo",
+          "type": "button",
+          "icon": "redo",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toolbar_formatting",
+      "type": "toolbar",
+      "region": "top-bar",
+      "meta": {
+        "label": "Barra de Ferramentas de Formatação"
+      },
+      "components": [
+        {
+          "id": "dropdown_paragraph_style",
+          "type": "dropdown",
+          "text": "Estilo de parágrafo Padrão",
+          "state": "active",
+          "actions": [
+            "onSelect"
+          ]
+        },
+        {
+          "id": "btn_clear_direct_formatting",
+          "type": "button",
+          "icon": "clear_formatting",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "dropdown_font_name",
+          "type": "dropdown",
+          "text": "Arial",
+          "state": "active",
+          "actions": [
+            "onSelect"
+          ]
+        },
+        {
+          "id": "dropdown_font_size",
+          "type": "dropdown",
+          "text": "12 pt",
+          "state": "active",
+          "actions": [
+            "onSelect"
+          ]
+        },
+        {
+          "id": "btn_bold",
+          "type": "button",
+          "text": "N",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_italic",
+          "type": "button",
+          "text": "I",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_underline",
+          "type": "button",
+          "text": "S",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_strikethrough",
+          "type": "button",
+          "text": "S",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_superscript",
+          "type": "button",
+          "icon": "superscript",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_subscript",
+          "type": "button",
+          "icon": "subscript",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_font_color",
+          "type": "button",
+          "icon": "font_color",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_highlight_color",
+          "type": "button",
+          "icon": "highlight_color",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_clear_formatting",
+          "type": "button",
+          "icon": "clear_formatting",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_align_left",
+          "type": "button",
+          "icon": "align_left",
+          "state": "active",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_align_center",
+          "type": "button",
+          "icon": "align_center",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_align_right",
+          "type": "button",
+          "icon": "align_right",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_justify",
+          "type": "button",
+          "icon": "justify",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_line_spacing",
+          "type": "button",
+          "icon": "line_spacing",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_increase_indent",
+          "type": "button",
+          "icon": "increase_indent",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_decrease_indent",
+          "type": "button",
+          "icon": "decrease_indent",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_bullet_list",
+          "type": "button",
+          "icon": "bullet_list",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "btn_numbered_list",
+          "type": "button",
+          "icon": "numbered_list",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "horizontal_ruler",
+      "type": "ruler",
+      "region": "main-content",
+      "meta": {
+        "orientation": "horizontal",
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "document_area",
+      "type": "text_editor",
+      "text": "",
+      "region": "main-content",
+      "state": "focused",
+      "meta": {
+        "placeholder": "Type your text here",
+        "cursor_position": "start"
+      }
+    },
+    {
+      "id": "sidebar",
+      "type": "sidebar",
+      "region": "right-sidebar",
+      "state": "open",
+      "components": [
+        {
+          "id": "sidebar_header",
+          "type": "header",
+          "text": "Propriedades",
+          "components": [
+            {
+              "id": "btn_help_sidebar",
+              "type": "button",
+              "icon": "help",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "btn_close_sidebar",
+              "type": "button",
+              "icon": "close",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "btn_sidebar_menu",
+              "type": "button",
+              "icon": "menu",
+              "actions": [
+                "onClick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "section_estilo",
+          "type": "section",
+          "text": "Estilo",
+          "components": [
+            {
+              "id": "dropdown_estilo_paragrafo_sidebar",
+              "type": "dropdown",
+              "text": "Estilo de parágrafo Padrão",
+              "state": "open",
+              "actions": [
+                "onSelect"
+              ],
+              "meta": {
+                "current_value": "Estilo de parágrafo Padrão"
+              }
+            },
+            {
+              "id": "btn_update_style",
+              "type": "button",
+              "icon": "update_style",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "btn_new_style",
+              "type": "button",
+              "icon": "new_style",
+              "actions": [
+                "onClick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dropdown_menu_estilo_paragrafo",
+          "type": "menu",
+          "state": "open",
+          "region": "right-sidebar",
+          "meta": {
+            "associated_with": "dropdown_estilo_paragrafo_sidebar"
+          },
+          "components": [
+            {
+              "id": "menu_item_limpar_formatacao",
+              "type": "menu_item",
+              "text": "Limpar formatação",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_estilo_paragrafo_padrao",
+              "type": "menu_item",
+              "text": "Estilo de parágrafo Padrão",
+              "state": "selected",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_corpo_de_texto",
+              "type": "menu_item",
+              "text": "Corpo de texto",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_titulo_do_documento",
+              "type": "menu_item",
+              "text": "Título do documento",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_subtitulo",
+              "type": "menu_item",
+              "text": "Subtítulo",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_titulo_1",
+              "type": "menu_item",
+              "text": "Título 1",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_titulo_2",
+              "type": "menu_item",
+              "text": "Título 2",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_titulo_3",
+              "type": "menu_item",
+              "text": "Título 3",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_titulo_4",
+              "type": "menu_item",
+              "text": "Título 4",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_bloco_de_citacao",
+              "type": "menu_item",
+              "text": "Bloco de citação",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_texto_preformatado",
+              "type": "menu_item",
+              "text": "Texto pré-formatado",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "menu_item_outros_estilos",
+              "type": "menu_item",
+              "text": "Outros estilos...",
+              "actions": [
+                "onClick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sidebar_tab_properties",
+          "type": "tab",
+          "icon": "properties",
+          "state": "selected",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "sidebar_tab_styles",
+          "type": "tab",
+          "icon": "styles",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "sidebar_tab_gallery",
+          "type": "tab",
+          "icon": "gallery",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "sidebar_tab_navigator",
+          "type": "tab",
+          "icon": "navigator",
+          "state": "inactive",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "status_bar",
+      "type": "status_bar",
+      "region": "footer",
+      "components": [
+        {
+          "id": "status_page_info",
+          "type": "label",
+          "text": "Página 1 de 1",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "status_word_count",
+          "type": "label",
+          "text": "0 palavra, 0 caractere",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "status_page_style",
+          "type": "label",
+          "text": "Estilo de página Padrão",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "status_language",
+          "type": "label",
+          "text": "Português (Brasil)",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "status_zoom_slider",
+          "type": "slider",
+          "text": "100%",
+          "actions": [
+            "onChange"
+          ],
+          "meta": {
+            "min": "20%",
+            "max": "600%",
+            "current_value": "100%"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 29,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"main_application_window\",\n    \"type\": \"window\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"state\": \"active\",\n    \"region\": \"background\",\n    \"meta\": {\n      \"title_bar_text\": \"Sem título 1 — LibreOffice Writer\"\n    }\n  },\n  {\n    \"id\": \"menu_bar\",\n    \"type\": \"menu_bar\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"items\": [\n        \"Arquivo\",\n        \"Editar\",\n        \"Exibir\",\n        \"Inserir\",\n        \"Formatar\",\n        \"Estilos\",\n        \"Tabela\",\n        \"Formulário\",\n        \"Ferramentas\",\n        \"Janela\",\n        \"Ajuda\"\n      ]\n    }\n  },\n  {\n    \"id\": \"toolbar_paragraph_style\",\n    \"type\": \"dropdown\",\n    \"text\": \"Estilo de parágrafo Padrão\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_font_family\",\n    \"type\": \"dropdown\",\n    \"text\": \"Arial\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_font_size\",\n    \"type\": \"dropdown\",\n    \"text\": \"12 pt\",\n    \"region\": \"toolbar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"status_bar\",\n    \"type\": \"status_bar\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"items\": [\n        \"Página 1 de 1\",\n        \"0 palavra\",\n        \"0 caractere\",\n        \"Estilo de página Padrão\",\n        \"Português (Brasil)\"\n      ]\n    }\n  },\n  {\n    \"id\": \"modal_insert_table\",\n    \"type\": \"modal\",\n    \"text\": \"Inserir tabela\",\n    \"state\": \"active\",\n    \"region\": \"center\",\n    \"meta\": {\n      \"title\": \"Inserir tabela\"\n    }\n  },\n  {\n    \"id\": \"modal_close_button\",\n    \"type\": \"icon_button\",\n    \"text\": \"Fechar\",\n    \"region\": \"modal_header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"close\"\n    }\n  },\n  {\n    \"id\": \"modal_maximize_button\",\n    \"type\": \"icon_button\",\n    \"text\": \"Maximizar\",\n    \"region\": \"modal_header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"maximize\"\n    }\n  },\n  {\n    \"id\": \"modal_minimize_button\",\n    \"type\": \"icon_button\",\n    \"text\": \"Minimizar\",\n    \"region\": \"modal_header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"minimize\"\n    }\n  },\n  {\n    \"id\": \"section_general\",\n    \"type\": \"section_header\",\n    \"text\": \"Geral\",\n    \"region\": \"modal_content\"\n  },\n  {\n    \"id\": \"label_table_name\",\n    \"type\": \"label\",\n    \"text\": \"Nome:\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"for\": \"input_table_name\"\n    }\n  },\n  {\n    \"id\": \"input_table_name\",\n    \"type\": \"input\",\n    \"text\": \"Tabela1\",\n    \"state\": \"enabled\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onChange\", \"onFocus\", \"onBlur\"],\n    \"meta\": {\n      \"input_type\": \"text\"\n    }\n  },\n  {\n    \"id\": \"label_columns\",\n    \"type\": \"label\",\n    \"text\": \"Colunas:\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"for\": \"input_columns\"\n    }\n  },\n  {\n    \"id\": \"input_columns\",\n    \"type\": \"input_number_spinner\",\n    \"text\": \"4\",\n    \"state\": \"enabled\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\", \"onFocus\", \"onBlur\"],\n    \"meta\": {\n      \"input_type\": \"number\"\n    }\n  },\n  {\n    \"id\": \"label_rows\",\n    \"type\": \"label\",\n    \"text\": \"Linhas:\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"for\": \"input_rows\"\n    }\n  },\n  {\n    \"id\": \"input_rows\",\n    \"type\": \"input_number_spinner\",\n    \"text\": \"4\",\n    \"state\": \"focused\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\", \"onFocus\", \"onBlur\"],\n    \"meta\": {\n      \"input_type\": \"number\"\n    }\n  },\n  {\n    \"id\": \"section_options\",\n    \"type\": \"section_header\",\n    \"text\": \"Opções\",\n    \"region\": \"modal_content\"\n  },\n  {\n    \"id\": \"checkbox_title\",\n    \"type\": \"checkbox\",\n    \"text\": \"Título\",\n    \"state\": \"unchecked\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"checkbox_repeat_title_rows\",\n    \"type\": \"checkbox\",\n    \"text\": \"Repetir linhas de título nas novas páginas\",\n    \"state\": \"checked\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"label_title_rows\",\n    \"type\": \"label\",\n    \"text\": \"Linhas de título:\",\n    \"state\": \"disabled\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"for\": \"input_title_rows\"\n    }\n  },\n  {\n    \"id\": \"input_title_rows\",\n    \"type\": \"input_number_spinner\",\n    \"text\": \"1\",\n    \"state\": \"disabled\",\n    \"region\": \"modal_content\",\n    \"actions\": []\n  },\n  {\n    \"id\": \"checkbox_do_not_split_table\",\n    \"type\": \"checkbox\",\n    \"text\": \"Não dividir tabela entre páginas\",\n    \"state\": \"unchecked\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"section_styles\",\n    \"type\": \"section_header\",\n    \"text\": \"Estilos\",\n    \"region\": \"modal_content\"\n  },\n  {\n    \"id\": \"listbox_styles\",\n    \"type\": \"listbox\",\n    \"region\": \"modal_content\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"items\": [\n        {\"text\": \"Nenhum\", \"state\": \"selected\"},\n        {\"text\": \"Estilo de tabela Padrão\", \"state\": \"unselected\"},\n        {\"text\": \"Acadêmico\", \"state\": \"unselected\"},\n        {\"text\": \"Mundo azul\", \"state\": \"unselected\"},\n        {\"text\": \"Mundo verde\", \"state\": \"unselected\"},\n        {\"text\": \"Mundo escarlate\", \"state\": \"unselected\"},\n        {\"text\": \"Mundo da alvorada\", \"state\": \"unselected\"},\n        {\"text\": \"Elegante\", \"state\": \"unselected\"}\n      ]\n    }\n  },\n  {\n    \"id\": \"table_preview\",\n    \"type\": \"table\",\n    \"region\": \"modal_content\",\n    \"meta\": {\n      \"headers\": [\"\", \"Jan\", \"Fev\", \"Mar\", \"Soma\"],\n      \"rows\": [\n        [\"Norte\", \"6\", \"7\", \"8\", \"21\"],\n        [\"Meio\", \"11\", \"12\", \"13\", \"36\"],\n        [\"Sul\", \"16\", \"17\", \"18\", \"51\"],\n        [\"Soma\", \"33\", \"36\", \"39\", \"108\"]\n      ]\n    }\n  },\n  {\n    \"id\": \"button_help\",\n    \"type\": \"button\",\n    \"text\": \"Ajuda\",\n    \"state\": \"enabled\",\n    \"region\": \"modal_footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button_insert\",\n    \"type\": \"button\",\n    \"text\": \"Inserir\",\n    \"state\": \"enabled\",\n    \"region\": \"modal_footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"is_primary\": true\n    }\n  },\n  {\n    \"id\": \"button_cancel\",\n    \"type\": \"button\",\n    \"text\": \"Cancelar\",\n    \"state\": \"enabled\",\n    \"region\": \"modal_footer\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 2249,
+      "totalTokenCount": 3753,
+      "cachedContentTokenCount": 577,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 227
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 350
+        }
+      ],
+      "thoughtsTokenCount": 849
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "tvidaYGOEcDhz7IPvpGWmQ0"
+  },
+  "ui": [
+    {
+      "id": "main_application_window",
+      "type": "window",
+      "text": "Sem título 1 — LibreOffice Writer",
+      "state": "active",
+      "region": "background",
+      "meta": {
+        "title_bar_text": "Sem título 1 — LibreOffice Writer"
+      }
+    },
+    {
+      "id": "menu_bar",
+      "type": "menu_bar",
+      "region": "top-bar",
+      "meta": {
+        "items": [
+          "Arquivo",
+          "Editar",
+          "Exibir",
+          "Inserir",
+          "Formatar",
+          "Estilos",
+          "Tabela",
+          "Formulário",
+          "Ferramentas",
+          "Janela",
+          "Ajuda"
+        ]
+      }
+    },
+    {
+      "id": "toolbar_paragraph_style",
+      "type": "dropdown",
+      "text": "Estilo de parágrafo Padrão",
+      "region": "toolbar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_font_family",
+      "type": "dropdown",
+      "text": "Arial",
+      "region": "toolbar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_font_size",
+      "type": "dropdown",
+      "text": "12 pt",
+      "region": "toolbar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "status_bar",
+      "type": "status_bar",
+      "region": "footer",
+      "meta": {
+        "items": [
+          "Página 1 de 1",
+          "0 palavra",
+          "0 caractere",
+          "Estilo de página Padrão",
+          "Português (Brasil)"
+        ]
+      }
+    },
+    {
+      "id": "modal_insert_table",
+      "type": "modal",
+      "text": "Inserir tabela",
+      "state": "active",
+      "region": "center",
+      "meta": {
+        "title": "Inserir tabela"
+      }
+    },
+    {
+      "id": "modal_close_button",
+      "type": "icon_button",
+      "text": "Fechar",
+      "region": "modal_header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "close"
+      }
+    },
+    {
+      "id": "modal_maximize_button",
+      "type": "icon_button",
+      "text": "Maximizar",
+      "region": "modal_header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "maximize"
+      }
+    },
+    {
+      "id": "modal_minimize_button",
+      "type": "icon_button",
+      "text": "Minimizar",
+      "region": "modal_header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "minimize"
+      }
+    },
+    {
+      "id": "section_general",
+      "type": "section_header",
+      "text": "Geral",
+      "region": "modal_content"
+    },
+    {
+      "id": "label_table_name",
+      "type": "label",
+      "text": "Nome:",
+      "region": "modal_content",
+      "meta": {
+        "for": "input_table_name"
+      }
+    },
+    {
+      "id": "input_table_name",
+      "type": "input",
+      "text": "Tabela1",
+      "state": "enabled",
+      "region": "modal_content",
+      "actions": [
+        "onChange",
+        "onFocus",
+        "onBlur"
+      ],
+      "meta": {
+        "input_type": "text"
+      }
+    },
+    {
+      "id": "label_columns",
+      "type": "label",
+      "text": "Colunas:",
+      "region": "modal_content",
+      "meta": {
+        "for": "input_columns"
+      }
+    },
+    {
+      "id": "input_columns",
+      "type": "input_number_spinner",
+      "text": "4",
+      "state": "enabled",
+      "region": "modal_content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement",
+        "onFocus",
+        "onBlur"
+      ],
+      "meta": {
+        "input_type": "number"
+      }
+    },
+    {
+      "id": "label_rows",
+      "type": "label",
+      "text": "Linhas:",
+      "region": "modal_content",
+      "meta": {
+        "for": "input_rows"
+      }
+    },
+    {
+      "id": "input_rows",
+      "type": "input_number_spinner",
+      "text": "4",
+      "state": "focused",
+      "region": "modal_content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement",
+        "onFocus",
+        "onBlur"
+      ],
+      "meta": {
+        "input_type": "number"
+      }
+    },
+    {
+      "id": "section_options",
+      "type": "section_header",
+      "text": "Opções",
+      "region": "modal_content"
+    },
+    {
+      "id": "checkbox_title",
+      "type": "checkbox",
+      "text": "Título",
+      "state": "unchecked",
+      "region": "modal_content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "checkbox_repeat_title_rows",
+      "type": "checkbox",
+      "text": "Repetir linhas de título nas novas páginas",
+      "state": "checked",
+      "region": "modal_content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "label_title_rows",
+      "type": "label",
+      "text": "Linhas de título:",
+      "state": "disabled",
+      "region": "modal_content",
+      "meta": {
+        "for": "input_title_rows"
+      }
+    },
+    {
+      "id": "input_title_rows",
+      "type": "input_number_spinner",
+      "text": "1",
+      "state": "disabled",
+      "region": "modal_content",
+      "actions": []
+    },
+    {
+      "id": "checkbox_do_not_split_table",
+      "type": "checkbox",
+      "text": "Não dividir tabela entre páginas",
+      "state": "unchecked",
+      "region": "modal_content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "section_styles",
+      "type": "section_header",
+      "text": "Estilos",
+      "region": "modal_content"
+    },
+    {
+      "id": "listbox_styles",
+      "type": "listbox",
+      "region": "modal_content",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "items": [
+          {
+            "text": "Nenhum",
+            "state": "selected"
+          },
+          {
+            "text": "Estilo de tabela Padrão",
+            "state": "unselected"
+          },
+          {
+            "text": "Acadêmico",
+            "state": "unselected"
+          },
+          {
+            "text": "Mundo azul",
+            "state": "unselected"
+          },
+          {
+            "text": "Mundo verde",
+            "state": "unselected"
+          },
+          {
+            "text": "Mundo escarlate",
+            "state": "unselected"
+          },
+          {
+            "text": "Mundo da alvorada",
+            "state": "unselected"
+          },
+          {
+            "text": "Elegante",
+            "state": "unselected"
+          }
+        ]
+      }
+    },
+    {
+      "id": "table_preview",
+      "type": "table",
+      "region": "modal_content",
+      "meta": {
+        "headers": [
+          "",
+          "Jan",
+          "Fev",
+          "Mar",
+          "Soma"
+        ],
+        "rows": [
+          [
+            "Norte",
+            "6",
+            "7",
+            "8",
+            "21"
+          ],
+          [
+            "Meio",
+            "11",
+            "12",
+            "13",
+            "36"
+          ],
+          [
+            "Sul",
+            "16",
+            "17",
+            "18",
+            "51"
+          ],
+          [
+            "Soma",
+            "33",
+            "36",
+            "39",
+            "108"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "button_help",
+      "type": "button",
+      "text": "Ajuda",
+      "state": "enabled",
+      "region": "modal_footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button_insert",
+      "type": "button",
+      "text": "Inserir",
+      "state": "enabled",
+      "region": "modal_footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "is_primary": true
+      }
+    },
+    {
+      "id": "button_cancel",
+      "type": "button",
+      "text": "Cancelar",
+      "state": "enabled",
+      "region": "modal_footer",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

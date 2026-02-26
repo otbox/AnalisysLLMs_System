@@ -1,0 +1,1171 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 84,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"link-ir-conteudo\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o conteúdo\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-menu\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o menu\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-busca\",\n    \"type\": \"link\",\n    \"text\": \"Ir para a busca\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link-ir-rodape\",\n    \"type\": \"link\",\n    \"text\": \"Ir para o rodapé\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button-font-decrease\",\n    \"type\": \"button\",\n    \"text\": \"A-\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button-font-normal\",\n    \"type\": \"button\",\n    \"text\": \"A\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button-font-increase\",\n    \"type\": \"button\",\n    \"text\": \"A+\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"button-contrast-normal\",\n    \"type\": \"button\",\n    \"text\": \"Q\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Botão para contraste normal\"\n    }\n  },\n  {\n    \"id\": \"button-contrast-high\",\n    \"type\": \"button\",\n    \"text\": \"Q\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"description\": \"Botão para alto contraste\"\n    }\n  },\n  {\n    \"id\": \"button-libras\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"icon\": \"libras\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"alt\": \"Brasão da Prefeitura de Limeira\"\n    }\n  },\n  {\n    \"id\": \"input-search\",\n    \"type\": \"input\",\n    \"text\": null,\n    \"placeholder\": \"Digite a sua busca\",\n    \"region\": \"header\",\n    \"actions\": [\"onChange\", \"onKeyPress\"]\n  },\n  {\n    \"id\": \"button-search\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"icon\": \"search\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"info-portal-transparencia\",\n    \"type\": \"link\",\n    \"text\": \"PORTAL DA TRANSPARÊNCIA\",\n    \"icon\": \"info\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"weather-info\",\n    \"type\": \"text\",\n    \"text\": \"34° Chuva Fraca\",\n    \"icon\": \"cloud-rain\",\n    \"region\": \"header\"\n  },\n  {\n    \"id\": \"social-media-facebook\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"facebook\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-instagram\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"instagram\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-youtube\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"youtube\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-linkedin\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"linkedin\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-twitter\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"twitter\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social-media-whatsapp\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"whatsapp\",\n    \"region\": \"header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-a-prefeitura\",\n    \"type\": \"button\",\n    \"text\": \"A Prefeitura\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-secretarias\",\n    \"type\": \"button\",\n    \"text\": \"Secretarias\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-imprensa\",\n    \"type\": \"button\",\n    \"text\": \"Imprensa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-leis-municipais\",\n    \"type\": \"button\",\n    \"text\": \"Leis Municipais\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-consultas\",\n    \"type\": \"button\",\n    \"text\": \"Consultas\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"nav-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"],\n    \"state\": \"active\"\n  },\n  {\n    \"id\": \"nav-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"nav-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"region\": \"main-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-inicio\",\n    \"type\": \"link\",\n    \"text\": \"Início\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-topo\",\n    \"type\": \"link\",\n    \"text\": \"Topo\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-noticias\",\n    \"type\": \"link\",\n    \"text\": \"Notícias\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb-geral\",\n    \"type\": \"link\",\n    \"text\": \"Geral\",\n    \"region\": \"breadcrumbs\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"hasDropdown\": true\n    }\n  },\n  {\n    \"id\": \"main-content-title\",\n    \"type\": \"label\",\n    \"text\": \"Geral\",\n    \"region\": \"main-content\"\n  },\n  {\n    \"id\": \"news-card-1\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-1\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Caminhão de cacareco na rua\"\n        }\n      },\n      {\n        \"id\": \"news-date-1\",\n        \"type\": \"label\",\n        \"text\": \"17/10/2025 às 14h12\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-1\",\n        \"type\": \"link\",\n        \"text\": \"Operação Só Cacareco percorrerá 15 bairros na próxima semana; veja quais áreas serão atendidas\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-1\",\n        \"type\": \"label\",\n        \"text\": \"Materiais inservíveis serão recolhidos e devem ser colocados na calçada no dia anterior\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-2\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-2\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Pessoas em um plantão de vacinação\"\n        }\n      },\n      {\n        \"id\": \"news-date-2\",\n        \"type\": \"label\",\n        \"text\": \"17/10/2025 às 11h48\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-2\",\n        \"type\": \"link\",\n        \"text\": \"Limeira registra aumento de 33% nas vacinas aplicadas em 2023 e consolida avanço na imunização\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-2\",\n        \"type\": \"label\",\n        \"text\": \"Crescimento reflete ações descentralizadas da Secretaria de Saúde e maior adesão da população\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-3\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-3\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Crianças em atividade ao ar livre\"\n        }\n      },\n      {\n        \"id\": \"news-date-3\",\n        \"type\": \"label\",\n        \"text\": \"17/10/2025 às 10h33\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-3\",\n        \"type\": \"link\",\n        \"text\": \"Mês dos Animais: alunos participam de trilha e simulam resgate de animais\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-3\",\n        \"type\": \"label\",\n        \"text\": \"Atividade ocorreu no Parque Cidade de Limeira\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-4\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-4\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Banda tocando instrumentos de sopro\"\n        }\n      },\n      {\n        \"id\": \"news-date-4\",\n        \"type\": \"label\",\n        \"text\": \"17/10/2025 às 8h47\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-4\",\n        \"type\": \"link\",\n        \"text\": \"Banda Henrique Marques toca especiais da Disney para comemorar mês das crianças no domingo na Praça Toledo Barros\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-4\",\n        \"type\": \"label\",\n        \"text\": \"Banda Henrique Marques se apresenta no coreto às 10h30\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-5\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-5\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Fachada de uma biblioteca\"\n        }\n      },\n      {\n        \"id\": \"news-date-5\",\n        \"type\": \"label\",\n        \"text\": \"17/10/2025 às 8h42\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-5\",\n        \"type\": \"link\",\n        \"text\": \"Espetáculo infantil “A Biblioteca Mágica e os Sentimentos” tem apresentações gratuitas\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-5\",\n        \"type\": \"label\",\n        \"text\": \"Projeto promove acesso à cultura para crianças de 3 a 6 anos com sessões escolares e abertas ao público\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-6\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-6\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Banda de rock posando para foto\"\n        }\n      },\n      {\n        \"id\": \"news-date-6\",\n        \"type\": \"label\",\n        \"text\": \"17/10/2025 às 8h38\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-6\",\n        \"type\": \"link\",\n        \"text\": \"Banda limeirense “Eu, a Véia e os Caras” lança EP “fissuras” no dia 21 de outubro\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-6\",\n        \"type\": \"label\",\n        \"text\": \"Novo trabalho aborda temas atuais como depressão e ansiedade e estará disponível nas plataformas digitais\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-7\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-7\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Alerta de golpe com um X vermelho\"\n        }\n      },\n      {\n        \"id\": \"news-date-7\",\n        \"type\": \"label\",\n        \"text\": \"16/10/2025 às 16h18\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-7\",\n        \"type\": \"link\",\n        \"text\": \"Prefeitura alerta sobre possível golpe envolvendo cadastro habitacional em Limeira\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-7\",\n        \"type\": \"label\",\n        \"text\": \"Informações oficiais sobre o cadastro serão divulgadas exclusivamente pelos canais oficiais da Prefeitura\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-8\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-8\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Placa de trânsito de sentido proibido\"\n        }\n      },\n      {\n        \"id\": \"news-date-8\",\n        \"type\": \"label\",\n        \"text\": \"16/10/2025 às 16h10\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-8\",\n        \"type\": \"link\",\n        \"text\": \"Ruas do Jardim Ipiranga terão sentido único a partir de segunda-feira (20)\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-8\",\n        \"type\": \"label\",\n        \"text\": \"Medida visa melhorar segurança viária e fluidez do trânsito na região\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-9\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-9\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Pessoas em um congresso\"\n        }\n      },\n      {\n        \"id\": \"news-date-9\",\n        \"type\": \"label\",\n        \"text\": \"16/10/2025 às 15h43\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-9\",\n        \"type\": \"link\",\n        \"text\": \"Ceprosom é referência no Congresso Nacional de Vigilância Socioassistencial\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-9\",\n        \"type\": \"label\",\n        \"text\": \"Experiência de integração com a Educação Permanente se destaca entre os trabalhos apresentados\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"news-card-10\",\n    \"type\": \"card\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"contentType\": \"news-article\"\n    },\n    \"components\": [\n      {\n        \"id\": \"news-image-10\",\n        \"type\": \"image\",\n        \"text\": null,\n        \"region\": \"card\",\n        \"meta\": {\n          \"alt\": \"Máquina de mamografia\"\n        }\n      },\n      {\n        \"id\": \"news-date-10\",\n        \"type\": \"label\",\n        \"text\": \"16/10/2025 às 15h38\",\n        \"region\": \"card\"\n      },\n      {\n        \"id\": \"news-title-10\",\n        \"type\": \"link\",\n        \"text\": \"Ação inclusiva garante acesso à mamografia para mulheres com deficiência em Limeira\",\n        \"region\": \"card\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"news-description-10\",\n        \"type\": \"label\",\n        \"text\": \"Exames podem ser feitos na Policlínica, dia (23), sem necessidade de agendamento\",\n        \"region\": \"card\"\n      }\n    ]\n  },\n  {\n    \"id\": \"pagination-prev\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"icon\": \"chevron-left\",\n    \"state\": \"disabled\",\n    \"region\": \"pagination\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"pagination-current-page\",\n    \"type\": \"input\",\n    \"text\": \"1\",\n    \"region\": \"pagination\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"inputType\": \"number\"\n    }\n  },\n  {\n    \"id\": \"pagination-total-pages\",\n    \"type\": \"label\",\n    \"text\": \"/ 1584\",\n    \"region\": \"pagination\"\n  },\n  {\n    \"id\": \"pagination-next\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"icon\": \"chevron-right\",\n    \"state\": \"enabled\",\n    \"region\": \"pagination\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-limeira-digital\",\n    \"type\": \"button\",\n    \"text\": \"Limeira Digital\",\n    \"icon\": \"document\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-iptu-divida-ativa\",\n    \"type\": \"button\",\n    \"text\": \"IPTU e Dívida Ativa/ Mobiliário\",\n    \"icon\": \"building\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-consulta-medicamentos\",\n    \"type\": \"button\",\n    \"text\": \"Consulta Medicamentos\",\n    \"icon\": \"heart-plus\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-consulta-processos\",\n    \"type\": \"button\",\n    \"text\": \"Consulta de Processos\",\n    \"icon\": \"folder-open\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-multas-transito\",\n    \"type\": \"button\",\n    \"text\": \"Multas de Trânsito\",\n    \"icon\": \"car\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-certidoes\",\n    \"type\": \"button\",\n    \"text\": \"Certidões\",\n    \"icon\": \"envelope\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-leis-orcamentarias\",\n    \"type\": \"button\",\n    \"text\": \"Leis orçamentárias\",\n    \"icon\": \"book\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-vagas-pat\",\n    \"type\": \"button\",\n    \"text\": \"Vagas do PAT\",\n    \"icon\": \"briefcase\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-procon\",\n    \"type\": \"button\",\n    \"text\": \"PROCON\",\n    \"icon\": \"monitor\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-chamamento-publico\",\n    \"type\": \"button\",\n    \"text\": \"Chamamento Público\",\n    \"icon\": \"handshake\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-parcelamento-online\",\n    \"type\": \"button\",\n    \"text\": \"Parcelamen- to Online\",\n    \"icon\": \"globe\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-licitacoes\",\n    \"type\": \"button\",\n    \"text\": \"Licitações\",\n    \"icon\": \"gavel\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-plano-diretor\",\n    \"type\": \"button\",\n    \"text\": \"Plano Diretor 2025-2035\",\n    \"icon\": \"magnifying-glass\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-dengue\",\n    \"type\": \"button\",\n    \"text\": \"Dengue\",\n    \"icon\": \"mosquito\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar-cadastro-habitacional\",\n    \"type\": \"button\",\n    \"text\": \"Cadastro Habitacional\",\n    \"icon\": \"home\",\n    \"region\": \"right-sidebar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"floating-button-fale-conosco\",\n    \"type\": \"button\",\n    \"text\": \"Fale Conosco\",\n    \"icon\": \"chat-bubble\",\n    \"region\": \"floating\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-cidadao\",\n    \"type\": \"button\",\n    \"text\": \"Cidadão\",\n    \"region\": \"footer-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-empresa\",\n    \"type\": \"button\",\n    \"text\": \"Empresa\",\n    \"region\": \"footer-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-servidor\",\n    \"type\": \"button\",\n    \"text\": \"Servidor\",\n    \"region\": \"footer-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-nav-turismo\",\n    \"type\": \"button\",\n    \"text\": \"Turismo\",\n    \"region\": \"footer-navigation\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-logo-prefeitura-limeira\",\n    \"type\": \"image\",\n    \"text\": \"Prefeitura de Limeira\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"alt\": \"Brasão da Prefeitura de Limeira\"\n    }\n  },\n  {\n    \"id\": \"footer-address\",\n    \"type\": \"label\",\n    \"text\": \"Endereço: Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900\",\n    \"icon\": \"location-pin\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-phone\",\n    \"type\": \"label\",\n    \"text\": \"Telefone: (19) 3404-9600\",\n    \"icon\": \"phone\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-cnpj\",\n    \"type\": \"label\",\n    \"text\": \"CNPJ: 45.132.495/0001-40\",\n    \"icon\": \"document\",\n    \"region\": \"footer\"\n  },\n  {\n    \"id\": \"footer-social-media-facebook\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"facebook\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-instagram\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"instagram\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-youtube\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"youtube\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-linkedin\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"linkedin\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-twitter\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"twitter\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-whatsapp\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"whatsapp\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-flickr\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"flickr\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-social-media-rss\",\n    \"type\": \"link\",\n    \"text\": null,\n    \"icon\": \"rss\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-link-termos-uso\",\n    \"type\": \"link\",\n    \"text\": \"Termo de Uso e Políticas de Privacidade\",\n    \"icon\": \"lock\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-link-lgpd-pesquisa-satisfacao\",\n    \"type\": \"link\",\n    \"text\": \"LGPD - Pesquisa de Satisfação\",\n    \"icon\": \"lock\",\n    \"region\": \"footer\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer-powered-by\",\n    \"type\": \"label\",\n    \"text\": \"eCrie\",\n    \"region\": \"footer\",\n    \"meta\": {\n      \"description\": \"Powered by eCrie\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 7715,
+      "totalTokenCount": 10288,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 1918
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "C2yeabfzB7v1qtsPrbPtmQ8"
+  },
+  "ui": [
+    {
+      "id": "link-ir-conteudo",
+      "type": "link",
+      "text": "Ir para o conteúdo",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-menu",
+      "type": "link",
+      "text": "Ir para o menu",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-busca",
+      "type": "link",
+      "text": "Ir para a busca",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "link-ir-rodape",
+      "type": "link",
+      "text": "Ir para o rodapé",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button-font-decrease",
+      "type": "button",
+      "text": "A-",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button-font-normal",
+      "type": "button",
+      "text": "A",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button-font-increase",
+      "type": "button",
+      "text": "A+",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "button-contrast-normal",
+      "type": "button",
+      "text": "Q",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Botão para contraste normal"
+      }
+    },
+    {
+      "id": "button-contrast-high",
+      "type": "button",
+      "text": "Q",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "description": "Botão para alto contraste"
+      }
+    },
+    {
+      "id": "button-libras",
+      "type": "button",
+      "text": null,
+      "icon": "libras",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "alt": "Brasão da Prefeitura de Limeira"
+      }
+    },
+    {
+      "id": "input-search",
+      "type": "input",
+      "text": null,
+      "placeholder": "Digite a sua busca",
+      "region": "header",
+      "actions": [
+        "onChange",
+        "onKeyPress"
+      ]
+    },
+    {
+      "id": "button-search",
+      "type": "button",
+      "text": null,
+      "icon": "search",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "info-portal-transparencia",
+      "type": "link",
+      "text": "PORTAL DA TRANSPARÊNCIA",
+      "icon": "info",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "weather-info",
+      "type": "text",
+      "text": "34° Chuva Fraca",
+      "icon": "cloud-rain",
+      "region": "header"
+    },
+    {
+      "id": "social-media-facebook",
+      "type": "link",
+      "text": null,
+      "icon": "facebook",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-instagram",
+      "type": "link",
+      "text": null,
+      "icon": "instagram",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-youtube",
+      "type": "link",
+      "text": null,
+      "icon": "youtube",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-linkedin",
+      "type": "link",
+      "text": null,
+      "icon": "linkedin",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-twitter",
+      "type": "link",
+      "text": null,
+      "icon": "twitter",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social-media-whatsapp",
+      "type": "link",
+      "text": null,
+      "icon": "whatsapp",
+      "region": "header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-a-prefeitura",
+      "type": "button",
+      "text": "A Prefeitura",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-secretarias",
+      "type": "button",
+      "text": "Secretarias",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-imprensa",
+      "type": "button",
+      "text": "Imprensa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-leis-municipais",
+      "type": "button",
+      "text": "Leis Municipais",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-consultas",
+      "type": "button",
+      "text": "Consultas",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "nav-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ],
+      "state": "active"
+    },
+    {
+      "id": "nav-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "nav-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "region": "main-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-inicio",
+      "type": "link",
+      "text": "Início",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-topo",
+      "type": "link",
+      "text": "Topo",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-noticias",
+      "type": "link",
+      "text": "Notícias",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb-geral",
+      "type": "link",
+      "text": "Geral",
+      "region": "breadcrumbs",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "hasDropdown": true
+      }
+    },
+    {
+      "id": "main-content-title",
+      "type": "label",
+      "text": "Geral",
+      "region": "main-content"
+    },
+    {
+      "id": "news-card-1",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-1",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Caminhão de cacareco na rua"
+          }
+        },
+        {
+          "id": "news-date-1",
+          "type": "label",
+          "text": "17/10/2025 às 14h12",
+          "region": "card"
+        },
+        {
+          "id": "news-title-1",
+          "type": "link",
+          "text": "Operação Só Cacareco percorrerá 15 bairros na próxima semana; veja quais áreas serão atendidas",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-1",
+          "type": "label",
+          "text": "Materiais inservíveis serão recolhidos e devem ser colocados na calçada no dia anterior",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-2",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-2",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Pessoas em um plantão de vacinação"
+          }
+        },
+        {
+          "id": "news-date-2",
+          "type": "label",
+          "text": "17/10/2025 às 11h48",
+          "region": "card"
+        },
+        {
+          "id": "news-title-2",
+          "type": "link",
+          "text": "Limeira registra aumento de 33% nas vacinas aplicadas em 2023 e consolida avanço na imunização",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-2",
+          "type": "label",
+          "text": "Crescimento reflete ações descentralizadas da Secretaria de Saúde e maior adesão da população",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-3",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-3",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Crianças em atividade ao ar livre"
+          }
+        },
+        {
+          "id": "news-date-3",
+          "type": "label",
+          "text": "17/10/2025 às 10h33",
+          "region": "card"
+        },
+        {
+          "id": "news-title-3",
+          "type": "link",
+          "text": "Mês dos Animais: alunos participam de trilha e simulam resgate de animais",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-3",
+          "type": "label",
+          "text": "Atividade ocorreu no Parque Cidade de Limeira",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-4",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-4",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Banda tocando instrumentos de sopro"
+          }
+        },
+        {
+          "id": "news-date-4",
+          "type": "label",
+          "text": "17/10/2025 às 8h47",
+          "region": "card"
+        },
+        {
+          "id": "news-title-4",
+          "type": "link",
+          "text": "Banda Henrique Marques toca especiais da Disney para comemorar mês das crianças no domingo na Praça Toledo Barros",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-4",
+          "type": "label",
+          "text": "Banda Henrique Marques se apresenta no coreto às 10h30",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-5",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-5",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Fachada de uma biblioteca"
+          }
+        },
+        {
+          "id": "news-date-5",
+          "type": "label",
+          "text": "17/10/2025 às 8h42",
+          "region": "card"
+        },
+        {
+          "id": "news-title-5",
+          "type": "link",
+          "text": "Espetáculo infantil “A Biblioteca Mágica e os Sentimentos” tem apresentações gratuitas",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-5",
+          "type": "label",
+          "text": "Projeto promove acesso à cultura para crianças de 3 a 6 anos com sessões escolares e abertas ao público",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-6",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-6",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Banda de rock posando para foto"
+          }
+        },
+        {
+          "id": "news-date-6",
+          "type": "label",
+          "text": "17/10/2025 às 8h38",
+          "region": "card"
+        },
+        {
+          "id": "news-title-6",
+          "type": "link",
+          "text": "Banda limeirense “Eu, a Véia e os Caras” lança EP “fissuras” no dia 21 de outubro",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-6",
+          "type": "label",
+          "text": "Novo trabalho aborda temas atuais como depressão e ansiedade e estará disponível nas plataformas digitais",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-7",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-7",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Alerta de golpe com um X vermelho"
+          }
+        },
+        {
+          "id": "news-date-7",
+          "type": "label",
+          "text": "16/10/2025 às 16h18",
+          "region": "card"
+        },
+        {
+          "id": "news-title-7",
+          "type": "link",
+          "text": "Prefeitura alerta sobre possível golpe envolvendo cadastro habitacional em Limeira",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-7",
+          "type": "label",
+          "text": "Informações oficiais sobre o cadastro serão divulgadas exclusivamente pelos canais oficiais da Prefeitura",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-8",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-8",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Placa de trânsito de sentido proibido"
+          }
+        },
+        {
+          "id": "news-date-8",
+          "type": "label",
+          "text": "16/10/2025 às 16h10",
+          "region": "card"
+        },
+        {
+          "id": "news-title-8",
+          "type": "link",
+          "text": "Ruas do Jardim Ipiranga terão sentido único a partir de segunda-feira (20)",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-8",
+          "type": "label",
+          "text": "Medida visa melhorar segurança viária e fluidez do trânsito na região",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-9",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-9",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Pessoas em um congresso"
+          }
+        },
+        {
+          "id": "news-date-9",
+          "type": "label",
+          "text": "16/10/2025 às 15h43",
+          "region": "card"
+        },
+        {
+          "id": "news-title-9",
+          "type": "link",
+          "text": "Ceprosom é referência no Congresso Nacional de Vigilância Socioassistencial",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-9",
+          "type": "label",
+          "text": "Experiência de integração com a Educação Permanente se destaca entre os trabalhos apresentados",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "news-card-10",
+      "type": "card",
+      "region": "main-content",
+      "meta": {
+        "contentType": "news-article"
+      },
+      "components": [
+        {
+          "id": "news-image-10",
+          "type": "image",
+          "text": null,
+          "region": "card",
+          "meta": {
+            "alt": "Máquina de mamografia"
+          }
+        },
+        {
+          "id": "news-date-10",
+          "type": "label",
+          "text": "16/10/2025 às 15h38",
+          "region": "card"
+        },
+        {
+          "id": "news-title-10",
+          "type": "link",
+          "text": "Ação inclusiva garante acesso à mamografia para mulheres com deficiência em Limeira",
+          "region": "card",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "news-description-10",
+          "type": "label",
+          "text": "Exames podem ser feitos na Policlínica, dia (23), sem necessidade de agendamento",
+          "region": "card"
+        }
+      ]
+    },
+    {
+      "id": "pagination-prev",
+      "type": "button",
+      "text": null,
+      "icon": "chevron-left",
+      "state": "disabled",
+      "region": "pagination",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "pagination-current-page",
+      "type": "input",
+      "text": "1",
+      "region": "pagination",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "inputType": "number"
+      }
+    },
+    {
+      "id": "pagination-total-pages",
+      "type": "label",
+      "text": "/ 1584",
+      "region": "pagination"
+    },
+    {
+      "id": "pagination-next",
+      "type": "button",
+      "text": null,
+      "icon": "chevron-right",
+      "state": "enabled",
+      "region": "pagination",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-limeira-digital",
+      "type": "button",
+      "text": "Limeira Digital",
+      "icon": "document",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-iptu-divida-ativa",
+      "type": "button",
+      "text": "IPTU e Dívida Ativa/ Mobiliário",
+      "icon": "building",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-consulta-medicamentos",
+      "type": "button",
+      "text": "Consulta Medicamentos",
+      "icon": "heart-plus",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-consulta-processos",
+      "type": "button",
+      "text": "Consulta de Processos",
+      "icon": "folder-open",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-multas-transito",
+      "type": "button",
+      "text": "Multas de Trânsito",
+      "icon": "car",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-certidoes",
+      "type": "button",
+      "text": "Certidões",
+      "icon": "envelope",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-leis-orcamentarias",
+      "type": "button",
+      "text": "Leis orçamentárias",
+      "icon": "book",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-vagas-pat",
+      "type": "button",
+      "text": "Vagas do PAT",
+      "icon": "briefcase",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-procon",
+      "type": "button",
+      "text": "PROCON",
+      "icon": "monitor",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-chamamento-publico",
+      "type": "button",
+      "text": "Chamamento Público",
+      "icon": "handshake",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-parcelamento-online",
+      "type": "button",
+      "text": "Parcelamen- to Online",
+      "icon": "globe",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-licitacoes",
+      "type": "button",
+      "text": "Licitações",
+      "icon": "gavel",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-plano-diretor",
+      "type": "button",
+      "text": "Plano Diretor 2025-2035",
+      "icon": "magnifying-glass",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-dengue",
+      "type": "button",
+      "text": "Dengue",
+      "icon": "mosquito",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar-cadastro-habitacional",
+      "type": "button",
+      "text": "Cadastro Habitacional",
+      "icon": "home",
+      "region": "right-sidebar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "floating-button-fale-conosco",
+      "type": "button",
+      "text": "Fale Conosco",
+      "icon": "chat-bubble",
+      "region": "floating",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-cidadao",
+      "type": "button",
+      "text": "Cidadão",
+      "region": "footer-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-empresa",
+      "type": "button",
+      "text": "Empresa",
+      "region": "footer-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-servidor",
+      "type": "button",
+      "text": "Servidor",
+      "region": "footer-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-nav-turismo",
+      "type": "button",
+      "text": "Turismo",
+      "region": "footer-navigation",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-logo-prefeitura-limeira",
+      "type": "image",
+      "text": "Prefeitura de Limeira",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "alt": "Brasão da Prefeitura de Limeira"
+      }
+    },
+    {
+      "id": "footer-address",
+      "type": "label",
+      "text": "Endereço: Rua Prefeito Doutor Alberto Ferreira nº 179 Centro, Limeira/SP - CEP: 13481-900",
+      "icon": "location-pin",
+      "region": "footer"
+    },
+    {
+      "id": "footer-phone",
+      "type": "label",
+      "text": "Telefone: (19) 3404-9600",
+      "icon": "phone",
+      "region": "footer"
+    },
+    {
+      "id": "footer-cnpj",
+      "type": "label",
+      "text": "CNPJ: 45.132.495/0001-40",
+      "icon": "document",
+      "region": "footer"
+    },
+    {
+      "id": "footer-social-media-facebook",
+      "type": "link",
+      "text": null,
+      "icon": "facebook",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-instagram",
+      "type": "link",
+      "text": null,
+      "icon": "instagram",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-youtube",
+      "type": "link",
+      "text": null,
+      "icon": "youtube",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-linkedin",
+      "type": "link",
+      "text": null,
+      "icon": "linkedin",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-twitter",
+      "type": "link",
+      "text": null,
+      "icon": "twitter",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-whatsapp",
+      "type": "link",
+      "text": null,
+      "icon": "whatsapp",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-flickr",
+      "type": "link",
+      "text": null,
+      "icon": "flickr",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-social-media-rss",
+      "type": "link",
+      "text": null,
+      "icon": "rss",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-link-termos-uso",
+      "type": "link",
+      "text": "Termo de Uso e Políticas de Privacidade",
+      "icon": "lock",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-link-lgpd-pesquisa-satisfacao",
+      "type": "link",
+      "text": "LGPD - Pesquisa de Satisfação",
+      "icon": "lock",
+      "region": "footer",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer-powered-by",
+      "type": "label",
+      "text": "eCrie",
+      "region": "footer",
+      "meta": {
+        "description": "Powered by eCrie"
+      }
+    }
+  ]
+}

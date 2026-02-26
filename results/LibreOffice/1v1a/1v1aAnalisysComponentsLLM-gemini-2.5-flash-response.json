@@ -1,0 +1,1427 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 128,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"window_title_bar\",\n    \"type\": \"window_title_bar\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"application_name\": \"LibreOffice Writer\",\n      \"document_name\": \"Sem título 1\"\n    }\n  },\n  {\n    \"id\": \"window_control_minimize\",\n    \"type\": \"button\",\n    \"text\": \"Minimizar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"window_control_maximize_restore\",\n    \"type\": \"button\",\n    \"text\": \"Maximizar/Restaurar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"window_control_close\",\n    \"type\": \"button\",\n    \"text\": \"Fechar\",\n    \"region\": \"top-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"menu_arquivo\",\n    \"type\": \"menu_item\",\n    \"text\": \"Arquivo\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_editar\",\n    \"type\": \"menu_item\",\n    \"text\": \"Editar\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_exibir\",\n    \"type\": \"menu_item\",\n    \"text\": \"Exibir\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_inserir\",\n    \"type\": \"menu_item\",\n    \"text\": \"Inserir\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_formatar\",\n    \"type\": \"menu_item\",\n    \"text\": \"Formatar\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_estilos\",\n    \"type\": \"menu_item\",\n    \"text\": \"Estilos\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_tabela\",\n    \"type\": \"menu_item\",\n    \"text\": \"Tabela\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_formulario\",\n    \"type\": \"menu_item\",\n    \"text\": \"Formulário\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_ferramentas\",\n    \"type\": \"menu_item\",\n    \"text\": \"Ferramentas\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_janela\",\n    \"type\": \"menu_item\",\n    \"text\": \"Janela\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"menu_ajuda\",\n    \"type\": \"menu_item\",\n    \"text\": \"Ajuda\",\n    \"region\": \"menu-bar\",\n    \"actions\": [\"onClick\", \"onHover\"]\n  },\n  {\n    \"id\": \"toolbar_standard_new\",\n    \"type\": \"button\",\n    \"text\": \"Novo\",\n    \"icon\": \"document_new\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_open\",\n    \"type\": \"button\",\n    \"text\": \"Abrir\",\n    \"icon\": \"folder_open\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_save\",\n    \"type\": \"button\",\n    \"text\": \"Salvar\",\n    \"icon\": \"save\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_save_as\",\n    \"type\": \"button\",\n    \"text\": \"Salvar como\",\n    \"icon\": \"save_as\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_print\",\n    \"type\": \"button\",\n    \"text\": \"Imprimir\",\n    \"icon\": \"print\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_print_preview\",\n    \"type\": \"button\",\n    \"text\": \"Visualizar impressão\",\n    \"icon\": \"print_preview\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_cut\",\n    \"type\": \"button\",\n    \"text\": \"Recortar\",\n    \"icon\": \"cut\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_copy\",\n    \"type\": \"button\",\n    \"text\": \"Copiar\",\n    \"icon\": \"copy\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_paste\",\n    \"type\": \"button\",\n    \"text\": \"Colar\",\n    \"icon\": \"paste\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_format_painter\",\n    \"type\": \"button\",\n    \"text\": \"Pincel de formatação\",\n    \"icon\": \"format_painter\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_undo\",\n    \"type\": \"button\",\n    \"text\": \"Desfazer\",\n    \"icon\": \"undo\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_redo\",\n    \"type\": \"button\",\n    \"text\": \"Refazer\",\n    \"icon\": \"redo\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_find_replace\",\n    \"type\": \"button\",\n    \"text\": \"Localizar e substituir\",\n    \"icon\": \"find_replace\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_navigator\",\n    \"type\": \"button\",\n    \"text\": \"Navegador\",\n    \"icon\": \"navigator\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_spelling_grammar\",\n    \"type\": \"button\",\n    \"text\": \"Ortografia e gramática\",\n    \"icon\": \"spelling_grammar\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_show_hide_non_printing\",\n    \"type\": \"button\",\n    \"text\": \"Mostrar/Ocultar caracteres não imprimíveis\",\n    \"icon\": \"show_hide_non_printing\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_zoom_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"Zoom\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onSelect\"]\n  },\n  {\n    \"id\": \"toolbar_standard_help\",\n    \"type\": \"button\",\n    \"text\": \"Ajuda\",\n    \"icon\": \"help\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_standard_options\",\n    \"type\": \"button\",\n    \"text\": \"Opções\",\n    \"icon\": \"options\",\n    \"region\": \"toolbar-standard\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_paragraph_style\",\n    \"type\": \"dropdown\",\n    \"text\": \"Estilo de parágrafo Padrão\",\n    \"region\": \"toolbar-formatting\",\n    \"actions\": [\"onSelect\"],\n    \"meta\": {\n      \"current_value\": \"Estilo de parágrafo Padrão\"\n    }\n  },\n  {\n    \"id\": \"toolbar_formatting_styles_formatting\",\n    \"type\": \"button\",\n    \"text\": \"Estilos e formatação\",\n    \"icon\": \"styles_formatting\",\n    \"region\": \"toolbar-formatting\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_clear_direct_formatting\",\n    \"type\": \"button\",\n    \"text\": \"Limpar formatação direta\",\n    \"icon\": \"clear_formatting\",\n    \"region\": \"toolbar-formatting\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_font_name\",\n    \"type\": \"dropdown\",\n    \"text\": \"Arial\",\n    \"region\": \"toolbar-formatting\",\n    \"actions\": [\"onSelect\"],\n    \"meta\": {\n      \"current_value\": \"Arial\"\n    }\n  },\n  {\n    \"id\": \"toolbar_formatting_font_size\",\n    \"type\": \"dropdown\",\n    \"text\": \"12 pt\",\n    \"region\": \"toolbar-formatting\",\n    \"actions\": [\"onSelect\"],\n    \"meta\": {\n      \"current_value\": \"12 pt\"\n    }\n  },\n  {\n    \"id\": \"toolbar_formatting_bold\",\n    \"type\": \"button\",\n    \"text\": \"Negrito\",\n    \"icon\": \"bold\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"active\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_italic\",\n    \"type\": \"button\",\n    \"text\": \"Itálico\",\n    \"icon\": \"italic\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_underline\",\n    \"type\": \"button\",\n    \"text\": \"Sublinhado\",\n    \"icon\": \"underline\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_strikethrough\",\n    \"type\": \"button\",\n    \"text\": \"Tachado\",\n    \"icon\": \"strikethrough\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_superscript\",\n    \"type\": \"button\",\n    \"text\": \"Sobrescrito\",\n    \"icon\": \"superscript\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_subscript\",\n    \"type\": \"button\",\n    \"text\": \"Subscrito\",\n    \"icon\": \"subscript\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_font_color\",\n    \"type\": \"button\",\n    \"text\": \"Cor da fonte\",\n    \"icon\": \"font_color\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"current_color_indicator\": \"red\"\n    }\n  },\n  {\n    \"id\": \"toolbar_formatting_highlight_color\",\n    \"type\": \"button\",\n    \"text\": \"Cor do realce\",\n    \"icon\": \"highlight_color\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"current_color_indicator\": \"red\"\n    }\n  },\n  {\n    \"id\": \"toolbar_formatting_align_left\",\n    \"type\": \"button\",\n    \"text\": \"Alinhar à esquerda\",\n    \"icon\": \"align_left\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"active\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_center\",\n    \"type\": \"button\",\n    \"text\": \"Centralizar\",\n    \"icon\": \"center\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_align_right\",\n    \"type\": \"button\",\n    \"text\": \"Alinhar à direita\",\n    \"icon\": \"align_right\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_justify\",\n    \"type\": \"button\",\n    \"text\": \"Justificar\",\n    \"icon\": \"justify\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_bulleted_list\",\n    \"type\": \"button\",\n    \"text\": \"Lista com marcadores\",\n    \"icon\": \"bulleted_list\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_numbered_list\",\n    \"type\": \"button\",\n    \"text\": \"Lista numerada\",\n    \"icon\": \"numbered_list\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_decrease_indent\",\n    \"type\": \"button\",\n    \"text\": \"Diminuir recuo\",\n    \"icon\": \"decrease_indent\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_increase_indent\",\n    \"type\": \"button\",\n    \"text\": \"Aumentar recuo\",\n    \"icon\": \"increase_indent\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_line_spacing\",\n    \"type\": \"dropdown\",\n    \"text\": \"Espaçamento de linha\",\n    \"icon\": \"line_spacing\",\n    \"region\": \"toolbar-formatting\",\n    \"actions\": [\"onSelect\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_background_color\",\n    \"type\": \"button\",\n    \"text\": \"Cor de fundo\",\n    \"icon\": \"background_color\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"current_color_indicator\": \"black\"\n    }\n  },\n  {\n    \"id\": \"toolbar_formatting_borders\",\n    \"type\": \"button\",\n    \"text\": \"Bordas\",\n    \"icon\": \"borders\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"toolbar_formatting_more_options\",\n    \"type\": \"button\",\n    \"text\": \"Mais opções\",\n    \"icon\": \"more_options\",\n    \"region\": \"toolbar-formatting\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"horizontal_ruler\",\n    \"type\": \"ruler\",\n    \"text\": null,\n    \"region\": \"ruler\",\n    \"meta\": {\n      \"orientation\": \"horizontal\",\n      \"units\": \"cm\",\n      \"range\": \"0-18\"\n    }\n  },\n  {\n    \"id\": \"document_area\",\n    \"type\": \"text_editor\",\n    \"text\": null,\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"placeholder\": \"Comece a digitar...\",\n      \"cursor_position\": \"start\"\n    }\n  },\n  {\n    \"id\": \"sidebar_header_properties_label\",\n    \"type\": \"label\",\n    \"text\": \"Propriedades\",\n    \"region\": \"sidebar-header\"\n  },\n  {\n    \"id\": \"sidebar_header_help_button\",\n    \"type\": \"button\",\n    \"text\": \"?\",\n    \"region\": \"sidebar-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_header_close_button\",\n    \"type\": \"button\",\n    \"text\": \"x\",\n    \"region\": \"sidebar-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_header_menu_button\",\n    \"type\": \"button\",\n    \"text\": \"Menu\",\n    \"icon\": \"hamburger_menu\",\n    \"region\": \"sidebar-header\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_tab_properties\",\n    \"type\": \"tab\",\n    \"text\": \"Propriedades\",\n    \"icon\": \"properties\",\n    \"region\": \"sidebar-tabs\",\n    \"state\": \"selected\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_tab_gallery\",\n    \"type\": \"tab\",\n    \"text\": \"Galeria\",\n    \"icon\": \"gallery\",\n    \"region\": \"sidebar-tabs\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_tab_navigator\",\n    \"type\": \"tab\",\n    \"text\": \"Navegador\",\n    \"icon\": \"navigator\",\n    \"region\": \"sidebar-tabs\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_tab_styles\",\n    \"type\": \"tab\",\n    \"text\": \"Estilos\",\n    \"icon\": \"styles\",\n    \"region\": \"sidebar-tabs\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_tab_manage_changes\",\n    \"type\": \"tab\",\n    \"text\": \"Gerenciar alterações\",\n    \"icon\": \"manage_changes\",\n    \"region\": \"sidebar-tabs\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_tab_customize\",\n    \"type\": \"tab\",\n    \"text\": \"Personalizar\",\n    \"icon\": \"customize\",\n    \"region\": \"sidebar-tabs\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_tab_search\",\n    \"type\": \"tab\",\n    \"text\": \"Pesquisar\",\n    \"icon\": \"search\",\n    \"region\": \"sidebar-tabs\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_section_style\",\n    \"type\": \"section_header\",\n    \"text\": \"Estilo\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"expanded\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_style_paragraph_style_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"Estilo de parágrafo Padrão\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onSelect\"],\n    \"meta\": {\n      \"current_value\": \"Estilo de parágrafo Padrão\"\n    }\n  },\n  {\n    \"id\": \"sidebar_style_properties_button\",\n    \"type\": \"button\",\n    \"text\": \"Propriedades (Alt+1)\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_section_character\",\n    \"type\": \"section_header\",\n    \"text\": \"Caractere\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"expanded\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_font_name_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"Arial\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onSelect\"],\n    \"meta\": {\n      \"current_value\": \"Arial\"\n    }\n  },\n  {\n    \"id\": \"sidebar_character_font_size_input\",\n    \"type\": \"input_spinner\",\n    \"text\": \"12 pt\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n    \"meta\": {\n      \"current_value\": \"12 pt\",\n      \"unit\": \"pt\"\n    }\n  },\n  {\n    \"id\": \"sidebar_character_bold\",\n    \"type\": \"button\",\n    \"text\": \"Negrito\",\n    \"icon\": \"bold\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"active\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_italic\",\n    \"type\": \"button\",\n    \"text\": \"Itálico\",\n    \"icon\": \"italic\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_underline\",\n    \"type\": \"button\",\n    \"text\": \"Sublinhado\",\n    \"icon\": \"underline\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_strikethrough\",\n    \"type\": \"button\",\n    \"text\": \"Tachado\",\n    \"icon\": \"strikethrough\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_superscript\",\n    \"type\": \"button\",\n    \"text\": \"Sobrescrito\",\n    \"icon\": \"superscript\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_subscript\",\n    \"type\": \"button\",\n    \"text\": \"Subscrito\",\n    \"icon\": \"subscript\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_font_color\",\n    \"type\": \"button\",\n    \"text\": \"Cor da fonte\",\n    \"icon\": \"font_color\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"current_color_indicator\": \"red\"\n    }\n  },\n  {\n    \"id\": \"sidebar_character_highlight_color\",\n    \"type\": \"button\",\n    \"text\": \"Cor do realce\",\n    \"icon\": \"highlight_color\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"current_color_indicator\": \"red\"\n    }\n  },\n  {\n    \"id\": \"sidebar_character_increase_font_size\",\n    \"type\": \"button\",\n    \"text\": \"Aumentar tamanho da fonte\",\n    \"icon\": \"increase_font_size\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_decrease_font_size\",\n    \"type\": \"button\",\n    \"text\": \"Diminuir tamanho da fonte\",\n    \"icon\": \"decrease_font_size\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_case_change\",\n    \"type\": \"button\",\n    \"text\": \"Maiúsculas/Minúsculas\",\n    \"icon\": \"case_change\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_clear_direct_formatting\",\n    \"type\": \"button\",\n    \"text\": \"Limpar formatação direta\",\n    \"icon\": \"clear_formatting\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_spacing\",\n    \"type\": \"button\",\n    \"text\": \"Espaçamento de caracteres\",\n    \"icon\": \"character_spacing\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_background_color\",\n    \"type\": \"button\",\n    \"text\": \"Cor de fundo\",\n    \"icon\": \"background_color\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"current_color_indicator\": \"black\"\n    }\n  },\n  {\n    \"id\": \"sidebar_character_borders\",\n    \"type\": \"button\",\n    \"text\": \"Bordas\",\n    \"icon\": \"borders\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_character_more_options\",\n    \"type\": \"button\",\n    \"text\": \"Mais opções\",\n    \"icon\": \"more_options\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_section_paragraph\",\n    \"type\": \"section_header\",\n    \"text\": \"Parágrafo\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"expanded\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_align_left\",\n    \"type\": \"button\",\n    \"text\": \"Alinhar à esquerda\",\n    \"icon\": \"align_left\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"active\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_center\",\n    \"type\": \"button\",\n    \"text\": \"Centralizar\",\n    \"icon\": \"center\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_align_right\",\n    \"type\": \"button\",\n    \"text\": \"Alinhar à direita\",\n    \"icon\": \"align_right\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_justify\",\n    \"type\": \"button\",\n    \"text\": \"Justificar\",\n    \"icon\": \"justify\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_bulleted_list\",\n    \"type\": \"button\",\n    \"text\": \"Lista com marcadores\",\n    \"icon\": \"bulleted_list\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_numbered_list\",\n    \"type\": \"button\",\n    \"text\": \"Lista numerada\",\n    \"icon\": \"numbered_list\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_decrease_indent\",\n    \"type\": \"button\",\n    \"text\": \"Diminuir recuo\",\n    \"icon\": \"decrease_indent\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_increase_indent\",\n    \"type\": \"button\",\n    \"text\": \"Aumentar recuo\",\n    \"icon\": \"increase_indent\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_line_spacing\",\n    \"type\": \"dropdown\",\n    \"text\": \"Espaçamento de linha\",\n    \"icon\": \"line_spacing\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onSelect\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_background_color\",\n    \"type\": \"button\",\n    \"text\": \"Cor de fundo\",\n    \"icon\": \"background_color\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"current_color_indicator\": \"black\"\n    }\n  },\n  {\n    \"id\": \"sidebar_paragraph_borders\",\n    \"type\": \"button\",\n    \"text\": \"Bordas\",\n    \"icon\": \"borders\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_more_options\",\n    \"type\": \"button\",\n    \"text\": \"Mais opções\",\n    \"icon\": \"more_options\",\n    \"region\": \"sidebar-content\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"sidebar_paragraph_spacing_label\",\n    \"type\": \"label\",\n    \"text\": \"Espaço:\",\n    \"region\": \"sidebar-content\"\n  },\n  {\n    \"id\": \"sidebar_paragraph_spacing_top_input\",\n    \"type\": \"input_spinner\",\n    \"text\": \"0,00 cm\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n    \"meta\": {\n      \"current_value\": \"0,00\",\n      \"unit\": \"cm\",\n      \"label\": \"Espaço acima\"\n    }\n  },\n  {\n    \"id\": \"sidebar_paragraph_spacing_bottom_input\",\n    \"type\": \"input_spinner\",\n    \"text\": \"0,00 cm\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n    \"meta\": {\n      \"current_value\": \"0,00\",\n      \"unit\": \"cm\",\n      \"label\": \"Espaço abaixo\"\n    }\n  },\n  {\n    \"id\": \"sidebar_paragraph_spacing_first_line_input\",\n    \"type\": \"input_spinner\",\n    \"text\": \"0,00 cm\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n    \"meta\": {\n      \"current_value\": \"0,00\",\n      \"unit\": \"cm\",\n      \"label\": \"Primeira linha\"\n    }\n  },\n  {\n    \"id\": \"sidebar_paragraph_indent_label\",\n    \"type\": \"label\",\n    \"text\": \"Recuo:\",\n    \"region\": \"sidebar-content\"\n  },\n  {\n    \"id\": \"sidebar_paragraph_indent_left_input\",\n    \"type\": \"input_spinner\",\n    \"text\": \"0,00 cm\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n    \"meta\": {\n      \"current_value\": \"0,00\",\n      \"unit\": \"cm\",\n      \"label\": \"Recuo à esquerda\"\n    }\n  },\n  {\n    \"id\": \"sidebar_paragraph_indent_right_input\",\n    \"type\": \"input_spinner\",\n    \"text\": \"0,00 cm\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n    \"meta\": {\n      \"current_value\": \"0,00\",\n      \"unit\": \"cm\",\n      \"label\": \"Recuo à direita\"\n    }\n  },\n  {\n    \"id\": \"sidebar_paragraph_indent_before_text_input\",\n    \"type\": \"input_spinner\",\n    \"text\": \"0,00 cm\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n    \"meta\": {\n      \"current_value\": \"0,00\",\n      \"unit\": \"cm\",\n      \"label\": \"Antes do texto\"\n    }\n  },\n  {\n    \"id\": \"sidebar_paragraph_indent_after_text_input\",\n    \"type\": \"input_spinner\",\n    \"text\": \"0,00 cm\",\n    \"region\": \"sidebar-content\",\n    \"actions\": [\"onChange\", \"onIncrement\", \"onDecrement\"],\n    \"meta\": {\n      \"current_value\": \"0,00\",\n      \"unit\": \"cm\",\n      \"label\": \"Depois do texto\"\n    }\n  },\n  {\n    \"id\": \"sidebar_scrollbar\",\n    \"type\": \"scrollbar\",\n    \"text\": null,\n    \"region\": \"sidebar-content\",\n    \"meta\": {\n      \"orientation\": \"vertical\"\n    }\n  },\n  {\n    \"id\": \"status_bar_page_info\",\n    \"type\": \"label\",\n    \"text\": \"Página 1 de 1\",\n    \"region\": \"status-bar\"\n  },\n  {\n    \"id\": \"status_bar_word_character_count\",\n    \"type\": \"label\",\n    \"text\": \"0 palavra, 0 caractere\",\n    \"region\": \"status-bar\"\n  },\n  {\n    \"id\": \"status_bar_page_style\",\n    \"type\": \"label\",\n    \"text\": \"Estilo de página Padrão\",\n    \"region\": \"status-bar\"\n  },\n  {\n    \"id\": \"status_bar_language\",\n    \"type\": \"label\",\n    \"text\": \"Português (Brasil)\",\n    \"region\": \"status-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"status_bar_view_mode_single_page\",\n    \"type\": \"button\",\n    \"text\": \"Modo de exibição: Página única\",\n    \"icon\": \"single_page_view\",\n    \"region\": \"status-bar\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"status_bar_view_mode_multiple_pages\",\n    \"type\": \"button\",\n    \"text\": \"Modo de exibição: Múltiplas páginas\",\n    \"icon\": \"multiple_pages_view\",\n    \"region\": \"status-bar\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"status_bar_view_mode_book_view\",\n    \"type\": \"button\",\n    \"text\": \"Modo de exibição: Livro\",\n    \"icon\": \"book_view\",\n    \"region\": \"status-bar\",\n    \"state\": \"default\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"status_bar_zoom_out\",\n    \"type\": \"button\",\n    \"text\": \"Diminuir zoom\",\n    \"icon\": \"zoom_out\",\n    \"region\": \"status-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"status_bar_zoom_slider\",\n    \"type\": \"slider\",\n    \"text\": null,\n    \"region\": \"status-bar\",\n    \"actions\": [\"onChange\"],\n    \"meta\": {\n      \"current_value\": \"100%\"\n    }\n  },\n  {\n    \"id\": \"status_bar_zoom_in\",\n    \"type\": \"button\",\n    \"text\": \"Aumentar zoom\",\n    \"icon\": \"zoom_in\",\n    \"region\": \"status-bar\",\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"status_bar_zoom_percentage\",\n    \"type\": \"label\",\n    \"text\": \"100%\",\n    \"region\": \"status-bar\",\n    \"actions\": [\"onClick\"]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 9196,
+      "totalTokenCount": 12369,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 2518
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "mfOdaZOSG8ziz7IPxbC5-Qw"
+  },
+  "ui": [
+    {
+      "id": "window_title_bar",
+      "type": "window_title_bar",
+      "text": "Sem título 1 — LibreOffice Writer",
+      "region": "top-bar",
+      "meta": {
+        "application_name": "LibreOffice Writer",
+        "document_name": "Sem título 1"
+      }
+    },
+    {
+      "id": "window_control_minimize",
+      "type": "button",
+      "text": "Minimizar",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "window_control_maximize_restore",
+      "type": "button",
+      "text": "Maximizar/Restaurar",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "window_control_close",
+      "type": "button",
+      "text": "Fechar",
+      "region": "top-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "menu_arquivo",
+      "type": "menu_item",
+      "text": "Arquivo",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_editar",
+      "type": "menu_item",
+      "text": "Editar",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_exibir",
+      "type": "menu_item",
+      "text": "Exibir",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_inserir",
+      "type": "menu_item",
+      "text": "Inserir",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_formatar",
+      "type": "menu_item",
+      "text": "Formatar",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_estilos",
+      "type": "menu_item",
+      "text": "Estilos",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_tabela",
+      "type": "menu_item",
+      "text": "Tabela",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_formulario",
+      "type": "menu_item",
+      "text": "Formulário",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_ferramentas",
+      "type": "menu_item",
+      "text": "Ferramentas",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_janela",
+      "type": "menu_item",
+      "text": "Janela",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "menu_ajuda",
+      "type": "menu_item",
+      "text": "Ajuda",
+      "region": "menu-bar",
+      "actions": [
+        "onClick",
+        "onHover"
+      ]
+    },
+    {
+      "id": "toolbar_standard_new",
+      "type": "button",
+      "text": "Novo",
+      "icon": "document_new",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_open",
+      "type": "button",
+      "text": "Abrir",
+      "icon": "folder_open",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_save",
+      "type": "button",
+      "text": "Salvar",
+      "icon": "save",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_save_as",
+      "type": "button",
+      "text": "Salvar como",
+      "icon": "save_as",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_print",
+      "type": "button",
+      "text": "Imprimir",
+      "icon": "print",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_print_preview",
+      "type": "button",
+      "text": "Visualizar impressão",
+      "icon": "print_preview",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_cut",
+      "type": "button",
+      "text": "Recortar",
+      "icon": "cut",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_copy",
+      "type": "button",
+      "text": "Copiar",
+      "icon": "copy",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_paste",
+      "type": "button",
+      "text": "Colar",
+      "icon": "paste",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_format_painter",
+      "type": "button",
+      "text": "Pincel de formatação",
+      "icon": "format_painter",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_undo",
+      "type": "button",
+      "text": "Desfazer",
+      "icon": "undo",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_redo",
+      "type": "button",
+      "text": "Refazer",
+      "icon": "redo",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_find_replace",
+      "type": "button",
+      "text": "Localizar e substituir",
+      "icon": "find_replace",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_navigator",
+      "type": "button",
+      "text": "Navegador",
+      "icon": "navigator",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_spelling_grammar",
+      "type": "button",
+      "text": "Ortografia e gramática",
+      "icon": "spelling_grammar",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_show_hide_non_printing",
+      "type": "button",
+      "text": "Mostrar/Ocultar caracteres não imprimíveis",
+      "icon": "show_hide_non_printing",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_zoom_dropdown",
+      "type": "dropdown",
+      "text": "Zoom",
+      "region": "toolbar-standard",
+      "actions": [
+        "onSelect"
+      ]
+    },
+    {
+      "id": "toolbar_standard_help",
+      "type": "button",
+      "text": "Ajuda",
+      "icon": "help",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_standard_options",
+      "type": "button",
+      "text": "Opções",
+      "icon": "options",
+      "region": "toolbar-standard",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_paragraph_style",
+      "type": "dropdown",
+      "text": "Estilo de parágrafo Padrão",
+      "region": "toolbar-formatting",
+      "actions": [
+        "onSelect"
+      ],
+      "meta": {
+        "current_value": "Estilo de parágrafo Padrão"
+      }
+    },
+    {
+      "id": "toolbar_formatting_styles_formatting",
+      "type": "button",
+      "text": "Estilos e formatação",
+      "icon": "styles_formatting",
+      "region": "toolbar-formatting",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_clear_direct_formatting",
+      "type": "button",
+      "text": "Limpar formatação direta",
+      "icon": "clear_formatting",
+      "region": "toolbar-formatting",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_font_name",
+      "type": "dropdown",
+      "text": "Arial",
+      "region": "toolbar-formatting",
+      "actions": [
+        "onSelect"
+      ],
+      "meta": {
+        "current_value": "Arial"
+      }
+    },
+    {
+      "id": "toolbar_formatting_font_size",
+      "type": "dropdown",
+      "text": "12 pt",
+      "region": "toolbar-formatting",
+      "actions": [
+        "onSelect"
+      ],
+      "meta": {
+        "current_value": "12 pt"
+      }
+    },
+    {
+      "id": "toolbar_formatting_bold",
+      "type": "button",
+      "text": "Negrito",
+      "icon": "bold",
+      "region": "toolbar-formatting",
+      "state": "active",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_italic",
+      "type": "button",
+      "text": "Itálico",
+      "icon": "italic",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_underline",
+      "type": "button",
+      "text": "Sublinhado",
+      "icon": "underline",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_strikethrough",
+      "type": "button",
+      "text": "Tachado",
+      "icon": "strikethrough",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_superscript",
+      "type": "button",
+      "text": "Sobrescrito",
+      "icon": "superscript",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_subscript",
+      "type": "button",
+      "text": "Subscrito",
+      "icon": "subscript",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_font_color",
+      "type": "button",
+      "text": "Cor da fonte",
+      "icon": "font_color",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "current_color_indicator": "red"
+      }
+    },
+    {
+      "id": "toolbar_formatting_highlight_color",
+      "type": "button",
+      "text": "Cor do realce",
+      "icon": "highlight_color",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "current_color_indicator": "red"
+      }
+    },
+    {
+      "id": "toolbar_formatting_align_left",
+      "type": "button",
+      "text": "Alinhar à esquerda",
+      "icon": "align_left",
+      "region": "toolbar-formatting",
+      "state": "active",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_center",
+      "type": "button",
+      "text": "Centralizar",
+      "icon": "center",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_align_right",
+      "type": "button",
+      "text": "Alinhar à direita",
+      "icon": "align_right",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_justify",
+      "type": "button",
+      "text": "Justificar",
+      "icon": "justify",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_bulleted_list",
+      "type": "button",
+      "text": "Lista com marcadores",
+      "icon": "bulleted_list",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_numbered_list",
+      "type": "button",
+      "text": "Lista numerada",
+      "icon": "numbered_list",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_decrease_indent",
+      "type": "button",
+      "text": "Diminuir recuo",
+      "icon": "decrease_indent",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_increase_indent",
+      "type": "button",
+      "text": "Aumentar recuo",
+      "icon": "increase_indent",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_line_spacing",
+      "type": "dropdown",
+      "text": "Espaçamento de linha",
+      "icon": "line_spacing",
+      "region": "toolbar-formatting",
+      "actions": [
+        "onSelect"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_background_color",
+      "type": "button",
+      "text": "Cor de fundo",
+      "icon": "background_color",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "current_color_indicator": "black"
+      }
+    },
+    {
+      "id": "toolbar_formatting_borders",
+      "type": "button",
+      "text": "Bordas",
+      "icon": "borders",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "toolbar_formatting_more_options",
+      "type": "button",
+      "text": "Mais opções",
+      "icon": "more_options",
+      "region": "toolbar-formatting",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "horizontal_ruler",
+      "type": "ruler",
+      "text": null,
+      "region": "ruler",
+      "meta": {
+        "orientation": "horizontal",
+        "units": "cm",
+        "range": "0-18"
+      }
+    },
+    {
+      "id": "document_area",
+      "type": "text_editor",
+      "text": null,
+      "region": "main-content",
+      "meta": {
+        "placeholder": "Comece a digitar...",
+        "cursor_position": "start"
+      }
+    },
+    {
+      "id": "sidebar_header_properties_label",
+      "type": "label",
+      "text": "Propriedades",
+      "region": "sidebar-header"
+    },
+    {
+      "id": "sidebar_header_help_button",
+      "type": "button",
+      "text": "?",
+      "region": "sidebar-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_header_close_button",
+      "type": "button",
+      "text": "x",
+      "region": "sidebar-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_header_menu_button",
+      "type": "button",
+      "text": "Menu",
+      "icon": "hamburger_menu",
+      "region": "sidebar-header",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_tab_properties",
+      "type": "tab",
+      "text": "Propriedades",
+      "icon": "properties",
+      "region": "sidebar-tabs",
+      "state": "selected",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_tab_gallery",
+      "type": "tab",
+      "text": "Galeria",
+      "icon": "gallery",
+      "region": "sidebar-tabs",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_tab_navigator",
+      "type": "tab",
+      "text": "Navegador",
+      "icon": "navigator",
+      "region": "sidebar-tabs",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_tab_styles",
+      "type": "tab",
+      "text": "Estilos",
+      "icon": "styles",
+      "region": "sidebar-tabs",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_tab_manage_changes",
+      "type": "tab",
+      "text": "Gerenciar alterações",
+      "icon": "manage_changes",
+      "region": "sidebar-tabs",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_tab_customize",
+      "type": "tab",
+      "text": "Personalizar",
+      "icon": "customize",
+      "region": "sidebar-tabs",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_tab_search",
+      "type": "tab",
+      "text": "Pesquisar",
+      "icon": "search",
+      "region": "sidebar-tabs",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_section_style",
+      "type": "section_header",
+      "text": "Estilo",
+      "region": "sidebar-content",
+      "state": "expanded",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_style_paragraph_style_dropdown",
+      "type": "dropdown",
+      "text": "Estilo de parágrafo Padrão",
+      "region": "sidebar-content",
+      "actions": [
+        "onSelect"
+      ],
+      "meta": {
+        "current_value": "Estilo de parágrafo Padrão"
+      }
+    },
+    {
+      "id": "sidebar_style_properties_button",
+      "type": "button",
+      "text": "Propriedades (Alt+1)",
+      "region": "sidebar-content",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_section_character",
+      "type": "section_header",
+      "text": "Caractere",
+      "region": "sidebar-content",
+      "state": "expanded",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_font_name_dropdown",
+      "type": "dropdown",
+      "text": "Arial",
+      "region": "sidebar-content",
+      "actions": [
+        "onSelect"
+      ],
+      "meta": {
+        "current_value": "Arial"
+      }
+    },
+    {
+      "id": "sidebar_character_font_size_input",
+      "type": "input_spinner",
+      "text": "12 pt",
+      "region": "sidebar-content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement"
+      ],
+      "meta": {
+        "current_value": "12 pt",
+        "unit": "pt"
+      }
+    },
+    {
+      "id": "sidebar_character_bold",
+      "type": "button",
+      "text": "Negrito",
+      "icon": "bold",
+      "region": "sidebar-content",
+      "state": "active",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_italic",
+      "type": "button",
+      "text": "Itálico",
+      "icon": "italic",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_underline",
+      "type": "button",
+      "text": "Sublinhado",
+      "icon": "underline",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_strikethrough",
+      "type": "button",
+      "text": "Tachado",
+      "icon": "strikethrough",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_superscript",
+      "type": "button",
+      "text": "Sobrescrito",
+      "icon": "superscript",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_subscript",
+      "type": "button",
+      "text": "Subscrito",
+      "icon": "subscript",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_font_color",
+      "type": "button",
+      "text": "Cor da fonte",
+      "icon": "font_color",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "current_color_indicator": "red"
+      }
+    },
+    {
+      "id": "sidebar_character_highlight_color",
+      "type": "button",
+      "text": "Cor do realce",
+      "icon": "highlight_color",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "current_color_indicator": "red"
+      }
+    },
+    {
+      "id": "sidebar_character_increase_font_size",
+      "type": "button",
+      "text": "Aumentar tamanho da fonte",
+      "icon": "increase_font_size",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_decrease_font_size",
+      "type": "button",
+      "text": "Diminuir tamanho da fonte",
+      "icon": "decrease_font_size",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_case_change",
+      "type": "button",
+      "text": "Maiúsculas/Minúsculas",
+      "icon": "case_change",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_clear_direct_formatting",
+      "type": "button",
+      "text": "Limpar formatação direta",
+      "icon": "clear_formatting",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_spacing",
+      "type": "button",
+      "text": "Espaçamento de caracteres",
+      "icon": "character_spacing",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_background_color",
+      "type": "button",
+      "text": "Cor de fundo",
+      "icon": "background_color",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "current_color_indicator": "black"
+      }
+    },
+    {
+      "id": "sidebar_character_borders",
+      "type": "button",
+      "text": "Bordas",
+      "icon": "borders",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_character_more_options",
+      "type": "button",
+      "text": "Mais opções",
+      "icon": "more_options",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_section_paragraph",
+      "type": "section_header",
+      "text": "Parágrafo",
+      "region": "sidebar-content",
+      "state": "expanded",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_align_left",
+      "type": "button",
+      "text": "Alinhar à esquerda",
+      "icon": "align_left",
+      "region": "sidebar-content",
+      "state": "active",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_center",
+      "type": "button",
+      "text": "Centralizar",
+      "icon": "center",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_align_right",
+      "type": "button",
+      "text": "Alinhar à direita",
+      "icon": "align_right",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_justify",
+      "type": "button",
+      "text": "Justificar",
+      "icon": "justify",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_bulleted_list",
+      "type": "button",
+      "text": "Lista com marcadores",
+      "icon": "bulleted_list",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_numbered_list",
+      "type": "button",
+      "text": "Lista numerada",
+      "icon": "numbered_list",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_decrease_indent",
+      "type": "button",
+      "text": "Diminuir recuo",
+      "icon": "decrease_indent",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_increase_indent",
+      "type": "button",
+      "text": "Aumentar recuo",
+      "icon": "increase_indent",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_line_spacing",
+      "type": "dropdown",
+      "text": "Espaçamento de linha",
+      "icon": "line_spacing",
+      "region": "sidebar-content",
+      "actions": [
+        "onSelect"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_background_color",
+      "type": "button",
+      "text": "Cor de fundo",
+      "icon": "background_color",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "current_color_indicator": "black"
+      }
+    },
+    {
+      "id": "sidebar_paragraph_borders",
+      "type": "button",
+      "text": "Bordas",
+      "icon": "borders",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_more_options",
+      "type": "button",
+      "text": "Mais opções",
+      "icon": "more_options",
+      "region": "sidebar-content",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "sidebar_paragraph_spacing_label",
+      "type": "label",
+      "text": "Espaço:",
+      "region": "sidebar-content"
+    },
+    {
+      "id": "sidebar_paragraph_spacing_top_input",
+      "type": "input_spinner",
+      "text": "0,00 cm",
+      "region": "sidebar-content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement"
+      ],
+      "meta": {
+        "current_value": "0,00",
+        "unit": "cm",
+        "label": "Espaço acima"
+      }
+    },
+    {
+      "id": "sidebar_paragraph_spacing_bottom_input",
+      "type": "input_spinner",
+      "text": "0,00 cm",
+      "region": "sidebar-content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement"
+      ],
+      "meta": {
+        "current_value": "0,00",
+        "unit": "cm",
+        "label": "Espaço abaixo"
+      }
+    },
+    {
+      "id": "sidebar_paragraph_spacing_first_line_input",
+      "type": "input_spinner",
+      "text": "0,00 cm",
+      "region": "sidebar-content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement"
+      ],
+      "meta": {
+        "current_value": "0,00",
+        "unit": "cm",
+        "label": "Primeira linha"
+      }
+    },
+    {
+      "id": "sidebar_paragraph_indent_label",
+      "type": "label",
+      "text": "Recuo:",
+      "region": "sidebar-content"
+    },
+    {
+      "id": "sidebar_paragraph_indent_left_input",
+      "type": "input_spinner",
+      "text": "0,00 cm",
+      "region": "sidebar-content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement"
+      ],
+      "meta": {
+        "current_value": "0,00",
+        "unit": "cm",
+        "label": "Recuo à esquerda"
+      }
+    },
+    {
+      "id": "sidebar_paragraph_indent_right_input",
+      "type": "input_spinner",
+      "text": "0,00 cm",
+      "region": "sidebar-content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement"
+      ],
+      "meta": {
+        "current_value": "0,00",
+        "unit": "cm",
+        "label": "Recuo à direita"
+      }
+    },
+    {
+      "id": "sidebar_paragraph_indent_before_text_input",
+      "type": "input_spinner",
+      "text": "0,00 cm",
+      "region": "sidebar-content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement"
+      ],
+      "meta": {
+        "current_value": "0,00",
+        "unit": "cm",
+        "label": "Antes do texto"
+      }
+    },
+    {
+      "id": "sidebar_paragraph_indent_after_text_input",
+      "type": "input_spinner",
+      "text": "0,00 cm",
+      "region": "sidebar-content",
+      "actions": [
+        "onChange",
+        "onIncrement",
+        "onDecrement"
+      ],
+      "meta": {
+        "current_value": "0,00",
+        "unit": "cm",
+        "label": "Depois do texto"
+      }
+    },
+    {
+      "id": "sidebar_scrollbar",
+      "type": "scrollbar",
+      "text": null,
+      "region": "sidebar-content",
+      "meta": {
+        "orientation": "vertical"
+      }
+    },
+    {
+      "id": "status_bar_page_info",
+      "type": "label",
+      "text": "Página 1 de 1",
+      "region": "status-bar"
+    },
+    {
+      "id": "status_bar_word_character_count",
+      "type": "label",
+      "text": "0 palavra, 0 caractere",
+      "region": "status-bar"
+    },
+    {
+      "id": "status_bar_page_style",
+      "type": "label",
+      "text": "Estilo de página Padrão",
+      "region": "status-bar"
+    },
+    {
+      "id": "status_bar_language",
+      "type": "label",
+      "text": "Português (Brasil)",
+      "region": "status-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "status_bar_view_mode_single_page",
+      "type": "button",
+      "text": "Modo de exibição: Página única",
+      "icon": "single_page_view",
+      "region": "status-bar",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "status_bar_view_mode_multiple_pages",
+      "type": "button",
+      "text": "Modo de exibição: Múltiplas páginas",
+      "icon": "multiple_pages_view",
+      "region": "status-bar",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "status_bar_view_mode_book_view",
+      "type": "button",
+      "text": "Modo de exibição: Livro",
+      "icon": "book_view",
+      "region": "status-bar",
+      "state": "default",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "status_bar_zoom_out",
+      "type": "button",
+      "text": "Diminuir zoom",
+      "icon": "zoom_out",
+      "region": "status-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "status_bar_zoom_slider",
+      "type": "slider",
+      "text": null,
+      "region": "status-bar",
+      "actions": [
+        "onChange"
+      ],
+      "meta": {
+        "current_value": "100%"
+      }
+    },
+    {
+      "id": "status_bar_zoom_in",
+      "type": "button",
+      "text": "Aumentar zoom",
+      "icon": "zoom_in",
+      "region": "status-bar",
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "status_bar_zoom_percentage",
+      "type": "label",
+      "text": "100%",
+      "region": "status-bar",
+      "actions": [
+        "onClick"
+      ]
+    }
+  ]
+}

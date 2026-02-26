@@ -1,0 +1,1366 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 8,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"window_title_bar\",\n    \"type\": \"window_title_bar\",\n    \"region\": \"top-bar\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"components\": [\n      {\n        \"id\": \"minimize_button\",\n        \"type\": \"button\",\n        \"text\": \"Minimizar\",\n        \"icon\": \"minimize\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"maximize_restore_button\",\n        \"type\": \"button\",\n        \"text\": \"Maximizar/Restaurar\",\n        \"icon\": \"maximize\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"close_button\",\n        \"type\": \"button\",\n        \"text\": \"Fechar\",\n        \"icon\": \"close\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"menu_bar\",\n    \"type\": \"menu_bar\",\n    \"region\": \"top-bar\",\n    \"components\": [\n      { \"id\": \"menu_arquivo\", \"type\": \"menu_item\", \"text\": \"Arquivo\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_editar\", \"type\": \"menu_item\", \"text\": \"Editar\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_exibir\", \"type\": \"menu_item\", \"text\": \"Exibir\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_inserir\", \"type\": \"menu_item\", \"text\": \"Inserir\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_formatar\", \"type\": \"menu_item\", \"text\": \"Formatar\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_estilos\", \"type\": \"menu_item\", \"text\": \"Estilos\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_tabela\", \"type\": \"menu_item\", \"text\": \"Tabela\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_formulario\", \"type\": \"menu_item\", \"text\": \"Formulário\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_ferramentas\", \"type\": \"menu_item\", \"text\": \"Ferramentas\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_janela\", \"type\": \"menu_item\", \"text\": \"Janela\", \"actions\": [\"onClick\"] },\n      { \"id\": \"menu_ajuda\", \"type\": \"menu_item\", \"text\": \"Ajuda\", \"actions\": [\"onClick\"] }\n    ]\n  },\n  {\n    \"id\": \"standard_toolbar\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"components\": [\n      { \"id\": \"new_document_button\", \"type\": \"button\", \"icon\": \"new_document\", \"actions\": [\"onClick\"] },\n      { \"id\": \"open_document_button\", \"type\": \"button\", \"icon\": \"open_document\", \"actions\": [\"onClick\"] },\n      { \"id\": \"save_document_button\", \"type\": \"button\", \"icon\": \"save_document\", \"actions\": [\"onClick\"] },\n      { \"id\": \"print_button\", \"type\": \"button\", \"icon\": \"print\", \"actions\": [\"onClick\"] },\n      { \"id\": \"print_preview_button\", \"type\": \"button\", \"icon\": \"print_preview\", \"actions\": [\"onClick\"] },\n      { \"id\": \"cut_button\", \"type\": \"button\", \"icon\": \"cut\", \"actions\": [\"onClick\"] },\n      { \"id\": \"copy_button\", \"type\": \"button\", \"icon\": \"copy\", \"actions\": [\"onClick\"] },\n      { \"id\": \"paste_button\", \"type\": \"button\", \"icon\": \"paste\", \"actions\": [\"onClick\"] },\n      { \"id\": \"undo_button\", \"type\": \"button\", \"icon\": \"undo\", \"actions\": [\"onClick\"] },\n      { \"id\": \"redo_button\", \"type\": \"button\", \"icon\": \"redo\", \"actions\": [\"onClick\"] },\n      { \"id\": \"find_replace_button\", \"type\": \"button\", \"icon\": \"find_replace\", \"actions\": [\"onClick\"] },\n      { \"id\": \"navigator_button\", \"type\": \"button\", \"icon\": \"navigator\", \"actions\": [\"onClick\"] },\n      { \"id\": \"gallery_button\", \"type\": \"button\", \"icon\": \"gallery\", \"actions\": [\"onClick\"] },\n      { \"id\": \"styles_button\", \"type\": \"button\", \"icon\": \"styles\", \"actions\": [\"onClick\"] },\n      { \"id\": \"table_button\", \"type\": \"button\", \"icon\": \"table\", \"actions\": [\"onClick\"] },\n      { \"id\": \"image_button\", \"type\": \"button\", \"icon\": \"image\", \"actions\": [\"onClick\"] },\n      { \"id\": \"chart_button\", \"type\": \"button\", \"icon\": \"chart\", \"actions\": [\"onClick\"] },\n      { \"id\": \"text_box_button\", \"type\": \"button\", \"icon\": \"text_box\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_field_button\", \"type\": \"button\", \"icon\": \"insert_field\", \"actions\": [\"onClick\"] },\n      { \"id\": \"special_character_button\", \"type\": \"button\", \"icon\": \"special_character\", \"actions\": [\"onClick\"] },\n      { \"id\": \"hyperlink_button\", \"type\": \"button\", \"icon\": \"hyperlink\", \"actions\": [\"onClick\"] },\n      { \"id\": \"footnote_button\", \"type\": \"button\", \"icon\": \"footnote\", \"actions\": [\"onClick\"] },\n      { \"id\": \"comment_button\", \"type\": \"button\", \"icon\": \"comment\", \"actions\": [\"onClick\"] },\n      { \"id\": \"track_changes_button\", \"type\": \"button\", \"icon\": \"track_changes\", \"actions\": [\"onClick\"] },\n      { \"id\": \"spell_check_button\", \"type\": \"button\", \"icon\": \"spell_check\", \"actions\": [\"onClick\"] },\n      { \"id\": \"language_settings_button\", \"type\": \"button\", \"icon\": \"language_settings\", \"actions\": [\"onClick\"] },\n      { \"id\": \"help_button\", \"type\": \"button\", \"icon\": \"help\", \"actions\": [\"onClick\"] }\n    ]\n  },\n  {\n    \"id\": \"formatting_toolbar\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"components\": [\n      {\n        \"id\": \"paragraph_style_dropdown\",\n        \"type\": \"dropdown\",\n        \"text\": \"Estilo de parágrafo Padrão\",\n        \"value\": \"Estilo de parágrafo Padrão\",\n        \"actions\": [\"onChange\"]\n      },\n      { \"id\": \"clear_direct_formatting_button\", \"type\": \"button\", \"icon\": \"clear_formatting\", \"actions\": [\"onClick\"] },\n      { \"id\": \"character_button\", \"type\": \"button\", \"icon\": \"character_settings\", \"actions\": [\"onClick\"] },\n      { \"id\": \"paragraph_button\", \"type\": \"button\", \"icon\": \"paragraph_settings\", \"actions\": [\"onClick\"] },\n      {\n        \"id\": \"font_family_dropdown\",\n        \"type\": \"dropdown\",\n        \"text\": \"Arial\",\n        \"value\": \"Arial\",\n        \"actions\": [\"onChange\"]\n      },\n      {\n        \"id\": \"font_size_dropdown\",\n        \"type\": \"dropdown\",\n        \"text\": \"12 pt\",\n        \"value\": \"12 pt\",\n        \"actions\": [\"onChange\"]\n      },\n      { \"id\": \"bold_button\", \"type\": \"button\", \"icon\": \"bold\", \"actions\": [\"onClick\"] },\n      { \"id\": \"italic_button\", \"type\": \"button\", \"icon\": \"italic\", \"actions\": [\"onClick\"] },\n      { \"id\": \"underline_button\", \"type\": \"button\", \"icon\": \"underline\", \"actions\": [\"onClick\"] },\n      { \"id\": \"strikethrough_button\", \"type\": \"button\", \"icon\": \"strikethrough\", \"actions\": [\"onClick\"] },\n      { \"id\": \"superscript_button\", \"type\": \"button\", \"icon\": \"superscript\", \"actions\": [\"onClick\"] },\n      { \"id\": \"subscript_button\", \"type\": \"button\", \"icon\": \"subscript\", \"actions\": [\"onClick\"] },\n      { \"id\": \"font_color_button\", \"type\": \"button\", \"icon\": \"font_color\", \"actions\": [\"onClick\"] },\n      { \"id\": \"highlight_color_button\", \"type\": \"button\", \"icon\": \"highlight_color\", \"actions\": [\"onClick\"] },\n      { \"id\": \"align_left_button\", \"type\": \"button\", \"icon\": \"align_left\", \"actions\": [\"onClick\"] },\n      { \"id\": \"align_center_button\", \"type\": \"button\", \"icon\": \"align_center\", \"actions\": [\"onClick\"] },\n      { \"id\": \"align_right_button\", \"type\": \"button\", \"icon\": \"align_right\", \"actions\": [\"onClick\"] },\n      { \"id\": \"justify_button\", \"type\": \"button\", \"icon\": \"justify\", \"actions\": [\"onClick\"] },\n      { \"id\": \"line_spacing_button\", \"type\": \"button\", \"icon\": \"line_spacing\", \"actions\": [\"onClick\"] },\n      { \"id\": \"bullets_button\", \"type\": \"button\", \"icon\": \"bullets\", \"actions\": [\"onClick\"] },\n      { \"id\": \"numbering_button\", \"type\": \"button\", \"icon\": \"numbering\", \"actions\": [\"onClick\"] },\n      { \"id\": \"decrease_indent_button\", \"type\": \"button\", \"icon\": \"decrease_indent\", \"actions\": [\"onClick\"] },\n      { \"id\": \"increase_indent_button\", \"type\": \"button\", \"icon\": \"increase_indent\", \"actions\": [\"onClick\"] },\n      { \"id\": \"background_color_button\", \"type\": \"button\", \"icon\": \"background_color\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_object_button\", \"type\": \"button\", \"icon\": \"insert_object\", \"actions\": [\"onClick\"] },\n      { \"id\": \"draw_object_button\", \"type\": \"button\", \"icon\": \"draw_object\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_shape_button\", \"type\": \"button\", \"icon\": \"insert_shape\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_line_button\", \"type\": \"button\", \"icon\": \"insert_line\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_arrow_button\", \"type\": \"button\", \"icon\": \"insert_arrow\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_rectangle_button\", \"type\": \"button\", \"icon\": \"insert_rectangle\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_ellipse_button\", \"type\": \"button\", \"icon\": \"insert_ellipse\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_polygon_button\", \"type\": \"button\", \"icon\": \"insert_polygon\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_curve_button\", \"type\": \"button\", \"icon\": \"insert_curve\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_connector_button\", \"type\": \"button\", \"icon\": \"insert_connector\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_text_button\", \"type\": \"button\", \"icon\": \"insert_text\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_callout_button\", \"type\": \"button\", \"icon\": \"insert_callout\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_flowchart_button\", \"type\": \"button\", \"icon\": \"insert_flowchart\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_star_button\", \"type\": \"button\", \"icon\": \"insert_star\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_symbol_button\", \"type\": \"button\", \"icon\": \"insert_symbol\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_3d_object_button\", \"type\": \"button\", \"icon\": \"insert_3d_object\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_custom_shape_button\", \"type\": \"button\", \"icon\": \"insert_custom_shape\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_equation_button\", \"type\": \"button\", \"icon\": \"insert_equation\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_frame_button\", \"type\": \"button\", \"icon\": \"insert_frame\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_section_button\", \"type\": \"button\", \"icon\": \"insert_section\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_page_break_button\", \"type\": \"button\", \"icon\": \"insert_page_break\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_column_break_button\", \"type\": \"button\", \"icon\": \"insert_column_break\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_manual_break_button\", \"type\": \"button\", \"icon\": \"insert_manual_break\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_date_time_button\", \"type\": \"button\", \"icon\": \"insert_date_time\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_page_number_button\", \"type\": \"button\", \"icon\": \"insert_page_number\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_header_footer_button\", \"type\": \"button\", \"icon\": \"insert_header_footer\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_bookmark_button\", \"type\": \"button\", \"icon\": \"insert_bookmark\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_reference_button\", \"type\": \"button\", \"icon\": \"insert_reference\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_index_button\", \"type\": \"button\", \"icon\": \"insert_index\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_envelope_button\", \"type\": \"button\", \"icon\": \"insert_envelope\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_signature_line_button\", \"type\": \"button\", \"icon\": \"insert_signature_line\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_digital_signature_button\", \"type\": \"button\", \"icon\": \"insert_digital_signature\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_barcode_button\", \"type\": \"button\", \"icon\": \"insert_barcode\", \"actions\": [\"onClick\"] },\n      { \"id\": \"insert_qr_code_button\", \"type\": \"button\", \"icon\": \"insert_qr_code\", \"actions\": [\"onClick\"] }\n    ]\n  },\n  {\n    \"id\": \"horizontal_ruler\",\n    \"type\": \"ruler\",\n    \"region\": \"main-content\",\n    \"orientation\": \"horizontal\",\n    \"units\": \"cm\"\n  },\n  {\n    \"id\": \"document_canvas\",\n    \"type\": \"text_area\",\n    \"region\": \"main-content\",\n    \"state\": \"focused\",\n    \"meta\": {\n      \"cursor_position\": \"start\"\n    }\n  },\n  {\n    \"id\": \"sidebar_panel\",\n    \"type\": \"sidebar\",\n    \"region\": \"right-sidebar\",\n    \"components\": [\n      {\n        \"id\": \"sidebar_title\",\n        \"type\": \"label\",\n        \"text\": \"Propriedades\"\n      },\n      {\n        \"id\": \"sidebar_help_button\",\n        \"type\": \"button\",\n        \"icon\": \"help\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"sidebar_close_button\",\n        \"type\": \"button\",\n        \"icon\": \"close\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"sidebar_menu_button\",\n        \"type\": \"button\",\n        \"icon\": \"menu\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"properties_tab_icon\",\n        \"type\": \"icon\",\n        \"icon\": \"properties\",\n        \"state\": \"selected\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"styles_tab_icon\",\n        \"type\": \"icon\",\n        \"icon\": \"styles\",\n        \"state\": \"unselected\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"gallery_tab_icon\",\n        \"type\": \"icon\",\n        \"icon\": \"gallery\",\n        \"state\": \"unselected\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"navigator_tab_icon\",\n        \"type\": \"icon\",\n        \"icon\": \"navigator\",\n        \"state\": \"unselected\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"style_section\",\n        \"type\": \"collapsible_section\",\n        \"text\": \"Estilo\",\n        \"state\": \"expanded\",\n        \"components\": [\n          {\n            \"id\": \"style_dropdown\",\n            \"type\": \"dropdown\",\n            \"text\": \"Estilo de parágrafo Padrão\",\n            \"value\": \"Estilo de parágrafo Padrão\",\n            \"actions\": [\"onChange\"]\n          },\n          {\n            \"id\": \"update_style_button\",\n            \"type\": \"button\",\n            \"icon\": \"refresh\",\n            \"actions\": [\"onClick\"]\n          },\n          {\n            \"id\": \"new_style_button\",\n            \"type\": \"button\",\n            \"icon\": \"add\",\n            \"actions\": [\"onClick\"]\n          }\n        ]\n      },\n      {\n        \"id\": \"character_section\",\n        \"type\": \"collapsible_section\",\n        \"text\": \"Caractere\",\n        \"state\": \"expanded\",\n        \"components\": [\n          {\n            \"id\": \"character_font_dropdown\",\n            \"type\": \"dropdown\",\n            \"text\": \"Arial\",\n            \"value\": \"Arial\",\n            \"actions\": [\"onChange\"]\n          },\n          {\n            \"id\": \"character_font_size_input\",\n            \"type\": \"input\",\n            \"text\": \"12 pt\",\n            \"value\": \"12\",\n            \"meta\": { \"unit\": \"pt\" },\n            \"actions\": [\"onChange\"]\n          },\n          { \"id\": \"character_bold_button\", \"type\": \"button\", \"icon\": \"bold\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_italic_button\", \"type\": \"button\", \"icon\": \"italic\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_underline_button\", \"type\": \"button\", \"icon\": \"underline\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_strikethrough_button\", \"type\": \"button\", \"icon\": \"strikethrough\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_shadow_button\", \"type\": \"button\", \"icon\": \"shadow\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_outline_button\", \"type\": \"button\", \"icon\": \"outline\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_font_color_button\", \"type\": \"button\", \"icon\": \"font_color\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_highlight_color_button\", \"type\": \"button\", \"icon\": \"highlight_color\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_increase_font_size_button\", \"type\": \"button\", \"icon\": \"increase_font_size\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_decrease_font_size_button\", \"type\": \"button\", \"icon\": \"decrease_font_size\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_superscript_button\", \"type\": \"button\", \"icon\": \"superscript\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_subscript_button\", \"type\": \"button\", \"icon\": \"subscript\", \"actions\": [\"onClick\"] },\n          { \"id\": \"character_clear_formatting_button\", \"type\": \"button\", \"icon\": \"clear_formatting\", \"actions\": [\"onClick\"] }\n        ]\n      },\n      {\n        \"id\": \"paragraph_section\",\n        \"type\": \"collapsible_section\",\n        \"text\": \"Parágrafo\",\n        \"state\": \"expanded\",\n        \"components\": [\n          { \"id\": \"paragraph_align_left_button\", \"type\": \"button\", \"icon\": \"align_left\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_align_center_button\", \"type\": \"button\", \"icon\": \"align_center\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_align_right_button\", \"type\": \"button\", \"icon\": \"align_right\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_justify_button\", \"type\": \"button\", \"icon\": \"justify\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_line_spacing_button\", \"type\": \"button\", \"icon\": \"line_spacing\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_bullets_button\", \"type\": \"button\", \"icon\": \"bullets\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_numbering_button\", \"type\": \"button\", \"icon\": \"numbering\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_decrease_indent_button\", \"type\": \"button\", \"icon\": \"decrease_indent\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_increase_indent_button\", \"type\": \"button\", \"icon\": \"increase_indent\", \"actions\": [\"onClick\"] },\n          { \"id\": \"paragraph_background_color_button\", \"type\": \"button\", \"icon\": \"background_color\", \"actions\": [\"onClick\"] },\n          {\n            \"id\": \"spacing_label\",\n            \"type\": \"label\",\n            \"text\": \"Espaço:\"\n          },\n          {\n            \"id\": \"spacing_before_input\",\n            \"type\": \"input\",\n            \"text\": \"0,00 cm\",\n            \"value\": \"0.00\",\n            \"meta\": { \"unit\": \"cm\" },\n            \"actions\": [\"onChange\"]\n          },\n          {\n            \"id\": \"spacing_after_input\",\n            \"type\": \"input\",\n            \"text\": \"0,00 cm\",\n            \"value\": \"0.00\",\n            \"meta\": { \"unit\": \"cm\" },\n            \"actions\": [\"onChange\"]\n          },\n          {\n            \"id\": \"indent_label\",\n            \"type\": \"label\",\n            \"text\": \"Recuo:\"\n          },\n          {\n            \"id\": \"indent_first_line_input\",\n            \"type\": \"input\",\n            \"text\": \"0,00 cm\",\n            \"value\": \"0.00\",\n            \"meta\": { \"unit\": \"cm\" },\n            \"actions\": [\"onChange\"]\n          },\n          {\n            \"id\": \"indent_before_text_input\",\n            \"type\": \"input\",\n            \"text\": \"0,00 cm\",\n            \"value\": \"0.00\",\n            \"meta\": { \"unit\": \"cm\" },\n            \"actions\": [\"onChange\"]\n          },\n          {\n            \"id\": \"indent_after_text_input\",\n            \"type\": \"input\",\n            \"text\": \"0,00 cm\",\n            \"value\": \"0.00\",\n            \"meta\": { \"unit\": \"cm\" },\n            \"actions\": [\"onChange\"]\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"id\": \"status_bar\",\n    \"type\": \"status_bar\",\n    \"region\": \"footer\",\n    \"components\": [\n      {\n        \"id\": \"save_status_icon\",\n        \"type\": \"icon\",\n        \"icon\": \"save\"\n      },\n      {\n        \"id\": \"page_info\",\n        \"type\": \"label\",\n        \"text\": \"Página 1 de 1\"\n      },\n      {\n        \"id\": \"word_count\",\n        \"type\": \"label\",\n        \"text\": \"0 palavra, 0 caractere\"\n      },\n      {\n        \"id\": \"page_style\",\n        \"type\": \"label\",\n        \"text\": \"Estilo de página Padrão\"\n      },\n      {\n        \"id\": \"language_selector\",\n        \"type\": \"label\",\n        \"text\": \"Português (Brasil)\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"view_mode_button_single\",\n        \"type\": \"button\",\n        \"icon\": \"single_page_view\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"view_mode_button_multiple\",\n        \"type\": \"button\",\n        \"icon\": \"multiple_page_view\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"zoom_out_button\",\n        \"type\": \"button\",\n        \"icon\": \"zoom_out\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"zoom_slider\",\n        \"type\": \"slider\",\n        \"value\": \"100\",\n        \"meta\": { \"unit\": \"%\" },\n        \"actions\": [\"onChange\"]\n      },\n      {\n        \"id\": \"zoom_in_button\",\n        \"type\": \"button\",\n        \"icon\": \"zoom_in\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"zoom_percentage\",\n        \"type\": \"label\",\n        \"text\": \"100%\"\n      }\n    ]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 6324,
+      "totalTokenCount": 7748,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 769
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "oA2eabq8D8mmmtkP4-mduAM"
+  },
+  "ui": [
+    {
+      "id": "window_title_bar",
+      "type": "window_title_bar",
+      "region": "top-bar",
+      "text": "Sem título 1 — LibreOffice Writer",
+      "components": [
+        {
+          "id": "minimize_button",
+          "type": "button",
+          "text": "Minimizar",
+          "icon": "minimize",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "maximize_restore_button",
+          "type": "button",
+          "text": "Maximizar/Restaurar",
+          "icon": "maximize",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "close_button",
+          "type": "button",
+          "text": "Fechar",
+          "icon": "close",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu_bar",
+      "type": "menu_bar",
+      "region": "top-bar",
+      "components": [
+        {
+          "id": "menu_arquivo",
+          "type": "menu_item",
+          "text": "Arquivo",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_editar",
+          "type": "menu_item",
+          "text": "Editar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_exibir",
+          "type": "menu_item",
+          "text": "Exibir",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_inserir",
+          "type": "menu_item",
+          "text": "Inserir",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_formatar",
+          "type": "menu_item",
+          "text": "Formatar",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_estilos",
+          "type": "menu_item",
+          "text": "Estilos",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_tabela",
+          "type": "menu_item",
+          "text": "Tabela",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_formulario",
+          "type": "menu_item",
+          "text": "Formulário",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_ferramentas",
+          "type": "menu_item",
+          "text": "Ferramentas",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_janela",
+          "type": "menu_item",
+          "text": "Janela",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "menu_ajuda",
+          "type": "menu_item",
+          "text": "Ajuda",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standard_toolbar",
+      "type": "toolbar",
+      "region": "top-bar",
+      "components": [
+        {
+          "id": "new_document_button",
+          "type": "button",
+          "icon": "new_document",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "open_document_button",
+          "type": "button",
+          "icon": "open_document",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "save_document_button",
+          "type": "button",
+          "icon": "save_document",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "print_button",
+          "type": "button",
+          "icon": "print",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "print_preview_button",
+          "type": "button",
+          "icon": "print_preview",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "cut_button",
+          "type": "button",
+          "icon": "cut",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "copy_button",
+          "type": "button",
+          "icon": "copy",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "paste_button",
+          "type": "button",
+          "icon": "paste",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "undo_button",
+          "type": "button",
+          "icon": "undo",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "redo_button",
+          "type": "button",
+          "icon": "redo",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "find_replace_button",
+          "type": "button",
+          "icon": "find_replace",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "navigator_button",
+          "type": "button",
+          "icon": "navigator",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "gallery_button",
+          "type": "button",
+          "icon": "gallery",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "styles_button",
+          "type": "button",
+          "icon": "styles",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "table_button",
+          "type": "button",
+          "icon": "table",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "image_button",
+          "type": "button",
+          "icon": "image",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "chart_button",
+          "type": "button",
+          "icon": "chart",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "text_box_button",
+          "type": "button",
+          "icon": "text_box",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_field_button",
+          "type": "button",
+          "icon": "insert_field",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "special_character_button",
+          "type": "button",
+          "icon": "special_character",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "hyperlink_button",
+          "type": "button",
+          "icon": "hyperlink",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "footnote_button",
+          "type": "button",
+          "icon": "footnote",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "comment_button",
+          "type": "button",
+          "icon": "comment",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "track_changes_button",
+          "type": "button",
+          "icon": "track_changes",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "spell_check_button",
+          "type": "button",
+          "icon": "spell_check",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "language_settings_button",
+          "type": "button",
+          "icon": "language_settings",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "help_button",
+          "type": "button",
+          "icon": "help",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formatting_toolbar",
+      "type": "toolbar",
+      "region": "top-bar",
+      "components": [
+        {
+          "id": "paragraph_style_dropdown",
+          "type": "dropdown",
+          "text": "Estilo de parágrafo Padrão",
+          "value": "Estilo de parágrafo Padrão",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "clear_direct_formatting_button",
+          "type": "button",
+          "icon": "clear_formatting",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "character_button",
+          "type": "button",
+          "icon": "character_settings",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "paragraph_button",
+          "type": "button",
+          "icon": "paragraph_settings",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "font_family_dropdown",
+          "type": "dropdown",
+          "text": "Arial",
+          "value": "Arial",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "font_size_dropdown",
+          "type": "dropdown",
+          "text": "12 pt",
+          "value": "12 pt",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "bold_button",
+          "type": "button",
+          "icon": "bold",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "italic_button",
+          "type": "button",
+          "icon": "italic",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "underline_button",
+          "type": "button",
+          "icon": "underline",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "strikethrough_button",
+          "type": "button",
+          "icon": "strikethrough",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "superscript_button",
+          "type": "button",
+          "icon": "superscript",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "subscript_button",
+          "type": "button",
+          "icon": "subscript",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "font_color_button",
+          "type": "button",
+          "icon": "font_color",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "highlight_color_button",
+          "type": "button",
+          "icon": "highlight_color",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "align_left_button",
+          "type": "button",
+          "icon": "align_left",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "align_center_button",
+          "type": "button",
+          "icon": "align_center",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "align_right_button",
+          "type": "button",
+          "icon": "align_right",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "justify_button",
+          "type": "button",
+          "icon": "justify",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "line_spacing_button",
+          "type": "button",
+          "icon": "line_spacing",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "bullets_button",
+          "type": "button",
+          "icon": "bullets",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "numbering_button",
+          "type": "button",
+          "icon": "numbering",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "decrease_indent_button",
+          "type": "button",
+          "icon": "decrease_indent",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "increase_indent_button",
+          "type": "button",
+          "icon": "increase_indent",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "background_color_button",
+          "type": "button",
+          "icon": "background_color",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_object_button",
+          "type": "button",
+          "icon": "insert_object",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "draw_object_button",
+          "type": "button",
+          "icon": "draw_object",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_shape_button",
+          "type": "button",
+          "icon": "insert_shape",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_line_button",
+          "type": "button",
+          "icon": "insert_line",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_arrow_button",
+          "type": "button",
+          "icon": "insert_arrow",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_rectangle_button",
+          "type": "button",
+          "icon": "insert_rectangle",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_ellipse_button",
+          "type": "button",
+          "icon": "insert_ellipse",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_polygon_button",
+          "type": "button",
+          "icon": "insert_polygon",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_curve_button",
+          "type": "button",
+          "icon": "insert_curve",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_connector_button",
+          "type": "button",
+          "icon": "insert_connector",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_text_button",
+          "type": "button",
+          "icon": "insert_text",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_callout_button",
+          "type": "button",
+          "icon": "insert_callout",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_flowchart_button",
+          "type": "button",
+          "icon": "insert_flowchart",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_star_button",
+          "type": "button",
+          "icon": "insert_star",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_symbol_button",
+          "type": "button",
+          "icon": "insert_symbol",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_3d_object_button",
+          "type": "button",
+          "icon": "insert_3d_object",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_custom_shape_button",
+          "type": "button",
+          "icon": "insert_custom_shape",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_equation_button",
+          "type": "button",
+          "icon": "insert_equation",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_frame_button",
+          "type": "button",
+          "icon": "insert_frame",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_section_button",
+          "type": "button",
+          "icon": "insert_section",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_page_break_button",
+          "type": "button",
+          "icon": "insert_page_break",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_column_break_button",
+          "type": "button",
+          "icon": "insert_column_break",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_manual_break_button",
+          "type": "button",
+          "icon": "insert_manual_break",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_date_time_button",
+          "type": "button",
+          "icon": "insert_date_time",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_page_number_button",
+          "type": "button",
+          "icon": "insert_page_number",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_header_footer_button",
+          "type": "button",
+          "icon": "insert_header_footer",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_bookmark_button",
+          "type": "button",
+          "icon": "insert_bookmark",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_reference_button",
+          "type": "button",
+          "icon": "insert_reference",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_index_button",
+          "type": "button",
+          "icon": "insert_index",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_envelope_button",
+          "type": "button",
+          "icon": "insert_envelope",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_signature_line_button",
+          "type": "button",
+          "icon": "insert_signature_line",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_digital_signature_button",
+          "type": "button",
+          "icon": "insert_digital_signature",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_barcode_button",
+          "type": "button",
+          "icon": "insert_barcode",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "insert_qr_code_button",
+          "type": "button",
+          "icon": "insert_qr_code",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "horizontal_ruler",
+      "type": "ruler",
+      "region": "main-content",
+      "orientation": "horizontal",
+      "units": "cm"
+    },
+    {
+      "id": "document_canvas",
+      "type": "text_area",
+      "region": "main-content",
+      "state": "focused",
+      "meta": {
+        "cursor_position": "start"
+      }
+    },
+    {
+      "id": "sidebar_panel",
+      "type": "sidebar",
+      "region": "right-sidebar",
+      "components": [
+        {
+          "id": "sidebar_title",
+          "type": "label",
+          "text": "Propriedades"
+        },
+        {
+          "id": "sidebar_help_button",
+          "type": "button",
+          "icon": "help",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "sidebar_close_button",
+          "type": "button",
+          "icon": "close",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "sidebar_menu_button",
+          "type": "button",
+          "icon": "menu",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "properties_tab_icon",
+          "type": "icon",
+          "icon": "properties",
+          "state": "selected",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "styles_tab_icon",
+          "type": "icon",
+          "icon": "styles",
+          "state": "unselected",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "gallery_tab_icon",
+          "type": "icon",
+          "icon": "gallery",
+          "state": "unselected",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "navigator_tab_icon",
+          "type": "icon",
+          "icon": "navigator",
+          "state": "unselected",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "style_section",
+          "type": "collapsible_section",
+          "text": "Estilo",
+          "state": "expanded",
+          "components": [
+            {
+              "id": "style_dropdown",
+              "type": "dropdown",
+              "text": "Estilo de parágrafo Padrão",
+              "value": "Estilo de parágrafo Padrão",
+              "actions": [
+                "onChange"
+              ]
+            },
+            {
+              "id": "update_style_button",
+              "type": "button",
+              "icon": "refresh",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "new_style_button",
+              "type": "button",
+              "icon": "add",
+              "actions": [
+                "onClick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "character_section",
+          "type": "collapsible_section",
+          "text": "Caractere",
+          "state": "expanded",
+          "components": [
+            {
+              "id": "character_font_dropdown",
+              "type": "dropdown",
+              "text": "Arial",
+              "value": "Arial",
+              "actions": [
+                "onChange"
+              ]
+            },
+            {
+              "id": "character_font_size_input",
+              "type": "input",
+              "text": "12 pt",
+              "value": "12",
+              "meta": {
+                "unit": "pt"
+              },
+              "actions": [
+                "onChange"
+              ]
+            },
+            {
+              "id": "character_bold_button",
+              "type": "button",
+              "icon": "bold",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_italic_button",
+              "type": "button",
+              "icon": "italic",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_underline_button",
+              "type": "button",
+              "icon": "underline",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_strikethrough_button",
+              "type": "button",
+              "icon": "strikethrough",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_shadow_button",
+              "type": "button",
+              "icon": "shadow",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_outline_button",
+              "type": "button",
+              "icon": "outline",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_font_color_button",
+              "type": "button",
+              "icon": "font_color",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_highlight_color_button",
+              "type": "button",
+              "icon": "highlight_color",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_increase_font_size_button",
+              "type": "button",
+              "icon": "increase_font_size",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_decrease_font_size_button",
+              "type": "button",
+              "icon": "decrease_font_size",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_superscript_button",
+              "type": "button",
+              "icon": "superscript",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_subscript_button",
+              "type": "button",
+              "icon": "subscript",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "character_clear_formatting_button",
+              "type": "button",
+              "icon": "clear_formatting",
+              "actions": [
+                "onClick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paragraph_section",
+          "type": "collapsible_section",
+          "text": "Parágrafo",
+          "state": "expanded",
+          "components": [
+            {
+              "id": "paragraph_align_left_button",
+              "type": "button",
+              "icon": "align_left",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_align_center_button",
+              "type": "button",
+              "icon": "align_center",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_align_right_button",
+              "type": "button",
+              "icon": "align_right",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_justify_button",
+              "type": "button",
+              "icon": "justify",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_line_spacing_button",
+              "type": "button",
+              "icon": "line_spacing",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_bullets_button",
+              "type": "button",
+              "icon": "bullets",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_numbering_button",
+              "type": "button",
+              "icon": "numbering",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_decrease_indent_button",
+              "type": "button",
+              "icon": "decrease_indent",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_increase_indent_button",
+              "type": "button",
+              "icon": "increase_indent",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "paragraph_background_color_button",
+              "type": "button",
+              "icon": "background_color",
+              "actions": [
+                "onClick"
+              ]
+            },
+            {
+              "id": "spacing_label",
+              "type": "label",
+              "text": "Espaço:"
+            },
+            {
+              "id": "spacing_before_input",
+              "type": "input",
+              "text": "0,00 cm",
+              "value": "0.00",
+              "meta": {
+                "unit": "cm"
+              },
+              "actions": [
+                "onChange"
+              ]
+            },
+            {
+              "id": "spacing_after_input",
+              "type": "input",
+              "text": "0,00 cm",
+              "value": "0.00",
+              "meta": {
+                "unit": "cm"
+              },
+              "actions": [
+                "onChange"
+              ]
+            },
+            {
+              "id": "indent_label",
+              "type": "label",
+              "text": "Recuo:"
+            },
+            {
+              "id": "indent_first_line_input",
+              "type": "input",
+              "text": "0,00 cm",
+              "value": "0.00",
+              "meta": {
+                "unit": "cm"
+              },
+              "actions": [
+                "onChange"
+              ]
+            },
+            {
+              "id": "indent_before_text_input",
+              "type": "input",
+              "text": "0,00 cm",
+              "value": "0.00",
+              "meta": {
+                "unit": "cm"
+              },
+              "actions": [
+                "onChange"
+              ]
+            },
+            {
+              "id": "indent_after_text_input",
+              "type": "input",
+              "text": "0,00 cm",
+              "value": "0.00",
+              "meta": {
+                "unit": "cm"
+              },
+              "actions": [
+                "onChange"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "status_bar",
+      "type": "status_bar",
+      "region": "footer",
+      "components": [
+        {
+          "id": "save_status_icon",
+          "type": "icon",
+          "icon": "save"
+        },
+        {
+          "id": "page_info",
+          "type": "label",
+          "text": "Página 1 de 1"
+        },
+        {
+          "id": "word_count",
+          "type": "label",
+          "text": "0 palavra, 0 caractere"
+        },
+        {
+          "id": "page_style",
+          "type": "label",
+          "text": "Estilo de página Padrão"
+        },
+        {
+          "id": "language_selector",
+          "type": "label",
+          "text": "Português (Brasil)",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "view_mode_button_single",
+          "type": "button",
+          "icon": "single_page_view",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "view_mode_button_multiple",
+          "type": "button",
+          "icon": "multiple_page_view",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "zoom_out_button",
+          "type": "button",
+          "icon": "zoom_out",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "zoom_slider",
+          "type": "slider",
+          "value": "100",
+          "meta": {
+            "unit": "%"
+          },
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "zoom_in_button",
+          "type": "button",
+          "icon": "zoom_in",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "zoom_percentage",
+          "type": "label",
+          "text": "100%"
+        }
+      ]
+    }
+  ]
+}

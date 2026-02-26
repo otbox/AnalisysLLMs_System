@@ -1,0 +1,42 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"window_title\",\n    \"type\": \"window_title\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"region\": \"top-bar\",\n    \"meta\": {\n      \"application\": \"LibreOffice Writer\",\n      \"document_name\": \"Sem título 1\"\n    }\n  },\n  {\n    \"id\": \"menu_bar\",\n    \"type\": \"menu_bar\",\n    \"region\": \"top-bar\",\n    \"items\": [\n      {\n        \"id\": \"menu_arquivo\",\n        \"type\": \"menu_item\",\n        \"text\": \"Arquivo\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_editar\",\n        \"type\": \"menu_item\",\n        \"text\": \"Editar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_exibir\",\n        \"type\": \"menu_item\",\n        \"text\": \"Exibir\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_inserir\",\n        \"type\": \"menu_item\",\n        \"text\": \"Inserir\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_formatar\",\n        \"type\": \"menu_item\",\n        \"text\": \"Formatar\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_estilos\",\n        \"type\": \"menu_item\",\n        \"text\": \"Estilos\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_tabela\",\n        \"type\": \"menu_item\",\n        \"text\": \"Tabela\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_formulario\",\n        \"type\": \"menu_item\",\n        \"text\": \"Formulário\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_ferramentas\",\n        \"type\": \"menu_item\",\n        \"text\": \"Ferramentas\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_janela\",\n        \"type\": \"menu_item\",\n        \"text\": \"Janela\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"menu_ajuda\",\n        \"type\": \"menu_item\",\n        \"text\": \"Ajuda\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  },\n  {\n    \"id\": \"toolbar_standard\",\n    \"type\": \"toolbar\",\n    \"region\": \"top-bar\",\n    \"items\": [\n      {\n        \"id\": \"button_new\",\n        \"type\": \"button\",\n        \"icon\": \"new_document\",\n        \"tooltip\": \"Novo\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"button_open\",\n        \"type\": \"button\",\n        \"icon\": \"open_document\",\n        \"tooltip\": \"Abrir\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"button_save\",\n        \"type\": \"button\",\n        \"icon\": \"save_document\",\n        \"tooltip\": \"Salvar\","
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 790,
+      "totalTokenCount": 20641,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 19196
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "RWKeaYzNO7Tqz7IPu4uxmQ0"
+  },
+  "ui": null
+}

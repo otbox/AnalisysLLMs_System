@@ -1,0 +1,228 @@
+{
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "action": "",
+  "rationale": "",
+  "numberofComponents" : 1,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"signature-line-modal\",\n    \"type\": \"modal\",\n    \"text\": \"Linha de assinatura\",\n    \"region\": \"main-content\",\n    \"meta\": {\n      \"title\": \"Linha de assinatura\"\n    },\n    \"components\": [\n      {\n        \"id\": \"modal-icon-document\",\n        \"type\": \"icon\",\n        \"text\": \"Ícone de documento\",\n        \"region\": \"modal-header\"\n      },\n      {\n        \"id\": \"modal-button-minimize\",\n        \"type\": \"button\",\n        \"text\": \"Minimizar\",\n        \"region\": \"modal-header\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"modal-button-maximize\",\n        \"type\": \"button\",\n        \"text\": \"Maximizar/Restaurar\",\n        \"region\": \"modal-header\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"modal-button-close\",\n        \"type\": \"button\",\n        \"text\": \"Fechar\",\n        \"region\": \"modal-header\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"section-suggested-signer\",\n        \"type\": \"label\",\n        \"text\": \"Signatário sugerido\",\n        \"region\": \"modal-body\"\n      },\n      {\n        \"id\": \"label-name\",\n        \"type\": \"label\",\n        \"text\": \"Nome:\",\n        \"region\": \"modal-body\"\n      },\n      {\n        \"id\": \"input-name\",\n        \"type\": \"input\",\n        \"text\": \"José da Silva\",\n        \"state\": \"filled\",\n        \"region\": \"modal-body\",\n        \"actions\": [\"onChange\", \"onFocus\", \"onBlur\"]\n      },\n      {\n        \"id\": \"label-title\",\n        \"type\": \"label\",\n        \"text\": \"Título:\",\n        \"region\": \"modal-body\"\n      },\n      {\n        \"id\": \"input-title\",\n        \"type\": \"input\",\n        \"text\": \"Diretor\",\n        \"state\": \"filled\",\n        \"region\": \"modal-body\",\n        \"actions\": [\"onChange\", \"onFocus\", \"onBlur\"]\n      },\n      {\n        \"id\": \"label-email\",\n        \"type\": \"label\",\n        \"text\": \"E-mail:\",\n        \"region\": \"modal-body\"\n      },\n      {\n        \"id\": \"input-email\",\n        \"type\": \"input\",\n        \"text\": \"silva@exemplo.org\",\n        \"state\": \"filled\",\n        \"region\": \"modal-body\",\n        \"actions\": [\"onChange\", \"onFocus\", \"onBlur\"],\n        \"meta\": {\n          \"inputType\": \"email\"\n        }\n      },\n      {\n        \"id\": \"section-more-options\",\n        \"type\": \"label\",\n        \"text\": \"Mais\",\n        \"region\": \"modal-body\"\n      },\n      {\n        \"id\": \"checkbox-signer-can-add-notes\",\n        \"type\": \"checkbox\",\n        \"text\": \"Signatário pode adicionar anotações\",\n        \"state\": \"checked\",\n        \"region\": \"modal-body\",\n        \"actions\": [\"onChange\"]\n      },\n      {\n        \"id\": \"checkbox-show-date-on-signature-line\",\n        \"type\": \"checkbox\",\n        \"text\": \"Mostrar data da assinatura na linha de assinatura\",\n        \"state\": \"checked\",\n        \"region\": \"modal-body\",\n        \"actions\": [\"onChange\"]\n      },\n      {\n        \"id\": \"label-instructions-for-signer\",\n        \"type\": \"label\",\n        \"text\": \"Instruções para o signatário:\",\n        \"region\": \"modal-body\"\n      },\n      {\n        \"id\": \"textarea-instructions-for-signer\",\n        \"type\": \"textarea\",\n        \"text\": \"\",\n        \"state\": \"empty\",\n        \"region\": \"modal-body\",\n        \"actions\": [\"onChange\", \"onFocus\", \"onBlur\"]\n      },\n      {\n        \"id\": \"button-help\",\n        \"type\": \"button\",\n        \"text\": \"Ajuda\",\n        \"state\": \"enabled\",\n        \"region\": \"modal-footer\",\n        \"actions\": [\"onClick\"]\n      },\n      {\n        \"id\": \"button-ok\",\n        \"type\": \"button\",\n        \"text\": \"OK\",\n        \"state\": \"enabled\",\n        \"region\": \"modal-footer\",\n        \"actions\": [\"onClick\"],\n        \"meta\": {\n          \"isPrimary\": true\n        }\n      },\n      {\n        \"id\": \"button-cancel\",\n        \"type\": \"button\",\n        \"text\": \"Cancelar\",\n        \"state\": \"enabled\",\n        \"region\": \"modal-footer\",\n        \"actions\": [\"onClick\"]\n      }\n    ]\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 655,
+      "candidatesTokenCount": 1190,
+      "totalTokenCount": 2734,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 397
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 889
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "R2GeadOHOOOEz7IPtZuW-Qw"
+  },
+  "ui": [
+    {
+      "id": "signature-line-modal",
+      "type": "modal",
+      "text": "Linha de assinatura",
+      "region": "main-content",
+      "meta": {
+        "title": "Linha de assinatura"
+      },
+      "components": [
+        {
+          "id": "modal-icon-document",
+          "type": "icon",
+          "text": "Ícone de documento",
+          "region": "modal-header"
+        },
+        {
+          "id": "modal-button-minimize",
+          "type": "button",
+          "text": "Minimizar",
+          "region": "modal-header",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "modal-button-maximize",
+          "type": "button",
+          "text": "Maximizar/Restaurar",
+          "region": "modal-header",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "modal-button-close",
+          "type": "button",
+          "text": "Fechar",
+          "region": "modal-header",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "section-suggested-signer",
+          "type": "label",
+          "text": "Signatário sugerido",
+          "region": "modal-body"
+        },
+        {
+          "id": "label-name",
+          "type": "label",
+          "text": "Nome:",
+          "region": "modal-body"
+        },
+        {
+          "id": "input-name",
+          "type": "input",
+          "text": "José da Silva",
+          "state": "filled",
+          "region": "modal-body",
+          "actions": [
+            "onChange",
+            "onFocus",
+            "onBlur"
+          ]
+        },
+        {
+          "id": "label-title",
+          "type": "label",
+          "text": "Título:",
+          "region": "modal-body"
+        },
+        {
+          "id": "input-title",
+          "type": "input",
+          "text": "Diretor",
+          "state": "filled",
+          "region": "modal-body",
+          "actions": [
+            "onChange",
+            "onFocus",
+            "onBlur"
+          ]
+        },
+        {
+          "id": "label-email",
+          "type": "label",
+          "text": "E-mail:",
+          "region": "modal-body"
+        },
+        {
+          "id": "input-email",
+          "type": "input",
+          "text": "silva@exemplo.org",
+          "state": "filled",
+          "region": "modal-body",
+          "actions": [
+            "onChange",
+            "onFocus",
+            "onBlur"
+          ],
+          "meta": {
+            "inputType": "email"
+          }
+        },
+        {
+          "id": "section-more-options",
+          "type": "label",
+          "text": "Mais",
+          "region": "modal-body"
+        },
+        {
+          "id": "checkbox-signer-can-add-notes",
+          "type": "checkbox",
+          "text": "Signatário pode adicionar anotações",
+          "state": "checked",
+          "region": "modal-body",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "checkbox-show-date-on-signature-line",
+          "type": "checkbox",
+          "text": "Mostrar data da assinatura na linha de assinatura",
+          "state": "checked",
+          "region": "modal-body",
+          "actions": [
+            "onChange"
+          ]
+        },
+        {
+          "id": "label-instructions-for-signer",
+          "type": "label",
+          "text": "Instruções para o signatário:",
+          "region": "modal-body"
+        },
+        {
+          "id": "textarea-instructions-for-signer",
+          "type": "textarea",
+          "text": "",
+          "state": "empty",
+          "region": "modal-body",
+          "actions": [
+            "onChange",
+            "onFocus",
+            "onBlur"
+          ]
+        },
+        {
+          "id": "button-help",
+          "type": "button",
+          "text": "Ajuda",
+          "state": "enabled",
+          "region": "modal-footer",
+          "actions": [
+            "onClick"
+          ]
+        },
+        {
+          "id": "button-ok",
+          "type": "button",
+          "text": "OK",
+          "state": "enabled",
+          "region": "modal-footer",
+          "actions": [
+            "onClick"
+          ],
+          "meta": {
+            "isPrimary": true
+          }
+        },
+        {
+          "id": "button-cancel",
+          "type": "button",
+          "text": "Cancelar",
+          "state": "enabled",
+          "region": "modal-footer",
+          "actions": [
+            "onClick"
+          ]
+        }
+      ]
+    }
+  ]
+}
