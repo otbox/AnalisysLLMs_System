@@ -34,6 +34,7 @@ Instruções:
   - texto visível (label, placeholder, conteúdo)
   - estado (ativo, desabilitado, focado, selecionado, erro, sucesso)
   - posição relativa ou região da tela (ex.: "top-bar", "sidebar", "main-content", "footer")
+  - posição Coordenadas absolutas inicial (x1,y1) e final (x2,y2) do retângulo que contém o componente (ex: x1: 120px, X2: 140px; y1: 0, y2: 80)
   - ações possíveis (ex.: "onClick", "onChange")
   - informações adicionais relevantes (ex.: "é obrigatório", "campo de senha", "texto de ajuda")
 - Estruture o JSON como uma lista de componentes, por exemplo:
@@ -44,6 +45,7 @@ Instruções:
       "text": "...",
       "state": "...",
       "region": "...",
+      "coordenadas" : "["x1: ...", "x2": "...", "y1": "...", "y2" : ....]"
       "actions": ["..."],
       "meta": { ... }
     }

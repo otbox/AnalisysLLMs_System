@@ -4,6 +4,7 @@ import { LLMClient, StepModelInput, StepModelOutput } from './ILLMService';
 import 'dotenv/config';
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
+console.log(GOOGLE_API_KEY)
 
 if (!GOOGLE_API_KEY) {
   throw new Error('GOOGLE_API_KEY not defined');
@@ -22,7 +23,7 @@ export class GoogleLLMClient implements LLMClient {
       model: 'gemini-2.5-flash',
       generationConfig: {
         temperature: 0.2,
-        maxOutputTokens: 15000,
+        maxOutputTokens: 20000,
         responseMimeType: 'application/json',
       }
     });
