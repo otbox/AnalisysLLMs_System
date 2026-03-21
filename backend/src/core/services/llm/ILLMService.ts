@@ -13,6 +13,8 @@ export type StepModelInput = {
 export type StepModelOutput = {
     action: string,
     rationale: string,
+    numberOfComponents?: Number,
+    imageOutputBase64? : string,
     confidence: number,
     rawResponse: unknown,
 }

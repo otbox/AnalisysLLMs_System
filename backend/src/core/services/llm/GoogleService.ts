@@ -2,6 +2,8 @@ import { GoogleGenerativeAI, Content, Part } from '@google/generative-ai';
 import { ProfileKey, Profiles } from './LLMsProfiles';
 import { LLMClient, StepModelInput, StepModelOutput } from './ILLMService';
 import 'dotenv/config';
+import { LlmImageAnnotatorService } from '../ImageAnnotation';
+import { parse } from 'node:path';
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 console.log(GOOGLE_API_KEY)
@@ -40,6 +42,26 @@ export class GoogleLLMClient implements LLMClient {
       const response = result.response;
       const content = response.text();
       const parsed = safeParseJson(content);
+
+      if (input.profile == 'AnalisysComponentsLLM' && input.imageBase64) {
+        const service = new LlmImageAnnotatorService();
+        const detectImage = await service.annotateFromAnalysis({
+          imageBase64: input.imageBase64,
+          analysis: {
+            ui: parsed,
+          },
+          outputFormat: "png",
+          includeLabel: true
+        });
+        return {
+          action: parsed.action ?? '',
+          rationale: parsed.rationale ?? '',
+          numberOfComponents: parsed.length,
+          imageOutputBase64: detectImage.base64,
+          confidence: parsed.confidence ?? 0,
+          rawResponse: response,
+        };
+      }
 
       return {
         action: parsed.action ?? '',

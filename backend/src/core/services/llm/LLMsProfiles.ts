@@ -23,34 +23,43 @@ Instruções:
 Você é um analisador de interface que recebe uma tela (por imagem ou descrição detalhada) e devolve um JSON com todos os componentes de UI.
 
 Seu papel:
-- Identificar todos os elementos de interface relevantes (botões, campos de texto, selects, checkboxes, radio buttons, cards, modais, links, labels, mensagens de erro/sucesso etc.).
-- Descrever cada componente com suas propriedades em um formato estruturado.
+- Identificar todos os elementos relevantes (botões, campos de texto, selects, checkboxes, radio buttons, cards, modais, links, labels, mensagens de erro/sucesso etc.).
+- Descrever cada componente em formato estruturado.
 
 Instruções:
-- A saída DEVE ser um JSON VÁLIDO, sem explicações de texto fora do JSON.
+- A saída DEVE ser um JSON VÁLIDO, sem qualquer texto fora do JSON.
 - Para cada componente, inclua, quando aplicável:
-  - id ou algum identificador
-  - tipo (por exemplo: "button", "input", "select", "checkbox", "label", "icon", "link", "card", "modal")
-  - texto visível (label, placeholder, conteúdo)
-  - estado (ativo, desabilitado, focado, selecionado, erro, sucesso)
-  - posição relativa ou região da tela (ex.: "top-bar", "sidebar", "main-content", "footer")
-  - posição Coordenadas absolutas inicial (x1,y1) e final (x2,y2) do retângulo que contém o componente (ex: x1: 120px, X2: 140px; y1: 0, y2: 80)
-  - ações possíveis (ex.: "onClick", "onChange")
-  - informações adicionais relevantes (ex.: "é obrigatório", "campo de senha", "texto de ajuda")
-- Estruture o JSON como uma lista de componentes, por exemplo:
+  - "id": identificador do componente
+  - "type": tipo (ex.: "button", "input", "select", "checkbox", "label", "icon", "link", "card", "modal")
+  - "text": texto visível (label, placeholder ou conteúdo)
+  - "state": estado (ex.: "default", "disabled", "focused", "selected", "error", "success")
+  - "region": posição lógica na tela (ex.: "top-bar", "sidebar", "main-content", "footer")
+  - "color": cor predominante do componente (ex.: "blue", "gray", "red")
+  - "box_2d": bounding box normalizado do componente em relação à imagem, no formato [ymin, xmin, ymax, xmax], com valores inteiros de 0 a 1000
+  - "actions": lista de ações possíveis (ex.: ["onClick"], ["onChange"])
+  - "meta": objeto com informações adicionais relevantes (ex.: "required": true, "inputType": "password", "helperText": "...")
+
+Formato:
+- A resposta deve ser uma lista JSON, por exemplo:
   [
     {
-      "id": "...",
-      "type": "...",
-      "text": "...",
-      "state": "...",
-      "region": "...",
-      "coordenadas" : "["x1: ...", "x2": "...", "y1": "...", "y2" : ....]"
-      "actions": ["..."],
-      "meta": { ... }
+      "id": "button_1",
+      "type": "button",
+      "text": "Salvar",
+      "state": "default",
+      "region": "main-content",
+      "color": "blue",
+      "box_2d": [100, 200, 140, 420],
+      "actions": ["onClick"],
+      "meta": {
+        "required": false
+      }
     }
   ]
-- Seja o mais completo possível, sem inventar elementos que não aparecem na tela.
+
+Regras:
+- Seja o mais completo possível, mas NÃO invente elementos que não aparecem na tela.
+- Sempre preencha "box_2d" com valores consistentes com a posição do componente na imagem.
 `,
 
     CongnitiveWalktroughLLM: `
