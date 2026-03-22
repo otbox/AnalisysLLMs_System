@@ -11,6 +11,7 @@ import { OpenRouterLLMClient } from '../core/services/llm/OpenRouterService';
 import { MODELOS_DISPONIVEIS } from '../core/services/llm/LLMModesAvaible';
 import { NvidiaObjectDetectionService } from '../core/services/llm/nvidia/NvidiaService';
 import { NvidiaDetectionController } from '../core/controllers/NvidiaController';
+import { QueueService } from '../core/services/QueueService';
 
 
 const app = Fastify({ logger: true, bodyLimit: 10 * 1024 * 1024, });
@@ -41,12 +42,12 @@ app.post('/sessions/:sessionId/steps', (req, res) => {
   const analysisService = new AnalisisLLM(llmClient);
   const guideService = new GuideStep(llmClient);
   const cognitiveService = new AnalisisLLM(llmClient);
-
+  const queueService = new QueueService(analysisService,1);
   const stepController = new StepController({ 
     AnalisysComponentsLLM: analysisService,
     GuideLLM: guideService,
     CongnitiveWalktroughLLM: cognitiveService,
-  });
+  }, queueService);
 
   return stepController.createHandler(req,res)
 });

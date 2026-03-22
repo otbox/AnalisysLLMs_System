@@ -4,6 +4,7 @@ import { LLMClient, StepModelInput, StepModelOutput } from './ILLMService';
 import 'dotenv/config';
 import { LlmImageAnnotatorService } from '../ImageAnnotation';
 import { parse } from 'node:path';
+import { LlmImageAnnotatorServiceScale } from '../ImageAnnotationScale';
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 console.log(GOOGLE_API_KEY)
@@ -44,7 +45,7 @@ export class GoogleLLMClient implements LLMClient {
       const parsed = safeParseJson(content);
 
       if (input.profile == 'AnalisysComponentsLLM' && input.imageBase64) {
-        const service = new LlmImageAnnotatorService();
+        const service = new LlmImageAnnotatorServiceScale();
         const detectImage = await service.annotateFromAnalysis({
           imageBase64: input.imageBase64,
           analysis: {
