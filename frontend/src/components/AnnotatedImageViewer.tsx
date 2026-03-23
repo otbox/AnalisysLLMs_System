@@ -1,15 +1,13 @@
 // components/AnnotatedImageViewer.tsx
-import React, { useRef, useEffect, useState, useMemo } from "react";
+import React, { useRef, useEffect, useState, useMemo, useCallback } from "react";
 import type { UiElement } from "../types";
 
-/** Escala de coordenadas vinda do LLM */
 export type CoordScale = "normalized-1000" | "pixels";
 
 interface Props {
-  imageBase64: string;
-  elements:    UiElement[];
-  /** Padrão: "normalized-1000" — alinhado ao prompt atual */
-  coordScale?: CoordScale;
+  imageBase64:  string;
+  elements:     UiElement[];
+  coordScale?:  CoordScale;
 }
 
 const TYPE_COLORS: Record<string, string> = {
@@ -31,11 +29,10 @@ const TYPE_COLORS: Record<string, string> = {
 };
 const DEFAULT_COLOR = "#ff2d2d";
 
-function getColor(type?: string): string {
+function getColor(type?: string) {
   return TYPE_COLORS[type ?? ""] ?? DEFAULT_COLOR;
 }
 
-/** Normaliza coordenadas (array ou objeto) → {x,y,w,h} na escala original */
 function toBox(c: UiElement["coordenadas"]): { x: number; y: number; w: number; h: number } | null {
   if (Array.isArray(c) && c.length >= 4)
     return { x: c[0], y: c[1], w: c[2], h: c[3] };
@@ -47,48 +44,51 @@ function toBox(c: UiElement["coordenadas"]): { x: number; y: number; w: number; 
 }
 
 /**
- * Converte coordenada da escala do LLM para pixels de exibição no canvas.
+ * Converte coordenada LLM → pixels no canvas (que tem resolução natural).
  *
- * normalized-1000:
- *   x_display = (x / 1000) * canvasWidth   (não depende da resolução original)
+ * normalized-1000 → x_canvas = (x / 1000) * naturalWidth
+ * pixels          → x_canvas = x  (já está em pixels naturais)
  *
- * pixels:
- *   x_display = x * (canvasWidth / naturalWidth)
+ * O canvas é desenhado em resolução natural e depois escalado via CSS
+ * para cobrir exatamente a imagem exibida — isso garante alinhamento
+ * perfeito independente do tamanho de exibição.
  */
-function toDisplayPx(
-  box:        { x: number; y: number; w: number; h: number },
-  scale:      CoordScale,
-  canvasW:    number,
-  canvasH:    number,
-  naturalW:   number,
-  naturalH:   number,
-): { x: number; y: number; w: number; h: number } {
+function toNaturalPx(
+  box:    { x: number; y: number; w: number; h: number },
+  scale:  CoordScale,
+  natW:   number,
+  natH:   number,
+) {
   if (scale === "normalized-1000") {
     return {
-      x: (box.x / 1000) * canvasW,
-      y: (box.y / 1000) * canvasH,
-      w: (box.w / 1000) * canvasW,
-      h: (box.h / 1000) * canvasH,
+      x: (box.x / 1000) * natW,
+      y: (box.y / 1000) * natH,
+      w: (box.w / 1000) * natW,
+      h: (box.h / 1000) * natH,
     };
   }
-  // pixels → escala para o tamanho exibido
-  const sx = canvasW / naturalW;
-  const sy = canvasH / naturalH;
-  return { x: box.x * sx, y: box.y * sy, w: box.w * sx, h: box.h * sy };
+  // pixels: sem conversão
+  return box;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 export function AnnotatedImageViewer({
   imageBase64,
   elements,
   coordScale = "normalized-1000",
 }: Props) {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const imgRef    = useRef<HTMLImageElement>(null);
+  const wrapRef    = useRef<HTMLDivElement>(null);
+  const canvasRef  = useRef<HTMLCanvasElement>(null);
+  const imgRef     = useRef<HTMLImageElement>(null);
+
   const [showLabels, setShowLabels] = useState(false);
-  const [filterType, setFilterType] = useState<string>("all");
+  const [filterType, setFilterType] = useState("all");
   const [hovered,    setHovered]    = useState<UiElement | null>(null);
   const [selected,   setSelected]   = useState<UiElement | null>(null);
-  const [imgSize,    setImgSize]    = useState({ nw: 0, nh: 0, natW: 0, natH: 0 });
+
+  // Dimensões naturais (resolução real da imagem)
+  const [nat, setNat] = useState({ w: 0, h: 0 });
 
   const dataUri = imageBase64.startsWith("data:")
     ? imageBase64
@@ -96,39 +96,42 @@ export function AnnotatedImageViewer({
 
   const types = useMemo(() =>
     ["all", ...Array.from(new Set(elements.map((e) => e.type ?? "?").filter(Boolean)))],
-    [elements]
+    [elements],
   );
 
   const visibleElements = useMemo(() =>
     filterType === "all" ? elements : elements.filter((e) => e.type === filterType),
-    [elements, filterType]
+    [elements, filterType],
   );
 
-  function handleImgLoad() {
+  // Quando a imagem carrega, salva as dimensões NATURAIS
+  const handleImgLoad = () => {
     const img = imgRef.current;
     if (!img) return;
-    setImgSize({ nw: img.clientWidth, nh: img.clientHeight, natW: img.naturalWidth, natH: img.naturalHeight });
-  }
+    setNat({ w: img.naturalWidth, h: img.naturalHeight });
+  };
 
-  // ── redraw ────────────────────────────────────────────────────────────────
+  // ── redraw em resolução natural ──────────────────────────────────────────
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas || imgSize.nw === 0) return;
+    if (!canvas || nat.w === 0) return;
 
-    canvas.width  = imgSize.nw;
-    canvas.height = imgSize.nh;
+    // Canvas tem resolução NATURAL — CSS vai escalá-lo para o tamanho exibido
+    canvas.width  = nat.w;
+    canvas.height = nat.h;
+
     const ctx = canvas.getContext("2d")!;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, nat.w, nat.h);
+
+    // Espessura e fonte proporcional à resolução natural
+    const strokeW  = Math.max(2, Math.round(Math.min(nat.w, nat.h) * 0.003));
+    const fontSize = Math.max(14, Math.round(Math.min(nat.w, nat.h) * 0.018));
 
     visibleElements.forEach((el) => {
       const raw = toBox(el.coordenadas);
       if (!raw) return;
 
-      const { x, y, w, h } = toDisplayPx(
-        raw, coordScale,
-        imgSize.nw, imgSize.nh,
-        imgSize.natW, imgSize.natH,
-      );
+      const { x, y, w, h } = toNaturalPx(raw, coordScale, nat.w, nat.h);
       if (w <= 0 || h <= 0) return;
 
       const color    = getColor(el.type);
@@ -137,50 +140,59 @@ export function AnnotatedImageViewer({
       ctx.fillStyle   = isActive ? `${color}40` : `${color}1a`;
       ctx.fillRect(x, y, w, h);
       ctx.strokeStyle = color;
-      ctx.lineWidth   = isActive ? 3 : 1.5;
+      ctx.lineWidth   = isActive ? strokeW * 2 : strokeW;
       ctx.strokeRect(x, y, w, h);
 
       if (showLabels && el.id) {
-        const label    = `${el.type ?? "?"} · ${el.id}`;
-        const fontSize = Math.max(10, Math.min(13, h * 0.6));
-        ctx.font         = `${fontSize}px monospace`;
+        const label  = `${el.type ?? "?"} · ${el.id}`;
+        ctx.font         = `bold ${fontSize}px monospace`;
         ctx.textBaseline = "top";
-        const tw = ctx.measureText(label).width + 6;
-        const th = fontSize + 4;
-        const ly = y - th > 0 ? y - th : y + 2;
+        const tw = ctx.measureText(label).width + 8;
+        const th = fontSize + 6;
+        const ly = y - th - 2 > 0 ? y - th - 2 : y + 2;
         ctx.fillStyle = color;
         ctx.fillRect(x, ly, tw, th);
         ctx.fillStyle = "#fff";
-        ctx.fillText(label, x + 3, ly + 2);
+        ctx.fillText(label, x + 4, ly + 3);
       }
     });
-  }, [visibleElements, imgSize, showLabels, hovered, selected, coordScale]);
+  }, [visibleElements, nat, showLabels, hovered, selected, coordScale]);
 
-  // ── hover / click ─────────────────────────────────────────────────────────
-  function handleMouseMove(e: React.MouseEvent<HTMLCanvasElement>) {
-    const canvas = canvasRef.current;
-    if (!canvas || imgSize.nw === 0) return;
+  // ── hit-test usa as mesmas coordenadas naturais ──────────────────────────
+  const hitTest = useCallback(
+    (clientX: number, clientY: number): UiElement | null => {
+      const canvas = canvasRef.current;
+      if (!canvas || nat.w === 0) return null;
 
-    const rect = canvas.getBoundingClientRect();
-    const mx   = e.clientX - rect.left;
-    const my   = e.clientY - rect.top;
+      // getBoundingClientRect → tamanho exibido no CSS
+      const rect    = canvas.getBoundingClientRect();
+      const scaleX  = nat.w / rect.width;
+      const scaleY  = nat.h / rect.height;
 
-    let found: UiElement | null = null;
-    for (let i = visibleElements.length - 1; i >= 0; i--) {
-      const raw = toBox(visibleElements[i].coordenadas);
-      if (!raw) continue;
-      const { x, y, w, h } = toDisplayPx(
-        raw, coordScale,
-        imgSize.nw, imgSize.nh,
-        imgSize.natW, imgSize.natH,
-      );
-      if (mx >= x && mx <= x + w && my >= y && my <= y + h) {
-        found = visibleElements[i];
-        break;
+      // Converte posição do mouse para coordenadas naturais do canvas
+      const mx = (clientX - rect.left)  * scaleX;
+      const my = (clientY - rect.top)   * scaleY;
+
+      for (let i = visibleElements.length - 1; i >= 0; i--) {
+        const raw = toBox(visibleElements[i].coordenadas);
+        if (!raw) continue;
+        const { x, y, w, h } = toNaturalPx(raw, coordScale, nat.w, nat.h);
+        if (mx >= x && mx <= x + w && my >= y && my <= y + h) {
+          return visibleElements[i];
+        }
       }
-    }
-    setHovered(found);
-  }
+      return null;
+    },
+    [visibleElements, nat, coordScale],
+  );
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    setHovered(hitTest(e.clientX, e.clientY));
+  };
+
+  const handleClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    setSelected(hitTest(e.clientX, e.clientY));
+  };
 
   const activeEl = selected ?? hovered;
 
@@ -217,7 +229,6 @@ export function AnnotatedImageViewer({
             Mostrar labels
           </label>
 
-          {/* Badge de escala */}
           <span style={{
             marginLeft: "auto", fontSize: "0.7rem", padding: "0.15rem 0.55rem",
             borderRadius: "999px", border: "1px solid var(--accent-primary)",
@@ -228,6 +239,7 @@ export function AnnotatedImageViewer({
 
           <span style={{ fontSize: "0.75rem", color: "var(--text-tertiary)" }}>
             {visibleElements.length} visível(is)
+            {nat.w > 0 && ` · ${nat.w}×${nat.h}px`}
           </span>
         </div>
       </div>
@@ -236,7 +248,8 @@ export function AnnotatedImageViewer({
       <div className="annotation-legend">
         {Object.entries(TYPE_COLORS).map(([t, c]) => (
           <span
-            key={t} className="legend-chip"
+            key={t}
+            className="legend-chip"
             style={{ borderColor: c, color: c, cursor: "pointer", opacity: filterType !== "all" && filterType !== t ? 0.35 : 1 }}
             onClick={() => setFilterType(filterType === t ? "all" : t)}
           >
@@ -245,17 +258,36 @@ export function AnnotatedImageViewer({
         ))}
       </div>
 
-      {/* Imagem + Canvas */}
-      <div className="annotation-canvas-wrap">
+      {/* Imagem + Canvas sobrepostos */}
+      <div
+        ref={wrapRef}
+        className="annotation-canvas-wrap"
+        style={{ position: "relative", display: "inline-block", width: "100%" }}
+      >
         <img
-          ref={imgRef} src={dataUri} alt="screenshot"
-          className="annotation-img" onLoad={handleImgLoad} draggable={false}
+          ref={imgRef}
+          src={dataUri}
+          alt="screenshot"
+          className="annotation-img"
+          onLoad={handleImgLoad}
+          draggable={false}
+          style={{ display: "block", width: "100%", height: "auto" }}
         />
+        {/* Canvas tem resolução natural mas é escalado via CSS para cobrir a imagem */}
         <canvas
-          ref={canvasRef} className="annotation-canvas"
+          ref={canvasRef}
+          className="annotation-canvas"
+          style={{
+            position:  "absolute",
+            top:       0,
+            left:      0,
+            width:     "100%",   // ← CSS escala para cobrir a imagem
+            height:    "100%",
+            cursor:    "crosshair",
+          }}
           onMouseMove={handleMouseMove}
           onMouseLeave={() => setHovered(null)}
-          onClick={() => setSelected(hovered)}
+          onClick={handleClick}
           title={activeEl?.id ?? ""}
         />
       </div>
@@ -264,15 +296,19 @@ export function AnnotatedImageViewer({
       {activeEl && (
         <div className="annotation-tooltip">
           <div className="annotation-tooltip-header">
-            <span className="job-status-badge success"
-              style={{ background: `${getColor(activeEl.type)}22`, color: getColor(activeEl.type), borderColor: getColor(activeEl.type) }}>
+            <span
+              className="job-status-badge success"
+              style={{ background: `${getColor(activeEl.type)}22`, color: getColor(activeEl.type), borderColor: getColor(activeEl.type) }}
+            >
               {activeEl.type}
             </span>
             <span className="job-model-name">{activeEl.id}</span>
             {selected && (
-              <button className="btn-secondary"
+              <button
+                className="btn-secondary"
                 style={{ marginLeft: "auto", fontSize: "0.7rem", padding: "0.1rem 0.45rem" }}
-                onClick={() => setSelected(null)}>
+                onClick={() => setSelected(null)}
+              >
                 ✕ desselecionar
               </button>
             )}

@@ -18,64 +18,9 @@ Instruções:
 - Se houver mais de um caminho possível, explique brevemente as alternativas e recomende a melhor.
 - Use linguagem simples, em português, focada no que o usuário deve fazer agora.
 `,
-
-//     AnalisysComponentsLLM: `
-//     Você é um analisador especializado de interfaces de usuário (UI). Sua tarefa é examinar a imagem fornecida com máxima atenção e retornar um JSON estruturado com TODOS os componentes visíveis.
-
-// ## PROCESSO DE ANÁLISE (siga nesta ordem)
-// 1. Escaneie a imagem em faixas horizontais: topo → meio → rodapé
-// 2. Dentro de cada faixa, identifique da esquerda para a direita
-// 3. Não pule elementos pequenos (ícones, badges, separadores, tooltips visíveis)
-// 4. Cada elemento interativo ou informativo deve ser um item separado
-
-// ## SAÍDA
-// - APENAS o array JSON, sem markdown, sem texto antes ou depois
-// - Nenhum comentário, nenhum bloco json
-
-// ## SCHEMA DE CADA ELEMENTO
-// {
-//   "id":          string   // snake_case único e descritivo (ex: "button_filtrar", "input_nome")
-//   "type":        string   // um dos tipos abaixo
-//   "text":        string | null  // texto literal visível, placeholder ou null
-//   "state":       string   // "default" | "disabled" | "focused" | "selected" | "error" | "success" | "loading"
-//   "region":      string   // "top-bar" | "tab-bar" | "sidebar" | "filter-section" | "main-content" | "modal" | "footer"
-//   "color":       string   // cor predominante: "blue" | "green" | "red" | "gray" | "white" | "black" | "orange" | "purple"
-//   "coordenadas": [x, y, w, h]  // bounding box NORMALIZADO no espaço 0-1000
-//   "actions":     string[] // ex: ["onClick"], ["onChange", "onFocus"]
-//   "meta":        object   // informações específicas do tipo (ver abaixo)
-// }
-
-// ## COORDENADAS — ESCALA 0-1000
-// - Todos os valores são inteiros entre 0 e 1000
-// - A imagem inteira equivale a 1000 × 1000 nesse espaço normalizado
-// - Fórmula: x_norm = round((x_pixel / largura_imagem) × 1000)
-// - Exemplo: elemento na metade horizontal → x ≈ 500
-// - [x, y, w, h] = [coluna_início, linha_início, largura, altura]
-// - NUNCA use valores fora do intervalo [0, 1000]
-// - Precisão é crítica — estime com atenção a posição e tamanho de cada elemento
-
-// ## TIPOS VÁLIDOS
-// button, input, select, checkbox, radio, label, icon, image, link,
-// tab, table-header, table-cell, table-row, card, modal, chart,
-// text, badge, tooltip, divider, pagination, breadcrumb, avatar, toggle
-
-// ## META POR TIPO (inclua apenas campos relevantes)
-// - input:    { inputType: "text|password|number|email|date|datetime", placeholder: "..." }
-// - select:   { options: ["opt1", "opt2"] }  // apenas se visíveis
-// - icon:     { iconType: "hamburger|close|search|filter|edit|delete|..." }
-// - chart:    { chartType: "bar|line|pie|circular", value: "..." }
-// - table-*:  { rowData: {...} }  // para table-cell e table-row
-
-// ## REGRAS DE QUALIDADE
-// - PROIBIDO inventar elementos que não estão visíveis na imagem
-// - PROIBIDO omitir elementos visíveis, mesmo que pequenos
-// - Elementos sobrepostos (ex: ícone dentro de botão) devem ser listados SEPARADAMENTE
-// - IDs devem ser únicos — nunca repita o mesmo id
-// - "text" deve ser o conteúdo literal, não uma descrição (ex: "Filtrar", não "botão de filtro")
-// - Para elementos sem texto visível, use null em "text"
-// `
+// Scale
     AnalisysComponentsLLM: `
-Você é um analisador especializado de interfaces de usuário (UI). Sua tarefa é examinar a imagem fornecida com máxima atenção e retornar um JSON estruturado com TODOS os componentes visíveis.
+    Você é um analisador especializado de interfaces de usuário (UI). Sua tarefa é examinar a imagem fornecida com máxima atenção e retornar um JSON estruturado com TODOS os componentes visíveis.
 
 ## PROCESSO DE ANÁLISE (siga nesta ordem)
 1. Escaneie a imagem em faixas horizontais: topo → meio → rodapé
@@ -87,18 +32,27 @@ Você é um analisador especializado de interfaces de usuário (UI). Sua tarefa 
 - APENAS o array JSON, sem markdown, sem texto antes ou depois
 - Nenhum comentário, nenhum bloco json
 
- ## SCHEMA DE CADA ELEMENTO
+## SCHEMA DE CADA ELEMENTO
 {
-  "id":          string  // snake_case único e descritivo (ex: "button_filtrar", "input_nome")
-  "type":        string  // um dos tipos abaixo
+  "id":          string   // snake_case único e descritivo (ex: "button_filtrar", "input_nome")
+  "type":        string   // um dos tipos abaixo
   "text":        string | null  // texto literal visível, placeholder ou null
-  "state":       string  // "default" | "disabled" | "focused" | "selected" | "error" | "success" | "loading"
-  "region":      string  // "top-bar" | "tab-bar" | "sidebar" | "filter-section" | "main-content" | "modal" | "footer"
-  "color":       string  // cor predominante: "blue" | "green" | "red" | "gray" | "white" | "black" | "orange" | "purple"
-  "coordenadas": [x, y, w, h]  // bounding box em pixels reais da imagem (inteiros)
-  "actions":     string[]  // ex: ["onClick"], ["onChange", "onFocus"]
+  "state":       string   // "default" | "disabled" | "focused" | "selected" | "error" | "success" | "loading"
+  "region":      string   // "top-bar" | "tab-bar" | "sidebar" | "filter-section" | "main-content" | "modal" | "footer"
+  "color":       string   // cor predominante: "blue" | "green" | "red" | "gray" | "white" | "black" | "orange" | "purple"
+  "coordenadas": [x, y, w, h]  // bounding box NORMALIZADO no espaço 0-1000
+  "actions":     string[] // ex: ["onClick"], ["onChange", "onFocus"]
   "meta":        object   // informações específicas do tipo (ver abaixo)
 }
+
+## COORDENADAS — ESCALA 0-1000
+- Todos os valores são inteiros entre 0 e 1000
+- A imagem inteira equivale a 1000 × 1000 nesse espaço normalizado
+- Fórmula: x_norm = round((x_pixel / largura_imagem) × 1000)
+- Exemplo: elemento na metade horizontal → x ≈ 500
+- [x, y, w, h] = [coluna_início, linha_início, largura, altura]
+- NUNCA use valores fora do intervalo [0, 1000]
+- Precisão é crítica — estime com atenção a posição e tamanho de cada elemento
 
 ## TIPOS VÁLIDOS
 button, input, select, checkbox, radio, label, icon, image, link,
@@ -106,16 +60,11 @@ tab, table-header, table-cell, table-row, card, modal, chart,
 text, badge, tooltip, divider, pagination, breadcrumb, avatar, toggle
 
 ## META POR TIPO (inclua apenas campos relevantes)
-- input:   { inputType: "text|password|number|email|date|datetime", placeholder: "..." }
-- select:  { options: ["opt1", "opt2"] }  // apenas se visíveis
-- icon:    { iconType: "hamburger|close|search|filter|edit|delete|..." }
-- chart:   { chartType: "bar|line|pie|circular", value: "..." }
-- table-*: { rowData: {...} }  // para table-cell e table-row
-
- ## COORDENADAS
-- Use os pixels reais da imagem: [x_inicio, y_inicio, largura, altura]
-- Todos inteiros ≥ 0
-- Precisão é crítica — meça com atenção cada elemento
+- input:    { inputType: "text|password|number|email|date|datetime", placeholder: "..." }
+- select:   { options: ["opt1", "opt2"] }  // apenas se visíveis
+- icon:     { iconType: "hamburger|close|search|filter|edit|delete|..." }
+- chart:    { chartType: "bar|line|pie|circular", value: "..." }
+- table-*:  { rowData: {...} }  // para table-cell e table-row
 
 ## REGRAS DE QUALIDADE
 - PROIBIDO inventar elementos que não estão visíveis na imagem
@@ -124,8 +73,61 @@ text, badge, tooltip, divider, pagination, breadcrumb, avatar, toggle
 - IDs devem ser únicos — nunca repita o mesmo id
 - "text" deve ser o conteúdo literal, não uma descrição (ex: "Filtrar", não "botão de filtro")
 - Para elementos sem texto visível, use null em "text"
-
 `
+
+// Pixels
+//     AnalisysComponentsLLM: `
+// Você é um analisador especializado de interfaces de usuário (UI). Sua tarefa é examinar a imagem fornecida com máxima atenção e retornar um JSON estruturado com TODOS os componentes visíveis.
+
+// ## PROCESSO DE ANÁLISE (siga nesta ordem)
+// 1. Escaneie a imagem em faixas horizontais: topo → meio → rodapé
+// 2. Dentro de cada faixa, identifique da esquerda para a direita
+// 3. Não pule elementos pequenos (ícones, badges, separadores, tooltips visíveis)
+// 4. Cada elemento interativo ou informativo deve ser um item separado
+
+// ## SAÍDA
+// - APENAS o array JSON, sem markdown, sem texto antes ou depois
+// - Nenhum comentário, nenhum bloco json
+
+//  ## SCHEMA DE CADA ELEMENTO
+// {
+//   "id":          string  // snake_case único e descritivo (ex: "button_filtrar", "input_nome")
+//   "type":        string  // um dos tipos abaixo
+//   "text":        string | null  // texto literal visível, placeholder ou null
+//   "state":       string  // "default" | "disabled" | "focused" | "selected" | "error" | "success" | "loading"
+//   "region":      string  // "top-bar" | "tab-bar" | "sidebar" | "filter-section" | "main-content" | "modal" | "footer"
+//   "color":       string  // cor predominante: "blue" | "green" | "red" | "gray" | "white" | "black" | "orange" | "purple"
+//   "coordenadas": [x, y, w, h]  // bounding box em pixels reais da imagem (inteiros)
+//   "actions":     string[]  // ex: ["onClick"], ["onChange", "onFocus"]
+//   "meta":        object   // informações específicas do tipo (ver abaixo)
+// }
+
+// ## TIPOS VÁLIDOS
+// button, input, select, checkbox, radio, label, icon, image, link,
+// tab, table-header, table-cell, table-row, card, modal, chart,
+// text, badge, tooltip, divider, pagination, breadcrumb, avatar, toggle
+
+// ## META POR TIPO (inclua apenas campos relevantes)
+// - input:   { inputType: "text|password|number|email|date|datetime", placeholder: "..." }
+// - select:  { options: ["opt1", "opt2"] }  // apenas se visíveis
+// - icon:    { iconType: "hamburger|close|search|filter|edit|delete|..." }
+// - chart:   { chartType: "bar|line|pie|circular", value: "..." }
+// - table-*: { rowData: {...} }  // para table-cell e table-row
+
+//  ## COORDENADAS
+// - Use os pixels reais da imagem: [x_inicio, y_inicio, largura, altura]
+// - Todos inteiros ≥ 0
+// - Precisão é crítica — meça com atenção cada elemento
+
+// ## REGRAS DE QUALIDADE
+// - PROIBIDO inventar elementos que não estão visíveis na imagem
+// - PROIBIDO omitir elementos visíveis, mesmo que pequenos
+// - Elementos sobrepostos (ex: ícone dentro de botão) devem ser listados SEPARADAMENTE
+// - IDs devem ser únicos — nunca repita o mesmo id
+// - "text" deve ser o conteúdo literal, não uma descrição (ex: "Filtrar", não "botão de filtro")
+// - Para elementos sem texto visível, use null em "text"
+
+// `
 
 //   OldAnaliser: `
 //   Você é um analisador de interface que recebe uma tela (por imagem ou descrição detalhada) e devolve um JSON com todos os componentes de UI.

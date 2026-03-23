@@ -1,0 +1,76 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE Tumbleweed">
+    <repositories>
+      <repository recommended="true">
+        <name>multimedia:apps</name>
+        <summary>Multimedia Applications</summary>
+        <description>This project provides all kind of multimedia applications. This includes 
+players for audio and video data, recording and cutting applications.
+</description>
+        <url>https://download.opensuse.org/repositories/multimedia:/apps/openSUSE_Tumbleweed/</url>
+      </repository>
+      <repository recommended="true">
+        <name>multimedia:libs</name>
+        <summary>Multimedia Libraries, Codecs and Command Line Tools</summary>
+        <description>This project is a central place for audio, video and image libraries for parsing multimedia data (also known as codecs), tags or containers. It is also a place for multimedia data processing libraries.
+Command line utilities without GUI toolkit dependencies can be placed into this project as well. Please don't place end-user GUI based applications here, put them into multimedia:apps. Base your project on packages in this project instead.
+
+This project also serves as development project for packages around this topic in the openSUSE:Factory distribution. If you want to participate you can contact us individually or use our mailinglist opensuse-packaging@opensuse.org. Please report bugs to the respective bugowners as set.
+
+</description>
+        <url>https://download.opensuse.org/repositories/multimedia:/libs/openSUSE_Tumbleweed/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Tumbleweed</name>
+        <summary>Tumbleweed</summary>
+        <description>Tumbleweed is the openSUSE Rolling Release
+
+This OBS Project represents the content of the currently published
+snapshot. The newer repository for next publish can be found in openSUSE:Factory standard repository.
+</description>
+        <url>https://download.opensuse.org/repositories/openSUSE:/Tumbleweed/standard/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Tumbleweed</name>
+        <summary>Tumbleweed</summary>
+        <description>Tumbleweed is the openSUSE Rolling Release
+
+This OBS Project represents the content of the currently published
+snapshot. The newer repository for next publish can be found in openSUSE:Factory standard repository.
+</description>
+        <url>https://download.opensuse.org/tumbleweed/repo/oss/</url>
+      </repository>
+      <repository recommended="false">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>openSUSE Tumbleweed: The Bleeding Edge, Perfected.
+Tumbleweed is the ultimate rolling release distribution, providing the latest software as it’s released, built upon a foundation of world-class stability and testing.
+
+* Always Current: Get the newest kernel, IDEs, desktops, and applications automatically.
+
+* Powerfully Stable: Experience the velocity of a rolling release without sacrificing the reliability you depend on.
+
+* Engineered for Professionals: The top choice for Developers, Power Users, and openSUSE Contributors who need the best tools for the job.
+
+If you demand the latest stable software, your choice is Tumbleweed.
+
+Staging dashboard is located at: https://build.opensuse.org/staging_workflows/openSUSE:Factory 
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>https://download.opensuse.org/repositories/openSUSE:/Factory/ports/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>droidcam</name>
+        <summary>Program to turn a mobile device into a webcam</summary>
+        <description>This program turns a mobile device into a webcam.
+
+It can be used with chat programs like Skype, Zoom, Teams, or with
+live streaming programs like OBS.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

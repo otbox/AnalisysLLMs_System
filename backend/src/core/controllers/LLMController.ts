@@ -121,9 +121,8 @@ export class StepController {
     fs.writeFileSync(path.join(dir, "clean.json"),  JSON.stringify(data.clean,  null, 2), "utf-8");
 
     // ── Imagens anotadas ──────────────────────────────────────────────────────
-    // Para ativar pixels também, descomente a linha abaixo:
-    await this.saveImages(imageBase64, annotatorPixels, data, model, path.join(dir, "pixels"), "pixels");
-    // await this.saveImages(imageBase64, annotatorScale, data, model, path.join(dir, "scaled"), "normalized-1000");
+    // await this.saveImages(imageBase64, annotatorPixels, data, model, path.join(dir, "pixels"), "pixels");
+    await this.saveImages(imageBase64, annotatorScale, data, model, path.join(dir, "scaled"), "normalized-1000");
 
     console.log(`[StepController] ✅ step${stepIndex} | ${profile} | ${model} → ${dir}`);
   }

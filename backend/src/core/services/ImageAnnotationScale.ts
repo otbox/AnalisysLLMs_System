@@ -112,6 +112,7 @@ export class LlmImageAnnotatorServiceScale {
 
     const ui = this.extractUiElements(analysis);
     if (!ui.length) {
+      console.log(ui, analysis)
       throw new Error("Nenhum elemento de UI encontrado em analysis.ui ou rawResponse.");
     }
 

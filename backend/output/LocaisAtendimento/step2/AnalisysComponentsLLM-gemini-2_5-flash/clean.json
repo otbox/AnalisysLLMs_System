@@ -1,0 +1,2133 @@
+[
+  {
+    "id": "link_ir_para_conteudo",
+    "type": "link",
+    "text": "Ir para o conteúdo",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      596,
+      0,
+      102,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "link_ir_para_menu",
+    "type": "link",
+    "text": "Ir para o menu",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      708,
+      0,
+      86,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "link_ir_para_busca",
+    "type": "link",
+    "text": "Ir para a busca",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      804,
+      0,
+      90,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "link_ir_para_rodape",
+    "type": "link",
+    "text": "Ir para o rodapé",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      904,
+      0,
+      94,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_contraste",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      16,
+      14,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "contrast"
+    }
+  },
+  {
+    "id": "button_a_mais",
+    "type": "button",
+    "text": "A+",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      44,
+      14,
+      28,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_a_menos",
+    "type": "button",
+    "text": "A-",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      76,
+      14,
+      28,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_search_top",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      108,
+      14,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "search"
+    }
+  },
+  {
+    "id": "icon_map_top",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      136,
+      14,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "map"
+    }
+  },
+  {
+    "id": "icon_speaker_top",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      164,
+      14,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "speaker"
+    }
+  },
+  {
+    "id": "image_logo_prefeitura",
+    "type": "image",
+    "state": "default",
+    "region": "top-bar",
+    "color": "null",
+    "coordenadas": [
+      16,
+      46,
+      100,
+      76
+    ]
+  },
+  {
+    "id": "text_prefeitura_limeira",
+    "type": "text",
+    "text": "PREFEITURA DE\nLIMEIRA",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      124,
+      54,
+      130,
+      36
+    ]
+  },
+  {
+    "id": "text_estado_sao_paulo",
+    "type": "text",
+    "text": "ESTADO DE SÃO PAULO - BRASIL",
+    "state": "default",
+    "region": "top-bar",
+    "color": "gray",
+    "coordenadas": [
+      124,
+      90,
+      130,
+      12
+    ]
+  },
+  {
+    "id": "input_search_main",
+    "type": "input",
+    "state": "default",
+    "region": "top-bar",
+    "color": "white",
+    "coordenadas": [
+      260,
+      40,
+      256,
+      36
+    ],
+    "actions": [
+      "onChange",
+      "onFocus"
+    ],
+    "meta": {
+      "inputType": "text",
+      "placeholder": "Digite a sua busca"
+    }
+  },
+  {
+    "id": "button_search_main",
+    "type": "button",
+    "state": "default",
+    "region": "top-bar",
+    "color": "green",
+    "coordenadas": [
+      516,
+      40,
+      36,
+      36
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_search_input",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "white",
+    "coordenadas": [
+      524,
+      48,
+      20,
+      20
+    ],
+    "meta": {
+      "iconType": "search"
+    }
+  },
+  {
+    "id": "text_em_alta",
+    "type": "text",
+    "text": "Em alta:",
+    "state": "default",
+    "region": "top-bar",
+    "color": "green",
+    "coordenadas": [
+      260,
+      80,
+      48,
+      16
+    ]
+  },
+  {
+    "id": "link_iptu_2025",
+    "type": "link",
+    "text": "IPTU 2025",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      316,
+      80,
+      68,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "link_nota_fiscal_eletronica",
+    "type": "link",
+    "text": "Nota Fiscal Eletrônica",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      392,
+      80,
+      112,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "link_licitacoes_top",
+    "type": "link",
+    "text": "Licitações",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      512,
+      80,
+      68,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_portal_transparencia",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "orange",
+    "coordenadas": [
+      548,
+      48,
+      20,
+      20
+    ],
+    "meta": {
+      "iconType": "info"
+    }
+  },
+  {
+    "id": "text_portal_transparencia",
+    "type": "text",
+    "text": "PORTAL DA\nTRANSPARÊNCIA",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      576,
+      48,
+      96,
+      32
+    ]
+  },
+  {
+    "id": "icon_weather_cloud",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "gray",
+    "coordenadas": [
+      680,
+      48,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "cloud"
+    }
+  },
+  {
+    "id": "text_weather_temp",
+    "type": "text",
+    "text": "34°",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      708,
+      48,
+      28,
+      16
+    ]
+  },
+  {
+    "id": "text_weather_description",
+    "type": "text",
+    "text": "Chuva Fraca",
+    "state": "default",
+    "region": "top-bar",
+    "color": "gray",
+    "coordenadas": [
+      708,
+      64,
+      68,
+      12
+    ]
+  },
+  {
+    "id": "icon_facebook_top",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "gray",
+    "coordenadas": [
+      792,
+      52,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "facebook"
+    }
+  },
+  {
+    "id": "icon_instagram_top",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "gray",
+    "coordenadas": [
+      820,
+      52,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "instagram"
+    }
+  },
+  {
+    "id": "icon_linkedin_top",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "gray",
+    "coordenadas": [
+      848,
+      52,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "linkedin"
+    }
+  },
+  {
+    "id": "icon_rss_top",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "gray",
+    "coordenadas": [
+      876,
+      52,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "rss"
+    }
+  },
+  {
+    "id": "icon_speaker_social_top",
+    "type": "icon",
+    "state": "default",
+    "region": "top-bar",
+    "color": "gray",
+    "coordenadas": [
+      904,
+      52,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "speaker"
+    }
+  },
+  {
+    "id": "tab_a_prefeitura",
+    "type": "tab",
+    "text": "A Prefeitura",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "white",
+    "coordenadas": [
+      44,
+      116,
+      100,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_prefeitura",
+    "type": "icon",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "gray",
+    "coordenadas": [
+      120,
+      128,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "tab_secretarias",
+    "type": "tab",
+    "text": "Secretarias",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "white",
+    "coordenadas": [
+      152,
+      116,
+      92,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_secretarias",
+    "type": "icon",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "gray",
+    "coordenadas": [
+      228,
+      128,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "tab_imprensa",
+    "type": "tab",
+    "text": "Imprensa",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "white",
+    "coordenadas": [
+      252,
+      116,
+      80,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_imprensa",
+    "type": "icon",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "gray",
+    "coordenadas": [
+      320,
+      128,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "tab_leis_municipais",
+    "type": "tab",
+    "text": "Leis Municipais",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "white",
+    "coordenadas": [
+      340,
+      116,
+      112,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_leis_municipais",
+    "type": "icon",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "gray",
+    "coordenadas": [
+      440,
+      128,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "tab_consultas",
+    "type": "tab",
+    "text": "Consultas",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "white",
+    "coordenadas": [
+      460,
+      116,
+      84,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_consultas",
+    "type": "icon",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "gray",
+    "coordenadas": [
+      532,
+      128,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "tab_cidadao",
+    "type": "tab",
+    "text": "Cidadão",
+    "state": "selected",
+    "region": "tab-bar",
+    "color": "green",
+    "coordenadas": [
+      596,
+      116,
+      80,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "tab_empresa",
+    "type": "tab",
+    "text": "Empresa",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "gray",
+    "coordenadas": [
+      680,
+      116,
+      80,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "tab_servidor",
+    "type": "tab",
+    "text": "Servidor",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "gray",
+    "coordenadas": [
+      764,
+      116,
+      80,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "tab_turismo",
+    "type": "tab",
+    "text": "Turismo",
+    "state": "default",
+    "region": "tab-bar",
+    "color": "orange",
+    "coordenadas": [
+      848,
+      116,
+      80,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "breadcrumb_inicio",
+    "type": "breadcrumb",
+    "text": "Início",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      176,
+      36,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "breadcrumb_separator_1",
+    "type": "text",
+    "text": "›",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      92,
+      176,
+      8,
+      16
+    ]
+  },
+  {
+    "id": "breadcrumb_topo",
+    "type": "breadcrumb",
+    "text": "Topo",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      104,
+      176,
+      32,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "breadcrumb_separator_2",
+    "type": "text",
+    "text": "›",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      140,
+      176,
+      8,
+      16
+    ]
+  },
+  {
+    "id": "breadcrumb_saude",
+    "type": "breadcrumb",
+    "text": "Saúde",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      152,
+      176,
+      28,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "breadcrumb_separator_3",
+    "type": "text",
+    "text": "›",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      184,
+      176,
+      8,
+      16
+    ]
+  },
+  {
+    "id": "breadcrumb_locais_atendimentos",
+    "type": "breadcrumb",
+    "text": "Locais de Atendimentos",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      196,
+      176,
+      136,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_dropdown_locais_atendimentos",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      440,
+      176,
+      12,
+      12
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "dropdown"
+    }
+  },
+  {
+    "id": "title_locais_atendimentos",
+    "type": "text",
+    "text": "Locais de Atendimentos",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      52,
+      204,
+      260,
+      28
+    ]
+  },
+  {
+    "id": "text_ubs_title",
+    "type": "text",
+    "text": "ubs",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      52,
+      252,
+      28,
+      20
+    ]
+  },
+  {
+    "id": "text_ubs_description",
+    "type": "text",
+    "text": "UBS - Unidades Básicas de Saúde",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      276,
+      180,
+      16
+    ]
+  },
+  {
+    "id": "divider_ubs",
+    "type": "divider",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      308,
+      500,
+      1
+    ]
+  },
+  {
+    "id": "text_servicos_apoio",
+    "type": "text",
+    "text": "Serviços de Apoio",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      52,
+      332,
+      120,
+      20
+    ]
+  },
+  {
+    "id": "divider_servicos_apoio",
+    "type": "divider",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      372,
+      500,
+      1
+    ]
+  },
+  {
+    "id": "text_unidade_basica_saude",
+    "type": "text",
+    "text": "Unidade Básica de Saúde",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      52,
+      396,
+      180,
+      20
+    ]
+  },
+  {
+    "id": "divider_unidade_basica_saude",
+    "type": "divider",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      436,
+      500,
+      1
+    ]
+  },
+  {
+    "id": "text_policlinica",
+    "type": "text",
+    "text": "Policlínica",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      52,
+      460,
+      84,
+      20
+    ]
+  },
+  {
+    "id": "divider_policlinica",
+    "type": "divider",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      500,
+      500,
+      1
+    ]
+  },
+  {
+    "id": "text_samu",
+    "type": "text",
+    "text": "SAMU",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      52,
+      524,
+      44,
+      20
+    ]
+  },
+  {
+    "id": "divider_samu",
+    "type": "divider",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      564,
+      500,
+      1
+    ]
+  },
+  {
+    "id": "text_hospitais",
+    "type": "text",
+    "text": "Hospitais",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      52,
+      588,
+      76,
+      20
+    ]
+  },
+  {
+    "id": "divider_hospitais",
+    "type": "divider",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      628,
+      500,
+      1
+    ]
+  },
+  {
+    "id": "text_central_ambulancia",
+    "type": "text",
+    "text": "Central de Ambulância",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      52,
+      652,
+      160,
+      20
+    ]
+  },
+  {
+    "id": "divider_central_ambulancia",
+    "type": "divider",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      692,
+      500,
+      1
+    ]
+  },
+  {
+    "id": "button_acessivel_vlibras",
+    "type": "button",
+    "text": "Acessível.com\nVlibras",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      840,
+      156,
+      128,
+      36
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "image_vlibras_avatar",
+    "type": "image",
+    "state": "default",
+    "region": "main-content",
+    "color": "null",
+    "coordenadas": [
+      848,
+      160,
+      32,
+      28
+    ]
+  },
+  {
+    "id": "icon_hand_accessibility",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      976,
+      160,
+      28,
+      28
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "hand"
+    }
+  },
+  {
+    "id": "card_limeira_digital",
+    "type": "card",
+    "text": "Limeira Digital",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      204,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_limeira_digital",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "purple",
+    "coordenadas": [
+      692,
+      212,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "document"
+    }
+  },
+  {
+    "id": "card_iptu_divida_ativa",
+    "type": "card",
+    "text": "IPTU e Dívida Ativa/\nMobiliário",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      248,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_iptu_divida_ativa",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      692,
+      256,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "document"
+    }
+  },
+  {
+    "id": "card_consulta_medicamentos",
+    "type": "card",
+    "text": "Consulta Medicamentos",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      292,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_consulta_medicamentos",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "green",
+    "coordenadas": [
+      692,
+      300,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "heart"
+    }
+  },
+  {
+    "id": "card_consulta_processos",
+    "type": "card",
+    "text": "Consulta de Processos",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      336,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_consulta_processos",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "orange",
+    "coordenadas": [
+      692,
+      344,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "question"
+    }
+  },
+  {
+    "id": "card_multas_transito",
+    "type": "card",
+    "text": "Multas de Trânsito",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      380,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_multas_transito",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "red",
+    "coordenadas": [
+      692,
+      388,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "document"
+    }
+  },
+  {
+    "id": "card_certidoes",
+    "type": "card",
+    "text": "Certidões",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      424,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_certidoes",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "purple",
+    "coordenadas": [
+      692,
+      432,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "envelope"
+    }
+  },
+  {
+    "id": "card_leis_orcamentarias",
+    "type": "card",
+    "text": "Leis Orçamentárias",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      468,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_leis_orcamentarias",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      692,
+      476,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "document"
+    }
+  },
+  {
+    "id": "card_vagas_pat",
+    "type": "card",
+    "text": "Vagas do PAT",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      512,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_vagas_pat",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "green",
+    "coordenadas": [
+      692,
+      520,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "document"
+    }
+  },
+  {
+    "id": "card_procon",
+    "type": "card",
+    "text": "PROCON",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      556,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_procon",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "orange",
+    "coordenadas": [
+      692,
+      564,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "monitor"
+    }
+  },
+  {
+    "id": "card_chamamento_publico",
+    "type": "card",
+    "text": "Chamamento Público",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      600,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_chamamento_publico",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "red",
+    "coordenadas": [
+      692,
+      608,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "hands"
+    }
+  },
+  {
+    "id": "card_parcelamento_online",
+    "type": "card",
+    "text": "Parcelamen- to Online",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      644,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_parcelamento_online",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "purple",
+    "coordenadas": [
+      692,
+      652,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "globe"
+    }
+  },
+  {
+    "id": "card_licitacoes",
+    "type": "card",
+    "text": "Licitações",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      688,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_licitacoes",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      692,
+      696,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "handshake"
+    }
+  },
+  {
+    "id": "card_plano_diretor",
+    "type": "card",
+    "text": "Plano Diretor 2025-2035",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      732,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_plano_diretor",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "green",
+    "coordenadas": [
+      692,
+      740,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "magnifying_glass"
+    }
+  },
+  {
+    "id": "card_dengue",
+    "type": "card",
+    "text": "Dengue",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      776,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_dengue",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "orange",
+    "coordenadas": [
+      692,
+      784,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "mosquito"
+    }
+  },
+  {
+    "id": "card_cadastro_habitacional",
+    "type": "card",
+    "text": "Cadastro Habitacional",
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      680,
+      820,
+      288,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_cadastro_habitacional",
+    "type": "icon",
+    "state": "default",
+    "region": "main-content",
+    "color": "red",
+    "coordenadas": [
+      692,
+      828,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "house"
+    }
+  },
+  {
+    "id": "button_cidadao_footer",
+    "type": "button",
+    "text": "Cidadão",
+    "state": "default",
+    "region": "footer",
+    "color": "green",
+    "coordenadas": [
+      44,
+      840,
+      100,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_empresa_footer",
+    "type": "button",
+    "text": "Empresa",
+    "state": "default",
+    "region": "footer",
+    "color": "blue",
+    "coordenadas": [
+      44,
+      884,
+      100,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_servidor_footer",
+    "type": "button",
+    "text": "Servidor",
+    "state": "default",
+    "region": "footer",
+    "color": "orange",
+    "coordenadas": [
+      44,
+      928,
+      100,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_turismo_footer",
+    "type": "button",
+    "text": "Turismo",
+    "state": "default",
+    "region": "footer",
+    "color": "orange",
+    "coordenadas": [
+      44,
+      972,
+      100,
+      40
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "link_leis_municipais_footer",
+    "type": "link",
+    "text": "Leis Municipais",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      160,
+      848,
+      100,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_leis_municipais_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      264,
+      848,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "link_secretarias_footer",
+    "type": "link",
+    "text": "Secretarias",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      292,
+      848,
+      80,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_secretarias_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      376,
+      848,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "link_imprensa_footer",
+    "type": "link",
+    "text": "Imprensa",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      404,
+      848,
+      68,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_imprensa_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      476,
+      848,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "link_consultas_footer",
+    "type": "link",
+    "text": "Consultas",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      504,
+      848,
+      72,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_consultas_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      580,
+      848,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "link_autarquias_conselhos_footer",
+    "type": "link",
+    "text": "Autarquias e Conselhos",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      608,
+      848,
+      140,
+      16
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_hamburger_autarquias_conselhos_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      752,
+      848,
+      12,
+      12
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "image_logo_prefeitura_footer",
+    "type": "image",
+    "state": "default",
+    "region": "footer",
+    "color": "null",
+    "coordenadas": [
+      160,
+      880,
+      100,
+      76
+    ]
+  },
+  {
+    "id": "text_prefeitura_limeira_footer",
+    "type": "text",
+    "text": "PREFEITURA DE\nLIMEIRA",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      268,
+      888,
+      130,
+      36
+    ]
+  },
+  {
+    "id": "text_estado_sao_paulo_footer",
+    "type": "text",
+    "text": "ESTADO DE SÃO PAULO - BRASIL",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      268,
+      924,
+      130,
+      12
+    ]
+  },
+  {
+    "id": "icon_location_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      356,
+      888,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "location"
+    }
+  },
+  {
+    "id": "text_endereco_footer",
+    "type": "text",
+    "text": "Endereço:\nRua Prefeito Doutor Alberto Ferreira nº 179\nCentro, Limeira/SP - CEP: 13481-900",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      388,
+      888,
+      260,
+      48
+    ]
+  },
+  {
+    "id": "icon_cnpj_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      356,
+      944,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "document"
+    }
+  },
+  {
+    "id": "text_cnpj_footer",
+    "type": "text",
+    "text": "CNPJ:\n45.132.495/0001-40",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      388,
+      944,
+      120,
+      32
+    ]
+  },
+  {
+    "id": "icon_facebook_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      160,
+      964,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "facebook"
+    }
+  },
+  {
+    "id": "icon_instagram_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      188,
+      964,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "instagram"
+    }
+  },
+  {
+    "id": "icon_linkedin_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      216,
+      964,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "linkedin"
+    }
+  },
+  {
+    "id": "icon_rss_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      244,
+      964,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "rss"
+    }
+  },
+  {
+    "id": "icon_speaker_social_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      272,
+      964,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "speaker"
+    }
+  },
+  {
+    "id": "icon_phone_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      692,
+      888,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "phone"
+    }
+  },
+  {
+    "id": "text_telefone_footer",
+    "type": "text",
+    "text": "Telefone:\n(19) 3404-9600",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      724,
+      888,
+      100,
+      32
+    ]
+  },
+  {
+    "id": "icon_lock_footer",
+    "type": "icon",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      692,
+      944,
+      24,
+      24
+    ],
+    "meta": {
+      "iconType": "lock"
+    }
+  },
+  {
+    "id": "text_termo_politicas_lgpd_footer",
+    "type": "text",
+    "text": "Termo de Uso e Políticas de Privacidade\nLGPD - Pesquisa de Satisfação",
+    "state": "default",
+    "region": "footer",
+    "color": "white",
+    "coordenadas": [
+      724,
+      944,
+      220,
+      32
+    ]
+  },
+  {
+    "id": "image_e_crie_logo",
+    "type": "image",
+    "state": "default",
+    "region": "footer",
+    "color": "null",
+    "coordenadas": [
+      892,
+      972,
+      92,
+      28
+    ]
+  }
+]

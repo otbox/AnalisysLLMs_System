@@ -1,53 +1,189 @@
 {
   "pasta": "/home/otbox/Documentos/Projetos/ICLLMs/AnalisysLLMs_System/results/Americanas",
   "arquivos": {
+    "relatorio_componentes.json": {
+      "components": {
+        "wrapper": null,
+        "detectado": null,
+        "detectado_por_origem": {},
+        "diverge": false
+      }
+    },
     "1bNossaLoja/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 122
+      "components": {
+        "wrapper": 80,
+        "detectado": 90,
+        "detectado_por_origem": {
+          "ui": 90,
+          "raw_text": 90
+        },
+        "diverge": true
+      }
     },
     "icNossaLoja/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 138
+      "components": {
+        "wrapper": 102,
+        "detectado": 102,
+        "detectado_por_origem": {
+          "ui": 102,
+          "raw_text": 102
+        },
+        "diverge": false
+      }
     },
     "Principal2/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 191
+      "components": {
+        "wrapper": 75,
+        "detectado": 119,
+        "detectado_por_origem": {
+          "ui": 119,
+          "raw_text": 119
+        },
+        "diverge": true
+      }
     },
     "4b/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 112
+      "components": {
+        "wrapper": 79,
+        "detectado": 79,
+        "detectado_por_origem": {
+          "ui": 79,
+          "raw_text": 79
+        },
+        "diverge": false
+      }
     },
     "bis2/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 151
+      "components": {
+        "wrapper": 80,
+        "detectado": 100,
+        "detectado_por_origem": {
+          "ui": 100,
+          "raw_text": 100
+        },
+        "diverge": true
+      }
     },
     "4c/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 83
+      "components": {
+        "wrapper": 60,
+        "detectado": 60,
+        "detectado_por_origem": {
+          "ui": 60,
+          "raw_text": 60
+        },
+        "diverge": false
+      }
     },
     "3b/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 82
+      "components": {
+        "wrapper": 21,
+        "detectado": 41,
+        "detectado_por_origem": {
+          "ui": 41,
+          "raw_text": 41
+        },
+        "diverge": true
+      }
     },
     "3c/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 91
+      "components": {
+        "wrapper": 22,
+        "detectado": 51,
+        "detectado_por_origem": {
+          "ui": 51,
+          "raw_text": 51
+        },
+        "diverge": true
+      }
     },
     "2v0a/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 84
+      "components": {
+        "wrapper": 49,
+        "detectado": 66,
+        "detectado_por_origem": {
+          "ui": 66,
+          "raw_text": 66
+        },
+        "diverge": true
+      }
     },
     "2v0b/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 154
+      "components": {
+        "wrapper": 90,
+        "detectado": 90,
+        "detectado_por_origem": {
+          "ui": 90,
+          "raw_text": 90
+        },
+        "diverge": false
+      }
     },
     "2v0c/AnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 137
+      "components": {
+        "wrapper": 87,
+        "detectado": 87,
+        "detectado_por_origem": {
+          "ui": 87,
+          "raw_text": 87
+        },
+        "diverge": false
+      }
     },
     "2v1b/2v1bAnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 239
+      "components": {
+        "wrapper": 177,
+        "detectado": 177,
+        "detectado_por_origem": {
+          "ui": 177,
+          "raw_text": 177
+        },
+        "diverge": false
+      }
     },
     "2v1c/2v1cAnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 125
+      "components": {
+        "wrapper": 44,
+        "detectado": 44,
+        "detectado_por_origem": {
+          "ui": 44,
+          "raw_text": 44
+        },
+        "diverge": false
+      }
     },
     "2v1d/2v1dAnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 224
+      "components": {
+        "wrapper": 175,
+        "detectado": 175,
+        "detectado_por_origem": {
+          "ui": 175,
+          "raw_text": 175
+        },
+        "diverge": false
+      }
     },
     "2v1e/2v1eAnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 222
+      "components": {
+        "wrapper": 158,
+        "detectado": 158,
+        "detectado_por_origem": {
+          "ui": 158,
+          "raw_text": 158
+        },
+        "diverge": false
+      }
     },
     "2v0d/2v0dAnalisysComponentsLLM-gemini-2.5-flash-response.json": {
-      "components": 226
+      "components": {
+        "wrapper": 165,
+        "detectado": 165,
+        "detectado_por_origem": {
+          "ui": 165,
+          "raw_text": 165
+        },
+        "diverge": false
+      }
     }
   }
 }
