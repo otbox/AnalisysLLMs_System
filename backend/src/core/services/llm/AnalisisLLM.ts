@@ -1,4 +1,3 @@
-// core/services/AnalysisLLMService.ts
 import type { ProfileKey } from './LLMsProfiles';
 import type { CallModelResult, ILLMService, LLMClient, StepModelInput } from './ILLMService';
 import { ModelsAvaibleKey } from './LLMModesAvaible';
@@ -16,13 +15,6 @@ export interface UiCleanResult {
   clean: UiElement[];
 }
 
-
-// ─────────────────────────────────────────────
-// Extração de UiElements do output do LLM
-// Suporta:
-//   1. analysis.ui já populado (campo direto)
-//   2. rawResponse.candidates[*].content.parts[*].text (JSON embutido como string)
-// ─────────────────────────────────────────────
 
 function extractUiFromAnalysis(analysis: AnalysisInput): UiElement[] {
   if (Array.isArray(analysis.ui) && analysis.ui.length > 0) {

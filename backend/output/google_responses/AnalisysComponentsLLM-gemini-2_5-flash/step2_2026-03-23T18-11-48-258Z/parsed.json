@@ -1,0 +1,2282 @@
+[
+  {
+    "id": "header_text_version",
+    "type": "text",
+    "text": "1.408.200.768",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [
+      0,
+      0,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_info_total_atendimentos_e_sic",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      156,
+      37,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "info"
+    }
+  },
+  {
+    "id": "label_total_atendimentos_e_sic",
+    "type": "label",
+    "text": "Total Atendimentos e-SIC",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      172,
+      37,
+      94,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "value_total_atendimentos_e_sic",
+    "type": "text",
+    "text": "328",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      172,
+      56,
+      21,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_info_total_acessos",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "orange",
+    "coordenadas": [
+      156,
+      74,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "info"
+    }
+  },
+  {
+    "id": "label_total_acessos",
+    "type": "label",
+    "text": "Total Acessos",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      172,
+      74,
+      63,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "value_total_acessos",
+    "type": "text",
+    "text": "874.470",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      172,
+      93,
+      36,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_folder_compras_licitacoes_contratos_summary",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      156,
+      111,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "folder"
+    }
+  },
+  {
+    "id": "label_compras_licitacoes_contratos_summary",
+    "type": "label",
+    "text": "Compras / Licitações / Contratos",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      172,
+      111,
+      104,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "value_compras_licitacoes_contratos_summary",
+    "type": "text",
+    "text": "63.220.145,47",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      172,
+      130,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_people_total_funcionarios_summary",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      156,
+      148,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-people"
+    }
+  },
+  {
+    "id": "label_total_funcionarios_summary",
+    "type": "label",
+    "text": "Total de Funcionários",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      172,
+      148,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "value_total_funcionarios_summary",
+    "type": "text",
+    "text": "6.913",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      172,
+      167,
+      26,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_money_arrow_saldo_anterior_summary",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      156,
+      185,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "money-arrow"
+    }
+  },
+  {
+    "id": "label_saldo_anterior_restos_pagar_summary",
+    "type": "label",
+    "text": "Saldo Anterior - Restos a pagar",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      172,
+      185,
+      104,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "value_saldo_anterior_restos_pagar_summary",
+    "type": "text",
+    "text": "54.283.278,67",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      172,
+      204,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_money_arrow_pago_exercicio_summary",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      156,
+      222,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "money-arrow"
+    }
+  },
+  {
+    "id": "label_pago_exercicio_restos_pagar_summary",
+    "type": "label",
+    "text": "Pago no Exercício referente a Restos a Pagar",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      172,
+      222,
+      130,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "value_pago_exercicio_restos_pagar_summary",
+    "type": "text",
+    "text": "117.690.821,18",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      172,
+      259,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_money_plus_investimento_saude_summary",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      156,
+      296,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "money-plus"
+    }
+  },
+  {
+    "id": "label_investimento_saude_summary",
+    "type": "label",
+    "text": "Investimento em Saúde",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      172,
+      296,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "value_investimento_saude_summary",
+    "type": "text",
+    "text": "158.881.952,91",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      172,
+      315,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_map_pin_money_diarias_viagens_summary",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      156,
+      333,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "map-pin-money"
+    }
+  },
+  {
+    "id": "label_diarias_viagens_adiantamentos_summary",
+    "type": "label",
+    "text": "Diárias/Viagens e Adiantamentos",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      172,
+      333,
+      104,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "value_diarias_viagens_adiantamentos_summary",
+    "type": "text",
+    "text": "926.623,00",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      172,
+      370,
+      52,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "tab_despesa",
+    "type": "tab",
+    "text": "Despesa",
+    "state": "selected",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      0,
+      157,
+      52,
+      28
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_money_fixado_total",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      5,
+      213,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-money"
+    }
+  },
+  {
+    "id": "text_fixado_total_value",
+    "type": "text",
+    "text": "Fixado Total: 1.972.234.376,60",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      21,
+      213,
+      130,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_menu_fixado_total",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      141,
+      213,
+      10,
+      19
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "icon_building_money_empenhado",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      5,
+      250,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-money"
+    }
+  },
+  {
+    "id": "text_empenhado_value",
+    "type": "text",
+    "text": "Empenhado: 1.537.142.880,92",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      21,
+      250,
+      130,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_empenhado_percentual",
+    "type": "text",
+    "text": "Percentual empenhado sobre o total fixado: 77,94%",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      21,
+      269,
+      130,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_money_processado",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      5,
+      296,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-money"
+    }
+  },
+  {
+    "id": "text_processado_value",
+    "type": "text",
+    "text": "Processado: 1.215.329.072,17",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      21,
+      296,
+      130,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_processado_percentual",
+    "type": "text",
+    "text": "Percentual processado sobre o total fixado: 61,62%",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      21,
+      315,
+      130,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_money_pago",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      5,
+      342,
+      10,
+      19
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-money"
+    }
+  },
+  {
+    "id": "text_pago_value",
+    "type": "text",
+    "text": "Pago: 1.121.643.655,38",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      21,
+      342,
+      130,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_pago_percentual",
+    "type": "text",
+    "text": "Percentual pago sobre o total fixado: 56,87%",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [
+      21,
+      361,
+      130,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "tab_estatistica_acessos",
+    "type": "tab",
+    "text": "Estatística de Acessos",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      0,
+      509,
+      78,
+      28
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_menu_estatistica_acessos",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      141,
+      509,
+      10,
+      19
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "chart_acessos",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [
+      0,
+      537,
+      156,
+      370
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar"
+    }
+  },
+  {
+    "id": "chart_y_axis_label_110000",
+    "type": "text",
+    "text": "110.000",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      5,
+      556,
+      26,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_y_axis_label_88000",
+    "type": "text",
+    "text": "88.000",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      5,
+      593,
+      26,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_y_axis_label_66000",
+    "type": "text",
+    "text": "66.000",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      5,
+      630,
+      26,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_y_axis_label_44000",
+    "type": "text",
+    "text": "44.000",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      5,
+      667,
+      26,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_y_axis_label_22000",
+    "type": "text",
+    "text": "22.000",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      5,
+      704,
+      26,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_y_axis_label_0",
+    "type": "text",
+    "text": "0",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      5,
+      740,
+      26,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_janeiro",
+    "type": "text",
+    "text": "Janeiro /2025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      31,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_fevereiro",
+    "type": "text",
+    "text": "Fevereiro /2025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      52,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_marco",
+    "type": "text",
+    "text": "Março/ 2025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      73,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_abril",
+    "type": "text",
+    "text": "Abril/2 025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      94,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_maio",
+    "type": "text",
+    "text": "Maio/2 025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      115,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_junho",
+    "type": "text",
+    "text": "Junho/ 2025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      135,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_julho",
+    "type": "text",
+    "text": "Julho/2 025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      156,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_agosto",
+    "type": "text",
+    "text": "Agosto /2025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      177,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_setembro",
+    "type": "text",
+    "text": "Setembro/20 25",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      198,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_x_axis_label_outubro",
+    "type": "text",
+    "text": "Outubro/2025",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      219,
+      740,
+      26,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_bar_janeiro",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "green",
+    "coordenadas": [
+      31,
+      556,
+      16,
+      185
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 100000"
+    }
+  },
+  {
+    "id": "chart_bar_fevereiro",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "orange",
+    "coordenadas": [
+      52,
+      593,
+      16,
+      148
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 60000"
+    }
+  },
+  {
+    "id": "chart_bar_marco",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      73,
+      574,
+      16,
+      167
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 70000"
+    }
+  },
+  {
+    "id": "chart_bar_abril",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "purple",
+    "coordenadas": [
+      94,
+      565,
+      16,
+      176
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 75000"
+    }
+  },
+  {
+    "id": "chart_bar_maio",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "red",
+    "coordenadas": [
+      115,
+      560,
+      16,
+      181
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 80000"
+    }
+  },
+  {
+    "id": "chart_bar_junho",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      135,
+      556,
+      16,
+      185
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 85000"
+    }
+  },
+  {
+    "id": "chart_bar_julho",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "yellow",
+    "coordenadas": [
+      156,
+      556,
+      16,
+      185
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 85000"
+    }
+  },
+  {
+    "id": "chart_bar_agosto",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "green",
+    "coordenadas": [
+      177,
+      560,
+      16,
+      181
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 80000"
+    }
+  },
+  {
+    "id": "chart_bar_setembro",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "purple",
+    "coordenadas": [
+      198,
+      565,
+      16,
+      176
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 75000"
+    }
+  },
+  {
+    "id": "chart_bar_outubro",
+    "type": "chart",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "red",
+    "coordenadas": [
+      219,
+      574,
+      16,
+      167
+    ],
+    "actions": [],
+    "meta": {
+      "chartType": "bar",
+      "value": "approx 70000"
+    }
+  },
+  {
+    "id": "icon_folder_compras_licitacoes_grid",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      224,
+      28,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "folder"
+    }
+  },
+  {
+    "id": "link_compras_licitacoes",
+    "type": "link",
+    "text": "Compras/Licitações",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      208,
+      74,
+      63,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_compras_licitacoes_description",
+    "type": "text",
+    "text": "nossas compras/nossos fornecedores",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      208,
+      93,
+      63,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_document_people_concursos",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      323,
+      28,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "document-people"
+    }
+  },
+  {
+    "id": "link_concursos_selecoes_publicas",
+    "type": "link",
+    "text": "Concursos e seleções públicas",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      302,
+      74,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_concursos_selecoes_publicas_description",
+    "type": "text",
+    "text": "Página de divulgação de editais de concursos e seleções públicas",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      302,
+      93,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_money_contas_publicas",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      422,
+      28,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-money"
+    }
+  },
+  {
+    "id": "link_contas_publicas",
+    "type": "link",
+    "text": "Contas Públicas",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      401,
+      74,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_contas_publicas_description",
+    "type": "text",
+    "text": "transparência da gestão fiscal: relatórios - artigo 48 da Lei de Responsabilidade Fiscal",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      401,
+      93,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_document_globe_processos_online",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      521,
+      28,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "document-globe"
+    }
+  },
+  {
+    "id": "link_consulta_processos_online",
+    "type": "link",
+    "text": "Consulta de Processos Online",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      500,
+      74,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_consulta_processos_online_description",
+    "type": "text",
+    "text": "Processos Online",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      500,
+      93,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_document_pen_contratos",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      620,
+      28,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "document-pen"
+    }
+  },
+  {
+    "id": "link_contratos",
+    "type": "link",
+    "text": "Contratos",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      599,
+      74,
+      63,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_contratos_description",
+    "type": "text",
+    "text": "Contratos firmados",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      599,
+      93,
+      63,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_handshake_convenios",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      224,
+      176,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "handshake"
+    }
+  },
+  {
+    "id": "link_convenios",
+    "type": "link",
+    "text": "Convênios",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      208,
+      222,
+      63,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_convenios_description",
+    "type": "text",
+    "text": "Convênios firmados junto a outros Órgãos Públicos",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      208,
+      241,
+      63,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_people_curriculos",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      323,
+      176,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-people"
+    }
+  },
+  {
+    "id": "link_curriculos",
+    "type": "link",
+    "text": "Currículos",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      302,
+      222,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_curriculos_description",
+    "type": "text",
+    "text": "Currículos e Portarias de Nomeações de Funcionários Comissionados",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      302,
+      241,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_gavel_document_decretos",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      422,
+      176,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "gavel-document"
+    }
+  },
+  {
+    "id": "link_decretos_municipais",
+    "type": "link",
+    "text": "Decretos Municipais",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      401,
+      222,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_decretos_municipais_description",
+    "type": "text",
+    "text": "decretos municipais",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      401,
+      241,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_map_pin_money_decreto_despesas",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      521,
+      176,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "map-pin-money"
+    }
+  },
+  {
+    "id": "link_decreto_despesas_diarias",
+    "type": "link",
+    "text": "Decreto Despesas com diárias, viagens e adiantamentos",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      500,
+      222,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_decreto_despesas_diarias_description",
+    "type": "text",
+    "text": "gastos públicos com diárias e passagens",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      500,
+      241,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_people_incentivo_cultural",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      620,
+      176,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-people"
+    }
+  },
+  {
+    "id": "link_incentivo_cultural",
+    "type": "link",
+    "text": "Incentivo Cultural",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      599,
+      222,
+      63,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_incentivo_cultural_description",
+    "type": "text",
+    "text": "Declarações referentes aos exercícios de 2023 e 2024.",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      599,
+      241,
+      63,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_money_despesas_grid",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      224,
+      324,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "building-money"
+    }
+  },
+  {
+    "id": "link_despesas_grid",
+    "type": "link",
+    "text": "Despesas",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      208,
+      370,
+      63,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_despesas_grid_description",
+    "type": "text",
+    "text": "onde estamos aplicando o seu dinheiro",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      208,
+      389,
+      63,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_map_pin_money_despesas_diarias_grid",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      323,
+      324,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "map-pin-money"
+    }
+  },
+  {
+    "id": "link_despesas_diarias_viagens_grid",
+    "type": "link",
+    "text": "Despesas com diárias, viagens e adiantamentos",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      302,
+      370,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_despesas_diarias_viagens_grid_description",
+    "type": "text",
+    "text": "gastos públicos com diárias e passagens",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      302,
+      389,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_stack_papers_editais_licitacao",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      422,
+      324,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "stack-papers"
+    }
+  },
+  {
+    "id": "link_editais_licitacao",
+    "type": "link",
+    "text": "Editais de Licitação",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      401,
+      370,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_editais_licitacao_description",
+    "type": "text",
+    "text": "integra dos Editais de Licitação",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      401,
+      389,
+      78,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_info_circle_esic",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      521,
+      324,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "info-circle"
+    }
+  },
+  {
+    "id": "link_esic",
+    "type": "link",
+    "text": "e-SIC",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      500,
+      370,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_esic_description",
+    "type": "text",
+    "text": "Serviço de protocolo eletrônico de pedidos de acesso à informação pública",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      500,
+      389,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_money_hands_emendas_parlamentares",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      620,
+      324,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "money-hands"
+    }
+  },
+  {
+    "id": "link_emendas_parlamentares",
+    "type": "link",
+    "text": "Emendas parlamentares",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      599,
+      370,
+      63,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_emendas_parlamentares_description",
+    "type": "text",
+    "text": "Estaduais e Federais",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      599,
+      389,
+      63,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_money_arrow_circle_emendas_pix",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      224,
+      472,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "money-arrow-circle"
+    }
+  },
+  {
+    "id": "link_emendas_parlamentares_pix",
+    "type": "link",
+    "text": "Emendas Parlamentares",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      208,
+      518,
+      63,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_emendas_parlamentares_pix_description",
+    "type": "text",
+    "text": "Pix",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      208,
+      537,
+      63,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_envelope_clock_estrutura_adm",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      323,
+      472,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "envelope-clock"
+    }
+  },
+  {
+    "id": "link_estrutura_administrativa",
+    "type": "link",
+    "text": "Estrutura Administrativa",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      302,
+      518,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_estrutura_administrativa_description",
+    "type": "text",
+    "text": "Conheça a estrutura de nossas Secretarias",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      302,
+      537,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_download_arrow_extracao_dados",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      422,
+      472,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "download-arrow"
+    }
+  },
+  {
+    "id": "link_extracao_dados_aberto",
+    "type": "link",
+    "text": "Extração de dados em formato aberto",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      401,
+      518,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_extracao_dados_aberto_description",
+    "type": "text",
+    "text": "faça aqui o download das informações públicas que quiser",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      401,
+      537,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_question_mark_perguntas_frequentes",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      521,
+      472,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "question-mark"
+    }
+  },
+  {
+    "id": "link_perguntas_frequentes",
+    "type": "link",
+    "text": "Perguntas mais frequentes",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      500,
+      518,
+      78,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_perguntas_frequentes_description",
+    "type": "text",
+    "text": "respostas a perguntas mais frequentes da sociedade",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      500,
+      537,
+      78,
+      37
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_facebook_logo",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      620,
+      472,
+      26,
+      46
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "facebook"
+    }
+  },
+  {
+    "id": "link_facebook",
+    "type": "link",
+    "text": "Facebook",
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      599,
+      518,
+      63,
+      56
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "text_facebook_description",
+    "type": "text",
+    "text": "acesse nossa página no Facebook",
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [
+      599,
+      537,
+      63,
+      19
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_map_pin_money_bottom",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      224,
+      620,
+      26,
+      46
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "map-pin-money"
+    }
+  },
+  {
+    "id": "icon_person_money_bottom",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      323,
+      620,
+      26,
+      46
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "person-money"
+    }
+  },
+  {
+    "id": "icon_az_book_bottom",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      422,
+      620,
+      26,
+      46
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "az-book"
+    }
+  },
+  {
+    "id": "icon_document_do_bottom",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      521,
+      620,
+      26,
+      46
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "document-do"
+    }
+  },
+  {
+    "id": "icon_magnifying_glass_lines_bottom",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [
+      620,
+      620,
+      26,
+      46
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "magnifying-glass-lines"
+    }
+  }
+]

@@ -12,6 +12,7 @@ import { MODELOS_DISPONIVEIS } from '../core/services/llm/LLMModesAvaible';
 import { NvidiaObjectDetectionService } from '../core/services/llm/nvidia/NvidiaService';
 import { NvidiaDetectionController } from '../core/controllers/NvidiaController';
 import { QueueService } from '../core/services/QueueService';
+import { OllamaLLMClient } from '../core/services/llm/OllamaService';
 
 
 const app = Fastify({ logger: true, bodyLimit: 10 * 1024 * 1024, });
@@ -23,11 +24,12 @@ app.register(fastifyCors, {
 const { stepController } = buildContainer();
 
 
-type LLMAPI = "OPENROUTER" | "GEMINI"
+type LLMAPI = "OPENROUTER" | "GEMINI" | "OLLAMA"
 
 const llmClientMap: Record<LLMAPI, any> = {
   OPENROUTER: new OpenRouterLLMClient(),
   GEMINI: new GoogleLLMClient(),
+  OLLAMA: new OllamaLLMClient(),
 };
 
 app.get('/openrouter/models', (req,res) => {

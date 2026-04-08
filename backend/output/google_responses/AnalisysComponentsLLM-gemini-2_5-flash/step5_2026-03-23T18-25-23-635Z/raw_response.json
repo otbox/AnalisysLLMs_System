@@ -1,0 +1,89 @@
+[
+  {
+    "id": "header_number",
+    "type": "text",
+    "text": "1.408.200.768",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [0, 0, 146, 19],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "tab_despesa",
+    "type": "tab",
+    "text": "Despesa",
+    "state": "selected",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [0, 167, 99, 28],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "metric_fixado_total",
+    "type": "card",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [0, 195, 229, 46],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_building_fixado",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [10, 205, 21, 19],
+    "actions": [],
+    "meta": {
+      "iconType": "building"
+    }
+  },
+  {
+    "id": "text_fixado_total_label",
+    "type": "text",
+    "text": "Fixado Total:",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [40, 205, 83, 19],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_fixado_total_value",
+    "type": "text",
+    "text": "1.972.234.376,60",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [124, 205, 104, 19],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_menu_fixado",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [208, 205, 21, 19],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "menu"
+    }
+  },
+  {
+    "id": "metric_empenhado",
+    "type": "card",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "

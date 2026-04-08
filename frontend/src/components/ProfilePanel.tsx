@@ -247,7 +247,7 @@ export function ProfilePanel({
           <div className="input-group">
             <label className="input-label">Serviço de IA</label>
             <div style={{ display: "flex", gap: "var(--spacing-sm)" }}>
-              {(["GEMINI", "OPENROUTER"] as LLMAPI[]).map((api) => (
+              {(["GEMINI", "OPENROUTER", "OLLAMA"] as LLMAPI[]).map((api) => (
                 <button
                   key={api}
                   className="btn-secondary"

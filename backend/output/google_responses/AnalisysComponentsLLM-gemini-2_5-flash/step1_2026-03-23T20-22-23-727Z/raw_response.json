@@ -1,0 +1,303 @@
+[
+  {
+    "id": "card_total_atendimentos_esic",
+    "type": "card",
+    "text": "Total Atendimentos e-SIC 328",
+    "coordenadas": [774, 0, 226, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_total_acessos",
+    "type": "card",
+    "text": "Total Acessos 874.470",
+    "coordenadas": [774, 78, 226, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_compras_licitacoes_contratos",
+    "type": "card",
+    "text": "Compras / Licitações / Contratos 63.220.145,47",
+    "coordenadas": [774, 156, 226, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_total_funcionarios",
+    "type": "card",
+    "text": "Total de Funcionários 6.913",
+    "coordenadas": [774, 234, 226, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_saldo_anterior_restos_pagar",
+    "type": "card",
+    "text": "Saldo Anterior - Restos a pagar 54.283.278,67",
+    "coordenadas": [774, 312, 226, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_pago_exercicio_restos_pagar",
+    "type": "card",
+    "text": "Pago no Exercício referente a Restos a Pagar 117.690.821,18",
+    "coordenadas": [774, 391, 226, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_investimento_saude",
+    "type": "card",
+    "text": "Investimento em Saúde 158.881.952,91",
+    "coordenadas": [774, 469, 226, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_diarias_viagens_adiantamentos",
+    "type": "card",
+    "text": "Diárias/Viagens e Adiantamentos 926.623,00",
+    "coordenadas": [774, 547, 226, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "tab_despesa",
+    "type": "tab",
+    "text": "Despesa",
+    "coordenadas": [0, 219, 71, 36],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "text_fixado_total",
+    "type": "text",
+    "text": "Fixado Total: 1.972.234.376,60",
+    "coordenadas": [0, 271, 185, 55]
+  },
+  {
+    "id": "text_empenhado",
+    "type": "text",
+    "text": "Empenhado: 1.537.142.880,92 Percentual empenhado sobre o total fixado: 77,94%",
+    "coordenadas": [0, 326, 185, 65]
+  },
+  {
+    "id": "text_processado",
+    "type": "text",
+    "text": "Processado: 1.215.329.072,17 Percentual processado sobre o total fixado: 61,62%",
+    "coordenadas": [0, 391, 185, 65]
+  },
+  {
+    "id": "text_pago",
+    "type": "text",
+    "text": "Pago: 1.121.643.655,38 Percentual pago sobre o total fixado: 56,87%",
+    "coordenadas": [0, 456, 185, 65]
+  },
+  {
+    "id": "icon_menu_fixado_total",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [167, 280, 14, 26],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_compras_licitacoes_grid",
+    "type": "link",
+    "text": "Compras/Licitações",
+    "coordenadas": [284, 130, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_concursos_selecoes_publicas",
+    "type": "link",
+    "text": "Concursos e seleções públicas",
+    "coordenadas": [398, 130, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_contas_publicas",
+    "type": "link",
+    "text": "Contas Públicas",
+    "coordenadas": [511, 130, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_consulta_processos_online",
+    "type": "link",
+    "text": "Consulta de Processos Online",
+    "coordenadas": [625, 130, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_contratos",
+    "type": "link",
+    "text": "Contratos",
+    "coordenadas": [738, 130, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_convenios",
+    "type": "link",
+    "text": "Convênios",
+    "coordenadas": [284, 260, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_curriculos",
+    "type": "link",
+    "text": "Currículos",
+    "coordenadas": [398, 260, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_decretos_municipais",
+    "type": "link",
+    "text": "Decretos Municipais",
+    "coordenadas": [511, 260, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_decreto_despesas_diarias",
+    "type": "link",
+    "text": "Decreto Despesas com diárias, viagens e adiantamentos",
+    "coordenadas": [625, 260, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_incentivo_cultural",
+    "type": "link",
+    "text": "Incentivo Cultural",
+    "coordenadas": [738, 260, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_despesas_grid",
+    "type": "link",
+    "text": "Despesas",
+    "coordenadas": [284, 391, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_despesas_diarias_grid",
+    "type": "link",
+    "text": "Despesas com diárias, viagens e adiantamentos",
+    "coordenadas": [398, 391, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_editais_licitacao",
+    "type": "link",
+    "text": "Editais de Licitação",
+    "coordenadas": [511, 391, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_e_sic",
+    "type": "link",
+    "text": "e-SIC",
+    "coordenadas": [625, 391, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_emendas_parlamentares",
+    "type": "link",
+    "text": "Emendas parlamentares",
+    "coordenadas": [738, 391, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_emendas_parlamentares_pix",
+    "type": "link",
+    "text": "Emendas Parlamentares",
+    "coordenadas": [284, 521, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_estrutura_administrativa",
+    "type": "link",
+    "text": "Estrutura Administrativa",
+    "coordenadas": [398, 521, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_extracao_dados_aberto",
+    "type": "link",
+    "text": "Extração de dados em formato aberto",
+    "coordenadas": [511, 521, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_perguntas_frequentes",
+    "type": "link",
+    "text": "Perguntas mais frequentes",
+    "coordenadas": [625, 521, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_facebook",
+    "type": "link",
+    "text": "Facebook",
+    "coordenadas": [738, 521, 92, 91],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "tab_estatistica_acessos",
+    "type": "tab",
+    "text": "Estatística de Acessos",
+    "coordenadas": [0, 625, 106, 36],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "text_janeiro_2025",
+    "type": "text",
+    "text": "Janeiro /2025",
+    "coordenadas": [14, 885, 35, 52]
+  },
+  {
+    "id": "text_fevereiro_2025",
+    "type": "text",
+    "text": "Fevereiro /2025",
+    "coordenadas": [49, 885, 35, 52]
+  },
+  {
+    "id": "text_marco_2025",
+    "type": "text",
+    "text": "Março/2025",
+    "coordenadas": [85, 885, 35, 52]
+  },
+  {
+    "id": "text_abril_2025",
+    "type": "text",
+    "text": "Abril/2025",
+    "coordenadas": [120, 885, 35, 52]
+  },
+  {
+    "id": "text_maio_2025",
+    "type": "text",
+    "text": "Maio/2025",
+    "coordenadas": [156, 885, 35, 52]
+  },
+  {
+    "id": "text_junho_2025",
+    "type": "text",
+    "text": "Junho/2025",
+    "coordenadas": [191, 885, 35, 52]
+  },
+  {
+    "id": "text_julho_2025",
+    "type": "text",
+    "text": "Julho/2025",
+    "coordenadas": [227, 885, 35, 52]
+  },
+  {
+    "id": "text_agosto_2025",
+    "type": "text",
+    "text": "Agosto /2025",
+    "coordenadas": [262, 885, 35, 52]
+  },
+  {
+    "id": "text_setembro_2025",
+    "type": "text",
+    "text": "Setembro /2025",
+    "coordenadas": [298, 885, 35, 52]
+  },
+  {
+    "id": "text_outubro_2025",
+    "type": "text",
+    "text": "Outubro /2025",
+    "coordenadas": [333, 885, 35, 52]
+  }
+]

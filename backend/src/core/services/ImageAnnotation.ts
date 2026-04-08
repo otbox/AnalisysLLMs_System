@@ -78,7 +78,7 @@ export interface AnnotateImageResult {
   elementsCount:  number;
 }
 
-export class LlmImageAnnotatorService {
+export class ImageAnnotatorService {
   public async annotateFromAnalysis(
     params: AnnotateImageParams
   ): Promise<AnnotateImageResult> {

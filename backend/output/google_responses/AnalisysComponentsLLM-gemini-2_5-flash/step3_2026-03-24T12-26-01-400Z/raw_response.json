@@ -1,0 +1,86 @@
+[
+  {
+    "id": "header_text_version",
+    "type": "text",
+    "text": "1.408.200.768",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [16, 15, 100, 14],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "info_panel_total_atendimentos_icon",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [236, 42, 20, 20],
+    "actions": [],
+    "meta": {
+      "iconType": "info"
+    }
+  },
+  {
+    "id": "info_panel_total_atendimentos_label",
+    "type": "label",
+    "text": "Total Atendimentos e-SIC",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [266, 42, 170, 14],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "info_panel_total_atendimentos_value",
+    "type": "text",
+    "text": "328",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [266, 58, 28, 14],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "divider_info_panel_1_2",
+    "type": "divider",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [230, 68, 210, 1],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "info_panel_total_acessos_icon",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "orange",
+    "coordenadas": [236, 75, 20, 20],
+    "actions": [],
+    "meta": {
+      "iconType": "info"
+    }
+  },
+  {
+    "id": "info_panel_total_acessos_label",
+    "type": "label",
+    "text": "Total Acessos",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [266, 75, 80, 14],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "info_panel_total_acessos_value",
+    "type": "text",
+    "text": "8

@@ -1,7 +1,6 @@
 // LLMController.ts
 import { classifyLLMError }          from "../services/ErrorHandler";
-import { LlmImageAnnotatorService } from "../services/ImageAnnotation";
-import { LlmImageAnnotatorServiceScale } from "../services/ImageAnnotationScale";
+import { LlmImageAnnotatorService } from "../services/ImageAnnotationScale";
 import { ILLMService }               from "../services/llm/ILLMService";
 import { ProfileKey }                from "../services/llm/LLMsProfiles";
 import { QueueService }              from "../services/QueueService";
@@ -24,8 +23,7 @@ type StepRequestBody = {
 };
 
 // ── instâncias do anotador por escala ────────────────────────────────────────
-const annotatorScale  = new LlmImageAnnotatorServiceScale(); // coordScale: "normalized-1000" (padrão)
-const annotatorPixels = new LlmImageAnnotatorService(); // coordScale: "pixels" (legado)
+const annotatorImage = new LlmImageAnnotatorService(); // coordScale: "pixels" (legado)
 
 export class StepController {
   constructor(
@@ -71,6 +69,7 @@ export class StepController {
           imageBase64,
           analysis:    data.output as any,
           includeLabel: false,
+          coordScale : coordScale
         })
         .then(({ buffer }: { buffer: Buffer }) =>
           fs.writeFileSync(path.join(targetDir, "annotated.png"), buffer)
@@ -85,6 +84,7 @@ export class StepController {
           imageBase64,
           analysis:    data.output as any,
           includeLabel: true,
+          coordScale : coordScale
         })
         .then(({ buffer }: { buffer: Buffer }) =>
           fs.writeFileSync(path.join(targetDir, "annotated_labels.png"), buffer)
@@ -121,8 +121,9 @@ export class StepController {
     fs.writeFileSync(path.join(dir, "clean.json"),  JSON.stringify(data.clean,  null, 2), "utf-8");
 
     // ── Imagens anotadas ──────────────────────────────────────────────────────
-    // await this.saveImages(imageBase64, annotatorPixels, data, model, path.join(dir, "pixels"), "pixels");
-    await this.saveImages(imageBase64, annotatorScale, data, model, path.join(dir, "scaled"), "normalized-1000");
+
+    await this.saveImages(imageBase64, annotatorImage, data, model, path.join(dir, "pixels"), "pixels");
+    // await this.saveImages(imageBase64, annotatorScale, data, model, path.join(dir, "scaled"), "normalized-1000");
 
     console.log(`[StepController] ✅ step${stepIndex} | ${profile} | ${model} → ${dir}`);
   }
