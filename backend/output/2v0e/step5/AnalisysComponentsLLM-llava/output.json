@@ -1,0 +1,22 @@
+{
+  "action": "",
+  "rationale": "",
+  "numberOfComponents": 0,
+  "confidence": 0,
+  "rawResponse": {
+    "model": "llava",
+    "created_at": "2026-04-08T19:45:23.953154825Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"id\":\"header\",\"type\":\"divider\",\"coordenadas\":[0,0,1320,427], \"actions\":[],\"meta\":{}}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 11536175128,
+    "load_duration": 2773574831,
+    "prompt_eval_count": 1106,
+    "prompt_eval_duration": 7078442601,
+    "eval_count": 38,
+    "eval_duration": 1546239208
+  }
+}

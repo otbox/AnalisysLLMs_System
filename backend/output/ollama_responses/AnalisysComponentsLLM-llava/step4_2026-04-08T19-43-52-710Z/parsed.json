@@ -1,0 +1,48 @@
+{
+  "topo": {
+    "button_logo": {
+      "type": "button",
+      "text": null,
+      "coordenadas": [
+        0,
+        0,
+        1320,
+        642
+      ],
+      "actions": [
+        "onClick"
+      ],
+      "meta": {}
+    },
+    "rodapé": {
+      "checkbox_remember_me": {
+        "type": "checkbox",
+        "text": null,
+        "coordenadas": [
+          0,
+          0,
+          1320,
+          642
+        ],
+        "actions": [
+          "onChange"
+        ],
+        "meta": {}
+      },
+      "button_register": {
+        "type": "button",
+        "text": null,
+        "coordenadas": [
+          0,
+          0,
+          1320,
+          642
+        ],
+        "actions": [
+          "onClick"
+        ],
+        "meta": {}
+      }
+    }
+  }
+}

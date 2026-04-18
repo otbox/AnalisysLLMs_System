@@ -90,7 +90,7 @@ export function ModelSelector({ selectedModels, onChange, llmAPI, apiBase }: Pro
 
       {/* Label do grupo */}
       <label className="input-label">
-        {llmAPI === "GEMINI" ? "🔵 Gemini" : "🟠 OpenRouter"}
+        {llmAPI === "GEMINI" ? "🔵 Gemini" : llmAPI === "OLLAMA" ? "🟢 Ollama" : "🟠 OpenRouter"}
         {llmAPI === "OPENROUTER" && backendModels.length > 0 && (
           <span style={{ marginLeft: 6, fontSize: "0.7rem", color: "var(--accent-green)" }}>
             +{backendModels.length} do backend

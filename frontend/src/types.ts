@@ -7,7 +7,8 @@ export type InputTab  = "single" | "batch";
 export type ProfileKey =
   | "AnalisysComponentsLLM"
   | "CongnitiveWalktroughLLM"
-  | "GuideLLM";
+  | "GuideLLM"
+  | "annotation";
 
 // Cliente de IA passado no body da requisição
 export type LLMAPI = "GEMINI" | "OPENROUTER" |  "OLLAMA";
@@ -86,6 +87,13 @@ export const PROFILE_CONFIGS: ProfileConfig[] = [
     defaultObjective: "Gere um guia passo a passo descrevendo como usar a interface apresentada.",
     color:            "green",
   },
+  {
+    key:              "annotation",
+    label:            "Anotação manual",
+    emoji:            "🖊️",
+    defaultObjective: "Gere um guia passo a passo descrevendo como usar a interface apresentada.",
+    color:            "green",
+  }
 ];
 
 // Modelos agrupados por serviço (LLMAPI)
@@ -99,11 +107,13 @@ export const MODEL_GROUPS: Record<LLMAPI, string[]> = {
     // "qwen/qwen2.5-vl-72b-instruct:free",
   ],
   OLLAMA : [
-    
+    "qwen3-vl",
+    "llava"
   ]
 };
 
 export const AVAILABLE_MODELS = [
   ...MODEL_GROUPS.GEMINI,
   ...MODEL_GROUPS.OPENROUTER,
+  ...MODEL_GROUPS.OLLAMA
 ];

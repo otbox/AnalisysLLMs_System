@@ -9,20 +9,21 @@ import {
   type StepResponse,
   type UiElement,
 } from "../types";
-import { ModelSelector }  from "./ModelSelector";
+import { ModelSelector } from "./ModelSelector";
 import { CleanupSection } from "./CleanupSection";
-import { ResultViewer }   from "./ResultViewer";
-import { BatchPanel }     from "./BatchPanel";
+import { ResultViewer } from "./ResultViewer";
+import { BatchPanel } from "./BatchPanel";
+import { AnnotationPanel } from "./AnnotationPanel";
 
 interface Props {
-  profile:        ProfileConfig;
-  sessionId:      string;
-  apiBase:        string;
+  profile: ProfileConfig;
+  sessionId: string;
+  apiBase: string;
   selectedModels: string[];
   onModelsChange: (models: string[]) => void;
 }
 
-type InputTab = "single" | "batch";
+type InputTab = "single" | "batch" | "annotation";;
 
 /** Extrai número do final do nome do arquivo: "tela_3" → 3, "home" → 1 */
 function stepFromFileName(name: string): number {
@@ -33,31 +34,31 @@ function stepFromFileName(name: string): number {
 export function ProfilePanel({
   profile, sessionId, apiBase, selectedModels, onModelsChange,
 }: Props) {
-  const [objective,  setObjective]  = useState(profile.defaultObjective);
-  const [stepIndex,  setStepIndex]  = useState(1);
+  const [objective, setObjective] = useState(profile.defaultObjective);
+  const [stepIndex, setStepIndex] = useState(1);
   const stepCounter = useRef(1);  // contador global — incrementa a cada requisição
-  const [llmAPI,     setLlmAPI]     = useState<LLMAPI>("GEMINI");
-  const [inputTab,   setInputTab]   = useState<InputTab>("single");
+  const [llmAPI, setLlmAPI] = useState<LLMAPI>("GEMINI");
+  const [inputTab, setInputTab] = useState<InputTab>("single");
 
   // Imagem única
   const [imageBase64, setImageBase64] = useState("");
-  const [fileName,    setFileName]    = useState("");
-  const [previewUrl,  setPreviewUrl]  = useState("");   // data URI para <img>
+  const [fileName, setFileName] = useState("");
+  const [previewUrl, setPreviewUrl] = useState("");   // data URI para <img>
 
   // Limpeza
-  const [idsToRemoveInput,    setIdsToRemoveInput]    = useState("");
-  const [detectedIds,         setDetectedIds]         = useState<string[]>([]);
+  const [idsToRemoveInput, setIdsToRemoveInput] = useState("");
+  const [detectedIds, setDetectedIds] = useState<string[]>([]);
   const [selectedIdsToRemove, setSelectedIdsToRemove] = useState<Set<string>>(new Set());
 
   // Resultado
-  const [result,      setResult]      = useState<StepResponse | null>(null);
-  const [allResults,  setAllResults]  = useState<StepResponse[]>([]);
-  const [loading,     setLoading]     = useState(false);
-  const [error,       setError]       = useState("");
-  const [resultTab,   setResultTab]   = useState<ResultTab>("clean");
+  const [result, setResult] = useState<StepResponse | null>(null);
+  const [allResults, setAllResults] = useState<StepResponse[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [resultTab, setResultTab] = useState<ResultTab>("clean");
 
   // Batch
-  const [batchQueue,        setBatchQueue]        = useState<QueueItem[]>([]);
+  const [batchQueue, setBatchQueue] = useState<QueueItem[]>([]);
   const [isProcessingBatch, setIsProcessingBatch] = useState(false);
   const batchRunning = useRef(false);
 
@@ -107,10 +108,10 @@ export function ProfilePanel({
       const reader = new FileReader();
       reader.onload = () => {
         newItems.push({
-          id:          crypto.randomUUID(),
-          fileName:    file.name.replace(/\.[^/.]+$/, ""),
+          id: crypto.randomUUID(),
+          fileName: file.name.replace(/\.[^/.]+$/, ""),
           imageBase64: (reader.result as string).split(",")[1],
-          status:      "pending",
+          status: "pending",
         });
         if (++loaded === files.length)
           setBatchQueue((prev) => [...prev, ...newItems]);
@@ -123,24 +124,24 @@ export function ProfilePanel({
   // Rota: POST /sessions/:sessionId/steps
 
   const callAPI = async (
-    img:         string,
-    file:        string,
-    step:        number,
+    img: string,
+    file: string,
+    step: number,
     idsToRemove: string[],
   ): Promise<StepResponse> => {
     const url = `${apiBase}/sessions/${sessionId}/steps`;
 
     const res = await fetch(url, {
-      method:  "POST",
+      method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        LLMAPI:      llmAPI,          // "GEMINI" | "OPENROUTER"
-        models:      selectedModels,
-        profiles:    [profile.key] as ProfileKey[],
+        LLMAPI: llmAPI,          // "GEMINI" | "OPENROUTER"
+        models: selectedModels,
+        profiles: [profile.key] as ProfileKey[],
         objective,
-        stepIndex:   step,
+        stepIndex: step,
         imageBase64: img,
-        fileName:    file,
+        fileName: file,
         idsToRemove,
       }),
     });
@@ -157,7 +158,7 @@ export function ProfilePanel({
   // ── submit imagem única ────────────────────────────────────────────────────
 
   const handleSubmit = async () => {
-    if (!imageBase64)           return setError("Selecione uma imagem.");
+    if (!imageBase64) return setError("Selecione uma imagem.");
     if (!selectedModels.length) return setError("Selecione ao menos um modelo.");
     setLoading(true); setError(""); setResult(null);
     const currentStep = stepCounter.current;
@@ -258,7 +259,7 @@ export function ProfilePanel({
                   }
                   onClick={() => setLlmAPI(api)}
                 >
-                  {api === "GEMINI" ? "🔵 Gemini" : "🟠 OpenRouter"}
+                  {api === "GEMINI" ? "🔵 Gemini" : api === "OLLAMA" ? "🟢 Ollama" : "🟠 OpenRouter"}
                 </button>
               ))}
             </div>
@@ -341,6 +342,12 @@ export function ProfilePanel({
             className={`main-tab ${inputTab === "single" ? "active" : ""}`}
             onClick={() => setInputTab("single")}
           >
+            <button
+              className={`main-tab ${inputTab === "annotation" ? "active" : ""}`}
+              onClick={() => setInputTab("annotation")}
+            >
+              🖊️ Anotação manual
+            </button>
             🖼️ Imagem única
           </button>
           <button
@@ -405,6 +412,7 @@ export function ProfilePanel({
 
         {inputTab === "batch" && (
           <div className="results-content">
+            <AnnotationPanel apiBase={apiBase} />
             <BatchPanel
               queue={batchQueue}
               isProcessing={isProcessingBatch}

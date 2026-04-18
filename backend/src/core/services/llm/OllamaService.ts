@@ -53,7 +53,7 @@ export class OllamaLLMClient implements LLMClient {
   constructor() {}
 
   async callStep(input: StepModelInput, signal?: AbortSignal): Promise<StepModelOutput> {
-    console.log('Calling Ollama');
+    console.log('Calling Ollama (streaming)');
 
     const systemPrompt =
       Profiles[input.profile] ?? Profiles['AnalisysComponentsLLM'];
@@ -61,19 +61,19 @@ export class OllamaLLMClient implements LLMClient {
     const userText = buildUserText(input);
 
     const body: any = {
-      model: input.model ?? 'llama3', // ou o nome do modelo que você rodar no Ollama
-      stream: false,
-      format: 'json', // força resposta em JSON
+      model: input.model ?? 'qwen3-vl', // ou o modelo de visão que você escolheu
+      stream: true,                     // ✅ streaming ligado
+      // format: 'json',                   // pede JSON no conteúdo final
+      options: {
+        num_gpu: 36,
+        // num_ctx: 4096,/
+        // num_predict: 10000,
+      },
       messages: [
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userText },
       ],
     };
-
-    // Se quiser mandar imagem como base64 + instrução no texto:
-    // o Ollama não tem o mesmo esquema multimodal de Gemini,
-    // então normalmente você referencia a imagem no prompt
-    // ou usa um modelo que aceite "images" no body, dependendo da config.
 
     const res = await fetch(`${OLLAMA_BASE_URL}/api/chat`, {
       method: 'POST',
@@ -82,13 +82,51 @@ export class OllamaLLMClient implements LLMClient {
       signal,
     });
 
-    if (!res.ok) {
+    if (!res.ok || !res.body) {
       const msg = await res.text().catch(() => res.statusText);
       throw new Error(`Ollama error: ${res.status} ${msg}`);
     }
 
-    const json: any = await res.json();
-    const rawContent: string = json.message?.content ?? '';
+    // ── ler stream linha a linha ─────────────────────────────────────────────
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder('utf-8');
+    let buffer = '';
+    let finalMessageContent = '';
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+
+      let newlineIndex: number;
+      while ((newlineIndex = buffer.indexOf('\n')) !== -1) {
+        const line = buffer.slice(0, newlineIndex).trim();
+        buffer = buffer.slice(newlineIndex + 1);
+
+        if (!line) continue;
+
+        // cada linha é um JSON com a forma:
+        // { "message": { "content": "...parcial..." }, "done": false, ... }
+        let chunk: any;
+        try {
+          chunk = JSON.parse(line);
+        } catch {
+          console.warn('[OllamaService] chunk inválido:', line);
+          continue;
+        }
+
+        if (chunk.message?.content) {
+          finalMessageContent += chunk.message.content;
+        }
+
+        if (chunk.done) {
+          break;
+        }
+      }
+    }
+
+    const rawContent = finalMessageContent;
     const parsed = safeParseJson(rawContent);
 
     saveResponses({
@@ -99,14 +137,13 @@ export class OllamaLLMClient implements LLMClient {
       parsed,
     });
 
-    // Adapte aqui exatamente igual ao GoogleService
     if (input.profile === 'AnalisysComponentsLLM' && input.imageBase64) {
       return {
         action: parsed.action ?? '',
         rationale: parsed.rationale ?? '',
-        numberOfComponents: parsed.length,
+        numberOfComponents: parsed.length ?? 0,
         confidence: parsed.confidence ?? 0,
-        rawResponse: json,
+        rawResponse: { message: { content: rawContent } },
       };
     }
 
@@ -114,7 +151,7 @@ export class OllamaLLMClient implements LLMClient {
       action: parsed.action ?? '',
       rationale: parsed.rationale ?? '',
       confidence: parsed.confidence ?? 0,
-      rawResponse: json,
+      rawResponse: { message: { content: rawContent } },
     };
   }
 }

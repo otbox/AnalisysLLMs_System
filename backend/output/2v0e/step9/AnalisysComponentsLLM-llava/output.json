@@ -1,0 +1,11 @@
+{
+  "action": "",
+  "rationale": "",
+  "numberOfComponents": 0,
+  "confidence": 0,
+  "rawResponse": {
+    "message": {
+      "content": "{\n\"components\": [\n{\n\"id\": \"header\",\n\"type\": \"divider\",\n\"coordenadas\": [0, 0, 1320, 245],\n\"actions\": [],\n\"meta\": {}\n},\n{\n\"id\": \"menu_toggle\",\n\"type\": \"icon\",\n\"text\": null,\n\"coordenadas\": [175, 641, 55, 330],\n\"actions\": [\"onClick\"],\n\"meta\": {\n\"iconType\": \"hamburger\"\n}\n},\n{\n\"id\": \"search_input\",\n\"type\": \"input\",\n\"text\": null,\n\"coordenadas\": [155, 608, 369, 764],\n\"actions\": [\"onChange\"],\n\"meta\": {\n\"inputType\": \"text\",\n\"placeholder\": \"...\"\n}\n},\n{\n\"id\": \"btn_login\",\n\"type\": \"button\",\n\"text\": \"Entrar\",\n\"coordenadas\": [206, 631, 589, 794],\n\"actions\": [\"onClick\"],\n\"meta\": {}\n},\n{\n\"id\": \"btn_cadastrar\",\n\"type\": \"button\",\n\"text\": \"Cadastrar\",\n\"coordenadas\": [362, 557, 908, 711],\n\"actions\": [\"onClick\"],\n\"meta\": {}\n},\n{\n\"id\": \"btn_perfil\",\n\"type\": \"button\",\n\"text\": null,\n\"coordenadas\": [362, 557, 908, 711],\n\"actions\": [\"onClick\"],\n\"meta\": {}\n},\n{\n\"id\": \"avatar\",\n\"type\": \"icon\",\n\"text\": null,\n\"coordenadas\": [473, 631, 577, 809],\n\"actions\": [\"onClick\"],\n\"meta\": {\n\"iconType\": \"user\"\n}\n},\n{\n\"id\": \"table_header\",\n\"type\": \"table-header\",\n\"coordenadas\": [206, 557, 908, 711],\n\"actions\": [],\n\"meta\": {}\n},\n{\n\"id\": \"table_cell\",\n\"type\": \"table-cell\",\n\"text\": null,\n\"coordenadas\": [328, 640, 592, 809],\n\"actions\": [],\n\"meta\": {\n\"rowData\": {}\n}\n},\n{\n\"id\": \"table_row\",\n\"type\": \"table-row\",\n\"coordenadas\": [328, 640, 592, 809],\n\"actions\": [],\n\"meta\": {\n\"rowData\": {}\n}\n},\n{\n\"id\": \"footer\",\n\"type\": \"divider\",\n\"coordenadas\": [0, 1318, 1320, 245],\n\"actions\": [],\n\"meta\": {}\n}\n]\n}"
+    }
+  }
+}
