@@ -36,6 +36,22 @@ export interface UiElement {
   meta?: Record<string, unknown>;
 }
 
+interface LibreNode {
+  nome?: string;
+  classe?: string;
+  tipo_controle?: string;
+  nivel?: number;
+  posicao?: { x: number; y: number; w: number; h: number };
+  visivel?: boolean;
+  habilitado?: boolean;
+  id_automacao?: string;
+  ignorado?: boolean;
+  filhos?: LibreNode[];
+  [key: string]: unknown;
+}
+
+
+
 // ---- Tipos do rawResponse padrão e AnalysisInput ---------------------------------
 
 export interface RawResponsePart {
@@ -369,13 +385,33 @@ export class LlmImageAnnotatorService {
       }
     }
 
-    // Prioridade 3: tentar normalizar se analysis na verdade é um dos JSONs brutos
+    // Prioridade 3: formato estrutura_ui / LibreOffice (árvore com ui_structure)
+    const anyAnalysis = analysis as any;
+    if (
+      anyAnalysis.ui_structure &&
+      typeof anyAnalysis.ui_structure === "object"
+    ) {
+      const rootPos = anyAnalysis.ui_structure?.posicao;
+      const flatted = this.flattenLibreUi(
+        anyAnalysis.ui_structure as LibreNode,
+        {
+          mode: "normalized-1000",
+          baseW: rootPos?.w ?? 1000,
+          baseH: rootPos?.h ?? 1000,
+        }
+      );
+      if (flatted.length > 0) {
+        return flatted.filter((item) => this.isValidUiElement(item));
+      }
+    }
+
+    // Prioridade 4: tentar normalizar se analysis na verdade é um dos JSONs brutos
     const normalized = normalizeUiSource(analysis as unknown);
     if (normalized.length > 0) {
       return normalized.filter((item) => this.isValidUiElement(item));
     }
 
-    // Prioridade 4: extrai do rawResponse.candidates[*].content.parts[*].text
+    // Prioridade 5: extrai do rawResponse.candidates[*].content.parts[*].text
     const rawText = this.extractTextFromRawResponse(analysis);
     if (!rawText) return [];
 
@@ -400,6 +436,7 @@ export class LlmImageAnnotatorService {
     }
     return null;
   }
+
 
   private parseUiJsonText(text: string): unknown {
     const cleaned = text
@@ -433,6 +470,7 @@ export class LlmImageAnnotatorService {
     }
   }
 
+  
   /**
    * Valida elemento de UI aceitando coordenadas como ARRAY [x,y,w,h] ou OBJETO {x,y,w,h}.
    */
@@ -601,17 +639,17 @@ export class LlmImageAnnotatorService {
     if ([x, y, w, h].some((n) => !Number.isFinite(n))) return null;
 
     if (scale === "normalized-1000") {
-      x = Math.round((x / 1000) * imgWidth);
-      y = Math.round((y / 1000) * imgHeight);
-      w = Math.round((w / 1000) * imgWidth);
-      h = Math.round((h / 1000) * imgHeight);
+      x = (x / imgWidth) * 1920;
+      y = (y / imgHeight) * 1080;
+      w = (w / imgWidth) * 1920;
+      h = (h / imgHeight) * 1080;
     } else if (scale === "pixels" && llmBaseWidth && llmBaseHeight) {
       const scaleX = imgWidth / llmBaseWidth;
       const scaleY = imgHeight / llmBaseHeight;
-      x = Math.round(x * scaleX);
-      y = Math.round(y * scaleY);
-      w = Math.round(w * scaleX);
-      h = Math.round(h * scaleY);
+      x = x * scaleX;
+      y = y * scaleY;
+      w = w * scaleX;
+      h = h * scaleY;
     }
     // scale === "pixels" sem llmBase* → usa coordenadas como estão
 
@@ -631,6 +669,74 @@ export class LlmImageAnnotatorService {
     return parts.join(" ");
   }
 
+  private flattenLibreUi(
+    root: LibreNode | null | undefined,
+    opts?: { mode?: "pixels" | "normalized-1000"; baseW?: number; baseH?: number }
+  ): UiElement[] {
+    if (!root) return [];
+  
+    const mode = opts?.mode ?? "pixels";
+    const baseW = opts?.baseW ?? 1000;
+    const baseH = opts?.baseH ?? 1000;
+  
+    const result: UiElement[] = [];
+  
+    const norm = (x: number, y: number, w: number, h: number) => {
+      if (mode === "pixels") {
+        return [x, y, w, h] as [number, number, number, number];
+      }
+      // normalizado 0–1000
+      return [
+        (x / baseW) * 1000,
+        (y / baseH) * 1000,
+        (w / baseW) * 1000,
+        (h / baseH) * 1000,
+      ] as [number, number, number, number];
+    };
+  
+    const visit = (node: LibreNode) => {
+      const pos = node.posicao;
+      const visible = node.visivel !== false; // default true
+  
+      if (
+        pos &&
+        typeof pos.x === "number" &&
+        typeof pos.y === "number" &&
+        typeof pos.w === "number" &&
+        typeof pos.h === "number" &&
+        visible &&
+        pos.w > 0 &&
+        pos.h > 0
+      ) {
+        const [nx, ny, nw, nh] = norm(pos.x, pos.y, pos.w, pos.h);
+  
+        const el: UiElement = {
+          id: node.id_automacao || node.nome || undefined,
+          type: node.tipo_controle || node.classe || undefined,
+          text: node.nome ?? null,
+          coordenadas: [nx, ny, nw, nh],
+          meta: {
+            classe: node.classe,
+            nivel: node.nivel,
+            ignorado: node.ignorado,
+          },
+        };
+  
+        if (this.isValidUiElement(el)) {
+          result.push(el);
+        }
+      }
+  
+      if (Array.isArray(node.filhos)) {
+        for (const child of node.filhos) {
+          visit(child);
+        }
+      }
+    };
+  
+    visit(root);
+    return result;
+  }
 private parseBase64Image(base64OrDataUri: string): {
     buffer: Buffer;
     mimeType?: string;

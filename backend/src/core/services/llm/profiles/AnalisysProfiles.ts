@@ -177,14 +177,14 @@ PROCESSO DE ANÁLISE (siga nesta ordem)
     Dentro de cada faixa, identifique da esquerda para a direita.
     Não pule elementos pequenos (ícones, badges, separadores, tooltips visíveis).
     Cada elemento interativo ou informativo deve ser um item separado.
-    A imagem que você analisará tem resolução EXATA de 1320x642 pixels (largura x altura).
+    A imagem que você analisará tem resolução EXATA de 1920x1080 pixels (largura x altura).
 
 RESTRIÇÃO DE COORDENADAS (CRÍTICO)
     TODAS as coordenadas devem respeitar estritamente os limites da imagem:
-        0 ≤ x < 1320
-        0 ≤ y < 642
-        x + w ≤ 1320
-        y + h ≤ 642
+        0 ≤ x < 1920
+        0 ≤ y < 1080
+        x + w ≤ 1920
+        y + h ≤ 1080
     Se algum cálculo levar a um valor fora desses limites, ajuste o valor para ficar dentro da borda da imagem.
     É PROIBIDO criar elementos que ultrapassem qualquer borda da imagem, mesmo que parcialmente.
 SAÍDA
@@ -215,6 +215,7 @@ COORDENADAS
     Todos os valores devem ser inteiros ≥ 0.
     A bounding box deve sempre estar totalmente contida dentro da imagem (não pode “vazar” para fora).
     Precisão é crítica — meça com atenção cada elemento.
+    Garanta que a BoundingBox de cada elemento detectado seja estritamente igual a borda desse elemento.
 REGRAS DE QUALIDADE
     PROIBIDO inventar elementos que não estão visíveis na imagem.
     PROIBIDO omitir elementos visíveis, mesmo que pequenos.

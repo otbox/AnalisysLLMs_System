@@ -1,11 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpleHtml</title>
+  <meta charset="UTF-8" />
+  <title>Teste UI Scraper com posições</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* container principal que o script procura (#MainDiv) */
+    #MainDiv {
+      position: relative;
+      /* width: 1200px;
+      height: 800px; */
+      /* margin: 20px auto; */
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+
+    /* menu principal (btnMenu) */
+    .btnMenu {
+      position: absolute;
+      top: 20px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 0px;
+      background: #1976d2;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 4px;
+    }
+
+    #menuHome {
+      left: 20px;
+      width: 120px;
+    }
+
+    #menuRelatorios {
+      left: 150px;
+      width: 150px;
+    }
+
+    /* abas (lm_tab) */
+    .lm_tab {
+      position: absolute;
+      top: 80px;
+      width: 130px;
+      height: 36px;
+      line-height: 36px;
+      border: 1px solid #888;
+      cursor: pointer;
+      text-align: center;
+      background: #fff;
+      border-radius: 4px 4px 0 0;
+    }
+
+    #tabExercicio {
+      left: 20px;
+    }
+
+    #tabReceita {
+      left: 160px;
+    }
+
+    #tabDespesa {
+      left: 300px;
+    }
+
+    /* widget temp05 com titulo05 */
+    .temp05 {
+      position: absolute;
+      left: 20px;
+      top: 140px;
+      width: 360px;
+      height: 180px;
+      border: 1px solid #aaa;
+      background: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .titulo05 {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    #btnNovoLancamento {
+      position: absolute;
+      left: 20px;
+      top: 70px;
+      width: 150px;
+      height: 32px;
+    }
+
+    #btnImportarCSV {
+      position: absolute;
+      left: 20px;
+      top: 110px;
+      width: 150px;
+      height: 32px;
+    }
+
+    /* dropdown customizado (btnMenuDinamico + menuDinamico) */
+    .btnMenuDinamico {
+      position: absolute;
+      left: 420px;
+      top: 160px;
+      width: 160px;
+      height: 36px;
+      line-height: 36px;
+      background: #f57c00;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+      text-align: center;
+      user-select: none;
+    }
+
+    .menuDinamico {
+      position: absolute;
+      top: 38px;    /* relativo ao .btnMenuDinamico */
+      left: 0;
+      width: 180px;
+      background: #fff;
+      border: 1px solid #ccc;
+      list-style: none;
+      padding: 4px 0;
+      margin: 0;
+      display: none;      /* começa fechado */
+      z-index: 10;
+    }
+
+    .menuDinamico li {
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+
+    .menuDinamico li:hover {
+      background: #eee;
+    }
+  </style>
+  <script>
+    // abre/fecha o menu para o Selenium conseguir interagir
+    function toggleMenu(btn) {
+      const menu = btn.querySelector('.menuDinamico');
+      if (!menu) return;
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </head>
 <body>
-    <div style="width: 100px; height: 100px; x: 20px; y:20px; background-color: aqua;"></div>
+
+  <div id="MainDiv">
+    <!-- menu principal (btnMenu) -->
+    <div class="btnMenu" id="menuHome" title="Voltar para a Home">
+      Home
+    </div>
+    <div class="btnMenu" id="menuRelatorios" title="Abrir Relatórios">
+      Relatórios
+    </div>
+
+    <!-- abas (lm_tab) -->
+    <div class="lm_tab" id="tabExercicio" title="Aba Exercício">
+      Exercício
+    </div>
+    <div class="lm_tab" id="tabReceita" title="Aba Receita">
+      Receita
+    </div>
+    <div class="lm_tab" id="tabDespesa" title="Aba Despesa">
+      Despesa
+    </div>
+
+    <!-- widget temp05 com titulo05 -->
+    <div class="temp05" id="widgetAcessoRapido">
+      <div class="titulo05">Acesso Rápido</div>
+      <button id="btnNovoLancamento">Novo lançamento</button>
+      <button id="btnImportarCSV">Importar CSV</button>
+    </div>
+
+    <!-- dropdown customizado (btnMenuDinamico + menuDinamico) -->
+    <div
+      class="btnMenuDinamico"
+      id="btnMaisOpcoes"
+      onclick="toggleMenu(this)"
+      title="Mais opções"
+    >
+      ⋮ Mais opções
+      <ul class="menuDinamico">
+        <li id="optExportarExcel">Exportar para Excel</li>
+        <li id="optImprimir">Imprimir</li>
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>
+
+<!-- Jogar o botão de despesada na lateral direita, para testar se vai ignorar ou conseguir, as cordenadas corretamente -->
+ 

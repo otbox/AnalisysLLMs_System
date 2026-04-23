@@ -99,10 +99,10 @@ app.post('/annotations', async (req, res) => {
     const {
       imageBase64,
       analysis: rawAnalysis,
-      coordScale    = "pixels",
+      coordScale    = "normalized-1000",
       llmBaseWidth,
       llmBaseHeight,
-      includeLabel  = true,
+      includeLabel  = false,
       stroke,
       fill,
       outputFormat,
@@ -119,7 +119,7 @@ app.post('/annotations', async (req, res) => {
     const result = await annotator.annotateFromAnalysis({
       imageBase64,
       analysis,
-      coordScale,
+      coordScale : "pixels",
       llmBaseWidth,
       llmBaseHeight,
       includeLabel,
