@@ -13,7 +13,7 @@ import { ModelSelector } from "./ModelSelector";
 import { CleanupSection } from "./CleanupSection";
 import { ResultViewer } from "./ResultViewer";
 import { BatchPanel } from "./BatchPanel";
-import { AnnotationPanel } from "./AnnotationPanel";
+import { AnnotatedImageViewer } from "./AnnotatedImageViewer";
 
 interface Props {
   profile: ProfileConfig;
@@ -23,7 +23,7 @@ interface Props {
   onModelsChange: (models: string[]) => void;
 }
 
-type InputTab = "single" | "batch" | "annotation";;
+type InputTab = "single" | "batch" | "paired";
 
 /** Extrai número do final do nome do arquivo: "tela_3" → 3, "home" → 1 */
 function stepFromFileName(name: string): number {
@@ -36,14 +36,20 @@ export function ProfilePanel({
 }: Props) {
   const [objective, setObjective] = useState(profile.defaultObjective);
   const [stepIndex, setStepIndex] = useState(1);
-  const stepCounter = useRef(1);  // contador global — incrementa a cada requisição
+  const stepCounter = useRef(1);
   const [llmAPI, setLlmAPI] = useState<LLMAPI>("GEMINI");
   const [inputTab, setInputTab] = useState<InputTab>("single");
 
   // Imagem única
   const [imageBase64, setImageBase64] = useState("");
   const [fileName, setFileName] = useState("");
-  const [previewUrl, setPreviewUrl] = useState("");   // data URI para <img>
+  const [previewUrl, setPreviewUrl] = useState("");
+
+  // Imagem + JSON
+  const [jsonFileName, setJsonFileName] = useState("");
+  const [jsonText, setJsonText] = useState("");
+  const [annotationImage, setAnnotationImage] = useState<string | null>(null);
+  const [annotationElements, setAnnotationElements] = useState<UiElement[]>([]);
 
   // Limpeza
   const [idsToRemoveInput, setIdsToRemoveInput] = useState("");
@@ -70,6 +76,79 @@ export function ProfilePanel({
       ...selectedIdsToRemove,
     ]),
   ];
+
+
+  const handleJsonChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setJsonFileName(file.name);
+    const reader = new FileReader();
+    reader.onload = () => {
+      setJsonText(reader.result as string);
+    };
+    reader.readAsText(file);
+  };
+
+  const handleSubmitPaired = async () => {
+    if (!imageBase64) {
+      setError("Selecione uma imagem.");
+      return;
+    }
+    if (!jsonText.trim()) {
+      setError("Selecione um arquivo JSON.");
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+
+    // tenta parsear o JSON; se falhar, manda como texto bruto
+    let analysis: unknown = null;
+    try {
+      analysis = JSON.parse(jsonText);
+    } catch {
+      analysis = { elementsRaw: jsonText };
+    }
+
+    try {
+      const res = await fetch(`${apiBase}/annotations`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          imageBase64,          // pode ser só o base64, o backend aceita
+          analysis,             // estrutura_ui, output-2 ou um array de UiElement
+          coordScale: "pixels", // ou "normalized-1000" se for o seu caso
+          includeLabel: true,
+        }),
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error((body as any)?.message ?? `HTTP ${res.status}`);
+      }
+      const data = await res.json();
+
+      // data.dataUri é a imagem anotada
+      setAnnotationImage(data.dataUri);
+      
+      // se você já tiver o JSON parseado (analysis) como array de UiElement,
+      // pode armazenar para o AnnotatedImageViewer:
+      if (Array.isArray(analysis)) {
+        setAnnotationElements(analysis as UiElement[]);
+      } else if ((analysis as any)?.ui) {
+        setAnnotationElements((analysis as any).ui as UiElement[]);
+      }
+      
+      // data.dataUri é a imagem anotada em base64 data URI
+      // Aqui você pode guardar em algum estado se quiser exibir
+      // por enquanto só limpa erro
+      console.log("Annotation result", data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Erro ao chamar /annotations.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const toggleIdToRemove = (id: string) =>
     setSelectedIdsToRemove((prev) => {
@@ -248,7 +327,7 @@ export function ProfilePanel({
           <div className="input-group">
             <label className="input-label">Serviço de IA</label>
             <div style={{ display: "flex", gap: "var(--spacing-sm)" }}>
-              {(["GEMINI", "OPENROUTER", "OLLAMA"] as LLMAPI[]).map((api) => (
+              {(["GEMINI", "OPENROUTER"] as LLMAPI[]).map((api) => (
                 <button
                   key={api}
                   className="btn-secondary"
@@ -259,7 +338,7 @@ export function ProfilePanel({
                   }
                   onClick={() => setLlmAPI(api)}
                 >
-                  {api === "GEMINI" ? "🔵 Gemini" : api === "OLLAMA" ? "🟢 Ollama" : "🟠 OpenRouter"}
+                  {api === "GEMINI" ? "🔵 Gemini" : "🟠 OpenRouter"}
                 </button>
               ))}
             </div>
@@ -337,27 +416,30 @@ export function ProfilePanel({
       {/* ── Main ── */}
       <main className="results-panel">
 
-        <div className="main-tabs">
+        <div className="tabs">
           <button
-            className={`main-tab ${inputTab === "single" ? "active" : ""}`}
+            type="button"
+            className={inputTab === "single" ? "tab tab-active" : "tab"}
             onClick={() => setInputTab("single")}
           >
-            <button
-              className={`main-tab ${inputTab === "annotation" ? "active" : ""}`}
-              onClick={() => setInputTab("annotation")}
-            >
-              🖊️ Anotação manual
-            </button>
             🖼️ Imagem única
           </button>
+
           <button
-            className={`main-tab ${inputTab === "batch" ? "active purple" : ""}`}
+            type="button"
+            className={inputTab === "batch" ? "tab tab-active" : "tab"}
             onClick={() => setInputTab("batch")}
           >
             📁 Pasta (batch)
-            {batchQueue.length > 0 && (
-              <span className="badge" style={{ marginLeft: 8 }}>{batchQueue.length}</span>
-            )}
+            {batchQueue.length > 0 && <span> ({batchQueue.length})</span>}
+          </button>
+
+          <button
+            type="button"
+            className={inputTab === "paired" ? "tab tab-active" : "tab"}
+            onClick={() => setInputTab("paired")}
+          >
+            🖼️ + 🧾 Imagem + JSON
           </button>
         </div>
 
@@ -412,7 +494,6 @@ export function ProfilePanel({
 
         {inputTab === "batch" && (
           <div className="results-content">
-            <AnnotationPanel apiBase={apiBase} />
             <BatchPanel
               queue={batchQueue}
               isProcessing={isProcessingBatch}
@@ -423,7 +504,90 @@ export function ProfilePanel({
           </div>
         )}
 
-      </main>
+{inputTab === "paired" && (
+  <div className="space-y-3">
+    <div>
+      <label className="block text-sm font-medium mb-1">
+        Imagem
+      </label>
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleImageChange}
+      />
+      {/* {previewUrl && (
+        <img
+          src={previewUrl}
+          alt="preview"
+          className="mt-2 max-h-2 rounded border"
+        />
+      )} */}
     </div>
-  );
+
+    <div>
+      <label className="block text-sm font-medium mb-1">
+        JSON de UI
+      </label>
+      <input
+        type="file"
+        accept="application/json"
+        onChange={handleJsonChange}
+      />
+      {jsonFileName && (
+        <p className="text-xs text-gray-500 mt-1">
+          Arquivo selecionado: {jsonFileName}
+        </p>
+      )}
+    </div>
+
+    {error && (
+      <div className="mt-2 text-sm text-red-500">
+        {error}
+      </div>
+    )}
+
+
+{annotationImage && (
+      <div className="mt-4">
+        <h3 className="text-sm font-semibold mb-1">
+          Imagem anotada (servidor)
+        </h3>
+        <img
+          src={annotationImage}
+          alt="Imagem anotada"
+          className="max-h-96 rounded border"
+        />
+      </div>
+    )}
+
+    {/* visualização interativa com AnnotatedImageViewer (opcional) */}
+    {annotationElements.length > 0 && (
+      <div className="mt-4">
+        <h3 className="text-sm font-semibold mb-1">
+          Viewer interativo (labels)
+        </h3>
+        <AnnotatedImageViewer
+          imageBase64={imageBase64}
+          elements={annotationElements}
+          coordScale="pixels"   // ou "normalized-1000" conforme seu JSON
+        />
+      </div>
+    )}
+
+    
+    <button
+      type="button"
+      onClick={handleSubmitPaired}
+      disabled={loading}
+      className="btn-primary"
+    >
+      {loading ? "⏳ Enviando..." : "🚀 Anotar imagem + JSON"}
+    </button>
+    
+  </div>
+)}
+
+</main>
+</div>
+);
 }

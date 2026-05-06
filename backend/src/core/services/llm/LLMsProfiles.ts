@@ -1,4 +1,4 @@
-import { v5pixels, v5scale, v6pixels } from "./profiles/AnalisysProfiles";
+import { v5pixels, v5scale, v6pixels, v6PixelsEn } from "./profiles/AnalisysProfiles";
 
 export type ProfileKey =
   | "GuideLLM"
@@ -20,8 +20,10 @@ Instruções:
 - Se houver mais de um caminho possível, explique brevemente as alternativas e recomende a melhor.
 - Use linguagem simples, em português, focada no que o usuário deve fazer agora.
 `,
-// Scale
-AnalisysComponentsLLM: v6pixels,
+
+
+// Scale || Pixels
+AnalisysComponentsLLM: v6PixelsEn,
 
 
     CongnitiveWalktroughLLM: `

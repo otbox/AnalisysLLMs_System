@@ -301,6 +301,8 @@ export class LlmImageAnnotatorService {
       outputFormat = "png",
       includeLabel = false,
       coordScale = "normalized-1000",
+      llmBaseHeight = 1080,
+      llmBaseWidth = 1920,
     } = params;
 
     const { buffer: inputBuffer } = this.parseBase64Image(imageBase64);
@@ -639,17 +641,17 @@ export class LlmImageAnnotatorService {
     if ([x, y, w, h].some((n) => !Number.isFinite(n))) return null;
 
     if (scale === "normalized-1000") {
-      x = (x / imgWidth) * 1920;
-      y = (y / imgHeight) * 1080;
-      w = (w / imgWidth) * 1920;
-      h = (h / imgHeight) * 1080;
+      x = Math.round((x / 1000) * imgWidth);
+      y = Math.round((y / 1000) * imgHeight);
+      w = Math.round((w / 1000) * imgWidth);
+      h = Math.round((h / 1000) * imgHeight);
     } else if (scale === "pixels" && llmBaseWidth && llmBaseHeight) {
       const scaleX = imgWidth / llmBaseWidth;
       const scaleY = imgHeight / llmBaseHeight;
-      x = x * scaleX;
-      y = y * scaleY;
-      w = w * scaleX;
-      h = h * scaleY;
+      x = Math.round(x * scaleX);
+      y = Math.round(y * scaleY);
+      w = Math.round(w * scaleX);
+      h = Math.round(h * scaleY);
     }
     // scale === "pixels" sem llmBase* → usa coordenadas como estão
 
@@ -693,6 +695,8 @@ export class LlmImageAnnotatorService {
         (h / baseH) * 1000,
       ] as [number, number, number, number];
     };
+
+    
   
     const visit = (node: LibreNode) => {
       const pos = node.posicao;
