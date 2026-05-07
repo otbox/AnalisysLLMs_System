@@ -21,9 +21,9 @@ type StepRequestBody = {
   profiles?:        ProfileKey[];
   idsToRemove?:     string[];
   /**
-   * Coordinate system the LLM will use when returning bounding boxes.
-   * Defaults to "normalized-1000".
-   * Set once in server.ts / the HTTP request; propagated to all save calls.
+   * Coordinate system the LLM used when returning bounding boxes.
+   * Defaults to the controller-level default set in server.ts.
+   * Can be overridden per-request.
    */
   coordScale?:      CoordScale;
 };
@@ -37,9 +37,11 @@ export class StepController {
     private readonly outputDir:  string    = path.resolve("output"),
     /**
      * Default coord scale used when the request body does not specify one.
-     * Inject this from server.ts so there is a single configuration point.
+     * Set to "pixels" because the active profile (v6pixels / AnalisysComponentsLLM)
+     * asks the model for absolute pixel coordinates.
+     * Change here in server.ts if you switch to a normalised-1000 profile.
      */
-    private readonly defaultCoordScale: CoordScale = "normalized-1000",
+    private readonly defaultCoordScale: CoordScale = "pixels",
   ) {}
 
   /**
@@ -60,28 +62,34 @@ export class StepController {
    *                 └── annotated_labels.png
    */
 
-  // ── Save a dual annotation (pixels + scaled) ─────────────────────────────
+  // ── Save a dual annotation (pixels + scaled) ────────────────────────────
 
   private async saveDualImages(
     imageBase64: string,
-    data:        { output: unknown },
+    /**
+     * Pass the PARSED ui elements (full[]) directly — NOT the raw LLM output
+     * object. This guarantees extractUiElements() finds them under the "ui"
+     * key without having to chase rawResponse.candidates chains.
+     */
+    uiElements:  unknown[],
     model:       string,
     baseDir:     string,
     coordScale:  CoordScale,
   ): Promise<void> {
-    if (!imageBase64) return;
+    if (!imageBase64 || !uiElements.length) return;
 
     for (const withLabels of [false, true]) {
       try {
         const dual = await annotator.annotateDual({
           imageBase64,
-          analysis:    data.output as any,
+          // Pass elements under the "ui" key so extractUiElements() finds them
+          // on the first fast-path check without any rawResponse parsing.
+          analysis:     { ui: uiElements as any },
           includeLabel: withLabels,
           coordScale,
         });
 
-        const suffix = withLabels ? "annotated_labels.png" : "annotated.png";
-
+        const suffix    = withLabels ? "annotated_labels.png" : "annotated.png";
         const pixelsDir = path.join(baseDir, "pixels");
         const scaledDir = path.join(baseDir, "scaled");
         fs.mkdirSync(pixelsDir, { recursive: true });
@@ -89,6 +97,13 @@ export class StepController {
 
         fs.writeFileSync(path.join(pixelsDir, suffix), dual.pixels.buffer);
         fs.writeFileSync(path.join(scaledDir, suffix), dual.scaled.buffer);
+
+        console.log(
+          `[StepController] 🖼️  dual images saved ` +
+          `pixels=${dual.pixels.width}×${dual.pixels.height} ` +
+          `scaled=${dual.scaled.width}×${dual.scaled.height} ` +
+          `(${uiElements.length} elements, labels=${withLabels})`,
+        );
       } catch (err: any) {
         console.warn(
           `[StepController] saveDualImages failed (${model}, labels=${withLabels}):`,
@@ -98,7 +113,7 @@ export class StepController {
     }
   }
 
-  // ── Save JSONs + dual images for one job ─────────────────────────────────
+  // ── Save JSONs + dual images for one job ──────────────────────────────
 
   private async saveResults(
     fileName:    string,
@@ -107,7 +122,7 @@ export class StepController {
     stepIndex:   number,
     imageBase64: string,
     coordScale:  CoordScale,
-    data: { output: unknown; full: unknown; clean: unknown },
+    data: { output: unknown; full: unknown[]; clean: unknown[] },
   ): Promise<void> {
     const safeModel = model.replace(/[^a-zA-Z0-9_\-]/g, "_");
     const dir = path.join(
@@ -123,12 +138,14 @@ export class StepController {
     fs.writeFileSync(path.join(dir, "full.json"),   JSON.stringify(data.full,   null, 2), "utf-8");
     fs.writeFileSync(path.join(dir, "clean.json"),  JSON.stringify(data.clean,  null, 2), "utf-8");
 
-    await this.saveDualImages(imageBase64, data, model, dir, coordScale);
+    // Use full[] (already-parsed ui elements) — NOT output (raw LLM response)
+    // so the annotator doesn't have to dig through rawResponse.candidates.
+    await this.saveDualImages(imageBase64, data.full, model, dir, coordScale);
 
     console.log(`[StepController] ✅ step${stepIndex} | ${profile} | ${model} → ${dir}`);
   }
 
-  // ── HTTP handler ─────────────────────────────────────────────────────────
+  // ── HTTP handler ─────────────────────────────────────────────────────────────────
 
   createHandler = async (req: any, res: any) => {
     const { sessionId } = req.params as { sessionId: string };
@@ -146,8 +163,7 @@ export class StepController {
       coordScale: requestCoordScale,
     } = req.body as StepRequestBody;
 
-    // Use request-level coordScale if provided; otherwise fall back to the
-    // controller default (configured once in server.ts).
+    // Per-request override; falls back to controller default ("pixels").
     const coordScale: CoordScale = requestCoordScale ?? this.defaultCoordScale;
 
     const profilesToRun: ProfileKey[] =
@@ -165,8 +181,13 @@ export class StepController {
               idsToRemove,
             );
 
-            this.saveResults(fileName, profileKey, model, stepIndex, imageBase64, coordScale, { output, full, clean })
-              .catch((err) => console.error(`[StepController] saveResults failed (${model}):`, err));
+            // Fire-and-forget — does not block the HTTP response
+            this.saveResults(
+              fileName, profileKey, model, stepIndex, imageBase64, coordScale,
+              { output, full: full as unknown[], clean: clean as unknown[] },
+            ).catch((err) =>
+              console.error(`[StepController] saveResults failed (${model}):`, err),
+            );
 
             return { profile: profileKey, model, status: "success", output, full, clean };
 
