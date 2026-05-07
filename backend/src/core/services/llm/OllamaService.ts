@@ -1,194 +1,145 @@
-// OllamaService.ts
 import { LLMClient, StepModelInput, StepModelOutput } from './ILLMService';
 import { ProfileKey, Profiles } from './LLMsProfiles';
+import { resolveImageDimensions, interpolatePrompt } from './promptUtils';
 import 'dotenv/config';
-import * as fs from 'fs';
-import * as path from 'path';
 
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL ?? 'http://localhost:11434';
-const RESPONSES_DIR = path.resolve('output', 'ollama_responses');
 
-function saveResponses(params: {
-  profile: string;
-  model: string;
-  stepIndex: number;
-  rawContent: string;
-  parsed: unknown;
-}): void {
-  try {
-    const { profile, model, stepIndex, rawContent, parsed } = params;
+interface OllamaMessage {
+  role:    string;
+  content: string;
+  images?: string[];
+}
 
-    const safeModel = model.replace(/[^a-zA-Z0-9_\-]/g, '_');
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const dir = path.join(
-      RESPONSES_DIR,
-      `${profile}-${safeModel}`,
-      `step${stepIndex}_${timestamp}`,
-    );
+interface OllamaRequest {
+  model:    string;
+  messages: OllamaMessage[];
+  stream:   boolean;
+  options?: Record<string, unknown>;
+}
 
-    fs.mkdirSync(dir, { recursive: true });
+interface OllamaResponse {
+  message: {
+    role:    string;
+    content: string;
+  };
+  done: boolean;
+}
 
-    fs.writeFileSync(
-      path.join(dir, 'raw_response.json'),
-      rawContent,
-      'utf-8',
-    );
-
-    fs.writeFileSync(
-      path.join(dir, 'parsed.json'),
-      JSON.stringify(parsed, null, 2),
-      'utf-8',
-    );
-
-    console.log(`[OllamaService] 💾 resposta salva em ${dir}`);
-  } catch (err) {
-    console.warn(
-      '[OllamaService] saveResponses falhou:',
-      (err as Error).message,
-    );
+function safeParseJson(text: string): unknown {
+  const cleaned = text
+    .trim()
+    .replace(/^```json\s*/i, '')
+    .replace(/^```\s*/i, '')
+    .replace(/\s*```$/i, '')
+    .trim();
+  try { return JSON.parse(cleaned); }
+  catch {
+    const start = cleaned.indexOf('[');
+    const end   = cleaned.lastIndexOf(']');
+    if (start >= 0 && end > start) {
+      try { return JSON.parse(cleaned.slice(start, end + 1)); } catch {}
+    }
+    const os = cleaned.indexOf('{');
+    const oe = cleaned.lastIndexOf('}');
+    if (os >= 0 && oe > os) {
+      try { return JSON.parse(cleaned.slice(os, oe + 1)); } catch {}
+    }
+    return {};
   }
 }
 
 export class OllamaLLMClient implements LLMClient {
-  constructor() {}
+  async callStep(input: StepModelInput): Promise<StepModelOutput> {
+    console.log(`[OllamaService] Calling Ollama model: ${input.model}`);
 
-  async callStep(input: StepModelInput, signal?: AbortSignal): Promise<StepModelOutput> {
-    console.log('Calling Ollama (streaming)');
+    // ── Inject real image dimensions into the prompt template ──────────────
+    const rawTemplate  = Profiles[input.profile as ProfileKey] ?? Profiles['AnalisysComponentsLLM'];
+    const dims         = input.imageBase64
+      ? resolveImageDimensions(input.imageBase64)
+      : { width: 0, height: 0 };
+    const systemPrompt = interpolatePrompt(rawTemplate, {
+      IMAGE_WIDTH:  dims.width,
+      IMAGE_HEIGHT: dims.height,
+    });
 
-    const systemPrompt =
-      Profiles[input.profile] ?? Profiles['AnalisysComponentsLLM'];
+    console.log(
+      `[OllamaService] Image dimensions: ${dims.width}×${dims.height} ` +
+      `| Profile: ${input.profile}`,
+    );
 
-    const userText = buildUserText(input);
+    const userMessage = buildUserMessage(input);
 
-    const body: any = {
-      model: input.model ?? 'qwen3-vl', // ou o modelo de visão que você escolheu
-      stream: true,                     // ✅ streaming ligado
-      // format: 'json',                   // pede JSON no conteúdo final
-      options: {
-        num_gpu: 36,
-        // num_ctx: 4096,/
-        // num_predict: 10000,
-      },
+    const body: OllamaRequest = {
+      model:   input.model,
+      stream:  false,
+      options: { temperature: 0.2 },
       messages: [
         { role: 'system', content: systemPrompt },
-        { role: 'user', content: userText },
+        userMessage,
       ],
     };
 
     const res = await fetch(`${OLLAMA_BASE_URL}/api/chat`, {
-      method: 'POST',
+      method:  'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-      signal,
+      body:    JSON.stringify(body),
     });
 
-    if (!res.ok || !res.body) {
-      const msg = await res.text().catch(() => res.statusText);
-      throw new Error(`Ollama error: ${res.status} ${msg}`);
+    if (!res.ok) {
+      const text = await res.text().catch(() => '');
+      throw new Error(`Ollama HTTP ${res.status}: ${text}`);
     }
 
-    // ── ler stream linha a linha ─────────────────────────────────────────────
-    const reader = res.body.getReader();
-    const decoder = new TextDecoder('utf-8');
-    let buffer = '';
-    let finalMessageContent = '';
+    const json = await res.json() as OllamaResponse;
+    const content = json?.message?.content ?? '';
+    const parsed  = safeParseJson(content) as any;
 
-    while (true) {
-      const { value, done } = await reader.read();
-      if (done) break;
-
-      buffer += decoder.decode(value, { stream: true });
-
-      let newlineIndex: number;
-      while ((newlineIndex = buffer.indexOf('\n')) !== -1) {
-        const line = buffer.slice(0, newlineIndex).trim();
-        buffer = buffer.slice(newlineIndex + 1);
-
-        if (!line) continue;
-
-        // cada linha é um JSON com a forma:
-        // { "message": { "content": "...parcial..." }, "done": false, ... }
-        let chunk: any;
-        try {
-          chunk = JSON.parse(line);
-        } catch {
-          console.warn('[OllamaService] chunk inválido:', line);
-          continue;
-        }
-
-        if (chunk.message?.content) {
-          finalMessageContent += chunk.message.content;
-        }
-
-        if (chunk.done) {
-          break;
-        }
-      }
-    }
-
-    const rawContent = finalMessageContent;
-    const parsed = safeParseJson(rawContent);
-
-    saveResponses({
-      profile: input.profile,
-      model: input.model ?? 'ollama-local',
-      stepIndex: input.stepIndex,
-      rawContent,
-      parsed,
-    });
-
-    if (input.profile === 'AnalisysComponentsLLM' && input.imageBase64) {
-      return {
-        action: parsed.action ?? '',
-        rationale: parsed.rationale ?? '',
-        numberOfComponents: parsed.length ?? 0,
-        confidence: parsed.confidence ?? 0,
-        rawResponse: { message: { content: rawContent } },
-      };
-    }
+    console.log(`[OllamaService] Response length: ${content.length} chars`);
 
     return {
-      action: parsed.action ?? '',
-      rationale: parsed.rationale ?? '',
-      confidence: parsed.confidence ?? 0,
-      rawResponse: { message: { content: rawContent } },
+      action:      parsed?.action     ?? '',
+      rationale:   parsed?.rationale  ?? '',
+      confidence:  parsed?.confidence ?? 0,
+      rawResponse: { candidates: [{ content: { parts: [{ text: content }] } }] },
     };
   }
 }
 
-function buildUserText(input: StepModelInput): string {
-  const parts: string[] = [];
-  parts.push(`Objetivo do Usuário: ${input.objective}`);
-  parts.push(`Passo atual do percurso: ${input.stepIndex}`);
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
+function buildUserMessage(input: StepModelInput): OllamaMessage {
+  const textParts: string[] = [];
+  textParts.push(`User objective: ${input.objective}`);
+  textParts.push(`Current step: ${input.stepIndex}`);
 
   if (input.historySummary) {
-    parts.push(`Resumo dos passos anteriores: ${input.historySummary}`);
+    textParts.push(`Summary of previous steps: ${input.historySummary}`);
   }
-
   if (input.uiJson) {
-    parts.push(
-      `Elementos da interface em JSON (use se ajudar, não precisa repetir tudo):\n${input.uiJson}`,
+    textParts.push(
+      `Interface elements as JSON (use if helpful):\n${input.uiJson}`,
     );
   }
-
   if (input.profile !== 'AnalisysComponentsLLM') {
-    parts.push(
+    textParts.push(
       [
-        'Responda APENAS em JSON com os campos:',
-        ' - action: string, próxima acção concreta do usuário;',
-        ' - rationale: string, explicação da escolha;',
-        ' - confidence: inteiro de 0 a 100, representando a confiança em %.',
+        'Respond ONLY in JSON with the fields:',
+        ' - action: string, next concrete user action;',
+        ' - rationale: string, reasoning for the choice;',
+        ' - confidence: integer 0-100.',
       ].join('\n'),
     );
   }
 
-  return parts.join('\n\n');
-}
+  const message: OllamaMessage = { role: 'user', content: textParts.join('\n\n') };
 
-function safeParseJson(content: string): any {
-  try {
-    return JSON.parse(content);
-  } catch {
-    return {};
+  if (input.imageBase64) {
+    const pure = input.imageBase64.startsWith('data:')
+      ? input.imageBase64.split(',')[1] ?? ''
+      : input.imageBase64;
+    message.images = [pure];
   }
+
+  return message;
 }
