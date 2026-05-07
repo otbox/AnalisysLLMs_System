@@ -1,9 +1,9 @@
 // LLMController.ts
-import { classifyLLMError }          from "../services/ErrorHandler";
-import { CoordScale, LlmImageAnnotatorService } from "../services/ImageAnnotationScale";
-import { ILLMService }               from "../services/llm/ILLMService";
-import { ProfileKey }                from "../services/llm/LLMsProfiles";
-import { QueueService }              from "../services/QueueService";
+import { classifyLLMError }                              from "../services/ErrorHandler";
+import { CoordScale, LlmImageAnnotatorService }          from "../services/ImageAnnotationScale";
+import { ILLMService }                                   from "../services/llm/ILLMService";
+import { ProfileKey }                                    from "../services/llm/LLMsProfiles";
+import { QueueService }                                  from "../services/QueueService";
 
 import * as fs   from "fs";
 import * as path from "path";
@@ -20,20 +20,30 @@ type StepRequestBody = {
   historySummary?:  string;
   profiles?:        ProfileKey[];
   idsToRemove?:     string[];
+  /**
+   * Coordinate system the LLM will use when returning bounding boxes.
+   * Defaults to "normalized-1000".
+   * Set once in server.ts / the HTTP request; propagated to all save calls.
+   */
+  coordScale?:      CoordScale;
 };
 
-// ── instâncias do anotador por escala ────────────────────────────────────────
-const annotatorImage = new LlmImageAnnotatorService(); // coordScale: "pixels" (legado)
+const annotator = new LlmImageAnnotatorService();
 
 export class StepController {
   constructor(
-    private readonly services:  LLMServiceMap,
-    private readonly queue:     QueueService,
-    private readonly outputDir: string = path.resolve("output"),
+    private readonly services:   LLMServiceMap,
+    private readonly queue:      QueueService,
+    private readonly outputDir:  string    = path.resolve("output"),
+    /**
+     * Default coord scale used when the request body does not specify one.
+     * Inject this from server.ts so there is a single configuration point.
+     */
+    private readonly defaultCoordScale: CoordScale = "normalized-1000",
   ) {}
 
   /**
-   * Estrutura de diretórios gerada:
+   * Directory structure:
    *
    * output/
    * └── {fileName}/
@@ -42,60 +52,53 @@ export class StepController {
    *             ├── output.json
    *             ├── full.json
    *             ├── clean.json
-   *             └── scaled/                    ← coordenadas 0-1000
+   *             ├── pixels/
+   *             │   ├── annotated.png
+   *             │   └── annotated_labels.png
+   *             └── scaled/
    *                 ├── annotated.png
    *                 └── annotated_labels.png
    */
 
-  // ── salva um par de imagens (sem / com labels) em um subdiretório ──────────
+  // ── Save a dual annotation (pixels + scaled) ─────────────────────────────
 
-  private async saveImages(
+  private async saveDualImages(
     imageBase64: string,
-    annotator:   any,
     data:        { output: unknown },
     model:       string,
-    targetDir:   string,
-    coordScale:  "normalized-1000" | "pixels",
+    baseDir:     string,
+    coordScale:  CoordScale,
   ): Promise<void> {
     if (!imageBase64) return;
 
-    // Garante que o subdiretório existe
-    fs.mkdirSync(targetDir, { recursive: true });
-
-    await Promise.all([
-      // 1) Sem labels — visual limpo
-      annotator
-        .annotateFromAnalysis({
+    for (const withLabels of [false, true]) {
+      try {
+        const dual = await annotator.annotateDual({
           imageBase64,
           analysis:    data.output as any,
-          includeLabel: false,
-          coordScale : coordScale
-        })
-        .then(({ buffer }: { buffer: Buffer }) =>
-          fs.writeFileSync(path.join(targetDir, "annotated.png"), buffer)
-        )
-        .catch((err: Error) =>
-          console.warn(`[StepController] ${coordScale}/annotated.png falhou (${model}):`, err.message)
-        ),
+          includeLabel: withLabels,
+          coordScale,
+        });
 
-      // 2) Com labels — útil para debug / revisão
-      annotator
-        .annotateFromAnalysis({
-          imageBase64,
-          analysis:    data.output as any,
-          includeLabel: true,
-          coordScale : coordScale
-        })
-        .then(({ buffer }: { buffer: Buffer }) =>
-          fs.writeFileSync(path.join(targetDir, "annotated_labels.png"), buffer)
-        )
-        .catch((err: Error) =>
-          console.warn(`[StepController] ${coordScale}/annotated_labels.png falhou (${model}):`, err.message)
-        ),
-    ]);
+        const suffix = withLabels ? "annotated_labels.png" : "annotated.png";
+
+        const pixelsDir = path.join(baseDir, "pixels");
+        const scaledDir = path.join(baseDir, "scaled");
+        fs.mkdirSync(pixelsDir, { recursive: true });
+        fs.mkdirSync(scaledDir, { recursive: true });
+
+        fs.writeFileSync(path.join(pixelsDir, suffix), dual.pixels.buffer);
+        fs.writeFileSync(path.join(scaledDir, suffix), dual.scaled.buffer);
+      } catch (err: any) {
+        console.warn(
+          `[StepController] saveDualImages failed (${model}, labels=${withLabels}):`,
+          err?.message,
+        );
+      }
+    }
   }
 
-  // ── salva JSONs + imagens para um job ──────────────────────────────────────
+  // ── Save JSONs + dual images for one job ─────────────────────────────────
 
   private async saveResults(
     fileName:    string,
@@ -103,7 +106,7 @@ export class StepController {
     model:       string,
     stepIndex:   number,
     imageBase64: string,
-    coordScale : CoordScale,
+    coordScale:  CoordScale,
     data: { output: unknown; full: unknown; clean: unknown },
   ): Promise<void> {
     const safeModel = model.replace(/[^a-zA-Z0-9_\-]/g, "_");
@@ -116,24 +119,16 @@ export class StepController {
 
     fs.mkdirSync(dir, { recursive: true });
 
-    // ── JSONs ─────────────────────────────────────────────────────────────────
     fs.writeFileSync(path.join(dir, "output.json"), JSON.stringify(data.output, null, 2), "utf-8");
     fs.writeFileSync(path.join(dir, "full.json"),   JSON.stringify(data.full,   null, 2), "utf-8");
     fs.writeFileSync(path.join(dir, "clean.json"),  JSON.stringify(data.clean,  null, 2), "utf-8");
 
-    // ── Imagens anotadas ──────────────────────────────────────────────────────
-
-    if (coordScale == "pixels") {
-      await this.saveImages(imageBase64, annotatorImage, data, model, path.join(dir, "pixels"), "pixels");
-    } 
-    if (coordScale == "normalized-1000") {
-      await this.saveImages(imageBase64, annotatorImage, data, model, path.join(dir, "scaled"), "normalized-1000");
-    }
+    await this.saveDualImages(imageBase64, data, model, dir, coordScale);
 
     console.log(`[StepController] ✅ step${stepIndex} | ${profile} | ${model} → ${dir}`);
   }
 
-  // ── handler HTTP ──────────────────────────────────────────────────────────
+  // ── HTTP handler ─────────────────────────────────────────────────────────
 
   createHandler = async (req: any, res: any) => {
     const { sessionId } = req.params as { sessionId: string };
@@ -148,7 +143,12 @@ export class StepController {
       models,
       fileName,
       idsToRemove,
+      coordScale: requestCoordScale,
     } = req.body as StepRequestBody;
+
+    // Use request-level coordScale if provided; otherwise fall back to the
+    // controller default (configured once in server.ts).
+    const coordScale: CoordScale = requestCoordScale ?? this.defaultCoordScale;
 
     const profilesToRun: ProfileKey[] =
       profiles && profiles.length > 0 ? profiles : ["AnalisysComponentsLLM"];
@@ -157,9 +157,7 @@ export class StepController {
       profilesToRun.flatMap((profileKey) =>
         models.map(async (model) => {
           const service = this.services[profileKey];
-          if (!service) {
-            throw new Error(`LLMService not found for profile: ${profileKey}`);
-          }
+          if (!service) throw new Error(`LLMService not found for profile: ${profileKey}`);
 
           try {
             const { output, full, clean } = await this.queue.enqueue(
@@ -167,20 +165,14 @@ export class StepController {
               idsToRemove,
             );
 
-            const typeCoordScaleDefault  : CoordScale = "normalized-1000"
-
-            // Salva em background — não bloqueia a resposta HTTP
-            this.saveResults(fileName, profileKey, model, stepIndex, imageBase64, "normalized-1000", { output, full, clean })
-              .catch((err) =>
-                console.error(`[StepController] saveResults falhou (${model}):`, err)
-              );
+            this.saveResults(fileName, profileKey, model, stepIndex, imageBase64, coordScale, { output, full, clean })
+              .catch((err) => console.error(`[StepController] saveResults failed (${model}):`, err));
 
             return { profile: profileKey, model, status: "success", output, full, clean };
 
           } catch (err) {
             const llmError = classifyLLMError(err);
-            console.error(`[StepController] Erro no modelo ${model}:`, llmError);
-
+            console.error(`[StepController] Error on model ${model}:`, llmError);
             return { profile: profileKey, model, status: "error", error: llmError };
           }
         }),

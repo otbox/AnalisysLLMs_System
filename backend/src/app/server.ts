@@ -1,29 +1,40 @@
 // app/server.ts
-import Fastify from 'fastify';
-import { buildContainer } from '../config/di-container';
-import fastifyCors from "@fastify/cors";
-import 'dotenv/config'
-import { StepController } from '../core/controllers/LLMController';
-import { AnalisisLLM } from '../core/services/llm/AnalisisLLM';
-import { GoogleLLMClient } from '../core/services/llm/GoogleService';
-import { GuideStep } from '../core/services/llm/GuideStepLLM';
-import { OpenRouterLLMClient } from '../core/services/llm/OpenRouterService';
-import { MODELOS_DISPONIVEIS } from '../core/services/llm/LLMModesAvaible';
-import { NvidiaObjectDetectionService } from '../core/services/llm/nvidia/NvidiaService';
-import { NvidiaDetectionController } from '../core/controllers/NvidiaController';
-import { QueueService } from '../core/services/QueueService';
-import { OllamaLLMClient } from '../core/services/llm/OllamaService';
-import { AnnotateImageParams, AnalysisInput, UiElement, LlmImageAnnotatorService } from '../core/services/ImageAnnotationScale';
+import Fastify                             from 'fastify';
+import fastifyCors                         from '@fastify/cors';
+import 'dotenv/config';
+
+import { StepController }                  from '../core/controllers/LLMController';
+import { AnalisisLLM }                     from '../core/services/llm/AnalisisLLM';
+import { GoogleLLMClient }                 from '../core/services/llm/GoogleService';
+import { GuideStep }                       from '../core/services/llm/GuideStepLLM';
+import { OpenRouterLLMClient }             from '../core/services/llm/OpenRouterService';
+import { MODELOS_DISPONIVEIS }             from '../core/services/llm/LLMModesAvaible';
+import { NvidiaObjectDetectionService }    from '../core/services/llm/nvidia/NvidiaService';
+import { NvidiaDetectionController }       from '../core/controllers/NvidiaController';
+import { QueueService }                    from '../core/services/QueueService';
+import { OllamaLLMClient }                 from '../core/services/llm/OllamaService';
+import {
+  AnnotateImageParams,
+  AnalysisInput,
+  CoordScale,
+  UiElement,
+  LlmImageAnnotatorService,
+} from '../core/services/ImageAnnotationScale';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Global coord-scale configuration
+// Change this ONE value to switch how the whole system interprets LLM coords.
+// Can also be overridden per-request via the `coordScale` field in the body.
+// ─────────────────────────────────────────────────────────────────────────────
+export const GLOBAL_COORD_SCALE: CoordScale = "normalized-1000";
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 const app = Fastify({ logger: true, bodyLimit: 10 * 1024 * 1024 });
 
-app.register(fastifyCors, {
-  origin: true,
-});
+app.register(fastifyCors, { origin: true });
 
-const { stepController } = buildContainer();
-
-type LLMAPI = "OPENROUTER" | "GEMINI" | "OLLAMA"
+type LLMAPI = "OPENROUTER" | "GEMINI" | "OLLAMA";
 
 const llmClientMap: Record<LLMAPI, any> = {
   OPENROUTER: new OpenRouterLLMClient(),
@@ -32,64 +43,56 @@ const llmClientMap: Record<LLMAPI, any> = {
 };
 
 /**
- * Normaliza o campo `analysis` que chega do frontend para o shape
- * que o LlmImageAnnotatorService espera (AnalysisInput com campo `ui`).
- *
- * Aceita:
- *   - array direto:              [{ coordenadas, ... }]
- *   - objeto com campo ui:       { ui: [...] }
- *   - objeto com campo elements: { elements: [...] }
- *   - objeto com campo components, full ou clean
- *   - objeto AnalysisInput já no formato correto (pass-through)
+ * Normalise the `analysis` field coming from the frontend into a shape
+ * that LlmImageAnnotatorService expects (AnalysisInput with `ui` field).
  */
 function normalizeAnalysis(raw: unknown): AnalysisInput {
-  if (Array.isArray(raw)) {
-    return { ui: raw as UiElement[] };
-  }
+  if (Array.isArray(raw)) return { ui: raw as UiElement[] };
 
   if (raw && typeof raw === "object") {
     const obj = raw as Record<string, unknown>;
 
-    // já tem ui preenchido — retorna como está
-    if (Array.isArray(obj.ui) && (obj.ui as unknown[]).length > 0) {
+    if (Array.isArray(obj.ui) && (obj.ui as unknown[]).length > 0)
       return obj as AnalysisInput;
-    }
 
-    // tenta campos alternativos e move para ui
     for (const key of ["elements", "components", "full", "clean"] as const) {
-      if (Array.isArray(obj[key]) && (obj[key] as unknown[]).length > 0) {
+      if (Array.isArray(obj[key]) && (obj[key] as unknown[]).length > 0)
         return { ...(obj as AnalysisInput), ui: obj[key] as UiElement[] };
-      }
     }
 
-    // pode ser um AnalysisInput com rawResponse mas sem ui ainda — pass-through
     return obj as AnalysisInput;
   }
 
-  throw new Error("Campo 'analysis' inválido: esperado array ou objeto AnalysisInput.");
+  throw new Error("Invalid 'analysis' field: expected array or AnalysisInput object.");
 }
 
-// ── rotas ─────────────────────────────────────────────────────────────────────
+// ── Routes ────────────────────────────────────────────────────────────────────
 
-app.get('/openrouter/models', (req, res) => {
+app.get('/openrouter/models', (_req, res) => {
   res.send(MODELOS_DISPONIVEIS);
 });
 
 app.post('/sessions/:sessionId/steps', (req, res) => {
   const { LLMAPI } = req.body as { LLMAPI: LLMAPI };
 
-  const llmClient       = llmClientMap[LLMAPI];
-  const analysisService = new AnalisisLLM(llmClient);
-  const guideService    = new GuideStep(llmClient);
+  const llmClient        = llmClientMap[LLMAPI];
+  const analysisService  = new AnalisisLLM(llmClient);
+  const guideService     = new GuideStep(llmClient);
   const cognitiveService = new AnalisisLLM(llmClient);
-  const queueService    = new QueueService(analysisService, 1);
-  const stepController  = new StepController({
-    AnalisysComponentsLLM:   analysisService,
-    GuideLLM:                guideService,
-    CongnitiveWalktroughLLM: cognitiveService,
-  }, queueService);
+  const queueService     = new QueueService(analysisService, 1);
 
-  return stepController.createHandler(req, res);
+  const controller = new StepController(
+    {
+      AnalisysComponentsLLM:   analysisService,
+      GuideLLM:                guideService,
+      CongnitiveWalktroughLLM: cognitiveService,
+    },
+    queueService,
+    undefined,             // outputDir — keep default
+    GLOBAL_COORD_SCALE,    // ← single config point
+  );
+
+  return controller.createHandler(req, res);
 });
 
 const annotator = new LlmImageAnnotatorService();
@@ -99,29 +102,25 @@ app.post('/annotations', async (req, res) => {
     const {
       imageBase64,
       analysis: rawAnalysis,
-      coordScale    = "normalized-1000",
-      llmBaseWidth,
-      llmBaseHeight,
-      includeLabel  = false,
+      // honour explicit coordScale from caller; fall back to global default
+      coordScale   = GLOBAL_COORD_SCALE,
+      includeLabel = false,
       stroke,
       fill,
       outputFormat,
     } = req.body as Partial<AnnotateImageParams & { analysis: unknown }>;
 
     if (!imageBase64 || !rawAnalysis) {
-      return res.status(400).send({
-        message: 'Campos obrigatórios: imageBase64 e analysis',
-      });
+      return res.status(400).send({ message: 'Required fields: imageBase64 and analysis' });
     }
 
     const analysis = normalizeAnalysis(rawAnalysis);
 
-    const result = await annotator.annotateFromAnalysis({
+    // Always produce both images; return both URLs to the caller.
+    const dual = await annotator.annotateDual({
       imageBase64,
       analysis,
-      coordScale : "normalized-1000",
-      llmBaseWidth,
-      llmBaseHeight,
+      coordScale,
       includeLabel,
       stroke,
       fill,
@@ -129,36 +128,43 @@ app.post('/annotations', async (req, res) => {
     });
 
     return res.send({
-      mimeType:      result.mimeType,
-      width:         result.width,
-      height:        result.height,
-      elementsCount: result.elementsCount,
-      dataUri:       result.dataUri,
+      // pixels variant (original resolution)
+      pixels: {
+        mimeType:      dual.pixels.mimeType,
+        width:         dual.pixels.width,
+        height:        dual.pixels.height,
+        elementsCount: dual.pixels.elementsCount,
+        dataUri:       dual.pixels.dataUri,
+      },
+      // scaled variant (display-safe viewport)
+      scaled: {
+        mimeType:      dual.scaled.mimeType,
+        width:         dual.scaled.width,
+        height:        dual.scaled.height,
+        elementsCount: dual.scaled.elementsCount,
+        dataUri:       dual.scaled.dataUri,
+      },
+      // backward-compat alias → points to pixels
+      dataUri: dual.pixels.dataUri,
     });
 
   } catch (err: any) {
     req.log.error(err);
     return res.status(500).send({
-      message: 'Erro ao gerar imagem anotada',
+      message: 'Error generating annotated image',
       error:   err?.message ?? 'Unknown error',
     });
   }
 });
 
 app.post('/analisysNvidia', (req, res) => {
-  console.log("pong");
-  const nvidiaAnalisysController = new NvidiaDetectionController(new NvidiaObjectDetectionService);
-  return nvidiaAnalisysController.detectHandler(req, res);
+  const nvidiaController = new NvidiaDetectionController(new NvidiaObjectDetectionService());
+  return nvidiaController.detectHandler(req, res);
 });
 
 const PORT = Number(process.env.PORT) || 3000;
 
 app
   .listen({ port: PORT, host: '0.0.0.0' })
-  .then((address) => {
-    console.log(`🚀 Fastify rodando em ${address}`);
-  })
-  .catch((err) => {
-    app.log.error(err);
-    process.exit(1);
-  });
+  .then((address) => console.log(`🚀 Fastify running at ${address}`))
+  .catch((err) => { app.log.error(err); process.exit(1); });
