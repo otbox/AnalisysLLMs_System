@@ -26,7 +26,7 @@ import {
 // Change this ONE value to switch how the whole system interprets LLM coords.
 // Can also be overridden per-request via the `coordScale` field in the body.
 // ─────────────────────────────────────────────────────────────────────────────
-export const GLOBAL_COORD_SCALE: CoordScale = "normalized-1000";
+export const GLOBAL_COORD_SCALE: CoordScale = "pixels";
 
 // ─────────────────────────────────────────────────────────────────────────────
 

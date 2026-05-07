@@ -356,11 +356,11 @@ export class LlmImageAnnotatorService {
       const nw = (raw.w / imgW) * 1000;
       const nh = (raw.h / imgH) * 1000;
       // passo 2: 0-1000 → pixels
-      const px = (nx / 1000) * imgW;
-      const py = (ny / 1000) * imgH;
-      const pw = (nw / 1000) * imgW;
-      const ph = (nh / 1000) * imgH;
-      return this.clampBox({ x: px, y: py, w: pw, h: ph }, imgW, imgH);
+      // const px = (nx / 1000) * imgW;
+      // const py = (ny / 1000) * imgH;
+      // const pw = (nw / 1000) * imgW;
+      // const ph = (nh / 1000) * imgH;
+      return this.clampBox({ x: nx, y: ny, w: nw, h: nh }, imgW, imgH);
     });
   }
 
@@ -392,11 +392,12 @@ export class LlmImageAnnotatorService {
       const { x, y, w, h } = this.coordsToBox(el.coordenadas);
       if (![x, y, w, h].every(Number.isFinite)) return { x: 0, y: 0, w: 0, h: 0 };
       // multiplica direto SEM dividir por 1000 primeiro
-      const px = (x / 1000) * imgW;
-      const py = (y / 1000) * imgH;
-      const pw = (w / 1000) * imgW;
-      const ph = (h / 1000) * imgH;
-      return this.clampBox({ x: px, y: py, w: pw, h: ph }, imgW, imgH);
+      // const px = (x / 1000) * imgW;
+      // const py = (y / 1000) * imgH;
+      // const pw = (w / 1000) * imgW;
+      // const ph = (h / 1000) * imgH;
+      return this.clampBox({ x, y, w, h }, imgW, imgH);
+      // return this.clampBox({ x: px, y: py, w: pw, h: ph }, imgW, imgH);
     });
   }
 

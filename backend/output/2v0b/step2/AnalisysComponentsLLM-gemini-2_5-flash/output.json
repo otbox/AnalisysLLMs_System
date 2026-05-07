@@ -1,0 +1,40 @@
+{
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"header_value_1\",\n    \"type\": \"text\",\n    \"text\": \"1.408.260.768\",\n    \"coordenadas\": [0, 0, 150, 20],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"parlamentares_text\",\n    \"type\": \"text\",\n    \"text\": \"Parlamentares\",\n    \"coordenadas\": [400, 20, 100, 15],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"pix_text\",\n    \"type\": \"text\",\n    \"text\": \"Pix\",\n    \"coordenadas\": [430, 35, 30, 15],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"administrativa_text\",\n    \"type\": \"text\",\n    \"text\": \"Administrativa\",\n    \"coordenadas\": [520, 20, 100, 15],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"administrativa_description_text\",\n    \"type\": \"text\",\n    \"text\": \"Conheça a estrutura de nossas Secretarias\",\n    \"coordenadas\": [520, 35, 150, 30],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"formato_aberto_text\",\n    \"type\": \"text\",\n    \"text\": \"formato aberto\",\n    \"coordenadas\": [690, 20, 100, 15],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"formato_aberto_description_text\",\n    \"type\": \"text\",\n    \"text\": \"faça aqui o download das informações públicas que quiser\",\n    \"coordenadas\": [690, 35, 180, 30],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"frequentes_text\",\n    \"type\": \"text\",\n    \"text\": \"frequentes\",\n    \"coordenadas\": [890, 20, 80, 15],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"frequentes_description_text\",\n    \"type\": \"text\",\n    \"text\": \"respostas a perguntas mais frequentes da sociedade\",\n    \"coordenadas\": [890, 35, 180, 30],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"facebook_link_text\",\n    \"type\": \"text\",\n    \"text\": \"acesse nossa página no Facebook\",\n    \"coordenadas\": [1090, 35, 120, 15],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"total_funcionarios_icon\",\n    \"type\": \"icon"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 981,
+      "candidatesTokenCount": 789,
+      "totalTokenCount": 20967,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 723
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 19197,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "cAn8aezrMu-ez7IP7M_ZkA0"
+  }
+}
