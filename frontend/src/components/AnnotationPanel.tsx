@@ -2,11 +2,19 @@
 import React, { useState, useCallback } from "react";
 import type { UiElement } from "../types";
 
-interface AnnotationResult {
-  mimeType: string;
-  width: number;
-  height: number;
+// Shape returned by the updated /annotations endpoint
+interface AnnotationVariant {
+  mimeType:      string;
+  width:         number;
+  height:        number;
   elementsCount: number;
+  dataUri:       string;
+}
+
+interface AnnotationResponse {
+  pixels:  AnnotationVariant;
+  scaled:  AnnotationVariant;
+  // backward-compat alias kept by the backend
   dataUri: string;
 }
 
@@ -14,19 +22,9 @@ interface Props {
   apiBase: string;
 }
 
-type CoordScale = "pixels" | "normalized-1000";
-type ActiveTab = "result" | "json";
-
-/** Garante que o JSON parseado vire o shape { elements: UiElement[] } aceito pelo backend */
-// function normalizeAnalysis(raw: unknown): { elements: UiElement[] } {
-//   if (Array.isArray(raw)) return { elements: raw as UiElement[] };
-//   if (raw && typeof raw === "object") {
-//     const obj = raw as Record<string, unknown>;
-//     if (Array.isArray(obj.elements)) return { elements: obj.elements as UiElement[] };
-//     if (Array.isArray(obj.ui))       return { elements: obj.ui as UiElement[] };
-//   }
-//   throw new Error("O JSON deve ser um array de elementos ou um objeto com campo 'elements' ou 'ui'.");
-// }
+type CoordScale  = "pixels" | "normalized-1000";
+type ResultVariant = "scaled" | "pixels";
+type ActiveTab   = "result" | "json";
 
 function formatJson(text: string): string {
   try { return JSON.stringify(JSON.parse(text), null, 2); }
@@ -34,20 +32,24 @@ function formatJson(text: string): string {
 }
 
 export function AnnotationPanel({ apiBase }: Props) {
-  const [imageBase64, setImageBase64]   = useState("");
-  const [previewUrl,  setPreviewUrl]    = useState("");
-  const [jsonInput,   setJsonInput]     = useState("");
-  const [coordScale,  setCoordScale]    = useState<CoordScale>("pixels");
+  // Inputs
+  const [imageBase64,  setImageBase64]  = useState("");
+  const [previewUrl,   setPreviewUrl]   = useState("");
+  const [jsonInput,    setJsonInput]    = useState("");
+  const [jsonFileName, setJsonFileName] = useState("");
+  const [coordScale,   setCoordScale]   = useState<CoordScale>("pixels");
   const [includeLabel, setIncludeLabel] = useState(true);
-  const [stroke,      setStroke]        = useState("#3b82f6");
-  const [fillOpacity, setFillOpacity]   = useState(15); // 0-100
+  const [stroke,       setStroke]       = useState("#3b82f6");
+  const [fillOpacity,  setFillOpacity]  = useState(15);
 
+  // State
   const [loading,  setLoading]  = useState(false);
   const [error,    setError]    = useState("");
-  const [result,   setResult]   = useState<AnnotationResult | null>(null);
-  const [activeTab, setActiveTab] = useState<ActiveTab>("result");
+  const [result,   setResult]   = useState<AnnotationResponse | null>(null);
+  const [activeTab,    setActiveTab]    = useState<ActiveTab>("result");
+  const [resultVariant, setResultVariant] = useState<ResultVariant>("scaled");
 
-  // ── imagem ────────────────────────────────────────────────────────────────
+  // ── Image file ────────────────────────────────────────────────────────────
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -63,28 +65,37 @@ export function AnnotationPanel({ apiBase }: Props) {
     reader.readAsDataURL(file);
   };
 
-  // ── submit ────────────────────────────────────────────────────────────────
+  // ── JSON file ─────────────────────────────────────────────────────────────
+
+  const handleJsonFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setJsonFileName(file.name);
+    const reader = new FileReader();
+    reader.onload = () => {
+      setJsonInput(reader.result as string);
+      setError("");
+    };
+    reader.readAsText(file);
+  };
+
+  // ── Submit ────────────────────────────────────────────────────────────────
 
   const handleSubmit = useCallback(async () => {
-    if (!imageBase64) return setError("Selecione uma imagem.");
-    if (!jsonInput.trim()) return setError("Cole o JSON de elementos.");
+    if (!imageBase64)       return setError("Select an image.");
+    if (!jsonInput.trim())  return setError("Provide the elements JSON.");
 
-    let analysis: { elements: UiElement[] };
+    let analysis: unknown;
     try {
-    //   analysis = normalizeAnalysis(JSON.parse(jsonInput));
       analysis = JSON.parse(jsonInput);
-    } catch (err) {
-      return setError(err instanceof Error ? err.message : "JSON inválido.");
+    } catch {
+      return setError("Invalid JSON.");
     }
-
-    // if (analysis.elements.length === 0)
-    //   return setError("Nenhum elemento encontrado no JSON.");
 
     setLoading(true);
     setError("");
     setResult(null);
 
-    // Converte fillOpacity (0-100) para hex de opacidade no fill
     const fillAlpha = Math.round((fillOpacity / 100) * 255).toString(16).padStart(2, "0");
     const fillColor = `${stroke}${fillAlpha}`;
 
@@ -98,7 +109,7 @@ export function AnnotationPanel({ apiBase }: Props) {
           coordScale,
           includeLabel,
           stroke,
-          fill:   fillColor,
+          fill:         fillColor,
           outputFormat: "png",
         }),
       });
@@ -108,27 +119,30 @@ export function AnnotationPanel({ apiBase }: Props) {
         throw new Error((body as any)?.message ?? `HTTP ${res.status}`);
       }
 
-      const data: AnnotationResult = await res.json();
+      const data: AnnotationResponse = await res.json();
       setResult(data);
       setActiveTab("result");
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Erro desconhecido.");
+      setError(err instanceof Error ? err.message : "Unknown error.");
     } finally {
       setLoading(false);
     }
   }, [imageBase64, jsonInput, coordScale, includeLabel, stroke, fillOpacity, apiBase]);
 
-  // ── download ──────────────────────────────────────────────────────────────
+  // ── Download ──────────────────────────────────────────────────────────────
 
-  const handleDownload = () => {
+  const handleDownload = (variant: ResultVariant) => {
     if (!result) return;
-    const a = document.createElement("a");
-    a.href     = result.dataUri;
-    a.download = "annotated.png";
+    const src = variant === "pixels" ? result.pixels.dataUri : result.scaled.dataUri;
+    const a   = document.createElement("a");
+    a.href     = src;
+    a.download = `annotated_${variant}.png`;
     a.click();
   };
 
-  // ── render ────────────────────────────────────────────────────────────────
+  const activeVariant = result ? (resultVariant === "pixels" ? result.pixels : result.scaled) : null;
+
+  // ── Render ────────────────────────────────────────────────────────────────
 
   return (
     <div className="layout">
@@ -136,13 +150,13 @@ export function AnnotationPanel({ apiBase }: Props) {
       {/* ── Sidebar ── */}
       <aside className="config-panel">
 
-        {/* Imagem */}
+        {/* Image */}
         <div className="panel-section">
           <div className="section-header">
-            <h2 className="section-title">🖼️ Imagem</h2>
+            <h2 className="section-title">🖼️ Image</h2>
           </div>
           <div className="input-group">
-            <label className="input-label">Arquivo</label>
+            <label className="input-label">File</label>
             <input
               type="file"
               accept="image/*"
@@ -151,13 +165,13 @@ export function AnnotationPanel({ apiBase }: Props) {
             />
           </div>
           <div className="input-group">
-            <label className="input-label">Escala de coordenadas</label>
+            <label className="input-label">Coordinate scale</label>
             <select
               className="input-field"
               value={coordScale}
               onChange={(e) => setCoordScale(e.target.value as CoordScale)}
             >
-              <option value="pixels">pixels</option>
+              <option value="pixels">pixels (absolute)</option>
               <option value="normalized-1000">normalized-1000 (0–1000)</option>
             </select>
           </div>
@@ -166,47 +180,66 @@ export function AnnotationPanel({ apiBase }: Props) {
         {/* JSON */}
         <div className="panel-section">
           <div className="section-header">
-            <h2 className="section-title">📋 JSON de elementos</h2>
+            <h2 className="section-title">📋 Elements JSON</h2>
           </div>
+
+          {/* Upload JSON file */}
+          <div className="input-group">
+            <label className="input-label">Upload JSON file</label>
+            <input
+              type="file"
+              accept="application/json,.json"
+              className="input-field"
+              onChange={handleJsonFileChange}
+            />
+            {jsonFileName && (
+              <span style={{ fontSize: "0.75rem", color: "var(--text-tertiary)" }}>
+                {jsonFileName}
+              </span>
+            )}
+          </div>
+
+          {/* Or paste */}
           <div className="input-group">
             <label className="input-label">
-              Array de <code>UiElement[]</code> ou objeto com campo <code>elements</code> / <code>ui</code>
+              Or paste <code>UiElement[]</code> / object with <code>ui</code> field
             </label>
             <textarea
               className="textarea-field"
-              rows={10}
-              placeholder={`[\n  {\n    "id": "btn_save",\n    "type": "button",\n    "text": "Salvar",\n    "coordenadas": [120, 80, 90, 32]\n  }\n]`}
+              rows={8}
+              placeholder={`[\n  {\n    "id": "btn_save",\n    "type": "button",\n    "text": "Save",\n    "coordenadas": [120, 80, 90, 32]\n  }\n]`}
               value={jsonInput}
               onChange={(e) => { setJsonInput(e.target.value); setError(""); }}
               style={{ fontFamily: "var(--font-mono, monospace)", fontSize: "0.78rem" }}
             />
           </div>
+
           <div style={{ display: "flex", gap: "var(--spacing-sm)" }}>
             <button
               className="btn-secondary"
               style={{ fontSize: "0.78rem", flex: 1 }}
               onClick={() => setJsonInput(formatJson(jsonInput))}
             >
-              ✨ Formatar
+              ✨ Format
             </button>
             <button
               className="btn-secondary"
               style={{ fontSize: "0.78rem", flex: 1 }}
-              onClick={() => { setJsonInput(""); setError(""); }}
+              onClick={() => { setJsonInput(""); setJsonFileName(""); setError(""); }}
             >
-              🗑️ Limpar
+              🗑️ Clear
             </button>
           </div>
         </div>
 
-        {/* Opções visuais */}
+        {/* Visual options */}
         <div className="panel-section">
           <div className="section-header">
             <h2 className="section-title">🎨 Visual</h2>
           </div>
 
           <div className="input-group">
-            <label className="input-label">Cor do stroke</label>
+            <label className="input-label">Stroke colour</label>
             <div style={{ display: "flex", gap: "var(--spacing-sm)", alignItems: "center" }}>
               <input
                 type="color"
@@ -221,12 +254,9 @@ export function AnnotationPanel({ apiBase }: Props) {
           </div>
 
           <div className="input-group">
-            <label className="input-label">Opacidade do fill: {fillOpacity}%</label>
+            <label className="input-label">Fill opacity: {fillOpacity}%</label>
             <input
-              type="range"
-              min={0}
-              max={60}
-              step={1}
+              type="range" min={0} max={60} step={1}
               value={fillOpacity}
               onChange={(e) => setFillOpacity(Number(e.target.value))}
               style={{ width: "100%" }}
@@ -239,17 +269,17 @@ export function AnnotationPanel({ apiBase }: Props) {
               checked={includeLabel}
               onChange={(e) => setIncludeLabel(e.target.checked)}
             />
-            Incluir labels nas anotações
+            Include labels in annotations
           </label>
         </div>
 
-        {/* Botão */}
+        {/* Submit */}
         <button
           className="btn-primary"
           onClick={handleSubmit}
           disabled={loading || !imageBase64 || !jsonInput.trim()}
         >
-          {loading ? "⏳ Gerando..." : "🖊️ Gerar anotação"}
+          {loading ? "⏳ Generating..." : "🖊️ Generate annotation"}
         </button>
 
       </aside>
@@ -257,48 +287,73 @@ export function AnnotationPanel({ apiBase }: Props) {
       {/* ── Main ── */}
       <main className="results-panel">
 
-        {/* Tabs de resultado */}
+        {/* Top bar */}
         <div className="main-tabs">
           <button
             className={`main-tab ${activeTab === "result" ? "active" : ""}`}
             onClick={() => setActiveTab("result")}
           >
-            🗺️ Imagem anotada
+            🗺️ Annotated image
           </button>
           <button
             className={`main-tab ${activeTab === "json" ? "active" : ""}`}
             onClick={() => setActiveTab("json")}
           >
-            📋 JSON enviado
+            📋 JSON sent
           </button>
 
+          {/* Variant picker + meta + download — visible only when there is a result */}
           {result && (
-            <div style={{ marginLeft: "auto", display: "flex", gap: "var(--spacing-xs)", alignItems: "center" }}>
-              <span style={{ fontSize: "0.72rem", color: "var(--text-tertiary)" }}>
-                {result.elementsCount} elemento(s) · {result.width}×{result.height}px
-              </span>
+            <div style={{ marginLeft: "auto", display: "flex", gap: "var(--spacing-sm)", alignItems: "center", flexWrap: "wrap" }}>
+
+              {/* pixels / scaled toggle */}
+              <div style={{ display: "flex", gap: 4 }}>
+                {(["scaled", "pixels"] as ResultVariant[]).map((v) => (
+                  <button
+                    key={v}
+                    className="btn-secondary"
+                    style={{
+                      fontSize: "0.72rem",
+                      padding: "0.2rem 0.6rem",
+                      ...(resultVariant === v
+                        ? { borderColor: "var(--accent-primary)", color: "var(--accent-primary)", fontWeight: 600 }
+                        : {}),
+                    }}
+                    onClick={() => setResultVariant(v)}
+                  >
+                    {v === "scaled" ? "🔍 Scaled" : "📐 Pixels"}
+                  </button>
+                ))}
+              </div>
+
+              {activeVariant && (
+                <span style={{ fontSize: "0.72rem", color: "var(--text-tertiary)" }}>
+                  {activeVariant.elementsCount} element(s) · {activeVariant.width}×{activeVariant.height}px
+                </span>
+              )}
+
               <button
                 className="btn-secondary"
                 style={{ fontSize: "0.78rem", padding: "0.25rem 0.7rem" }}
-                onClick={handleDownload}
+                onClick={() => handleDownload(resultVariant)}
               >
-                ⬇️ Baixar PNG
+                ⬇️ Download PNG
               </button>
             </div>
           )}
         </div>
 
-        {/* Preview da imagem original (antes do request) */}
+        {/* Original image preview (before submit) */}
         {previewUrl && !result && (
           <div style={{ padding: "0 var(--spacing-lg)" }}>
             <p style={{ fontSize: "0.75rem", color: "var(--text-tertiary)", marginBottom: "var(--spacing-xs)" }}>
-              Pré-visualização da imagem original
+              Original image preview
             </p>
             <img src={previewUrl} alt="preview" className="image-preview" />
           </div>
         )}
 
-        {/* Erro */}
+        {/* Error */}
         {error && (
           <div style={{ padding: "0 var(--spacing-lg)" }}>
             <div className="alert danger">{error}</div>
@@ -309,19 +364,19 @@ export function AnnotationPanel({ apiBase }: Props) {
         {loading && (
           <div className="loading-state">
             <div className="spinner" />
-            <p>Gerando imagem anotada no servidor...</p>
+            <p>Generating annotated image on the server...</p>
           </div>
         )}
 
-        {/* Resultado */}
+        {/* Result */}
         {!loading && result && (
           <div className="results-content">
 
-            {activeTab === "result" && (
+            {activeTab === "result" && activeVariant && (
               <div style={{ padding: "0 var(--spacing-lg)" }}>
                 <img
-                  src={result.dataUri}
-                  alt="imagem anotada"
+                  src={activeVariant.dataUri}
+                  alt={`annotated ${resultVariant}`}
                   className="image-preview"
                   style={{ maxWidth: "100%", borderRadius: 8, border: "1px solid var(--border-color)" }}
                 />
@@ -337,12 +392,16 @@ export function AnnotationPanel({ apiBase }: Props) {
           </div>
         )}
 
-        {/* Estado vazio */}
+        {/* Empty state */}
         {!loading && !result && !previewUrl && (
           <div className="empty-state">
             <span className="empty-icon">🖊️</span>
-            <h3>Anotação manual</h3>
-            <p>Selecione uma imagem e cole o JSON de elementos para gerar uma visualização anotada pelo servidor.</p>
+            <h3>Manual Annotator</h3>
+            <p>
+              Select an image, upload or paste the elements JSON, then click
+              <strong> Generate annotation</strong> to produce both a pixels and a
+              scaled annotated image.
+            </p>
           </div>
         )}
 

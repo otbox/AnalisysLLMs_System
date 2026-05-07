@@ -9,11 +9,10 @@ import {
   type StepResponse,
   type UiElement,
 } from "../types";
-import { ModelSelector }         from "./ModelSelector";
-import { CleanupSection }        from "./CleanupSection";
-import { ResultViewer }          from "./ResultViewer";
-import { BatchPanel }            from "./BatchPanel";
-import { AnnotatedImageViewer }  from "./AnnotatedImageViewer";
+import { ModelSelector }  from "./ModelSelector";
+import { CleanupSection } from "./CleanupSection";
+import { ResultViewer }   from "./ResultViewer";
+import { BatchPanel }     from "./BatchPanel";
 
 interface Props {
   profile:        ProfileConfig;
@@ -23,7 +22,7 @@ interface Props {
   onModelsChange: (models: string[]) => void;
 }
 
-type InputTab = "single" | "batch" | "paired";
+type InputTab = "single" | "batch";
 
 export function ProfilePanel({
   profile, sessionId, apiBase, selectedModels, onModelsChange,
@@ -31,43 +30,32 @@ export function ProfilePanel({
   const [objective, setObjective] = useState(profile.defaultObjective);
 
   // ── Step index ──────────────────────────────────────────────────────────────
-  // stepIndexInput: the value shown in the text-field (user-editable string).
-  // stepCounter:    the authoritative counter — advanced after each successful call.
-  // They stay in sync UNLESS the user manually edits the field, in which case
-  // the next submission uses the user-provided value and counter jumps there.
-  const stepCounter                        = useRef(1);
+  const stepCounter                         = useRef(1);
   const [stepIndexInput, setStepIndexInput] = useState<string>("1");
 
-  const [llmAPI, setLlmAPI]     = useState<LLMAPI>("GEMINI");
-  const [inputTab, setInputTab] = useState<InputTab>("single");
+  const [llmAPI,    setLlmAPI]    = useState<LLMAPI>("GEMINI");
+  const [inputTab,  setInputTab]  = useState<InputTab>("single");
 
   // Single image
   const [imageBase64, setImageBase64] = useState("");
-  const [fileName, setFileName]       = useState("");
-  const [previewUrl, setPreviewUrl]   = useState("");
-
-  // Image + JSON (paired)
-  const [jsonFileName, setJsonFileName]             = useState("");
-  const [jsonText, setJsonText]                     = useState("");
-  const [annotationPixels, setAnnotationPixels]     = useState<string | null>(null);
-  const [annotationScaled, setAnnotationScaled]     = useState<string | null>(null);
-  const [annotationElements, setAnnotationElements] = useState<UiElement[]>([]);
+  const [fileName,    setFileName]    = useState("");
+  const [previewUrl,  setPreviewUrl]  = useState("");
 
   // Cleanup
-  const [idsToRemoveInput, setIdsToRemoveInput]       = useState("");
-  const [detectedIds, setDetectedIds]                 = useState<string[]>([]);
+  const [idsToRemoveInput,    setIdsToRemoveInput]    = useState("");
+  const [detectedIds,         setDetectedIds]         = useState<string[]>([]);
   const [selectedIdsToRemove, setSelectedIdsToRemove] = useState<Set<string>>(new Set());
 
   // Results
-  const [result, setResult]       = useState<StepResponse | null>(null);
-  const [allResults, setAllResults] = useState<StepResponse[]>([]);
-  const [loading, setLoading]     = useState(false);
-  const [error, setError]         = useState("");
-  const [resultTab, setResultTab] = useState<ResultTab>("clean");
+  const [result,      setResult]      = useState<StepResponse | null>(null);
+  const [allResults,  setAllResults]  = useState<StepResponse[]>([]);
+  const [loading,     setLoading]     = useState(false);
+  const [error,       setError]       = useState("");
+  const [resultTab,   setResultTab]   = useState<ResultTab>("clean");
 
   // Batch
-  const [batchQueue, setBatchQueue]             = useState<QueueItem[]>([]);
-  const [isProcessingBatch, setIsProcessingBatch] = useState(false);
+  const [batchQueue,         setBatchQueue]         = useState<QueueItem[]>([]);
+  const [isProcessingBatch,  setIsProcessingBatch]  = useState(false);
   const batchRunning = useRef(false);
 
   // ── Helpers ─────────────────────────────────────────────────────────────────
@@ -89,56 +77,6 @@ export function ProfilePanel({
       ...selectedIdsToRemove,
     ]),
   ];
-
-  const handleJsonChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    setJsonFileName(file.name);
-    const reader = new FileReader();
-    reader.onload = () => setJsonText(reader.result as string);
-    reader.readAsText(file);
-  };
-
-  const handleSubmitPaired = async () => {
-    if (!imageBase64) { setError("Select an image."); return; }
-    if (!jsonText.trim()) { setError("Select a JSON file."); return; }
-
-    setLoading(true);
-    setError("");
-
-    let analysis: unknown = null;
-    try { analysis = JSON.parse(jsonText); }
-    catch { analysis = { elementsRaw: jsonText }; }
-
-    try {
-      const res = await fetch(`${apiBase}/annotations`, {
-        method:  "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ imageBase64, analysis, includeLabel: true }),
-      });
-
-      if (!res.ok) {
-        const body = await res.json().catch(() => ({}));
-        throw new Error((body as any)?.message ?? `HTTP ${res.status}`);
-      }
-
-      const data = await res.json();
-
-      // Backend now returns { pixels, scaled, dataUri }
-      setAnnotationPixels(data.pixels?.dataUri ?? data.dataUri ?? null);
-      setAnnotationScaled(data.scaled?.dataUri ?? null);
-
-      if (Array.isArray(analysis)) {
-        setAnnotationElements(analysis as UiElement[]);
-      } else if ((analysis as any)?.ui) {
-        setAnnotationElements((analysis as any).ui as UiElement[]);
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Error calling /annotations.");
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const toggleIdToRemove = (id: string) =>
     setSelectedIdsToRemove((prev) => {
@@ -190,27 +128,23 @@ export function ProfilePanel({
   // ── API call ─────────────────────────────────────────────────────────────────
 
   const callAPI = async (
-    img:        string,
-    file:       string,
-    step:       number,
+    img:         string,
+    file:        string,
+    step:        number,
     idsToRemove: string[],
   ): Promise<StepResponse> => {
     const res = await fetch(`${apiBase}/sessions/${sessionId}/steps`, {
       method:  "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        LLMAPI:     llmAPI,
-        models:     selectedModels,
-        profiles:   [profile.key] as ProfileKey[],
+        LLMAPI:      llmAPI,
+        models:      selectedModels,
+        profiles:    [profile.key] as ProfileKey[],
         objective,
-        stepIndex:  step,
+        stepIndex:   step,
         imageBase64: img,
-        fileName:   file,
+        fileName:    file,
         idsToRemove,
-        // coordScale is intentionally omitted here so the backend
-        // uses GLOBAL_COORD_SCALE defined in server.ts.
-        // Pass it explicitly only when you need a per-request override:
-        // coordScale: "pixels",
       }),
     });
 
@@ -221,10 +155,10 @@ export function ProfilePanel({
     return res.json();
   };
 
-  // ── Submit single image ──────────────────────────────────────────────────────
+  // ── Submit single ───────────────────────────────────────────────────────────
 
   const handleSubmit = async () => {
-    if (!imageBase64)       return setError("Select an image.");
+    if (!imageBase64)           return setError("Select an image.");
     if (!selectedModels.length) return setError("Select at least one model.");
 
     setLoading(true); setError(""); setResult(null);
@@ -232,7 +166,7 @@ export function ProfilePanel({
 
     try {
       const response = await callAPI(imageBase64, fileName, currentStep, idsToRemoveArray());
-      advanceStep();           // advance ONLY after a successful call
+      advanceStep();
       setResult(response);
       setAllResults((prev) => [...prev, response]);
       const ids = response.results
@@ -247,7 +181,7 @@ export function ProfilePanel({
     }
   };
 
-  // ── Batch processing ─────────────────────────────────────────────────────────
+  // ── Batch ──────────────────────────────────────────────────────────────────
 
   const processBatch = useCallback(() => {
     if (batchRunning.current) return;
@@ -262,10 +196,10 @@ export function ProfilePanel({
           setIsProcessingBatch(false);
           return prev;
         }
-        const updated  = [...prev];
-        updated[idx]   = { ...updated[idx], status: "running" };
-        const item     = updated[idx];
-        const step     = resolvedStepIndex();
+        const updated = [...prev];
+        updated[idx]  = { ...updated[idx], status: "running" };
+        const item    = updated[idx];
+        const step    = resolvedStepIndex();
 
         (async () => {
           try {
@@ -341,7 +275,7 @@ export function ProfilePanel({
             />
           </div>
 
-          {/* Step Index — fully user-editable */}
+          {/* Step Index */}
           <div className="input-group">
             <label className="input-label">Step Index</label>
             <input
@@ -352,9 +286,7 @@ export function ProfilePanel({
               onChange={(e) => {
                 setStepIndexInput(e.target.value);
                 const parsed = parseInt(e.target.value, 10);
-                if (Number.isFinite(parsed) && parsed >= 1) {
-                  stepCounter.current = parsed;
-                }
+                if (Number.isFinite(parsed) && parsed >= 1) stepCounter.current = parsed;
               }}
             />
             <span style={{ fontSize: "0.75rem", color: "var(--text-tertiary)" }}>
@@ -409,16 +341,16 @@ export function ProfilePanel({
       <main className="results-panel">
 
         <div className="tabs">
-          {(["single", "batch", "paired"] as InputTab[]).map((tab) => (
+          {(["single", "batch"] as InputTab[]).map((tab) => (
             <button
               key={tab}
               type="button"
               className={inputTab === tab ? "tab tab-active" : "tab"}
               onClick={() => setInputTab(tab)}
             >
-              {tab === "single" ? "🖼️ Single image"
-                : tab === "batch" ? `📁 Folder (batch)${batchQueue.length > 0 ? ` (${batchQueue.length})` : ""}`
-                : "🖼️ + 🧾 Image + JSON"}
+              {tab === "single"
+                ? "🖼️ Single image"
+                : `📁 Folder (batch)${batchQueue.length > 0 ? ` (${batchQueue.length})` : ""}`}
             </button>
           ))}
         </div>
@@ -446,7 +378,11 @@ export function ProfilePanel({
             )}
 
             <div className="input-bar">
-              <button className="btn-primary" onClick={handleSubmit} disabled={loading || !imageBase64}>
+              <button
+                className="btn-primary"
+                onClick={handleSubmit}
+                disabled={loading || !imageBase64}
+              >
                 {loading ? "⏳ Analysing..." : "🚀 Analyse"}
               </button>
             </div>
@@ -474,76 +410,6 @@ export function ProfilePanel({
               onStart={processBatch}
               onClear={() => { if (!isProcessingBatch) setBatchQueue([]); }}
             />
-          </div>
-        )}
-
-        {/* ── Paired (Image + JSON) ── */}
-        {inputTab === "paired" && (
-          <div className="space-y-3" style={{ padding: "var(--spacing-lg)" }}>
-
-            <div className="input-group">
-              <label className="input-label">Image</label>
-              <input type="file" accept="image/*" className="input-field" onChange={handleImageChange} />
-              {previewUrl && (
-                <img src={previewUrl} alt="preview" className="image-preview" style={{ marginTop: 8 }} />
-              )}
-            </div>
-
-            <div className="input-group">
-              <label className="input-label">UI JSON</label>
-              <input type="file" accept="application/json" className="input-field" onChange={handleJsonChange} />
-              {jsonFileName && (
-                <span style={{ fontSize: "0.75rem", color: "var(--text-tertiary)" }}>
-                  Selected: {jsonFileName}
-                </span>
-              )}
-            </div>
-
-            {error && <div className="alert danger">{error}</div>}
-
-            <button
-              type="button"
-              onClick={handleSubmitPaired}
-              disabled={loading}
-              className="btn-primary"
-            >
-              {loading ? "⏳ Sending..." : "🚀 Annotate image + JSON"}
-            </button>
-
-            {/* Pixels image (original resolution) */}
-            {annotationPixels && (
-              <div style={{ marginTop: 16 }}>
-                <h3 style={{ fontSize: "0.9rem", fontWeight: 600, marginBottom: 4 }}>
-                  Annotated — pixels (original resolution)
-                </h3>
-                <img src={annotationPixels} alt="Annotated pixels" style={{ maxWidth: "100%", borderRadius: 6, border: "1px solid var(--border-color)" }} />
-              </div>
-            )}
-
-            {/* Scaled image (display viewport) */}
-            {annotationScaled && (
-              <div style={{ marginTop: 16 }}>
-                <h3 style={{ fontSize: "0.9rem", fontWeight: 600, marginBottom: 4 }}>
-                  Annotated — scaled (display viewport)
-                </h3>
-                <img src={annotationScaled} alt="Annotated scaled" style={{ maxWidth: "100%", borderRadius: 6, border: "1px solid var(--border-color)" }} />
-              </div>
-            )}
-
-            {/* Interactive viewer */}
-            {annotationElements.length > 0 && (
-              <div style={{ marginTop: 16 }}>
-                <h3 style={{ fontSize: "0.9rem", fontWeight: 600, marginBottom: 4 }}>
-                  Interactive viewer
-                </h3>
-                <AnnotatedImageViewer
-                  imageBase64={imageBase64}
-                  elements={annotationElements}
-                  coordScale="pixels"
-                />
-              </div>
-            )}
-
           </div>
         )}
 
