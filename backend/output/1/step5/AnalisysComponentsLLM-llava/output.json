@@ -1,0 +1,11 @@
+{
+  "action": "",
+  "rationale": "",
+  "numberOfComponents": 0,
+  "confidence": 0,
+  "rawResponse": {
+    "message": {
+      "content": " Aqui está o JSON estruturado com base na imagem fornecida:\n```json\n[   {      \"id\": \"header\",      \"type\": \"text\",      \"coordenadas\": [0, 0, 1320, 642],      \"actions\": []   },   {      \"id\": \"search_input\",      \"type\": \"input\",      \"coordenadas\": [508, 347, 814, 504],      \"text\": null   },   {      \"id\": \"search_icon\",      \"type\": \"icon\",      \"coordenadas\": [628, 329, 836, 504],      \"actions\": []   },   {      \"id\": \"logo\",      \"type\": \"image\",      \"coordenadas\": [137, 372, 480, 539],      \"actions\": []   },   {      \"id\": \"nav_bar\",      \"type\": \"divider\",      \"coordenadas\": [0, 463, 1320, 641],      \"actions\": []   },   {      \"id\": \"user_profile_avatar\",      \"type\": \"image\",      \"coordenadas\": [973, 383, 1325, 650],      \"actions\": []   },   {      \"id\": \"notification_badge\",      \"type\": \"badge\",      \"coordenadas\": [797, 417, 970, 642],      \"text\": null,      \"actions\": []   }]\n```\nNote que a imagem fornecida foi analisada em faixas horizontais e identificados os componentes de UI visíveis da esquerda para a direita. Cada elemento interativo ou informativo é um item separado no JSON, como \"search\\_input\", \"search\\_icon\", \"logo\", \"nav\\_bar\", \"user\\_profile\\_avatar\" e \"notification\\_badge\". As coordenadas de cada elemento são fornecidas em pixels reais da imagem, atendendo às regras estabelecidas. "
+    }
+  }
+}

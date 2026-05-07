@@ -1,0 +1,39 @@
+{
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"menu_arquivo\",\n    \"type\": \"menu\",\n    \"text\": \"Arquivo\",\n    \"coordenadas\": [0, 0, 50, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_editar\",\n    \"type\": \"menu\",\n    \"text\": \"Editar\",\n    \"coordenadas\": [50, 0, 46, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_exibir\",\n    \"type\": \"menu\",\n    \"text\": \"Exibir\",\n    \"coordenadas\": [96, 0, 46, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_inserir\",\n    \"type\": \"menu\",\n    \"text\": \"Inserir\",\n    \"coordenadas\": [142, 0, 50, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_formatar\",\n    \"type\": \"menu\",\n    \"text\": \"Formatar\",\n    \"coordenadas\": [192, 0, 62, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_estilos\",\n    \"type\": \"menu\",\n    \"text\": \"Estilos\",\n    \"coordenadas\": [254, 0, 48, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_tabela\",\n    \"type\": \"menu\",\n    \"text\": \"Tabela\",\n    \"coordenadas\": [302, 0, 48, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_formulario\",\n    \"type\": \"menu\",\n    \"text\": \"Formulário\",\n    \"coordenadas\": [350, 0, 68, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_ferramentas\",\n    \"type\": \"menu\",\n    \"text\": \"Ferramentas\",\n    \"coordenadas\": [418, 0, 78, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_janela\",\n    \"type\": \"menu\",\n    \"text\": \"Janela\",\n    \"coordenadas\": [496, 0, 54, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_ajuda\",\n    \"type\": \"menu\",\n    \"text\": \"Ajuda\",\n    \"coordenadas\": [550, 0, 44, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"text_"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1115,
+      "candidatesTokenCount": 787,
+      "totalTokenCount": 21101,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 857
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 19199
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "94XpaYaSKqP7qtsPkPDzgAw"
+  }
+}

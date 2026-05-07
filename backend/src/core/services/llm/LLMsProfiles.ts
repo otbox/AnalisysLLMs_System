@@ -1,4 +1,4 @@
-import { v5pixels, v5scale, v6pixels, v6PixelsEn } from "./profiles/AnalisysProfiles";
+import { v5pixels, v5scale, v6pixels, v6PixelsEn, v5scaleEn } from './profiles/AnalisysProfiles';
 
 export type ProfileKey =
   | "GuideLLM"

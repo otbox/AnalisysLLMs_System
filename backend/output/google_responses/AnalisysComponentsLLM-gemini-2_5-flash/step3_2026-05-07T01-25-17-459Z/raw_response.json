@@ -1,0 +1,314 @@
+[
+  {
+    "id": "link_arquivo",
+    "type": "link",
+    "text": "Arquivo",
+    "coordenadas": [36, 20, 36, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_editar",
+    "type": "link",
+    "text": "Editar",
+    "coordenadas": [78, 20, 33, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_exibir",
+    "type": "link",
+    "text": "Exibir",
+    "coordenadas": [119, 20, 32, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_inserir",
+    "type": "link",
+    "text": "Inserir",
+    "coordenadas": [159, 20, 37, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_formatar",
+    "type": "link",
+    "text": "Formatar",
+    "coordenadas": [204, 20, 45, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_estilos",
+    "type": "link",
+    "text": "Estilos",
+    "coordenadas": [257, 20, 36, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_tabela",
+    "type": "link",
+    "text": "Tabela",
+    "coordenadas": [300, 20, 35, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_formulario",
+    "type": "link",
+    "text": "Formulário",
+    "coordenadas": [342, 20, 51, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_ferramentas",
+    "type": "link",
+    "text": "Ferramentas",
+    "coordenadas": [402, 20, 55, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_janela",
+    "type": "link",
+    "text": "Janela",
+    "coordenadas": [464, 20, 39, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_ajuda",
+    "type": "link",
+    "text": "Ajuda",
+    "coordenadas": [511, 20, 30, 31],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_new",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [36, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_open",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [59, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_save",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [82, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_print",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [105, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_print_preview",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [127, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_cut",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [158, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_copy",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [180, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_paste",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [203, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_format_painter",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [226, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_undo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [271, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_redo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [294, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_find_replace",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [317, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_navigator",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [340, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_gallery",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [362, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_styles",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [385, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_table",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [408, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_insert_image",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [430, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_insert_chart",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [453, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_insert_text_box",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [476, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_insert_page_break",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [498, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_insert_hyperlink",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [521, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_insert_comment",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [544, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_special_characters",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [567, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_drawing_objects",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [589, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_show_hide_formatting_marks",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [612, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_zoom",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [635, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_help",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [658, 70, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "select_style",
+    "type": "select",
+    "text": "Título do documento",
+    "coordenadas": [36, 120, 106, 37],
+    "actions": ["onChange"]
+  },
+  {
+    "id": "icon_paragraph_style",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [150, 120, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_character_style",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [173, 120, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "select_font",
+    "type": "select",
+    "text": "Liberation Sans",
+    "coordenadas": [203, 120, 106, 37],
+    "actions": ["onChange"]
+  },
+  {
+    "id": "select_font_size",
+    "type": "select",
+    "text": "28 pt",
+    "coordenadas": [317, 120, 45, 37],
+    "actions": ["onChange"]
+  },
+  {
+    "id": "button_bold",
+    "type": "button",
+    "text": "N",
+    "coordenadas": [377, 120, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "button_italic",
+    "type": "button",
+    "text": "I",
+    "coordenadas": [4

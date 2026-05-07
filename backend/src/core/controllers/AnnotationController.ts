@@ -11,7 +11,7 @@ export class AnnotationController {
       const {
         imageBase64,
         analysis,
-        coordScale = "pixels",
+        coordScale = "normalized-1000",
         llmBaseWidth,
         llmBaseHeight,
         includeLabel = true,

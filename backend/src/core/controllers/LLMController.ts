@@ -1,6 +1,6 @@
 // LLMController.ts
 import { classifyLLMError }          from "../services/ErrorHandler";
-import { LlmImageAnnotatorService } from "../services/ImageAnnotationScale";
+import { CoordScale, LlmImageAnnotatorService } from "../services/ImageAnnotationScale";
 import { ILLMService }               from "../services/llm/ILLMService";
 import { ProfileKey }                from "../services/llm/LLMsProfiles";
 import { QueueService }              from "../services/QueueService";
@@ -103,6 +103,7 @@ export class StepController {
     model:       string,
     stepIndex:   number,
     imageBase64: string,
+    coordScale : CoordScale,
     data: { output: unknown; full: unknown; clean: unknown },
   ): Promise<void> {
     const safeModel = model.replace(/[^a-zA-Z0-9_\-]/g, "_");
@@ -122,8 +123,12 @@ export class StepController {
 
     // ── Imagens anotadas ──────────────────────────────────────────────────────
 
-    await this.saveImages(imageBase64, annotatorImage, data, model, path.join(dir, "pixels"), "pixels");
-    // await this.saveImages(imageBase64, annotatorScale, data, model, path.join(dir, "scaled"), "normalized-1000");
+    if (coordScale == "pixels") {
+      await this.saveImages(imageBase64, annotatorImage, data, model, path.join(dir, "pixels"), "pixels");
+    } 
+    if (coordScale == "normalized-1000") {
+      await this.saveImages(imageBase64, annotatorImage, data, model, path.join(dir, "scaled"), "normalized-1000");
+    }
 
     console.log(`[StepController] ✅ step${stepIndex} | ${profile} | ${model} → ${dir}`);
   }
@@ -162,8 +167,10 @@ export class StepController {
               idsToRemove,
             );
 
+            const typeCoordScaleDefault  : CoordScale = "normalized-1000"
+
             // Salva em background — não bloqueia a resposta HTTP
-            this.saveResults(fileName, profileKey, model, stepIndex, imageBase64, { output, full, clean })
+            this.saveResults(fileName, profileKey, model, stepIndex, imageBase64, "normalized-1000", { output, full, clean })
               .catch((err) =>
                 console.error(`[StepController] saveResults falhou (${model}):`, err)
               );

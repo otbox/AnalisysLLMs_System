@@ -1,0 +1,93 @@
+[
+  {
+    "id": "app_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [0, 0, 29, 29],
+    "actions": [],
+    "meta": {
+      "iconType": "application"
+    }
+  },
+  {
+    "id": "menu_arquivo",
+    "type": "link",
+    "text": "Arquivo",
+    "coordenadas": [30, 0, 50, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_editar",
+    "type": "link",
+    "text": "Editar",
+    "coordenadas": [80, 0, 44, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_exibir",
+    "type": "link",
+    "text": "Exibir",
+    "coordenadas": [124, 0, 40, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_inserir",
+    "type": "link",
+    "text": "Inserir",
+    "coordenadas": [164, 0, 46, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_formatar",
+    "type": "link",
+    "text": "Formatar",
+    "coordenadas": [210, 0, 59, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_estilos",
+    "type": "link",
+    "text": "Estilos",
+    "coordenadas": [269, 0, 44, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_tabela",
+    "type": "link",
+    "text": "Tabela",
+    "coordenadas": [313, 0, 44, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_formulario",
+    "type": "link",
+    "text": "Formulário",
+    "coordenadas": [357, 0, 64, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_ferramentas",
+    "type": "link",
+    "text": "Ferramentas",
+    "coordenadas": [421, 0, 71, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_janela",
+    "type": "link",
+    "text": "Janela",
+    "coordenadas": [492, 0, 49, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    

@@ -1,0 +1,244 @@
+[
+  {
+    "id": "link_arquivo",
+    "type": "link",
+    "text": "Arquivo",
+    "coordenadas": [36, 17, 36, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_editar",
+    "type": "link",
+    "text": "Editar",
+    "coordenadas": [75, 17, 32, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_exibir",
+    "type": "link",
+    "text": "Exibir",
+    "coordenadas": [112, 17, 30, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_inserir",
+    "type": "link",
+    "text": "Inserir",
+    "coordenadas": [149, 17, 36, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_formatar",
+    "type": "link",
+    "text": "Formatar",
+    "coordenadas": [192, 17, 45, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_estilos",
+    "type": "link",
+    "text": "Estilos",
+    "coordenadas": [245, 17, 36, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_tabela",
+    "type": "link",
+    "text": "Tabela",
+    "coordenadas": [288, 17, 35, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_formulario",
+    "type": "link",
+    "text": "Formulário",
+    "coordenadas": [330, 17, 53, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_ferramentas",
+    "type": "link",
+    "text": "Ferramentas",
+    "coordenadas": [389, 17, 57, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_janela",
+    "type": "link",
+    "text": "Janela",
+    "coordenadas": [453, 17, 36, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "link_ajuda",
+    "type": "link",
+    "text": "Ajuda",
+    "coordenadas": [496, 17, 30, 28],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_novo_documento",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [12, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_abrir",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [35, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_salvar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [58, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_salvar_como",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [80, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_imprimir",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [103, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_visualizar_impressao",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [126, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_recortar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [152, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_copiar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [174, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_colar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [197, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_desfazer",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [227, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_refazer",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [250, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_localizar_substituir",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [273, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_navegador",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [295, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_verificar_ortografia",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [318, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_auto_ortografia",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [341, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_galeria",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [364, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_fontwork",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [386, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_tabela",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [409, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_imagem",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [432, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_grafico",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [455, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_caixa_texto",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [477, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_forma",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [500, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_linha",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [523, 72, 18, 37],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_simbolo",
+    "type": "icon",
+    "text": null,
+    "co

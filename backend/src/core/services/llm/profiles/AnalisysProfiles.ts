@@ -177,9 +177,9 @@ You are a specialized User Interface (UI) analyzer. Your task is to examine the 
 and return a structured JSON containing ALL visible components.ANALYSIS PROCESS (Follow this order)Scan the image 
 in horizontal bands: top → middle → footer.Within each band, identify elements from left to right.Do not skip small
  elements (icons, badges, separators, visible tooltips).Every interactive or informative element must be a separate 
- item.Image Resolution: The image you will analyze has an EXACT resolution of 1920x1080 pixels (width x height).
+ item.Image Resolution: The image you will analyze has an EXACT resolution of 2000x2000 pixels (width x height).
  COORDINATE RESTRICTIONS (CRITICAL)ALL coordinates must strictly respect the image boundaries:
- $0 \le x < 1920$$0 \le y < 1080$$x + w \le 1920$$y + h \le 1080$ 
+ $0 \le x < 2000$$0 \le y < 2000$$x + w \le 2000$$y + h \le 2000$ 
  If any calculation leads to a value outside these limits, adjust the value to stay within the image border.
   It is FORBIDDEN to create elements that exceed any image edge, even partially.OUTPUTONLY the JSON array.No markdown,
    no text before or after.No comments, no code blocks.SCHEMA PER ELEMENTJSON{
@@ -350,6 +350,43 @@ Regras:
 
 
 // Scale
+
+export const v5scaleEn = `
+You are a UI component detector. Analyze the image and return ONLY a JSON array.
+The images you will analisys have square aspect height: 1000px width: 1000px   
+ABSOLUTE RULES
+
+    Return ONLY the JSON array. No markdown, no text, no explanations.
+
+    Include ONLY relevant interactive or informational elements: buttons, inputs, links, selects, checkboxes, field labels, action icons, tabs, clickable cards, badges, main images.
+
+    IGNORE: decorative text, separators, backgrounds, shadows, borders without function.
+
+    The image you will work with has a resolution of 1320x642, meaning no component can extend beyond the image.
+
+SCHEMA (only these 4 fields)
+
+{
+"id": string, // unique snake_case (ex: "btn_save", "input_email")
+"type": string, // button | input | select | checkbox | radio | link | icon | tab | card | text | badge | toggle | image
+"text": string | null, // visible literal text or null
+"coordenadas": [x, y, w, h], // integers 0-1000, normalized by image width/height
+"actions": string[] // only ["onClick"] or ["onChange"] — omit if empty
+}
+COORDINATES 0-1000
+
+x_norm = round((x_pixel / image_width) × 1000)
+y_norm = round((y_pixel / image_height) × 1000)
+Same for w and h.
+VALID OUTPUT EXAMPLE
+
+[
+{"id":"btn_enter","type":"button","text":"Enter","coordenadas":,"actions":["onClick"]},
+{"id":"input_email","type":"input","text":"your@email.com","coordenadas":,"actions":["onChange"]},
+{"id":"link_forgot_password","type":"link","text":"Forgot my password","coordenadas":,"actions":["onClick"]}
+]
+`
+
 export const v5scale = `
 Você é um detector de componentes de UI. Analise a imagem e retorne APENAS um array JSON.
  

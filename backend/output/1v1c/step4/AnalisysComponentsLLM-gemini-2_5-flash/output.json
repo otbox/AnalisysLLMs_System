@@ -1,0 +1,40 @@
+{
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"link_arquivo\",\n    \"type\": \"link\",\n    \"text\": \"Arquivo\",\n    \"coordenadas\": [36, 46, 44, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_editar\",\n    \"type\": \"link\",\n    \"text\": \"Editar\",\n    \"coordenadas\": [88, 46, 38, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_exibir\",\n    \"type\": \"link\",\n    \"text\": \"Exibir\",\n    \"coordenadas\": [136, 46, 38, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_inserir\",\n    \"type\": \"link\",\n    \"text\": \"Inserir\",\n    \"coordenadas\": [184, 46, 42, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_formatar\",\n    \"type\": \"link\",\n    \"text\": \"Formatar\",\n    \"coordenadas\": [234, 46, 54, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_estilos\",\n    \"type\": \"link\",\n    \"text\": \"Estilos\",\n    \"coordenadas\": [298, 46, 42, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_tabela\",\n    \"type\": \"link\",\n    \"text\": \"Tabela\",\n    \"coordenadas\": [348, 46, 40, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_formulario\",\n    \"type\": \"link\",\n    \"text\": \"Formulário\",\n    \"coordenadas\": [396, 46, 60, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_ferramentas\",\n    \"type\": \"link\",\n    \"text\": \"Ferramentas\",\n    \"coordenadas\": [468, 46, 66, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_janela\",\n    \"type\": \"link\",\n    \"text\": \"Janela\",\n    \"coordenadas\": [542, 46, 40, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_ajuda\",\n    \"type\": \"link\",\n    \"text\": \"Ajuda\",\n    \"coordenadas\": [590, 46, 34, 15],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_new_document\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [10, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_open_document\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [34, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_save_document\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [58, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_save_as\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [82, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_print\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [106, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_print_preview\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [130, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_cut\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [178, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_copy\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [202, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_paste\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [226, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_format_painter\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [250, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_undo\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [300, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_redo\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [324, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_find_replace\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [374, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_navigator\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [398, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_gallery\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [422, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_styles\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [446, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_table\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [470, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_image\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [494, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_chart\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [518, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_text_box\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [542, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_shape\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [566, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_special_character\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [590, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_hyperlink\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [614, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_bookmark\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [638, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_cross_reference\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [662, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_comment\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [686, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_footnote\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [710, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_endnote\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [734, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_page_break\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [758, 84, 22, 22],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_insert_column_"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 703,
+      "candidatesTokenCount": 2609,
+      "totalTokenCount": 66222,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 445
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 62910,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "_-r7aZ2oCYfVz7IPtsWfmQI"
+  }
+}

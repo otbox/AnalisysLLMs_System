@@ -1,0 +1,90 @@
+[
+  {
+    "id": "window_title_bar",
+    "type": "text",
+    "text": "Sem título 1 — LibreOffice Writer",
+    "coordenadas": [0, 0, 1320, 30],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "window_minimize_button",
+    "type": "button",
+    "text": null,
+    "coordenadas": [1182, 0, 46, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "window_maximize_button",
+    "type": "button",
+    "text": null,
+    "coordenadas": [1228, 0, 46, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "window_close_button",
+    "type": "button",
+    "text": null,
+    "coordenadas": [1274, 0, 46, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_arquivo",
+    "type": "link",
+    "text": "Arquivo",
+    "coordenadas": [0, 30, 60, 24],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_editar",
+    "type": "link",
+    "text": "Editar",
+    "coordenadas": [60, 30, 54, 24],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_exibir",
+    "type": "link",
+    "text": "Exibir",
+    "coordenadas": [114, 30, 50, 24],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_inserir",
+    "type": "link",
+    "text": "Inserir",
+    "coordenadas": [164, 30, 56, 24],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_formatar",
+    "type": "link",
+    "text": "Formatar",
+    "coordenadas": [220, 30, 68, 24],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_estilos",
+    "type": "link",
+    "text": "Estilos",
+    "coordenadas": [288, 30, 54, 24],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_tabela",
+    "type": "link",
+    "text": "Tabela",
+    "coordenadas": [342, 30, 54, 24],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {

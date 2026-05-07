@@ -1,0 +1,39 @@
+{
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"app_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [0, 0, 29, 29],\n    \"actions\": [],\n    \"meta\": {\n      \"iconType\": \"application\"\n    }\n  },\n  {\n    \"id\": \"menu_arquivo\",\n    \"type\": \"link\",\n    \"text\": \"Arquivo\",\n    \"coordenadas\": [30, 0, 50, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_editar\",\n    \"type\": \"link\",\n    \"text\": \"Editar\",\n    \"coordenadas\": [80, 0, 44, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_exibir\",\n    \"type\": \"link\",\n    \"text\": \"Exibir\",\n    \"coordenadas\": [124, 0, 40, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_inserir\",\n    \"type\": \"link\",\n    \"text\": \"Inserir\",\n    \"coordenadas\": [164, 0, 46, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_formatar\",\n    \"type\": \"link\",\n    \"text\": \"Formatar\",\n    \"coordenadas\": [210, 0, 59, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_estilos\",\n    \"type\": \"link\",\n    \"text\": \"Estilos\",\n    \"coordenadas\": [269, 0, 44, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_tabela\",\n    \"type\": \"link\",\n    \"text\": \"Tabela\",\n    \"coordenadas\": [313, 0, 44, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_formulario\",\n    \"type\": \"link\",\n    \"text\": \"Formulário\",\n    \"coordenadas\": [357, 0, 64, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_ferramentas\",\n    \"type\": \"link\",\n    \"text\": \"Ferramentas\",\n    \"coordenadas\": [421, 0, 71, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_janela\",\n    \"type\": \"link\",\n    \"text\": \"Janela\",\n    \"coordenadas\": [492, 0, 49, 29],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    "
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1115,
+      "candidatesTokenCount": 786,
+      "totalTokenCount": 21098,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 857
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 19197
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "DYrpadb3I7C7qtsPz_eAwQ8"
+  }
+}

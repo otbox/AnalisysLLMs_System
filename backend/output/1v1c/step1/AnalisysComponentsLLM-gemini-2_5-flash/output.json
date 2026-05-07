@@ -1,0 +1,40 @@
+{
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"window_title_bar\",\n    \"type\": \"text\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"coordenadas\": [0, 0, 1320, 30],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"window_minimize_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"coordenadas\": [1182, 0, 46, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"window_maximize_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"coordenadas\": [1228, 0, 46, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"window_close_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"coordenadas\": [1274, 0, 46, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_arquivo\",\n    \"type\": \"link\",\n    \"text\": \"Arquivo\",\n    \"coordenadas\": [0, 30, 60, 24],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_editar\",\n    \"type\": \"link\",\n    \"text\": \"Editar\",\n    \"coordenadas\": [60, 30, 54, 24],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_exibir\",\n    \"type\": \"link\",\n    \"text\": \"Exibir\",\n    \"coordenadas\": [114, 30, 50, 24],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_inserir\",\n    \"type\": \"link\",\n    \"text\": \"Inserir\",\n    \"coordenadas\": [164, 30, 56, 24],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_formatar\",\n    \"type\": \"link\",\n    \"text\": \"Formatar\",\n    \"coordenadas\": [220, 30, 68, 24],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_estilos\",\n    \"type\": \"link\",\n    \"text\": \"Estilos\",\n    \"coordenadas\": [288, 30, 54, 24],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_tabela\",\n    \"type\": \"link\",\n    \"text\": \"Tabela\",\n    \"coordenadas\": [342, 30, 54, 24],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1115,
+      "candidatesTokenCount": 790,
+      "totalTokenCount": 21101,
+      
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 857
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 19196
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "8Ynpabu3D4mxqtsPh6zfsQw"
+  }
+}

@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "menu_arquivo",
+    "type": "link",
+    "text": "Arquivo",
+    "coordenadas": [
+      38,
+      12,
+      45,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_editar",
+    "type": "link",
+    "text": "Editar",
+    "coordenadas": [
+      90,
+      12,
+      41,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_exibir",
+    "type": "link",
+    "text": "Exibir",
+    "coordenadas": [
+      138,
+      12,
+      39,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_inserir",
+    "type": "link",
+    "text": "Inserir",
+    "coordenadas": [
+      186,
+      12,
+      44,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_formatar",
+    "type": "link",
+    "text": "Formatar",
+    "coordenadas": [
+      238,
+      12,
+      57,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_estilos",
+    "type": "link",
+    "text": "Estilos",
+    "coordenadas": [
+      303,
+      12,
+      43,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_tabela",
+    "type": "link",
+    "text": "Tabela",
+    "coordenadas": [
+      354,
+      12,
+      41,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_formulario",
+    "type": "link",
+    "text": "Formulário",
+    "coordenadas": [
+      404,
+      12,
+      63,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_ferramentas",
+    "type": "link",
+    "text": "Ferramentas",
+    "coordenadas": [
+      476,
+      12,
+      69,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_janela",
+    "type": "link",
+    "text": "Janela",
+    "coordenadas": [
+      554,
+      12,
+      47,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "menu_ajuda",
+    "type": "link",
+    "text": "Ajuda",
+    "coordenadas": [
+      610,
+      12,
+      37,
+      18
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_novo_documento",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      36,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_abrir_documento",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      66,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_salvar_documento",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      107,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_exportar_pdf",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      137,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_imprimir",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      167,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_visualizar_impressao",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      197,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_recortar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      238,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_copiar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      268,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_colar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      298,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_clonar_formatacao",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      328,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_desfazer",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      369,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_refazer",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      399,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "select_estilo_documento",
+    "type": "select",
+    "text": "Título do documento",
+    "coordenadas": [
+      36,
+      80,
+      140,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "icon_aplicar_estilo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      187,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_atualizar_estilo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      217,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "select_fonte",
+    "type": "select",
+    "text": "Liberation Sans",
+    "coordenadas": [
+      258,
+      80,
+      120,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "input_tamanho_fonte",
+    "type": "input",
+    "text": "28 pt",
+    "coordenadas": [
+      388,
+      80,
+      50,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "icon_aumentar_fonte",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      448,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_diminuir_fonte",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      478,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_negrito",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      508,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_italico",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      538,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_sublinhado",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      568,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_tachado",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      598,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_sobrescrito",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      628,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_subscrito",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      658,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_cor_fonte",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      688,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_cor_destaque",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      718,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_limpar_formatacao",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      748,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_alinhar_esquerda",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      789,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_centralizar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      819,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_alinhar_direita",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      849,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_justificar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      879,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_marcadores",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      910,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_numeracao",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      940,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_diminuir_recuo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      970,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_aumentar_recuo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1000,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_espacamento_linha",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1030,
+      80,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_quebra_linha",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      430,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_mostrar_ocultar_caracteres",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      460,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_zoom",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      490,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_localizar_substituir",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      520,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_verificador_ortografico",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      550,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_idioma",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      580,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_ajuda_toolbar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      610,
+      45,
+      23,
+      23
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "label_propriedades",
+    "type": "text",
+    "text": "Propriedades",
+    "coordenadas": [
+      800,
+      199,
+      80,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "icon_ajuda_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      900,
+      199,
+      15,
+      15
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_fechar_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      925,
+      199,
+      15,
+      15
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_menu_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      950,
+      199,
+      15,
+      15
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "label_estilo",
+    "type": "text",
+    "text": "Estilo",
+    "coordenadas": [
+      790,
+      235,
+      35,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "select_estilo_documento_sidebar",
+    "type": "select",
+    "text": "Título do documento",
+    "coordenadas": [
+      790,
+      258,
+      140,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "icon_atualizar_estilo_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      938,
+      258,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_novo_estilo_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      968,
+      258,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "label_caractere",
+    "type": "text",
+    "text": "Caractere",
+    "coordenadas": [
+      790,
+      300,
+      60,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "select_fonte_sidebar",
+    "type": "select",
+    "text": "Liberation Sans",
+    "coordenadas": [
+      790,
+      323,
+      120,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "input_tamanho_fonte_sidebar",
+    "type": "input",
+    "text": "28 pt",
+    "coordenadas": [
+      918,
+      323,
+      50,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "icon_negrito_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      790,
+      358,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_italico_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      820,
+      358,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_sublinhado_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      850,
+      358,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_tachado_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      880,
+      358,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_sobrescrito_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      910,
+      358,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_subscrito_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      940,
+      358,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_cor_fonte_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      790,
+      388,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_cor_destaque_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      820,
+      388,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_limpar_formatacao_sidebar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      850,
+      388,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "label_paragrafo",
+    "type": "text",
+    "text": "Parágrafo",
+    "coordenadas": [
+      790,
+      430,
+      60,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "icon_alinhar_esquerda_paragrafo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      790,
+      453,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_centralizar_paragrafo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      820,
+      453,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_alinhar_direita_paragrafo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      850,
+      453,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_justificar_paragrafo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      880,
+      453,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_espacamento_simples",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      790,
+      483,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_espacamento_1_15",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      820,
+      483,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_espacamento_duplo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      850,
+      483,
+      23,
+      26
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "select_cor_fundo_paragrafo",
+    "type": "select",
+    "text": null,
+    "coordenadas": [
+      918,
+      483,
+      50,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "label_espaco",
+    "type": "text",
+    "text": "Espaço:",
+    "coordenadas": [
+      790,
+      520,
+      45,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "input_espaco_acima",
+    "type": "input",
+    "text": "0,42 cm",
+    "coordenadas": [
+      820,
+      543,
+      70,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "input_espaco_abaixo",
+    "type": "input",
+    "text": "0,21 cm",
+    "coordenadas": [
+      820,
+      573,
+      70,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "label_recuo",
+    "type": "text",
+    "text": "Recuo:",
+    "coordenadas": [
+      910,
+      520,
+      45,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "input_recuo_primeira_linha",
+    "type": "input",
+    "text": "0,00 cm",
+    "coordenadas": [
+      940,
+      543,
+      70,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "input_recuo_esquerda",
+    "type": "input",
+    "text": "0,00 cm",
+    "coordenadas": [
+      940,
+      573,
+      70,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "input_recuo_direita",
+    "type": "input",
+    "text": "0,00 cm",
+    "coordenadas": [
+      940,
+      603,
+      70,
+      26
+    ],
+    "actions": [
+      "onChange"
+    ]
+  },
+  {
+    "id": "status_pagina",
+    "type": "text",
+    "text": "Página 1 de 1",
+    "coordenadas": [
+      36,
+      616,
+      80,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "status_palavras_caracteres",
+    "type": "text",
+    "text": "0 palavra, 0 caractere",
+    "coordenadas": [
+      140,
+      616,
+      120,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "status_estilo_pagina",
+    "type": "text",
+    "text": "Estilo de página Padrão",
+    "coordenadas": [
+      290,
+      616,
+      130,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "status_idioma",
+    "type": "text",
+    "text": "Português (Brasil)",
+    "coordenadas": [
+      450,
+      616,
+      100,
+      16
+    ],
+    "actions": []
+  },
+  {
+    "id": "icon_zoom_out",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      850,
+      616,
+      15,
+      15
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_zoom_in",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      940,
+      616,
+      15,
+      15
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "status_zoom_percent",
+    "type": "text",
+    "text": "100%",
+    "coordenadas": [
+      960,
+      616,
+      30,
+      16
+    ],
+    "actions": []
+  }
+]
