@@ -6,6 +6,7 @@ import {
   v8,
   v6pixels,
   v5scale,
+  v9,
 } from "./profiles/AnalisysProfiles";
 
 export type ProfileKey =
@@ -19,7 +20,7 @@ export type ProfileKey =
  */
 export const Profiles: Record<ProfileKey, string> = {
   // Primary component-analysis profile — absolute pixels, dimensions injected
-  AnalisysComponentsLLM: v6pixels,
+  AnalisysComponentsLLM: v9,
 
   // Cognitive walkthrough — normalised coords, no image-size dependency
   CongnitiveWalktroughLLM: v8,

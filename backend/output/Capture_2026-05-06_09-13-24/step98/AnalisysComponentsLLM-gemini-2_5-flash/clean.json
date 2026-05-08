@@ -1,0 +1,181 @@
+[
+  {
+    "id": "home_button",
+    "type": "button",
+    "text": "Home",
+    "coordenadas": [
+      30,
+      20,
+      70,
+      30
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "Navigate to the home page",
+    "confidence": 1
+  },
+  {
+    "id": "relatorios_button",
+    "type": "button",
+    "text": "Relatórios",
+    "coordenadas": [
+      105,
+      20,
+      100,
+      30
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "Navigate to the reports section",
+    "confidence": 1
+  },
+  {
+    "id": "exercicio_button",
+    "type": "button",
+    "text": "Exercício",
+    "coordenadas": [
+      30,
+      80,
+      80,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "Filter or select an exercise period",
+    "confidence": 1
+  },
+  {
+    "id": "receita_button",
+    "type": "button",
+    "text": "Receita",
+    "coordenadas": [
+      115,
+      80,
+      70,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "Filter or select revenue-related data",
+    "confidence": 1
+  },
+  {
+    "id": "acesso_rapido_card",
+    "type": "card",
+    "coordenadas": [
+      20,
+      130,
+      200,
+      150
+    ],
+    "region": "main-content",
+    "purpose": "Container for quick access actions",
+    "confidence": 1
+  },
+  {
+    "id": "acesso_rapido_text",
+    "type": "text",
+    "text": "Acesso Rápido",
+    "coordenadas": [
+      30,
+      140,
+      100,
+      20
+    ],
+    "region": "main-content",
+    "purpose": "Label for the quick access section",
+    "confidence": 1
+  },
+  {
+    "id": "novo_lancamento_button",
+    "type": "button",
+    "text": "Novo lançamento",
+    "coordenadas": [
+      30,
+      180,
+      120,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "Create a new entry or transaction",
+    "confidence": 1
+  },
+  {
+    "id": "importar_csv_button",
+    "type": "button",
+    "text": "Importar CSV",
+    "coordenadas": [
+      30,
+      220,
+      120,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "Import data from a CSV file",
+    "confidence": 1
+  },
+  {
+    "id": "mais_opcoes_button",
+    "type": "button",
+    "text": "Mais opções",
+    "coordenadas": [
+      250,
+      160,
+      120,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "Display additional options or a dropdown menu",
+    "confidence": 1
+  },
+  {
+    "id": "mais_opcoes_icon",
+    "type": "icon",
+    "coordenadas": [
+      255,
+      165,
+      20,
+      20
+    ],
+    "region": "main-content",
+    "purpose": "Indicate the presence of more options or a menu",
+    "confidence": 1,
+    "meta": {
+      "iconType": "dots-vertical"
+    }
+  },
+  {
+    "id": "despesa_button",
+    "type": "button",
+    "text": "Despesa",
+    "coordenadas": [
+      800,
+      80,
+      80,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "Filter or select expense-related data",
+    "confidence": 1
+  }
+]

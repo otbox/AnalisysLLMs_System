@@ -1,0 +1,125 @@
+[
+  {
+    "id": "home_button",
+    "type": "button",
+    "text": "Home",
+    "coordenadas": [25, 40, 90, 36],
+    "region": "top-bar",
+    "actions": ["onClick"],
+    "purpose": "navigate to the home page",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "relatorios_button",
+    "type": "button",
+    "text": "Relatórios",
+    "coordenadas": [115, 40, 120, 36],
+    "region": "top-bar",
+    "actions": ["onClick"],
+    "purpose": "navigate to the reports section",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "exercicio_button",
+    "type": "button",
+    "text": "Exercício",
+    "coordenadas": [25, 100, 100, 36],
+    "region": "main-content",
+    "actions": ["onClick"],
+    "purpose": "filter or display exercise-related data",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "receita_button",
+    "type": "button",
+    "text": "Receita",
+    "coordenadas": [135, 100, 90, 36],
+    "region": "main-content",
+    "actions": ["onClick"],
+    "purpose": "filter or display revenue-related data",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "despesa_button",
+    "type": "button",
+    "text": "Despesa",
+    "coordenadas": [235, 100, 95, 36],
+    "region": "main-content",
+    "actions": ["onClick"],
+    "purpose": "filter or display expense-related data",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "acesso_rapido_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [25, 160, 400, 240],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "container for quick access actions",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "acesso_rapido_title",
+    "type": "text",
+    "text": "Acesso Rápido",
+    "coordenadas": [40, 175, 140, 20],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for the quick access section",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "novo_lancamento_button",
+    "type": "button",
+    "text": "Novo lançamento",
+    "coordenadas": [40, 220, 180, 36],
+    "region": "main-content",
+    "actions": ["onClick"],
+    "purpose": "create a new entry or record",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "importar_csv_button",
+    "type": "button",
+    "text": "Importar CSV",
+    "coordenadas": [40, 266, 180, 36],
+    "region": "main-content",
+    "actions": ["onClick"],
+    "purpose": "import data from a CSV file",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "mais_opcoes_button",
+    "type": "button",
+    "text": "Mais opções",
+    "coordenadas": [520, 220, 180, 36],
+    "region": "main-content",
+    "actions": ["onClick"],
+    "purpose": "reveal additional options or actions",
+    "confidence": 1.0,
+    "meta": {}
+  },
+  {
+    "id": "mais_opcoes_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [535, 228, 20, 20],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate more options are available",
+    "confidence": 1.0,
+    "meta": {
+      "iconType": "three-dots"
+    }
+  }
+]

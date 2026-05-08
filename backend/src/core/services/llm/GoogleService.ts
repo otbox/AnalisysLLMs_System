@@ -56,7 +56,7 @@ export class GoogleLLMClient implements LLMClient {
       model: 'models/gemini-2.5-flash',
       generationConfig: {
         temperature:      0.2,
-        maxOutputTokens:  20000,
+        maxOutputTokens:  40000,
         responseMimeType: 'application/json',
       },
     });

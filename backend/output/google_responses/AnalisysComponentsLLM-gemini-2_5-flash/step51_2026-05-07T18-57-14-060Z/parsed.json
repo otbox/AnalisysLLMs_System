@@ -1,0 +1,196 @@
+[
+  {
+    "id": "home_tab",
+    "type": "tab",
+    "text": "Home",
+    "coordenadas": [
+      0,
+      0,
+      96,
+      40
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to the home page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "relatorios_tab",
+    "type": "tab",
+    "text": "Relatórios",
+    "coordenadas": [
+      96,
+      0,
+      108,
+      40
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to the reports section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "exercicio_button",
+    "type": "button",
+    "text": "Exercício",
+    "coordenadas": [
+      24,
+      72,
+      90,
+      32
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "select or filter by exercise period",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "receita_button",
+    "type": "button",
+    "text": "Receita",
+    "coordenadas": [
+      122,
+      72,
+      78,
+      32
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter or view revenue data",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "despesa_button",
+    "type": "button",
+    "text": "Despesa",
+    "coordenadas": [
+      800,
+      72,
+      78,
+      32
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter or view expense data",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "acesso_rapido_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      24,
+      136,
+      200,
+      144
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "container for quick access actions",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "acesso_rapido_card_title",
+    "type": "text",
+    "text": "Acesso Rápido",
+    "coordenadas": [
+      32,
+      144,
+      104,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for the quick access section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "novo_lancamento_button",
+    "type": "button",
+    "text": "Novo lançamento",
+    "coordenadas": [
+      32,
+      192,
+      128,
+      32
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "create a new entry or transaction",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "importar_csv_button",
+    "type": "button",
+    "text": "Importar CSV",
+    "coordenadas": [
+      32,
+      232,
+      128,
+      32
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "import data from a CSV file",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "mais_opcoes_button",
+    "type": "button",
+    "text": "Mais opções",
+    "coordenadas": [
+      224,
+      160,
+      128,
+      32
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "reveal additional options or actions",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "mais_opcoes_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      232,
+      168,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate the presence of more options",
+    "confidence": 1,
+    "meta": {
+      "iconType": "dots-horizontal"
+    }
+  }
+]
