@@ -8,7 +8,8 @@ export type ProfileKey =
   | "AnalisysComponentsLLM"
   | "CongnitiveWalktroughLLM"
   | "GuideLLM"
-  | "annotation";
+  | "annotation"
+  | "nemotron";
 
 export type LLMAPI = "GEMINI" | "OPENROUTER" | "OLLAMA";
 
@@ -92,6 +93,13 @@ export const PROFILE_CONFIGS: ProfileConfig[] = [
     emoji:            "🖊️",
     defaultObjective: "",
     color:            "orange",
+  },
+  {
+    key:              "nemotron",
+    label:            "Nemotron",
+    emoji:            "🟩",
+    defaultObjective: "",
+    color:            "green",
   },
 ];
 

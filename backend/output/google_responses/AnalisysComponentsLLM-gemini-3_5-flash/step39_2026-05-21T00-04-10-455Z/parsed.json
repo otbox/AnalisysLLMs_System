@@ -1,0 +1,1096 @@
+[
+  {
+    "id": "limeira_logo",
+    "type": "image",
+    "text": null,
+    "coordenadas": [
+      10,
+      10,
+      100,
+      30
+    ],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display municipal logo",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "hamburger_menu_icon_top_left",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      119,
+      10,
+      30,
+      30
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open main navigation menu",
+    "confidence": 1,
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "dados_abertos_link",
+    "type": "link",
+    "text": "Dados Abertos",
+    "coordenadas": [
+      700,
+      10,
+      90,
+      20
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to open data portal",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "font_size_increase_button",
+    "type": "button",
+    "text": "A+",
+    "coordenadas": [
+      800,
+      10,
+      20,
+      20
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "increase font size",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "font_size_decrease_button",
+    "type": "button",
+    "text": "A-",
+    "coordenadas": [
+      825,
+      10,
+      20,
+      20
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "decrease font size",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "accessibility_icon_top_bar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      850,
+      10,
+      20,
+      20
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "toggle accessibility options",
+    "confidence": 1,
+    "meta": {
+      "iconType": "accessibility"
+    }
+  },
+  {
+    "id": "hamburger_menu_icon_top_right",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      880,
+      10,
+      20,
+      20
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open secondary menu",
+    "confidence": 1,
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "etransparencia_publica_image",
+    "type": "image",
+    "text": "etransparência pública",
+    "coordenadas": [
+      910,
+      10,
+      100,
+      20
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to e-transparency portal",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "conam_image",
+    "type": "image",
+    "text": "conam",
+    "coordenadas": [
+      1020,
+      10,
+      50,
+      20
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to Conam website",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "tab_acesso_rapido",
+    "type": "tab",
+    "text": "LAI - Acesso Rápido(...)",
+    "coordenadas": [
+      0,
+      45,
+      200,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "switch to quick access tab",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "tab_acesso_rapido_close_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      180,
+      50,
+      15,
+      15
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "close quick access tab",
+    "confidence": 1,
+    "meta": {
+      "iconType": "close"
+    }
+  },
+  {
+    "id": "tab_obras_novo",
+    "type": "tab",
+    "text": "LAI - Obras (Novo).",
+    "coordenadas": [
+      200,
+      45,
+      200,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "switch to new works tab",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "tab_obras_novo_close_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      380,
+      50,
+      15,
+      15
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "close new works tab",
+    "confidence": 1,
+    "meta": {
+      "iconType": "close"
+    }
+  },
+  {
+    "id": "current_page_title",
+    "type": "text",
+    "text": "LAI - Obras (Novo).",
+    "coordenadas": [
+      0,
+      80,
+      200,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display current page title",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "obra_label",
+    "type": "label",
+    "text": "Obra",
+    "coordenadas": [
+      10,
+      110,
+      40,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "label for obra input field",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "obra_input",
+    "type": "input",
+    "text": null,
+    "coordenadas": [
+      10,
+      130,
+      200,
+      25
+    ],
+    "region": "main-content",
+    "actions": [
+      "onChange",
+      "onFocus"
+    ],
+    "purpose": "input field to filter by work name",
+    "confidence": 1,
+    "meta": {
+      "inputType": "text",
+      "placeholder": ""
+    }
+  },
+  {
+    "id": "ano_processo_label",
+    "type": "label",
+    "text": "Ano Processo",
+    "coordenadas": [
+      220,
+      110,
+      90,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "label for process year select field",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "ano_processo_select",
+    "type": "select",
+    "text": "(Todos)",
+    "coordenadas": [
+      220,
+      130,
+      150,
+      25
+    ],
+    "region": "main-content",
+    "actions": [
+      "onChange"
+    ],
+    "purpose": "select process year filter",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "ano_processo_select_dropdown_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      350,
+      135,
+      15,
+      15
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open dropdown for process year selection",
+    "confidence": 1,
+    "meta": {
+      "iconType": "dropdown"
+    }
+  },
+  {
+    "id": "situacao_filter_label",
+    "type": "label",
+    "text": "Situação",
+    "coordenadas": [
+      380,
+      110,
+      60,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "label for situation select field",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "situacao_filter_select",
+    "type": "select",
+    "text": "EM EXECUCAO",
+    "coordenadas": [
+      380,
+      130,
+      150,
+      25
+    ],
+    "region": "main-content",
+    "actions": [
+      "onChange"
+    ],
+    "purpose": "select situation filter",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "situacao_filter_select_dropdown_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      510,
+      135,
+      15,
+      15
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open dropdown for situation selection",
+    "confidence": 1,
+    "meta": {
+      "iconType": "dropdown"
+    }
+  },
+  {
+    "id": "ultima_atualizacao_label",
+    "type": "label",
+    "text": "Última Atualização",
+    "coordenadas": [
+      540,
+      110,
+      120,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "label for last update date input field",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "ultima_atualizacao_input",
+    "type": "input",
+    "text": "27/10/2025 23:00:39",
+    "coordenadas": [
+      540,
+      130,
+      150,
+      25
+    ],
+    "region": "main-content",
+    "actions": [
+      "onFocus"
+    ],
+    "purpose": "display last update date and time",
+    "confidence": 1,
+    "meta": {
+      "inputType": "datetime",
+      "placeholder": "27/10/2025 23:00:39"
+    }
+  },
+  {
+    "id": "filter_button",
+    "type": "button",
+    "text": "Filtrar",
+    "coordenadas": [
+      1240,
+      130,
+      70,
+      25
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "apply filters to the data",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "filter_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1250,
+      135,
+      15,
+      15
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "visual indicator for filter action",
+    "confidence": 1,
+    "meta": {
+      "iconType": "filter"
+    }
+  },
+  {
+    "id": "situacao_header",
+    "type": "text",
+    "text": "Situação",
+    "coordenadas": [
+      10,
+      180,
+      60,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "header for situation section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "situacao_header_menu_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1290,
+      180,
+      20,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open menu for situation section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "menu"
+    }
+  },
+  {
+    "id": "em_execucao_chart",
+    "type": "chart",
+    "text": "EM EXECUCAO",
+    "coordenadas": [
+      440,
+      300,
+      200,
+      200
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display current status of works in execution",
+    "confidence": 1,
+    "meta": {
+      "chartType": "circular",
+      "value": "EM EXECUCAO"
+    }
+  },
+  {
+    "id": "accessibility_floating_button",
+    "type": "button",
+    "text": null,
+    "coordenadas": [
+      1260,
+      460,
+      50,
+      50
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "toggle accessibility options",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "accessibility_floating_button_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1270,
+      470,
+      30,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for accessibility options",
+    "confidence": 1,
+    "meta": {
+      "iconType": "accessibility"
+    }
+  },
+  {
+    "id": "obras_header",
+    "type": "text",
+    "text": "Obras",
+    "coordenadas": [
+      10,
+      470,
+      50,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "header for works list section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "obras_header_menu_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      320,
+      470,
+      20,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open menu for works list section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "menu"
+    }
+  },
+  {
+    "id": "table_header_nro_processo",
+    "type": "table-header",
+    "text": "Nro Processo",
+    "coordenadas": [
+      0,
+      500,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "table header for process number",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_header_ano",
+    "type": "table-header",
+    "text": "Ano",
+    "coordenadas": [
+      100,
+      500,
+      60,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "table header for year",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_header_situacao",
+    "type": "table-header",
+    "text": "Situação",
+    "coordenadas": [
+      160,
+      500,
+      80,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "table header for situation",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_header_obra",
+    "type": "table-header",
+    "text": "Obra",
+    "coordenadas": [
+      240,
+      500,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "table header for work name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_row_1",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [
+      0,
+      530,
+      340,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display details for process C00001",
+    "confidence": 1,
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00001",
+        "Ano": "2019",
+        "Situação": "EM EXECUCAO",
+        "Obra": "Sem descricao"
+      }
+    }
+  },
+  {
+    "id": "table_cell_1_nro_processo",
+    "type": "table-cell",
+    "text": "C00001",
+    "coordenadas": [
+      0,
+      530,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display process number C00001",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_1_ano",
+    "type": "table-cell",
+    "text": "2019",
+    "coordenadas": [
+      100,
+      530,
+      60,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display year 2019 for process C00001",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_1_situacao",
+    "type": "table-cell",
+    "text": "EM EXECUCAO",
+    "coordenadas": [
+      160,
+      530,
+      80,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display situation 'EM EXECUCAO' for process C00001",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_1_obra",
+    "type": "table-cell",
+    "text": "Sem descricao",
+    "coordenadas": [
+      240,
+      530,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display work description for process C00001",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_row_2",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [
+      0,
+      560,
+      340,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display details for process C00002",
+    "confidence": 1,
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00002",
+        "Ano": "2020",
+        "Situação": "EM EXECUCAO",
+        "Obra": "Sem descricao"
+      }
+    }
+  },
+  {
+    "id": "table_cell_2_nro_processo",
+    "type": "table-cell",
+    "text": "C00002",
+    "coordenadas": [
+      0,
+      560,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display process number C00002",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_2_ano",
+    "type": "table-cell",
+    "text": "2020",
+    "coordenadas": [
+      100,
+      560,
+      60,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display year 2020 for process C00002",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_2_situacao",
+    "type": "table-cell",
+    "text": "EM EXECUCAO",
+    "coordenadas": [
+      160,
+      560,
+      80,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display situation 'EM EXECUCAO' for process C00002",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_2_obra",
+    "type": "table-cell",
+    "text": "Sem descricao",
+    "coordenadas": [
+      240,
+      560,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display work description for process C00002",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_row_3",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [
+      0,
+      590,
+      340,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display details for process C00003",
+    "confidence": 1,
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00003",
+        "Ano": "2019",
+        "Situação": "EM EXECUCAO",
+        "Obra": "Sem descricao"
+      }
+    }
+  },
+  {
+    "id": "table_cell_3_nro_processo",
+    "type": "table-cell",
+    "text": "C00003",
+    "coordenadas": [
+      0,
+      590,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display process number C00003",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_3_ano",
+    "type": "table-cell",
+    "text": "2019",
+    "coordenadas": [
+      100,
+      590,
+      60,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display year 2019 for process C00003",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_3_situacao",
+    "type": "table-cell",
+    "text": "EM EXECUCAO",
+    "coordenadas": [
+      160,
+      590,
+      80,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display situation 'EM EXECUCAO' for process C00003",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_3_obra",
+    "type": "table-cell",
+    "text": "Sem descricao",
+    "coordenadas": [
+      240,
+      590,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display work description for process C00003",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "table_row_4",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [
+      0,
+      620,
+      340,
+      22
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display details for process C00004 (partially visible)",
+    "confidence": 0.9,
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00004",
+        "Ano": "2020",
+        "Situação": "EM EXECUCAO",
+        "Obra": "Sem descricao"
+      }
+    }
+  },
+  {
+    "id": "table_cell_4_nro_processo",
+    "type": "table-cell",
+    "text": "C00004",
+    "coordenadas": [
+      0,
+      620,
+      100,
+      22
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display process number C00004",
+    "confidence": 0.9,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_4_ano",
+    "type": "table-cell",
+    "text": "2020",
+    "coordenadas": [
+      100,
+      620,
+      60,
+      22
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display year 2020 for process C00004",
+    "confidence": 0.9,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_4_situacao",
+    "type": "table-cell",
+    "text": "EM EXECUCAO",
+    "coordenadas": [
+      160,
+      620,
+      80,
+      22
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display situation 'EM EXECUCAO' for process C00004",
+    "confidence": 0.9,
+    "meta": {}
+  },
+  {
+    "id": "table_cell_4_obra",
+    "type": "table-cell",
+    "text": "Sem descricao",
+    "coordenadas": [
+      240,
+      620,
+      100,
+      22
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display work description for process C00004",
+    "confidence": 0.9,
+    "meta": {}
+  },
+  {
+    "id": "detalhe_header",
+    "type": "text",
+    "text": "Detalhe",
+    "coordenadas": [
+      360,
+      470,
+      60,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "header for detail section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "detalhe_header_menu_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1290,
+      470,
+      20,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open menu for detail section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "menu"
+    }
+  },
+  {
+    "id": "detalhe_placeholder_text",
+    "type": "text",
+    "text": "Selecione um processo Licitatório",
+    "coordenadas": [
+      600,
+      500,
+      250,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "placeholder text indicating no item is selected",
+    "confidence": 1,
+    "meta": {}
+  }
+]

@@ -4,6 +4,7 @@ import "./App.css";
 import { PROFILE_CONFIGS, type ProfileKey, type Theme } from "./types";
 import { ProfilePanel }    from "./components/ProfilePanel";
 import { AnnotationPanel } from "./components/AnnotationPanel";
+import { NemotronPanel }   from "./components/NemotronPanel";
 
 const API_BASE = "http://localhost:3000";
 
@@ -60,6 +61,8 @@ export default function App() {
       {/* ── Active panel ── */}
       {activeProfile === "annotation" ? (
         <AnnotationPanel apiBase={API_BASE} />
+      ) : activeProfile === "nemotron" ? (
+        <NemotronPanel apiBase={API_BASE} />
       ) : (
         PROFILE_CONFIGS.filter((p) => p.key === activeProfile).map((p) => (
           <ProfilePanel
