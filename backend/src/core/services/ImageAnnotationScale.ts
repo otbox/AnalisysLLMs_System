@@ -85,7 +85,7 @@ interface EstruturaUIItem {
   visivel: boolean; habilitado: boolean; id_automacao: string;
   ignorado: boolean; screenshot?: string; filhos: EstruturaUIItem[];
 }
-interface EstruturaUIRoot { ui_structure: EstruturaUIItem[] }
+export interface EstruturaUIRoot { ui_structure: EstruturaUIItem[] }
 interface OutputComponent {
   id: string; type: string; text: string | null;
   coordenadas: [number, number, number, number];
@@ -110,17 +110,27 @@ function isOutputRoot(d: unknown): d is OutputRoot {
 }
 function normalizeFromEstrutura(root: EstruturaUIRoot): UiElement[] {
   const results: UiElement[] = []; let counter = 0;
-  function process(item: EstruturaUIItem) {
-    if (item.ignorado || !item.posicao) return;
-    const { x, y, w, h } = item.posicao;
-    if (![x, y, w, h].every(Number.isFinite)) return;
+  function process(item: unknown) {
+    // filhos irregulares podem ser string (ex.: opções de <select>) — ignorar
+    if (!item || typeof item !== "object" || Array.isArray(item)) return;
+    const node = item as EstruturaUIItem;
+    const pos = node.posicao ?? { x: 0, y: 0, w: 0, h: 0 };
+    const { x, y, w, h } = pos;
+    const cx = Number.isFinite(x) ? x : 0;
+    const cy = Number.isFinite(y) ? y : 0;
+    const cw = Number.isFinite(w) ? w : 0;
+    const ch = Number.isFinite(h) ? h : 0;
     results.push({
-      id: item.id_automacao || `${item.tag}_${item.tipo_controle}_${counter++}`,
-      type: item.tipo_controle, text: item.nome || null, coordenadas: [x, y, w, h],
-      meta: { tag: item.tag, classe: item.classe, is_dropdown: item.is_dropdown,
-        nivel: item.nivel, screenshot: item.screenshot ?? null },
+      id: node.id_automacao || `${node.tag || "node"}_${node.tipo_controle || "x"}_${counter++}`,
+      type: node.tipo_controle, text: node.nome || null, coordenadas: [cx, cy, cw, ch],
+      meta: {
+        tag: node.tag, classe: node.classe, is_dropdown: node.is_dropdown,
+        nivel: node.nivel, screenshot: node.screenshot ?? null,
+        ignorado: node.ignorado, visivel: node.visivel, habilitado: node.habilitado,
+        originalPosicao: node.posicao ?? null,
+      },
     });
-    if (Array.isArray(item.filhos)) item.filhos.forEach(process);
+    if (Array.isArray(node.filhos)) node.filhos.forEach(process);
   }
   if (Array.isArray(root.ui_structure)) root.ui_structure.forEach(process);
   return results;
@@ -154,6 +164,20 @@ export interface AnnotateImageParams {
   outputFormat?: OutputFormat;
   includeLabel?: boolean;
   coordScale?:   CoordScale;
+  /**
+   * Resolução de referência em que o JSON foi gerado (ex.: 1920×1080).
+   * Quando informada e diferente da imagem real, as coordenadas em pixels
+   * são remapeadas proporcionalmente: px' = px × (img / source).
+   * Aliases aceitos no controller: llmBaseWidth / llmBaseHeight.
+   */
+  sourceWidth?:  number;
+  sourceHeight?: number;
+  /**
+   * Deslocamento manual em pixels da imagem final (após remap).
+   * Negativo = começa antes (esquerda / cima); positivo = depois (direita / baixo).
+   */
+  offsetX?: number;
+  offsetY?: number;
 }
 
 export interface SingleAnnotateResult {
@@ -192,6 +216,13 @@ export interface QuadAnnotateResult {
 export interface DualAnnotateResult {
   pixels: SingleAnnotateResult;
   scaled: SingleAnnotateResult;
+  /**
+   * Todos os elementos de entrada, com coordenadas transformadas (remap + offset).
+   * Não corta nem descarta — pode ter x/y negativos ou fora da imagem.
+   */
+  adjustedUi: UiElement[];
+  /** Se a entrada era estrutura_ui, devolve a mesma árvore/lista com posicao atualizada. */
+  adjustedEstrutura?: EstruturaUIRoot;
 }
 
 const DISPLAY_MAX_WIDTH  = 1920;
@@ -227,6 +258,9 @@ export class LlmImageAnnotatorService {
       fill         = "rgba(255,45,45,0.10)",
       outputFormat = "png",
       includeLabel = false,
+      coordScale   = "pixels",
+      sourceWidth,
+      sourceHeight,
     } = params;
 
     const { buffer: inputBuffer } = this.parseBase64Image(imageBase64);
@@ -237,9 +271,11 @@ export class LlmImageAnnotatorService {
     const imgW = meta.width;
     const imgH = meta.height;
 
-    const ui = this.extractUiElements(analysis);
-    if (!ui.length)
+    const extracted = this.extractUiElements(analysis);
+    if (!extracted.length)
       throw new Error("No UI elements found in analysis.");
+
+    const ui = this.remapUiFromSource(extracted, coordScale, sourceWidth, sourceHeight, imgW, imgH);
 
     const renderOpts = { inputBuffer, imgW, imgH, ui, stroke, fill, includeLabel, outputFormat };
 
@@ -284,6 +320,10 @@ export class LlmImageAnnotatorService {
       outputFormat = "png",
       includeLabel = false,
       coordScale   = "pixels",
+      sourceWidth,
+      sourceHeight,
+      offsetX      = 0,
+      offsetY      = 0,
     } = params;
 
     const { buffer: inputBuffer } = this.parseBase64Image(imageBase64);
@@ -293,31 +333,40 @@ export class LlmImageAnnotatorService {
 
     const imgW = meta.width;
     const imgH = meta.height;
-    const ui   = this.extractUiElements(analysis);
-    if (!ui.length)
+    const extracted = this.extractUiElements(analysis);
+    if (!extracted.length)
       throw new Error("No UI elements found in analysis.");
 
-    const absoluteBoxes = this.resolveAbsoluteBoxes(ui, coordScale, imgW, imgH);
+    const remapped = this.remapUiFromSource(extracted, coordScale, sourceWidth, sourceHeight, imgW, imgH);
+    // Importante: NÃO clampiar antes do offset — senão coords de página longa
+    // (ex.: y=1500 num crop de 700px) são esmagadas no fundo e o offset Y negativo falha.
+    const absoluteBoxes = this.resolveAbsoluteBoxes(remapped, coordScale, imgW, imgH, false);
+    // JSON final: offset puro, sem clip — preserva TODOS os elementos e tamanhos.
+    const transformedBoxes = this.shiftBoxes(absoluteBoxes, offsetX, offsetY);
+    const adjustedUi = this.boxesToUi(remapped, transformedBoxes);
+    // Desenho: só a interseção com a imagem (elementos fora não aparecem no PNG).
+    const drawBoxes = transformedBoxes.map((b) => this.intersectBox(b, imgW, imgH));
+    const adjustedEstrutura = this.applyBoxesToEstrutura(analysis as unknown, transformedBoxes);
 
     const pixelsResult = await this.renderAnnotation({
-      inputBuffer, imgW, imgH, boxes: absoluteBoxes,
-      ui, stroke, fill, includeLabel, outputFormat,
+      inputBuffer, imgW, imgH, boxes: drawBoxes,
+      ui: adjustedUi, stroke, fill, includeLabel, outputFormat,
     });
 
     const scaleRatio  = this.computeDisplayScale(imgW, imgH);
     const displayW    = Math.round(imgW * scaleRatio);
     const displayH    = Math.round(imgH * scaleRatio);
     const scaledBuf   = await sharp(inputBuffer).resize(displayW, displayH, { fit: "fill" }).toBuffer();
-    const scaledBoxes = absoluteBoxes.map((b) => ({
+    const scaledBoxes = drawBoxes.map((b) => ({
       x: Math.round(b.x * scaleRatio), y: Math.round(b.y * scaleRatio),
       w: Math.round(b.w * scaleRatio), h: Math.round(b.h * scaleRatio),
     }));
     const scaledResult = await this.renderAnnotation({
       inputBuffer: scaledBuf, imgW: displayW, imgH: displayH,
-      boxes: scaledBoxes, ui, stroke, fill, includeLabel, outputFormat,
+      boxes: scaledBoxes, ui: adjustedUi, stroke, fill, includeLabel, outputFormat,
     });
 
-    return { pixels: pixelsResult, scaled: scaledResult };
+    return { pixels: pixelsResult, scaled: scaledResult, adjustedUi, adjustedEstrutura };
   }
 
   /** Legacy single-image API. */
@@ -331,11 +380,20 @@ export class LlmImageAnnotatorService {
    * A — Pixels puros.
    * Coordenadas do JSON são pixels reais → apenas clamp.
    */
-  private boxesPixelsPure(ui: UiElement[], imgW: number, imgH: number): BoundingBox[] {
+  private boxesPixelsPure(
+    ui: UiElement[],
+    imgW: number,
+    imgH: number,
+    clamp = true,
+  ): BoundingBox[] {
     return ui.map((el) => {
       const { x, y, w, h } = this.coordsToBox(el.coordenadas);
       if (![x, y, w, h].every(Number.isFinite)) return { x: 0, y: 0, w: 0, h: 0 };
-      return this.clampBox({ x, y, w, h }, imgW, imgH);
+      const box = { x, y, w, h };
+      return clamp ? this.clampBox(box, imgW, imgH) : {
+        x: Math.round(box.x), y: Math.round(box.y),
+        w: Math.round(box.w), h: Math.round(box.h),
+      };
     });
   }
 
@@ -369,15 +427,25 @@ export class LlmImageAnnotatorService {
    * Assume que o JSON já está em 0-1000 e converte usando imgW/imgH.
    * Esse é o caminho correto para LLMs que retornam coordenadas normalizadas.
    */
-  private boxesNormCorrect(ui: UiElement[], imgW: number, imgH: number): BoundingBox[] {
+  private boxesNormCorrect(
+    ui: UiElement[],
+    imgW: number,
+    imgH: number,
+    clamp = true,
+  ): BoundingBox[] {
     return ui.map((el) => {
       const { x, y, w, h } = this.coordsToBox(el.coordenadas);
       if (![x, y, w, h].every(Number.isFinite)) return { x: 0, y: 0, w: 0, h: 0 };
-      const px = (x / 1000) * imgW;
-      const py = (y / 1000) * imgH;
-      const pw = (w / 1000) * imgW;
-      const ph = (h / 1000) * imgH;
-      return this.clampBox({ x: px, y: py, w: pw, h: ph }, imgW, imgH);
+      const box = {
+        x: (x / 1000) * imgW,
+        y: (y / 1000) * imgH,
+        w: (w / 1000) * imgW,
+        h: (h / 1000) * imgH,
+      };
+      return clamp ? this.clampBox(box, imgW, imgH) : {
+        x: Math.round(box.x), y: Math.round(box.y),
+        w: Math.round(box.w), h: Math.round(box.h),
+      };
     });
   }
 
@@ -403,6 +471,49 @@ export class LlmImageAnnotatorService {
 
   // ── helpers ──────────────────────────────────────────────────────────────
 
+  /**
+   * Remapeia coordenadas em pixels da resolução do JSON para a da imagem.
+   * Ex.: JSON em 1920×1080 sobre imagem 1322×743 → escala 1322/1920 e 743/1080.
+   * Não altera normalized-1000 (já é relativo).
+   */
+  private remapUiFromSource(
+    ui:           UiElement[],
+    coordScale:   CoordScale,
+    sourceWidth:  number | undefined,
+    sourceHeight: number | undefined,
+    imgW:         number,
+    imgH:         number,
+  ): UiElement[] {
+    if (coordScale !== "pixels") return ui;
+
+    const srcW = Number(sourceWidth);
+    const srcH = Number(sourceHeight);
+    if (!Number.isFinite(srcW) || !Number.isFinite(srcH) || srcW <= 0 || srcH <= 0) {
+      return ui;
+    }
+    if (Math.abs(srcW - imgW) < 0.5 && Math.abs(srcH - imgH) < 0.5) {
+      return ui;
+    }
+
+    const sx = imgW / srcW;
+    const sy = imgH / srcH;
+
+    return ui.map((el) => {
+      const { x, y, w, h } = this.coordsToBox(el.coordenadas);
+      if (![x, y, w, h].every(Number.isFinite)) return el;
+      return {
+        ...el,
+        coordenadas: [x * sx, y * sy, w * sx, h * sy],
+        meta: {
+          ...(el.meta ?? {}),
+          remappedFrom: { width: srcW, height: srcH },
+          remappedTo:   { width: imgW, height: imgH },
+          remapScale:   { x: sx, y: sy },
+        },
+      };
+    });
+  }
+
   private clampBox(b: BoundingBox, imgW: number, imgH: number): BoundingBox {
     const x = this.clamp(Math.round(b.x), 0, imgW);
     const y = this.clamp(Math.round(b.y), 0, imgH);
@@ -411,16 +522,101 @@ export class LlmImageAnnotatorService {
     return { x, y, w, h };
   }
 
+  /**
+   * Offset puro (sem clip). Usado no JSON de saída para não perder elementos.
+   */
+  private shiftBoxes(
+    boxes:   BoundingBox[],
+    offsetX: number | undefined,
+    offsetY: number | undefined,
+  ): BoundingBox[] {
+    const dx = Number(offsetX) || 0;
+    const dy = Number(offsetY) || 0;
+    if (dx === 0 && dy === 0) {
+      return boxes.map((b) => ({
+        x: Math.round(b.x), y: Math.round(b.y),
+        w: Math.round(b.w), h: Math.round(b.h),
+      }));
+    }
+    return boxes.map((b) => ({
+      x: Math.round(b.x + dx),
+      y: Math.round(b.y + dy),
+      w: Math.round(b.w),
+      h: Math.round(b.h),
+    }));
+  }
+
+  /**
+   * Aplica offset e corta a interseção com a imagem (só para desenhar no PNG).
+   */
+  private applyBoxOffset(
+    boxes:   BoundingBox[],
+    offsetX: number | undefined,
+    offsetY: number | undefined,
+    imgW:    number,
+    imgH:    number,
+  ): BoundingBox[] {
+    return this.shiftBoxes(boxes, offsetX, offsetY)
+      .map((b) => this.intersectBox(b, imgW, imgH));
+  }
+
+  private intersectBox(b: BoundingBox, imgW: number, imgH: number): BoundingBox {
+    let x1 = Math.round(b.x);
+    let y1 = Math.round(b.y);
+    let x2 = x1 + Math.round(b.w);
+    let y2 = y1 + Math.round(b.h);
+
+    x1 = Math.max(0, Math.min(imgW, x1));
+    y1 = Math.max(0, Math.min(imgH, y1));
+    x2 = Math.max(0, Math.min(imgW, x2));
+    y2 = Math.max(0, Math.min(imgH, y2));
+
+    const w = Math.max(0, x2 - x1);
+    const h = Math.max(0, y2 - y1);
+    return { x: x1, y: y1, w, h };
+  }
+
+  private boxesToUi(source: UiElement[], boxes: BoundingBox[]): UiElement[] {
+    return source.map((el, i) => {
+      const box = boxes[i] ?? { x: 0, y: 0, w: 0, h: 0 };
+      return {
+        ...el,
+        coordenadas: [box.x, box.y, box.w, box.h] as [number, number, number, number],
+      };
+    });
+  }
+
+  /** Reescreve posicao em cópia da estrutura_ui original, 1:1 por ordem de visita. */
+  private applyBoxesToEstrutura(
+    analysis: unknown,
+    boxes: BoundingBox[],
+  ): EstruturaUIRoot | undefined {
+    if (!isEstruturaUI(analysis)) return undefined;
+    const clone: EstruturaUIRoot = JSON.parse(JSON.stringify(analysis));
+    let i = 0;
+    const visit = (item: unknown) => {
+      // Alguns JSON irregulares colocam strings em `filhos` (texto de options).
+      if (!item || typeof item !== "object" || Array.isArray(item)) return;
+      const node = item as EstruturaUIItem;
+      const box = boxes[i++] ?? { x: 0, y: 0, w: 0, h: 0 };
+      node.posicao = { x: box.x, y: box.y, w: box.w, h: box.h };
+      if (Array.isArray(node.filhos)) node.filhos.forEach(visit);
+    };
+    clone.ui_structure.forEach(visit);
+    return clone;
+  }
+
   /** Legacy resolver kept for annotateDual. */
   private resolveAbsoluteBoxes(
     ui:         UiElement[],
     coordScale: CoordScale,
     imgW:       number,
     imgH:       number,
+    clamp = true,
   ): BoundingBox[] {
     return coordScale === "normalized-1000"
-      ? this.boxesNormCorrect(ui, imgW, imgH)
-      : this.boxesPixelsPure(ui, imgW, imgH);
+      ? this.boxesNormCorrect(ui, imgW, imgH, clamp)
+      : this.boxesPixelsPure(ui, imgW, imgH, clamp);
   }
 
   private computeDisplayScale(imgW: number, imgH: number): number {
@@ -459,28 +655,63 @@ export class LlmImageAnnotatorService {
   // ── UI element extraction ─────────────────────────────────────────────────
 
   private extractUiElements(analysis: AnalysisInput): UiElement[] {
+    // Preferir listas já prontas sem filtrar — zero-size e ignorados entram no JSON final.
     if (Array.isArray(analysis.ui) && analysis.ui.length > 0)
-      return analysis.ui.filter((i) => this.isValidUiElement(i));
+      return analysis.ui.map((i) => this.coerceUiElement(i)).filter((i): i is UiElement => !!i);
     for (const key of ["elements", "components", "full", "clean"] as const) {
       const arr = analysis[key];
       if (Array.isArray(arr) && arr.length > 0)
-        return (arr as UiElement[]).filter((i) => this.isValidUiElement(i));
+        return (arr as unknown[]).map((i) => this.coerceUiElement(i)).filter((i): i is UiElement => !!i);
     }
     const any = analysis as any;
     if (any.ui_structure && typeof any.ui_structure === "object") {
+      // lista flat (estrutura_ui.json) ou árvore Libre
+      if (Array.isArray(any.ui_structure)) {
+        const fromFlat = normalizeFromEstrutura(any as EstruturaUIRoot);
+        if (fromFlat.length > 0) return fromFlat;
+      }
       const rootPos = any.ui_structure?.posicao;
       const flatted = this.flattenLibreUi(any.ui_structure as LibreNode, {
         mode: "pixels", baseW: rootPos?.w ?? 1000, baseH: rootPos?.h ?? 1000,
       });
-      if (flatted.length > 0) return flatted.filter((i) => this.isValidUiElement(i));
+      if (flatted.length > 0) return flatted;
     }
     const normalized = normalizeUiSource(analysis as unknown);
-    if (normalized.length > 0) return normalized.filter((i) => this.isValidUiElement(i));
+    if (normalized.length > 0) return normalized;
     const rawText = this.extractTextFromRawResponse(analysis);
     if (!rawText) return [];
     const parsed = this.parseUiJsonText(rawText);
     if (!Array.isArray(parsed)) return [];
-    return (parsed as unknown[]).filter((i) => this.isValidUiElement(i)) as UiElement[];
+    return (parsed as unknown[]).map((i) => this.coerceUiElement(i)).filter((i): i is UiElement => !!i);
+  }
+
+  /** Aceita elemento mesmo com w/h = 0; só rejeita lixo sem coordenadas. */
+  private coerceUiElement(item: unknown): UiElement | null {
+    if (!item || typeof item !== "object") return null;
+    const el = item as UiElement;
+    const box = this.coordsToBox(el.coordenadas);
+    if (![box.x, box.y, box.w, box.h].every((n) => typeof n === "number" && Number.isFinite(n))) {
+      // tenta posicao estilo estrutura
+      const pos = (item as any).posicao;
+      if (pos && typeof pos === "object") {
+        const x = Number(pos.x) || 0, y = Number(pos.y) || 0, w = Number(pos.w) || 0, h = Number(pos.h) || 0;
+        return {
+          id: (item as any).id_automacao || (item as any).id,
+          type: (item as any).tipo_controle || (item as any).type,
+          text: (item as any).nome ?? (item as any).text ?? null,
+          coordenadas: [x, y, w, h],
+          meta: (item as any).meta,
+        };
+      }
+      return {
+        ...el,
+        coordenadas: [0, 0, 0, 0],
+      };
+    }
+    return {
+      ...el,
+      coordenadas: [box.x, box.y, box.w, box.h],
+    };
   }
 
   private extractTextFromRawResponse(analysis: AnalysisInput): string | null {

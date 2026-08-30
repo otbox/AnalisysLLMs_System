@@ -108,7 +108,17 @@ app.post('/annotations', async (req, res) => {
       stroke,
       fill,
       outputFormat,
-    } = req.body as Partial<AnnotateImageParams & { analysis: unknown }>;
+      sourceWidth,
+      sourceHeight,
+      llmBaseWidth,
+      llmBaseHeight,
+      offsetX,
+      offsetY,
+    } = req.body as Partial<AnnotateImageParams & {
+      analysis: unknown;
+      llmBaseWidth?: number;
+      llmBaseHeight?: number;
+    }>;
 
     if (!imageBase64 || !rawAnalysis) {
       return res.status(400).send({ message: 'Required fields: imageBase64 and analysis' });
@@ -125,6 +135,10 @@ app.post('/annotations', async (req, res) => {
       stroke,
       fill,
       outputFormat,
+      sourceWidth:  sourceWidth  ?? llmBaseWidth,
+      sourceHeight: sourceHeight ?? llmBaseHeight,
+      offsetX: Number(offsetX) || 0,
+      offsetY: Number(offsetY) || 0,
     });
 
     return res.send({
@@ -144,6 +158,12 @@ app.post('/annotations', async (req, res) => {
         elementsCount: dual.scaled.elementsCount,
         dataUri:       dual.scaled.dataUri,
       },
+      // JSON com coordenadas finais (remap + offset). Preserva todos os elementos.
+      adjustedUi: dual.adjustedUi,
+      adjustedEstrutura: dual.adjustedEstrutura ?? null,
+      adjustedJson: dual.adjustedEstrutura
+        ? dual.adjustedEstrutura
+        : { ui: dual.adjustedUi },
       // backward-compat alias → points to pixels
       dataUri: dual.pixels.dataUri,
     });

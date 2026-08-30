@@ -285,6 +285,56 @@
   box-shadow: 0 0 0 3px var(--accent-light);
 }
 
+/* ===== Drop zone de arquivo ===== */
+.file-drop-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  min-height: 110px;
+  padding: var(--spacing-md);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.file-drop-zone:hover,
+.file-drop-zone.dragging {
+  border-color: var(--border-focus);
+  background-color: var(--accent-light);
+  color: var(--text-primary);
+}
+
+.file-drop-zone.has-file {
+  border-style: solid;
+}
+
+.file-drop-zone-input {
+  display: none;
+}
+
+.file-drop-zone-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.file-drop-zone-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  word-break: break-all;
+}
+
+.file-drop-zone-hint {
+  font-size: 0.72rem;
+  color: var(--text-tertiary);
+}
+
 /* ===== Lista de Modelos ===== */
 .models-list {
   list-style: none;

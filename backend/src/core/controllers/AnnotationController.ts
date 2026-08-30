@@ -12,13 +12,20 @@ export class AnnotationController {
         imageBase64,
         analysis,
         coordScale = "normalized-1000",
+        sourceWidth,
+        sourceHeight,
         llmBaseWidth,
         llmBaseHeight,
+        offsetX,
+        offsetY,
         includeLabel = true,
         stroke,
         fill,
         outputFormat,
-      } = req.body as Partial<AnnotateImageParams>;
+      } = req.body as Partial<AnnotateImageParams & {
+        llmBaseWidth?: number;
+        llmBaseHeight?: number;
+      }>;
 
       if (!imageBase64 || !analysis) {
         return res.status(400).json({
@@ -30,23 +37,43 @@ export class AnnotationController {
         imageBase64,
         analysis,
         coordScale,
-        llmBaseWidth,
-        llmBaseHeight,
+        sourceWidth:  sourceWidth  ?? llmBaseWidth,
+        sourceHeight: sourceHeight ?? llmBaseHeight,
+        offsetX: Number(offsetX) || 0,
+        offsetY: Number(offsetY) || 0,
         includeLabel,
         stroke,
         fill,
         outputFormat,
       };
 
-      const result = await annotator.annotateFromAnalysis(params);
+      const dual = await annotator.annotateDual(params);
 
-      // retorna base64 pronto para <img src="...">
       return res.json({
-        mimeType: result.mimeType,
-        width: result.width,
-        height: result.height,
-        elementsCount: result.elementsCount,
-        dataUri: result.dataUri,
+        mimeType: dual.pixels.mimeType,
+        width: dual.pixels.width,
+        height: dual.pixels.height,
+        elementsCount: dual.pixels.elementsCount,
+        dataUri: dual.pixels.dataUri,
+        pixels: {
+          mimeType: dual.pixels.mimeType,
+          width: dual.pixels.width,
+          height: dual.pixels.height,
+          elementsCount: dual.pixels.elementsCount,
+          dataUri: dual.pixels.dataUri,
+        },
+        scaled: {
+          mimeType: dual.scaled.mimeType,
+          width: dual.scaled.width,
+          height: dual.scaled.height,
+          elementsCount: dual.scaled.elementsCount,
+          dataUri: dual.scaled.dataUri,
+        },
+        adjustedUi: dual.adjustedUi,
+        adjustedEstrutura: dual.adjustedEstrutura ?? null,
+        adjustedJson: dual.adjustedEstrutura
+          ? dual.adjustedEstrutura
+          : { ui: dual.adjustedUi },
       });
     } catch (err: any) {
       console.error("[AnnotationController] erro:", err?.message ?? err);
