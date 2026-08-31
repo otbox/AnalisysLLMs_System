@@ -1,0 +1,1585 @@
+[
+  {
+    "id": "header_value_1",
+    "type": "text",
+    "text": "1.408.260.768",
+    "coordenadas": [0, 0, 120, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display a numerical value in the header",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "contracts_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [234, 15, 24, 24],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "represent contracts section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "building"
+    }
+  },
+  {
+    "id": "contracts_label",
+    "type": "text",
+    "text": "Contratos",
+    "coordenadas": [270, 15, 60, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "label for contracts section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "contracts_value",
+    "type": "text",
+    "text": "63.220.145,47",
+    "coordenadas": [270, 31, 100, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display total contracts value",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "total_employees_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [234, 50, 24, 24],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "represent total employees section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "building_with_people"
+    }
+  },
+  {
+    "id": "total_employees_label",
+    "type": "text",
+    "text": "Total de Funcionários",
+    "coordenadas": [270, 50, 120, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "label for total employees section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "total_employees_value",
+    "type": "text",
+    "text": "6.913",
+    "coordenadas": [270, 66, 40, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display total number of employees",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "previous_balance_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [234, 85, 24, 24],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "represent previous balance section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "money_with_arrow"
+    }
+  },
+  {
+    "id": "previous_balance_label",
+    "type": "text",
+    "text": "Saldo Anterior - Restos a pagar",
+    "coordenadas": [270, 85, 180, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "label for previous balance to pay",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "previous_balance_value",
+    "type": "text",
+    "text": "54.283.278,67",
+    "coordenadas": [270, 101, 120, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display previous balance value to pay",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "paid_in_exercise_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [234, 120, 24, 24],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "represent paid in exercise section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "money_with_arrow"
+    }
+  },
+  {
+    "id": "paid_in_exercise_label",
+    "type": "text",
+    "text": "Pago no Exercício referente a Restos a Pagar",
+    "coordenadas": [270, 120, 180, 32],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "label for amount paid in the current exercise",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "paid_in_exercise_value",
+    "type": "text",
+    "text": "117.690.821,18",
+    "coordenadas": [270, 152, 120, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display amount paid in the current exercise",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "health_investment_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [234, 175, 24, 24],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "represent health investment section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "medical_cross_with_money"
+    }
+  },
+  {
+    "id": "health_investment_label",
+    "type": "text",
+    "text": "Investimento em Saúde",
+    "coordenadas": [270, 175, 120, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "label for health investment",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "health_investment_value",
+    "type": "text",
+    "text": "158.881.952,91",
+    "coordenadas": [270, 191, 120, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display health investment value",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "travel_advances_icon_1",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [234, 210, 24, 24],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "represent travel and advances section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "map_pin_with_path"
+    }
+  },
+  {
+    "id": "travel_advances_label_1",
+    "type": "text",
+    "text": "Diárias/Viagens e Adiantamentos",
+    "coordenadas": [270, 210, 180, 32],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "label for travel and advances",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "travel_advances_value_1",
+    "type": "text",
+    "text": "926.623,00",
+    "coordenadas": [270, 242, 80, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display travel and advances value",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "travel_advances_icon_2",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [234, 260, 24, 24],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "represent travel and advances section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "map_pin_with_path"
+    }
+  },
+  {
+    "id": "travel_advances_label_2",
+    "type": "text",
+    "text": "Diárias/Viagens e Adiantamentos",
+    "coordenadas": [270, 260, 180, 32],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "label for travel and advances",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "travel_advances_value_2",
+    "type": "text",
+    "text": "926.623,00",
+    "coordenadas": [270, 292, 80, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display travel and advances value",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "precatórios_deposit_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [234, 310, 24, 24],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "represent precatórios deposit section",
+    "confidence": 1,
+    "meta": {
+      "iconType": "gavel"
+    }
+  },
+  {
+    "id": "precatórios_deposit_label",
+    "type": "text",
+    "text": "Depósito de Precatórios",
+    "coordenadas": [270, 310, 140, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "label for precatórios deposit",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "precatórios_deposit_value",
+    "type": "text",
+    "text": "45.493.014,71",
+    "coordenadas": [270, 326, 120, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display precatórios deposit value",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "parlamentares_link",
+    "type": "link",
+    "text": "Parlamentares",
+    "coordenadas": [454, 15, 80, 16],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to parlamentares section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "pix_text",
+    "type": "text",
+    "text": "Pix",
+    "coordenadas": [454, 31, 20, 16],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display information about Pix",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "administrativa_link",
+    "type": "link",
+    "text": "Administrativa",
+    "coordenadas": [530, 15, 80, 16],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to administrative section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "administrativa_description",
+    "type": "text",
+    "text": "Conheça a estrutura de nossas Secretarias",
+    "coordenadas": [530, 31, 140, 32],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "description for administrative section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "formato_aberto_link",
+    "type": "link",
+    "text": "formato aberto",
+    "coordenadas": [680, 15, 90, 16],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to open format data section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "formato_aberto_description",
+    "type": "text",
+    "text": "faça aqui o download das informações públicas que quiser",
+    "coordenadas": [680, 31, 140, 32],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "description for open format data download",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "frequentes_link",
+    "type": "link",
+    "text": "frequentes",
+    "coordenadas": [830, 15, 70, 16],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to frequently asked questions",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "frequentes_description",
+    "type": "text",
+    "text": "respostas a perguntas mais frequentes da sociedade",
+    "coordenadas": [830, 31, 140, 32],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "description for frequently asked questions",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "facebook_link",
+    "type": "link",
+    "text": "acesse nossa página no Facebook",
+    "coordenadas": [980, 15, 160, 16],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to Facebook page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "despesa_tab",
+    "type": "tab",
+    "text": "Despesa",
+    "coordenadas": [10, 175, 60, 20],
+    "region": "sidebar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "switch to expense view",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "fixed_total_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [10, 205, 24, 24],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "represent fixed total",
+    "confidence": 1,
+    "meta": {
+      "iconType": "building"
+    }
+  },
+  {
+    "id": "fixed_total_text",
+    "type": "text",
+    "text": "Fixado Total: 1.972.234.376,60",
+    "coordenadas": [40, 205, 200, 16],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "display total fixed amount",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "fixed_total_menu_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [200, 205, 16, 16],
+    "region": "sidebar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open options menu for fixed total",
+    "confidence": 1,
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "committed_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [10, 235, 24, 24],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "represent committed amount",
+    "confidence": 1,
+    "meta": {
+      "iconType": "building"
+    }
+  },
+  {
+    "id": "committed_value_text",
+    "type": "text",
+    "text": "Empenhado: 1.537.142.880,92",
+    "coordenadas": [40, 235, 200, 16],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "display total committed amount",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "committed_percentage_text",
+    "type": "text",
+    "text": "Percentual empenhado sobre o total fixado: 77,94%",
+    "coordenadas": [40, 251, 200, 32],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "display percentage of committed amount relative to fixed total",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "processed_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [10, 285, 24, 24],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "represent processed amount",
+    "confidence": 1,
+    "meta": {
+      "iconType": "building"
+    }
+  },
+  {
+    "id": "processed_value_text",
+    "type": "text",
+    "text": "Processado: 1.215.329.072,17",
+    "coordenadas": [40, 285, 200, 16],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "display total processed amount",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "processed_percentage_text",
+    "type": "text",
+    "text": "Percentual processado sobre o total fixado: 61,62%",
+    "coordenadas": [40, 301, 200, 32],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "display percentage of processed amount relative to fixed total",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "paid_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [10, 335, 24, 24],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "represent paid amount",
+    "confidence": 1,
+    "meta": {
+      "iconType": "building"
+    }
+  },
+  {
+    "id": "paid_value_text",
+    "type": "text",
+    "text": "Pago: 1.121.643.655,38",
+    "coordenadas": [40, 335, 200, 16],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "display total paid amount",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "paid_percentage_text",
+    "type": "text",
+    "text": "Percentual pago sobre o total fixado: 56,87%",
+    "coordenadas": [40, 351, 200, 32],
+    "region": "sidebar",
+    "actions": [],
+    "purpose": "display percentage of paid amount relative to fixed total",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "flowchart_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [454, 85, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to flowchart for accountability",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "flowchart_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [510, 90, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for flowchart",
+    "confidence": 1,
+    "meta": {
+      "iconType": "money_with_arrow"
+    }
+  },
+  {
+    "id": "flowchart_title",
+    "type": "text",
+    "text": "Fluxograma - Prestação de Contas",
+    "coordenadas": [460, 125, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for flowchart card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "flowchart_description",
+    "type": "text",
+    "text": "Fluxograma das Prestações de Contas do Regime de Adiantamento",
+    "coordenadas": [460, 157, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for flowchart card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "fundeb_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [624, 85, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to FUNDEB transparency section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "fundeb_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [680, 90, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for FUNDEB",
+    "confidence": 1,
+    "meta": {
+      "iconType": "money_with_person"
+    }
+  },
+  {
+    "id": "fundeb_title",
+    "type": "text",
+    "text": "FUNDEB transparente",
+    "coordenadas": [630, 125, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for FUNDEB card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "fundeb_description",
+    "type": "text",
+    "text": "Lei 6840-2022",
+    "coordenadas": [630, 141, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for FUNDEB card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "glossary_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [794, 85, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to glossary of budgetary terms",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "glossary_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [850, 90, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for glossary",
+    "confidence": 1,
+    "meta": {
+      "iconType": "A-Z_book"
+    }
+  },
+  {
+    "id": "glossary_title",
+    "type": "text",
+    "text": "Glossário de termos orçamentários",
+    "coordenadas": [800, 125, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for glossary card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "official_journal_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [964, 85, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to municipal official journal",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "official_journal_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1020, 90, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for official journal",
+    "confidence": 1,
+    "meta": {
+      "iconType": "newspaper"
+    }
+  },
+  {
+    "id": "official_journal_title",
+    "type": "text",
+    "text": "Jornal Oficial do Município",
+    "coordenadas": [970, 125, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for official journal card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "official_journal_description",
+    "type": "text",
+    "text": "jornal oficial do município",
+    "coordenadas": [970, 157, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for official journal card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_legislation_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [1134, 85, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to municipal legislation section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_legislation_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1190, 90, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for municipal legislation",
+    "confidence": 1,
+    "meta": {
+      "iconType": "magnifying_glass_with_lines"
+    }
+  },
+  {
+    "id": "municipal_legislation_title",
+    "type": "text",
+    "text": "Legislação municipal",
+    "coordenadas": [1140, 125, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for municipal legislation card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_legislation_description",
+    "type": "text",
+    "text": "pesquise aqui a legislação municipal",
+    "coordenadas": [1140, 141, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for municipal legislation card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "budgetary_laws_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [454, 205, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to budgetary laws section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "budgetary_laws_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [510, 210, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for budgetary laws",
+    "confidence": 1,
+    "meta": {
+      "iconType": "pie_chart_with_money"
+    }
+  },
+  {
+    "id": "budgetary_laws_title",
+    "type": "text",
+    "text": "Leis Orçamentárias",
+    "coordenadas": [460, 245, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for budgetary laws card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "budgetary_laws_description",
+    "type": "text",
+    "text": "PPA / LDO / LOA",
+    "coordenadas": [460, 261, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for budgetary laws card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "law_9452_1997_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [624, 205, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to Law 9.452/1997 section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "law_9452_1997_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [680, 210, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for Law 9.452/1997",
+    "confidence": 1,
+    "meta": {
+      "iconType": "pie_chart_with_money"
+    }
+  },
+  {
+    "id": "law_9452_1997_title",
+    "type": "text",
+    "text": "Lei 9.452/1997",
+    "coordenadas": [630, 245, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for Law 9.452/1997 card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "law_9452_1997_description",
+    "type": "text",
+    "text": "Notificações de Liberação de Recursos Federais- Lei 9.452/1997",
+    "coordenadas": [630, 261, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for Law 9.452/1997 card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "online_bids_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [794, 205, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to online bids section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "online_bids_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [850, 210, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for online bids",
+    "confidence": 1,
+    "meta": {
+      "iconType": "youtube"
+    }
+  },
+  {
+    "id": "online_bids_title",
+    "type": "text",
+    "text": "Licitações Online",
+    "coordenadas": [800, 245, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for online bids card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "online_bids_description",
+    "type": "text",
+    "text": "Licitações Online",
+    "coordenadas": [800, 261, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for online bids card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "traffic_fines_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [964, 205, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to traffic fines section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "traffic_fines_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1020, 210, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for traffic fines",
+    "confidence": 1,
+    "meta": {
+      "iconType": "police_officer"
+    }
+  },
+  {
+    "id": "traffic_fines_title",
+    "type": "text",
+    "text": "Multas de Trânsito",
+    "coordenadas": [970, 245, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for traffic fines card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "traffic_fines_description",
+    "type": "text",
+    "text": "multas de transito",
+    "coordenadas": [970, 261, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for traffic fines card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "processed_fines_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [1134, 205, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to processed fines section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "processed_fines_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1190, 210, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for processed fines",
+    "confidence": 1,
+    "meta": {
+      "iconType": "document_with_pen"
+    }
+  },
+  {
+    "id": "processed_fines_title",
+    "type": "text",
+    "text": "Multas Processadas",
+    "coordenadas": [1140, 245, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for processed fines card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "processed_fines_description",
+    "type": "text",
+    "text": "Relatório de Multas Processadas no Município",
+    "coordenadas": [1140, 261, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for processed fines card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "accessibility_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1250, 290, 40, 40],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "toggle accessibility features",
+    "confidence": 1,
+    "meta": {
+      "iconType": "accessibility"
+    }
+  },
+  {
+    "id": "local_norm_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [454, 325, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to local norm section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "local_norm_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [510, 330, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for local norm",
+    "confidence": 1,
+    "meta": {
+      "iconType": "books"
+    }
+  },
+  {
+    "id": "local_norm_title",
+    "type": "text",
+    "text": "Norma local",
+    "coordenadas": [460, 365, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for local norm card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "local_norm_description",
+    "type": "text",
+    "text": "regulamentação do acesso à informação em âmbito municipal",
+    "coordenadas": [460, 381, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for local norm card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_works_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [624, 325, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to municipal works section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_works_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [680, 330, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for municipal works",
+    "confidence": 1,
+    "meta": {
+      "iconType": "person_with_shovel"
+    }
+  },
+  {
+    "id": "municipal_works_title",
+    "type": "text",
+    "text": "Obras municipais",
+    "coordenadas": [630, 365, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for municipal works card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_works_description",
+    "type": "text",
+    "text": "acompanhe aqui o andamento de todas as obras municipais",
+    "coordenadas": [630, 381, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for municipal works card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "ombudsman_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [794, 325, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to ombudsman section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "ombudsman_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [850, 330, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for ombudsman",
+    "confidence": 1,
+    "meta": {
+      "iconType": "person_with_speech_bubble"
+    }
+  },
+  {
+    "id": "ombudsman_title",
+    "type": "text",
+    "text": "Ouvidoria",
+    "coordenadas": [800, 365, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for ombudsman card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "ombudsman_description",
+    "type": "text",
+    "text": "informações sobre o atendimento pela Ouvidoria",
+    "coordenadas": [800, 381, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for ombudsman card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "toll_red_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [964, 325, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to toll collection and payments section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "toll_red_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1020, 330, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for toll collection",
+    "confidence": 1,
+    "meta": {
+      "iconType": "red_toll_booth"
+    }
+  },
+  {
+    "id": "toll_red_title",
+    "type": "text",
+    "text": "Pedágio",
+    "coordenadas": [970, 365, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for toll collection card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "toll_red_description",
+    "type": "text",
+    "text": "Arrecadação x Pagamentos",
+    "coordenadas": [970, 381, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for toll collection card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "toll_blue_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [1134, 325, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to municipal toll collection section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "toll_blue_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1190, 330, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for municipal toll collection",
+    "confidence": 1,
+    "meta": {
+      "iconType": "blue_toll_booth"
+    }
+  },
+  {
+    "id": "toll_blue_title",
+    "type": "text",
+    "text": "Pedágio",
+    "coordenadas": [1140, 365, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for municipal toll collection card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "toll_blue_description",
+    "type": "text",
+    "text": "Arrecadação de pedágio do município. Lei-5708-2016",
+    "coordenadas": [1140, 381, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for municipal toll collection card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "siafic_action_plan_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [454, 445, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to SIAFIC action plan section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "siafic_action_plan_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [510, 450, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for SIAFIC action plan",
+    "confidence": 1,
+    "meta": {
+      "iconType": "SIAFIC_logo"
+    }
+  },
+  {
+    "id": "siafic_action_plan_title",
+    "type": "text",
+    "text": "Plano de Ação - SIAFIC",
+    "coordenadas": [460, 485, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for SIAFIC action plan card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "siafic_action_plan_description",
+    "type": "text",
+    "text": "Plano de Ação - SIAFIC",
+    "coordenadas": [460, 501, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for SIAFIC action plan card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "annual_contracts_plan_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [624, 445, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to annual contracts plan section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "annual_contracts_plan_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [680, 450, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for annual contracts plan",
+    "confidence": 1,
+    "meta": {
+      "iconType": "books"
+    }
+  },
+  {
+    "id": "annual_contracts_plan_title",
+    "type": "text",
+    "text": "Plano de contratações anual",
+    "coordenadas": [630, 485, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for annual contracts plan card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "annual_contracts_plan_description",
+    "type": "text",
+    "text": "Plano de contratações anual",
+    "coordenadas": [630, 501, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for annual contracts plan card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "sus_management_plans_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [794, 445, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to SUS management plans section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "sus_management_plans_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [850, 450, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for SUS management plans",
+    "confidence": 1,
+    "meta": {
+      "iconType": "document_with_person"
+    }
+  },
+  {
+    "id": "sus_management_plans_title",
+    "type": "text",
+    "text": "Planos de Gestão - Planejamento do SUS",
+    "coordenadas": [800, 485, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for SUS management plans card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "sus_management_plans_description",
+    "type": "text",
+    "text": "Planos de Gestão - Planejamento do SUS",
+    "coordenadas": [800, 517, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for SUS management plans card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_education_plan_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [964, 445, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to municipal education plan section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_education_plan_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1020, 450, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for municipal education plan",
+    "confidence": 1,
+    "meta": {
+      "iconType": "person_with_money"
+    }
+  },
+  {
+    "id": "municipal_education_plan_title",
+    "type": "text",
+    "text": "Plano Municipal de Educação",
+    "coordenadas": [970, 485, 150, 32],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for municipal education plan card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_education_plan_description",
+    "type": "text",
+    "text": "Plano Municipal de Educação",
+    "coordenadas": [970, 517, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for municipal education plan card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_health_plan_card",
+    "type": "card",
+    "text": null,
+    "coordenadas": [1134, 445, 160, 100],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to municipal health plan section",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_health_plan_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1190, 450, 40, 30],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "icon for municipal health plan",
+    "confidence": 1,
+    "meta": {
+      "iconType": "money_with_medical_cross"
+    }
+  },
+  {
+    "id": "municipal_health_plan_title",
+    "type": "text",
+    "text": "Plano Municipal de Saúde",
+    "coordenadas": [1140, 485, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "title for municipal health plan card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "municipal_health_plan_description",
+    "type": "text",
+    "text": "acesso ao Plano Municipal de Saúde",
+    "coordenadas": [1140, 501, 150, 16],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "description for municipal health plan card",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "access_statistics_tab",
+    "type": "tab",
+    "text": "Estatística de Acessos",
+    "coordenadas": [10, 575, 120, 20],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "switch to access statistics view",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "access_statistics_menu_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [390, 610, 16, 16],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open options menu for access statistics",
+    "confidence": 1,
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "access_statistics_chart",
+    "type": "chart",
+    "text": null,
+    "coordenadas": [10, 600, 400, 200],
+    "region": "footer",
+    "actions": [],
+    "purpose": "display access statistics over time",
+    "confidence": 1,
+    "meta": {
+      "chartType": "bar",
+      "value": "monthly access data",
+      "x_axis_labels": [
+        "Janeiro /2025",
+        "Fevereiro /2025",
+        "Março/ 2025",
+        "Abril/2025",
+        "Maio/2025",
+        "Junho/2025",
+        "Julho/2025",
+        "Agosto /2025",
+        "Setembro/2025",
+        "Outubro/2025"
+      ],
+      "y_axis_labels": [
+        "110.000",
+        "88.000",
+        "66.000",
+        "44.000",
+        "22.000",
+        "0"
+      ]
+    }
+  }
+]

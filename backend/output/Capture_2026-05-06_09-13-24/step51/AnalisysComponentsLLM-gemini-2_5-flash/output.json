@@ -1,0 +1,41 @@
+{
+  "action": "",
+  "rationale": "",
+  "numberOfComponents": 11,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"home_tab\",\n    \"type\": \"tab\",\n    \"text\": \"Home\",\n    \"coordenadas\": [0, 0, 96, 40],\n    \"region\": \"top-bar\",\n    \"actions\": [\n      \"onClick\"\n    ],\n    \"purpose\": \"navigate to the home page\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"relatorios_tab\",\n    \"type\": \"tab\",\n    \"text\": \"Relatórios\",\n    \"coordenadas\": [96, 0, 108, 40],\n    \"region\": \"top-bar\",\n    \"actions\": [\n      \"onClick\"\n    ],\n    \"purpose\": \"navigate to the reports section\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"exercicio_button\",\n    \"type\": \"button\",\n    \"text\": \"Exercício\",\n    \"coordenadas\": [24, 72, 90, 32],\n    \"region\": \"top-bar\",\n    \"actions\": [\n      \"onClick\"\n    ],\n    \"purpose\": \"select or filter by exercise period\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"receita_button\",\n    \"type\": \"button\",\n    \"text\": \"Receita\",\n    \"coordenadas\": [122, 72, 78, 32],\n    \"region\": \"top-bar\",\n    \"actions\": [\n      \"onClick\"\n    ],\n    \"purpose\": \"filter or view revenue data\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"despesa_button\",\n    \"type\": \"button\",\n    \"text\": \"Despesa\",\n    \"coordenadas\": [800, 72, 78, 32],\n    \"region\": \"top-bar\",\n    \"actions\": [\n      \"onClick\"\n    ],\n    \"purpose\": \"filter or view expense data\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"acesso_rapido_card\",\n    \"type\": \"card\",\n    \"text\": null,\n    \"coordenadas\": [24, 136, 200, 144],\n    \"region\": \"main-content\",\n    \"actions\": [],\n    \"purpose\": \"container for quick access actions\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"acesso_rapido_card_title\",\n    \"type\": \"text\",\n    \"text\": \"Acesso Rápido\",\n    \"coordenadas\": [32, 144, 104, 20],\n    \"region\": \"main-content\",\n    \"actions\": [],\n    \"purpose\": \"title for the quick access section\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"novo_lancamento_button\",\n    \"type\": \"button\",\n    \"text\": \"Novo lançamento\",\n    \"coordenadas\": [32, 192, 128, 32],\n    \"region\": \"main-content\",\n    \"actions\": [\n      \"onClick\"\n    ],\n    \"purpose\": \"create a new entry or transaction\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"importar_csv_button\",\n    \"type\": \"button\",\n    \"text\": \"Importar CSV\",\n    \"coordenadas\": [32, 232, 128, 32],\n    \"region\": \"main-content\",\n    \"actions\": [\n      \"onClick\"\n    ],\n    \"purpose\": \"import data from a CSV file\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"mais_opcoes_button\",\n    \"type\": \"button\",\n    \"text\": \"Mais opções\",\n    \"coordenadas\": [224, 160, 128, 32],\n    \"region\": \"main-content\",\n    \"actions\": [\n      \"onClick\"\n    ],\n    \"purpose\": \"reveal additional options or actions\",\n    \"confidence\": 1.0,\n    \"meta\": {}\n  },\n  {\n    \"id\": \"mais_opcoes_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [232, 168, 16, 16],\n    \"region\": \"main-content\",\n    \"actions\": [],\n    \"purpose\": \"indicate the presence of more options\",\n    \"confidence\": 1.0,\n    \"meta\": {\n      \"iconType\": \"dots-horizontal\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1226,
+      "candidatesTokenCount": 1227,
+      "totalTokenCount": 4460,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 968
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 2007,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "e-D8aaWZHKeGz7IPxvXHsAg"
+  }
+}

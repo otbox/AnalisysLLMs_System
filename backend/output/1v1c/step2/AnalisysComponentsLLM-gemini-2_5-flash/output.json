@@ -1,0 +1,40 @@
+{
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"link_arquivo\",\n    \"type\": \"link\",\n    \"text\": \"Arquivo\",\n    \"coordenadas\": [36, 17, 36, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_editar\",\n    \"type\": \"link\",\n    \"text\": \"Editar\",\n    \"coordenadas\": [75, 17, 32, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_exibir\",\n    \"type\": \"link\",\n    \"text\": \"Exibir\",\n    \"coordenadas\": [112, 17, 30, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_inserir\",\n    \"type\": \"link\",\n    \"text\": \"Inserir\",\n    \"coordenadas\": [149, 17, 36, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_formatar\",\n    \"type\": \"link\",\n    \"text\": \"Formatar\",\n    \"coordenadas\": [192, 17, 45, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_estilos\",\n    \"type\": \"link\",\n    \"text\": \"Estilos\",\n    \"coordenadas\": [245, 17, 36, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_tabela\",\n    \"type\": \"link\",\n    \"text\": \"Tabela\",\n    \"coordenadas\": [288, 17, 35, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_formulario\",\n    \"type\": \"link\",\n    \"text\": \"Formulário\",\n    \"coordenadas\": [330, 17, 53, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_ferramentas\",\n    \"type\": \"link\",\n    \"text\": \"Ferramentas\",\n    \"coordenadas\": [389, 17, 57, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_janela\",\n    \"type\": \"link\",\n    \"text\": \"Janela\",\n    \"coordenadas\": [453, 17, 36, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"link_ajuda\",\n    \"type\": \"link\",\n    \"text\": \"Ajuda\",\n    \"coordenadas\": [496, 17, 30, 28],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_novo_documento\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [12, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_abrir\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [35, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_salvar\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [58, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_salvar_como\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [80, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_imprimir\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [103, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_visualizar_impressao\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [126, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_recortar\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [152, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_copiar\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [174, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_colar\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [197, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_desfazer\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [227, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_refazer\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [250, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_localizar_substituir\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [273, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_navegador\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [295, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_verificar_ortografia\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [318, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_auto_ortografia\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [341, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_galeria\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [364, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_fontwork\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [386, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_tabela\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [409, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_imagem\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [432, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_grafico\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [455, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_caixa_texto\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [477, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_forma\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [500, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_linha\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [523, 72, 18, 37],\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"icon_simbolo\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"co"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 699,
+      "candidatesTokenCount": 2241,
+      "totalTokenCount": 20684,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 441
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 17744,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "5uj7afnmEqGuqtsPn82T-Q8"
+  }
+}

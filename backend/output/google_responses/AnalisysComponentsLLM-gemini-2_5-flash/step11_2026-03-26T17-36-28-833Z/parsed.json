@@ -1,0 +1,533 @@
+[
+  {
+    "resolution": "1320x642"
+  },
+  {
+    "id": "image_logo_limeira",
+    "type": "image",
+    "text": null,
+    "coordenadas": [
+      10,
+      10,
+      100,
+      25
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_hamburger_menu_top_left",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      115,
+      10,
+      25,
+      25
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "tab_acesso_rapido",
+    "type": "tab",
+    "text": "LAI - Acesso Rápido(...)",
+    "coordenadas": [
+      10,
+      50,
+      160,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_close_acesso_rapido",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      155,
+      55,
+      15,
+      15
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "close"
+    }
+  },
+  {
+    "id": "tab_obras_novo",
+    "type": "tab",
+    "text": "LAI - Obras (Novo).",
+    "coordenadas": [
+      175,
+      50,
+      160,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_close_obras_novo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      320,
+      55,
+      15,
+      15
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "close"
+    }
+  },
+  {
+    "id": "text_dados_abertos",
+    "type": "text",
+    "text": "Dados Abertos",
+    "coordenadas": [
+      700,
+      15,
+      90,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_a_plus",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      800,
+      15,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "plus"
+    }
+  },
+  {
+    "id": "icon_a_minus",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      825,
+      15,
+      20,
+      20
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "minus"
+    }
+  },
+  {
+    "id": "icon_hamburger_menu_top_right",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      860,
+      15,
+      25,
+      25
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "image_etransparencia_publica",
+    "type": "image",
+    "text": null,
+    "coordenadas": [
+      895,
+      10,
+      100,
+      25
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "image_conam",
+    "type": "image",
+    "text": null,
+    "coordenadas": [
+      1000,
+      10,
+      60,
+      25
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "label_lai_obras_novo_title",
+    "type": "label",
+    "text": "LAI - Obras (Novo).",
+    "coordenadas": [
+      10,
+      90,
+      150,
+      20
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "label_obra",
+    "type": "label",
+    "text": "Obra",
+    "coordenadas": [
+      10,
+      125,
+      40,
+      20
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "input_obra",
+    "type": "input",
+    "text": null,
+    "coordenadas": [
+      10,
+      145,
+      200,
+      25
+    ],
+    "actions": [
+      "onChange",
+      "onFocus"
+    ],
+    "meta": {
+      "inputType": "text"
+    }
+  },
+  {
+    "id": "label_ano_processo",
+    "type": "label",
+    "text": "Ano Processo",
+    "coordenadas": [
+      220,
+      125,
+      100,
+      20
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "select_ano_processo",
+    "type": "select",
+    "text": "(Todos)",
+    "coordenadas": [
+      220,
+      145,
+      150,
+      25
+    ],
+    "actions": [
+      "onChange",
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "label_situacao_filter",
+    "type": "label",
+    "text": "Situação",
+    "coordenadas": [
+      380,
+      125,
+      70,
+      20
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "select_situacao_filter",
+    "type": "select",
+    "text": "EM EXECUCAO",
+    "coordenadas": [
+      380,
+      145,
+      150,
+      25
+    ],
+    "actions": [
+      "onChange",
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "label_ultima_atualizacao",
+    "type": "label",
+    "text": "Última Atualização",
+    "coordenadas": [
+      540,
+      125,
+      120,
+      20
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "input_ultima_atualizacao",
+    "type": "input",
+    "text": "27/10/2025 23:00:39",
+    "coordenadas": [
+      540,
+      145,
+      180,
+      25
+    ],
+    "actions": [
+      "onChange",
+      "onFocus"
+    ],
+    "meta": {
+      "inputType": "datetime",
+      "placeholder": "27/10/2025 23:00:39"
+    }
+  },
+  {
+    "id": "button_filtrar",
+    "type": "button",
+    "text": "Filtrar",
+    "coordenadas": [
+      920,
+      140,
+      100,
+      35
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_filter",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      930,
+      147,
+      20,
+      20
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "filter"
+    }
+  },
+  {
+    "id": "text_situacao_header",
+    "type": "text",
+    "text": "Situação",
+    "coordenadas": [
+      10,
+      190,
+      70,
+      20
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_hamburger_menu_situacao",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      990,
+      190,
+      25,
+      25
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "chart_em_execucao",
+    "type": "chart",
+    "text": "EM EXECUCAO",
+    "coordenadas": [
+      370,
+      280,
+      280,
+      280
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "chartType": "circular",
+      "value": "EM EXECUCAO"
+    }
+  },
+  {
+    "id": "icon_accessibility_hands",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      950,
+      460,
+      50,
+      50
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "accessibility"
+    }
+  },
+  {
+    "id": "tab_obras",
+    "type": "tab",
+    "text": "Obras",
+    "coordenadas": [
+      10,
+      590,
+      60,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "tab_detalhe",
+    "type": "tab",
+    "text": "Detalhe",
+    "coordenadas": [
+      80,
+      590,
+      70,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_hamburger_menu_obras",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      990,
+      590,
+      25,
+      25
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "table_header_nro_processo",
+    "type": "table-header",
+    "text": "Nro Processo",
+    "coordenadas": [
+      10,
+      620,
+      100,
+      22
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "table_header_ano",
+    "type": "table-header",
+    "text": "Ano",
+    "coordenadas": [
+      110,
+      620,
+      60,
+      22
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "table_header_situacao_table",
+    "type": "table-header",
+    "text": "Situação",
+    "coordenadas": [
+      170,
+      620,
+      100,
+      22
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "table_header_obra",
+    "type": "table-header",
+    "text": "Obra",
+    "coordenadas": [
+      270,
+      620,
+      100,
+      22
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  }
+]

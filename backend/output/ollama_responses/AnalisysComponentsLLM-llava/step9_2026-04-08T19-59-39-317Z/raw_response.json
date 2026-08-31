@@ -1,0 +1,99 @@
+{
+"components": [
+{
+"id": "header",
+"type": "divider",
+"coordenadas": [0, 0, 1320, 245],
+"actions": [],
+"meta": {}
+},
+{
+"id": "menu_toggle",
+"type": "icon",
+"text": null,
+"coordenadas": [175, 641, 55, 330],
+"actions": ["onClick"],
+"meta": {
+"iconType": "hamburger"
+}
+},
+{
+"id": "search_input",
+"type": "input",
+"text": null,
+"coordenadas": [155, 608, 369, 764],
+"actions": ["onChange"],
+"meta": {
+"inputType": "text",
+"placeholder": "..."
+}
+},
+{
+"id": "btn_login",
+"type": "button",
+"text": "Entrar",
+"coordenadas": [206, 631, 589, 794],
+"actions": ["onClick"],
+"meta": {}
+},
+{
+"id": "btn_cadastrar",
+"type": "button",
+"text": "Cadastrar",
+"coordenadas": [362, 557, 908, 711],
+"actions": ["onClick"],
+"meta": {}
+},
+{
+"id": "btn_perfil",
+"type": "button",
+"text": null,
+"coordenadas": [362, 557, 908, 711],
+"actions": ["onClick"],
+"meta": {}
+},
+{
+"id": "avatar",
+"type": "icon",
+"text": null,
+"coordenadas": [473, 631, 577, 809],
+"actions": ["onClick"],
+"meta": {
+"iconType": "user"
+}
+},
+{
+"id": "table_header",
+"type": "table-header",
+"coordenadas": [206, 557, 908, 711],
+"actions": [],
+"meta": {}
+},
+{
+"id": "table_cell",
+"type": "table-cell",
+"text": null,
+"coordenadas": [328, 640, 592, 809],
+"actions": [],
+"meta": {
+"rowData": {}
+}
+},
+{
+"id": "table_row",
+"type": "table-row",
+"coordenadas": [328, 640, 592, 809],
+"actions": [],
+"meta": {
+"rowData": {}
+}
+},
+{
+"id": "footer",
+"type": "divider",
+"coordenadas": [0, 1318, 1320, 245],
+"actions": [],
+"meta": {}
+}
+]
+}

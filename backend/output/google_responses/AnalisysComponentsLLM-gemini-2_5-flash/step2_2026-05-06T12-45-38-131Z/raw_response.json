@@ -1,0 +1,102 @@
+[
+  {
+    "id": "button_home",
+    "type": "button",
+    "text": "Home",
+    "coordinates": [20, 15, 70, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "button_relatorios",
+    "type": "button",
+    "text": "Relatórios",
+    "coordinates": [90, 15, 90, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "button_exercicio",
+    "type": "button",
+    "text": "Exercício",
+    "coordinates": [20, 75, 80, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "button_receita",
+    "type": "button",
+    "text": "Receita",
+    "coordinates": [110, 75, 70, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "button_despesa",
+    "type": "button",
+    "text": "Despesa",
+    "coordinates": [790, 75, 70, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "card_acesso_rapido",
+    "type": "card",
+    "text": null,
+    "coordinates": [20, 125, 170, 150],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_acesso_rapido_title",
+    "type": "text",
+    "text": "Acesso Rápido",
+    "coordinates": [30, 140, 110, 20],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "button_novo_lancamento",
+    "type": "button",
+    "text": "Novo lançamento",
+    "coordinates": [30, 195, 120, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "button_importar_csv",
+    "type": "button",
+    "text": "Importar CSV",
+    "coordinates": [30, 235, 120, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "icon_mais_opcoes",
+    "type": "icon",
+    "text": null,
+    "coordinates": [220, 160, 15, 15],
+    "actions": [],
+    "meta": {
+      "iconType": "more"
+    }
+  },
+  {
+    "id": "button_mais_opcoes",
+    "type": "button",
+    "text": "Mais opções",
+    "coordinates": [210, 155, 140, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "icon_cursor",
+    "type": "icon",
+    "text": null,
+    "coordinates": [510, 410, 15, 15],
+    "actions": [],
+    "meta": {
+      "iconType": "cursor"
+    }
+  }
+]

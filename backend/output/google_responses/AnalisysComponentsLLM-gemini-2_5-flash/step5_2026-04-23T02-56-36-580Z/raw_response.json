@@ -1,0 +1,796 @@
+[
+  {
+    "id": "text_window_title",
+    "type": "text",
+    "text": "Sem título 1 — LibreOffice Writer",
+    "coordenadas": [330, 0, 660, 29],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "button_minimize_window",
+    "type": "button",
+    "text": null,
+    "coordenadas": [1179, 0, 47, 29],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "minimize"
+    }
+  },
+  {
+    "id": "button_maximize_window",
+    "type": "button",
+    "text": null,
+    "coordenadas": [1226, 0, 47, 29],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "maximize"
+    }
+  },
+  {
+    "id": "button_close_window",
+    "type": "button",
+    "text": null,
+    "coordenadas": [1273, 0, 47, 29],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "close"
+    }
+  },
+  {
+    "id": "menu_arquivo",
+    "type": "link",
+    "text": "Arquivo",
+    "coordenadas": [0, 29, 69, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_editar",
+    "type": "link",
+    "text": "Editar",
+    "coordenadas": [69, 29, 60, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_exibir",
+    "type": "link",
+    "text": "Exibir",
+    "coordenadas": [129, 29, 58, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_inserir",
+    "type": "link",
+    "text": "Inserir",
+    "coordenadas": [187, 29, 63, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_formatar",
+    "type": "link",
+    "text": "Formatar",
+    "coordenadas": [250, 29, 78, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_estilos",
+    "type": "link",
+    "text": "Estilos",
+    "coordenadas": [328, 29, 60, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_tabela",
+    "type": "link",
+    "text": "Tabela",
+    "coordenadas": [388, 29, 60, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_formulario",
+    "type": "link",
+    "text": "Formulário",
+    "coordenadas": [448, 29, 80, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_ferramentas",
+    "type": "link",
+    "text": "Ferramentas",
+    "coordenadas": [528, 29, 90, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_janela",
+    "type": "link",
+    "text": "Janela",
+    "coordenadas": [618, 29, 60, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "menu_ajuda",
+    "type": "link",
+    "text": "Ajuda",
+    "coordenadas": [678, 29, 50, 29],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "icon_new_document",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [0, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "new_document"
+    }
+  },
+  {
+    "id": "icon_open_document",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [30, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "open_document"
+    }
+  },
+  {
+    "id": "icon_save_document",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [60, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "save_document"
+    }
+  },
+  {
+    "id": "icon_print",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [90, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "print"
+    }
+  },
+  {
+    "id": "icon_print_preview",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [120, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "print_preview"
+    }
+  },
+  {
+    "id": "divider_toolbar1_1",
+    "type": "divider",
+    "text": null,
+    "coordenadas": [150, 58, 1, 32],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_cut",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [151, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "cut"
+    }
+  },
+  {
+    "id": "icon_copy",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [181, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "copy"
+    }
+  },
+  {
+    "id": "icon_paste",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [211, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "paste"
+    }
+  },
+  {
+    "id": "divider_toolbar1_2",
+    "type": "divider",
+    "text": null,
+    "coordenadas": [241, 58, 1, 32],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_undo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [242, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "undo"
+    }
+  },
+  {
+    "id": "icon_redo",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [272, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "redo"
+    }
+  },
+  {
+    "id": "divider_toolbar1_3",
+    "type": "divider",
+    "text": null,
+    "coordenadas": [302, 58, 1, 32],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_find_replace",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [303, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "find_replace"
+    }
+  },
+  {
+    "id": "icon_navigator",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [333, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "navigator"
+    }
+  },
+  {
+    "id": "icon_gallery",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [363, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "gallery"
+    }
+  },
+  {
+    "id": "icon_styles_formatting",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [393, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "styles_formatting"
+    }
+  },
+  {
+    "id": "icon_object",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [423, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "object"
+    }
+  },
+  {
+    "id": "divider_toolbar1_4",
+    "type": "divider",
+    "text": null,
+    "coordenadas": [453, 58, 1, 32],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_insert_image",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [454, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_image"
+    }
+  },
+  {
+    "id": "icon_insert_table",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [484, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_table"
+    }
+  },
+  {
+    "id": "icon_insert_chart",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [514, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_chart"
+    }
+  },
+  {
+    "id": "icon_insert_text_box",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [544, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_text_box"
+    }
+  },
+  {
+    "id": "icon_insert_page_break",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [574, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_page_break"
+    }
+  },
+  {
+    "id": "divider_toolbar1_5",
+    "type": "divider",
+    "text": null,
+    "coordenadas": [604, 58, 1, 32],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_toggle_formatting_marks",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [605, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "toggle_formatting_marks"
+    }
+  },
+  {
+    "id": "icon_zoom_toolbar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [635, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "zoom"
+    }
+  },
+  {
+    "id": "icon_help_toolbar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [665, 58, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "help"
+    }
+  },
+  {
+    "id": "icon_customize_toolbar",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1288, 58, 32, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "customize"
+    }
+  },
+  {
+    "id": "select_paragraph_style",
+    "type": "select",
+    "text": "Estilo de parágrafo Padrão",
+    "coordenadas": [0, 89, 170, 32],
+    "actions": ["onChange"],
+    "meta": {
+      "options": []
+    }
+  },
+  {
+    "id": "icon_dropdown_paragraph_style",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [145, 95, 20, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "dropdown_arrow"
+    }
+  },
+  {
+    "id": "icon_character_formatting",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [170, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "character_formatting"
+    }
+  },
+  {
+    "id": "icon_paragraph_formatting",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [200, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "paragraph_formatting"
+    }
+  },
+  {
+    "id": "icon_list_formatting",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [230, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "list_formatting"
+    }
+  },
+  {
+    "id": "select_font_family",
+    "type": "select",
+    "text": "Arial",
+    "coordenadas": [260, 89, 100, 32],
+    "actions": ["onChange"],
+    "meta": {
+      "options": []
+    }
+  },
+  {
+    "id": "icon_dropdown_font_family",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [335, 95, 20, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "dropdown_arrow"
+    }
+  },
+  {
+    "id": "select_font_size",
+    "type": "select",
+    "text": "12 pt",
+    "coordenadas": [360, 89, 60, 32],
+    "actions": ["onChange"],
+    "meta": {
+      "options": []
+    }
+  },
+  {
+    "id": "icon_dropdown_font_size",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [395, 95, 20, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "dropdown_arrow"
+    }
+  },
+  {
+    "id": "icon_bold",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [420, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "bold"
+    }
+  },
+  {
+    "id": "icon_italic",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [450, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "italic"
+    }
+  },
+  {
+    "id": "icon_underline",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [480, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "underline"
+    }
+  },
+  {
+    "id": "icon_strikethrough",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [510, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "strikethrough"
+    }
+  },
+  {
+    "id": "icon_superscript",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [540, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "superscript"
+    }
+  },
+  {
+    "id": "icon_subscript",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [570, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "subscript"
+    }
+  },
+  {
+    "id": "icon_clear_direct_formatting",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [600, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "clear_formatting"
+    }
+  },
+  {
+    "id": "icon_font_color",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [630, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "font_color"
+    }
+  },
+  {
+    "id": "icon_highlight_color",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [660, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "highlight_color"
+    }
+  },
+  {
+    "id": "icon_increase_font_size",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [690, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "increase_font_size"
+    }
+  },
+  {
+    "id": "icon_decrease_font_size",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [720, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "decrease_font_size"
+    }
+  },
+  {
+    "id": "divider_toolbar2_1",
+    "type": "divider",
+    "text": null,
+    "coordenadas": [750, 89, 1, 32],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_align_left",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [751, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "align_left"
+    }
+  },
+  {
+    "id": "icon_align_center",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [781, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "align_center"
+    }
+  },
+  {
+    "id": "icon_align_right",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [811, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "align_right"
+    }
+  },
+  {
+    "id": "icon_justify",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [841, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "justify"
+    }
+  },
+  {
+    "id": "icon_line_spacing",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [871, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "line_spacing"
+    }
+  },
+  {
+    "id": "icon_increase_indent",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [901, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "increase_indent"
+    }
+  },
+  {
+    "id": "icon_decrease_indent",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [931, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "decrease_indent"
+    }
+  },
+  {
+    "id": "icon_bullet_list",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [961, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "bullet_list"
+    }
+  },
+  {
+    "id": "icon_numbered_list",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [991, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "numbered_list"
+    }
+  },
+  {
+    "id": "divider_toolbar2_2",
+    "type": "divider",
+    "text": null,
+    "coordenadas": [1021, 89, 1, 32],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_fontwork",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1022, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "fontwork"
+    }
+  },
+  {
+    "id": "icon_character_spacing",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1052, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "character_spacing"
+    }
+  },
+  {
+    "id": "icon_check_spelling",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1082, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "check_spelling"
+    }
+  },
+  {
+    "id": "icon_autocorrect",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1112, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "autocorrect"
+    }
+  },
+  {
+    "id": "icon_insert_hyperlink",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1142, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_hyperlink"
+    }
+  },
+  {
+    "id": "icon_insert_bookmark",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1172, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_bookmark"
+    }
+  },
+  {
+    "id": "icon_insert_footnote",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1202, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_footnote"
+    }
+  },
+  {
+    "id": "icon_insert_endnote",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1232, 89, 30, 32],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "insert_endnote"
+    }
+  },
+  {
+    "id": "icon_insert_comment",
+    

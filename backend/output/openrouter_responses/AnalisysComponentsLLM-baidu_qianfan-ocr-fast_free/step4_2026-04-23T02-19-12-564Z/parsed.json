@@ -1,0 +1,19 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "usability_step_decision",
+    "schema": {
+      "properties": {
+        "action": "Identify all visible UI components in the image",
+        "confidence": 100,
+        "rationale": "The image contains a cyan square at the top-left corner (coordinates [0, <COORD_001>, 25, 50]) and a cyan rectangle at the top-right corner (coordinates [1295, 0, 1320, 50]). No other interactive or informative elements are visible within the specified coordinate constraints."
+      }
+    },
+    "required": [
+      "action",
+      "rationale",
+      "confidence"
+    ],
+    "type": "object"
+  }
+}

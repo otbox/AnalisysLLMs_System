@@ -1,0 +1,246 @@
+[
+  {
+    "id": "tab_despesa",
+    "type": "tab",
+    "text": "Despesa",
+    "coordenadas": [0, 220, 77, 39],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_fixado_total",
+    "type": "card",
+    "text": "Fixado Total: 1.972.234.376,60",
+    "coordenadas": [0, 260, 215, 52],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "icon_menu_fixado_total",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [192, 271, 15, 26],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_empenhado",
+    "type": "card",
+    "text": "Empenhado: 1.537.142.880,92 Percentual empenhado sobre o total fixado: 77,94%",
+    "coordenadas": [0, 313, 215, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_processado",
+    "type": "card",
+    "text": "Processado: 1.215.329.072,17 Percentual processado sobre o total fixado: 61,62%",
+    "coordenadas": [0, 391, 215, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_pago",
+    "type": "card",
+    "text": "Pago: 1.121.643.655,38 Percentual pago sobre o total fixado: 56,87%",
+    "coordenadas": [0, 469, 215, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "text_estatistica_acessos",
+    "type": "text",
+    "text": "Estatística de Acessos",
+    "coordenadas": [0, 586, 138, 26]
+  },
+  {
+    "id": "card_total_atendimentos_esic",
+    "type": "card",
+    "text": "Total Atendimentos e-SIC 328",
+    "coordenadas": [223, 0, 154, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_total_acessos",
+    "type": "card",
+    "text": "Total Acessos 874.470",
+    "coordenadas": [223, 78, 154, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_compras_licitacoes_contratos_sidebar",
+    "type": "card",
+    "text": "Compras / Licitações / Contratos 63.220.145,47",
+    "coordenadas": [223, 156, 154, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_total_funcionarios",
+    "type": "card",
+    "text": "Total de Funcionários 6.913",
+    "coordenadas": [223, 234, 154, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_saldo_anterior_restos_pagar",
+    "type": "card",
+    "text": "Saldo Anterior - Restos a pagar 54.283.278,67",
+    "coordenadas": [223, 313, 154, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_pago_exercicio_restos_pagar",
+    "type": "card",
+    "text": "Pago no Exercício referente a Restos a Pagar 117.690.821,18",
+    "coordenadas": [223, 391, 154, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_investimento_saude",
+    "type": "card",
+    "text": "Investimento em Saúde 158.881.952,91",
+    "coordenadas": [223, 469, 154, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_diarias_viagens_adiantamentos_sidebar",
+    "type": "card",
+    "text": "Diárias/Viagens e Adiantamentos 926.623,00",
+    "coordenadas": [223, 547, 154, 78],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_compras_licitacoes_grid",
+    "type": "card",
+    "text": "Compras/Licitações nossas compras/nossos fornecedores",
+    "coordenadas": [385, 0, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_concursos_selecoes_publicas",
+    "type": "card",
+    "text": "Concursos e seleções públicas Página de divulgação de editais de concursos e seleções públicas",
+    "coordenadas": [508, 0, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_contas_publicas",
+    "type": "card",
+    "text": "Contas Públicas transparência da gestão fiscal: relatórios - artigo 48 da Lei de Responsabilidade Fiscal",
+    "coordenadas": [631, 0, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_consulta_processos_online",
+    "type": "card",
+    "text": "Consulta de Processos Online Processos Online",
+    "coordenadas": [754, 0, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_contratos",
+    "type": "card",
+    "text": "Contratos Contratos firmados",
+    "coordenadas": [877, 0, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_convenios",
+    "type": "card",
+    "text": "Convênios Convênios firmados junto a outros Órgãos Públicos",
+    "coordenadas": [385, 143, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_curriculos",
+    "type": "card",
+    "text": "Currículos Currículos e Portarias de Nomeações de Funcionários Comissionados",
+    "coordenadas": [508, 143, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_decretos_municipais",
+    "type": "card",
+    "text": "Decretos Municipais decretos municipais",
+    "coordenadas": [631, 143, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_decreto_despesas_diarias_viagens_adiantamentos",
+    "type": "card",
+    "text": "Decreto Despesas com diárias, viagens e adiantamentos gastos públicos com diárias e passagens",
+    "coordenadas": [754, 143, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_incentivo_cultural",
+    "type": "card",
+    "text": "Incentivo Cultural Declarações referentes aos exercícios de 2023 e 2024.",
+    "coordenadas": [877, 143, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_despesas_grid",
+    "type": "card",
+    "text": "Despesas onde estamos aplicando o seu dinheiro",
+    "coordenadas": [385, 286, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_despesas_diarias_viagens_adiantamentos_grid",
+    "type": "card",
+    "text": "Despesas com diárias, viagens e adiantamentos gastos públicos com diárias e passagens",
+    "coordenadas": [508, 286, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_editais_licitacao",
+    "type": "card",
+    "text": "Editais de Licitação integra dos Editais de Licitação",
+    "coordenadas": [631, 286, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_esic_grid",
+    "type": "card",
+    "text": "e-SIC Serviço de protocolo eletrônico de pedidos de acesso à informação pública",
+    "coordenadas": [754, 286, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_emendas_parlamentares_estaduais_federais",
+    "type": "card",
+    "text": "Emendas parlamentares Estaduais e Federais",
+    "coordenadas": [877, 286, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_emendas_parlamentares_pix",
+    "type": "card",
+    "text": "Emendas Parlamentares Pix",
+    "coordenadas": [385, 430, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_estrutura_administrativa",
+    "type": "card",
+    "text": "Estrutura Administrativa Conheça a estrutura de nossas Secretarias",
+    "coordenadas": [508, 430, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_extracao_dados_formato_aberto",
+    "type": "card",
+    "text": "Extração de dados em formato aberto faça aqui o download das informações públicas que quiser",
+    "coordenadas": [631, 430, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_perguntas_frequentes",
+    "type": "card",
+    "text": "Perguntas mais frequentes respostas a perguntas mais frequentes da sociedade",
+    "coordenadas": [754, 430, 115, 130],
+    "actions": ["onClick"]
+  },
+  {
+    "id": "card_facebook",
+    "type": "card",
+    "text": "Facebook acesse nossa página no Facebook",
+    "coordenadas": [877, 430, 115, 130],
+    "actions": ["onClick"]
+  }
+]

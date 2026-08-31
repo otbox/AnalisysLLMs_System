@@ -1,0 +1,40 @@
+{
+  "action": "",
+  "rationale": "",
+  "numberOfComponents": 1,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"cyan_square_top_left\",\n    \"type\": \"image\",\n    \"text\": null,\n    \"coordenadas\": [0, 0, 50, 50],\n    \"actions\": [],\n    \"meta\": {}\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1115,
+      "candidatesTokenCount": 71,
+      "totalTokenCount": 1505,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 857
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 319
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "RwXfaYLiEtCJz7IP-ofr-As"
+  }
+}

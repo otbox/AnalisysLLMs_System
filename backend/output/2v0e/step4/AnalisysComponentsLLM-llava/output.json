@@ -1,0 +1,22 @@
+{
+  "action": "",
+  "rationale": "",
+  "numberOfComponents": 0,
+  "confidence": 0,
+  "rawResponse": {
+    "model": "llava",
+    "created_at": "2026-04-08T19:43:52.705920133Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n\"topo\": {\n\"button_logo\": {\n\"type\": \"button\",\n\"text\": null,\n\"coordenadas\": [0, 0, 1320, 642],\n\"actions\": [\"onClick\"],\n\"meta\": {}\n},\n\"rodapé\": {\n\"checkbox_remember_me\": {\n\"type\": \"checkbox\",\n\"text\": null,\n\"coordenadas\": [0, 0, 1320, 642],\n\"actions\": [\"onChange\"],\n\"meta\": {}\n},\n\"button_register\": {\n\"type\": \"button\",\n\"text\": null,\n\"coordenadas\": [0, 0, 1320, 642],\n\"actions\": [\"onClick\"],\n\"meta\": {}\n}\n} \n\n\n} \n\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 10787063614,
+    "load_duration": 13246983,
+    "prompt_eval_count": 1106,
+    "prompt_eval_duration": 239724236,
+    "eval_count": 203,
+    "eval_duration": 9845222269
+  }
+}

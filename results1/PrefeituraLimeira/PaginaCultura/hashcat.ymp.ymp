@@ -1,0 +1,35 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE Tumbleweed">
+    <repositories>
+      <repository recommended="true">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>openSUSE Tumbleweed: The Bleeding Edge, Perfected.
+Tumbleweed is the ultimate rolling release distribution, providing the latest software as it’s released, built upon a foundation of world-class stability and testing.
+
+* Always Current: Get the newest kernel, IDEs, desktops, and applications automatically.
+
+* Powerfully Stable: Experience the velocity of a rolling release without sacrificing the reliability you depend on.
+
+* Engineered for Professionals: The top choice for Developers, Power Users, and openSUSE Contributors who need the best tools for the job.
+
+If you demand the latest stable software, your choice is Tumbleweed.
+
+Staging dashboard is located at: https://build.opensuse.org/staging_workflows/openSUSE:Factory 
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>https://download.opensuse.org/tumbleweed/repo/oss/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>hashcat</name>
+        <summary>CPU-based password recovery utility</summary>
+        <description>Hashcat is a password recovery utility, supporting seven
+unique modes of testing for over 100 optimized hashing algorithms.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

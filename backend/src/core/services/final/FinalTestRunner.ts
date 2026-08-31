@@ -8,8 +8,8 @@ import { GuideStep } from "../llm/GuideStepLLM";
 import { GoogleLLMClient } from "../llm/GoogleService";
 import { OpenRouterLLMClient } from "../llm/OpenRouterService";
 import { resolveTemperature } from "../llm/ILLMService";
+import { QueueService } from "../QueueService";
 import { ResultWriter } from "../results/ResultWriter";
-import { StepController } from "../../controllers/LLMController";
 import {
   FinalCase,
   FinalCaseCatalog,
@@ -18,7 +18,6 @@ import {
 import {
   readImageFileAsDataUrl,
   resolveImagePath,
-  ResolvedImageSource,
 } from "./resolveImagePath";
 
 type LLMAPI = "OPENROUTER" | "GEMINI";
@@ -49,7 +48,6 @@ export type SingleRunParams = {
 };
 
 export type BatchRunParams = {
-  /** Caminho absoluto ou relativo à imagem (alternativa a domain/caseId). */
   imagePath?: string;
   domain?: FinalDomain;
   caseId?: string;
@@ -60,9 +58,7 @@ export type BatchRunParams = {
   LLMAPI?: LLMAPI;
   profiles?: ProfileKey[];
   temperature?: number;
-  /** Repetições por versão de prompt (N). */
   runsPerVersion?: number;
-  /** Versões a testar; default = todas registradas ou [v1]. */
   promptVersions?: AnalisysPromptVersion[];
   includeUiJson?: boolean;
   saveToDisk?: boolean;
@@ -154,52 +150,114 @@ export class FinalTestRunner {
         ? new GoogleLLMClient()
         : new OpenRouterLLMClient();
 
+    const analysisService = new AnalisisLLM(llmClient);
+    const guideService = new GuideStep(llmClient);
+    const queue = new QueueService(analysisService, 1);
     const writer = params.resultWriter ?? this.resultWriter;
+    const { context } = params;
 
-    const stepController = new StepController(
-      {
-        AnalisysComponentsLLM: new AnalisisLLM(llmClient),
-        GuideLLM: new GuideStep(llmClient),
-        CongnitiveWalktroughLLM: new AnalisisLLM(llmClient),
-      },
-      writer,
+    const results = await Promise.all(
+      params.profiles.flatMap((profileKey) =>
+        params.models.map(async (model) => {
+          let output: any;
+          let full: unknown[] = [];
+          let clean: unknown[] = [];
+
+          if (profileKey === "AnalisysComponentsLLM") {
+            const result = await queue.enqueue({
+              model,
+              profile: profileKey,
+              objective: params.objective,
+              stepIndex: context.testNumber ?? 1,
+              imageBase64: context.imageBase64,
+              uiJson: context.uiJson,
+              temperature: params.temperature,
+              promptVersion: params.promptVersion,
+            });
+            output = result.output;
+            full = result.full;
+            clean = result.clean;
+          } else {
+            const service =
+              profileKey === "GuideLLM" ? guideService : analysisService;
+            const result = await service.callModel({
+              model,
+              profile: profileKey,
+              objective: params.objective,
+              stepIndex: context.testNumber ?? 1,
+              imageBase64: context.imageBase64,
+              uiJson: context.uiJson,
+            });
+            if (result && typeof result === "object" && "output" in result) {
+              output = result.output;
+              full = (result as any).full ?? [];
+              clean = (result as any).clean ?? [];
+            } else {
+              output = result;
+            }
+          }
+
+          const base = {
+            profile: profileKey,
+            model,
+            temperature: params.temperature,
+            promptVersion:
+              profileKey === "AnalisysComponentsLLM"
+                ? params.promptVersion
+                : undefined,
+            status: "success" as const,
+            output,
+            full,
+            clean,
+          };
+
+          if (params.saveToDisk && profileKey === "AnalisysComponentsLLM") {
+            const saved = await writer.save(
+              {
+                domain: String(context.domain),
+                caseId: context.caseId,
+                testNumber: context.testNumber,
+                testVersion: context.testVersion,
+                profile: profileKey,
+                model,
+                temperature: params.temperature,
+                promptVersion: params.promptVersion,
+                objective: params.objective,
+                stepIndex: context.testNumber ?? 1,
+                sourceImage: context.sourceImage,
+                runIndex: params.runIndex,
+                execId: params.execId,
+              },
+              {
+                action: output.action ?? "",
+                rationale: output.rationale ?? "",
+                confidence: output.confidence ?? 0,
+                rawResponse: output.rawResponse,
+                ui: full,
+              },
+            );
+
+            return {
+              ...base,
+              execId: saved.execId,
+              savedPath: saved.savedPath,
+              savedAt: saved.savedAt,
+            };
+          }
+
+          return base;
+        }),
+      ),
     );
 
-    const { context } = params;
-    let payload: any;
-
-    const fakeReq = {
-      params: { sessionId: params.sessionId },
-      body: {
-        models: params.models,
-        objective: params.objective,
-        stepIndex: context.testNumber ?? 1,
-        imageBase64: context.imageBase64,
-        uiJson: context.uiJson,
-        profiles: params.profiles,
-        temperature: params.temperature,
-        promptVersion: params.promptVersion,
-        saveToDisk: params.saveToDisk,
-        domain: context.domain,
-        caseId: context.caseId,
-        testNumber: context.testNumber,
-        testVersion: context.testVersion,
-        sourceImage: context.sourceImage,
-        runIndex: params.runIndex,
-        execId: params.execId,
-        LLMAPI: params.LLMAPI,
-      },
+    return {
+      sessionId: params.sessionId,
+      stepIndex: context.testNumber ?? 1,
+      objective: params.objective,
+      temperature: params.temperature,
+      promptVersion: params.promptVersion,
+      results,
     };
-
-    const fakeRes = {
-      send: (data: any) => {
-        payload = data;
-        return data;
-      },
-    };
-
-    await stepController.createHandler(fakeReq, fakeRes);
-    return payload;
   }
 
   async runBatch(params: BatchRunParams) {

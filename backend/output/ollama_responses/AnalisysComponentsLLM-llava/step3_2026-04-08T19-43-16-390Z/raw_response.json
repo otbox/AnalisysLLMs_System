@@ -1,0 +1,30 @@
+{
+"button_filtrar": {
+"type": "button",
+"coordenadas": [0, 469, 128, 711],
+"actions": ["onClick"],
+"meta": {}
+},
+"input_nome": {
+"type": "input",
+"text": null,
+"coordenadas": [0, 535, 132, 698],
+"actions": ["onChange", "onFocus"],
+"meta": {
+"inputType": "text"
+}
+},
+"select_tipo": {
+"type": "select",
+"coordenadas": [0, 537, 132, 698],
+"actions": ["onChange"],
+"meta": {
+"options": ["Opção 1", "Opção 2"]
+}
+},
+"icon_menu": {
+"type": "icon",
+"coordenadas": [0, 467, 198, 533],
+"actions": ["onClick"],
+"meta": {
+"icon

@@ -1,0 +1,68 @@
+{
+"componentes": [
+{
+"id": "top-header",
+"type": "divider",
+"coordenadas": [0, 182, 49, 642],
+"actions": [],
+"meta": {}
+},
+{
+"id": "search-bar",
+"type": "input",
+"text": null,
+"coordenadas": [0, 573, 498, 641],
+"actions": [],
+"meta": {
+"inputType": "text"
+}
+},
+{
+"id": "user-avatar",
+"type": "icon",
+"text": null,
+"coordenadas": [0, 573, 498, 641],
+"actions": [],
+"meta": {
+"iconType": "hamburger|close|search|filter|edit|delete"
+}
+},
+{
+"id": "menu-button",
+"type": "button",
+"text": null,
+"coordenadas": [0, 182, 49, 642],
+"actions": [],
+"meta": {}
+},
+{
+"id": "breadcrumb",
+"type": "breadcrumb",
+"text": null,
+"coordenadas": [0, 573, 498, 641],
+"actions": [],
+"meta": {}
+},
+{
+"id": "table-header",
+"type": "divider",
+"text": null,
+"coordenadas": [0, 182, 49, 642],
+"actions": [],
+"meta": {}
+},
+{
+"id": "table-cells",
+"type": "table-cell",
+"text": null,
+"coordenadas": [0, 573, 498, 641],
+"actions": [],
+"meta": {
+"rowData": {}
+}
+},
+{
+"id": "pagination",
+"type": "pagination",
+"text": null,
+"coordenadas": [0, 573, 498, 6

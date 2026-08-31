@@ -1,0 +1,148 @@
+[
+  {
+    "id": "button_home",
+    "type": "button",
+    "text": "Home",
+    "coordenadas": [
+      24,
+      24,
+      70,
+      32
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_relatorios",
+    "type": "button",
+    "text": "Relatórios",
+    "coordenadas": [
+      94,
+      24,
+      98,
+      32
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_exercicio",
+    "type": "button",
+    "text": "Exercício",
+    "coordenadas": [
+      24,
+      80,
+      80,
+      32
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_receita",
+    "type": "button",
+    "text": "Receita",
+    "coordenadas": [
+      108,
+      80,
+      70,
+      32
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_despesa",
+    "type": "button",
+    "text": "Despesa",
+    "coordenadas": [
+      182,
+      80,
+      78,
+      32
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "card_acesso_rapido",
+    "type": "card",
+    "coordenadas": [
+      24,
+      136,
+      224,
+      144
+    ]
+  },
+  {
+    "id": "text_acesso_rapido_title",
+    "type": "text",
+    "text": "Acesso Rápido",
+    "coordenadas": [
+      32,
+      144,
+      104,
+      24
+    ]
+  },
+  {
+    "id": "button_novo_lancamento",
+    "type": "button",
+    "text": "Novo lançamento",
+    "coordenadas": [
+      32,
+      192,
+      128,
+      32
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_importar_csv",
+    "type": "button",
+    "text": "Importar CSV",
+    "coordenadas": [
+      32,
+      232,
+      108,
+      32
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "button_mais_opcoes",
+    "type": "button",
+    "text": "Mais opções",
+    "coordenadas": [
+      440,
+      152,
+      136,
+      32
+    ],
+    "actions": [
+      "onClick"
+    ]
+  },
+  {
+    "id": "icon_mais_opcoes",
+    "type": "icon",
+    "coordenadas": [
+      448,
+      158,
+      16,
+      20
+    ],
+    "meta": {
+      "iconType": "three_dots_vertical"
+    }
+  }
+]

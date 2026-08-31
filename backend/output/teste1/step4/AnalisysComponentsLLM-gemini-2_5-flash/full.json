@@ -1,0 +1,163 @@
+[
+  {
+    "id": "tab_home",
+    "type": "tab",
+    "text": "Home",
+    "coordenadas": [
+      25,
+      30,
+      70,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "tab_relatorios",
+    "type": "tab",
+    "text": "Relatórios",
+    "coordenadas": [
+      100,
+      30,
+      95,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "button_exercicio",
+    "type": "button",
+    "text": "Exercício",
+    "coordenadas": [
+      25,
+      80,
+      80,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "button_receita",
+    "type": "button",
+    "text": "Receita",
+    "coordenadas": [
+      110,
+      80,
+      70,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "button_despesa",
+    "type": "button",
+    "text": "Despesa",
+    "coordenadas": [
+      185,
+      80,
+      75,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "card_acesso_rapido",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      25,
+      140,
+      260,
+      130
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "label_acesso_rapido",
+    "type": "label",
+    "text": "Acesso Rápido",
+    "coordenadas": [
+      40,
+      150,
+      100,
+      20
+    ],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "button_novo_lancamento",
+    "type": "button",
+    "text": "Novo lançamento",
+    "coordenadas": [
+      35,
+      195,
+      130,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "button_importar_csv",
+    "type": "button",
+    "text": "Importar CSV",
+    "coordenadas": [
+      35,
+      235,
+      105,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "button_mais_opcoes",
+    "type": "button",
+    "text": "Mais opções",
+    "coordenadas": [
+      300,
+      150,
+      150,
+      30
+    ],
+    "actions": [
+      "onClick"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "icon_mais_opcoes",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      310,
+      155,
+      20,
+      20
+    ],
+    "actions": [],
+    "meta": {
+      "iconType": "three_dots"
+    }
+  }
+]

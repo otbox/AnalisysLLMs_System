@@ -1,0 +1,40 @@
+{
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"application_icon\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [10, 5, 20, 20],\n    \"actions\": [],\n    \"meta\": {\n      \"iconType\": \"application\"\n    }\n  },\n  {\n    \"id\": \"window_title\",\n    \"type\": \"text\",\n    \"text\": \"Sem título 1 — LibreOffice Writer\",\n    \"coordenadas\": [260, 5, 238, 20],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"minimize_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"coordenadas\": [1840, 0, 50, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"maximize_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"coordenadas\": [1890, 0, 50, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"close_button\",\n    \"type\": \"button\",\n    \"text\": null,\n    \"coordenadas\": [1940, 0, 50, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_arquivo\",\n    \"type\": \"link\",\n    \"text\": \"Arquivo\",\n    \"coordenadas\": [40, 30, 60, 20],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_editar\",\n    \"type\": \"link\",\n    \"text\": \"Editar\",\n    \"coordenadas\": [100, 30, 50, 20],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_exibir\",\n    \"type\": \"link\",\n    \"text\": \"Exibir\",\n    \"coordenadas\": [150, 30, 50, 20],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_inserir\",\n    \"type\": \"link\",\n    \"text\": \"Inserir\",\n    \"coordenadas\": [200, 30, 50, 20],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_formatar\",\n    \"type\": \"link\",\n    \"text\": \"Formatar\",\n    \"coordenadas\": [250, 30, 70, 20],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"menu_estilos\",\n    \"type\": \"link\",\n    \"text\": \"Estilos\",\n    \"coordenadas\": [320, 30, 50, 20],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1036,
+      "candidatesTokenCount": 787,
+      "totalTokenCount": 21022,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 778
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 19199,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "mvj7aZ78NOWGz7IPtJT7mAI"
+  }
+}

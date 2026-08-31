@@ -1,0 +1,169 @@
+[
+  {
+    "id": "text_header_value",
+    "type": "text",
+    "text": "1.408.200.768",
+    "state": "default",
+    "region": "top-bar",
+    "color": "black",
+    "coordenadas": [16, 0, 100, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "tab_despesa",
+    "type": "tab",
+    "text": "Despesa",
+    "state": "selected",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [0, 160, 100, 24],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "divider_despesa_tab_underline",
+    "type": "divider",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [0, 184, 100, 4],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "card_despesa_fixado_total_background",
+    "type": "card",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [0, 188, 380, 48],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_despesa_fixado_total",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [16, 196, 32, 32],
+    "actions": [],
+    "meta": {
+      "iconType": "building_money"
+    }
+  },
+  {
+    "id": "text_despesa_fixado_total_label",
+    "type": "text",
+    "text": "Fixado Total:",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [64, 196, 80, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_despesa_fixado_total_value",
+    "type": "text",
+    "text": "1.972.234.376,60",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [152, 196, 150, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_despesa_fixado_total_menu",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "gray",
+    "coordenadas": [348, 196, 20, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "menu_horizontal"
+    }
+  },
+  {
+    "id": "card_despesa_empenhado_background",
+    "type": "card",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "coordenadas": [0, 236, 380, 64],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_despesa_empenhado",
+    "type": "icon",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "blue",
+    "coordenadas": [16, 244, 32, 32],
+    "actions": [],
+    "meta": {
+      "iconType": "building_money"
+    }
+  },
+  {
+    "id": "text_despesa_empenhado_label",
+    "type": "text",
+    "text": "Empenhado:",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [64, 244, 80, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_despesa_empenhado_value",
+    "type": "text",
+    "text": "1.537.142.880,92",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [152, 244, 150, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_despesa_empenhado_percentage_label",
+    "type": "text",
+    "text": "Percentual empenhado sobre o total",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [64, 260, 240, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "text_despesa_empenhado_percentage_value",
+    "type": "text",
+    "text": "fixado: 77,94%",
+    "state": "default",
+    "region": "main-content",
+    "color": "black",
+    "coordenadas": [64, 276, 120, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "card_despesa_processado_background",
+    "type": "card",
+    "text": null,
+    "state": "default",
+    "region": "main-content",
+    "color": "white",
+    "co

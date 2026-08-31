@@ -1,0 +1,40 @@
+{
+  "action": "",
+  "rationale": "",
+  "numberOfComponents": 11,
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"tab_home\",\n    \"type\": \"tab\",\n    \"text\": \"Home\",\n    \"coordenadas\": [25, 30, 70, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"tab_relatorios\",\n    \"type\": \"tab\",\n    \"text\": \"Relatórios\",\n    \"coordenadas\": [100, 30, 95, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"button_exercicio\",\n    \"type\": \"button\",\n    \"text\": \"Exercício\",\n    \"coordenadas\": [25, 80, 80, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"button_receita\",\n    \"type\": \"button\",\n    \"text\": \"Receita\",\n    \"coordenadas\": [110, 80, 70, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"button_despesa\",\n    \"type\": \"button\",\n    \"text\": \"Despesa\",\n    \"coordenadas\": [185, 80, 75, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"card_acesso_rapido\",\n    \"type\": \"card\",\n    \"text\": null,\n    \"coordenadas\": [25, 140, 260, 130],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"label_acesso_rapido\",\n    \"type\": \"label\",\n    \"text\": \"Acesso Rápido\",\n    \"coordenadas\": [40, 150, 100, 20],\n    \"actions\": [],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"button_novo_lancamento\",\n    \"type\": \"button\",\n    \"text\": \"Novo lançamento\",\n    \"coordenadas\": [35, 195, 130, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"button_importar_csv\",\n    \"type\": \"button\",\n    \"text\": \"Importar CSV\",\n    \"coordenadas\": [35, 235, 105, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"button_mais_opcoes\",\n    \"type\": \"button\",\n    \"text\": \"Mais opções\",\n    \"coordenadas\": [300, 150, 150, 30],\n    \"actions\": [\"onClick\"],\n    \"meta\": {}\n  },\n  {\n    \"id\": \"icon_mais_opcoes\",\n    \"type\": \"icon\",\n    \"text\": null,\n    \"coordenadas\": [310, 155, 20, 20],\n    \"actions\": [],\n    \"meta\": {\n      \"iconType\": \"three_dots\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1143,
+      "candidatesTokenCount": 823,
+      "totalTokenCount": 2174,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 885
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 208
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "IXnqaebYKZfcqtsPyOqV0Qs"
+  }
+}

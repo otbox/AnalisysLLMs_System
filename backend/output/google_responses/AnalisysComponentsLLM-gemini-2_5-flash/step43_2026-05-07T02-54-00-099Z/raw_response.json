@@ -1,0 +1,750 @@
+[
+  {
+    "id": "logo_limeira",
+    "type": "image",
+    "text": null,
+    "coordenadas": [12, 12, 137, 30],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "hamburger_menu_top_left",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [160, 12, 30, 30],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "tab_lai_acesso_rapido",
+    "type": "tab",
+    "text": "LAI - Acesso Rápido(...)",
+    "coordenadas": [0, 50, 200, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "close_icon_acesso_rapido",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [170, 57, 16, 16],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "close"
+    }
+  },
+  {
+    "id": "tab_lai_obras_novo_inactive",
+    "type": "tab",
+    "text": "LAI - Obras (Novo).",
+    "coordenadas": [200, 50, 170, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "close_icon_obras_novo_inactive",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [340, 57, 16, 16],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "close"
+    }
+  },
+  {
+    "id": "tab_lai_obras_novo_active",
+    "type": "tab",
+    "text": "LAI - Obras (Novo).",
+    "coordenadas": [0, 80, 170, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "text_dados_abertos",
+    "type": "text",
+    "text": "Dados Abertos",
+    "coordenadas": [760, 18, 90, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_a_plus",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [870, 18, 16, 16],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "font_size_increase"
+    }
+  },
+  {
+    "id": "icon_a_minus",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [900, 18, 16, 16],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "font_size_decrease"
+    }
+  },
+  {
+    "id": "hamburger_menu_top_right",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [930, 12, 30, 30],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "image_etransparencia_publica",
+    "type": "image",
+    "text": null,
+    "coordenadas": [970, 12, 100, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "image_conam",
+    "type": "image",
+    "text": null,
+    "coordenadas": [1080, 12, 60, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "label_obra",
+    "type": "label",
+    "text": "Obra",
+    "coordenadas": [220, 120, 40, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "input_obra",
+    "type": "input",
+    "text": null,
+    "coordenadas": [220, 140, 190, 30],
+    "actions": ["onChange", "onFocus"],
+    "meta": {
+      "inputType": "text",
+      "placeholder": null
+    }
+  },
+  {
+    "id": "label_ano_processo",
+    "type": "label",
+    "text": "Ano Processo",
+    "coordenadas": [440, 120, 100, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "select_ano_processo",
+    "type": "select",
+    "text": "(Todos)",
+    "coordenadas": [440, 140, 150, 30],
+    "actions": ["onChange"],
+    "meta": {
+      "options": []
+    }
+  },
+  {
+    "id": "label_situacao_filter",
+    "type": "label",
+    "text": "Situação",
+    "coordenadas": [620, 120, 60, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "select_situacao_filter",
+    "type": "select",
+    "text": "EM EXECUCAO",
+    "coordenadas": [620, 140, 190, 30],
+    "actions": ["onChange"],
+    "meta": {
+      "options": []
+    }
+  },
+  {
+    "id": "label_ultima_atualizacao",
+    "type": "label",
+    "text": "Última Atualização",
+    "coordenadas": [840, 120, 120, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "input_ultima_atualizacao",
+    "type": "input",
+    "text": "27/10/2025 23:00:39",
+    "coordenadas": [840, 140, 190, 30],
+    "actions": ["onChange", "onFocus"],
+    "meta": {
+      "inputType": "datetime",
+      "placeholder": "27/10/2025 23:00:39"
+    }
+  },
+  {
+    "id": "button_filtrar",
+    "type": "button",
+    "text": "Filtrar",
+    "coordenadas": [1840, 140, 140, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "icon_filter",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1850, 145, 20, 20],
+    "actions": [],
+    "meta": {
+      "iconType": "filter"
+    }
+  },
+  {
+    "id": "tooltip_visoes_desatualizadas",
+    "type": "tooltip",
+    "text": "Visões desatualizadas",
+    "coordenadas": [1830, 220, 160, 30],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "tooltip_hamburger_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1960, 225, 20, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "label_situacao_below_filters",
+    "type": "label",
+    "text": "Situação",
+    "coordenadas": [0, 220, 70, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_situacao",
+    "type": "chart",
+    "text": null,
+    "coordenadas": [300, 300, 400, 400],
+    "actions": [],
+    "meta": {
+      "chartType": "pie",
+      "value": null
+    }
+  },
+  {
+    "id": "chart_label_nao_informada",
+    "type": "text",
+    "text": "(Não informada)",
+    "coordenadas": [300, 390, 100, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_label_em_execucao",
+    "type": "text",
+    "text": "EM EXECUCAO",
+    "coordenadas": [570, 390, 100, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_label_encerrado_cumprimento_integral",
+    "type": "text",
+    "text": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+    "coordenadas": [670, 590, 250, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "chart_label_sem_medicao",
+    "type": "text",
+    "text": "Sem medicao",
+    "coordenadas": [380, 690, 90, 16],
+    "actions": [],
+    "meta": {}
+  },
+  {
+    "id": "icon_accessibility_hands",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [1930, 460, 50, 50],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "accessibility"
+    }
+  },
+  {
+    "id": "tab_obras",
+    "type": "tab",
+    "text": "Obras",
+    "coordenadas": [0, 730, 70, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "hamburger_menu_obras_tab",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [350, 735, 20, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "tab_detalhe",
+    "type": "tab",
+    "text": "Detalhe",
+    "coordenadas": [380, 730, 70, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "hamburger_menu_detalhe_tab",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [960, 735, 20, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "table_header_nro_processo",
+    "type": "table-header",
+    "text": "Nro Processo",
+    "coordenadas": [0, 770, 100, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "table_header_ano",
+    "type": "table-header",
+    "text": "Ano",
+    "coordenadas": [100, 770, 50, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "table_header_situacao",
+    "type": "table-header",
+    "text": "Situação",
+    "coordenadas": [150, 770, 200, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "table_header_obra",
+    "type": "table-header",
+    "text": "Obra",
+    "coordenadas": [350, 770, 100, 30],
+    "actions": ["onClick"],
+    "meta": {}
+  },
+  {
+    "id": "table_row_1",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [0, 800, 450, 20],
+    "actions": [],
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00001",
+        "Ano": "2018",
+        "Situação": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+        "Obra": "Sem descricao'"
+      }
+    }
+  },
+  {
+    "id": "table_cell_nro_processo_1",
+    "type": "link",
+    "text": "C00001",
+    "coordenadas": [0, 800, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "C00001"
+    }
+  },
+  {
+    "id": "table_cell_ano_1",
+    "type": "table-cell",
+    "text": "2018",
+    "coordenadas": [100, 800, 50, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "2018"
+    }
+  },
+  {
+    "id": "table_cell_situacao_1",
+    "type": "table-cell",
+    "text": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+    "coordenadas": [150, 800, 200, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "ENCERRADO - CUMPRIMENTO INTEGRAL"
+    }
+  },
+  {
+    "id": "table_cell_obra_1",
+    "type": "link",
+    "text": "Sem descricao'",
+    "coordenadas": [350, 800, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "Sem descricao'"
+    }
+  },
+  {
+    "id": "table_row_2",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [0, 820, 450, 20],
+    "actions": [],
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00001",
+        "Ano": "2019",
+        "Situação": "EM EXECUCAO",
+        "Obra": "Sem descricao'"
+      }
+    }
+  },
+  {
+    "id": "table_cell_nro_processo_2",
+    "type": "link",
+    "text": "C00001",
+    "coordenadas": [0, 820, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "C00001"
+    }
+  },
+  {
+    "id": "table_cell_ano_2",
+    "type": "table-cell",
+    "text": "2019",
+    "coordenadas": [100, 820, 50, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "2019"
+    }
+  },
+  {
+    "id": "table_cell_situacao_2",
+    "type": "table-cell",
+    "text": "EM EXECUCAO",
+    "coordenadas": [150, 820, 200, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "EM EXECUCAO"
+    }
+  },
+  {
+    "id": "table_cell_obra_2",
+    "type": "link",
+    "text": "Sem descricao'",
+    "coordenadas": [350, 820, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "Sem descricao'"
+    }
+  },
+  {
+    "id": "table_row_3",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [0, 840, 450, 20],
+    "actions": [],
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00001",
+        "Ano": "2020",
+        "Situação": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+        "Obra": "Sem descricao'"
+      }
+    }
+  },
+  {
+    "id": "table_cell_nro_processo_3",
+    "type": "link",
+    "text": "C00001",
+    "coordenadas": [0, 840, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "C00001"
+    }
+  },
+  {
+    "id": "table_cell_ano_3",
+    "type": "table-cell",
+    "text": "2020",
+    "coordenadas": [100, 840, 50, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "2020"
+    }
+  },
+  {
+    "id": "table_cell_situacao_3",
+    "type": "table-cell",
+    "text": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+    "coordenadas": [150, 840, 200, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "ENCERRADO - CUMPRIMENTO INTEGRAL"
+    }
+  },
+  {
+    "id": "table_cell_obra_3",
+    "type": "link",
+    "text": "Sem descricao'",
+    "coordenadas": [350, 840, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "Sem descricao'"
+    }
+  },
+  {
+    "id": "table_row_4",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [0, 860, 450, 20],
+    "actions": [],
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00001",
+        "Ano": "2021",
+        "Situação": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+        "Obra": "Sem descricao'"
+      }
+    }
+  },
+  {
+    "id": "table_cell_nro_processo_4",
+    "type": "link",
+    "text": "C00001",
+    "coordenadas": [0, 860, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "C00001"
+    }
+  },
+  {
+    "id": "table_cell_ano_4",
+    "type": "table-cell",
+    "text": "2021",
+    "coordenadas": [100, 860, 50, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "2021"
+    }
+  },
+  {
+    "id": "table_cell_situacao_4",
+    "type": "table-cell",
+    "text": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+    "coordenadas": [150, 860, 200, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "ENCERRADO - CUMPRIMENTO INTEGRAL"
+    }
+  },
+  {
+    "id": "table_cell_obra_4",
+    "type": "link",
+    "text": "Sem descricao'",
+    "coordenadas": [350, 860, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "Sem descricao'"
+    }
+  },
+  {
+    "id": "table_row_5",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [0, 880, 450, 20],
+    "actions": [],
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00001",
+        "Ano": "2023",
+        "Situação": "(Não informada)",
+        "Obra": "Sem descricao'"
+      }
+    }
+  },
+  {
+    "id": "table_cell_nro_processo_5",
+    "type": "link",
+    "text": "C00001",
+    "coordenadas": [0, 880, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "C00001"
+    }
+  },
+  {
+    "id": "table_cell_ano_5",
+    "type": "table-cell",
+    "text": "2023",
+    "coordenadas": [100, 880, 50, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "2023"
+    }
+  },
+  {
+    "id": "table_cell_situacao_5",
+    "type": "table-cell",
+    "text": "(Não informada)",
+    "coordenadas": [150, 880, 200, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "(Não informada)"
+    }
+  },
+  {
+    "id": "table_cell_obra_5",
+    "type": "link",
+    "text": "Sem descricao'",
+    "coordenadas": [350, 880, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "Sem descricao'"
+    }
+  },
+  {
+    "id": "table_row_6",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [0, 900, 450, 20],
+    "actions": [],
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00002",
+        "Ano": "2018",
+        "Situação": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+        "Obra": "Sem descricao'"
+      }
+    }
+  },
+  {
+    "id": "table_cell_nro_processo_6",
+    "type": "link",
+    "text": "C00002",
+    "coordenadas": [0, 900, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "C00002"
+    }
+  },
+  {
+    "id": "table_cell_ano_6",
+    "type": "table-cell",
+    "text": "2018",
+    "coordenadas": [100, 900, 50, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "2018"
+    }
+  },
+  {
+    "id": "table_cell_situacao_6",
+    "type": "table-cell",
+    "text": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+    "coordenadas": [150, 900, 200, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "ENCERRADO - CUMPRIMENTO INTEGRAL"
+    }
+  },
+  {
+    "id": "table_cell_obra_6",
+    "type": "link",
+    "text": "Sem descricao'",
+    "coordenadas": [350, 900, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "Sem descricao'"
+    }
+  },
+  {
+    "id": "table_row_7",
+    "type": "table-row",
+    "text": null,
+    "coordenadas": [0, 920, 450, 20],
+    "actions": [],
+    "meta": {
+      "rowData": {
+        "Nro Processo": "C00002",
+        "Ano": "2019",
+        "Situação": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+        "Obra": "Sem descricao'"
+      }
+    }
+  },
+  {
+    "id": "table_cell_nro_processo_7",
+    "type": "link",
+    "text": "C00002",
+    "coordenadas": [0, 920, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "C00002"
+    }
+  },
+  {
+    "id": "table_cell_ano_7",
+    "type": "table-cell",
+    "text": "2019",
+    "coordenadas": [100, 920, 50, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "2019"
+    }
+  },
+  {
+    "id": "table_cell_situacao_7",
+    "type": "table-cell",
+    "text": "ENCERRADO - CUMPRIMENTO INTEGRAL",
+    "coordenadas": [150, 920, 200, 20],
+    "actions": [],
+    "meta": {
+      "rowData": "ENCERRADO - CUMPRIMENTO INTEGRAL"
+    }
+  },
+  {
+    "id": "table_cell_obra_7",
+    "type": "link",
+    "text": "Sem descricao'",
+    "coordenadas": [350, 920, 100, 20],
+    "actions": ["onClick"],
+    "meta": {
+      "rowData": "Sem descricao'"
+    }
+  },
+  {
+    "id": "text_selecione_processo_licitatorio",
+    "type": "text",
+    "text": "Selecione um processo Licitatório",
+    "coordenadas": [620, 800, 250, 16],
+    "actions": [],
+    "meta": {}
+  }
+]
