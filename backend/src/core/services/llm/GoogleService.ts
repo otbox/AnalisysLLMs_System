@@ -1,34 +1,51 @@
-import { GoogleGenerativeAI, Content, Part } from '@google/generative-ai';
-import { ProfileKey, Profiles } from './LLMsProfiles';
-import { LLMClient, StepModelInput, StepModelOutput } from './ILLMService';
-import 'dotenv/config';
+import {
+  AnalisysPromptVersion,
+  resolveProfilePrompt,
+} from "./LLMsProfiles";
+import {
+  LLMClient,
+  resolvePromptVersion,
+  resolveTemperature,
+  StepModelInput,
+  StepModelOutput,
+} from "./ILLMService";
+import { GoogleGenerativeAI, Content, Part } from "@google/generative-ai";
+import "dotenv/config";
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
-
-if (!GOOGLE_API_KEY) {
-  throw new Error('GOOGLE_API_KEY not defined');
-}
 
 export class GoogleLLMClient implements LLMClient {
   private readonly client: GoogleGenerativeAI;
 
   constructor() {
-    this.client = new GoogleGenerativeAI(GOOGLE_API_KEY!);
+    if (!GOOGLE_API_KEY) {
+      throw new Error("GOOGLE_API_KEY not defined");
+    }
+    this.client = new GoogleGenerativeAI(GOOGLE_API_KEY);
   }
 
-  async callStep(input: StepModelInput, signal?: AbortSignal): Promise<StepModelOutput> {
-    console.log("Calling google API")
+  async callStep(
+    input: StepModelInput,
+    _signal?: AbortSignal,
+  ): Promise<StepModelOutput> {
+    console.log("Calling google API");
+    const temperature = resolveTemperature(input.temperature);
+    const promptVersion = resolvePromptVersion(input.profile, input.promptVersion);
+
     const model = this.client.getGenerativeModel({
-      model: 'gemini-2.5-flash',
+      model: "gemini-2.5-flash",
       generationConfig: {
-        temperature: 0.2,
-        maxOutputTokens: 15000,
-        responseMimeType: 'application/json',
-      }
+        temperature,
+        maxOutputTokens: 20000,
+        responseMimeType: "application/json",
+      },
     });
 
     const contents = buildContents(input);
-    const systemPrompt = Profiles[input.profile] ?? Profiles['AnalisysComponentsLLM'];
+    const systemPrompt = resolveProfilePrompt(
+      input.profile,
+      promptVersion as AnalisysPromptVersion | undefined,
+    );
 
     try {
       const result = await model.generateContent({
@@ -41,43 +58,44 @@ export class GoogleLLMClient implements LLMClient {
       const parsed = safeParseJson(content);
 
       return {
-        action: parsed.action ?? '',
-        rationale: parsed.rationale ?? '',
+        action: parsed.action ?? "",
+        rationale: parsed.rationale ?? "",
         confidence: parsed.confidence ?? 0,
         rawResponse: response,
+        temperature,
+        promptVersion,
       };
     } catch (error: any) {
       throw new Error(
-        'Google AI error: ' + (error.message || JSON.stringify(error))
+        "Google AI error: " + (error.message || JSON.stringify(error)),
       );
     }
   }
 }
 
-/** ==== Helpers de construção de conteúdo ==== */
 function buildContents(input: StepModelInput): Content[] {
   const userText = buildUserText(input);
   const parts: Part[] = [{ text: userText }];
 
   if (input.imageBase64) {
     const pureBase64 = input.imageBase64.startsWith("data:")
-      ? input.imageBase64.split(",")[1] ?? ""
+      ? (input.imageBase64.split(",")[1] ?? "")
       : input.imageBase64;
 
     parts.push({
       inlineData: {
-        mimeType: "image/png",
+        mimeType: guessMime(input.imageBase64),
         data: pureBase64,
       },
     });
   }
 
-  return [
-    {
-      role: 'user',
-      parts,
-    },
-  ];
+  return [{ role: "user", parts }];
+}
+
+function guessMime(dataUrlOrB64: string): string {
+  const m = /^data:(image\/[a-zA-Z0-9.+-]+);base64,/.exec(dataUrlOrB64);
+  return m?.[1] ?? "image/png";
 }
 
 function buildUserText(input: StepModelInput): string {
@@ -91,22 +109,22 @@ function buildUserText(input: StepModelInput): string {
 
   if (input.uiJson) {
     parts.push(
-      `Elementos da interface em JSON (use se ajudar, não precisa repetir tudo):\n${input.uiJson}`
+      `Elementos da interface em JSON (use se ajudar, não precisa repetir tudo):\n${input.uiJson}`,
     );
   }
 
-  if (input.profile !== 'AnalisysComponentsLLM') {
+  if (input.profile !== "AnalisysComponentsLLM") {
     parts.push(
       [
-        'Responda APENAS em JSON com os campos:',
-        ' - action: string, próxima acção concreta do usuário;',
-        ' - rationale: string, explicação da escolha;',
-        ' - confidence: inteiro de 0 a 100, representando a confiança em %.',
-      ].join('\n')
+        "Responda APENAS em JSON com os campos:",
+        " - action: string, próxima acção concreta do usuário;",
+        " - rationale: string, explicação da escolha;",
+        " - confidence: inteiro de 0 a 100, representando a confiança em %.",
+      ].join("\n"),
     );
   }
 
-  return parts.join('\n\n');
+  return parts.join("\n\n");
 }
 
 function safeParseJson(content: string): any {

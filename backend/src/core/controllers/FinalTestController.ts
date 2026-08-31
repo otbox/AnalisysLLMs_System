@@ -1,0 +1,158 @@
+import {
+  AnalisysPromptVersion,
+  DEFAULT_ANALISYS_PROMPT_VERSION,
+  ProfileKey,
+} from "../services/llm/LLMsProfiles";
+import { resolveTemperature } from "../services/llm/ILLMService";
+import { FinalDomain } from "../services/final/FinalCaseCatalog";
+import { FinalTestRunner } from "../services/final/FinalTestRunner";
+import { ResultWriter } from "../services/results/ResultWriter";
+
+type LLMAPI = "OPENROUTER" | "GEMINI";
+
+type FinalTestBody = {
+  /** Caminho da imagem (absoluto ou relativo a Final/ / repo). */
+  imagePath?: string;
+  domain?: FinalDomain;
+  caseId?: string;
+  testNumber?: number;
+  testVersion?: string;
+  objective?: string;
+  models?: string[];
+  LLMAPI?: LLMAPI;
+  profiles?: ProfileKey[];
+  temperature?: number;
+  promptVersion?: AnalisysPromptVersion;
+  promptVersions?: AnalisysPromptVersion[];
+  /** N repetições por versão de prompt. */
+  runsPerVersion?: number;
+  includeUiJson?: boolean;
+  saveToDisk?: boolean;
+  sessionId?: string;
+};
+
+export class FinalTestController {
+  private readonly runner = new FinalTestRunner();
+
+  listHandler = async (req: any, res: any) => {
+    try {
+      const domain = req.query?.domain as FinalDomain | undefined;
+      const testNumber =
+        req.query?.testNumber != null
+          ? Number(req.query.testNumber)
+          : undefined;
+      const testVersion = req.query?.testVersion as string | undefined;
+
+      const cases = this.runner.listCases(domain, testNumber, testVersion);
+
+      return res.send({
+        finalRoot: process.env.FINAL_DATASET_PATH ?? "(default ../Final)",
+        count: cases.length,
+        cases: cases.map((c) => ({
+          domain: c.domain,
+          caseId: c.caseId,
+          testNumber: c.testNumber,
+          testVersion: c.testVersion,
+          relativeImagePath: c.relativeImagePath,
+          imagePath: c.imagePath,
+          hasUiJson: Boolean(c.uiJsonPath),
+        })),
+      });
+    } catch (err: any) {
+      return res.status(500).send({ error: err.message });
+    }
+  };
+
+  runHandler = async (req: any, res: any) => {
+    try {
+      const body = req.body as FinalTestBody;
+      const runs = body.runsPerVersion ?? 1;
+      const versions =
+        body.promptVersions ??
+        (body.promptVersion ? [body.promptVersion] : undefined);
+
+      if (runs > 1 || (versions && versions.length > 1)) {
+        const batch = await this.runner.runBatch({
+          ...body,
+          promptVersions: versions,
+          runsPerVersion: runs,
+        });
+        return res.send(batch);
+      }
+
+      const context = this.runner.resolveContext({
+        imagePath: body.imagePath,
+        domain: body.domain,
+        caseId: body.caseId,
+        testNumber: body.testNumber,
+        testVersion: body.testVersion,
+        includeUiJson: body.includeUiJson,
+      });
+
+      const promptVersion =
+        body.promptVersion ?? DEFAULT_ANALISYS_PROMPT_VERSION;
+      const writer = new ResultWriter();
+      const execId = writer.allocateExecId({
+        domain: String(context.domain),
+        caseId: context.caseId,
+        profile: "AnalisysComponentsLLM",
+        promptVersion,
+      });
+
+      const payload = await this.runner.runSingle({
+        context,
+        objective:
+          body.objective ??
+          "Inventariar todos os componentes visíveis na interface.",
+        models:
+          body.models ??
+          (body.LLMAPI === "OPENROUTER"
+            ? ["nvidia/nemotron-nano-12b-v2-vl:free"]
+            : ["gemini-2.5-flash"]),
+        LLMAPI: body.LLMAPI ?? "GEMINI",
+        profiles: body.profiles ?? ["AnalisysComponentsLLM"],
+        temperature: resolveTemperature(body.temperature),
+        promptVersion,
+        runIndex: 1,
+        execId,
+        saveToDisk: body.saveToDisk ?? true,
+        sessionId: body.sessionId ?? "final-test",
+        resultWriter: writer,
+      });
+
+      return res.send({
+        case: {
+          domain: context.domain,
+          caseId: context.caseId,
+          testNumber: context.testNumber,
+          testVersion: context.testVersion,
+          sourceImage: context.sourceImage,
+        },
+        promptVersion,
+        execId,
+        temperature: resolveTemperature(body.temperature),
+        ...payload,
+      });
+    } catch (err: any) {
+      const status = err.message?.includes("não encontrad") ? 404 : 400;
+      return res.status(status).send({ error: err.message });
+    }
+  };
+
+  /** N execuções × cada versão de prompt, mesma imagem. */
+  batchHandler = async (req: any, res: any) => {
+    try {
+      const body = req.body as FinalTestBody;
+      if (!body.imagePath && !body.domain) {
+        return res.status(400).send({
+          error: "Informe imagePath ou domain (+ caseId ou number+version)",
+        });
+      }
+      const result = await this.runner.runBatch(body);
+      return res.send(result);
+    } catch (err: any) {
+      const status = err.message?.includes("não encontrad") ? 404 : 400;
+      return res.status(status).send({ error: err.message });
+    }
+  };
+}

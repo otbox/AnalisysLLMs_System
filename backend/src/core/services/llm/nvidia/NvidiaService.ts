@@ -3,10 +3,6 @@ const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY;
 const NVIDIA_URL =
   "https://ai.api.nvidia.com/v1/cv/nvidia/nemoretriever-page-elements-v3";
 
-if (!NVIDIA_API_KEY) {
-  throw new Error("NVIDIA_API_KEY not defined");
-}
-
 export type NvidiaDetectionInput = {
   imageBase64: string; // pode vir COM ou SEM prefixo data:
 };
@@ -21,6 +17,9 @@ export class NvidiaObjectDetectionService {
     input: NvidiaDetectionInput,
     signal?: AbortSignal,
   ): Promise<NvidiaDetectionOutput> {
+    if (!NVIDIA_API_KEY) {
+      throw new Error("NVIDIA_API_KEY not defined");
+    }
     // garante data URL no formato que a API espera
     let url: string;
     if (input.imageBase64.startsWith("data:")) {

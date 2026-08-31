@@ -1,51 +1,64 @@
-import { Config, Message } from 'openrouter-client/src/types';
+import { Message } from "openrouter-client/src/types";
 import { OpenRouter } from "openrouter-client";
-import { ProfileKey, Profiles } from './LLMsProfiles';
-import { LLMClient, StepModelInput, StepModelOutput } from './ILLMService';
-import 'dotenv/config'
+import {
+  AnalisysPromptVersion,
+  resolveProfilePrompt,
+} from "./LLMsProfiles";
+import {
+  LLMClient,
+  resolvePromptVersion,
+  resolveTemperature,
+  StepModelInput,
+  StepModelOutput,
+} from "./ILLMService";
+import "dotenv/config";
 
 const APIKEY = process.env.OPEN_ROUTER_API_KEY;
-
-if (!APIKEY) {
-    throw new Error('OPEN_ROUTER_API_KEY not defined')
-}
-
 
 export class OpenRouterLLMClient implements LLMClient {
   private readonly client: OpenRouter;
 
   constructor() {
-    this.client = new OpenRouter(APIKEY!);
+    if (!APIKEY) {
+      throw new Error("OPEN_ROUTER_API_KEY not defined");
+    }
+    this.client = new OpenRouter(APIKEY);
   }
-  
-  async callStep(input: StepModelInput, signal?: AbortSignal): Promise<any> {
-    console.log("Calling OpenRouter Service")
-    const messages = buildMessages(input);
+
+  async callStep(
+    input: StepModelInput,
+    signal?: AbortSignal,
+  ): Promise<StepModelOutput> {
+    console.log("Calling OpenRouter Service");
+    const temperature = resolveTemperature(input.temperature);
+    const promptVersion = resolvePromptVersion(input.profile, input.promptVersion);
+    const messages = buildMessages(input, promptVersion);
 
     const result = await this.client.chat(
       messages,
       {
         model: input.model,
         response_format: {
-          type: 'json_schema',
+          type: "json_schema",
           json_schema: {
-            name: 'usability_step_decision',
+            name: "usability_step_decision",
             schema: {
-              type: 'object',
+              type: "object",
               properties: {
-                action: { type: 'string' },
-                rationale: { type: 'string' },
+                action: { type: "string" },
+                rationale: { type: "string" },
                 confidence: {
-                  type: 'number',
-                  description: 'Confidence score between 0 and 100 (percentage)',
+                  type: "number",
+                  description:
+                    "Confidence score between 0 and 100 (percentage)",
                 },
               },
-              required: ['action', 'rationale', 'confidence'],
+              required: ["action", "rationale", "confidence"],
             },
             strict: true,
           },
         },
-        temperature: 0.2,
+        temperature,
         max_tokens: 20000,
       },
       signal,
@@ -53,52 +66,49 @@ export class OpenRouterLLMClient implements LLMClient {
 
     if (!result.success) {
       throw new Error(
-        'OpenRouter error: ' +
-          ('errorMessage' in result ? result.errorMessage : JSON.stringify(result)),
+        "OpenRouter error: " +
+          ("errorMessage" in result
+            ? result.errorMessage
+            : JSON.stringify(result)),
       );
     }
 
-    const content = result.data.choices?.[0]?.message?.content ?? '{}';
+    const content = result.data.choices?.[0]?.message?.content ?? "{}";
     const parsed = safeParseJson(String(content));
 
     return {
-      input,
-      action: parsed.action ?? '',
-      rationale: parsed.rationale ?? '',
+      action: parsed.action ?? "",
+      rationale: parsed.rationale ?? "",
       confidence: parsed.confidence ?? 0,
       rawResponse: result.data,
+      temperature,
+      promptVersion,
     };
   }
 }
 
-/** ==== Helpers de construção de mensagens ==== */
-
-function buildMessages(input: StepModelInput): Message[] {
+function buildMessages(
+  input: StepModelInput,
+  promptVersion?: AnalisysPromptVersion,
+): Message[] {
   const userText = buildUserText(input);
-
-  const content: any[] = [{ type: 'text', text: userText }];
+  const content: any[] = [{ type: "text", text: userText }];
 
   if (input.imageBase64) {
+    const url = input.imageBase64.startsWith("data:")
+      ? input.imageBase64
+      : `data:image/png;base64,${input.imageBase64}`;
     content.push({
-      type: 'image_url',
-      image_url: {
-        url: `data:image/png;base64,${input.imageBase64}`,
-      },
+      type: "image_url",
+      image_url: { url },
     });
   }
 
-  // aqui dá para escolher o profile dinamicamente
-  const systemPrompt = Profiles[input.profile] ?? Profiles['AnalisysComponentsLLM'];
-  // console.log(systemPrompt);
+  const systemPrompt = resolveProfilePrompt(input.profile, promptVersion);
+
   return [
-    {
-      role: 'system',
-      content: systemPrompt,
-    },
-    {
-      role: 'user',
-      content,
-    },
+    { role: "system", content: systemPrompt },
+    { role: "user", content },
   ];
 }
 
@@ -118,18 +128,17 @@ function buildUserText(input: StepModelInput): string {
     );
   }
 
-  if (input.profile !== 'AnalisysComponentsLLM') 
-    {parts.push(
-    [
-      'Responda APENAS em JSON com os campos:',
-      ' - action: string, próxima acção concreta do usuário;',
-      ' - rationale: string, explicação da escolha;',
-      ' - confidence: inteiro de 0 a 100, representando a confiança em %.'
-    ].join('\n'),
-  );
-
+  if (input.profile !== "AnalisysComponentsLLM") {
+    parts.push(
+      [
+        "Responda APENAS em JSON com os campos:",
+        " - action: string, próxima acção concreta do usuário;",
+        " - rationale: string, explicação da escolha;",
+        " - confidence: inteiro de 0 a 100, representando a confiança em %.",
+      ].join("\n"),
+    );
   }
-  return parts.join('\n\n');
+  return parts.join("\n\n");
 }
 
 function safeParseJson(content: string): any {

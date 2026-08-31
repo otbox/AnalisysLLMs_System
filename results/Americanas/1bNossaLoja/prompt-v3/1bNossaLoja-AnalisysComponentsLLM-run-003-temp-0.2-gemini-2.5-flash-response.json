@@ -1,0 +1,406 @@
+{
+  "domain": "Americanas",
+  "caseId": "1bNossaLoja",
+  "testNumber": 1,
+  "testVersion": "bNossaLoja",
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "temperature": 0.2,
+  "promptVersion": "v3",
+  "objective": "Inventariar todos os componentes visíveis na interface.",
+  "stepIndex": 1,
+  "sourceImage": "Americanas/1bNossaLoja/1bNossaLoja.png",
+  "runIndex": 3,
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"link_especial_beleza_top\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\"\n  },\n  {\n    \"id\": \"link_cuidado_aqui\",\n    \"type\": \"link\",\n    \"text\": \"seu cuidado começa aqui\"\n  },\n  {\n    \"id\": \"link_12x_cartao\",\n    \"type\": \"link\",\n    \"text\": \"tudo em até 12x no cartão*\"\n  },\n  {\n    \"id\": \"link_queeeero\",\n    \"type\": \"link\",\n    \"text\": \"queeeero\"\n  },\n  {\n    \"id\": \"logo_americanas\",\n    \"type\": \"link\",\n    \"text\": \"americanas\"\n  },\n  {\n    \"id\": \"input_search\",\n    \"type\": \"input\",\n    \"text\": \"busque aqui seu produto\"\n  },\n  {\n    \"id\": \"button_search\",\n    \"type\": \"button\",\n    \"text\": \"Buscar produto\"\n  },\n  {\n    \"id\": \"link_user_account\",\n    \"type\": \"link\",\n    \"text\": \"olá, faça seu lo... ou cadastre-se\"\n  },\n  {\n    \"id\": \"link_informe_cep\",\n    \"type\": \"link\",\n    \"text\": \"informe seu CEP\"\n  },\n  {\n    \"id\": \"link_baixe_app\",\n    \"type\": \"link\",\n    \"text\": \"baixe o app\"\n  },\n  {\n    \"id\": \"link_faca_cartao\",\n    \"type\": \"link\",\n    \"text\": \"faça seu cartão\"\n  },\n  {\n    \"id\": \"link_mais_vendidos\",\n    \"type\": \"link\",\n    \"text\": \"mais vendidos\"\n  },\n  {\n    \"id\": \"link_nossas_lojas_header\",\n    \"type\": \"link\",\n    \"text\": \"nossas lojas\",\n    \"state\": \"active\"\n  },\n  {\n    \"id\": \"link_entrega_rapida\",\n    \"type\": \"link\",\n    \"text\": \"entrega rápida\"\n  },\n  {\n    \"id\": \"link_leve_pague\",\n    \"type\": \"link\",\n    \"text\": \"leve pague-\"\n  },\n  {\n    \"id\": \"link_ofertas_tv\",\n    \"type\": \"link\",\n    \"text\": \"ofertas da TV\"\n  },\n  {\n    \"id\": \"link_outlet\",\n    \"type\": \"link\",\n    \"text\": \"outlet\"\n  },\n  {\n    \"id\": \"link_oferta_dia\",\n    \"type\": \"link\",\n    \"text\": \"oferta do dia\"\n  },\n  {\n    \"id\": \"link_cart\",\n    \"type\": \"link\",\n    \"text\": \"Carrinho\"\n  },\n  {\n    \"id\": \"dropdown_departamentos\",\n    \"type\": \"dropdown\",\n    \"text\": \"todos os departamentos\"\n  },\n  {\n    \"id\": \"link_mercado\",\n    \"type\": \"link\",\n    \"text\": \"mercado\"\n  },\n  {\n    \"id\": \"link_brinquedos\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos\"\n  },\n  {\n    \"id\": \"link_celulares\",\n    \"type\": \"link\",\n    \"text\": \"celulares\"\n  },\n  {\n    \"id\": \"link_eletrodomesticos\",\n    \"type\": \"link\",\n    \"text\": \"eletrodomésticos\"\n  },\n  {\n    \"id\": \"link_informatica\",\n    \"type\": \"link\",\n    \"text\": \"informática\"\n  },\n  {\n    \"id\": \"link_audio_video\",\n    \"type\": \"link\",\n    \"text\": \"áudio e vídeo\"\n  },\n  {\n    \"id\": \"link_eletroportateis\",\n    \"type\": \"link\",\n    \"text\": \"eletroportáteis\"\n  },\n  {\n    \"id\": \"link_moveis\",\n    \"type\": \"link\",\n    \"text\": \"móveis\"\n  },\n  {\n    \"id\": \"link_especial_beleza_nav\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\"\n  },\n  {\n    \"id\": \"banner_comprou_ganhou\",\n    \"type\": \"banner\",\n    \"text\": \"comprou, ganhou\"\n  },\n  {\n    \"id\": \"button_saiba_mais_banner\",\n    \"type\": \"button\",\n    \"text\": \"saiba mais\"\n  },\n  {\n    \"id\": \"breadcrumb_pagina_inicial\",\n    \"type\": \"link\",\n    \"text\": \"página inicial\"\n  },\n  {\n    \"id\": \"breadcrumb_nossas_lojas\",\n    \"type\": \"text\",\n    \"text\": \"nossas lojas\"\n  },\n  {\n    \"id\": \"title_nossas_lojas_por_estado\",\n    \"type\": \"text\",\n    \"text\": \"nossas lojas por estado\"\n  },\n  {\n    \"id\": \"state_filter_group\",\n    \"type\": \"filter_group\",\n    \"text\": \"Filtro de estados\",\n    \"meta\": {\n      \"states\": [\n        \"AC\",\n        \"AL\",\n        \"AM\",\n        \"AP\",\n        \"BA\",\n        \"CE\",\n        \"DF\",\n        \"ES\",\n        \"GO\",\n        \"MA\",\n        \"MG\",\n        \"MS\",\n        \"MT\",\n        \"PA\",\n        \"PB\",\n        \"PE\",\n        \"PI\",\n        \"PR\",\n        \"RJ\",\n        \"RN\",\n        \"RO\",\n        \"RR\",\n        \"RS\",\n        \"SC\",\n        \"SE\",\n        \"SP\",\n        \"TO\"\n      ],\n      \"active_state\": \"AC\"\n    }\n  },\n  {\n    \"id\": \"state_current_acre\",\n    \"type\": \"text\",\n    \"text\": \"Acre\"\n  },\n  {\n    \"id\": \"card_store_tarauaca\",\n    \"type\": \"card\",\n    \"text\": \"Tarauaca - Americanas\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_feijo_express\",\n    \"type\": \"card\",\n    \"text\": \"Feijó Express - Americanas\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_nacoes_unidas\",\n    \"type\": \"card\",\n    \"text\": \"NACOES UNIDAS\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_shc_via_verde\",\n    \"type\": \"card\",\n    \"text\": \"SHC VIA VERDE\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_epitaciolandia\",\n    \"type\": \"card\",\n    \"text\": \"Epitaciolandia - Americanas\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_sena_madureira\",\n    \"type\": \"card\",\n    \"text\": \"Sena Madureira - Americanas\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_getulio_vargas\",\n    \"type\": \"card\",\n    \"text\": \"GETULIO VARGAS\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_cruzeiro_do_sul\",\n    \"type\": \"card\",\n    \"text\": \"CRUZEIRO DO SUL\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_rio_branco_1\",\n    \"type\": \"card\",\n    \"text\": \"RIO BRANCO\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_rio_branco_2\",\n    \"type\": \"card\",\n    \"text\": \"RIO BRANCO\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"card_store_shc_copacabana_shopp\",\n    \"type\": \"card\",\n    \"text\": \"SHC COPACABANA SHOPP\",\n    \"state\": \"fechada\"\n  },\n  {\n    \"id\": \"link_sac\",\n    \"type\": \"link\",\n    \"text\": \"sac 4003 4848\"\n  },\n  {\n    \"id\": \"link_guia_seguranca\",\n    \"type\": \"link\",\n    \"text\": \"guia de segurança\"\n  },\n  {\n    \"id\": \"link_especial_beleza_footer\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\"\n  },\n  {\n    \"id\": \"link_americanas_advertising\",\n    \"type\": \"link\",\n    \"text\": \"americanas advertising\"\n  },\n  {\n    \"id\": \"link_entregas_devolucoes\",\n    \"type\": \"link\",\n    \"text\": \"entregas e devoluções\"\n  },\n  {\n    \"id\": \"dropdown_mais_informacoes\",\n    \"type\": \"dropdown\",\n    \"text\": \"mais informações\"\n  },\n  {\n    \"id\": \"link_instagram\",\n    \"type\": \"link\",\n    \"text\": \"Instagram\"\n  },\n  {\n    \"id\": \"link_youtube\",\n    \"type\": \"link\",\n    \"text\": \"YouTube\"\n  },\n  {\n    \"id\": \"link_facebook\",\n    \"type\": \"link\",\n    \"text\": \"Facebook\"\n  },\n  {\n    \"id\": \"link_tiktok\",\n    \"type\": \"link\",\n    \"text\": \"TikTok\"\n  },\n  {\n    \"id\": \"link_mapa_site\",\n    \"type\": \"link\",\n    \"text\": \"Mapa do site\"\n  },\n  {\n    \"id\": \"button_accessibility\",\n    \"type\": \"button\",\n    \"text\": \"Acessibilidade\"\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 463,
+      "candidatesTokenCount": 2564,
+      "totalTokenCount": 6179,
+      "cachedContentTokenCount": 445,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 205
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 197
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 248
+        }
+      ],
+      "thoughtsTokenCount": 3152,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "tcWUavOlJbi8qtsP1N3cwAg"
+  },
+  "ui": [
+    {
+      "id": "link_especial_beleza_top",
+      "type": "link",
+      "text": "especial beleza"
+    },
+    {
+      "id": "link_cuidado_aqui",
+      "type": "link",
+      "text": "seu cuidado começa aqui"
+    },
+    {
+      "id": "link_12x_cartao",
+      "type": "link",
+      "text": "tudo em até 12x no cartão*"
+    },
+    {
+      "id": "link_queeeero",
+      "type": "link",
+      "text": "queeeero"
+    },
+    {
+      "id": "logo_americanas",
+      "type": "link",
+      "text": "americanas"
+    },
+    {
+      "id": "input_search",
+      "type": "input",
+      "text": "busque aqui seu produto"
+    },
+    {
+      "id": "button_search",
+      "type": "button",
+      "text": "Buscar produto"
+    },
+    {
+      "id": "link_user_account",
+      "type": "link",
+      "text": "olá, faça seu lo... ou cadastre-se"
+    },
+    {
+      "id": "link_informe_cep",
+      "type": "link",
+      "text": "informe seu CEP"
+    },
+    {
+      "id": "link_baixe_app",
+      "type": "link",
+      "text": "baixe o app"
+    },
+    {
+      "id": "link_faca_cartao",
+      "type": "link",
+      "text": "faça seu cartão"
+    },
+    {
+      "id": "link_mais_vendidos",
+      "type": "link",
+      "text": "mais vendidos"
+    },
+    {
+      "id": "link_nossas_lojas_header",
+      "type": "link",
+      "text": "nossas lojas",
+      "state": "active"
+    },
+    {
+      "id": "link_entrega_rapida",
+      "type": "link",
+      "text": "entrega rápida"
+    },
+    {
+      "id": "link_leve_pague",
+      "type": "link",
+      "text": "leve pague-"
+    },
+    {
+      "id": "link_ofertas_tv",
+      "type": "link",
+      "text": "ofertas da TV"
+    },
+    {
+      "id": "link_outlet",
+      "type": "link",
+      "text": "outlet"
+    },
+    {
+      "id": "link_oferta_dia",
+      "type": "link",
+      "text": "oferta do dia"
+    },
+    {
+      "id": "link_cart",
+      "type": "link",
+      "text": "Carrinho"
+    },
+    {
+      "id": "dropdown_departamentos",
+      "type": "dropdown",
+      "text": "todos os departamentos"
+    },
+    {
+      "id": "link_mercado",
+      "type": "link",
+      "text": "mercado"
+    },
+    {
+      "id": "link_brinquedos",
+      "type": "link",
+      "text": "brinquedos"
+    },
+    {
+      "id": "link_celulares",
+      "type": "link",
+      "text": "celulares"
+    },
+    {
+      "id": "link_eletrodomesticos",
+      "type": "link",
+      "text": "eletrodomésticos"
+    },
+    {
+      "id": "link_informatica",
+      "type": "link",
+      "text": "informática"
+    },
+    {
+      "id": "link_audio_video",
+      "type": "link",
+      "text": "áudio e vídeo"
+    },
+    {
+      "id": "link_eletroportateis",
+      "type": "link",
+      "text": "eletroportáteis"
+    },
+    {
+      "id": "link_moveis",
+      "type": "link",
+      "text": "móveis"
+    },
+    {
+      "id": "link_especial_beleza_nav",
+      "type": "link",
+      "text": "especial beleza"
+    },
+    {
+      "id": "banner_comprou_ganhou",
+      "type": "banner",
+      "text": "comprou, ganhou"
+    },
+    {
+      "id": "button_saiba_mais_banner",
+      "type": "button",
+      "text": "saiba mais"
+    },
+    {
+      "id": "breadcrumb_pagina_inicial",
+      "type": "link",
+      "text": "página inicial"
+    },
+    {
+      "id": "breadcrumb_nossas_lojas",
+      "type": "text",
+      "text": "nossas lojas"
+    },
+    {
+      "id": "title_nossas_lojas_por_estado",
+      "type": "text",
+      "text": "nossas lojas por estado"
+    },
+    {
+      "id": "state_filter_group",
+      "type": "filter_group",
+      "text": "Filtro de estados",
+      "meta": {
+        "states": [
+          "AC",
+          "AL",
+          "AM",
+          "AP",
+          "BA",
+          "CE",
+          "DF",
+          "ES",
+          "GO",
+          "MA",
+          "MG",
+          "MS",
+          "MT",
+          "PA",
+          "PB",
+          "PE",
+          "PI",
+          "PR",
+          "RJ",
+          "RN",
+          "RO",
+          "RR",
+          "RS",
+          "SC",
+          "SE",
+          "SP",
+          "TO"
+        ],
+        "active_state": "AC"
+      }
+    },
+    {
+      "id": "state_current_acre",
+      "type": "text",
+      "text": "Acre"
+    },
+    {
+      "id": "card_store_tarauaca",
+      "type": "card",
+      "text": "Tarauaca - Americanas",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_feijo_express",
+      "type": "card",
+      "text": "Feijó Express - Americanas",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_nacoes_unidas",
+      "type": "card",
+      "text": "NACOES UNIDAS",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_shc_via_verde",
+      "type": "card",
+      "text": "SHC VIA VERDE",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_epitaciolandia",
+      "type": "card",
+      "text": "Epitaciolandia - Americanas",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_sena_madureira",
+      "type": "card",
+      "text": "Sena Madureira - Americanas",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_getulio_vargas",
+      "type": "card",
+      "text": "GETULIO VARGAS",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_cruzeiro_do_sul",
+      "type": "card",
+      "text": "CRUZEIRO DO SUL",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_rio_branco_1",
+      "type": "card",
+      "text": "RIO BRANCO",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_rio_branco_2",
+      "type": "card",
+      "text": "RIO BRANCO",
+      "state": "fechada"
+    },
+    {
+      "id": "card_store_shc_copacabana_shopp",
+      "type": "card",
+      "text": "SHC COPACABANA SHOPP",
+      "state": "fechada"
+    },
+    {
+      "id": "link_sac",
+      "type": "link",
+      "text": "sac 4003 4848"
+    },
+    {
+      "id": "link_guia_seguranca",
+      "type": "link",
+      "text": "guia de segurança"
+    },
+    {
+      "id": "link_especial_beleza_footer",
+      "type": "link",
+      "text": "especial beleza"
+    },
+    {
+      "id": "link_americanas_advertising",
+      "type": "link",
+      "text": "americanas advertising"
+    },
+    {
+      "id": "link_entregas_devolucoes",
+      "type": "link",
+      "text": "entregas e devoluções"
+    },
+    {
+      "id": "dropdown_mais_informacoes",
+      "type": "dropdown",
+      "text": "mais informações"
+    },
+    {
+      "id": "link_instagram",
+      "type": "link",
+      "text": "Instagram"
+    },
+    {
+      "id": "link_youtube",
+      "type": "link",
+      "text": "YouTube"
+    },
+    {
+      "id": "link_facebook",
+      "type": "link",
+      "text": "Facebook"
+    },
+    {
+      "id": "link_tiktok",
+      "type": "link",
+      "text": "TikTok"
+    },
+    {
+      "id": "link_mapa_site",
+      "type": "link",
+      "text": "Mapa do site"
+    },
+    {
+      "id": "button_accessibility",
+      "type": "button",
+      "text": "Acessibilidade"
+    }
+  ],
+  "savedAt": "2026-08-31T00:07:44.471Z",
+  "savedPath": "/home/otbox/Imagens/IC/ICLLMs/AnalisysLLMs_System/results/Americanas/1bNossaLoja/prompt-v3/1bNossaLoja-AnalisysComponentsLLM-run-003-temp-0.2-gemini-2.5-flash-response.json"
+}

@@ -1,0 +1,1504 @@
+{
+  "domain": "Americanas",
+  "caseId": "1bNossaLoja",
+  "testNumber": 1,
+  "testVersion": "bNossaLoja",
+  "profile": "AnalisysComponentsLLM",
+  "model": "gemini-2.5-flash",
+  "temperature": 0.2,
+  "promptVersion": "v1",
+  "objective": "Inventariar todos os componentes visíveis na interface.",
+  "stepIndex": 1,
+  "sourceImage": "Americanas/1bNossaLoja/1bNossaLoja.png",
+  "runIndex": 1,
+  "action": "",
+  "rationale": "",
+  "confidence": 0,
+  "rawResponse": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "[\n  {\n    \"id\": \"top_bar_text_1\",\n    \"type\": \"text\",\n    \"text\": \"especial beleza • seu cuidado começa aqui • tudo em até 12x no cartão* • queeero >\",\n    \"region\": \"top-bar\",\n    \"coordenadas\": {\n      \"x1\": \"200px\",\n      \"x2\": \"770px\",\n      \"y1\": \"10px\",\n      \"y2\": \"25px\"\n    },\n    \"actions\": []\n  },\n  {\n    \"id\": \"logo_americanas_header\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"top-bar\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"300px\",\n      \"y1\": \"40px\",\n      \"y2\": \"70px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"search_input\",\n    \"type\": \"input\",\n    \"text\": \"busque aqui seu produto\",\n    \"state\": \"default\",\n    \"region\": \"top-bar\",\n    \"coordenadas\": {\n      \"x1\": \"330px\",\n      \"x2\": \"600px\",\n      \"y1\": \"40px\",\n      \"y2\": \"70px\"\n    },\n    \"actions\": [\"onChange\", \"onFocus\"],\n    \"meta\": {\n      \"placeholder\": \"busque aqui seu produto\"\n    }\n  },\n  {\n    \"id\": \"search_button\",\n    \"type\": \"button\",\n    \"text\": \"\",\n    \"region\": \"top-bar\",\n    \"coordenadas\": {\n      \"x1\": \"600px\",\n      \"x2\": \"640px\",\n      \"y1\": \"40px\",\n      \"y2\": \"70px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"search\"\n    }\n  },\n  {\n    \"id\": \"user_profile_link\",\n    \"type\": \"link\",\n    \"text\": \"olá, faça seu lo... ou cadastre-se\",\n    \"region\": \"top-bar\",\n    \"coordenadas\": {\n      \"x1\": \"770px\",\n      \"x2\": \"890px\",\n      \"y1\": \"40px\",\n      \"y2\": \"70px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"user\"\n    }\n  },\n  {\n    \"id\": \"my_orders_link\",\n    \"type\": \"link\",\n    \"text\": \"\",\n    \"region\": \"top-bar\",\n    \"coordenadas\": {\n      \"x1\": \"900px\",\n      \"x2\": \"940px\",\n      \"y1\": \"40px\",\n      \"y2\": \"70px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"box\"\n    }\n  },\n  {\n    \"id\": \"favorites_link\",\n    \"type\": \"link\",\n    \"text\": \"\",\n    \"region\": \"top-bar\",\n    \"coordenadas\": {\n      \"x1\": \"950px\",\n      \"x2\": \"990px\",\n      \"y1\": \"40px\",\n      \"y2\": \"70px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"heart\"\n    }\n  },\n  {\n    \"id\": \"cart_link\",\n    \"type\": \"link\",\n    \"text\": \"0\",\n    \"region\": \"top-bar\",\n    \"coordenadas\": {\n      \"x1\": \"1000px\",\n      \"x2\": \"1040px\",\n      \"y1\": \"40px\",\n      \"y2\": \"70px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"shopping-cart\",\n      \"item_count\": 0\n    }\n  },\n  {\n    \"id\": \"inform_cep_link\",\n    \"type\": \"link\",\n    \"text\": \"informe seu CEP\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"280px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"location\"\n    }\n  },\n  {\n    \"id\": \"download_app_link\",\n    \"type\": \"link\",\n    \"text\": \"baixe o app\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"300px\",\n      \"x2\": \"380px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"make_card_link\",\n    \"type\": \"link\",\n    \"text\": \"faça seu cartão\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"400px\",\n      \"x2\": \"500px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"most_sold_link\",\n    \"type\": \"link\",\n    \"text\": \"mais vendidos\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"520px\",\n      \"x2\": \"610px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"our_stores_link\",\n    \"type\": \"link\",\n    \"text\": \"nossas lojas\",\n    \"state\": \"active\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"630px\",\n      \"x2\": \"710px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"fast_delivery_link\",\n    \"type\": \"link\",\n    \"text\": \"entrega rápida\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"730px\",\n      \"x2\": \"820px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"leve_pague_plus_link\",\n    \"type\": \"link\",\n    \"text\": \"leve pague+\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"840px\",\n      \"x2\": \"920px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"tv_offers_link\",\n    \"type\": \"link\",\n    \"text\": \"ofertas da TV\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"940px\",\n      \"x2\": \"1020px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"outlet_link\",\n    \"type\": \"link\",\n    \"text\": \"outlet\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"1040px\",\n      \"x2\": \"1090px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"deal_of_the_day_link\",\n    \"type\": \"link\",\n    \"text\": \"oferta do dia\",\n    \"region\": \"navigation-bar\",\n    \"coordenadas\": {\n      \"x1\": \"1110px\",\n      \"x2\": \"1200px\",\n      \"y1\": \"90px\",\n      \"y2\": \"120px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"tag\"\n    }\n  },\n  {\n    \"id\": \"all_departments_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"todos os departamentos\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"330px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"menu\"\n    }\n  },\n  {\n    \"id\": \"department_mercado_link\",\n    \"type\": \"link\",\n    \"text\": \"mercado\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"350px\",\n      \"x2\": \"410px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"department_brinquedos_link\",\n    \"type\": \"link\",\n    \"text\": \"brinquedos\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"430px\",\n      \"x2\": \"500px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"department_celulares_link\",\n    \"type\": \"link\",\n    \"text\": \"celulares\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"520px\",\n      \"x2\": \"590px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"department_eletrodomesticos_link\",\n    \"type\": \"link\",\n    \"text\": \"eletrodomésticos\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"610px\",\n      \"x2\": \"720px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"department_informatica_link\",\n    \"type\": \"link\",\n    \"text\": \"informática\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"740px\",\n      \"x2\": \"820px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"department_audio_video_link\",\n    \"type\": \"link\",\n    \"text\": \"áudio e vídeo\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"840px\",\n      \"x2\": \"930px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"department_eletroportateis_link\",\n    \"type\": \"link\",\n    \"text\": \"eletroportáteis\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"950px\",\n      \"x2\": \"1050px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"department_moveis_link\",\n    \"type\": \"link\",\n    \"text\": \"móveis\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"1070px\",\n      \"x2\": \"1120px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"department_especial_beleza_link\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\",\n    \"region\": \"departments-bar\",\n    \"coordenadas\": {\n      \"x1\": \"1140px\",\n      \"x2\": \"1240px\",\n      \"y1\": \"140px\",\n      \"y2\": \"160px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"banner_comprou_ganhou\",\n    \"type\": \"banner\",\n    \"text\": \"comprou, ganhou\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"1250px\",\n      \"y1\": \"180px\",\n      \"y2\": \"250px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"image_description\": \"Banner promocional com texto 'comprou, ganhou' e personagens Disney/Marvel, com oferta de jogo a partir de R$79,99.\"\n    }\n  },\n  {\n    \"id\": \"banner_saiba_mais_button\",\n    \"type\": \"button\",\n    \"text\": \"saiba mais\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"710px\",\n      \"x2\": \"810px\",\n      \"y1\": \"200px\",\n      \"y2\": \"230px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"banner_confira_regras_link\",\n    \"type\": \"link\",\n    \"text\": \"confira as regras.\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"710px\",\n      \"x2\": \"810px\",\n      \"y1\": \"235px\",\n      \"y2\": \"245px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_pagina_inicial\",\n    \"type\": \"link\",\n    \"text\": \"página inicial\",\n    \"region\": \"breadcrumbs\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"260px\",\n      \"y1\": \"270px\",\n      \"y2\": \"285px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"breadcrumb_nossas_lojas\",\n    \"type\": \"text\",\n    \"text\": \"nossas lojas\",\n    \"region\": \"breadcrumbs\",\n    \"coordenadas\": {\n      \"x1\": \"280px\",\n      \"x2\": \"360px\",\n      \"y1\": \"270px\",\n      \"y2\": \"285px\"\n    },\n    \"actions\": []\n  },\n  {\n    \"id\": \"heading_nossas_lojas_por_estado\",\n    \"type\": \"heading\",\n    \"text\": \"nossas lojas por estado\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"400px\",\n      \"y1\": \"300px\",\n      \"y2\": \"320px\"\n    },\n    \"actions\": []\n  },\n  {\n    \"id\": \"state_filter_ac\",\n    \"type\": \"button\",\n    \"text\": \"AC\",\n    \"state\": \"active\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"200px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_al\",\n    \"type\": \"button\",\n    \"text\": \"AL\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"210px\",\n      \"x2\": \"240px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_am\",\n    \"type\": \"button\",\n    \"text\": \"AM\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"250px\",\n      \"x2\": \"280px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ap\",\n    \"type\": \"button\",\n    \"text\": \"AP\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"290px\",\n      \"x2\": \"320px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ba\",\n    \"type\": \"button\",\n    \"text\": \"BA\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"330px\",\n      \"x2\": \"360px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ce\",\n    \"type\": \"button\",\n    \"text\": \"CE\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"370px\",\n      \"x2\": \"400px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_df\",\n    \"type\": \"button\",\n    \"text\": \"DF\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"410px\",\n      \"x2\": \"440px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_es\",\n    \"type\": \"button\",\n    \"text\": \"ES\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"450px\",\n      \"x2\": \"480px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_go\",\n    \"type\": \"button\",\n    \"text\": \"GO\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"490px\",\n      \"x2\": \"520px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ma\",\n    \"type\": \"button\",\n    \"text\": \"MA\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"530px\",\n      \"x2\": \"560px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_mg\",\n    \"type\": \"button\",\n    \"text\": \"MG\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"570px\",\n      \"x2\": \"600px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ms\",\n    \"type\": \"button\",\n    \"text\": \"MS\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"610px\",\n      \"x2\": \"640px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_mt\",\n    \"type\": \"button\",\n    \"text\": \"MT\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"650px\",\n      \"x2\": \"680px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pa\",\n    \"type\": \"button\",\n    \"text\": \"PA\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"690px\",\n      \"x2\": \"720px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pb\",\n    \"type\": \"button\",\n    \"text\": \"PB\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"730px\",\n      \"x2\": \"760px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pe\",\n    \"type\": \"button\",\n    \"text\": \"PE\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"770px\",\n      \"x2\": \"800px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pi\",\n    \"type\": \"button\",\n    \"text\": \"PI\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"810px\",\n      \"x2\": \"840px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_pr\",\n    \"type\": \"button\",\n    \"text\": \"PR\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"850px\",\n      \"x2\": \"880px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_rj\",\n    \"type\": \"button\",\n    \"text\": \"RJ\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"890px\",\n      \"x2\": \"920px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_rn\",\n    \"type\": \"button\",\n    \"text\": \"RN\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"930px\",\n      \"x2\": \"960px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_ro\",\n    \"type\": \"button\",\n    \"text\": \"RO\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"970px\",\n      \"x2\": \"1000px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_rr\",\n    \"type\": \"button\",\n    \"text\": \"RR\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"1010px\",\n      \"x2\": \"1040px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_rs\",\n    \"type\": \"button\",\n    \"text\": \"RS\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"1050px\",\n      \"x2\": \"1080px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_sc\",\n    \"type\": \"button\",\n    \"text\": \"SC\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"1090px\",\n      \"x2\": \"1120px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_se\",\n    \"type\": \"button\",\n    \"text\": \"SE\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"1130px\",\n      \"x2\": \"1160px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_sp\",\n    \"type\": \"button\",\n    \"text\": \"SP\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"1170px\",\n      \"x2\": \"1200px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_filter_to\",\n    \"type\": \"button\",\n    \"text\": \"TO\",\n    \"state\": \"default\",\n    \"region\": \"state-filters\",\n    \"coordenadas\": {\n      \"x1\": \"1210px\",\n      \"x2\": \"1240px\",\n      \"y1\": \"340px\",\n      \"y2\": \"360px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"state_section_title_acre\",\n    \"type\": \"heading\",\n    \"text\": \"Acre\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"220px\",\n      \"y1\": \"390px\",\n      \"y2\": \"410px\"\n    },\n    \"actions\": []\n  },\n  {\n    \"id\": \"store_card_tarauaca\",\n    \"type\": \"card\",\n    \"text\": \"Tarauaca - Americanas\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"410px\",\n      \"y1\": \"430px\",\n      \"y2\": \"530px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"Tarauaca - Americanas\",\n      \"address\": \"Rua Quintino Bocaiuva, 70, Tarauaca - AC\",\n      \"hours\": \"08h00 às 19h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_feijo_express\",\n    \"type\": \"card\",\n    \"text\": \"Feijó Express - Americanas\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"420px\",\n      \"x2\": \"660px\",\n      \"y1\": \"430px\",\n      \"y2\": \"530px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"Feijó Express - Americanas\",\n      \"address\": \"Avenida Marechal Deodoro, 96, Feijó - AC\",\n      \"hours\": \"08h00 às 18h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_nacoes_unidas\",\n    \"type\": \"card\",\n    \"text\": \"NACOES UNIDAS\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"670px\",\n      \"x2\": \"910px\",\n      \"y1\": \"430px\",\n      \"y2\": \"530px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"NACOES UNIDAS\",\n      \"address\": \"AVENIDA NACOES UNIDAS 2948,, RIO BRANCO - AC\",\n      \"hours\": \"08h00 às 18h30\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_shc_via_verde\",\n    \"type\": \"card\",\n    \"text\": \"SHC VIA VERDE\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"410px\",\n      \"y1\": \"540px\",\n      \"y2\": \"640px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"SHC VIA VERDE\",\n      \"address\": \"BR 364 VIA VERDE - SHOPPING 1707 LOJA 041,, RIO BRANCO - AC\",\n      \"hours\": \"10h00 às 22h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_epitaciolandia\",\n    \"type\": \"card\",\n    \"text\": \"Epitaciolandia - Americanas\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"420px\",\n      \"x2\": \"660px\",\n      \"y1\": \"540px\",\n      \"y2\": \"640px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"Epitaciolandia - Americanas\",\n      \"address\": \"Avenida Santos Dumont, 385, Epitaciolandia - AC\",\n      \"hours\": \"08h00 às 19h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_sena_madureira\",\n    \"type\": \"card\",\n    \"text\": \"Sena Madureira - Americanas\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"670px\",\n      \"x2\": \"910px\",\n      \"y1\": \"540px\",\n      \"y2\": \"640px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"Sena Madureira - Americanas\",\n      \"address\": \"RUA PADRE EGIDIO, 119, Sena Madureira - AC\",\n      \"hours\": \"08h00 às 18h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_getulio_vargas\",\n    \"type\": \"card\",\n    \"text\": \"GETULIO VARGAS\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"410px\",\n      \"y1\": \"650px\",\n      \"y2\": \"750px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"GETULIO VARGAS\",\n      \"address\": \"AVENIDA GETULIO VARGAS 1348,, RIO BRANCO - AC\",\n      \"hours\": \"08h00 às 18h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_cruzeiro_do_sul\",\n    \"type\": \"card\",\n    \"text\": \"CRUZEIRO DO SUL\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"420px\",\n      \"x2\": \"660px\",\n      \"y1\": \"650px\",\n      \"y2\": \"750px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"CRUZEIRO DO SUL\",\n      \"address\": \"AVENIDA BOULEVARD THAUMATURGO 338,, CRUZEIRO DO SUL - AC\",\n      \"hours\": \"09h00 às 20h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_rio_branco_1\",\n    \"type\": \"card\",\n    \"text\": \"RIO BRANCO\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"670px\",\n      \"x2\": \"910px\",\n      \"y1\": \"650px\",\n      \"y2\": \"750px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"RIO BRANCO\",\n      \"address\": \"RUA RUI BARBOSA 400,, RIO BRANCO - AC\",\n      \"hours\": \"09h00 às 18h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_rio_branco_2\",\n    \"type\": \"card\",\n    \"text\": \"RIO BRANCO\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"410px\",\n      \"y1\": \"760px\",\n      \"y2\": \"860px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"RIO BRANCO\",\n      \"address\": \"RUA QUINTINO BOCAIUVA 162 LOJA A,, RIO BRANCO - AC\",\n      \"hours\": \"08h00 às 18h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"store_card_shc_copacabana_shopp\",\n    \"type\": \"card\",\n    \"text\": \"SHC COPACABANA SHOPP\",\n    \"region\": \"main-content\",\n    \"coordenadas\": {\n      \"x1\": \"420px\",\n      \"x2\": \"660px\",\n      \"y1\": \"760px\",\n      \"y2\": \"860px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"store_name\": \"SHC COPACABANA SHOPP\",\n      \"address\": \"RUA 28 DE SETEMBRO 751,, CRUZEIRO DO SUL - AC\",\n      \"hours\": \"09h00 às 21h00\",\n      \"status\": \"fechada\",\n      \"status_icon\": \"clock\"\n    }\n  },\n  {\n    \"id\": \"footer_sac_link\",\n    \"type\": \"link\",\n    \"text\": \"sac 4003 4848\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"280px\",\n      \"y1\": \"840px\",\n      \"y2\": \"860px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_security_guide_link\",\n    \"type\": \"link\",\n    \"text\": \"guia de segurança\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"310px\",\n      \"x2\": \"420px\",\n      \"y1\": \"840px\",\n      \"y2\": \"860px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_especial_beleza_link\",\n    \"type\": \"link\",\n    \"text\": \"especial beleza\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"460px\",\n      \"x2\": \"570px\",\n      \"y1\": \"840px\",\n      \"y2\": \"860px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_americanas_advertising_link\",\n    \"type\": \"link\",\n    \"text\": \"americanas advertising\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"610px\",\n      \"x2\": \"750px\",\n      \"y1\": \"840px\",\n      \"y2\": \"860px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_deliveries_returns_link\",\n    \"type\": \"link\",\n    \"text\": \"entregas e devoluções\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"790px\",\n      \"x2\": \"930px\",\n      \"y1\": \"840px\",\n      \"y2\": \"860px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"logo_americanas_footer\",\n    \"type\": \"image\",\n    \"text\": \"americanas\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"280px\",\n      \"y1\": \"880px\",\n      \"y2\": \"910px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"footer_more_info_dropdown\",\n    \"type\": \"dropdown\",\n    \"text\": \"mais informações\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"460px\",\n      \"x2\": \"590px\",\n      \"y1\": \"880px\",\n      \"y2\": \"910px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"social_instagram_link\",\n    \"type\": \"link\",\n    \"text\": \"\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"750px\",\n      \"x2\": \"780px\",\n      \"y1\": \"880px\",\n      \"y2\": \"910px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"instagram\"\n    }\n  },\n  {\n    \"id\": \"social_youtube_link\",\n    \"type\": \"link\",\n    \"text\": \"\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"790px\",\n      \"x2\": \"820px\",\n      \"y1\": \"880px\",\n      \"y2\": \"910px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"youtube\"\n    }\n  },\n  {\n    \"id\": \"social_facebook_link\",\n    \"type\": \"link\",\n    \"text\": \"\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"830px\",\n      \"x2\": \"860px\",\n      \"y1\": \"880px\",\n      \"y2\": \"910px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"facebook\"\n    }\n  },\n  {\n    \"id\": \"social_tiktok_link\",\n    \"type\": \"link\",\n    \"text\": \"\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"870px\",\n      \"x2\": \"900px\",\n      \"y1\": \"880px\",\n      \"y2\": \"910px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"tiktok\"\n    }\n  },\n  {\n    \"id\": \"footer_company_info\",\n    \"type\": \"text\",\n    \"text\": \"americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"170px\",\n      \"x2\": \"900px\",\n      \"y1\": \"930px\",\n      \"y2\": \"950px\"\n    },\n    \"actions\": []\n  },\n  {\n    \"id\": \"footer_sitemap_link\",\n    \"type\": \"link\",\n    \"text\": \"Mapa do site\",\n    \"region\": \"footer\",\n    \"coordenadas\": {\n      \"x1\": \"460px\",\n      \"x2\": \"540px\",\n      \"y1\": \"960px\",\n      \"y2\": \"980px\"\n    },\n    \"actions\": [\"onClick\"]\n  },\n  {\n    \"id\": \"accessibility_icon\",\n    \"type\": \"icon\",\n    \"text\": \"\",\n    \"region\": \"floating\",\n    \"coordenadas\": {\n      \"x1\": \"960px\",\n      \"x2\": \"1000px\",\n      \"y1\": \"620px\",\n      \"y2\": \"660px\"\n    },\n    \"actions\": [\"onClick\"],\n    \"meta\": {\n      \"icon\": \"accessibility\"\n    }\n  }\n]"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 763,
+      "candidatesTokenCount": 11519,
+      "totalTokenCount": 14317,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 505
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 258
+        }
+      ],
+      "thoughtsTokenCount": 2035,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "A7mUasbyNb-VmtkPpLCgSA"
+  },
+  "ui": [
+    {
+      "id": "top_bar_text_1",
+      "type": "text",
+      "text": "especial beleza • seu cuidado começa aqui • tudo em até 12x no cartão* • queeero >",
+      "region": "top-bar",
+      "coordenadas": {
+        "x1": "200px",
+        "x2": "770px",
+        "y1": "10px",
+        "y2": "25px"
+      },
+      "actions": []
+    },
+    {
+      "id": "logo_americanas_header",
+      "type": "image",
+      "text": "americanas",
+      "region": "top-bar",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "300px",
+        "y1": "40px",
+        "y2": "70px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "search_input",
+      "type": "input",
+      "text": "busque aqui seu produto",
+      "state": "default",
+      "region": "top-bar",
+      "coordenadas": {
+        "x1": "330px",
+        "x2": "600px",
+        "y1": "40px",
+        "y2": "70px"
+      },
+      "actions": [
+        "onChange",
+        "onFocus"
+      ],
+      "meta": {
+        "placeholder": "busque aqui seu produto"
+      }
+    },
+    {
+      "id": "search_button",
+      "type": "button",
+      "text": "",
+      "region": "top-bar",
+      "coordenadas": {
+        "x1": "600px",
+        "x2": "640px",
+        "y1": "40px",
+        "y2": "70px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "search"
+      }
+    },
+    {
+      "id": "user_profile_link",
+      "type": "link",
+      "text": "olá, faça seu lo... ou cadastre-se",
+      "region": "top-bar",
+      "coordenadas": {
+        "x1": "770px",
+        "x2": "890px",
+        "y1": "40px",
+        "y2": "70px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "user"
+      }
+    },
+    {
+      "id": "my_orders_link",
+      "type": "link",
+      "text": "",
+      "region": "top-bar",
+      "coordenadas": {
+        "x1": "900px",
+        "x2": "940px",
+        "y1": "40px",
+        "y2": "70px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "box"
+      }
+    },
+    {
+      "id": "favorites_link",
+      "type": "link",
+      "text": "",
+      "region": "top-bar",
+      "coordenadas": {
+        "x1": "950px",
+        "x2": "990px",
+        "y1": "40px",
+        "y2": "70px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "heart"
+      }
+    },
+    {
+      "id": "cart_link",
+      "type": "link",
+      "text": "0",
+      "region": "top-bar",
+      "coordenadas": {
+        "x1": "1000px",
+        "x2": "1040px",
+        "y1": "40px",
+        "y2": "70px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "shopping-cart",
+        "item_count": 0
+      }
+    },
+    {
+      "id": "inform_cep_link",
+      "type": "link",
+      "text": "informe seu CEP",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "280px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "location"
+      }
+    },
+    {
+      "id": "download_app_link",
+      "type": "link",
+      "text": "baixe o app",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "300px",
+        "x2": "380px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "make_card_link",
+      "type": "link",
+      "text": "faça seu cartão",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "400px",
+        "x2": "500px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "most_sold_link",
+      "type": "link",
+      "text": "mais vendidos",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "520px",
+        "x2": "610px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "our_stores_link",
+      "type": "link",
+      "text": "nossas lojas",
+      "state": "active",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "630px",
+        "x2": "710px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "fast_delivery_link",
+      "type": "link",
+      "text": "entrega rápida",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "730px",
+        "x2": "820px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "leve_pague_plus_link",
+      "type": "link",
+      "text": "leve pague+",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "840px",
+        "x2": "920px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "tv_offers_link",
+      "type": "link",
+      "text": "ofertas da TV",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "940px",
+        "x2": "1020px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "outlet_link",
+      "type": "link",
+      "text": "outlet",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "1040px",
+        "x2": "1090px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "deal_of_the_day_link",
+      "type": "link",
+      "text": "oferta do dia",
+      "region": "navigation-bar",
+      "coordenadas": {
+        "x1": "1110px",
+        "x2": "1200px",
+        "y1": "90px",
+        "y2": "120px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "tag"
+      }
+    },
+    {
+      "id": "all_departments_dropdown",
+      "type": "dropdown",
+      "text": "todos os departamentos",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "330px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "menu"
+      }
+    },
+    {
+      "id": "department_mercado_link",
+      "type": "link",
+      "text": "mercado",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "350px",
+        "x2": "410px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "department_brinquedos_link",
+      "type": "link",
+      "text": "brinquedos",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "430px",
+        "x2": "500px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "department_celulares_link",
+      "type": "link",
+      "text": "celulares",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "520px",
+        "x2": "590px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "department_eletrodomesticos_link",
+      "type": "link",
+      "text": "eletrodomésticos",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "610px",
+        "x2": "720px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "department_informatica_link",
+      "type": "link",
+      "text": "informática",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "740px",
+        "x2": "820px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "department_audio_video_link",
+      "type": "link",
+      "text": "áudio e vídeo",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "840px",
+        "x2": "930px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "department_eletroportateis_link",
+      "type": "link",
+      "text": "eletroportáteis",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "950px",
+        "x2": "1050px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "department_moveis_link",
+      "type": "link",
+      "text": "móveis",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "1070px",
+        "x2": "1120px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "department_especial_beleza_link",
+      "type": "link",
+      "text": "especial beleza",
+      "region": "departments-bar",
+      "coordenadas": {
+        "x1": "1140px",
+        "x2": "1240px",
+        "y1": "140px",
+        "y2": "160px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "banner_comprou_ganhou",
+      "type": "banner",
+      "text": "comprou, ganhou",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "1250px",
+        "y1": "180px",
+        "y2": "250px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "image_description": "Banner promocional com texto 'comprou, ganhou' e personagens Disney/Marvel, com oferta de jogo a partir de R$79,99."
+      }
+    },
+    {
+      "id": "banner_saiba_mais_button",
+      "type": "button",
+      "text": "saiba mais",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "710px",
+        "x2": "810px",
+        "y1": "200px",
+        "y2": "230px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "banner_confira_regras_link",
+      "type": "link",
+      "text": "confira as regras.",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "710px",
+        "x2": "810px",
+        "y1": "235px",
+        "y2": "245px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_pagina_inicial",
+      "type": "link",
+      "text": "página inicial",
+      "region": "breadcrumbs",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "260px",
+        "y1": "270px",
+        "y2": "285px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "breadcrumb_nossas_lojas",
+      "type": "text",
+      "text": "nossas lojas",
+      "region": "breadcrumbs",
+      "coordenadas": {
+        "x1": "280px",
+        "x2": "360px",
+        "y1": "270px",
+        "y2": "285px"
+      },
+      "actions": []
+    },
+    {
+      "id": "heading_nossas_lojas_por_estado",
+      "type": "heading",
+      "text": "nossas lojas por estado",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "400px",
+        "y1": "300px",
+        "y2": "320px"
+      },
+      "actions": []
+    },
+    {
+      "id": "state_filter_ac",
+      "type": "button",
+      "text": "AC",
+      "state": "active",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "200px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_al",
+      "type": "button",
+      "text": "AL",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "210px",
+        "x2": "240px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_am",
+      "type": "button",
+      "text": "AM",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "250px",
+        "x2": "280px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ap",
+      "type": "button",
+      "text": "AP",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "290px",
+        "x2": "320px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ba",
+      "type": "button",
+      "text": "BA",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "330px",
+        "x2": "360px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ce",
+      "type": "button",
+      "text": "CE",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "370px",
+        "x2": "400px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_df",
+      "type": "button",
+      "text": "DF",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "410px",
+        "x2": "440px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_es",
+      "type": "button",
+      "text": "ES",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "450px",
+        "x2": "480px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_go",
+      "type": "button",
+      "text": "GO",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "490px",
+        "x2": "520px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ma",
+      "type": "button",
+      "text": "MA",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "530px",
+        "x2": "560px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_mg",
+      "type": "button",
+      "text": "MG",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "570px",
+        "x2": "600px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ms",
+      "type": "button",
+      "text": "MS",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "610px",
+        "x2": "640px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_mt",
+      "type": "button",
+      "text": "MT",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "650px",
+        "x2": "680px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pa",
+      "type": "button",
+      "text": "PA",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "690px",
+        "x2": "720px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pb",
+      "type": "button",
+      "text": "PB",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "730px",
+        "x2": "760px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pe",
+      "type": "button",
+      "text": "PE",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "770px",
+        "x2": "800px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pi",
+      "type": "button",
+      "text": "PI",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "810px",
+        "x2": "840px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_pr",
+      "type": "button",
+      "text": "PR",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "850px",
+        "x2": "880px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_rj",
+      "type": "button",
+      "text": "RJ",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "890px",
+        "x2": "920px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_rn",
+      "type": "button",
+      "text": "RN",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "930px",
+        "x2": "960px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_ro",
+      "type": "button",
+      "text": "RO",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "970px",
+        "x2": "1000px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_rr",
+      "type": "button",
+      "text": "RR",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "1010px",
+        "x2": "1040px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_rs",
+      "type": "button",
+      "text": "RS",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "1050px",
+        "x2": "1080px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_sc",
+      "type": "button",
+      "text": "SC",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "1090px",
+        "x2": "1120px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_se",
+      "type": "button",
+      "text": "SE",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "1130px",
+        "x2": "1160px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_sp",
+      "type": "button",
+      "text": "SP",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "1170px",
+        "x2": "1200px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_filter_to",
+      "type": "button",
+      "text": "TO",
+      "state": "default",
+      "region": "state-filters",
+      "coordenadas": {
+        "x1": "1210px",
+        "x2": "1240px",
+        "y1": "340px",
+        "y2": "360px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "state_section_title_acre",
+      "type": "heading",
+      "text": "Acre",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "220px",
+        "y1": "390px",
+        "y2": "410px"
+      },
+      "actions": []
+    },
+    {
+      "id": "store_card_tarauaca",
+      "type": "card",
+      "text": "Tarauaca - Americanas",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "410px",
+        "y1": "430px",
+        "y2": "530px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "Tarauaca - Americanas",
+        "address": "Rua Quintino Bocaiuva, 70, Tarauaca - AC",
+        "hours": "08h00 às 19h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_feijo_express",
+      "type": "card",
+      "text": "Feijó Express - Americanas",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "420px",
+        "x2": "660px",
+        "y1": "430px",
+        "y2": "530px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "Feijó Express - Americanas",
+        "address": "Avenida Marechal Deodoro, 96, Feijó - AC",
+        "hours": "08h00 às 18h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_nacoes_unidas",
+      "type": "card",
+      "text": "NACOES UNIDAS",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "670px",
+        "x2": "910px",
+        "y1": "430px",
+        "y2": "530px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "NACOES UNIDAS",
+        "address": "AVENIDA NACOES UNIDAS 2948,, RIO BRANCO - AC",
+        "hours": "08h00 às 18h30",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_shc_via_verde",
+      "type": "card",
+      "text": "SHC VIA VERDE",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "410px",
+        "y1": "540px",
+        "y2": "640px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "SHC VIA VERDE",
+        "address": "BR 364 VIA VERDE - SHOPPING 1707 LOJA 041,, RIO BRANCO - AC",
+        "hours": "10h00 às 22h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_epitaciolandia",
+      "type": "card",
+      "text": "Epitaciolandia - Americanas",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "420px",
+        "x2": "660px",
+        "y1": "540px",
+        "y2": "640px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "Epitaciolandia - Americanas",
+        "address": "Avenida Santos Dumont, 385, Epitaciolandia - AC",
+        "hours": "08h00 às 19h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_sena_madureira",
+      "type": "card",
+      "text": "Sena Madureira - Americanas",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "670px",
+        "x2": "910px",
+        "y1": "540px",
+        "y2": "640px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "Sena Madureira - Americanas",
+        "address": "RUA PADRE EGIDIO, 119, Sena Madureira - AC",
+        "hours": "08h00 às 18h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_getulio_vargas",
+      "type": "card",
+      "text": "GETULIO VARGAS",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "410px",
+        "y1": "650px",
+        "y2": "750px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "GETULIO VARGAS",
+        "address": "AVENIDA GETULIO VARGAS 1348,, RIO BRANCO - AC",
+        "hours": "08h00 às 18h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_cruzeiro_do_sul",
+      "type": "card",
+      "text": "CRUZEIRO DO SUL",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "420px",
+        "x2": "660px",
+        "y1": "650px",
+        "y2": "750px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "CRUZEIRO DO SUL",
+        "address": "AVENIDA BOULEVARD THAUMATURGO 338,, CRUZEIRO DO SUL - AC",
+        "hours": "09h00 às 20h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_rio_branco_1",
+      "type": "card",
+      "text": "RIO BRANCO",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "670px",
+        "x2": "910px",
+        "y1": "650px",
+        "y2": "750px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "RIO BRANCO",
+        "address": "RUA RUI BARBOSA 400,, RIO BRANCO - AC",
+        "hours": "09h00 às 18h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_rio_branco_2",
+      "type": "card",
+      "text": "RIO BRANCO",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "410px",
+        "y1": "760px",
+        "y2": "860px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "RIO BRANCO",
+        "address": "RUA QUINTINO BOCAIUVA 162 LOJA A,, RIO BRANCO - AC",
+        "hours": "08h00 às 18h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "store_card_shc_copacabana_shopp",
+      "type": "card",
+      "text": "SHC COPACABANA SHOPP",
+      "region": "main-content",
+      "coordenadas": {
+        "x1": "420px",
+        "x2": "660px",
+        "y1": "760px",
+        "y2": "860px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "store_name": "SHC COPACABANA SHOPP",
+        "address": "RUA 28 DE SETEMBRO 751,, CRUZEIRO DO SUL - AC",
+        "hours": "09h00 às 21h00",
+        "status": "fechada",
+        "status_icon": "clock"
+      }
+    },
+    {
+      "id": "footer_sac_link",
+      "type": "link",
+      "text": "sac 4003 4848",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "280px",
+        "y1": "840px",
+        "y2": "860px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_security_guide_link",
+      "type": "link",
+      "text": "guia de segurança",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "310px",
+        "x2": "420px",
+        "y1": "840px",
+        "y2": "860px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_especial_beleza_link",
+      "type": "link",
+      "text": "especial beleza",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "460px",
+        "x2": "570px",
+        "y1": "840px",
+        "y2": "860px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_americanas_advertising_link",
+      "type": "link",
+      "text": "americanas advertising",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "610px",
+        "x2": "750px",
+        "y1": "840px",
+        "y2": "860px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_deliveries_returns_link",
+      "type": "link",
+      "text": "entregas e devoluções",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "790px",
+        "x2": "930px",
+        "y1": "840px",
+        "y2": "860px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "logo_americanas_footer",
+      "type": "image",
+      "text": "americanas",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "280px",
+        "y1": "880px",
+        "y2": "910px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "footer_more_info_dropdown",
+      "type": "dropdown",
+      "text": "mais informações",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "460px",
+        "x2": "590px",
+        "y1": "880px",
+        "y2": "910px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "social_instagram_link",
+      "type": "link",
+      "text": "",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "750px",
+        "x2": "780px",
+        "y1": "880px",
+        "y2": "910px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "instagram"
+      }
+    },
+    {
+      "id": "social_youtube_link",
+      "type": "link",
+      "text": "",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "790px",
+        "x2": "820px",
+        "y1": "880px",
+        "y2": "910px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "youtube"
+      }
+    },
+    {
+      "id": "social_facebook_link",
+      "type": "link",
+      "text": "",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "830px",
+        "x2": "860px",
+        "y1": "880px",
+        "y2": "910px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "facebook"
+      }
+    },
+    {
+      "id": "social_tiktok_link",
+      "type": "link",
+      "text": "",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "870px",
+        "x2": "900px",
+        "y1": "880px",
+        "y2": "910px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "tiktok"
+      }
+    },
+    {
+      "id": "footer_company_info",
+      "type": "text",
+      "text": "americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "170px",
+        "x2": "900px",
+        "y1": "930px",
+        "y2": "950px"
+      },
+      "actions": []
+    },
+    {
+      "id": "footer_sitemap_link",
+      "type": "link",
+      "text": "Mapa do site",
+      "region": "footer",
+      "coordenadas": {
+        "x1": "460px",
+        "x2": "540px",
+        "y1": "960px",
+        "y2": "980px"
+      },
+      "actions": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "accessibility_icon",
+      "type": "icon",
+      "text": "",
+      "region": "floating",
+      "coordenadas": {
+        "x1": "960px",
+        "x2": "1000px",
+        "y1": "620px",
+        "y2": "660px"
+      },
+      "actions": [
+        "onClick"
+      ],
+      "meta": {
+        "icon": "accessibility"
+      }
+    }
+  ],
+  "savedAt": "2026-08-30T23:13:59.940Z",
+  "savedPath": "/home/otbox/Imagens/IC/ICLLMs/AnalisysLLMs_System/results/Americanas/1bNossaLoja/prompt-v1/1bNossaLoja-AnalisysComponentsLLM-run-001-temp-0.2-gemini-2.5-flash-response.json"
+}
