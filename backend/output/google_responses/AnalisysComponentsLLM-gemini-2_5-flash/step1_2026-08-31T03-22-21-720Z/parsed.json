@@ -1,0 +1,2994 @@
+[
+  {
+    "id": "top_header_special_beauty_text",
+    "type": "text",
+    "text": "especial beleza",
+    "coordenadas": [
+      200,
+      15,
+      128,
+      17
+    ],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display promotional text",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "top_header_care_text",
+    "type": "text",
+    "text": "• seu cuidado começa aqui • tudo em até 12x no cartão*",
+    "coordenadas": [
+      336,
+      15,
+      396,
+      17
+    ],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display promotional text",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "top_header_queero_text",
+    "type": "text",
+    "text": "queeeero",
+    "coordenadas": [
+      740,
+      15,
+      62,
+      17
+    ],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display promotional text",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "top_header_queero_arrow_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      807,
+      18,
+      10,
+      12
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to queeeero page",
+    "confidence": 1,
+    "meta": {
+      "iconType": "arrow-right"
+    }
+  },
+  {
+    "id": "header_americanas_logo",
+    "type": "image",
+    "text": null,
+    "coordenadas": [
+      175,
+      61,
+      137,
+      26
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to homepage",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_search_input",
+    "type": "input",
+    "text": null,
+    "coordenadas": [
+      309,
+      50,
+      604,
+      48
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onChange",
+      "onFocus"
+    ],
+    "purpose": "search for products",
+    "confidence": 1,
+    "meta": {
+      "inputType": "text",
+      "placeholder": "busque aqui seu produto"
+    }
+  },
+  {
+    "id": "header_search_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      860,
+      64,
+      18,
+      19
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "submit search query",
+    "confidence": 1,
+    "meta": {
+      "iconType": "search"
+    }
+  },
+  {
+    "id": "header_user_greeting_text",
+    "type": "text",
+    "text": "olá, faça seu lo...",
+    "coordenadas": [
+      1287,
+      57,
+      98,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display user greeting",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_register_link",
+    "type": "link",
+    "text": "ou cadastre-se",
+    "coordenadas": [
+      1287,
+      73,
+      90,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to registration page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_user_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1249,
+      62,
+      24,
+      24
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "access user account or login",
+    "confidence": 1,
+    "meta": {
+      "iconType": "user"
+    }
+  },
+  {
+    "id": "header_store_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1406,
+      62,
+      24,
+      24
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "view store information",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store"
+    }
+  },
+  {
+    "id": "header_favorites_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1463,
+      62,
+      24,
+      24
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "view favorite items",
+    "confidence": 1,
+    "meta": {
+      "iconType": "heart"
+    }
+  },
+  {
+    "id": "header_shopping_bag_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1520,
+      62,
+      24,
+      24
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "view shopping cart",
+    "confidence": 1,
+    "meta": {
+      "iconType": "shopping-bag"
+    }
+  },
+  {
+    "id": "header_cart_item_count_badge",
+    "type": "badge",
+    "text": "0",
+    "coordenadas": [
+      1537,
+      57,
+      16,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "display number of items in cart",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_inform_cep_link",
+    "type": "link",
+    "text": "informe seu CEP",
+    "coordenadas": [
+      199,
+      110,
+      96,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open dialog to enter CEP for delivery information",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_location_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      175,
+      109,
+      18,
+      18
+    ],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "indicate location input",
+    "confidence": 1,
+    "meta": {
+      "iconType": "location"
+    }
+  },
+  {
+    "id": "header_download_app_link",
+    "type": "link",
+    "text": "baixe o app",
+    "coordenadas": [
+      360,
+      110,
+      70,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to app download page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_get_card_link",
+    "type": "link",
+    "text": "faça seu cartão",
+    "coordenadas": [
+      454,
+      110,
+      96,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to credit card application page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_most_sold_link",
+    "type": "link",
+    "text": "mais vendidos",
+    "coordenadas": [
+      570,
+      110,
+      90,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to most sold products page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_our_stores_link",
+    "type": "link",
+    "text": "nossas lojas",
+    "coordenadas": [
+      680,
+      110,
+      78,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to our stores page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_fast_delivery_link",
+    "type": "link",
+    "text": "entrega rápida",
+    "coordenadas": [
+      770,
+      110,
+      94,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to fast delivery information page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_leve_pague_link",
+    "type": "link",
+    "text": "leve pague-",
+    "coordenadas": [
+      880,
+      110,
+      78,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to 'buy now pay later' information page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_tv_offers_link",
+    "type": "link",
+    "text": "ofertas da TV",
+    "coordenadas": [
+      970,
+      110,
+      88,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to TV offers page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_outlet_link",
+    "type": "link",
+    "text": "outlet",
+    "coordenadas": [
+      1070,
+      110,
+      44,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to outlet products page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "header_deal_of_the_day_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1130,
+      109,
+      18,
+      18
+    ],
+    "region": "top-bar",
+    "actions": [],
+    "purpose": "indicate deal of the day",
+    "confidence": 1,
+    "meta": {
+      "iconType": "tag"
+    }
+  },
+  {
+    "id": "header_deal_of_the_day_link",
+    "type": "link",
+    "text": "oferta do dia",
+    "coordenadas": [
+      1150,
+      110,
+      88,
+      16
+    ],
+    "region": "top-bar",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to deal of the day page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_hamburger_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      175,
+      147,
+      18,
+      14
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open main navigation menu",
+    "confidence": 1,
+    "meta": {
+      "iconType": "hamburger"
+    }
+  },
+  {
+    "id": "main_nav_all_departments_dropdown",
+    "type": "select",
+    "text": "todos os departamentos",
+    "coordenadas": [
+      200,
+      145,
+      164,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open dropdown for all departments",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_all_departments_dropdown_arrow",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      370,
+      149,
+      10,
+      10
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "toggle dropdown for all departments",
+    "confidence": 1,
+    "meta": {
+      "iconType": "arrow-down"
+    }
+  },
+  {
+    "id": "main_nav_market_link",
+    "type": "link",
+    "text": "mercado",
+    "coordenadas": [
+      410,
+      145,
+      52,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to market category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_toys_link",
+    "type": "link",
+    "text": "brinquedos",
+    "coordenadas": [
+      480,
+      145,
+      76,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to toys category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_cellphones_link",
+    "type": "link",
+    "text": "celulares",
+    "coordenadas": [
+      570,
+      145,
+      66,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to cellphones category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_electronics_link",
+    "type": "link",
+    "text": "eletrodomésticos",
+    "coordenadas": [
+      656,
+      145,
+      120,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to electronics category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_computing_link",
+    "type": "link",
+    "text": "informática",
+    "coordenadas": [
+      790,
+      145,
+      80,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to computing category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_audio_video_link",
+    "type": "link",
+    "text": "áudio e vídeo",
+    "coordenadas": [
+      880,
+      145,
+      96,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to audio and video category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_small_appliances_link",
+    "type": "link",
+    "text": "eletroportáteis",
+    "coordenadas": [
+      990,
+      145,
+      106,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to small appliances category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_furniture_link",
+    "type": "link",
+    "text": "móveis",
+    "coordenadas": [
+      1110,
+      145,
+      48,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to furniture category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "main_nav_special_beauty_link",
+    "type": "link",
+    "text": "especial beleza",
+    "coordenadas": [
+      1170,
+      145,
+      110,
+      19
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to special beauty category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_image",
+    "type": "image",
+    "text": null,
+    "coordenadas": [
+      175,
+      185,
+      1570,
+      78
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "promotional banner for Disney/Marvel game",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_text_bought_won",
+    "type": "text",
+    "text": "comprou, ganhou",
+    "coordenadas": [
+      198,
+      206,
+      200,
+      36
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "promotional text",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_text_disney_marvel_game",
+    "type": "text",
+    "text": "um jogo da Disney ou Marvel",
+    "coordenadas": [
+      1000,
+      196,
+      220,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "promotional text for game",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_text_buy_any_product",
+    "type": "text",
+    "text": "na compra de qualquer",
+    "coordenadas": [
+      1000,
+      212,
+      150,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "promotional text for purchase condition",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_text_starting_from",
+    "type": "text",
+    "text": "brinquedo a partir de",
+    "coordenadas": [
+      1000,
+      228,
+      150,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "promotional text for price condition",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_price_r79_99",
+    "type": "text",
+    "text": "R$79,99",
+    "coordenadas": [
+      1150,
+      228,
+      70,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display promotional price",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_learn_more_button",
+    "type": "button",
+    "text": "saiba mais",
+    "coordenadas": [
+      1300,
+      200,
+      100,
+      30
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "learn more about the promotion",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_check_rules_text",
+    "type": "text",
+    "text": "confira as regras.",
+    "coordenadas": [
+      1320,
+      235,
+      100,
+      14
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "inform user to check promotion rules",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "banner_info_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1305,
+      235,
+      12,
+      12
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "provide additional information about rules",
+    "confidence": 1,
+    "meta": {
+      "iconType": "info"
+    }
+  },
+  {
+    "id": "breadcrumb_home_link",
+    "type": "link",
+    "text": "página inicial",
+    "coordenadas": [
+      175,
+      280,
+      80,
+      16
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to homepage",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "breadcrumb_separator_icon_1",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      260,
+      280,
+      10,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "separate breadcrumb items",
+    "confidence": 1,
+    "meta": {
+      "iconType": "arrow-right"
+    }
+  },
+  {
+    "id": "breadcrumb_our_stores_text",
+    "type": "text",
+    "text": "nossas lojas",
+    "coordenadas": [
+      275,
+      280,
+      70,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "current page in breadcrumb",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "page_title_our_stores_by_state",
+    "type": "text",
+    "text": "nossas lojas por estado",
+    "coordenadas": [
+      175,
+      310,
+      200,
+      24
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "page title indicating stores listed by state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_ac_tab",
+    "type": "tab",
+    "text": "AC",
+    "coordenadas": [
+      175,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Acre state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_al_tab",
+    "type": "tab",
+    "text": "AL",
+    "coordenadas": [
+      210,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Alagoas state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_am_tab",
+    "type": "tab",
+    "text": "AM",
+    "coordenadas": [
+      245,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Amazonas state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_ap_tab",
+    "type": "tab",
+    "text": "AP",
+    "coordenadas": [
+      280,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Amapá state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_ba_tab",
+    "type": "tab",
+    "text": "BA",
+    "coordenadas": [
+      315,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Bahia state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_ce_tab",
+    "type": "tab",
+    "text": "CE",
+    "coordenadas": [
+      350,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Ceará state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_df_tab",
+    "type": "tab",
+    "text": "DF",
+    "coordenadas": [
+      385,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Distrito Federal state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_es_tab",
+    "type": "tab",
+    "text": "ES",
+    "coordenadas": [
+      420,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Espírito Santo state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_go_tab",
+    "type": "tab",
+    "text": "GO",
+    "coordenadas": [
+      455,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Goiás state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_ma_tab",
+    "type": "tab",
+    "text": "MA",
+    "coordenadas": [
+      490,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Maranhão state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_mg_tab",
+    "type": "tab",
+    "text": "MG",
+    "coordenadas": [
+      525,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Minas Gerais state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_ms_tab",
+    "type": "tab",
+    "text": "MS",
+    "coordenadas": [
+      560,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Mato Grosso do Sul state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_mt_tab",
+    "type": "tab",
+    "text": "MT",
+    "coordenadas": [
+      595,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Mato Grosso state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_pa_tab",
+    "type": "tab",
+    "text": "PA",
+    "coordenadas": [
+      630,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Pará state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_pb_tab",
+    "type": "tab",
+    "text": "PB",
+    "coordenadas": [
+      665,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Paraíba state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_pe_tab",
+    "type": "tab",
+    "text": "PE",
+    "coordenadas": [
+      700,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Pernambuco state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_pi_tab",
+    "type": "tab",
+    "text": "PI",
+    "coordenadas": [
+      735,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Piauí state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_pr_tab",
+    "type": "tab",
+    "text": "PR",
+    "coordenadas": [
+      770,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Paraná state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_rj_tab",
+    "type": "tab",
+    "text": "RJ",
+    "coordenadas": [
+      805,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Rio de Janeiro state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_rn_tab",
+    "type": "tab",
+    "text": "RN",
+    "coordenadas": [
+      840,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Rio Grande do Norte state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_ro_tab",
+    "type": "tab",
+    "text": "RO",
+    "coordenadas": [
+      875,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Rondônia state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_rr_tab",
+    "type": "tab",
+    "text": "RR",
+    "coordenadas": [
+      910,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Roraima state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_rs_tab",
+    "type": "tab",
+    "text": "RS",
+    "coordenadas": [
+      945,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Rio Grande do Sul state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_sc_tab",
+    "type": "tab",
+    "text": "SC",
+    "coordenadas": [
+      980,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Santa Catarina state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_se_tab",
+    "type": "tab",
+    "text": "SE",
+    "coordenadas": [
+      1015,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Sergipe state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_sp_tab",
+    "type": "tab",
+    "text": "SP",
+    "coordenadas": [
+      1050,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by São Paulo state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "state_filter_to_tab",
+    "type": "tab",
+    "text": "TO",
+    "coordenadas": [
+      1085,
+      345,
+      28,
+      20
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "filter stores by Tocantins state",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "region_title_acre",
+    "type": "text",
+    "text": "Acre",
+    "coordenadas": [
+      175,
+      385,
+      40,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display current region name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_tarauaca",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      175,
+      420,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for Tarauaca - Americanas store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_tarauaca_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      190,
+      435,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_tarauaca_name",
+    "type": "text",
+    "text": "Tarauaca - Americanas",
+    "coordenadas": [
+      250,
+      430,
+      170,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_tarauaca_address",
+    "type": "text",
+    "text": "Rua Quintino Bocaiuva, 70, Tarauaca - AC",
+    "coordenadas": [
+      250,
+      450,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_tarauaca_hours",
+    "type": "text",
+    "text": "08h00 às 19h00",
+    "coordenadas": [
+      250,
+      470,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_tarauaca_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      360,
+      470,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_tarauaca_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      380,
+      470,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_feijo_express",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      585,
+      420,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for Feijó Express - Americanas store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_feijo_express_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      600,
+      435,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_feijo_express_name",
+    "type": "text",
+    "text": "Feijó Express - Americanas",
+    "coordenadas": [
+      660,
+      430,
+      190,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_feijo_express_address",
+    "type": "text",
+    "text": "Avenida Marechal Deodoro, 96, Feijó - AC",
+    "coordenadas": [
+      660,
+      450,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_feijo_express_hours",
+    "type": "text",
+    "text": "08h00 às 18h00",
+    "coordenadas": [
+      660,
+      470,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_feijo_express_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      770,
+      470,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_feijo_express_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      790,
+      470,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_nacoes_unidas",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      995,
+      420,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for NACOES UNIDAS store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_nacoes_unidas_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1010,
+      435,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_nacoes_unidas_name",
+    "type": "text",
+    "text": "NACOES UNIDAS",
+    "coordenadas": [
+      1070,
+      430,
+      130,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_nacoes_unidas_address",
+    "type": "text",
+    "text": "AVENIDA NACOES UNIDAS 2948, , RIO BRANCO - AC",
+    "coordenadas": [
+      1070,
+      450,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_nacoes_unidas_hours",
+    "type": "text",
+    "text": "08h00 às 18h30",
+    "coordenadas": [
+      1070,
+      470,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_nacoes_unidas_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1180,
+      470,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_nacoes_unidas_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      1200,
+      470,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_via_verde",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      175,
+      530,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for SHC VIA VERDE store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_via_verde_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      190,
+      545,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_shc_via_verde_name",
+    "type": "text",
+    "text": "SHC VIA VERDE",
+    "coordenadas": [
+      250,
+      540,
+      120,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_via_verde_address",
+    "type": "text",
+    "text": "BR 364 VIA VERDE - SHOPPING 1707 LOJA 041, , RIO BRANCO - AC",
+    "coordenadas": [
+      250,
+      560,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_via_verde_hours",
+    "type": "text",
+    "text": "10h00 às 22h00",
+    "coordenadas": [
+      250,
+      580,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_via_verde_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      360,
+      580,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_shc_via_verde_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      380,
+      580,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_epitaciolandia",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      585,
+      530,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for Epitaciolandia - Americanas store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_epitaciolandia_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      600,
+      545,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_epitaciolandia_name",
+    "type": "text",
+    "text": "Epitaciolandia - Americanas",
+    "coordenadas": [
+      660,
+      540,
+      190,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_epitaciolandia_address",
+    "type": "text",
+    "text": "Avenida Santos Dumont, 385, Epitaciolandia - AC",
+    "coordenadas": [
+      660,
+      560,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_epitaciolandia_hours",
+    "type": "text",
+    "text": "08h00 às 19h00",
+    "coordenadas": [
+      660,
+      580,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_epitaciolandia_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      770,
+      580,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_epitaciolandia_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      790,
+      580,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_sena_madureira",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      995,
+      530,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for Sena Madureira - Americanas store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_sena_madureira_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1010,
+      545,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_sena_madureira_name",
+    "type": "text",
+    "text": "Sena Madureira - Americanas",
+    "coordenadas": [
+      1070,
+      540,
+      200,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_sena_madureira_address",
+    "type": "text",
+    "text": "RUA PADRE EGIDIO, 119, Sena Madureira - AC",
+    "coordenadas": [
+      1070,
+      560,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_sena_madureira_hours",
+    "type": "text",
+    "text": "08h00 às 18h00",
+    "coordenadas": [
+      1070,
+      580,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_sena_madureira_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1180,
+      580,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_sena_madureira_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      1200,
+      580,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_getulio_vargas",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      175,
+      640,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for GETULIO VARGAS store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_getulio_vargas_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      190,
+      655,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_getulio_vargas_name",
+    "type": "text",
+    "text": "GETULIO VARGAS",
+    "coordenadas": [
+      250,
+      650,
+      130,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_getulio_vargas_address",
+    "type": "text",
+    "text": "AVENIDA GETULIO VARGAS 1348, , RIO BRANCO - AC",
+    "coordenadas": [
+      250,
+      670,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_getulio_vargas_hours",
+    "type": "text",
+    "text": "08h00 às 18h00",
+    "coordenadas": [
+      250,
+      690,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_getulio_vargas_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      360,
+      690,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_getulio_vargas_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      380,
+      690,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_cruzeiro_do_sul",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      585,
+      640,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for CRUZEIRO DO SUL store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_cruzeiro_do_sul_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      600,
+      655,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_cruzeiro_do_sul_name",
+    "type": "text",
+    "text": "CRUZEIRO DO SUL",
+    "coordenadas": [
+      660,
+      650,
+      140,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_cruzeiro_do_sul_address",
+    "type": "text",
+    "text": "AVENIDA BOULEVARD THAUMATURGO 338, , CRUZEIRO DO SUL - AC",
+    "coordenadas": [
+      660,
+      670,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_cruzeiro_do_sul_hours",
+    "type": "text",
+    "text": "09h00 às 20h00",
+    "coordenadas": [
+      660,
+      690,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_cruzeiro_do_sul_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      770,
+      690,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_cruzeiro_do_sul_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      790,
+      690,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_1",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      995,
+      640,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for RIO BRANCO store (first instance)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_1_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1010,
+      655,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_rio_branco_1_name",
+    "type": "text",
+    "text": "RIO BRANCO",
+    "coordenadas": [
+      1070,
+      650,
+      100,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_1_address",
+    "type": "text",
+    "text": "RUA RUI BARBOSA 400, , RIO BRANCO - AC",
+    "coordenadas": [
+      1070,
+      670,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_1_hours",
+    "type": "text",
+    "text": "09h00 às 18h00",
+    "coordenadas": [
+      1070,
+      690,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_1_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1180,
+      690,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_rio_branco_1_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      1200,
+      690,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_2",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      175,
+      750,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for RIO BRANCO store (second instance)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_2_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      190,
+      765,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_rio_branco_2_name",
+    "type": "text",
+    "text": "RIO BRANCO",
+    "coordenadas": [
+      250,
+      760,
+      100,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_2_address",
+    "type": "text",
+    "text": "RUA QUINTINO BOCAIUVA 162 LOJA A, , RIO BRANCO - AC",
+    "coordenadas": [
+      250,
+      780,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_2_hours",
+    "type": "text",
+    "text": "08h00 às 18h00",
+    "coordenadas": [
+      250,
+      800,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_rio_branco_2_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      360,
+      800,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_rio_branco_2_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      380,
+      800,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_copacabana_shopp",
+    "type": "card",
+    "text": null,
+    "coordenadas": [
+      585,
+      750,
+      390,
+      100
+    ],
+    "region": "main-content",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "display information for SHC COPACABANA SHOPP store",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_copacabana_shopp_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      600,
+      765,
+      40,
+      40
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "store brand icon",
+    "confidence": 1,
+    "meta": {
+      "iconType": "store-logo"
+    }
+  },
+  {
+    "id": "store_card_shc_copacabana_shopp_name",
+    "type": "text",
+    "text": "SHC COPACABANA SHOPP",
+    "coordenadas": [
+      660,
+      760,
+      180,
+      20
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store name",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_copacabana_shopp_address",
+    "type": "text",
+    "text": "RUA 28 DE SETEMBRO 751, , CRUZEIRO DO SUL - AC",
+    "coordenadas": [
+      660,
+      780,
+      280,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_copacabana_shopp_hours",
+    "type": "text",
+    "text": "09h00 às 21h00",
+    "coordenadas": [
+      660,
+      800,
+      100,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store opening hours",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "store_card_shc_copacabana_shopp_status_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      770,
+      800,
+      16,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "indicate store status (closed)",
+    "confidence": 1,
+    "meta": {
+      "iconType": "clock"
+    }
+  },
+  {
+    "id": "store_card_shc_copacabana_shopp_status_text",
+    "type": "text",
+    "text": "fechada",
+    "coordenadas": [
+      790,
+      800,
+      50,
+      16
+    ],
+    "region": "main-content",
+    "actions": [],
+    "purpose": "display store status (closed)",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "accessibility_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      1840,
+      620,
+      32,
+      32
+    ],
+    "region": "other",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "toggle accessibility options",
+    "confidence": 1,
+    "meta": {
+      "iconType": "accessibility"
+    }
+  },
+  {
+    "id": "footer_sac_link",
+    "type": "link",
+    "text": "sac 4003 4848",
+    "coordenadas": [
+      175,
+      840,
+      100,
+      16
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to customer service contact",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "footer_security_guide_link",
+    "type": "link",
+    "text": "guia de segurança",
+    "coordenadas": [
+      315,
+      840,
+      110,
+      16
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to security guide page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "footer_special_beauty_link",
+    "type": "link",
+    "text": "especial beleza",
+    "coordenadas": [
+      465,
+      840,
+      100,
+      16
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to special beauty category page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "footer_americanas_advertising_link",
+    "type": "link",
+    "text": "americanas advertising",
+    "coordenadas": [
+      615,
+      840,
+      140,
+      16
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to americanas advertising page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "footer_deliveries_returns_link",
+    "type": "link",
+    "text": "entregas e devoluções",
+    "coordenadas": [
+      790,
+      840,
+      150,
+      16
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to deliveries and returns information page",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "footer_americanas_logo",
+    "type": "image",
+    "text": null,
+    "coordenadas": [
+      175,
+      880,
+      137,
+      26
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "navigate to homepage",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "footer_more_info_dropdown",
+    "type": "select",
+    "text": "mais informações",
+    "coordenadas": [
+      465,
+      880,
+      120,
+      20
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "open dropdown for more information links",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "footer_more_info_dropdown_arrow",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      590,
+      885,
+      10,
+      10
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "toggle dropdown for more information",
+    "confidence": 1,
+    "meta": {
+      "iconType": "arrow-down"
+    }
+  },
+  {
+    "id": "footer_instagram_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      790,
+      880,
+      24,
+      24
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to Instagram page",
+    "confidence": 1,
+    "meta": {
+      "iconType": "instagram"
+    }
+  },
+  {
+    "id": "footer_youtube_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      830,
+      880,
+      24,
+      24
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to YouTube channel",
+    "confidence": 1,
+    "meta": {
+      "iconType": "youtube"
+    }
+  },
+  {
+    "id": "footer_facebook_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      870,
+      880,
+      24,
+      24
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to Facebook page",
+    "confidence": 1,
+    "meta": {
+      "iconType": "facebook"
+    }
+  },
+  {
+    "id": "footer_tiktok_icon",
+    "type": "icon",
+    "text": null,
+    "coordenadas": [
+      910,
+      880,
+      24,
+      24
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to TikTok page",
+    "confidence": 1,
+    "meta": {
+      "iconType": "tiktok"
+    }
+  },
+  {
+    "id": "footer_legal_text",
+    "type": "text",
+    "text": "americanas s.a. / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 85.687.08-5 / Endereço Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902",
+    "coordenadas": [
+      175,
+      940,
+      1000,
+      16
+    ],
+    "region": "footer",
+    "actions": [],
+    "purpose": "display legal information and company address",
+    "confidence": 1,
+    "meta": {}
+  },
+  {
+    "id": "footer_sitemap_link",
+    "type": "link",
+    "text": "Mapa do site",
+    "coordenadas": [
+      465,
+      960,
+      80,
+      16
+    ],
+    "region": "footer",
+    "actions": [
+      "onClick"
+    ],
+    "purpose": "link to sitemap page",
+    "confidence": 1,
+    "meta": {}
+  }
+]
