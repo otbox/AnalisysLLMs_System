@@ -13,7 +13,7 @@ DOMAIN=""
 CASE_ID=""
 TEST_NUMBER=""
 TEST_VERSION=""
-PROMPT_VERSION="v1"
+PROMPT_VERSION="v9"
 PROMPT_VERSIONS=""
 RUNS="1"
 TEMPERATURE="0.2"
@@ -75,7 +75,7 @@ print(json.dumps([p.strip() for p in "$PROMPT_VERSIONS".split(",") if p.strip()]
 PY
 )
   elif [[ "$ALL_PROMPTS" == "true" ]]; then
-    PROMPTS_JSON=$(curl -sS "$API_BASE/meta/analisys-prompts" | python3 -c "import json,sys; print(json.dumps(json.load(sys.stdin).get('versions',['v1'])))")
+    PROMPTS_JSON=$(curl -sS "$API_BASE/meta/analisys-prompts" | python3 -c "import json,sys; print(json.dumps(json.load(sys.stdin).get('versions',['v9'])))")
   fi
 
   BODY=$(python3 - <<PY

@@ -8,7 +8,32 @@ Testes reproduzíveis de `AnalisysComponentsLLM` usando **uma imagem** (path), c
 1 imagem (path)  →  N runs × cada promptVersion  →  Gemini  →  results/
 ```
 
-Exemplo: `--runs 5` + `promptVersions: [v1, v2]` = **10 requisições** com a mesma imagem.
+Exemplo: `--runs 5` + `--all-prompt-versions` = **70 requisições** (5 runs × 14 versões).
+
+## Versões de prompt AnalisysComponentsLLM
+
+Todas as versões canônicas (consulte `GET /meta/analisys-prompts`) — **14 versões**:
+
+| Versão | Descrição |
+|--------|-----------|
+| `v9` | Inventário completo em pixels (default produção) |
+| `v8` | Detector normalizado 0–1000 (compacto, PT) |
+| `v6pixels` | Análise completa em pixels |
+| `v6pixels_tall` | Pixels, otimizado para screenshots altos |
+| `v6PixelsEn` | Análise em pixels (inglês) |
+| `v6` | Old analyser: normalizado 0–1000 + state/region/color |
+| `v5scale` | Coordenadas normalizadas 0–1000 (compacto) |
+| `v5scaleEn` | v5scale em inglês (legado) |
+| `v5pixels` | Analyser pixels (geração anterior) |
+| `v5pixelsold` | **Old analyser** pixels + state/region/color |
+| `v3pixels` | Analyser legado coords 0–1000 + meta |
+| `v1` | Batch PT: inventário completo com coordenadas |
+| `v2` | Batch PT: JSON conciso sem coordenadas |
+| `v3` | Batch PT: inventário mínimo compacto |
+
+Pastas em `results/`: `prompt-v9/`, `prompt-v5pixelsold/`, `prompt-v3pixels/`, etc.
+
+Se `promptVersions` for omitido no batch, **todas as 14 versões** são executadas.
 
 ## Estrutura de pastas
 
@@ -71,7 +96,7 @@ curl -X POST http://localhost:3000/tests/final/run-batch \
     "domain": "LibreOffice",
     "caseId": "1v0a",
     "runsPerVersion": 5,
-    "promptVersions": ["v1"],
+    "promptVersions": ["v9", "v8", "v6pixels"],
     "LLMAPI": "GEMINI",
     "models": ["gemini-2.5-flash"],
     "temperature": 0.2,
@@ -109,7 +134,7 @@ cd AnalisysLLMs_System
 python scripts/run_batch_from_image.py \
   --image Final/LibreOffice/resized1920X1080/1v0a.png \
   --runs 5 \
-  --prompt-versions v1 \
+  --prompt-versions v9 \
   --temp 0.2
 ```
 
@@ -119,7 +144,7 @@ Várias versões:
 python scripts/run_batch_from_image.py \
   --image ../Final/Americanas/1bNossaLoja/1bNossaLoja.png \
   --runs 3 \
-  --prompt-versions v1,v2 \
+  --prompt-versions v9,v8,v5scale \
   --domain Americanas
 ```
 
@@ -138,12 +163,12 @@ python scripts/run_batch_from_image.py \
 ./scripts/run-final-test.sh \
   --image Final/LibreOffice/resized1920X1080/1v0a.png \
   --runs 5 \
-  --prompt v1
+  --prompt v9
 
 ./scripts/run-final-test.sh \
   --image Final/LibreOffice/1v0a.png \
   --runs 3 \
-  --prompts v1,v2
+  --prompts v9,v8,v6pixels
 ```
 
 ## Frontend
@@ -159,11 +184,11 @@ Ou use **Caso Final** + batch com a imagem do catálogo.
 
 ## Novas versões de prompt
 
-Em `backend/src/core/services/llm/LLMsProfiles.ts`:
+Em `backend/src/core/services/llm/profiles/AnalisysProfiles.ts`:
 
-1. Adicione `"v2"` em `AnalisysPromptVersion` e `ANALISYS_PROMPT_VERSIONS`
-2. Texto em `AnalisysComponentsPrompts.v2`
-3. Rode batch com `"promptVersions": ["v1", "v2"]`
+1. Crie o template (ex.: `export const v10 = \`...\``)
+2. Importe em `LLMsProfiles.ts` e adicione em `ANALISYS_PROMPT_VERSIONS` + `ANALISYS_BY_VERSION`
+3. Rode batch com `"promptVersions": ["v10"]` ou `--all-prompt-versions`
 
 ## Variáveis de ambiente
 

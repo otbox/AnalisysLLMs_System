@@ -2,8 +2,13 @@ import fs from "fs";
 import path from "path";
 import {
   AnalisysPromptVersion,
+  normalizeAnalisysPromptVersion,
   ProfileKey,
 } from "../llm/LLMsProfiles";
+import {
+  AnnotationDirs,
+  ResultAnnotationService,
+} from "./ResultAnnotationService";
 
 export type ResultSaveMeta = {
   domain: string;
@@ -31,6 +36,7 @@ export type SavedResultPayload = ResultSaveMeta & {
   ui?: unknown;
   savedAt: string;
   savedPath: string;
+  annotationDirs?: AnnotationDirs;
 };
 
 function sanitizeSegment(value: string): string {
@@ -131,11 +137,21 @@ export function resolveResultsRoot(): string {
   return path.resolve(__dirname, "../../../../../results");
 }
 
+export type ResultSaveOptions = {
+  /** Imagem usada na análise; necessária para gerar pixels/ e scaled/. */
+  imageBase64?: string;
+  /** Gera anotações após salvar o JSON (padrão: true quando imageBase64 presente). */
+  annotate?: boolean;
+};
+
 export class ResultWriter {
   /** Garante mesma exec por lote/requisição: domain/caseId/promptVersion */
   private readonly execCache = new Map<string, number>();
 
-  constructor(private readonly resultsRoot: string = resolveResultsRoot()) {}
+  constructor(
+    private readonly resultsRoot: string = resolveResultsRoot(),
+    private readonly annotationService = new ResultAnnotationService(),
+  ) {}
 
   private execCacheKey(meta: ExecScopeMeta): string {
     return [
@@ -184,13 +200,18 @@ export class ResultWriter {
       rawResponse: unknown;
       ui?: unknown;
     },
+    options?: ResultSaveOptions,
   ): Promise<SavedResultPayload> {
-    const execId = this.resolveExecId(meta, meta.execId);
-    const absolutePath = this.buildAbsolutePath({ ...meta, execId });
+    const promptVersion = meta.promptVersion
+      ? normalizeAnalisysPromptVersion(String(meta.promptVersion))
+      : meta.promptVersion;
+    const normalizedMeta = { ...meta, promptVersion };
+    const execId = this.resolveExecId(normalizedMeta, normalizedMeta.execId);
+    const absolutePath = this.buildAbsolutePath({ ...normalizedMeta, execId });
     fs.mkdirSync(path.dirname(absolutePath), { recursive: true });
 
     const payload: SavedResultPayload = {
-      ...meta,
+      ...normalizedMeta,
       execId,
       action: result.action,
       rationale: result.rationale,
@@ -202,6 +223,31 @@ export class ResultWriter {
     };
 
     fs.writeFileSync(absolutePath, JSON.stringify(payload, null, 2), "utf-8");
+
+    const shouldAnnotate =
+      options?.annotate !== false && Boolean(options?.imageBase64);
+    if (shouldAnnotate && options?.imageBase64) {
+      try {
+        const dirs = await this.annotationService.annotateSavedResult(
+          absolutePath,
+          options.imageBase64,
+        );
+        if (dirs) {
+          payload.annotationDirs = dirs;
+          fs.writeFileSync(
+            absolutePath,
+            JSON.stringify(payload, null, 2),
+            "utf-8",
+          );
+        }
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.warn(
+          `[ResultWriter] Falha ao anotar ${absolutePath}: ${msg}`,
+        );
+      }
+    }
+
     return payload;
   }
 }

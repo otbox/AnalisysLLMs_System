@@ -1,6 +1,7 @@
 import {
   AnalisysPromptVersion,
-  DEFAULT_ANALISYS_PROMPT_VERSION,
+  ANALISYS_PROMPT_VERSIONS,
+  normalizeAnalisysPromptVersion,
   ProfileKey,
 } from "../llm/LLMsProfiles";
 import { AnalisisLLM } from "../llm/AnalisisLLM";
@@ -235,6 +236,7 @@ export class FinalTestRunner {
                 rawResponse: output.rawResponse,
                 ui: full,
               },
+              { imageBase64: context.imageBase64 },
             );
 
             return {
@@ -242,6 +244,7 @@ export class FinalTestRunner {
               execId: saved.execId,
               savedPath: saved.savedPath,
               savedAt: saved.savedAt,
+              annotationDirs: saved.annotationDirs,
             };
           }
 
@@ -285,8 +288,8 @@ export class FinalTestRunner {
 
     const versions =
       promptVersions && promptVersions.length > 0
-        ? promptVersions
-        : [DEFAULT_ANALISYS_PROMPT_VERSION];
+        ? promptVersions.map((v) => normalizeAnalisysPromptVersion(String(v)))
+        : [...ANALISYS_PROMPT_VERSIONS];
 
     const modelList =
       models && models.length > 0

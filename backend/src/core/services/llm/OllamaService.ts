@@ -1,5 +1,5 @@
-import { LLMClient, StepModelInput, StepModelOutput } from './ILLMService';
-import { ProfileKey, Profiles } from './LLMsProfiles';
+import { LLMClient, resolveTemperature, StepModelInput, StepModelOutput } from './ILLMService';
+import { ProfileKey, Profiles, resolveAnalisysPrompt } from './LLMsProfiles';
 import { resolveImageDimensions, interpolatePrompt } from './promptUtils';
 import 'dotenv/config';
 
@@ -53,8 +53,13 @@ export class OllamaLLMClient implements LLMClient {
   async callStep(input: StepModelInput): Promise<StepModelOutput> {
     console.log(`[OllamaService] Calling Ollama model: ${input.model}`);
 
+    const temperature = resolveTemperature(input.temperature);
+
     // ── Inject real image dimensions into the prompt template ──────────────
-    const rawTemplate  = Profiles[input.profile as ProfileKey] ?? Profiles['AnalisysComponentsLLM'];
+    const rawTemplate =
+      input.profile === 'AnalisysComponentsLLM' && input.promptVersion
+        ? resolveAnalisysPrompt(input.promptVersion)
+        : Profiles[input.profile as ProfileKey] ?? Profiles['AnalisysComponentsLLM'];
     const dims         = input.imageBase64
       ? resolveImageDimensions(input.imageBase64)
       : { width: 0, height: 0 };
@@ -73,7 +78,7 @@ export class OllamaLLMClient implements LLMClient {
     const body: OllamaRequest = {
       model:   input.model,
       stream:  false,
-      options: { temperature: 0.2 },
+      options: { temperature },
       messages: [
         { role: 'system', content: systemPrompt },
         userMessage,

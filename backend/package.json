@@ -18,6 +18,7 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/app/server.ts",
     "build": "tsc -p tsconfig.json",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "annotate-results": "ts-node --transpile-only src/scripts/annotateResults.ts"
   }
 }

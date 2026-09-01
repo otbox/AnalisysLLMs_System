@@ -83,7 +83,7 @@ app.get('/openrouter/models', (_req, res) => {
 app.get('/meta/analisys-prompts', (_req, res) => {
   res.send({
     defaultVersion: DEFAULT_ANALISYS_PROMPT_VERSION,
-    versions: ANALISYS_PROMPT_VERSIONS,
+    versions: [...ANALISYS_PROMPT_VERSIONS],
     defaultTemperature: DEFAULT_TEMPERATURE,
   });
 });
@@ -98,6 +98,10 @@ app.post('/tests/final/run', (req, res) =>
 
 app.post('/tests/final/run-batch', (req, res) =>
   finalTestController.batchHandler(req, res),
+);
+
+app.post('/tests/final/annotate', (req, res) =>
+  finalTestController.annotateHandler(req, res),
 );
 
 app.post('/sessions/:sessionId/steps', (req, res) => {

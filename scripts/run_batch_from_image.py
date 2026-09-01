@@ -35,7 +35,7 @@ def fetch_json(url: str, method: str = "GET", body: dict | None = None) -> dict:
         data = json.dumps(body).encode("utf-8")
     req = urllib.request.Request(url, data=data, headers=headers, method=method)
     try:
-        with urllib.request.urlopen(req, timeout=600) as resp:
+        with urllib.request.urlopen(req, timeout=7200) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         detail = e.read().decode("utf-8", errors="replace")
@@ -76,8 +76,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--prompt-versions",
-        default="v1",
-        help="Versões separadas por vírgula (ex.: v1,v2)",
+        default="v9",
+        help="Versões separadas por vírgula (ex.: v9,v8,v6pixels)",
     )
     parser.add_argument(
         "--all-prompt-versions",
@@ -105,7 +105,7 @@ def main() -> None:
     prompt_versions: list[str]
     if args.all_prompt_versions:
         meta = fetch_json(f"{args.api_base}/meta/analisys-prompts")
-        prompt_versions = meta.get("versions") or ["v1"]
+        prompt_versions = meta.get("versions") or ["v9"]
     else:
         prompt_versions = [v.strip() for v in args.prompt_versions.split(",") if v.strip()]
 

@@ -209,9 +209,6 @@ Precision is critical — measure each element carefully.
 - For elements without visible text, use null in the "text" field
 `;
 
-// English alias kept for backward compat
-export const v6PixelsEn = v6pixels;
-
 // ─────────────────────────────────────────────────────────────────────────────
 // v6pixels_tall — same as v6pixels but reminds the model about tall screenshots
 // ─────────────────────────────────────────────────────────────────────────────
@@ -288,12 +285,15 @@ y_norm = round((y_pixel / image_height) × 1000)
 Same for w and h.
 `;
 
-export const v5scaleEn = v5scale;
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Legacy aliases — kept so existing profile maps don't break
-// ─────────────────────────────────────────────────────────────────────────────
-export const v5pixels    = v6pixels;   // redirect old name to updated template
-export const v5pixelsold = v5pixels;   // historical alias
-export const v3pixels    = v5pixels;   // historical alias
-export const v6          = v8;         // v6 normalized was superseded by v8
+// Legacy / historical templates (restored — each selectable no batch)
+export {
+  v1,
+  v2,
+  v3,
+  v3pixels,
+  v5pixels,
+  v5pixelsold,
+  v5scaleEn,
+  v6,
+  v6PixelsEn,
+} from "./AnalisysProfilesLegacy";

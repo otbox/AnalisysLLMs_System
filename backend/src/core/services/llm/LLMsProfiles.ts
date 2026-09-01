@@ -3,9 +3,19 @@
 // GoogleService and OllamaService call interpolatePrompt() at request time
 // to inject {{IMAGE_WIDTH}} and {{IMAGE_HEIGHT}} (and any other vars).
 import {
-  v8,
-  v6pixels,
+  v1,
+  v2,
+  v3,
+  v3pixels,
+  v5pixels,
+  v5pixelsold,
   v5scale,
+  v5scaleEn,
+  v6,
+  v6pixels,
+  v6pixels_tall,
+  v6PixelsEn,
+  v8,
   v9,
 } from "./profiles/AnalisysProfiles";
 
@@ -19,42 +29,72 @@ export type ProfileKey =
  * Call `interpolatePrompt(Profiles[key], vars)` before sending to the model.
  */
 export const Profiles: Record<ProfileKey, string> = {
-  // Primary component-analysis profile — absolute pixels, dimensions injected
   AnalisysComponentsLLM: v9,
-
-  // Cognitive walkthrough — normalised coords, no image-size dependency
   CongnitiveWalktroughLLM: v8,
-
-  // Guide generation — normalised coords
   GuideLLM: v8,
 };
 
-/** Versões de teste batch (mapeiam para templates em AnalisysProfiles). */
-export type AnalisysPromptVersion = "v1" | "v2" | "v3";
-
-export const DEFAULT_ANALISYS_PROMPT_VERSION: AnalisysPromptVersion = "v1";
-
-export const ANALISYS_PROMPT_VERSIONS: AnalisysPromptVersion[] = [
+/** Todas as versões selecionáveis do AnalisysComponentsLLM (batch / API). */
+export const ANALISYS_PROMPT_VERSIONS = [
+  "v9",
+  "v8",
+  "v6pixels",
+  "v6pixels_tall",
+  "v6PixelsEn",
+  "v6",
+  "v5scale",
+  "v5scaleEn",
+  "v5pixels",
+  "v5pixelsold",
+  "v3pixels",
   "v1",
   "v2",
   "v3",
-];
+] as const;
+
+export type AnalisysPromptVersion = (typeof ANALISYS_PROMPT_VERSIONS)[number];
+
+export const DEFAULT_ANALISYS_PROMPT_VERSION: AnalisysPromptVersion = "v9";
 
 const ANALISYS_BY_VERSION: Record<AnalisysPromptVersion, string> = {
-  v1: v9,
-  v2: v6pixels,
-  v3: v5scale,
+  v9: v9,
+  v8: v8,
+  v6pixels: v6pixels,
+  v6pixels_tall: v6pixels_tall,
+  v6PixelsEn: v6PixelsEn,
+  v6: v6,
+  v5scale: v5scale,
+  v5scaleEn: v5scaleEn,
+  v5pixels: v5pixels,
+  v5pixelsold: v5pixelsold,
+  v3pixels: v3pixels,
+  v1: v1,
+  v2: v2,
+  v3: v3,
 };
 
-export function resolveAnalisysPrompt(
-  version: AnalisysPromptVersion = DEFAULT_ANALISYS_PROMPT_VERSION,
-): string {
-  const prompt = ANALISYS_BY_VERSION[version];
-  if (!prompt) {
+export function normalizeAnalisysPromptVersion(
+  version: string,
+): AnalisysPromptVersion {
+  const resolved = version as AnalisysPromptVersion;
+  if (!ANALISYS_BY_VERSION[resolved]) {
     throw new Error(
       `Versão de prompt desconhecida: ${version}. ` +
         `Disponíveis: ${ANALISYS_PROMPT_VERSIONS.join(", ")}`,
     );
   }
-  return prompt;
+  return resolved;
+}
+
+export function resolveAnalisysPrompt(
+  version: string = DEFAULT_ANALISYS_PROMPT_VERSION,
+): string {
+  const key = normalizeAnalisysPromptVersion(version);
+  return ANALISYS_BY_VERSION[key];
+}
+
+export function isAnalisysPromptVersion(
+  value: string,
+): value is AnalisysPromptVersion {
+  return (ANALISYS_PROMPT_VERSIONS as readonly string[]).includes(value);
 }

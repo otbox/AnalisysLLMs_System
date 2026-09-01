@@ -1,12 +1,16 @@
 import {
   AnalisysPromptVersion,
   DEFAULT_ANALISYS_PROMPT_VERSION,
+  normalizeAnalisysPromptVersion,
   ProfileKey,
 } from "../services/llm/LLMsProfiles";
 import { resolveTemperature } from "../services/llm/ILLMService";
 import { FinalDomain } from "../services/final/FinalCaseCatalog";
 import { FinalTestRunner } from "../services/final/FinalTestRunner";
-import { ResultWriter } from "../services/results/ResultWriter";
+import { ResultAnnotationService } from "../services/results/ResultAnnotationService";
+import { ResultWriter, resolveResultsRoot } from "../services/results/ResultWriter";
+import fs from "fs";
+import path from "path";
 
 type LLMAPI = "OPENROUTER" | "GEMINI";
 
@@ -31,8 +35,40 @@ type FinalTestBody = {
   sessionId?: string;
 };
 
+function collectAnalisysResponseJson(
+  root: string,
+  domain?: string,
+  caseId?: string,
+): string[] {
+  const out: string[] = [];
+  const prefix =
+    domain && caseId
+      ? path.join(root, domain, caseId)
+      : root;
+
+  function walk(dir: string) {
+    if (!fs.existsSync(dir)) return;
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        walk(full);
+      } else if (
+        entry.isFile() &&
+        entry.name.endsWith("-response.json") &&
+        entry.name.includes("AnalisysComponentsLLM")
+      ) {
+        out.push(full);
+      }
+    }
+  }
+
+  walk(prefix);
+  return out.sort();
+}
+
 export class FinalTestController {
   private readonly runner = new FinalTestRunner();
+  private readonly annotationService = new ResultAnnotationService();
 
   listHandler = async (req: any, res: any) => {
     try {
@@ -74,7 +110,9 @@ export class FinalTestController {
       if (runs > 1 || (versions && versions.length > 1)) {
         const batch = await this.runner.runBatch({
           ...body,
-          promptVersions: versions,
+          promptVersions: versions?.map((v) =>
+            normalizeAnalisysPromptVersion(String(v)),
+          ),
           runsPerVersion: runs,
         });
         return res.send(batch);
@@ -89,8 +127,9 @@ export class FinalTestController {
         includeUiJson: body.includeUiJson,
       });
 
-      const promptVersion =
-        body.promptVersion ?? DEFAULT_ANALISYS_PROMPT_VERSION;
+      const promptVersion = normalizeAnalisysPromptVersion(
+        body.promptVersion ?? DEFAULT_ANALISYS_PROMPT_VERSION,
+      );
       const writer = new ResultWriter();
       const execId = writer.allocateExecId({
         domain: String(context.domain),
@@ -136,6 +175,57 @@ export class FinalTestController {
     } catch (err: any) {
       const status = err.message?.includes("não encontrad") ? 404 : 400;
       return res.status(status).send({ error: err.message });
+    }
+  };
+
+  /**
+   * Anota JSONs já salvos (sem LLM).
+   * Body: { resultsRoot?, domain?, caseId?, force? }
+   */
+  annotateHandler = async (req: any, res: any) => {
+    try {
+      const body = (req.body ?? {}) as {
+        resultsRoot?: string;
+        domain?: string;
+        caseId?: string;
+        force?: boolean;
+      };
+
+      const root = body.resultsRoot
+        ? path.resolve(body.resultsRoot)
+        : resolveResultsRoot();
+
+      const files = collectAnalisysResponseJson(root, body.domain, body.caseId);
+      const annotated: string[] = [];
+      const skipped: string[] = [];
+      const errors: Array<{ path: string; error: string }> = [];
+
+      for (const jsonPath of files) {
+        try {
+          const dirs = await this.annotationService.annotateSavedResult(
+            jsonPath,
+            undefined,
+            { force: body.force },
+          );
+          if (!dirs) skipped.push(jsonPath);
+          else annotated.push(jsonPath);
+        } catch (err: unknown) {
+          const msg = err instanceof Error ? err.message : String(err);
+          errors.push({ path: jsonPath, error: msg });
+        }
+      }
+
+      return res.send({
+        resultsRoot: root,
+        total: files.length,
+        annotated: annotated.length,
+        skipped: skipped.length,
+        errors,
+        annotatedPaths: annotated,
+        skippedPaths: skipped,
+      });
+    } catch (err: any) {
+      return res.status(500).send({ error: err.message });
     }
   };
 
